@@ -1,0 +1,2 @@
+[nbdev]
+dreamai_pdf = dreamai_pdf._modidx:d
