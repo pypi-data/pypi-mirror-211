@@ -1,0 +1,12 @@
+triesus/__init__.py,sha256=x6Xy2atiOD35fy0o0s34tbyvLZ6yGG8nXytvhh6URyY,204
+triesus/cli.py,sha256=PptVQq8pZCOmP_0H4P6SeYp4ExweC_WE3S0cqMP_F0o,213
+triesus/preprocessing.py,sha256=kQIRqaK4q6ox6_LEN_OXl5b0RfWA4EsIyHOxPYS1tbY,1678
+triesus/run_triesus.py,sha256=2NZyKwrXmDly6lOMSxcFAlgTH8FeOYt2cu855DWOhE8,814
+triesus/trienode.py,sha256=1LObMjZqeaYxdTvQxKa9tL6fpLVsKumroNJfdBSDIdc,253
+triesus/triesus.py,sha256=JKPfdZ5rQXv7KGLQVJ0CyXOSwDePvNjTH5ms6-WkStI,2661
+triesus-0.1.3.dist-info/LICENCE,sha256=3miNd13iP-UXqs4eJq2BLqofpn2S35il5G0-bZzvE48,1075
+triesus-0.1.3.dist-info/METADATA,sha256=ahb23eA46oFNPq0klcErn059SuY7MLTL40ShL6GYV3I,7171
+triesus-0.1.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+triesus-0.1.3.dist-info/entry_points.txt,sha256=ILM_NmO4YajVgsFXakqWSp7OG2LFC1wkIrc8MzufzDM,45
+triesus-0.1.3.dist-info/top_level.txt,sha256=y1jKhsSTXFTkh6YfYHOVWSJnPWqkpdmS9twNjLdNjbE,8
+triesus-0.1.3.dist-info/RECORD,,
