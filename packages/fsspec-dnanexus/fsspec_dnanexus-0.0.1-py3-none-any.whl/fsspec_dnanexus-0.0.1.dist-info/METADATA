@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: fsspec-dnanexus
+Version: 0.0.1
+Summary: fsspec backend for the DNAnexus platform
+Home-page: UNKNOWN
+Maintainer: DNAnexus-xVantage
+Maintainer-email: tphan@dnanexus.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Requires-Dist: dxpy (==0.345.0)
+Requires-Dist: fsspec (==2023.4.0)
+
+UNKNOWN
+
+

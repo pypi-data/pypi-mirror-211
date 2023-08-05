@@ -1,0 +1,3 @@
+[fsspec.specs]
+dnanexus = fsspec_dnanexus.DXFileSystem
+
