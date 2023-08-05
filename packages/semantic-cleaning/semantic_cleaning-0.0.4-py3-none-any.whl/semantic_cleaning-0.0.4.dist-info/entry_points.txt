@@ -1,0 +1,6 @@
+[console_scripts]
+
+
+[nbdev]
+semantic_cleaning = semantic_cleaning._modidx:d
+
