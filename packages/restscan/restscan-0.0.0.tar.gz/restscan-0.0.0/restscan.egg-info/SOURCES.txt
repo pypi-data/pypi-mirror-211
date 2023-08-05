@@ -1,0 +1,5 @@
+setup.py
+restscan.egg-info/PKG-INFO
+restscan.egg-info/SOURCES.txt
+restscan.egg-info/dependency_links.txt
+restscan.egg-info/top_level.txt
