@@ -1,0 +1,17 @@
+pqos/__init__.py,sha256=E_fJsYn7a5qNqHyirXncUxtHYc4GMA73yFwC8rtxMfM,1871
+pqos/allocation.py,sha256=lFJyouiUOWeXni7RT-sPAVEukIP5HHYcZFshgqRvbhA,9851
+pqos/capability.py,sha256=pN6H-_npO2Qu-PCw6MIrXnWfeLPFv4QOs6nJ1HL-iiw,12644
+pqos/common.py,sha256=zqqLDNMmWHJ6E5_yCH9Kqb7-xH8IIoGd_3hV7AE9pKk,5311
+pqos/cpuinfo.py,sha256=-cmr5C9RqCU2AmRWOvjIL3N1r4qnQlHI7yioWpFTjBU,10180
+pqos/error.py,sha256=iYkZHtIlTG9QjYl-1ENF9Ej90duzRGuYoWXYto4y4Io,3019
+pqos/l2ca.py,sha256=-5hXPYlhOmgU-N78oibEuyXxFo4eRh83ecf0HUTid4Y,3852
+pqos/l3ca.py,sha256=81P4-mYrNHb3P1rgw50RC1zuk6Y6i6DowqymscYZs3U,3859
+pqos/mba.py,sha256=YqYD0LPGWNFel7cF4pSQwMv1Tmbu17c8WiHtwr7NMzY,4284
+pqos/monitoring.py,sha256=rlxGWcevJwNGgmqFlR0IbApeoFVB75akeyrfn-J3rzo,8068
+pqos/native_struct.py,sha256=LBiMSlXz6truePk-QmBEXCJzGCW7XX752_wGkh7oS7g,14148
+pqos/pqos.py,sha256=krsjGfz0B-CAoEqU39nwkOYBbcpUqRMiFI36SXkOeC4,6363
+pqos-4.6.0.dist-info/LICENSE,sha256=Fll75xdbYTlM9qrqdFpF2ybPIPZ7bHtAr7DvEMT3fdA,1527
+pqos-4.6.0.dist-info/METADATA,sha256=jAgF5YvlB4qsRJMMf_sQPNWQ_qIxHvgbHS1umxURdLo,4862
+pqos-4.6.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pqos-4.6.0.dist-info/top_level.txt,sha256=at8TpbiRUmKRgHE7h1bQqi0iwETTo-CYZUpDrDkOEBU,5
+pqos-4.6.0.dist-info/RECORD,,
