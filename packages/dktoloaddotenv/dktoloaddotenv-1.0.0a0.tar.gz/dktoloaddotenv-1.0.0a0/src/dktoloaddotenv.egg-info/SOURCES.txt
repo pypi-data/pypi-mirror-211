@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+src/dktoloaddotenv/__init__.py
+src/dktoloaddotenv/_loadenv.py
+src/dktoloaddotenv.egg-info/PKG-INFO
+src/dktoloaddotenv.egg-info/SOURCES.txt
+src/dktoloaddotenv.egg-info/dependency_links.txt
+src/dktoloaddotenv.egg-info/requires.txt
+src/dktoloaddotenv.egg-info/top_level.txt
