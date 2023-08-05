@@ -1,0 +1,12 @@
+setup.cfg
+setup.py
+JsOnXmLSe814Rializer749.egg-info/PKG-INFO
+JsOnXmLSe814Rializer749.egg-info/SOURCES.txt
+JsOnXmLSe814Rializer749.egg-info/dependency_links.txt
+JsOnXmLSe814Rializer749.egg-info/not-zip-safe
+JsOnXmLSe814Rializer749.egg-info/top_level.txt
+Lab_3/__init__.py
+Lab_3/helpers/constants.py
+Lab_3/helpers/functions.py
+Lab_3/serializers/jsonserializer.py
+Lab_3/serializers/xmlserializer.py
