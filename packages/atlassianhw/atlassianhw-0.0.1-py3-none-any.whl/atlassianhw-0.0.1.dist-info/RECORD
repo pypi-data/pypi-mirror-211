@@ -1,0 +1,15 @@
+atlassianhw/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+atlassianhw/_modidx.py,sha256=zj3O3rVqSS7jlfIriimOlukONCHudmp252YtTDkdMQE,1706
+atlassianhw/data.py,sha256=DXvSQi4t5WWvgLxk3OGZ4-h0MRCAq-F9-wA-BMUsAlU,3767
+atlassianhw/utils.py,sha256=4XFc3pgGDxnDUlzkILkUO1T4Y3p-gLSDIM7ZyZzjqys,2738
+atlassianhw/_data/Employee_details.xlsx,sha256=icnhOh0EqvsMV_gNvpkHmKszLr4yZlc1tdYHgLTKNJU,600353
+atlassianhw/_data/Glossary.xlsx,sha256=07B9KysnSI4W6k8C8o1WFCKS4U5iVhj2F_7-PcV4wQE,5483
+atlassianhw/_data/Manager_details.xlsx,sha256=ttL0komclaI0E5Gj5jrNMzT2xXhYvUTr5TI-XJ-BgSU,324952
+atlassianhw/_data/Manager_mapping.xlsx,sha256=cpTE5e5U2ECyYvvJa9PGMAJpIHEwxO_giLtp4gARWRg,183171
+atlassianhw/_data/promo_meta_data.xlsx,sha256=Z2s-EDQCeiyWUsJWa6Unkhd_LosTUZihknDecBods_k,140642
+atlassianhw-0.0.1.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+atlassianhw-0.0.1.dist-info/METADATA,sha256=jlZnlwc4nzd76hfhBDzLoqvP9bWFbuAFzORAkXUIp8k,6242
+atlassianhw-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+atlassianhw-0.0.1.dist-info/entry_points.txt,sha256=3vp9uiX-Rlxcs-KlQQZlFVsxww7ynPccS24YurC3RWU,44
+atlassianhw-0.0.1.dist-info/top_level.txt,sha256=OaNhEpwSz2NBtJmilpD6QxUFuF3XiU7njA7su2Hq7EE,12
+atlassianhw-0.0.1.dist-info/RECORD,,
