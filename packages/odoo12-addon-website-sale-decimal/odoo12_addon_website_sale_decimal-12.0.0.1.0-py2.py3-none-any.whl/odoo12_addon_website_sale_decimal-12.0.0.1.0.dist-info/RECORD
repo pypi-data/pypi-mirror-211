@@ -1,0 +1,9 @@
+odoo/addons/website_sale_decimal/README.md,sha256=9qhw7zTW-RMAiOcpYI8BaSUnz3iiHSy3HG585BYVraE,1063
+odoo/addons/website_sale_decimal/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+odoo/addons/website_sale_decimal/__manifest__.py,sha256=uRI-nHbbi0FuL_nV5QLMpDGFMj2kijHXR2OfeqrtTq4,539
+odoo/addons/website_sale_decimal/static/src/js/website_sale.js,sha256=_PqyEpQcxzkMkMmHDg49z8FxTAUhl76jfb1TaYZ6XVE,3663
+odoo/addons/website_sale_decimal/views/assets.xml,sha256=Mmaf_QmwADf0IQIvleWl8cpUbBYJlTO5syoBg4rERcQ,314
+odoo12_addon_website_sale_decimal-12.0.0.1.0.dist-info/METADATA,sha256=TMJaPwKYYv6DFSY_kUMP2IL4D6fvDeWeRVuJR3mMMdE,561
+odoo12_addon_website_sale_decimal-12.0.0.1.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+odoo12_addon_website_sale_decimal-12.0.0.1.0.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo12_addon_website_sale_decimal-12.0.0.1.0.dist-info/RECORD,,
