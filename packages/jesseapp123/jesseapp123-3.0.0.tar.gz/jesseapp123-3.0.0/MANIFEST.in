@@ -1,0 +1,4 @@
+include LICENSE *.cmd
+graft src/timecard/resources
+graft distribution_resources
+
