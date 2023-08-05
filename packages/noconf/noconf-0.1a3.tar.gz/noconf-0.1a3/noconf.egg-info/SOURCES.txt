@@ -1,0 +1,12 @@
+README.rst
+setup.cfg
+setup.py
+noconf/__init__.py
+noconf/conf.py
+noconf/test_conf.py
+noconf.egg-info/PKG-INFO
+noconf.egg-info/SOURCES.txt
+noconf.egg-info/dependency_links.txt
+noconf.egg-info/not-zip-safe
+noconf.egg-info/requires.txt
+noconf.egg-info/top_level.txt
