@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+gascompressibility/__init__.py
+gascompressibility/zfactor.py
+gascompressibility.egg-info/PKG-INFO
+gascompressibility.egg-info/SOURCES.txt
+gascompressibility.egg-info/dependency_links.txt
+gascompressibility.egg-info/requires.txt
+gascompressibility.egg-info/top_level.txt
+tests/__init__.py
+tests/test_gascomp.py
