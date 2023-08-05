@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: tradesman
+Version: 0.2
+Summary: A Python package for building complete AequilibraE models from open data
+Home-page: https://github.com/AequilibraE/tradesman
+Author: Pedro Camargo, Renata Akemii
+Author-email: Pedro Camargo <pedro@outerloop.io>, Renata Akemii <renata@outerloop.io>
+Maintainer-email: Pedro Camargo <pedro@outerloop.io>
+License: MIT
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: shapely (>=2.0)
+Requires-Dist: geopandas
+Requires-Dist: openmatrix
+Requires-Dist: rasterio
+Requires-Dist: matplotlib
+Requires-Dist: pycountry
+Requires-Dist: aequilibrae
+Requires-Dist: tabulate
+Requires-Dist: tqdm
+Requires-Dist: pysal
+
