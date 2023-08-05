@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: dicencards
+Version: 0.1.0.dev2
+Summary: Dice'n'Cards project
+Home-page: https://bitbucket.org/xroy/dicencards/
+Author: Xavier ROY
+Author-email: xavier@regbuddy.eu
+License: Apache License, Version 2.0
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 1 - Planning
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+
