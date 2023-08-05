@@ -1,0 +1,16 @@
+baboo_game/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+baboo_game/main.py,sha256=qHnVOP6h9zwMAVMXfvnxyvcr_-Cv3Nbu9KqrV9c-Flc,314
+baboo_game/game/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+baboo_game/game/baboo_game.py,sha256=o96qsG4-zokFeBt8Gdck_3MGCECWma3by1qfqVO1COM,1362
+baboo_game/game/render_game.py,sha256=RNORJTvLzNNRR2T4V4q_N6Zu55tZR5eZwJSCgKLCZns,6732
+baboo_game/game/config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+baboo_game/game/config/color_config.py,sha256=rWTXo9J7ETJc0Up4e2EBjY1SSs6-up3y9-QHj6c2eC4,235
+baboo_game/game/config/game_config.py,sha256=TnWLiXlk3DKFyuqXFQU8QcbdaHaXYrZbeMBz12hqeJE,87
+baboo_game/game/config/text_constant.py,sha256=qXR4lCzy8QgS_y9AQM4-HaII9KMd4lkJ1_XDLJAxi1w,15031
+baboo_game/game/library/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+baboo_game/game/library/abstract_dice.py,sha256=dCUYr62fdM2pekewCUgBM_zbB9oSFNsUXK9P950BH8s,3193
+baboo_game-2.0.5.dist-info/LICENSE,sha256=KFZpAyzsUXzAA0IWIgeG30YDH2yaKYUqlyspD6sw9cE,1069
+baboo_game-2.0.5.dist-info/METADATA,sha256=TMjwJCDNx1AZsNme9UGLe8HASleNv9RQQNEhtP14FBQ,2576
+baboo_game-2.0.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+baboo_game-2.0.5.dist-info/top_level.txt,sha256=yBNGG9g3fjGgxBLxuDlb5yQJqOoBDROOnjcw9KItySY,11
+baboo_game-2.0.5.dist-info/RECORD,,
