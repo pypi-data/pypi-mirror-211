@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+buildtime_statistics.egg-info/PKG-INFO
+buildtime_statistics.egg-info/SOURCES.txt
+buildtime_statistics.egg-info/dependency_links.txt
+buildtime_statistics.egg-info/top_level.txt
