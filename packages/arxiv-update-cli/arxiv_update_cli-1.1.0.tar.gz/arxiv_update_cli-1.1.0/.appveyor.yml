@@ -1,0 +1,32 @@
+image:
+- macos
+- Visual Studio 2019
+- Ubuntu
+
+stack: python 3
+
+environment:
+    matrix:
+    - PYTHON_HOME: "C:\\Python39"
+    - PYTHON_HOME: "C:\\Python310"
+    - PYTHON_HOME: "C:\\Python311"
+
+install:
+    - cmd: "SET PATH=%PYTHON_HOME%;%PATH%"
+    - cmd: "echo %PYTHON_HOME%"
+    - cmd: "echo %PATH%"
+    - "python --version"
+    - cmd: "SET PATH=%PYTHON_HOME%;%PATH%"
+    - cmd: "echo %PYTHON_HOME%"
+    - cmd: "echo %PATH%"
+    - "python -m pip install --upgrade setuptools wheel pip"
+    - "python -m pip install --upgrade codecov coverage feedparser pytest pytest-cov pynput"
+
+build: off
+
+test_script:
+    - "python -m pip install ."
+    - "python -m pytest --cov=arxiv_update_cli tests.py"
+    
+after_test:
+    - "python -m codecov"

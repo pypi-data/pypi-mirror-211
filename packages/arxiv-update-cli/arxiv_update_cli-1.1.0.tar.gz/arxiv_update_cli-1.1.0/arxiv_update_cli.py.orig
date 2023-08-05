@@ -1,0 +1,714 @@
+#! /usr/bin/python3
+# -*- coding: utf-8 -*-
+"""
+Copyright (c) 2022 Juliette Monsel
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+"""
+import tempfile
+import configparser
+from datetime import datetime, timedelta, MINYEAR
+from time import mktime
+import argparse
+import os
+import sys
+import smtplib
+import ssl
+import getpass
+import signal
+import re
+from email.message import EmailMessage
+import logging
+
+import feedparser
+
+
+VERSION = "1.0.3"
+
+
+# --- logging setup
+# write the log in the temporary folder (useful for debugging when executing the script with cron)
+PATH_LOG = os.path.join(tempfile.gettempdir(), "arxiv_update_cli.log")
+logging.basicConfig(level=logging.INFO,
+                    format='%(asctime)-15s %(levelname)s: %(message)s',
+                    filename=PATH_LOG)
+logging.getLogger().addHandler(logging.StreamHandler())
+
+# --- input with timeout
+TIMEOUT = 60
+
+# windows
+try:
+    import msvcrt
+    import time
+
+    def input_timeout(prompt="", timeout=TIMEOUT):
+        """
+        Input with timeout.
+
+        Based on https://stackoverflow.com/questions/15528939/time-limited-input
+        """
+        timer = time.monotonic
+        sys.stdout.write(prompt)
+        sys.stdout.flush()
+        endtime = timer() + timeout
+        result = []
+        while timer() < endtime:
+            if msvcrt.kbhit():
+                result.append(msvcrt.getwche())
+                if result[-1] == '\r':
+                    return ''.join(result[:-1])
+            time.sleep(0.04) # just to yield to other processes/threads
+        raise TimeoutError(f'No input after {timeout}s.')
+
+except ImportError:
+
+    def timedout(signum, frame):
+        raise TimeoutError(f'No input after {TIMEOUT}s.')
+
+
+    signal.signal(signal.SIGALRM, timedout)
+
+
+    def input_timeout(prompt="", timeout=TIMEOUT):
+        """Input with timeout."""
+        signal.alarm(timeout)
+        text = input(prompt)
+        signal.alarm(0)       # remove alarm
+        return text
+
+
+# --- default config file
+default_config = {
+    "General": {
+        "categories": "quant-ph",  # comma separated values, e.g. "quant-ph,cond-mat.mes-hall"
+        "#categories": "comma separated values, e.g. quant-ph, cond-mat.mes-hall",
+        "keywords": "",
+        "#keywords": "comma separated list, e.g. machine learning, optomechanics",  # comment
+        "authors": "",
+        "#authors": "comma separated list of authors to follow",  # comment
+        "sort_by": "submittedDate", # or "lastUpdatedDate"
+        "#sort_by": "how the articles are sorted submittedDate/lastUpdatedDate",
+        "format": "full",
+        "#format": "how the articles are displayed: full/condensed/bibtex/title/id",
+        "last_update": "",
+        "#note": "The script will fetch the articles submitted/updated after the last update date that belong to one of the categories and fulfill: (one of the authors is in the author list) OR (one of the keywords is in the title or abstract)",
+    },
+    "Email": {
+        "smtp_server": "localhost",
+        "#smtp_server": "smtp server used to send the results by email, e.g. smtp.gmail.com",
+        "smtp_port": "465",
+        "email": "",
+        "#email": "email address to send the results by email",
+    }
+}
+CONFIG = configparser.ConfigParser()
+for section, options in default_config.items():
+    CONFIG.setdefault(section, options)
+
+
+# config path
+PATH = os.path.dirname(__file__)
+CONFIG_PATHS = []
+
+# user config file
+if 'linux' in sys.platform:
+    # local directory containing config files
+    if os.path.exists(os.path.join(os.path.expanduser("~"), ".config")):
+        CONFIG_PATHS.append(os.path.join(os.path.expanduser("~"), ".config", "arxiv_update_cli.ini"))
+    else:
+        CONFIG_PATHS.append(os.path.join(os.path.expanduser("~"), ".arxiv_update_cli"))
+else:
+    # local directory containing config files
+    CONFIG_PATHS.append(os.path.join(os.path.expanduser("~"), "arxiv_update_cli", "arxiv_update_cli.ini"))
+
+# local folder config file (not installed), takes precedence over user config
+if os.access(PATH, os.W_OK):
+    CONFIG_PATHS.append(os.path.join(PATH, "arxiv_update_cli.ini"))
+
+def save_config(filepath):
+    with open(filepath, 'w') as file:
+        CONFIG.write(file)
+
+
+# --- keyring (for email sending)
+try:
+    import keyring
+except ImportError:
+
+    def store_pwd_in_keyring(username, pwd):
+        pass
+
+    def get_pwd_from_keyring(username):
+        pass
+
+else:
+    if "linux" in sys.platform:
+        try:
+            # get the keyring to work when script is called from cron
+            os.environ['DBUS_SESSION_BUS_ADDRESS'] = f'unix:path=/run/user/{os.getuid()}/bus'
+            os.environ['DISPLAY'] = ':0'
+        except Exception:
+            pass
+
+    def store_pwd_in_keyring(username, pwd):
+        try:
+            keyring.set_password("arxiv_update_cli", username, pwd)
+        except keyring.errors.KeyringError:
+            return
+
+
+    def get_pwd_from_keyring(username):
+        try:
+            return keyring.get_password("arxiv_update_cli", username)
+        except keyring.errors.KeyringError:
+            return
+
+
+# --- command line arguments parser
+desc = """
+CLI tool to fetch new articles on arXiv in selected categories filtered by
+ keywords or authors. The updates can also be sent by email so that the script
+ can be automatically run with cron.
+
+The script will fetch the articles on arXiv that
+
+ (1) were *submitted/updated* after the last update date (or the provided date)
+
+ **AND**
+
+ (2) belong to one of the *categories*
+
+ **AND**
+
+ (3) (one of the *authors* is in the author list) **OR** (one of the *keywords* is in the title or abstract)
+
+All the *options* are set in the configuration file.
+
+Note that keywords can contain spaces, e.g. "machine learning".
+"""
+
+parser = argparse.ArgumentParser(description=desc,
+                                 epilog="Thank you to arXiv for use of its open access interoperability.")
+parser.add_argument('-e', '--email', action='store_true',
+                    help='send result by email (prompt for missing settings)')
+parser.add_argument('-s', '--since',
+                    type=lambda s: datetime.strptime(s, '%Y-%m-%d'),
+                    metavar="YYYY-MM-DD",
+                    help='fetch update since YYYY-MM-DD 00:00')
+parser.add_argument('-c', '--config', nargs="?", const="",
+                    metavar="FILE",
+                    help='config file to use or print path to default one and exit if no argument is provided')
+parser.add_argument('-v', '--version', help='show version and exit',
+                    action='store_true')
+parser.add_argument('-o', '--output', dest='output',
+                    metavar="FILE",
+                    help='write the output into FILE')
+parser.add_argument('-f', '--format', dest='display',
+                    choices=["id", "title", "condensed", "full", "bibtex"],
+                    metavar="FORMAT",
+                    help=('article formatting: "id" (arXiv id, "title" (title - date), '
+                          '"condensed" (title, authors, date - url), '
+                          '"full" (title, authors, date, abstract, url, ...), or '
+                          '"bibtex"'))
+parser.add_argument('--log', help='show path to log file and exit',
+                    action='store_true')
+
+subparsers = parser.add_subparsers(description='', dest='subcmd')
+parser_query = subparsers.add_parser('query', help='subcommand to directly query the arXiv API')
+
+parser_query.add_argument('search_query', nargs="?", default="", metavar="QUERY",
+                          help='API search query, see https://arxiv.org/help/api/user-manual')
+parser_query.add_argument('--api-query-help', dest='query_help', action='store_true',
+                          help='display API search query help and exit')
+parser_query.add_argument('--id-list', dest='id_list', nargs="+", metavar="ID",
+                          default=[],
+                          help='only results with given arXiv ids')
+parser_query.add_argument('--sort-by', dest='sort_by',
+                          choices=["relevance", "lastUpdatedDate", "submittedDate"],
+                          metavar="SORT_BY",
+                          default="lastUpdatedDate",
+                          help='sort results by "relevance", "lastUpdatedDate" [default], or "submittedDate"')
+parser_query.add_argument('--sort-order', dest='sort_order',
+                          choices=["ascending", "descending"],
+                          default="descending",
+                          metavar="ORDER",
+                          help='sort results in "ascending" or "descending" [default] order')
+parser_query.add_argument('--start-date', dest='start_date',
+                          type=lambda s: datetime.strptime(s, '%Y-%m-%d'),
+                          metavar="YYYY-MM-DD",
+                          help='minimum date')
+parser_query.add_argument('--end-date', dest='end_date',
+                          type=lambda s: datetime.strptime(s, '%Y-%m-%d'),
+                          metavar="YYYY-MM-DD",
+                          help='maximum date')
+parser_query.add_argument('--max-results', dest='max_results',
+                          type=int,
+                          metavar="N",
+                          help='display only the N first results')
+
+# --- entry formatting
+BIBTEX_TEMPLATE = """
+@article{%(key)s,
+    author = {%(authors)s},
+    title = {%(title)s},
+    journal = {arXiv},
+    year = {%(year)s},
+    eprint = {%(eprint)s},
+    url = {%(link)s}
+}
+
+"""
+
+
+def format_entry(entry, display):
+    """
+    Format entry (from feedparser) as string.
+
+    display: str
+        "id": arxiv id
+        "title": title - date
+        "condensed": title, authors, date - url
+        "full": title, authors, date, abstract, comments and url
+        "bibtex": bibtex items
+    """
+    if display is None:
+        display = CONFIG.get("General", "format")
+    if display == "id":
+        return entry['link'].split('/')[-1]
+    title = entry['title'].split('.')[0].strip().replace('\n ', '')
+    date = datetime.fromtimestamp(mktime(entry['updated_parsed']))
+    if display == "title":
+        return f"{title} - {date.strftime(CONFIG.get('General', 'date_format'))}"
+    authors = [a['name'] for a in entry['authors']]
+    link = entry['link']
+    if display == "bibtex":
+        return format_bibtex(title, authors, link, date)
+    if display == "condensed":
+        return f"{title}\n  {', '.join(authors)}\n  {date.strftime('%Y-%m-%d %H:%M')} - \033[36m{link}\033[0m\n"
+    abstract = entry['summary'].splitlines()
+    txt = [f'\033[1mTitle:\033[0m {title}',
+           f'\033[1mAuthors:\033[0m {", ".join(authors)}',
+           f'\033[1mDate:\033[0m {date.strftime("%Y-%m-%d %H:%M")}',
+           f'\033[1mAbstract:\033[0m {" ".join(abstract)}']
+    comments = entry.get('arxiv_comment')
+    if comments:
+        txt.append(f'\033[1mComments:\033[0m {comments}')
+    tags = entry.get('tags')
+    if tags:
+        main = entry.get('arxiv_primary_category', tags[0])['term']
+        tags = [tag['term'] for tag in tags[1:]]
+        if tags:
+            txt.append(f'\033[1mSubjects:\033[0m \033[4m{main}\033[0m, {", ".join(tags)}')
+        else:
+            txt.append(f'\033[1mSubject:\033[0m {main}')
+    ref = entry.get('arxiv_journal_ref')
+    if ref:
+        txt.append(f'\033[1mJournal reference:\033[0m {ref}')
+    doi = entry.get('arxiv_doi')
+    if doi:
+        txt.append(f'\033[1mDOI:\033[0m \033[36mhttps://doi.org/{doi}\033[0m')
+    txt.append(f'\033[1mURL:\033[0m \033[36m{link}\033[0m')
+
+    return '\n'.join(line.strip() for line in re.findall(r'.{1,80}(?:\s+|$)', '\n'.join(txt))) + '\n'
+
+
+def format_bibtex(title, authors, url, date):
+    """Return bibtex entry (internal function)."""
+    data = {'title': title}
+    data['link'] = url
+    data['eprint'] = url.split('/')[-1]
+    if date:
+        data['year'] = date.year
+    else:
+        data['year'] = '20' + data['eprint'][:2]
+    auths = [a.split(' ') for a in authors]
+    tit = title.split()[0].lower()
+    if tit in ['a', 'the', 'an']:
+        tit = title.split()[1].lower()
+    auth = auths[0][-1]
+    data['key'] = '{auth}_{title}_{year}'.format(auth=auth, title=tit,
+                                                 year=data['year']).lower()
+    auths = [a[-1] + ', ' + ' '.join(a[:-1]) for a in auths]
+    data['authors'] = ' and '.join(auths)
+    return BIBTEX_TEMPLATE % data
+
+
+# --- feed query
+API_URL = 'http://export.arxiv.org/api/query?'
+MINDATE = datetime(MINYEAR, 1, 1)
+
+
+def _query(url, start=0, trial_nb=1, max_trials=10):
+    """Fetch query results and retry MAX_TRIALS in case of failure."""
+    res = feedparser.parse(url.format(start=start))
+    if res['entries']:
+        return res['entries']
+    err = res.get('bozo_exception', '')
+    if err:
+        raise ValueError(str(err))
+    tot_results = int(res['feed']['opensearch_totalresults'])
+    if start < tot_results:  # entries shouldn't be empty
+        if trial_nb >= max_trials:
+            raise ValueError("Failed to retrieve results from API.")
+        return _query(url, start, trial_nb + 1, max_trials)
+    return []  # no results
+
+
+def api_query(start_date):
+    """Return arXiv API query results as a generator."""
+    categories = "+OR+".join([cat.strip() for cat in CONFIG.get("General", "categories").split(",")])
+    if not categories:
+        raise ValueError("No category selected. Please edit the configuration file.")
+    keywords = "+OR+".join([f'%22{kw.strip().replace(" ", "+")}%22' for kw in CONFIG.get("General", "keywords").split(",") if kw.strip()])
+    authors = "+OR+".join([f'%22{auth.strip().replace(" ", "+")}%22' for auth in CONFIG.get("General", "authors").split(",") if auth.strip()])
+    sort_by = CONFIG.get("General", "sort_by")
+    date = datetime.now()
+
+    args = []
+    if keywords:
+        # search for keywords in both title and abstract of articles in given categories
+        args.append(f"%28ti:%28{keywords}%29+OR+abs:%28{keywords}%29%29")
+    if authors:
+        args.append(f"au:%28{authors}%29")
+    if args:
+        search_query = f"cat:%28{categories}%29+AND+%28{'+OR+'.join(args)}%29"
+    else:
+        # no filtering, get all articles from the categories
+        search_query = f"cat:%28{categories}%29"
+
+    url = f'{API_URL}search_query={search_query}' \
+          f'&sortBy={sort_by}&sortOrder=descending&max_results=50' \
+          '&start={start}'
+    i = 0
+    entries = _query(url, i, 1)
+    entry = None
+    while entries and date >= start_date:
+        for entry in entries:
+            date = datetime.fromtimestamp(mktime(entry['updated_parsed']))
+            if date < start_date:
+                break
+            yield entry
+        if len(entries) < 50: # no more entries
+            return
+        i += 50
+        entries = _query(url, i, 1)
+
+
+API_DOC = 'Query construction for the arXiv API\n' \
+          '====================================\n\n' \
+          '\x1b[1mTypical form:\x1b[0m \x1b[7m<field>:<query>+<operator>+<field>:<query>...\x1b[0m\n\n' \
+          'Fields\n' \
+          '------\n\n' \
+          '======  ========================\n' \
+          'prefix  explanation\n' \
+          '======  ========================\n' \
+          'ti      Title\n' \
+          'au      Author\n' \
+          'abs     Abstract\n' \
+          'co      Comment\n' \
+          'jr      Journal Reference\n' \
+          'cat     Subject Category\n' \
+          'rn      Report Number\n' \
+          'all     All of the above\n' \
+          '======  ========================\n\n' \
+          '\x1b[1mExample:\x1b[0m: \x1b[7mti:checkerboard\x1b[0m to list the articles whose titles contain the word \x1b[3mcheckerboard\x1b[0m.\n\n\n' \
+          'Operators\n' \
+          '---------\n\n' \
+          'Several fields can be combined using boolean operators:\n\n' \
+          '- AND\n' \
+          '- OR\n' \
+          '- ANDNOT\n\n' \
+          '\x1b[1mExample:\x1b[0m: \x1b[7mau:del_maestro+ANDNOT+ti:checkerboard\x1b[0m to list the articles of \x1b[3mAdrian DelMaestro\x1b[0m with titles that do not contain the word \x1b[3mcheckerboard\x1b[0m\n\n\n' \
+          'Grouping operators\n' \
+          '------------------\n\n' \
+          '- More complex queries can be used by using parentheses for grouping the Boolean expressions.\n' \
+          '- Entire phrases can be used in a search field by enclosing them in double quotes.\n\n' \
+          'The grouping operators are encoded in the following way:\n\n' \
+          '==============  ========  ========================================================================\n' \
+          'symbol          encoding  explanation\n' \
+          '==============  ========  ========================================================================\n' \
+          '( )             %28 %29   Used to group Boolean expressions for Boolean operator precedence.\n' \
+          '""              %22 %22   Used to group multiple words into phrases to search a particular field.\n' \
+          'space           \\+        Used to extend a search_query to include multiple fields.\n' \
+          '==============  ========  ========================================================================\n\n' \
+          '\x1b[1mExample\x1b[0m: \x1b[7mti:%22quantum+criticality%22\x1b[0m to list the articles whose titles contain the words \x1b[3mquantum\x1b[0m and \x1b[3mcriticality\x1b[0m.\n\n\n' \
+          'More about the arXiv API: \033[36mhttps://arxiv.org/help/api/user-manual\033[0m\n'
+
+
+def api_general_query(search_query="", id_list=(), sort_by="lastUpdatedDate", sort_order="descending",
+                      start_date=None, end_date=None, max_results=None):
+    """
+    Return arXiv API query results as a generator.
+
+    Arguments:
+        * search_query: str
+            API search query, see show_api_doc() and https://arxiv.org/help/api/user-manual
+        * id_list: tuple or list
+            list of arXiv ids
+        * sort_by: str
+            "relevance", "lastUpdatedDate", "submittedDate"
+        * sort_order: str
+            "ascending" or "descending"
+        * start_date: datetime
+            minimum date (ignored with sort_by="relevance")
+        * end_date: datetime
+            maximum date (ignored with sort_by="relevance")
+        * max_results: int or None
+            maximum number of results
+    """
+    nb = 200
+    if start_date is None:
+        start_date = MINDATE
+    if end_date is None:
+        end_date = datetime.now()
+    url = f'{API_URL}search_query={search_query}&id_list={",".join(id_list)}' \
+          f'&sortBy={sort_by}&sortOrder={sort_order}&max_results={nb}' \
+          '&start={start}'
+    start = 0
+    entries = _query(url, start, 1)
+
+    entry = None
+    counter = 0 # valid results
+    if sort_by == "relevance":
+        while entries and (max_results is None or counter < max_results):
+            for entry in entries:
+                counter += 1
+                yield entry
+            start += nb
+            entries = _query(url, start, 1)
+    else:
+        date_key = "published_parsed" if sort_by == "submittedDate" else "updated_parsed"
+        if sort_order == "descending":
+            # find first entry older than end_date
+            while entries and datetime.fromtimestamp(mktime(entries[-1][date_key])) > end_date:
+                start += nb
+                entries = _query(url, start, 1)
+            if entries:
+                date = datetime.fromtimestamp(mktime(entries[0][date_key]))
+            while entries and date >= start_date and (max_results is None or counter < max_results):
+                for entry in entries:
+                    if max_results is not None and counter == max_results:
+                        return
+                    try:
+                        date = datetime.fromtimestamp(mktime(entry[date_key]))
+                    except KeyError:
+                        continue  # ignore invalid entries
+                    if start_date <= date <= end_date:
+                        counter += 1
+                        yield entry
+                start += nb
+                entries = _query(url, start, 1)
+        else: # sortOrder == "ascending":
+            while entries and datetime.fromtimestamp(mktime(entries[-1][date_key])) < start_date:
+                start += nb
+                entries = _query(url, start, 1)
+            if entries:
+                date = datetime.fromtimestamp(mktime(entries[0][date_key]))
+            while entries and date <= end_date and (max_results is None or counter < max_results):
+                for entry in entries:
+                    if max_results is not None and counter == max_results:
+                        return
+                    try:
+                        date = datetime.fromtimestamp(mktime(entry[date_key]))
+                    except KeyError:
+                        continue  # ignore invalid entries
+                    if start_date <= date <= end_date:
+                        counter += 1
+                        yield entry
+                start += nb
+                entries = _query(url, start, 1)
+
+
+ansi_regexp = re.compile(r"\033\[[0-9]+m")
+
+def send_email(txt, subject):
+    """Return True if the email is sent."""
+    # SMTP server settings
+    smtp_server = CONFIG.get("Email", "smtp_server", fallback="")
+    port = CONFIG.getint("Email", "smtp_port")
+    if not smtp_server:
+        smtp_server = input_timeout("SMTP server (e.g. smtp.gmail.com): ")
+        CONFIG.set("Email", "smtp_server", smtp_server)
+    login = CONFIG.get("Email", "email", fallback="")
+    if not login:
+        login = input_timeout("email: ")
+        CONFIG.set("Email", "email", login)
+
+    password = get_pwd_from_keyring(login)
+    if password is None:
+        password = getpass.getpass(f"Password for {login}: ")
+
+    # mail content
+    msg = EmailMessage()
+    msg.set_content(ansi_regexp.sub('', txt))
+    msg['Subject'] = subject
+    msg['From'] = login
+    msg['To'] = login
+
+    # server connexion
+    context = ssl.create_default_context()  # create SSL context
+    trial_nb = 0
+    while trial_nb < 3:
+        try:
+            with smtplib.SMTP_SSL(smtp_server, port, context=context) as server:
+                server.login(login, password)
+                server.send_message(msg)
+        except smtplib.SMTPAuthenticationError:
+            trial_nb += 1
+            logging.error("Authentication failed for %s", login)
+            password = getpass.getpass(f"Password for {login}: ")
+        except Exception:
+            logging.exception("Email sending failed, please check the configuration file")
+            return False
+        else:
+            store_pwd_in_keyring(login, password)
+            logging.info("Email sent")
+            return True
+    return False
+
+
+def load_default_config():
+    """Load default config file and return the filepath."""
+    try:
+        path_config = CONFIG.read(CONFIG_PATHS)[-1]  # the last valid file overrides the others
+    except IndexError: # config file does not exists
+        path_config = CONFIG_PATHS[-1]
+        folder = os.path.dirname(path_config)
+        if not os.path.exists(folder):
+            os.mkdir(folder)
+        with open(path_config, 'w') as file:
+            CONFIG.write(file)
+        logging.info("No configuration file found. Default configuration file '%s' has been created. "
+                     "Please edit it and run the script again.", path_config)
+        sys.exit()
+    return path_config
+
+
+def _main(argv=None):
+    if argv is None:
+        args = parser.parse_args()
+    else:
+        args = parser.parse_args(argv)
+
+    # version
+    if args.version:
+        print('arxiv_update_cli ', VERSION)
+        sys.exit()
+
+    # log
+    if args.log:
+        print("log file: ", PATH_LOG)
+        sys.exit()
+
+    # config file
+    if args.config == "":
+        print("Default config file: ", load_default_config())
+        sys.exit()
+
+    if args.config: # try to load provided config file
+        try:
+            path_config = CONFIG.read(args.config)[-1]
+        except IndexError:
+            logging.warning("Invalid config file %s, default config file used instead.", args.config)
+            path_config = load_default_config()
+    else:
+        path_config = load_default_config()
+
+    # query
+    if args.subcmd == 'query': # custom API query
+        # retrieve options
+        if args.query_help:
+            print(API_DOC)
+            sys.exit()
+
+        keys = ['search_query', 'id_list', 'sort_by', 'sort_order',
+                'start_date', 'end_date', 'max_results']
+        kw = {key: getattr(args, key, '') for key in keys}
+        # run query
+        results = api_general_query(**kw)
+        header = f"arXiv query '{args.search_query}'"
+        footer = "%% {nb} articles found."
+        no_result_msg = "No article found."
+
+    else: # standard update
+        # start date
+        now = datetime.now()
+        if args.since is None:
+            try:
+                start_date = datetime.strptime(CONFIG.get("General", "last_update"),
+                                               '%Y-%m-%d %H:%M')
+            except ValueError:
+                start_date = now - timedelta(days=1)
+        else:
+            start_date = args.since
+        # run query
+        results = api_query(start_date)
+        header = f"arXiv update {datetime.now().strftime('%Y-%m-%d %H:%M')}"
+        footer = "\033[3m%% {nb} new articles since " + f"{start_date.strftime('%Y-%m-%d %H:%M')}\033[0m"
+        no_result_msg = f"No new articles since {start_date.strftime('%Y-%m-%d %H:%M')}"
+
+        CONFIG.set("General", "last_update", now.strftime('%Y-%m-%d %H:%M'))
+        save_config(path_config)
+
+    # format results
+    i = -1
+    articles = []
+    for i, article in enumerate(results):
+        articles.append(format_entry(article, args.display))
+    footer = footer.format(nb=i+1)
+
+    output = "\n".join(articles)
+    if not articles:
+<<<<<<< HEAD
+        logging.info("No new articles since %s", start_date.strftime('%Y-%m-%d %H:%M'))
+    else:
+        cli_ouput = True
+        if args.email:
+            cli_ouput = not send_email(output + "\n" + footer)  # fallback to printing if email failed
+        if cli_ouput:
+            print(output)
+        logging.info(footer)
+=======
+        logging.info(no_result_msg)
+        return
+
+    if args.email:
+        send_email(output + "\n" + footer, header)  # fallback to printing if email failed
+    if args.output:
+        with open(args.output, "w") as file:
+            file.write(header + "\n\n")
+            file.write(ansi_regexp.sub('', output))
+            file.write(footer)
+    else:
+        print(output)
+    logging.info(footer)
+>>>>>>> 7c2c252 (Add custom API queries)
+
+
+def main():
+    try: # log exceptions
+        _main()
+    except Exception:
+        logging.exception("An error occured")
+
+
+# --- execute
+if __name__ == "__main__":
+    main()
