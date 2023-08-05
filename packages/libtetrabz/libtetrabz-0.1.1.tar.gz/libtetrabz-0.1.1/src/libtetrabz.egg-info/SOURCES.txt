@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/libtetrabz/__init__.py
+src/libtetrabz/libtetrabz.c
+src/libtetrabz.egg-info/PKG-INFO
+src/libtetrabz.egg-info/SOURCES.txt
+src/libtetrabz.egg-info/dependency_links.txt
+src/libtetrabz.egg-info/top_level.txt
