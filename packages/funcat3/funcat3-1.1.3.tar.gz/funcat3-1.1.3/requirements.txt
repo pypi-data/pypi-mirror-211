@@ -1,0 +1,17 @@
+numpy
+six
+backports.functools_lru_cache
+pandas
+lxml
+requests
+cached-property
+tqdm
+python-dateutil
+pytz
+idna
+certifi
+soupsieve
+websocket-client
+charset_normalizer
+tushare
+akshare
