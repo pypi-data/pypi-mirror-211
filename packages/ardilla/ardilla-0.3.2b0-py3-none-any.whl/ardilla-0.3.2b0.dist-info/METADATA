@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: ardilla
+Version: 0.3.2b0
+Summary: Ardilla ORM. Easy to use, fast to implement, with sync and async flavors
+Author-email: ChrisDewa <chrisdewa@duck.com>
+Project-URL: Homepage, https://github.com/chrisdewa/ardilla
+Project-URL: Bug Tracker, https://github.com/chrisdewa/ardilla/issues
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: pydantic (==1.10.7)
+Provides-Extra: async
+Requires-Dist: aiosqlite (==0.19.0) ; extra == 'async'
+Provides-Extra: dev
+Requires-Dist: pytest (==7.3.1) ; extra == 'dev'
+Requires-Dist: pytest-asyncio (==0.21.0) ; extra == 'dev'
+Requires-Dist: black (==23.3.0) ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: mkdocs (==1.4.3) ; extra == 'docs'
+Requires-Dist: jinja2 (<3.1.0) ; extra == 'docs'
+Requires-Dist: mkdocstrings[python] (==0.21.2) ; extra == 'docs'
+Provides-Extra: examples
+Requires-Dist: fastapi-0.95.1 ; extra == 'examples'
+Requires-Dist: uvicorn-0.22.0 ; extra == 'examples'
+
