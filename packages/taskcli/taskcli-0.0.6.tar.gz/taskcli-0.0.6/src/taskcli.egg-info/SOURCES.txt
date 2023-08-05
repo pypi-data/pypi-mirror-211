@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/taskcli/__init__.py
+src/taskcli/old.py
+src/taskcli/taskcli.py
+src/taskcli.egg-info/PKG-INFO
+src/taskcli.egg-info/SOURCES.txt
+src/taskcli.egg-info/dependency_links.txt
+src/taskcli.egg-info/top_level.txt
