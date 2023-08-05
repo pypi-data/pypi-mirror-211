@@ -1,0 +1,10 @@
+LICENSE
+README.md
+rclone_ls.py
+setup.py
+rclone_ls.egg-info/PKG-INFO
+rclone_ls.egg-info/SOURCES.txt
+rclone_ls.egg-info/dependency_links.txt
+rclone_ls.egg-info/entry_points.txt
+rclone_ls.egg-info/requires.txt
+rclone_ls.egg-info/top_level.txt

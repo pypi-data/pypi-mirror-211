@@ -1,0 +1,2 @@
+rclone>=0.4.4
+humanize>=4.6.0
