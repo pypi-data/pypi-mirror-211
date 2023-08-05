@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: protloc-mex-x
+Version: 0.0.1
+Summary: Internal use kit
+Home-page: https://github.com/yujuan-zhang/ProtLoc-mexl
+License: MIT
+Author: Ze Yu Luo
+Author-email: 1024226968@qq.com
+Requires-Python: >=3.9
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: matplotlib (>=3.5.1)
+Requires-Dist: numpy (>=1.20.3)
+Requires-Dist: pandas (>=1.4.1)
+Requires-Dist: seaborn (>=0.11.2)
+Project-URL: Documentation, https://github.com/yujuan-zhang/ProtLoc-mexl/issues
+Project-URL: Repository, https://github.com/yujuan-zhang/ProtLoc-mexl
+Description-Content-Type: text/markdown
+
+# ProtLoc-mex_X
+
+Internal use kit
