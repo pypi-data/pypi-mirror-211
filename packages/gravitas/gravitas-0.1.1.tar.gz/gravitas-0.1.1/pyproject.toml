@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "gravitas"
+version = "0.0.20"
+description = "High-fidelity gravity fields for satellite propagation"
+authors = ["Liam Robinson <robin502@purdue.edu>"]
+readme = "README.md"
+packages = [{include = "gravitas"}]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: MacOS",
+]
+
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.12"
+numpy = "^1.19"
+
+[tool.cibuildwheel.environment]
+CIBW_VERBOSE = "1"
+# Build only for Python 3.11
+CIBW_BUILD = "cp311-*"
+
+
+[build-system]
+requires = ["setuptools>=42", "wheel", "numpy"]
+build-backend = "setuptools.build_meta"
