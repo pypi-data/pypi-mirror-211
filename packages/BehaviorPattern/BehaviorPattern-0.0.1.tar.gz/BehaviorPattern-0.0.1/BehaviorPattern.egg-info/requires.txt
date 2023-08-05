@@ -1,0 +1,5 @@
+numpy
+pandas
+tqdm
+efficient_apriori==2.0.3
+prefixspan==0.5.2
