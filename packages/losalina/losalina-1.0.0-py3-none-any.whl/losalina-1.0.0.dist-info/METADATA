@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: losalina
+Version: 1.0.0
+Summary: hypernetwork module for kohya_ss/sd-scripts
+Home-page: https://github.com/ddPn08/losalina
+Author: ddPn08
+Author-email: contact@ddpn.world
+Requires-Dist: torch
+
