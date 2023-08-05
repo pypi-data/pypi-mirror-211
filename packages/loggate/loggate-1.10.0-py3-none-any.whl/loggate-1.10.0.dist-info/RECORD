@@ -1,0 +1,15 @@
+loggate/__init__.py,sha256=W0zCOD2jsduA3Wn4kJVP9U7ypoNAWvAgV71UdrYoumc,603
+loggate/filters.py,sha256=Q8mTxjXh5rMNKSXn70yVMNYNB6MAVt1UIQEqQQqjUIA,313
+loggate/formatters.py,sha256=E4k6Km6pt3LY1qmmXXTsdd1Cupd91uWktS6b8xJbI5g,3863
+loggate/http/__init__.py,sha256=5rh8R2C3s1yEUYFXr-x4UtOvnhuudtdRFv8Y5mvdOxc,419
+loggate/http/aio_api_call.py,sha256=2C6gpUxVTceHBjUS_x33cRCJx9jBe4_jRss7vQCq0Fk,1764
+loggate/http/simple_api_call.py,sha256=bD8wiMpS14nT4kbgGK7RERhUpqAZb4z0mDIMoIFm-80,1753
+loggate/logger.py,sha256=kL4FZVWmQ4y4PIyMCGK3Z8Qe_B2T3DRPZDKViv9T-sI,13483
+loggate/loki/__init__.py,sha256=GEKbO645MHC6JRZY33M4vDebuKMGyIssXFzh-tf2oJQ,257
+loggate/loki/emitters.py,sha256=fu3m6z68vBYEh3UOKQh083BngPl3OfGg8zJsHZNzJLA,6540
+loggate/loki/formatters.py,sha256=gCajEiebO1twNBOYFMNlHpL45TiqyLXi_itMoYV88rc,1584
+loggate/loki/handlers.py,sha256=3N2hqorHPJcjgVCfUQrj5HzzSBj2alQha8Mo7M-vWT8,7539
+loggate-1.10.0.dist-info/LICENSE,sha256=-jvntdbxkso0bFpb_PjNZySuhLheaxfgHDkfEscFeSY,1124
+loggate-1.10.0.dist-info/METADATA,sha256=6O9FV0_LL35qPz03V7BSiNcqFo_e6KslOyjMqm4kPf8,9498
+loggate-1.10.0.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+loggate-1.10.0.dist-info/RECORD,,
