@@ -1,0 +1,11 @@
+fastcore
+pandas
+numpy
+nbdev
+matplotlib
+seaborn
+duckdb
+openpyxl
+jupyter
+
+[dev]
