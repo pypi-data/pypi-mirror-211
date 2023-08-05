@@ -1,0 +1,8 @@
+uvicorn
+starlette
+prometheus_client
+
+[all]
+uvicorn
+starlette
+prometheus_client
