@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0", "setuptools_scm[toml]"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "baboo_game"
+dynamic = ["version"]
+#version = "2.0.2" # Insert manual version
+#dynamic = ["version", "dependencies"]
+authors = [
+   { name="Vitalii Sili", email="vitaliisili@yahoo.com" },
+]
+license = {file = "LICENSE"}
+description = "A dice game prototype"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+   "Development Status :: 3 - Alpha",
+   "Intended Audience :: Education",
+   "Programming Language :: Python :: 3",
+   "License :: OSI Approved :: MIT License",
+   "Operating System :: OS Independent",
+]
+#[tool.setuptools_scm]
+#write_to = "epi_models/_version.py"
+#[tool.setuptools.dynamic]
+#dependencies = {file = ["requirements.txt"]}
+#keywords = ["dicegame", "python", "console game"]
+dependencies = ["colorama>=0.4.6"]  # Insert manualy dependencies
+#[project.optional-dependencies]
+#dev = ["pytest", "isort"]
+[project.urls]
+homepage = "https://github.com/vitaliisili/dice_game_python"
+documentation = "https://github.com/vitaliisili/dice_game_python"
+repository = "https://github.com/vitaliisili/dice_game_python"
+#"source" = ""
+#"download" = ""
+#"tracker" = ""
