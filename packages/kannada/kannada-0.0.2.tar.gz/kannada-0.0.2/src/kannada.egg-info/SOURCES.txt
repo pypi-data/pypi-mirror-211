@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/kannada.egg-info/PKG-INFO
+src/kannada.egg-info/SOURCES.txt
+src/kannada.egg-info/dependency_links.txt
+src/kannada.egg-info/top_level.txt
+src/tamizh/__init__.py
