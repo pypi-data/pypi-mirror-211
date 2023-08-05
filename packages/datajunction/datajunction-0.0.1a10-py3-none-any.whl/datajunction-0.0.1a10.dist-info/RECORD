@@ -1,0 +1,9 @@
+datajunction/__about__.py,sha256=iCoqbnWUPKoHy2CHF7nlZN3w61klDA3zstVNpnxaZ4g,51
+datajunction/__init__.py,sha256=XMYYEQNza4Ihb_1ReXizj1k51YO8GY6mhxzkaj88SiE,825
+datajunction/client.py,sha256=FTmiv9wa133xxgMNIG27-wqLzq-7bKqgyO2wULAida4,27965
+datajunction/exceptions.py,sha256=KJy1iJpi-ASlIaVVRgUkyKyqDOMnCN2iiRSajv0gk9g,108
+datajunction/models.py,sha256=Ofmez4YdoP0VU2ZgAL004sWAyCCQCh6bn0aDzWgI3uQ,1802
+datajunction-0.0.1a10.dist-info/METADATA,sha256=9z9dOoePULsIxqzZdPuaMWyLweAlOaA4gVP5gbxxTcg,3332
+datajunction-0.0.1a10.dist-info/WHEEL,sha256=y1bSCq4r5i4nMmpXeUJMqs3ipKvkZObrIXSvJHm1qCI,87
+datajunction-0.0.1a10.dist-info/licenses/LICENSE.txt,sha256=KuSxhVgPuUGoYWphJig4POcTAIUNLUj8vOx-cqQFMj8,1081
+datajunction-0.0.1a10.dist-info/RECORD,,
