@@ -1,0 +1,11 @@
+acl_anthology/__init__.py,sha256=oWhNet4rxRhicS8Bn69VnH2hNhwaZ5Jv7wib6XZNhPg,653
+acl_anthology/anthology.py,sha256=VRjlD3Wu_01POOXdgCRs2cBoT4wZS7OJo7gly4-lLDw,970
+acl_anthology/logging.py,sha256=rN8CiDdHoNAyMW0g7fo8k0GqTgteFx-qByy7HpWVnM0,818
+acl_anthology/papers/__init__.py,sha256=RSH2uKOn8RyxYbBV3dKelzjJYvWbqWg6V6wsn0UK3r4,650
+acl_anthology/papers/index.py,sha256=cOQNE1xd3pCwuLsR5RitsZJy3OrpiD1gsBL-MFK7CA8,1670
+acl_anthology/utils.py,sha256=AcvToxVcsaofWg9XRUSGu4BnR2FpsR0nv6FT7xE2-ic,3391
+acl_anthology_py-0.1.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+acl_anthology_py-0.1.0.dist-info/LICENSE.header,sha256=cwFNe1W4aXvlUJvZbuewWrOCKybngTLgHlNHbM60K50,577
+acl_anthology_py-0.1.0.dist-info/METADATA,sha256=ToOikUgXSj13cQJWZAlVDzeEkMcPpKZx97PyFodOClM,2666
+acl_anthology_py-0.1.0.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+acl_anthology_py-0.1.0.dist-info/RECORD,,
