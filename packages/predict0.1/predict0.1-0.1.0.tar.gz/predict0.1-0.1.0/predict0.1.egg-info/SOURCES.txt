@@ -1,0 +1,14 @@
+LICENSE.txt
+README.txt
+setup.cfg
+setup.py
+predict/__init__.py
+predict/layers.py
+predict/model.py
+predict/predict.py
+predict/utils.py
+predict/测试.py
+predict0.1.egg-info/PKG-INFO
+predict0.1.egg-info/SOURCES.txt
+predict0.1.egg-info/dependency_links.txt
+predict0.1.egg-info/top_level.txt
