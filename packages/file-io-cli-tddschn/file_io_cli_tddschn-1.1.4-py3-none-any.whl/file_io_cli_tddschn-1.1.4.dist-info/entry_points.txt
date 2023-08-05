@@ -1,0 +1,4 @@
+[console_scripts]
+file.io=file_io_cli_tddschn.cli:main_sync
+file.io-cli=file_io_cli_tddschn.cli:main_sync
+
