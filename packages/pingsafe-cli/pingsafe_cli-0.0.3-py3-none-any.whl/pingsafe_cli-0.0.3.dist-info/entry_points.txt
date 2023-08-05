@@ -1,0 +1,4 @@
+[console_scripts]
+pingsafe-cli=pingsafe_cli.scanner.cli.main:start
+pre-build=pre_build.build_script:main
+
