@@ -1,0 +1,15 @@
+sta2stac/__init__.py,sha256=T84Ud0iTeqAUPIIQWCwQtxm8TqDwjOX6g0mM49_hnA4,731
+sta2stac/_version.py,sha256=JDzMwvAe11gCQeAFtRCkdVFOIQA1OOz23fwCgcqX4Bc,496
+sta2stac/cli.py,sha256=ySq7ss5Qm8xsrelpsydXxNhZceDE9CX5LwaI28BBWmU,402
+sta2stac/config_pgstac.py,sha256=c2keCWUeePAbx5-N-DirLS8FySwZ8w7lBWNnXIhZ4vM,1029
+sta2stac/constants.py,sha256=G4yOXVPX5HU2zKa6zZ37h8lyZsZk2EAJ5aRfXZkIwiE,353
+sta2stac/funcs.py,sha256=sFDYoabiMRIDg6aZRTT6CUCfHjUULhLl9fbBF5ixbfQ,2072
+sta2stac/sta2stac.py,sha256=SrSLDe29tkA8-eZgpArPRVvM_0WXGehwYDRZT-dAVpg,13355
+tests/__init__.py,sha256=qXXxP_pxDlJUXGZ1PEib0I9UwbFNcdTX5z8sgXIfIHU,40
+tests/test_frost2stac.py,sha256=LVfxR1vYt9Dvhh45T3qHUYYthHi76MgUl8urAfwNJNE,996
+STA2STAC-0.76.dist-info/AUTHORS.rst,sha256=v5n9XBBJCQyNzhFRH3tSTr-O0ncS8ppwIcFVXADf00w,168
+STA2STAC-0.76.dist-info/LICENSE,sha256=GtrUPJchKDW7AaS-sGMqxKcF9vRbqHIjVRcpxmljiCo,13807
+STA2STAC-0.76.dist-info/METADATA,sha256=YnS2Z_8VpYotcu1A4hOMRR5lx5pxuIE-TvGCnKVbYt4,4928
+STA2STAC-0.76.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+STA2STAC-0.76.dist-info/top_level.txt,sha256=ZrJohCm8QCaXIzcx7Vc6ljGr9jV6cjzi8cfqjUgs3lw,15
+STA2STAC-0.76.dist-info/RECORD,,
