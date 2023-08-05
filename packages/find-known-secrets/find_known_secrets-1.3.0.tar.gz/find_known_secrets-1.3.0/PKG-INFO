@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: find-known-secrets
+Version: 1.3.0
+Summary: Lossy python to markdown serializer
+Home-page: https://github.com/matthewdeanmartin/find_known_secrets
+License: MIT
+Keywords: secrets
+Author: Matthew Martin
+Author-email: matthewdeanmartin@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: colorama
+Requires-Dist: docopt
+Requires-Dist: tabulate
+Project-URL: Bug Tracker, https://github.com/matthewdeanmartin/find_known_secrets/issues
+Project-URL: Change Log, https://github.com/matthewdeanmartin/find_known_secrets/blob/main/CHANGES.md
+Project-URL: Documentation, https://github.com/matthewdeanmartin/find_known_secrets
+Project-URL: Repository, https://github.com/matthewdeanmartin/find_known_secrets
+Description-Content-Type: text/markdown
+
+# find_known_secrets
+Scan for known secrets in your source code before you check in
+
+badges
+------
+
+![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/pypi/find-known-secrets) [![Downloads](https://pepy.tech/badge/find_known_secrets/month)](https://pepy.tech/project/find-known-secrets/month)
+
+Three Ways to Detect Secrets
+----------
+Pattern detection - use grep to find words like "password". git-secrets does this as well as pylint.
+
+High entropy detection - detect-secrets does this.
+
+Search for known secrets - Some secrets are found in conventional locations, such as AWS keys. They are typically key value pairs. As far as I known, this is a novel approach as of July 2018. So I wrote one.
+
+All three approaches have different failure profiles.
+
