@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+imagenet_w/__init__.py
+imagenet_w/watermark_transform.py
+imagenet_w.egg-info/PKG-INFO
+imagenet_w.egg-info/SOURCES.txt
+imagenet_w.egg-info/dependency_links.txt
+imagenet_w.egg-info/requires.txt
+imagenet_w.egg-info/top_level.txt
+imagenet_w.egg-info/zip-safe
+imagenet_w/fonts/SourceHanSerifSC-ExtraLight.otf
