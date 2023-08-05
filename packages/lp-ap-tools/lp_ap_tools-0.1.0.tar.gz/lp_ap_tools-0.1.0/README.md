@@ -1,0 +1,1 @@
+A simple python wrapper for generating LivePublication RO-crates during the execution of Globus Action Providers. 
