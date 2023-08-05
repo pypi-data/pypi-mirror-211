@@ -1,0 +1,225 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+statml/__init__.py
+statml/playchat.py
+statml/stepwise.py
+statml.egg-info/PKG-INFO
+statml.egg-info/SOURCES.txt
+statml.egg-info/dependency_links.txt
+statml.egg-info/top_level.txt
+statml/data/one/2_datahandling/Ch2-10.ipynb
+statml/data/one/2_datahandling/Ch2-11.ipynb
+statml/data/one/2_datahandling/Ch2-2.ipynb
+statml/data/one/2_datahandling/Ch2-3.ipynb
+statml/data/one/2_datahandling/Ch2-4.ipynb
+statml/data/one/2_datahandling/Ch2-5.ipynb
+statml/data/one/2_datahandling/Ch2-6.ipynb
+statml/data/one/2_datahandling/Ch2-7.ipynb
+statml/data/one/2_datahandling/Ch2-8,9.ipynb
+statml/data/one/3_eda/Ch3.ipynb
+statml/data/one/4_preprocessing/Ch 4.ipynb
+statml/data/one/5_mrprocessing/5_4_testing.ipynb
+statml/data/one/5_mrprocessing/5_class.ipynb
+statml/data/one/5_mrprocessing/5_reg.ipynb
+statml/data/one/6_mr/6_10_nivebasian.ipynb
+statml/data/one/6_mr/6_1_simplereg.ipynb
+statml/data/one/6_mr/6_2_poly.ipynb
+statml/data/one/6_mr/6_3_multi.ipynb
+statml/data/one/6_mr/6_4_log.ipynb
+statml/data/one/6_mr/6_6_svm.ipynb
+statml/data/one/6_mr/6_7_knn.ipynb
+statml/data/one/6_mr/6_8_ds.ipynb
+statml/data/one/6_mr/6_9_ansble.ipynb
+statml/data/one/7_stats/7_2_ttest.ipynb
+statml/data/one/7_stats/7_3_ANOVA.ipynb
+statml/data/one/7_stats/7_4_cross.ipynb
+statml/data/one/7_stats/7_5_reg.ipynb
+statml/data/one/7_stats/7_6_custer.ipynb
+statml/data/one/7_stats/7_7_same.ipynb
+statml/data/one/7_stats/7_8_time.ipynb
+statml/data/one/8_training/1_mr.ipynb
+statml/data/one/8_training/1_stat.ipynb
+statml/data/one/8_training/2_mr.ipynb
+statml/data/one/8_training/2_stat.ipynb
+statml/data/one/8_training/3_mrstat.ipynb
+statml/data/one/8_training/4_basian.ipynb
+statml/data/one/8_training/4_cross.ipynb
+statml/data/one/8_training/4_defect.ipynb
+statml/data/one/8_training/4_eda.ipynb
+statml/data/one/8_training/4_price.ipynb
+statml/data/one/8_training/4_ttest.ipynb
+statml/data/one/8_training/5_5.ipynb
+statml/data/one/8_training/5_6.ipynb
+statml/data/one/8_training/5_7.ipynb
+statml/data/one/8_training/5_8.ipynb
+statml/data/one/8_training/5_9.ipynb
+statml/data/one/8_training/5_eda.ipynb
+statml/data/one/8_training/student_data.csv
+statml/data/one/data/26_problem1.csv
+statml/data/one/data/26_problem4.csv
+statml/data/one/data/26_problem6.csv
+statml/data/one/data/26_problem7.csv
+statml/data/one/data/27_problem.csv
+statml/data/one/data/27_problem1.csv
+statml/data/one/data/27_problem7.csv
+statml/data/one/data/27_problem8.csv
+statml/data/one/data/27_problem9.csv
+statml/data/one/data/CarPrice_Assignment.csv
+statml/data/one/data/Cars93.csv
+statml/data/one/data/Skyserver.csv
+statml/data/one/data/USArrests.csv
+statml/data/one/data/arima_data.csv
+statml/data/one/data/avocado.csv
+statml/data/one/data/bodyPerformance.csv
+statml/data/one/data/breast-cancer.csv
+statml/data/one/data/cats.csv
+statml/data/one/data/cereal.csv
+statml/data/one/data/classification.csv
+statml/data/one/data/credit_final.csv
+statml/data/one/data/diabetes.csv
+statml/data/one/data/diabetes_for_test.csv
+statml/data/one/data/groceries.csv
+statml/data/one/data/hotel_bookings.csv
+statml/data/one/data/indian_liver_patient.csv
+statml/data/one/data/insurance.csv
+statml/data/one/data/iris.csv
+statml/data/one/data/kc_house_data.csv
+statml/data/one/data/lot_quality.csv
+statml/data/one/data/metalicity.csv
+statml/data/one/data/mtcars.csv
+statml/data/one/data/pre_student.csv
+statml/data/one/data/seoul_corona19.csv
+statml/data/one/data/spam.csv
+statml/data/one/data/student-mat.csv
+statml/data/one/data/student-por.csv
+statml/data/one/data/student_data.csv
+statml/data/one/data/student_data_2.csv
+statml/data/one/data/titanic.csv
+statml/data/two/.gitignore
+statml/data/two/02_File Open Practice.ipynb
+statml/data/two/03_Python_기초정리.ipynb
+statml/data/two/04_EDA+시각화.ipynb
+statml/data/two/05_CDA.ipynb
+statml/data/two/06_통계분석_1.ipynb
+statml/data/two/06_통계분석_2.ipynb
+statml/data/two/07_기계학습_1.ipynb
+statml/data/two/07_기계학습_2_군집화, NN.ipynb
+statml/data/two/07_기계학습_3_텍스트마이닝.ipynb
+statml/data/two/07_기계학습_4_텍스트마이닝(데이터에듀 모의고사).ipynb
+statml/data/two/08_데이터에듀_모의고사(정형데이터, 통계분석).ipynb
+statml/data/two/11_추가내용_1.ipynb
+statml/data/two/11_추가내용_3.ipynb
+statml/data/two/20_시나리오_리스트.txt
+statml/data/two/20_시나리오_스크립트_분류.ipynb
+statml/data/two/20_시나리오_스크립트_시계열.ipynb
+statml/data/two/20_시나리오_스크립트_통계회귀.ipynb
+statml/data/two/20_시나리오_스크립트_회귀.ipynb
+statml/data/two/21_연관분석 정리_인쇄용.ipynb
+statml/data/two/40_시나리오_분류_스크립트.ipynb
+statml/data/two/40_시나리오_시계열(SARIMA)_스크립트.ipynb
+statml/data/two/40_시나리오_회귀_스크립트.ipynb
+statml/data/two/41_Tensorflow_classification.ipynb
+statml/data/two/41_Tensorflow_regression.ipynb
+statml/data/two/41_Tensorflow_rnn.ipynb
+statml/data/two/41_Tensorflow_time_series.ipynb
+statml/data/two/99_추가내용_텍스트마이닝.ipynb
+statml/data/two/dicts.txt
+statml/data/two/taegyo.txt
+statml/data/two/모의고사 1.ipynb
+statml/data/two/모의고사 2.ipynb
+statml/data/two/모의고사 3.ipynb
+statml/data/two/모의고사 4.ipynb
+statml/data/two/빈도분포분석_범주형.csv
+statml/data/two/빈도분포분석_연속형.csv
+statml/data/two/.ipynb_checkpoints/02_File Open Practice-checkpoint.ipynb
+statml/data/two/.ipynb_checkpoints/03_Python_기초정리-checkpoint.ipynb
+statml/data/two/.ipynb_checkpoints/04_EDA+시각화-checkpoint.ipynb
+statml/data/two/.ipynb_checkpoints/04_EDA-checkpoint.ipynb
+statml/data/two/.ipynb_checkpoints/05_CDA-checkpoint.ipynb
+statml/data/two/.ipynb_checkpoints/06_통계분석_1(빈도,분포-checkpoint.ipynb
+statml/data/two/.ipynb_checkpoints/06_통계분석_1-checkpoint.ipynb
+statml/data/two/.ipynb_checkpoints/06_통계분석_2-checkpoint.ipynb
+statml/data/two/.ipynb_checkpoints/07_기계학습_1-checkpoint.ipynb
+statml/data/two/.ipynb_checkpoints/07_기계학습_2_군집화, NN-checkpoint.ipynb
+statml/data/two/.ipynb_checkpoints/07_기계학습_2_군집화,텍스트,NN-checkpoint.ipynb
+statml/data/two/.ipynb_checkpoints/07_기계학습_3_텍스트마이닝-checkpoint.ipynb
+statml/data/two/.ipynb_checkpoints/07_기계학습_4_텍스트마이닝(데이터에듀 모의고사)-checkpoint.ipynb
+statml/data/two/.ipynb_checkpoints/08_데이터에듀_모의고사(정형데이터, 통계분석)-checkpoint.ipynb
+statml/data/two/.ipynb_checkpoints/11_추가내용_1-checkpoint.ipynb
+statml/data/two/.ipynb_checkpoints/20_시나리오_스크립트-checkpoint.ipynb
+statml/data/two/.ipynb_checkpoints/20_시나리오_스크립트_분류-checkpoint.ipynb
+statml/data/two/.ipynb_checkpoints/20_시나리오_스크립트_시계열-checkpoint.ipynb
+statml/data/two/.ipynb_checkpoints/20_시나리오_스크립트_시계열_SARIMA-checkpoint.ipynb
+statml/data/two/.ipynb_checkpoints/20_시나리오_스크립트_통계회귀-checkpoint.ipynb
+statml/data/two/.ipynb_checkpoints/20_시나리오_스크립트_회귀-checkpoint.ipynb
+statml/data/two/.ipynb_checkpoints/21_연관분석 정리_인쇄용-checkpoint.ipynb
+statml/data/two/.ipynb_checkpoints/6.SNA-checkpoint.ipynb
+statml/data/two/.ipynb_checkpoints/99_추가내용_텍스트마이닝-checkpoint.ipynb
+statml/data/two/.ipynb_checkpoints/모의고사 1-checkpoint.ipynb
+statml/data/two/.ipynb_checkpoints/모의고사 2-checkpoint.ipynb
+statml/data/two/.ipynb_checkpoints/모의고사 3-checkpoint.ipynb
+statml/data/two/.ipynb_checkpoints/모의고사 4-checkpoint.ipynb
+statml/data/two/.ipynb_checkpoints/시험준비_연습장-checkpoint.ipynb
+statml/data/two/.ipynb_checkpoints/연관성분석_simple-checkpoint.ipynb
+statml/data/two/11_추가내용_3/time-series-analysis-master/1.Basics/Basic Statistic for Time Series Analysis.ipynb
+statml/data/two/11_추가내용_3/time-series-analysis-master/1.Basics/co2_dataset.csv
+statml/data/two/11_추가내용_3/time-series-analysis-master/1.Basics/shampoo.csv
+statml/data/two/11_추가내용_3/time-series-analysis-master/2. Basic Modelling/Autoregressive Process - Time Series.ipynb
+statml/data/two/11_추가내용_3/time-series-analysis-master/2. Basic Modelling/Basic Time Series Modelling.ipynb
+statml/data/two/11_추가내용_3/time-series-analysis-master/Advanced modelling/ARMA and ARIMA Models.ipynb
+statml/data/two/11_추가내용_3/time-series-analysis-master/Advanced modelling/SARIMA.ipynb
+statml/data/two/11_추가내용_3/time-series-analysis-master/Advanced modelling/.ipynb_checkpoints/SARIMA-checkpoint.ipynb
+statml/data/two/11_추가내용_3/time-series-analysis-master/data/co2_dataset.csv
+statml/data/two/11_추가내용_3/time-series-analysis-master/data/jj.csv
+statml/data/two/11_추가내용_3/time-series-analysis-master/data/shampoo.csv
+statml/data/two/data/19_py_survey.csv
+statml/data/two/data/19_py_survey_description.csv
+statml/data/two/data/1_newline.txt
+statml/data/two/data/2_newline_with_label.txt
+statml/data/two/data/3_tsv.txt
+statml/data/two/data/4_wierd_separator.txt
+statml/data/two/data/5_only_commas.txt
+statml/data/two/data/6_15data.txt
+statml/data/two/data/7_zero.txt
+statml/data/two/data/8_zero_with_garbage.txt
+statml/data/two/data/9_ade_sales.csv
+statml/data/two/data/Admission.csv
+statml/data/two/data/AirPassengers.csv
+statml/data/two/data/Carseats.csv
+statml/data/two/data/PlantGrowth.csv
+statml/data/two/data/README.txt
+statml/data/two/data/SteveJobs.txt
+statml/data/two/data/ToothGrowth.csv
+statml/data/two/data/ade_sales.csv
+statml/data/two/data/airquality.csv
+statml/data/two/data/bike_marketing.csv
+statml/data/two/data/bikeshare.csv
+statml/data/two/data/cars.csv
+statml/data/two/data/crab.csv
+statml/data/two/data/housetasks.txt
+statml/data/two/data/instagram_태교여행.txt
+statml/data/two/data/iris.csv
+statml/data/two/data/jj.csv
+statml/data/two/data/kobe.csv
+statml/data/two/data/links.csv
+statml/data/two/data/lotto.csv
+statml/data/two/data/movies.csv
+statml/data/two/data/new_사전.txt
+statml/data/two/data/poisons.csv
+statml/data/two/data/ratings.csv
+statml/data/two/data/ratings_noh.csv
+statml/data/two/data/relay-foods.xlsx
+statml/data/two/data/tags.csv
+statml/data/two/data/titanic.csv
+statml/data/two/data/titanic_simple.csv
+statml/data/two/data/weatherAUS.csv
+statml/data/two/data/공구 블로그 댓글.txt
+statml/data/two/data/기생충사전.txt
+statml/data/two/data/사전.txt
+statml/data/two/data/연설문.txt
+statml/data/two/data/영화 기생충_review.txt
+statml/data/two/data/영화 기생충_사전.txt
+statml/data/two/data/태교여행사전.txt
