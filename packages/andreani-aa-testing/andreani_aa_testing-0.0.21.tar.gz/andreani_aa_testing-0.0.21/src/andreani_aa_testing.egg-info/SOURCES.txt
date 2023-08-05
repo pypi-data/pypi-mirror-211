@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/aa_testing/__init__.py
+src/aa_testing/testing.py
+src/andreani_aa_testing.egg-info/PKG-INFO
+src/andreani_aa_testing.egg-info/SOURCES.txt
+src/andreani_aa_testing.egg-info/dependency_links.txt
+src/andreani_aa_testing.egg-info/top_level.txt
