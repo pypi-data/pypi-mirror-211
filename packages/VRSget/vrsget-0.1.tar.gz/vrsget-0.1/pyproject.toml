@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "VRSget"
+version = "0.1"
+authors = [
+  { name = "Antonabi", email = "aeusserst_sirenen_0l@icloud.com" }
+]
+
+description = "Eine kleine Library, um Informationen vom VRS (Verkehrsverbund-Rhein-Sieg) zu erhalten."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Antonabi/VRSget"
+"Bug Tracker" = "https://github.com/Antonabi/VRSget/issues"

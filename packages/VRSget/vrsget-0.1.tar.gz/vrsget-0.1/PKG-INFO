@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: VRSget
+Version: 0.1
+Summary: Eine kleine Library, um Informationen vom VRS (Verkehrsverbund-Rhein-Sieg) zu erhalten.
+Project-URL: Homepage, https://github.com/Antonabi/VRSget
+Project-URL: Bug Tracker, https://github.com/Antonabi/VRSget/issues
+Author-email: Antonabi <aeusserst_sirenen_0l@icloud.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
