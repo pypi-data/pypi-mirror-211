@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: lcextension
+Version: 1.0.0
+Summary: Reference implementation for LimaCharlie.io extensions.
+Home-page: https://limacharlie.io
+Author: Maxime Lamothe-Brassard ( Refraction Point, Inc )
+Author-email: maxime@refractionpoint.com
+License: Apache v2
+
+Reference implementation for LimaCharlie.io extensions, allowing anyone to extend and automate extensions around LimaCharlie.
