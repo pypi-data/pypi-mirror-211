@@ -1,0 +1,3 @@
+[console_scripts]
+download=edu_segmentation.download:download_models
+
