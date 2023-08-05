@@ -1,0 +1,2 @@
+[console_scripts]
+ssh-dashboard = sshdashboard.main:run_program

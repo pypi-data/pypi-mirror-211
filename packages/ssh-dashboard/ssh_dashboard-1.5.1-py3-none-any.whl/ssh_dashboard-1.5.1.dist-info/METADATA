@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: ssh-dashboard
+Version: 1.5.1
+Summary: Agentless Linux host monitoring over standard SSH connections.
+Author-email: Christoph Stein <christoph@oss.impulse9.de>
+License: MIT
+Project-URL: homepage, https://gitlab.com/s7one/ssh-dashboard
+Project-URL: documentation, https://s7one.gitlab.io/ssh-dashboard/
+Project-URL: repository, https://gitlab.com/s7one/ssh-dashboard
+Keywords: SSH,Linux,Monitoring,Host monitoring,Agentless
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Framework :: Flask
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: bcrypt (==4.0.1)
+Requires-Dist: blinker (==1.6.2)
+Requires-Dist: certifi (==2023.5.7)
+Requires-Dist: cffi (==1.15.1)
+Requires-Dist: click (==8.1.3)
+Requires-Dist: colorama (==0.4.6)
+Requires-Dist: cryptography (==40.0.2)
+Requires-Dist: Flask (==2.3.2)
+Requires-Dist: gevent (==22.10.2)
+Requires-Dist: greenlet (==2.0.2)
+Requires-Dist: importlib-metadata (==6.6.0)
+Requires-Dist: influxdb-client (==1.21.0)
+Requires-Dist: itsdangerous (==2.1.2)
+Requires-Dist: Jinja2 (==3.1.2)
+Requires-Dist: MarkupSafe (==2.1.2)
+Requires-Dist: paho-mqtt (==1.6.1)
+Requires-Dist: paramiko (==3.2.0)
+Requires-Dist: pycparser (==2.21)
+Requires-Dist: PyNaCl (==1.5.0)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: pytz (==2023.3)
+Requires-Dist: Rx (==3.2.0)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: urllib3 (==2.0.2)
+Requires-Dist: Werkzeug (==2.3.4)
+Requires-Dist: zipp (==3.15.0)
+Requires-Dist: zope.event (==4.6)
+Requires-Dist: zope.interface (==6.0)
+
+# About SSH-Dashboard
+
+SSH-Dashoard is an easy to set-up, basic Linux host monitoring solution which works without the need to install any additional software on the hosts. All host metrics are collected over a non-superuser ssh account.
+
+Host status information are then provided via
+
+ * Websites and/or REST API from an integrated webserver
+ * Published to a MQTT broker
+ * Written to an InfluxDb server
+
+For more details, see the [documentation](https://s7one.gitlab.io/ssh-dashboard/)

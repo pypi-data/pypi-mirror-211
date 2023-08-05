@@ -1,0 +1,67 @@
+html, body, table {
+    font-family: sans-serif;
+  }
+  table {
+    width:100%;
+    border: 1px hidden grey;
+    margin-top: 1%;
+    border-collapse: collapse;
+    font-size: large;
+    table-layout: fixed;
+  }
+  th, td {
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 15px;
+    text-align: left;
+  }
+  #t01 tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  #t01 tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  #t01 tr:hover {
+    background-color: #4BBDFB;
+  }
+  #t01 th {
+    background-color: grey;
+    color: white;
+    transition: color 0.25s linear;
+  }
+  #t02 tr:hover {
+    background-color: #f2f2f2;
+  }
+  .headline{
+    color: grey;
+  }
+  .headerruler{
+    transition: color 0.25s linear;
+    color: grey;
+  }
+  .footer {
+     color:grey;
+     left: 0;
+     bottom: 0;
+     text-align: left;
+     font-size: small;
+  }
+  .foldablecontent {
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+  .widebutton {
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: large;
+    padding: 15px;
+  }
+  .widebutton:hover {
+    background-color: rgb(78, 78, 78);
+  }

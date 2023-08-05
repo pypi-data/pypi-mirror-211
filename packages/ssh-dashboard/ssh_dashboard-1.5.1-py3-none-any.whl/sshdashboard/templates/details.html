@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<script type="text/javascript" src="/js/common.js"></script>
+	<title>Host: {{name}}</title>
+</head>
+<body>
+	<h1 class="headline" id="id_host"><p>Host:</p></h1>
+<hr class="headerruler" id="id_headerruler"></hr>
+    <div><table id="t01">
+   		<tr><td>Uptime</td><td id="id_uptime"></td></tr>
+  		<tr><td>Last contact</td><td id="id_lastcontact"></td></tr>
+  		<tr><td>System load</td><td id="id_sysload"></td></tr>
+  		<tr><td>Memory (available / total)</td><td id="id_memory"></td></tr>
+  		<tr><td>Swap (available / total)</td><td id="id_swap"></td></tr>
+  		<tr><td>Rootfs (available / total)</td><td id="id_rootfs"></td></tr>
+  		<tr><td>Rootfs partition</td><td id="id_rootfspart"></td></tr>
+   		<tr><td>CPU vendor</td><td id="id_cpuvendor"></td></tr>
+   		<tr><td>CPU model</td><td id="id_cpumodel"></td></tr>
+   		<tr><td>CPU threads</td><td id="id_cpucores"></td></tr>
+   		<tr><td>OS type</td><td id="id_ostype"></td></tr>
+   		<tr><td>OS version</td><td id="id_osversion"></td></tr>
+		<tr><td id="id_customlabel"></td><td id="id_custominfo"> </td></tr>
+	</div></table>
+	<button type="button" id="id_logbutton" class="widebutton" onclick="ToggleLogTable();">+ Show Log</button>
+	<div class="foldablecontent" id="id_logtable"><table id="t02"></table></div>
+<hr class="headerruler" id="id_headerruler"></hr>
+<script>
+	var ToggleLogTable = function() {
+		ToggleFoldableContentWithButton("id_logtable", "id_logbutton", "+ Show Log", "- Hide Log")
+	}
+
+	var IntervalId = window.setInterval(function() { DisplayHostDetailMetrics(); }, 5000);
+
+	var DisplayHostDetailMetrics = function() {
+	  site_url_base = window.location.protocol + "//" + window.location.hostname + ":" + window.location.port + window.location.pathname
+
+	  // Table 1 - Host metrics
+	  fetch(site_url_base + "/../../api/hosts/" + encodeURIComponent( "{{id}}" ))
+	    .then(res => res.text())
+	    .then((out) => {
+	      let currenthostmetrics = JSON.parse(out);
+			// Prepare / format some of the metrics
+			  if (currenthostmetrics.HostDown)
+			{
+				// Host is down
+				uptime = "<span style='color: red'>no connection</span>";
+				sysload = ""
+				memory = ""
+				swap = ""
+				rootfs = ""
+				cpucores = ""
+			}
+			else
+			{
+				// Host is up
+				uptime = FormatUptime(currenthostmetrics.Uptime_s)
+				//system load
+				sysload = currenthostmetrics.SysLoad_1min.toFixed(2) + " / " + currenthostmetrics.SysLoad_5min.toFixed(2)  + " / " + currenthostmetrics.SysLoad_15min.toFixed(2)
+				if (currenthostmetrics.SysLoadWarning_1min) sysload = "<span style='color: red'>" + sysload + "</span>"
+				//memory
+				memory = FormatMemory(currenthostmetrics.MemAvailable_kb) + " / " + FormatMemory(currenthostmetrics.MemTotal_kb) + " (" + currenthostmetrics.MemAvailable_percent.toString() + "% available)"
+				if (currenthostmetrics.MemLimitWarning)	memory = "<span style='color: red'>" + memory + "</span>"
+				//swap
+				swap = FormatMemory(currenthostmetrics.SwapFree_kb) + " / " + FormatMemory(currenthostmetrics.SwapTotal_kb) + " (" + currenthostmetrics.SwapFree_percent.toString() + "% available)"
+				if (currenthostmetrics.SwapLimitWarning) swap = "<span style='color: red'>" + swap + "</span>"
+				//rootfs
+				rootfs = FormatMemory(currenthostmetrics.RootFSAvailable_kb) + " / " + FormatMemory(currenthostmetrics.RootFSTotal_kb)  + " (" + currenthostmetrics.RootFSAvailable_percent.toString() + "% available)"
+				if (currenthostmetrics.RootFsLimitWarning) rootfs = "<span style='color: red'>" + rootfs + "</span>"
+				//cpu
+				cpucores = currenthostmetrics.NumCPU.toString()
+			}
+			// timestamp of last contact - shown regardless of host up-/down state
+			timestamp = FormatTimestamp(currenthostmetrics.Timestamp)
+
+			//show metrics
+			id_host.innerHTML 			= "Host: " + currenthostmetrics.Name
+			id_uptime.innerHTML 		= uptime
+			id_lastcontact.innerHTML	= timestamp
+			id_sysload.innerHTML		= sysload
+			id_cpumodel.innerHTML		= currenthostmetrics.CPUModel
+			id_cpuvendor.innerHTML		= currenthostmetrics.CPUVendor
+			id_cpucores.innerHTML		= cpucores
+			id_ostype.innerHTML			= currenthostmetrics.OSType
+			id_osversion.innerHTML		= currenthostmetrics.OSVersion
+			id_memory.innerHTML			= memory
+			id_swap.innerHTML			= swap
+			id_rootfs.innerHTML			= rootfs
+			id_rootfspart.innerHTML		= currenthostmetrics.RootFSPartition
+			//id_customlabel.innerHTML 	= currenthostmetrics.CustomLabel
+			//id_custominfo.innerHTML	= currenthostmetrics.CustomInfo
+		})
+	    .catch(err => {
+						console.error(err);
+						id_host.innerHTML = "<span style='color: red'>No connection</span>"
+					  });
+
+
+		// Table 2 -  Event log
+		//var table = "<tr><th>Time</th><th>Message</th></tr>"
+		var table = ""
+	    fetch(site_url_base + "/../../api/logs/hosts/" + encodeURIComponent( "{{id}}" ))
+	       .then(res => res.text())
+	       .then((out) => {
+	         let jsonData = JSON.parse(out);
+
+			 for(var i in jsonData) {
+				 event = jsonData[i];
+		  		 table += FormatLogEvent(event)
+		  	}
+		t02.innerHTML = table
+		})
+	    .catch(err => {
+						console.error(err);
+						t02.innerHTML = table
+					  });
+	}
+
+	DisplayHostDetailMetrics();
+</script>
+  	<div class="footer"> <p>SSH-Dashboard {{appversion}}</p> </div>
+</body>
+</html>
