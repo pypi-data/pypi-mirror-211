@@ -1,0 +1,8 @@
+README.md
+generate_invitation_codes.py
+setup.py
+generate_invitation_codes.egg-info/PKG-INFO
+generate_invitation_codes.egg-info/SOURCES.txt
+generate_invitation_codes.egg-info/dependency_links.txt
+generate_invitation_codes.egg-info/entry_points.txt
+generate_invitation_codes.egg-info/top_level.txt
