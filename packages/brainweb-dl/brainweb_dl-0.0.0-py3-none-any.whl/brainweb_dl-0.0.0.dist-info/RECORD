@@ -1,0 +1,12 @@
+brainweb_dl/__init__.py,sha256=E8YyotjULlAYV1lgYQEZB-MmndE1t5xotbbGvtks5M4,278
+brainweb_dl/_brainweb.py,sha256=kkNv7St3WQ5uSu4nwH3yTyHv-m_4Jwgci4fPSjHuGq0,11904
+brainweb_dl/cli.py,sha256=1Yc9Skhp4kqh--dWtxXGFWtDT42w9TMXIXUhviCO_OA,2580
+brainweb_dl/mri.py,sha256=uAXz8TpigAesT5SttSwynCfgT097NVCYKhMIhf-8aek,2747
+brainweb_dl/data/brainweb1_tissues.csv,sha256=di5joNGlSFgueLgxA6MLpjkf1VUBme9V3to6WIbekZM,283
+brainweb_dl/data/brainweb20_tissues.csv,sha256=HGnX7H58Kxw4cHM6pAymNmbPoHqE1wemSlkJ_L_grEM,501
+brainweb_dl-0.0.0.dist-info/LICENSE,sha256=54A0-aMN_VGWVzQfgeazYgKbXseUqTgH9AMf5LTU-Vc,1077
+brainweb_dl-0.0.0.dist-info/METADATA,sha256=l9vZmzGopEcnDD4gmd9HOAq93QbXJ_d1hnngtymYd6E,5521
+brainweb_dl-0.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+brainweb_dl-0.0.0.dist-info/entry_points.txt,sha256=G6Xowu4OIjb1qmo_GLNbmNxxsavj93mXYjOGJ1FaIHE,53
+brainweb_dl-0.0.0.dist-info/top_level.txt,sha256=9iR5XkLU_NSYoS_dQC9t0kwT2mDb5Rx2pc-78pQNUlE,12
+brainweb_dl-0.0.0.dist-info/RECORD,,
