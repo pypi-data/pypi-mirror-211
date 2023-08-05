@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+changeCloseManager.egg-info/PKG-INFO
+changeCloseManager.egg-info/SOURCES.txt
+changeCloseManager.egg-info/dependency_links.txt
+changeCloseManager.egg-info/top_level.txt
