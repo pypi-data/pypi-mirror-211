@@ -1,0 +1,4 @@
+include fiction_info_new.txt
+include stopwords_list_new.txt
+include jatool/fiction_info_new.txt
+include jatool/stopwords_list_new.txt
