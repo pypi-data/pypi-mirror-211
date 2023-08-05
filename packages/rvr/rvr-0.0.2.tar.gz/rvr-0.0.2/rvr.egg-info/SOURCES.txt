@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+rvr/__init__.py
+rvr/openvr_api.dll
+rvr/pyrvr.py
+rvr/rvr.dll
+rvr/rvr.py
+rvr/rvr_actions.json
+rvr/rvr_bindings_generic.json
+rvr.egg-info/PKG-INFO
+rvr.egg-info/SOURCES.txt
+rvr.egg-info/dependency_links.txt
+rvr.egg-info/top_level.txt

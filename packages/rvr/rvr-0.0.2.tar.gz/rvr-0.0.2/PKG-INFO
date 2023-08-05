@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: rvr
+Version: 0.0.2
+Summary: A wrapper for RVR.
+Home-page: https://github.com/Aermoss/PyRVR
+Author: Yusuf Rençber
+Author-email: aermoss.0@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PyRVR
+A wrapper for RVR.
