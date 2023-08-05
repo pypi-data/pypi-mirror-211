@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta http-equiv="content-security-policy" content="">
+		<link href="./_app/immutable/assets/0.cdaa43fa.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/2.ec88bf81.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/PaintPolygon.08b3549b.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.dc4cd066.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.8c237fac.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.d791afcf.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/parse.bee59afc.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.2b7d5976.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper.41c905a7.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.2bbf402e.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.375c4cd1.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/2.cb8e4807.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/stores.4b841c19.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+
+
+<main class="min-w-full relative min-h-full"><section class="fixed z-20 bg-[#fafdfe] flex flex-col m-6 rounded-md h-full" style="height: -webkit-fill-available;"><header class="w-full bg-info py-2 px-3 text-white text-lg flex gap-5 items-center flex-row rounded-t-md justify-center border-b"><h2>Segmentation</h2></header>
+
+		<div class="grid grid-cols-8 h-full"><div class="col-span-1 bg-slate-100 flex flex-col items-centergap-3"><button class="btn btn-primary px-2 rounded-none 
+			btn-active
+			"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M9,3L3.36,4.9C3.16,4.97 3,5.15 3,5.38V20.5A0.5,0.5 0 0,0 3.5,21C3.55,21 3.6,21 3.66,20.97L9,18.9L13.16,20.36C13.06,19.92 13,19.46 13,19C13,18.77 13,18.54 13.04,18.3L9,16.9V5L15,7.1V14.56C16.07,13.6 17.47,13 19,13C19.7,13 20.37,13.13 21,13.36V3.5A0.5,0.5 0 0,0 20.5,3H20.34L15,5.1L9,3M18,15V18H15V20H18V23H20V20H23V18H20V15H18Z" fill="currentColor"></path></svg>
+		</button><button class="btn btn-primary px-2 rounded-none 
+			false
+			"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M12,1C7.59,1 4,4.59 4,9C4,14.57 10.96,22.34 11.26,22.67L12,23.5L12.74,22.67C13.04,22.34 20,14.57 20,9C20,4.59 16.41,1 12,1M12,20.47C9.82,17.86 6,12.54 6,9A6,6 0 0,1 12,3A6,6 0 0,1 18,9C18,12.83 13.75,18.36 12,20.47M11.13,14H12.88V15.75H11.13M12,5A3.5,3.5 0 0,0 8.5,8.5H10.25A1.75,1.75 0 0,1 12,6.75A1.75,1.75 0 0,1 13.75,8.5C13.75,10.26 11.13,10.04 11.13,12.88H12.88C12.88,10.91 15.5,10.69 15.5,8.5A3.5,3.5 0 0,0 12,5Z" fill="currentColor"></path></svg>
+		</button></div>
+
+			<div class="col-span-7 p-5 h-full flex flex-col justify-between w-[280px]"><form method="POST"><label type="text" name="newLabel" class="flex"><input type="text" name="newLabel" placeholder="New label" class="input input-bordered w-full rounded-l-md" value="">
+
+		<input id="nativeColorPicker1" type="color" name="newColor" value="#ff8000" class="h-auto">
+
+		<button class="btn btn-secondary rounded-r-md text-white font-bold text-2xl px-2">+</button></label></form>
+
+				<section class="flex flex-1 flex-col items-start w-full gap-9 mt-5"><div class="flex flex-col flex-1 gap-3 w-full"><button class="tab text-[#202124] bg-lightgray w-full justify-between pl-2 pr-0 hover:text-[#2576E8]">Background
+				<div class="w-[65px] h-full" style="background-color: #71706f70;
+					border: 1px solid #71706f90;"></div>
+			</button><button class="tab false w-full justify-between pl-2 pr-0 hover:text-[#2576E8]">Crops
+				<div class="w-[65px] h-full" style="background-color: #eff54270;
+					border: 1px solid #eff54290;"></div>
+			</button><button class="tab false w-full justify-between pl-2 pr-0 hover:text-[#2576E8]">Vegetation
+				<div class="w-[65px] h-full" style="background-color: #48f54270;
+					border: 1px solid #48f54290;"></div>
+			</button><button class="tab false w-full justify-between pl-2 pr-0 hover:text-[#2576E8]">Urban
+				<div class="w-[65px] h-full" style="background-color: #f5424270;
+					border: 1px solid #f5424290;"></div>
+			</button><button class="tab false w-full justify-between pl-2 pr-0 hover:text-[#2576E8]">Water
+				<div class="w-[65px] h-full" style="background-color: #4260f570;
+					border: 1px solid #4260f590;"></div>
+			</button></div></section></div></div></section>
+
+	<section class="w-full h-full"><div id="map" class="svelte-yhv4y9">
+</div></section>
+</main>
+
+
+			
+			<script>
+				{
+					__sveltekit_1norjlf = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {"PUBLIC_API_URL":""}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.dc4cd066.js"),
+						import("./_app/immutable/entry/app.2b7d5976.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
