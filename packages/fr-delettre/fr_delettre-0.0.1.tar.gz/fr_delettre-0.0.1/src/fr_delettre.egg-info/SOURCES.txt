@@ -1,0 +1,8 @@
+LICENSE.md
+pyproject.toml
+src/delettre/__init__.py
+src/delettre/delettre.py
+src/fr_delettre.egg-info/PKG-INFO
+src/fr_delettre.egg-info/SOURCES.txt
+src/fr_delettre.egg-info/dependency_links.txt
+src/fr_delettre.egg-info/top_level.txt
