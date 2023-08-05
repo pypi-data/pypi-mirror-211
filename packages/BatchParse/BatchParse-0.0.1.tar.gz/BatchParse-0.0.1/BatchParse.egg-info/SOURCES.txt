@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+BatchParse/BatchParse.py
+BatchParse/__init__.py
+BatchParse.egg-info/PKG-INFO
+BatchParse.egg-info/SOURCES.txt
+BatchParse.egg-info/dependency_links.txt
+BatchParse.egg-info/requires.txt
+BatchParse.egg-info/top_level.txt
