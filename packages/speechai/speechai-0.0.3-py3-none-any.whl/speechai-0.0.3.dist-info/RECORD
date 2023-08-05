@@ -1,0 +1,17 @@
+speechai/__init__.py,sha256=YW0jvF23L3RH0i3H01i5Q9_eTwa7cN1R8m66noiveqE,44
+speechai/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+speechai/core/speechai.py,sha256=Fq7kOCKc1_dpu6uqJ3Q2PcqkNs1kF0122SyuhziUTvk,879
+speechai/llm/__init__.py,sha256=8cx_5DapsDh-NfrcFOixQdxheCW_Fr35pBfgj_bgsg8,92
+speechai/llm/abstract_llm.py,sha256=4o8SUvXkp9D2C0MmJfKM6t4twfUYIVzSc8zHm0j6l4Y,137
+speechai/llm/cohere.py,sha256=rl8potVKpRU8Rr_fwQ0Wf0TArQagXYLioVoBZ2FUYWo,373
+speechai/llm/openai.py,sha256=KZ_cithkSd05Rf7zkw10jZexKB8MokCD0M25DRp3KtM,449
+speechai/tts/__init__.py,sha256=iGCLAPpw0AuTV66NtseV5pkG6u3y3X1MLPqybuU9Z40,61
+speechai/tts/abstract_tts.py,sha256=rCwBmgcNEW1CgMhdp9oP5ywvoSi0mT4vfwAdbO16FBo,232
+speechai/tts/gtts.py,sha256=9GXIRqJhIeDPFqK2CmIj82SKSzyPva96QCVZjcSxrVk,626
+speechai/utils/__init__.py,sha256=tQ9J6Uynz5lp4cFroiRZYN2n3o6dd3gkBxtIL02Ho38,50
+speechai/utils/directory.py,sha256=LfDHUEzy_Q379cM57swItb-zCCerMCq9OXqMgSsmCfs,402
+speechai/utils/logger.py,sha256=fIhsls9kQYhR45YJy25ZRZrp6dLY5wRm_xJVFi9D2mQ,535
+speechai-0.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+speechai-0.0.3.dist-info/METADATA,sha256=UwY4c9-XLoYX02diA_2xv9xw0jwYuz-1P1tj8Hm8MoY,5467
+speechai-0.0.3.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+speechai-0.0.3.dist-info/RECORD,,
