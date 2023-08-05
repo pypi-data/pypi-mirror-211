@@ -1,0 +1,10 @@
+py_package_test/__init__.py,sha256=1acGmxCj752rxKP5bBb00Th_CHllEIiKeoFQg-drdOA,40
+py_package_test/add.py,sha256=RaHkGz6Kgdem7gBaGMzoPoviNkXdVD7W9L2Cp7_K4R0,33
+py_package_test/sub.py,sha256=HWk6p8N0acyL-MNjpmk-clwDMy-XQbB8KGazxMDSArU,33
+py_package_test/extras/__init__.py,sha256=ae2dA6qND6c35l1Iu-AN6ZgAtnw47exlMDoQueOjYw4,56
+py_package_test/extras/divide.py,sha256=xZZW08o6DDlLnDKbj-eyN2ra7JeD3RYBJFGbiZDnh1E,36
+py_package_test/extras/multiply.py,sha256=P40DVHiM_TglFZsk1FCHGFFBPuhoMEDdDRolFD2ZpRs,38
+py_package_test-0.0.1.dist-info/METADATA,sha256=sNTJmDZzQk3q8NCVd6Y8-mEJswGz-HC9emsAQvw-H3U,524
+py_package_test-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+py_package_test-0.0.1.dist-info/top_level.txt,sha256=l9IzOgG9Z1JfDIDIQtcofDjhp97cclETRJeJ4WyZ1IM,16
+py_package_test-0.0.1.dist-info/RECORD,,
