@@ -1,0 +1,79 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "lamindb"
+requires-python = ">=3.8"
+authors = [{name = "Lamin Labs", email = "laminlabs@gmail.com"}]
+readme = "README.md"
+dynamic = ["version", "description"]
+classifiers = [
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+dependencies = [
+    # Lamin PINNED packages
+    # !!! These packages should ALWAYS be pinned, do not unpin !!!
+    # !!! They cannot be pinned ANYWHERE else !!!
+    "lnschema_core==0.34a5",
+    "lndb_storage==0.3.2",
+    "lndb==0.45a4",
+    # Lamin GREATEREQ packages
+    "nbproject>=0.8.6",
+    "erdiagram>=0.1.1",
+    # others
+    "pyarrow",
+    "typing_extensions!=4.6.0",
+]
+
+[project.urls]
+Home = "https://github.com/laminlabs/lamindb"
+
+[project.optional-dependencies]
+aws = [
+    "lndb_storage[aws]==0.3.2"  # please pin
+]
+gcp = [
+    "lndb_storage[gcp]==0.3.2"  # please pin
+]
+bionty = [
+    "lnschema_bionty==0.18a8",
+]
+biolab = [
+    "lnbase_biolab==0.15.2",
+]
+lamin1 = [
+    "lnschema_lamin1==0.17a3",
+]
+test = [
+    # basic test
+    "pre-commit",
+    "nox",
+    "laminci>=0.3",
+    "pytest>=6.0",
+    "coverage",
+    "pytest-cov",
+    # others
+    "psycopg2-binary",
+    "nbproject_test>=0.3.0",
+]
+
+[project.scripts]
+lamin = "lndb.__main__:main"
+
+[tool.black]
+preview = true
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+    "docs/faq",
+    "docs/guide",
+]
+
+[tool.coverage.run]
+omit = [
+    "lamindb/*",
+]
