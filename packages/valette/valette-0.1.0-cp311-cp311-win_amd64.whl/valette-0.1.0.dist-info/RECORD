@@ -1,0 +1,13 @@
+valette/__init__.py,sha256=wil8mcnQP7FHSDvlIlzXZCivazFTPE4g7mhv5MoU-ZA,156
+valette/dom.py,sha256=KKTVxXXfQuOxgtKEcXAje1JWUw8rvh2FuLrA51AzsO4,3171
+valette/expr.py,sha256=YxyJM3eBOAaGfTYr1Xx2V5x_CGJ5LNbbj7dEqsqueX8,6480
+valette/mesh.py,sha256=bzyj5A0fPqj5Ka3fkubGPgsELL0BIQBO1QAJ4ktZ9no,4236
+valette/valette.cp311-win_amd64.pyd,sha256=MH7PVzJec9bOhngRGKQ1FKcB4z0BiGKHu2Szg0IYSwk,177152
+valette-0.1.0.data/data/README/README.md,sha256=TT29BArzI1mKAit2WJb6jdrgBlBz-syxNgldnWWJ90Y,665
+valette-0.1.0.data/data/licenses/APACHE2,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+valette-0.1.0.data/data/licenses/MIT,sha256=jBMu7f7Rlfn-QCQS4DI-hTe1l7dK5LwkcstRQhWXjTQ,1094
+valette-0.1.0.dist-info/LICENSE,sha256=fTqV5eBpeAZO0_jit8j4Ref9ikBSlHJ8xwj5TLg7gFk,7817
+valette-0.1.0.dist-info/METADATA,sha256=aVdEgpx5KOANDbtuszvmbSjBUS42EazEuFflk6xvatA,1157
+valette-0.1.0.dist-info/WHEEL,sha256=9wvhO-5NhjjD8YmmxAvXTPQXMDOZ50W5vklzeoqFtkM,102
+valette-0.1.0.dist-info/top_level.txt,sha256=OQIsTUqr66qhBAtTm66ulLbplFSGPYavfv5ukvIRlZk,8
+valette-0.1.0.dist-info/RECORD,,
