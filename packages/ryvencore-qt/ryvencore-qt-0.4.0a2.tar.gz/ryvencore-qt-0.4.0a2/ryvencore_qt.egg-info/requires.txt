@@ -1,0 +1,5 @@
+ryvencore==0.4.*
+PySide2
+QtPy
+waiting
+textdistance
