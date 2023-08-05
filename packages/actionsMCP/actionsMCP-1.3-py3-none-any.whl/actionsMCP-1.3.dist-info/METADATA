@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: actionsMCP
+Version: 1.3
+Summary: This package provides the necessary parameters to perform actions on MCP
+Author: brunodev12
+Author-email: bruno.carter.dev@gmail.com
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: websocket-client (==1.4.1)
+
+This package provides the necessary parameters to perform actions on MCP. The code is compiled and can only run on Ubuntu 22.04. In order to use it, you will need to be included in the list of allowed addresses.
