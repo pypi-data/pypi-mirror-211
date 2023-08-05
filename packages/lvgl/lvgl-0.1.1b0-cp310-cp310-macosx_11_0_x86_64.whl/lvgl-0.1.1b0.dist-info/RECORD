@@ -1,0 +1,9 @@
+__lib_lvgl.cpython-310-darwin.so,sha256=djclXvaXKm5-q_tNTwyXKqS50K3ZsiVv4QjLiqmgSzU,4004496
+lvgl/__init__.py,sha256=tNVub9wrGWFz5_3CYGS8A4RdEKKK0R1oVZTF5eyXzdM,1060012
+lvgl/mpy.py,sha256=GHYzxM413CHRZjY6JsVg7tekJs2KOZN07swOQ4Ts7hU,227235
+lvgl/__pycache__/__init__.cpython-310.pyc,sha256=lhgqwdNrO-brHZTdArPUN9GTWNIIhwQed4IqT0hvGN0,764909
+lvgl-0.1.1b0.dist-info/LICENSE,sha256=NogIyhiqdW2xsuuUjseK_yZQClOjbpJTy7Zo_2vOXv0,3063
+lvgl-0.1.1b0.dist-info/METADATA,sha256=BImiZ8drzsAEs5KH-J1T7R2bsFieEbiGFS9Eh1LeM4k,5491
+lvgl-0.1.1b0.dist-info/WHEEL,sha256=tNYyggI0QC5GD4MVHQuiVTUUU_cLi9bibpSukmwhhdM,111
+lvgl-0.1.1b0.dist-info/top_level.txt,sha256=Ag5i6Xkx2ks-xRUopb4PLW9WGSI-zbwM8iMRNgZM200,16
+lvgl-0.1.1b0.dist-info/RECORD,,
