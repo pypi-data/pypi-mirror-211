@@ -1,0 +1,10 @@
+intake_sql/__init__.py,sha256=9lNXszCGMJFzUFHloNAd9kWTaOdhLdEXDsdi_LnVznM,251
+intake_sql/_version.py,sha256=yFHFK4b4vJlJyVsxQZgfOItOW2NZyKiNInD3NLwh5ak,497
+intake_sql/intake_sql.py,sha256=Zk2LbbomeN34vqfxrUHV5021rQQJ8cH0PH0qtaI9viI,11749
+intake_sql/sql_cat.py,sha256=KpIhPzg2kNbGhBMYc9EWOcPA2RN8almegnNPwhP7Ols,3096
+intake_sql-0.4.0.dist-info/LICENSE,sha256=fUH-19QZWQKsVH2vOE1QVACzdzwVgvkNBOePhR9d7AU,1330
+intake_sql-0.4.0.dist-info/METADATA,sha256=04UsRGxSjW-BqqhxiEp_nldmnNJiOeSn6kbKbnQtDac,806
+intake_sql-0.4.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+intake_sql-0.4.0.dist-info/entry_points.txt,sha256=i-R5YhEdnQHjOQcVeJ0tAZKhbYeB5kKQdDZYY7zweuU,211
+intake_sql-0.4.0.dist-info/top_level.txt,sha256=j8mQ7927SLBzVJwQfmUYxJ13H6ixCkmBNw3FiFa30xo,11
+intake_sql-0.4.0.dist-info/RECORD,,

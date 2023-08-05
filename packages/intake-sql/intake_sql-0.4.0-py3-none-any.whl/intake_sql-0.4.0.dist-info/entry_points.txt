@@ -1,0 +1,5 @@
+[intake.drivers]
+sql = intake_sql.intake_sql:SQLSource
+sql_auto = intake_sql.intake_sql:SQLSourceAutoPartition
+sql_cat = intake_sql.sql_cat:SQLCatalog
+sql_manual = intake_sql.intake_sql:SQLSourceManualPartition
