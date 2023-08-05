@@ -1,0 +1,20 @@
+from __future__ import absolute_import
+
+# flake8: noqa
+
+# import apis into api package
+from result_analysis_service.api.catchment_api import CatchmentApi
+from result_analysis_service.api.log_simulation_api import LogSimulationApi
+from result_analysis_service.api.m2_d_api import M2DApi
+from result_analysis_service.api.network_api import NetworkApi
+from result_analysis_service.api.rain_log_api import RainLogApi
+from result_analysis_service.api.river_api import RiverApi
+from result_analysis_service.api.scenario_api import ScenarioApi
+from result_analysis_service.api.urban_cs_result_analysis_api import UrbanCsResultAnalysisApi
+from result_analysis_service.api.urban_flooding_api import UrbanFloodingApi
+from result_analysis_service.api.urban_wd_result_analysis_api import UrbanWdResultAnalysisApi
+from result_analysis_service.api.urban_wd_time_series_api import UrbanWdTimeSeriesApi
+from result_analysis_service.api.wd_test_api import WDTestApi
+from result_analysis_service.api.wq_test_api import WQTestApi
+from result_analysis_service.api.water_hammer_result_analysis_api import WaterHammerResultAnalysisApi
+from result_analysis_service.api.wq_result_analysis_api import WqResultAnalysisApi
