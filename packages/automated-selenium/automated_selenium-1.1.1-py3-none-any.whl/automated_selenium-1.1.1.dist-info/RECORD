@@ -1,0 +1,10 @@
+automated_selenium/__init__.py,sha256=_sZkogh8uyIduktVB6dmqwfYau8lEt6lbSR9GVyVfnA,204
+automated_selenium/drivers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+automated_selenium/drivers/undetected_driver.py,sha256=FNuV0uI92ZtsFQ6fMTbXq3MFBSF4ivM2kwB6YO1KSVg,1009
+automated_selenium/pages/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+automated_selenium/pages/base_page.py,sha256=1rH0ojJqd-7zitxhzRSoVardPAkinTcJEUA7uVj-qug,15383
+automated_selenium/resources/resources.py,sha256=J8gHppFs2BLElaej0NvWMsFbIacAHC3I7hPB5iLZCF4,1175
+automated_selenium-1.1.1.dist-info/LICENSE,sha256=Rzz2U28zKog3cfV59pGa75lcslijib9DczXEcW59lh8,1121
+automated_selenium-1.1.1.dist-info/METADATA,sha256=9Mvwy2okjo1kfPQW9HjsxIjcGEXTebVyYAMPBsB6Uro,10472
+automated_selenium-1.1.1.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+automated_selenium-1.1.1.dist-info/RECORD,,
