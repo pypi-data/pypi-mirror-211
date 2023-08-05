@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+setup.py
+models/FullyConnected.py
+models/__init__.py
+trainkit.egg-info/PKG-INFO
+trainkit.egg-info/SOURCES.txt
+trainkit.egg-info/dependency_links.txt
+trainkit.egg-info/requires.txt
+trainkit.egg-info/top_level.txt
