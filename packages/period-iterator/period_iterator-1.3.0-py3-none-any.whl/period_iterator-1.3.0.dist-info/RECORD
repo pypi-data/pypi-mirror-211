@@ -1,0 +1,13 @@
+period_iterator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+period_iterator/period_cursor.py,sha256=tLklkUfzoKPpHP3sQYEa1PsmAHqtdyKSWG1JSYH7Dw4,1662
+period_iterator/period_iterator.py,sha256=-0VRT6YuBVn_EmPfnCsZCkR_utNI40tZk9S7pvQnxao,4578
+period_iterator/period_timezone.py,sha256=ubFGdGhlHljZIMLv4Fyout_czd3XAFEM4kvGRbaHAIg,153
+period_iterator/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+period_iterator/tests/test_period_cursor.py,sha256=ngsw3nCQr90zLWN3wzhTnbkn4JsebXE76oDIGwYaLm0,1590
+period_iterator/tests/test_period_iterator.py,sha256=aj7vOSYoLtcj5J-_iuHHohWpkNfhcrih-E6Io6kSpBI,3555
+period_iterator/tests/test_period_timezone.py,sha256=HOg-8dvHb7lhMP3Xphe3MIC1uIyc0MYOSKEwdq644jY,495
+period_iterator-1.3.0.dist-info/LICENSE,sha256=XMRqo1_83OUkvKOpF0MlidMYXYdQwiH1DFNN753Laoc,1065
+period_iterator-1.3.0.dist-info/METADATA,sha256=XhrCkH2sEjom7yyZqQSUtBrIdJaIbbiNMjf5dddB9cU,1581
+period_iterator-1.3.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+period_iterator-1.3.0.dist-info/top_level.txt,sha256=wwsolRA2qptHHMF5kyHxfF-xRffEW1rPwjdcFNh6MNI,16
+period_iterator-1.3.0.dist-info/RECORD,,
