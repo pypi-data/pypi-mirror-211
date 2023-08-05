@@ -1,0 +1,11 @@
+predict/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+predict/layers.py,sha256=Mw_g-Snh5EHm4Nju9hVpI_qhmuvJKSi8cwgXuOvPy8E,3992
+predict/model.py,sha256=E3o3kOAC8Y-Oxv9OvyLhrwu25D4JOwUw40Rd75UExQI,5790
+predict/predict.py,sha256=ZtRH481OVW0i72Nr3m-KC8YctmdEyKck0RIJtAumH9I,2618
+predict/utils.py,sha256=w6dn4RxVDPfdeu7pe8H1899Z7FgqsirXylTMV16SSa0,19225
+predict/测试.py,sha256=brPmTxroeBsINGUadVBFkh2e2Z2T4aYKcV66f-1w8go,158
+predict0.1-0.1.0.dist-info/LICENSE.txt,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+predict0.1-0.1.0.dist-info/METADATA,sha256=OB3vDMA6yzpHppIfqSIzZ0avIi7vybwQTMVvpTd-rQ8,659
+predict0.1-0.1.0.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+predict0.1-0.1.0.dist-info/top_level.txt,sha256=Tot0INVxui4PiW-C4IHu3MzTsFQo11KBfC9MT2KcxBk,15
+predict0.1-0.1.0.dist-info/RECORD,,
