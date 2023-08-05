@@ -1,0 +1,12 @@
+setup.py
+odoo/addons/website_sale_decimal/README.md
+odoo/addons/website_sale_decimal/__init__.py
+odoo/addons/website_sale_decimal/__manifest__.py
+odoo/addons/website_sale_decimal/static/src/js/website_sale.js
+odoo/addons/website_sale_decimal/views/assets.xml
+odoo12_addon_website_sale_decimal.egg-info/PKG-INFO
+odoo12_addon_website_sale_decimal.egg-info/SOURCES.txt
+odoo12_addon_website_sale_decimal.egg-info/dependency_links.txt
+odoo12_addon_website_sale_decimal.egg-info/not-zip-safe
+odoo12_addon_website_sale_decimal.egg-info/requires.txt
+odoo12_addon_website_sale_decimal.egg-info/top_level.txt

@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: odoo12-addon-website-sale-decimal
+Version: 12.0.0.1.0
+Summary: Allow decimal quantities in the website sale module
+Author: Coopdevs SCCL
+License: AGPL-3
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 12.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Requires-Python: >=3.5
+
+
+This addon changes the parseInt function to parseFloat in the website_sale module, allowing decimal quantities in the cart.
+    
