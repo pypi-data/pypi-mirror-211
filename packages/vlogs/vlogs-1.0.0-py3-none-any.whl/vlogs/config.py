@@ -1,0 +1,1 @@
+BASE_URL = 'https://vlogs-sg1.onrender.com'
