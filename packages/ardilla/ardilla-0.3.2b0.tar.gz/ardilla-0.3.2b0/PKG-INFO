@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ardilla
+Version: 0.3.2b0
+Summary: Ardilla ORM. Easy to use, fast to implement, with sync and async flavors
+Author-email: ChrisDewa <chrisdewa@duck.com>
+Project-URL: Homepage, https://github.com/chrisdewa/ardilla
+Project-URL: Bug Tracker, https://github.com/chrisdewa/ardilla/issues
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: async
+Provides-Extra: examples
+Provides-Extra: dev
+Provides-Extra: docs
+License-File: LICENCE
