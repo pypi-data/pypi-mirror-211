@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: infracraft
+Version: 0.0.1
+Summary: Module for automating the creation of project infrastructure in the cloud
+Home-page: UNKNOWN
+Author: Sv
+Author-email: cvity6692@gmail.com
+License: UNKNOWN
+Keywords: python,cloud,infrastructure
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+This module allows you to automate the creation of infrastructure in the Yandex Cloud using a configuration file.
+
+
