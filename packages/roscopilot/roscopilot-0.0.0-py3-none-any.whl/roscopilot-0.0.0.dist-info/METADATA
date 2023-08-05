@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: roscopilot
+Version: 0.0.0
+Summary: A ROS large language model interface library.
+Author-email: Martin Huber <martin.huber@kcl.ac.uk>, Christopher Mower <christopher.mower@kcl.ac.uk>
+Project-URL: Homepage, https://github.com/ros-ai/roscopilot
+Project-URL: Bug Tracker, https://github.com/ros-ai/roscopilot/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# roscopilot
+
