@@ -1,0 +1,24 @@
+---
+title: "Style and Linting"
+---
+
+# Linting
+
+DASCore uses [Black](https://github.com/ambv/black) and [flake8](http://flake8.pycqa.org/en/latest/) for code linting.
+If you have [properly installed DASCore' pre-commit hooks](dev_install.qmd#setup-pre-commit-hooks) they will be
+invoked automatically when you make a git commit. If any complaints are raised simply address them and try again.
+
+Alternatively, before making a commit, you can run all the hooks on all the code like so:
+
+```shell
+pre-commit run --all
+```
+
+It is often useful to run this command twice before making changes because many of the hooks
+will automatically fix the issue they raise on the first run.
+
+# Type Hints
+
+DASCore makes extensive use of Python 3's [type hints](https://docs.python.org/3/library/typing.html).
+Use them to annotate any public functions/methods. See the docstring section of the [documentation page](documentation.qml)
+for more information and some examples.

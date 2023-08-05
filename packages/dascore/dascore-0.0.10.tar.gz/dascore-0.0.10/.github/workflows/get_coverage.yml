@@ -1,0 +1,41 @@
+# Calculates new coverage for the base branch and uploads to codecov
+name: Coverage
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  calc_coverage:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Setup conda
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          miniconda-version: 'latest'
+          python-version: "3.10"
+          activate-environment: dascore
+          environment-file: environment.yml
+          condarc-file: .github/test_condarc.yml
+
+      - name: install dascore
+        shell: bash -l {0}
+        run: |
+          python -m pip install -e .[test]
+
+      - name: run test suite
+        shell: bash -l {0}
+        run: |
+          pytest -s --cov dascore --cov-report=xml
+
+      - name: upload coverage
+        uses: codecov/codecov-action@v2
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          file: ./coverage.xml
+          flags: unittests
+          name: master_tests
+          fail_ci_if_error: true

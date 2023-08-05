@@ -1,0 +1,124 @@
+---
+execute:
+  warning: false
+---
+
+
+# DASCore
+
+A python library for distributed fiber optic sensing.
+
+[![coverage](https://codecov.io/gh/dasdae/dascore/branch/master/graph/badge.svg)](https://codecov.io/gh/dasdae/dascore)
+[![supported versions](https://img.shields.io/pypi/pyversions/dascore.svg?label=python_versions)](https://pypi.python.org/pypi/dascore)
+[![PyPI Downloads](https://img.shields.io/pypi/dm/dascore.svg?label=pypi)](https://pypi.org/project/dascore/)
+[![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/dascore.svg?label=conda)](https://github.com/conda-forge/dascore-feedstock)
+[![Licence](https://www.gnu.org/graphics/lgplv3-88x31.png)](https://www.gnu.org/licenses/lgpl.html)
+
+[Documentation](https://dascore.org)
+
+[Code](https://github.com/DASDAE/dascore)
+
+# Highlights
+
+DASCore is a Python library for distributed acoustic sensing (DAS). It provides:
+
+1. IO support for various DAS data formats
+2. Common processing routines
+3. Basic visualizations
+
+:::{.callout-note}
+DASCore is a foundational package of the [DAS Data Analysis Ecosystem (DASDAE)](https://github.com/DASDAE). It
+facilitates rapid development of other DASDAE packages that do more specialized analysis/visualization.
+:::
+
+# Introductory usage
+
+## Read a file
+
+```{python}
+import dascore as dc
+from dascore.utils.downloader import fetch
+
+# get a path to an example file, replace with your path
+file_path = fetch('terra15_das_1_trimmed.hdf5')
+
+spool = dc.spool(file_path)
+```
+
+## Index a directory of DAS files
+
+```{python}
+import dascore as dc
+from dascore.utils.downloader import fetch
+
+# get a path to a directory of das files, replace with your path
+directory_path = fetch('terra15_das_1_trimmed.hdf5').parent
+
+# index a directory of data, sub-select, then specify chunk shapes
+spool = (
+    dc.spool(directory_path)
+    .update()
+    .select(time_min=('2020-01-01', None))
+    .chunk(time=60, overlap=10)
+)
+```
+
+## Get patches (array w/ metadata)
+
+```{python}
+import dascore as dc
+spool = dc.get_example_spool('diverse_das')
+
+# get patches through iteration
+for patch in spool:
+    ...
+
+# Or through indexing
+patch = spool[0]
+```
+
+## Perform processing
+
+```{python}
+import dascore as dc
+patch = dc.get_example_patch('random_das')
+
+out = (
+    patch.decimate(time=8)  # decimate along time axis (keep every 8th sample)
+    .detrend(dim='distance')  # detrend in distance axis
+    .pass_filter(time=(None, 10))  # apply low-pass filter
+)
+```
+
+## Visualize
+
+```{python}
+import dascore as dc
+patch = (
+    dc.get_example_patch('example_event_1')
+    .pass_filter(time=(None, 300))
+)
+
+patch.viz.waterfall(show=True, scale=0.04);
+```
+
+# Installation
+
+Use pip or conda to install DASCore:
+
+```bash
+pip install dascore
+```
+
+```bash
+conda install dascore -c conda-forge
+```
+
+See the [contributing docs](contributing/contributing.qmd) for development
+installations.
+
+# Feedback and Support
+
+Use the [project discussions](https://github.com/DASDAE/dascore/discussions) to ask a question.
+
+Use the [project issues](https://github.com/DASDAE/dascore/issues) to report an issue.
