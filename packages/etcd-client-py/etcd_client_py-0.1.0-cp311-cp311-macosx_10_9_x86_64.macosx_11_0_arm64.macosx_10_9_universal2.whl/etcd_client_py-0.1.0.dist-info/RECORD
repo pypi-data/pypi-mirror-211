@@ -1,0 +1,5 @@
+etcd_client_py-0.1.0.dist-info/METADATA,sha256=GY5aBl32xfgyIIG4xykWS9UBKZTjE3zG92Rbx24yzhQ,979
+etcd_client_py-0.1.0.dist-info/WHEEL,sha256=O67OCJRBLFAD-LsWkpSeiHtzhKcYKTSml7_CvGG5yns,147
+etcd_client/__init__.py,sha256=HG2xVbWYDWDE8k5IU5TBmFLidyNkemTkx9yFh7XeQn4,127
+etcd_client/etcd_client.cpython-311-darwin.so,sha256=6v7-94ejh83m2DVxIzKuVrNb0NN-suk3md3qTEEHRns,9814430
+etcd_client_py-0.1.0.dist-info/RECORD,,
