@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: LumosWeb
+Version: 0.0.1
+Summary: LumosWeb is web framework, simple and effective usage
+Author: Sddilora
+Author-email: sumeyyedilaradogan@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: Jinja2 (==3.1.2)
+Requires-Dist: parse (==1.19.0)
+Requires-Dist: requests (==2.31.0)
+Requires-Dist: requests-wsgi-adapter (==0.4.1)
+Requires-Dist: WebOb (==1.8.7)
+Requires-Dist: whitenoise (==6.4.0)
+
+
+## LumosWeb
+
+- LumosWeb is web framework written in python
