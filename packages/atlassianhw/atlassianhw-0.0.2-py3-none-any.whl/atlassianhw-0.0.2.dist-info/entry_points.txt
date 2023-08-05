@@ -1,0 +1,2 @@
+[nbdev]
+atlassianhw = atlassianhw._modidx:d
