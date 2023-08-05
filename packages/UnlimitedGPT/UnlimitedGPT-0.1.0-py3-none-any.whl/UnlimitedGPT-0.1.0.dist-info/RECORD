@@ -1,0 +1,9 @@
+UnlimitedGPT/UnlimitedGPT.py,sha256=n9JMB-Xw-vGjbhLqYfa26tTC9IrUTNcnSpiGuE6NUzE,25484
+UnlimitedGPT/__init__.py,sha256=qv2G3TMKUeBD9rrF5dgNZJQRvaMhLJWMDKtoRMAql7k,268
+UnlimitedGPT/internal/chatgpt_data.py,sha256=dk4it6aC2Uc_5qCtjBdN3HxVcUmi7TSeyQSNm03DJ5Q,2188
+UnlimitedGPT/internal/driver.py,sha256=GkvLH2c88zJlq6g4LdRzhrCr6I_Fs4FC2TMTP4P7k-E,1065
+UnlimitedGPT/internal/objects.py,sha256=vNA8jflT4JjAvtsHyP753tTnxfr5LuJ5wa4V_nuduPU,3024
+UnlimitedGPT-0.1.0.dist-info/METADATA,sha256=HO6m6Nqm61T8v-GzWHtd6WLw1azx4fuXFRNPS94tuRk,4247
+UnlimitedGPT-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+UnlimitedGPT-0.1.0.dist-info/top_level.txt,sha256=oNfUVhSuR7eGYGtrJd3St8kCFHla0dJ2zsG1Q_oXEmg,35
+UnlimitedGPT-0.1.0.dist-info/RECORD,,
