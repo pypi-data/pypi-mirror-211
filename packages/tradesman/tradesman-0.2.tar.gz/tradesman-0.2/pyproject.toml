@@ -1,0 +1,17 @@
+[tool.black]
+line-length = 120
+target-version = ['py37', 'py38', 'py39', 'py310']
+include = '\.pyi?$'
+
+[project]
+name = "tradesman"
+version = "0.2"
+description = "A Python package for building complete AequilibraE models from open data"
+authors = [
+    {name = "Pedro Camargo", email = "pedro@outerloop.io"},
+    {name = "Renata Akemii", email = "renata@outerloop.io"}
+]
+maintainers = [
+    {name = "Pedro Camargo", email = "pedro@outerloop.io"},
+]
+license = {text = "MIT"}
