@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+period_iterator/__init__.py
+period_iterator/period_cursor.py
+period_iterator/period_iterator.py
+period_iterator/period_timezone.py
+period_iterator.egg-info/PKG-INFO
+period_iterator.egg-info/SOURCES.txt
+period_iterator.egg-info/dependency_links.txt
+period_iterator.egg-info/requires.txt
+period_iterator.egg-info/top_level.txt
+period_iterator/tests/__init__.py
+period_iterator/tests/test_period_cursor.py
+period_iterator/tests/test_period_iterator.py
+period_iterator/tests/test_period_timezone.py
