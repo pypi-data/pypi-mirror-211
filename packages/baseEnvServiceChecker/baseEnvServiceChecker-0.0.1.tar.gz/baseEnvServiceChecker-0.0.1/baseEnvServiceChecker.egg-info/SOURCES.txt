@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+baseEnvServiceChecker.egg-info/PKG-INFO
+baseEnvServiceChecker.egg-info/SOURCES.txt
+baseEnvServiceChecker.egg-info/dependency_links.txt
+baseEnvServiceChecker.egg-info/top_level.txt
