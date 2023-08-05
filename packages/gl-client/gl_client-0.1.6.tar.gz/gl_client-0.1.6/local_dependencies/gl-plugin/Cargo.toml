@@ -1,0 +1,72 @@
+[[bin]]
+name = "gl-plugin"
+path = "src/bin/plugin.rs"
+
+[build-dependencies]
+tonic-build = "^0.8"
+
+[dependencies]
+anyhow = "*"
+async-stream = "*"
+base64 = "0.13.1"
+bytes = "1"
+clightningrpc = "*"
+cln-grpc = "*"
+cln-rpc = "*"
+env_logger = "^0.7.0"
+futures = "0.3"
+hex = "0.4"
+hyper = "0.14.23"
+lazy_static = "^1.4.0"
+linemux = "0.2"
+log = "0.4"
+nix = "0.17.0"
+prost = "0.11"
+serde_json = "*"
+sled = "*"
+thiserror = "*"
+
+[dependencies.cln-plugin]
+branch = "master"
+git = "https://github.com/ElementsProject/lightning.git"
+
+[dependencies.gl-client]
+path = "../gl-client"
+version = "0.1.4"
+
+[dependencies.governor]
+default-features = false
+features = ["std"]
+version = "0.5"
+
+[dependencies.lightning-storage-server]
+branch = "main"
+git = "https://gitlab.com/lightning-signer/validating-lightning-signer.git"
+
+[dependencies.serde]
+features = ["derive"]
+version = "1.0"
+
+[dependencies.tokio]
+features = ["full"]
+version = "1"
+
+[dependencies.tokio-stream]
+features = ["net"]
+version = "0.1"
+
+[dependencies.tokio-util]
+features = ["codec"]
+version = "0.7"
+
+[dependencies.tonic]
+features = ["tls", "transport"]
+version = "^0.8"
+
+[dependencies.tower]
+version = "0.4"
+
+[package]
+edition = "2021"
+name = "gl-plugin"
+version = "0.1.0"

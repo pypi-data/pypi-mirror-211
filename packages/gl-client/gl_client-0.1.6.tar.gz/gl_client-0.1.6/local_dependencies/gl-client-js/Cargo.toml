@@ -1,0 +1,31 @@
+[dependencies]
+log = "*"
+once_cell = "*"
+prost = "0.11"
+tokio = "1"
+tonic = "^0.8"
+
+[dependencies.anyhow]
+workspace = true
+
+[dependencies.env_logger]
+workspace = true
+
+[dependencies.gl-client]
+features = ["permissive"]
+path = "../gl-client"
+
+[dependencies.neon]
+default-features = false
+features = ["napi-4", "channel-api"]
+version = "0.9"
+
+[lib]
+crate-type = ["cdylib"]
+name = "gl_client_js"
+
+[package]
+edition = "2018"
+license = "ISC"
+name = "gl-client-js"
+version = "0.1.6"

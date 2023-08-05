@@ -1,0 +1,44 @@
+[package]
+name = "gl-client"
+version = "0.1.6"
+edition = "2018"
+
+[features]
+default = ["permissive", "export"]
+permissive = []
+export = ["chacha20poly1305", "secp256k1"]
+
+[dependencies]
+anyhow = "*"
+base64 = "^0.21"
+bytes = "1.2.1"
+hex = "*"
+http = "0.2"
+http-body = "^0.4"
+log = "*"
+pin-project = "*"
+prost = "0.11"
+ring = "*"
+rustls-pemfile = "*"
+tokio = { version = "1", features = ["full"] }
+tonic = { version = "^0.8", features = ["tls", "transport"] }
+tower = { version = "0.4" }
+rcgen = { version = "0.10.0", features = ["pem", "x509-parser"]}
+tempfile = "3.3.0"
+bitcoin = "^0"
+serde = { version = "1", features = [ "derive" ] }
+vls-core = { git="https://gitlab.com/lightning-signer/validating-lightning-signer", branch="2023-05-memo-approve" }
+vls-persist = { git="https://gitlab.com/lightning-signer/validating-lightning-signer", branch="2023-05-memo-approve" }
+vls-protocol-signer = { git="https://gitlab.com/lightning-signer/validating-lightning-signer", branch="2023-05-memo-approve" }
+vls-protocol = { git="https://gitlab.com/lightning-signer/validating-lightning-signer", branch="2023-05-memo-approve" }
+serde_json = "^1.0"
+thiserror = "1"
+cln-grpc = "^0.1"
+chacha20poly1305 = { version = "0.10.1", optional = true }
+
+serde_bolt = "0.2"
+secp256k1 = { version = "0.26.0", optional = true }
+
+[build-dependencies]
+tonic-build = "^0.8"
+serde = { version = "1", features = [ "derive" ] }
