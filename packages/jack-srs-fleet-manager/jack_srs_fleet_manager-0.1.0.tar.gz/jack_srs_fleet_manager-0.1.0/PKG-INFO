@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: jack-srs-fleet-manager
+Version: 0.1.0
+Summary: 
+Author: Jack Delahunt
+Author-email: 45426048+jackdelahunt@users.noreply.github.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: microsoft-kiota-abstractions (>=0.5.1,<0.6.0)
+Requires-Dist: microsoft-kiota-http (>=0.4.3,<0.5.0)
+Requires-Dist: microsoft-kiota-serialization-json (>=0.3.4,<0.4.0)
+Requires-Dist: microsoft-kiota-serialization-text (>=0.2.0,<0.3.0)
+Description-Content-Type: text/markdown
+
+

@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "jack-srs-fleet-manager"
+version = "0.1.0"
+description = ""
+authors = ["Jack Delahunt <45426048+jackdelahunt@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "jack_srs_fleet_manager"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+microsoft-kiota-abstractions = "^0.5.1"
+microsoft-kiota-http = "^0.4.3"
+microsoft-kiota-serialization-json = "^0.3.4"
+microsoft-kiota-serialization-text = "^0.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
