@@ -1,0 +1,11 @@
+pygitguardian/__init__.py,sha256=YLbOw7ENg6U_UCr53C_lNYcyXOWvTviszIBYHVIJFEk,176
+pygitguardian/client.py,sha256=sbJsum7LZolfRqsWSJeETpwZwUU9pMr_158GmFDyrnQ,15585
+pygitguardian/config.py,sha256=87XLoGj8o_KeqhjI_-bkMPd5_uVq6YnsD1MNe9jopXo,196
+pygitguardian/iac_models.py,sha256=libTHLY7UV2cMtRi2-pagMcaZgrT4sb0Jq86pVBIOus,1170
+pygitguardian/models.py,sha256=IAgyJya0li4Msd6oRDibZoawgZfyr7lxqIKB0mAO7lw,18791
+pygitguardian-1.7.0.dist-info/LICENSE,sha256=9rLA_L71o5V6us76AtLOh4kBYwWXuTx-mSQS1wGhtgs,1068
+pygitguardian-1.7.0.dist-info/METADATA,sha256=ylIqM8gwQKTFQjkTMt-6_SD8r7ESIcOVq-hO-pVEjA4,4813
+pygitguardian-1.7.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pygitguardian-1.7.0.dist-info/top_level.txt,sha256=M-aSCWHT3aIIR7vGr51D2kK1jwDttUptg7KF1hz_TCQ,14
+pygitguardian-1.7.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pygitguardian-1.7.0.dist-info/RECORD,,
