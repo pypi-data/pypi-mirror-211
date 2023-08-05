@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: cost-of-code
+Version: 0.1.1
+Summary: How much would it have cost if GPT-4 had written your code?
+Home-page: https://github.com/Ghost---Shadow/cost-of-code
+Author: Souradeep Nanda
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Cost Of Code
+
+How much would it have cost if GPT-4 had written your code?
+
+## Installation
+
+```bash
+pip install cost-of-code
+```
+
+## Usage
+
+```bash
+cost-of-code
+```
+
+### Arguments
+
+| Argument                    | Description                                                  | Default Value |
+| ----------------------------|--------------------------------------------------------------|---------------|
+| `--repo-path`               | The path to the git repository.                              | `./`          |
+| `--branch-name`             | The name of the branch to analyze.                           | `master`      |
+| `--cost-per-thousand-tokens`| The cost (in USD) per thousand tokens according to the current OpenAI pricing.| `0.06`     |
+| `--extension-whitelist`     | A comma-separated list of file extensions to consider when analyzing the repository.| `*.py,*.js,*.java,*.c,*.cpp,*.go`|
+
+This will output the total number of tokens in the repository and the estimated cost to generate these tokens using GPT-4.
+
+### Sample output
+
+```txt
+Total tokens in the current state of the repo: 1334
+Estimated cost for the current state of the repo: $0.08
+Total tokens in all added lines: 1517
+Estimated cost for all added lines: $0.09
+```
+
+## How It Works
+
+1. The script starts by scanning the specified git repository.
+2. It uses GitPython to collect all the files that are currently tracked by git. This means it will not scan files that are ignored by git (like those specified in .gitignore).
+3. It uses gitpython to collect the lines added in each git commit.
+4. Only the added lines from the git diff patches are considered and tokenized. It does not tokenize lines that have been removed. If the user is not in a git repository, an error message is displayed and the program exits.
+5. It then tokenizes the lines from these files using the `tiktoken` Python package from OpenAI. `tiktoken` is a tokenizer that counts the tokens in the same way the OpenAI API does.
+6. The tokens from each file are then counted.
+7. It also uses gitpython to count the number of tokens added to the repo so far by scanning through the git commit history. Only the added lines in each git commit are considered for this token count.
+8. The script finally estimates how much it would cost to generate the same amount of tokens using GPT-4, based on the current pricing.
+9. It reports two cost estimates: one for the current state of the repository (total tokens in the code files in the current state), and one for the total added tokens over the entire history of the repository. This gives you a sense of how the cost to generate your codebase with GPT-4 would have accumulated over time as the codebase grew.
+
+Please note: this tool assumes that the current cost per 1,000 tokens for using GPT-4 is $0.06, as per OpenAI's current pricing. If OpenAI's pricing changes, you can update this value using the `--cost-per-thousand-tokens` argument.
