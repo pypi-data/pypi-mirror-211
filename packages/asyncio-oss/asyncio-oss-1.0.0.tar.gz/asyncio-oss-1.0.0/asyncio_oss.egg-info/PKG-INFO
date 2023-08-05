@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: asyncio-oss
+Version: 1.0.0
+Summary: An asynchronous OSS library.
+Author: Ozzy
+Author-email: ozzycharon@gmail.com
+License: MIT
+License-File: LICENSE
