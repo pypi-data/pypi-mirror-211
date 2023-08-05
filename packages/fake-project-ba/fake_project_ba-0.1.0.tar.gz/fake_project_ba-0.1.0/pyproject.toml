@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "fake-project-ba"
+version = "0.1.0"
+description = "My new project description"
+authors = ["John Doe <john.doe@helloasso.com>"]
+readme = "README.md"
+packages = [{include = "fakeprojectba"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytest = "^7.3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
