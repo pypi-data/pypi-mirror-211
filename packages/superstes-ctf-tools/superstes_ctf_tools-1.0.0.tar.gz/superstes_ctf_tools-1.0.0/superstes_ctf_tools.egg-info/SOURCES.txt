@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+convert.py
+pyproject.toml
+setup.py
+superstes_ctf_tools.egg-info/PKG-INFO
+superstes_ctf_tools.egg-info/SOURCES.txt
+superstes_ctf_tools.egg-info/dependency_links.txt
+superstes_ctf_tools.egg-info/top_level.txt
