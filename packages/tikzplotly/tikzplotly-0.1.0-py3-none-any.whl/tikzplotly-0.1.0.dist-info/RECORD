@@ -1,0 +1,17 @@
+tikzplotly/__about__.py,sha256=Pru0BlFBASFCFo7McHdohtKkUtgMPDwbGfyUZlE2_Vw,21
+tikzplotly/__init__.py,sha256=mV8SXFW5eCmFh_HJvv7AAc7SCLihkYJAKc9yxE9d5xg,125
+tikzplotly/_annotations.py,sha256=GBW24kK7GFbpX_S7_lX1ZcAGiEpRwduF_hvQ6AvDoqs,2930
+tikzplotly/_axis.py,sha256=CSsS1HiHVIgG82H2teiXR4UeRv1X-ectTXu7GVOKhXY,3373
+tikzplotly/_color.py,sha256=sNtESm-sXzvsIMrnWgzeOgTktz7XMNZCfUxZcuGls3U,38206
+tikzplotly/_dash.py,sha256=xp8oGqVueKVqQsdMgn1RL2aLoHSNYYg_nH1thuHl0rg,115
+tikzplotly/_data.py,sha256=7T7wBty8P849rjGWocgPG31jYHPmsodneGjZSEOjPg0,946
+tikzplotly/_marker.py,sha256=3vEmXexgFJVe7FxInvKPPl_U8t7x-OHK5prGnr9YdDw,491
+tikzplotly/_save.py,sha256=5RPJJBAM4hCsPC9Ka5VZ00lWOqfdXvw9MEPgOQHSjmU,3059
+tikzplotly/_scatter.py,sha256=9KV9Mdzn8xncUh68hhy-c6WCAjxo0-WGiNHHrI4wnxY,3431
+tikzplotly/_tex.py,sha256=WPtnVoCkbXV_DB6EF27TQRVuxt4wZfXI7bpthPJBdvQ,4777
+tikzplotly/_util.py,sha256=DMGWl0IEqMGqHmwx1CT4kvX9ksnstNRVM7fXU6lzsHE,369
+tikzplotly-0.1.0.dist-info/LICENSE,sha256=cjxM8VJ_qnjUVKoOndGip4HgyyElZZI8Hk8g3rXEFf8,1080
+tikzplotly-0.1.0.dist-info/METADATA,sha256=DctBeoko2VwHQ1F-NyoUhedIUQvm9yXNuwuPRD6GyPs,4221
+tikzplotly-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+tikzplotly-0.1.0.dist-info/top_level.txt,sha256=vRZ3v6YEVpqdS7xN4ja8nv-5sN_waelBvgWoWCKgozw,11
+tikzplotly-0.1.0.dist-info/RECORD,,
