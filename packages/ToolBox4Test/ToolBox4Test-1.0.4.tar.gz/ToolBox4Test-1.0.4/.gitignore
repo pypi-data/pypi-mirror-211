@@ -1,0 +1,7 @@
+.pypirc
+/.idea
+/ToolBox4Test/Scaffold/
+/Img/
+/dist/
+/build/
+/ToolBox4Test.egg-info/

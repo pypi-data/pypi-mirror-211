@@ -1,0 +1,2 @@
+[console_scripts]
+testbox = ToolBox4Test.toolbox:main
