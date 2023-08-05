@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: ssh-dashboard
+Version: 1.5.1
+Summary: Agentless Linux host monitoring over standard SSH connections.
+Author-email: Christoph Stein <christoph@oss.impulse9.de>
+License: MIT
+Project-URL: homepage, https://gitlab.com/s7one/ssh-dashboard
+Project-URL: documentation, https://s7one.gitlab.io/ssh-dashboard/
+Project-URL: repository, https://gitlab.com/s7one/ssh-dashboard
+Keywords: SSH,Linux,Monitoring,Host monitoring,Agentless
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Framework :: Flask
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# About SSH-Dashboard
+
+SSH-Dashoard is an easy to set-up, basic Linux host monitoring solution which works without the need to install any additional software on the hosts. All host metrics are collected over a non-superuser ssh account.
+
+Host status information are then provided via
+
+ * Websites and/or REST API from an integrated webserver
+ * Published to a MQTT broker
+ * Written to an InfluxDb server
+
+For more details, see the [documentation](https://s7one.gitlab.io/ssh-dashboard/)

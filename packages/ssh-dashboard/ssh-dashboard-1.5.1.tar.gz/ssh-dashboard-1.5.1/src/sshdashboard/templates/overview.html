@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<script type="text/javascript" src="/js/common.js"></script>
+	<title>SSH-Dashboard</title>
+</head>
+<body>
+  <table id="t01">
+  <tr><th>Host</th><th>Uptime</th><th>Last contact</th><th>System load</th><th>Memory</th></tr>
+  </table>
+<script>
+	var IntervalId = window.setInterval(function() { DisplayMetrics(); }, 5000);
+
+var DisplayMetrics = function() {
+  site_url_base = window.location.protocol + "//" + window.location.hostname + ":" + window.location.port + window.location.pathname
+
+  var table = "<tr><th>Host</th><th>Uptime</th><th>Last contact</th><th>System load</th><th>Memory</th></tr>"
+  fetch(site_url_base + 'api/summary')
+    .then(res => res.text())
+    .then((out) => {
+      let jsonData = JSON.parse(out);
+
+	  // Sort hosts
+	  const hostids = jsonData["hostids"]
+	  const orderedhosts = Object.keys(jsonData["hosts"]).sort().reduce((value, key) => { value[key] = jsonData["hosts"][key]; return value; },
+  																		{} );
+
+	  for (var key of Object.keys(orderedhosts)) {
+		currenthostmetrics = orderedhosts[key];
+		currenthostid = hostids[key]
+
+		//uptime
+		if (currenthostmetrics.HostDown) uptime = "<span style='color: red'>no connection</span>";
+		else 							 uptime = FormatUptime(currenthostmetrics.Uptime_s)
+
+		//timestamp of last contact
+		timestamp = FormatTimestamp(currenthostmetrics.Timestamp);
+
+		//available memory
+		if (currenthostmetrics.MemLimitWarning)	memory = "<span style='color: red'>" + currenthostmetrics.MemAvailable_percent + "% available" + "</span>"
+		else									memory = currenthostmetrics.MemAvailable_percent + "% available"
+		//system load
+		sysload = currenthostmetrics.SysLoad_1min.toFixed(2) + " / " + currenthostmetrics.SysLoad_5min.toFixed(2)  + " / " + currenthostmetrics.SysLoad_15min.toFixed(2)
+		if (currenthostmetrics.SysLoadWarning_1min) sysload = "<span style='color: red'>" + sysload + "</span>"
+
+		table += "<tr><td>" + "<a href=/hosts/" + encodeURIComponent(currenthostid) + ">" + currenthostmetrics.Name + "</a>" +
+		"<td align='right'>" + uptime + "</td>" +
+		"<td align='right'>" + timestamp + "</td>" +
+		"<td align='right'>" + sysload +"</td>" +
+		"<td align='right'>" + memory + "</td></tr>";
+		}
+	t01.innerHTML = table
+	})
+    .catch(err => {
+					console.error(err);
+					t01.innerHTML = table
+				  });
+
+}
+
+DisplayMetrics();
+</script>
+  <div class="footer"> <p>SSH-Dashboard {{appversion}}</p> </div>
+</body>
+</html>

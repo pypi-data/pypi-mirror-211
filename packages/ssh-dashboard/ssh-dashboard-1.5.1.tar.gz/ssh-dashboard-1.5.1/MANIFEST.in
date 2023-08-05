@@ -1,0 +1,4 @@
+include src/sshdashboard/config.json
+include src/sshdashboard/css/*.css
+include src/sshdashboard/js/*.js
+include src/sshdashboard/templates/*.html

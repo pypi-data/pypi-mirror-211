@@ -1,0 +1,80 @@
+{
+  "webserver":
+  {
+    "localaddress": "0.0.0.0",
+    "localport": 8080,
+    "website_active": true,
+    "restapi_active": false,
+    "log_http_requests": true,
+    "html_templates":
+    {
+      "details_template" : "details.html",
+      "overview_template" : "overview.html"
+    },
+    "eventlog":
+    {
+      "logsize": 20,
+      "keys"   :  [ "SysLoadWarning_5min", "MemLimitWarning" ]
+    }
+  },
+
+  "mqttclient":
+  {
+    "active": false,
+    "broker": "localhost",
+    "port": 1883,
+    "user": "",
+    "password": "",
+    "ca_certs": "",
+    "certfile": "",
+    "keyfile": "",
+    "topicprefix": "/ssh-dashboard/hosts/",
+    "qos": 0
+  },
+
+  "influxdbclient":
+  {
+    "active": false,
+    "url": "http://influxdb:8086",
+    "organization": "my-org",
+    "token": "my-super-secret-auth-token",
+    "bucket": "my-bucket",
+    "timeout_ms": 6000,
+    "measurement_name": "ssh-dashboard-metrics"
+  },
+
+  "identities":
+  [
+    {
+      "name": "my_id1",
+      "ssh_user": "myusername1",
+      "ssh_privatekeyfile": "~/.ssh/mykey1"
+    },
+    {
+      "name": "my_id2",
+      "ssh_user": "myusername2",
+      "ssh_privatekeyfile": "~/.ssh/mykey2"
+    }
+  ],
+
+  "hosts":
+  [
+    {
+      "active": true,
+      "name": "My Host 1",
+      "host": "myhost1",
+      "ssh_port": 22,
+      "identity": "my_id1",
+      "scrape_interval_s": 5,
+      "memory_warning_percent": 0.95,
+      "customcmd": "df -h /",
+      "customcmdlabel":"Disk usage"
+    },
+    {
+      "name": "My Host 2",
+      "host": "myhost2",
+      "identity": "my_id2",
+      "scrape_interval_s": 4
+    }
+  ]
+}
