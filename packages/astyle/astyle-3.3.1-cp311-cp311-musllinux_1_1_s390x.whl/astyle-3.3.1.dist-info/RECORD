@@ -1,0 +1,12 @@
+astyle-3.3.1.dist-info/RECORD,,
+astyle-3.3.1.dist-info/WHEEL,sha256=NHfOxKeDH3Zg-ryYr3M--fICwIjNENYFdgRH5DZk_ek,115
+astyle-3.3.1.dist-info/entry_points.txt,sha256=xtfUIcEbACGZomF3GoUksYC7VXFBu5IkVufBg1GSGSc,49
+astyle-3.3.1.dist-info/METADATA,sha256=n30k4n-GW8UP_Sl4V2ac-0qvEe0N3sf_xh9yiRogyoU,6831
+astyle-3.3.1.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+astyle.libs/libstdc++-abeb3405.so.6.0.28,sha256=bxztkdoQqkzBL0JLq4l6Vn5KCc9L3PONwSztsgh8pWo,2822409
+astyle.libs/libgcc_s-26206cc5.so.1,sha256=ALOPNPn3d1oTFenflA0KOhAuUr_r-CXvl6TfNCJUCUA,64257
+astyle/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+astyle/__main__.py,sha256=LkgIkaOeDLAS_s03qkQlL5xoonTOsY3nw9qAvVrFqFE,246
+astyle/__init__.py,sha256=nsSlG8cpodDHPToSLrMqKEw5MJjn0OoGzjR92M2xs3M,396
+astyle/data/share/man/astyle.1,sha256=u3CpwJJM11_lcmw3iRBLrIVddD8gsdJlGHJktPy6N9Q,16162
+astyle/data/bin/astyle,sha256=-bcelga0x6fNKpLI7UM4recvmy55PwDjX3j2ZkroIiM,554233
