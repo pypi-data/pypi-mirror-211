@@ -1,0 +1,9 @@
+README.md
+setup.py
+losalina/hypernetwork.py
+losalina.egg-info/PKG-INFO
+losalina.egg-info/SOURCES.txt
+losalina.egg-info/dependency_links.txt
+losalina.egg-info/not-zip-safe
+losalina.egg-info/requires.txt
+losalina.egg-info/top_level.txt
