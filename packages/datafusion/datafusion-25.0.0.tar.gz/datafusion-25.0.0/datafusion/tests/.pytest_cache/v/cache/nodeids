@@ -1,0 +1,5 @@
+[
+  "test_logical.py::test_no_table",
+  "test_logical.py::test_register_parquet",
+  "test_logical.py::test_table_scan"
+]
