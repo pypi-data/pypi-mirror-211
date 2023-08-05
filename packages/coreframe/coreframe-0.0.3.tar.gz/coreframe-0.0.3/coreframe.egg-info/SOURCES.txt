@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+coreframe/__init__.py
+coreframe/config.py
+coreframe/coreframe.py
+coreframe/from_csv.py
+coreframe/from_nc.py
+coreframe/parallelize.py
+coreframe.egg-info/PKG-INFO
+coreframe.egg-info/SOURCES.txt
+coreframe.egg-info/dependency_links.txt
+coreframe.egg-info/requires.txt
+coreframe.egg-info/top_level.txt
+tests/test_coreframe.py
