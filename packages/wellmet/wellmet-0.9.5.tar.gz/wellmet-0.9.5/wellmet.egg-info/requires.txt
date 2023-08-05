@@ -1,0 +1,8 @@
+numpy
+scipy
+mpmath
+ndim<=0.1.6
+bquadpy
+pandas
+PyQt5
+pyqtgraph>=0.13.1
