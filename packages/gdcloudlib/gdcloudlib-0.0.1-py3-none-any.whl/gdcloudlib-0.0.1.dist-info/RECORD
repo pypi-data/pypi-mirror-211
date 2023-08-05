@@ -1,0 +1,7 @@
+cloud/__init__.py,sha256=elyfMyHcubrDTMjw1x_UyHFqp-UBqRx9WWH8YJ0VbIw,81
+cloud/__main__.py,sha256=jV8OJcRuyTG9ZmIzWJ2cMfh6rdo4LijHcriYwHmMFKc,76
+cloud/application/cli.py,sha256=lswTgM5xz3VGfWEJF8azUFdIS_X-dflkPAmy04dvOIQ,106
+gdcloudlib-0.0.1.dist-info/entry_points.txt,sha256=wG3njS27LRp9q1XmRyiJ9hjZssCSVEMUB101xzgrORo,48
+gdcloudlib-0.0.1.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+gdcloudlib-0.0.1.dist-info/METADATA,sha256=vvAMHZ1DW-RfUbcA3F5i6XBu2D2Nx6Zp3s5pHPkxhws,1380
+gdcloudlib-0.0.1.dist-info/RECORD,,
