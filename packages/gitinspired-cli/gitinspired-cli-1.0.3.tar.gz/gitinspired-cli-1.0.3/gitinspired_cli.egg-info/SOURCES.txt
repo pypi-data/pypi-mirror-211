@@ -1,0 +1,12 @@
+README.md
+setup.py
+gitinspired_cli.egg-info/PKG-INFO
+gitinspired_cli.egg-info/SOURCES.txt
+gitinspired_cli.egg-info/dependency_links.txt
+gitinspired_cli.egg-info/entry_points.txt
+gitinspired_cli.egg-info/requires.txt
+gitinspired_cli.egg-info/top_level.txt
+src/__init__.py
+src/file_manager.py
+src/greetings_cli.py
+src/subsys.py
