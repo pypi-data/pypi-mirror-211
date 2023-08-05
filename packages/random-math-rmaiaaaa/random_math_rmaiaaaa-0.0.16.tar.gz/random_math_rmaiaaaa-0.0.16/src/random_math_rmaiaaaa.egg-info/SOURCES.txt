@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/RandomMath/RandomMathOperations.py
+src/RandomMath/__init__.py
+src/apiRandomMath/__init__.py
+src/apiRandomMath/main.py
+src/random_math_rmaiaaaa.egg-info/PKG-INFO
+src/random_math_rmaiaaaa.egg-info/SOURCES.txt
+src/random_math_rmaiaaaa.egg-info/dependency_links.txt
+src/random_math_rmaiaaaa.egg-info/top_level.txt
