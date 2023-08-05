@@ -1,0 +1,16 @@
+COPYING,sha256=fFDNm4Xit-666itWGLQChisB1aZr7_-OQUAe8_FORxo,34500
+LICENSE-2.0,sha256=1BeJ4DQ2hOG-PKDc_nXk1dSvtCs13wU-ThEtABYNLXk,10703
+fraudar/__init__.py,sha256=EXeXNMF7tEO3ylRPUF_SrYxsIE2MmP1ohz2-PQzp0hc,1960
+fraudar/__version__.py,sha256=SF0VyRZbqR-l_TpmBo436QwEbs37S-eeIFoqADK9kzc,823
+fraudar/export/MinTree.py,sha256=I2AfJ8j5FjWP-21wsIkYzI5__Qg7cGB3_R8xTuLSnEw,2735
+fraudar/export/README,sha256=7-J33ohGiR3HYB3d7CH-SBvVJqbtD2LUiOpXtPFme4o,4490
+fraudar/export/__init__.py,sha256=CB1Grg8TjKhTshZR-KwOYFnmkfDazS_bKrlGSsQhxB0,1737
+fraudar/export/greedy.py,sha256=x4mzBYr-Z14rzReqBtb0cN2nv5CL1bcuF5gdqbP6ETw,9233
+fraudar/export/run_greedy.py,sha256=OdUUkMWKlN2inibbtVX11qt-gNkOrTY5UtF_6Xb4qmY,2417
+fraudar/export/testMinTree.py,sha256=nKl9nFQm8YtJcB4dZt10XYzs7BNRnyiyklAgaIkQXlA,1408
+fraudar/graph.py,sha256=-qcK3Ca09Dgq6G60qHLIX6J3luBe-ArhEi4C-ZzRbcc,6789
+fraudar/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rgmining_fraudar-0.7.1.dist-info/COPYING,sha256=fFDNm4Xit-666itWGLQChisB1aZr7_-OQUAe8_FORxo,34500
+rgmining_fraudar-0.7.1.dist-info/METADATA,sha256=2YMQ6kLxkhVUIZZhyau_0eU7tksYH3Hl-_RqpaT7U4E,3213
+rgmining_fraudar-0.7.1.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+rgmining_fraudar-0.7.1.dist-info/RECORD,,
