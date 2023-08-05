@@ -1,0 +1,8 @@
+numpy
+matplotlib
+astropy
+photutils
+scipy
+scikit-image
+aafitrans
+astroquery
