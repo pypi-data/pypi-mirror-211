@@ -1,0 +1,10 @@
+sqlcrafty/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlcrafty/functions.py,sha256=olLAayT6KasVzr_d4zVDd3YOf6Gq0g0-C5YXAiWbjY4,5004
+sqlcrafty/models.py,sha256=X0w3cKiy-95E6I7Qo8rqNwmIgUZaiV90deRTHn5NSOE,7772
+sqlcrafty/sqlcrafty.py,sha256=kLs8DsOej29_13WCiRJgJuDKvbQGkpXZRXL7N8mEmj8,775
+sqlcrafty/utils.py,sha256=d8zTk4rCYjmtrZtWTSbFUqgO3C1e1jTOXkdFljhaM4A,135
+sqlcrafty-0.0.0.dist-info/METADATA,sha256=sSWUa_2Qfju2avDFb0rf6EZ9VrStDkQZz8_y7nCLRVo,203
+sqlcrafty-0.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sqlcrafty-0.0.0.dist-info/entry_points.txt,sha256=r03pnxhUgQAj09xyyzA-eYBHFjuKxRyye1rKmbO9D1U,56
+sqlcrafty-0.0.0.dist-info/top_level.txt,sha256=oxrVB0OfJeMH38ZdgpYANWXSV_b1yFx_6BjR4-6Nyuo,10
+sqlcrafty-0.0.0.dist-info/RECORD,,

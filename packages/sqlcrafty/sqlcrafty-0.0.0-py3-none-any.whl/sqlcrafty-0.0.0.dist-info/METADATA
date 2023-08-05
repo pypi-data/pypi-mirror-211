@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: sqlcrafty
+Version: 0.0.0
+Summary: Turning writing SQL into an art
+Home-page: UNKNOWN
+Author: Richard Garcia
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: bcrypt
+
+UNKNOWN
+

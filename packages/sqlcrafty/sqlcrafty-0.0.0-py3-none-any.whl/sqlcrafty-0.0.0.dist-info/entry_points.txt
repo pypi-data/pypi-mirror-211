@@ -1,0 +1,3 @@
+[console_scripts]
+sqlcrafty = sqlcrafty.sqlcrafty:main
+
