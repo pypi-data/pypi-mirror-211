@@ -1,0 +1,15 @@
+0.7.11
+	- Changed option '-d/--translate' to '--translate' because of conflicting '-d' option in 'mikro.py' script.
+	- Added option '--show-fillers' that allows verbal fillers ('euh', 'ebeñ', 'kwa', 'alors'...) in transcription.
+	- Bufixes in skript `mikro.py` from @Tornaod
+
+0.7.10
+	- Fixed setup.py to include non python file, broken by the new folder hierarchy.
+
+0.7.9
+	- Options -o/--output (output file) and -d/--translate (translate words using a tsv file) added to 'adskrivan', 'istitlan' and 'mikro' scripts.
+	- Simplified folder hierarchy.
+	- The scripts can now be called with the python interpreter.
+
+0.7.8
+	First version uploaded to pypi.org
