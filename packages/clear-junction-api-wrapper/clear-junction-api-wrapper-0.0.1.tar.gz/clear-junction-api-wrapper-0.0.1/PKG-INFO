@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: clear-junction-api-wrapper
+Version: 0.0.1
+Summary: Clear Junction API Wrapper
+Author: Richard
+Author-email: <rich_swainson@hotmail.co.uk>
+Keywords: clear junction,api,wrapper,payment,fintech
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+A Python wrapper for the Clear Junction API.
