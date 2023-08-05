@@ -1,0 +1,16 @@
+hdx/freshness/emailer/app/__init__.py,sha256=11ozJKiUsqDCZ3_mcAHhGYUyGK_Unl54djVSBBExFB4,59
+hdx/freshness/emailer/app/__main__.py,sha256=r-XdViFna7wNucF0qAyrNKX-FjSQHc99NCFNGlt4W6w,11316
+hdx/freshness/emailer/app/_version.py,sha256=2HJZr_nF6-KyjRUTGilKPZnnlKo2_3Gn4dOVndiu27U,160
+hdx/freshness/emailer/app/datafreshnessstatus.py,sha256=vDcazVJKDmlWcEVnO82KXOfa2l2dtLEW5-JVuyUWY50,21727
+hdx/freshness/emailer/app/project_configuration.yml,sha256=1D23Vk_Z18SNbu754y4bLqPFnjDmZk39ZGssisYxLMs,490
+hdx/freshness/emailer/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hdx/freshness/emailer/utils/databasequeries.py,sha256=P_G_l-F1A4Ll8nT_KOGxwmus5_VNgk7kM0mODcQI-SA,18654
+hdx/freshness/emailer/utils/freshnessemail.py,sha256=nkbOWaLq2kV_E2CDs0HfCux2mE7T0OlkzPl4jcQx3Ok,22888
+hdx/freshness/emailer/utils/hdxhelper.py,sha256=8RhOJOSJFPW7ce5VLyZqn_UJz5fHNdWdhpZkil0VnLs,10054
+hdx/freshness/emailer/utils/sheet.py,sha256=Hdjg1j-GrVxnNceZniXN4TjZ5D9rRlk_AfzhKnMjxic,16053
+hdx_data_freshness_emailer-1.7.9.dist-info/LICENSE,sha256=wc-4GpMn-ODs-U_bTe1YCiPVgvcjzrpYOx2wPuyAeII,1079
+hdx_data_freshness_emailer-1.7.9.dist-info/METADATA,sha256=iOR3rVbc3XHOlA0IRPlUhNpJgzSnV5C-PCAIjO4U634,2774
+hdx_data_freshness_emailer-1.7.9.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+hdx_data_freshness_emailer-1.7.9.dist-info/top_level.txt,sha256=cfo3TyDjnu-B1jb_itPPFQCH00c5VT5GuZ30eNrGmlI,4
+hdx_data_freshness_emailer-1.7.9.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+hdx_data_freshness_emailer-1.7.9.dist-info/RECORD,,
