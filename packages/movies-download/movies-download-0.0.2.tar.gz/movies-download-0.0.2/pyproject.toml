@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "movies-download"
+version = "0.0.2"
+authors = [
+  { name="碧海苍鹰", email="348249063@qq.com" },
+]
+description = "视频下载助手"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://gitee.com/cgq/movies-download"
+"Bug Tracker" = "https://gitee.com/cgq/movies-download/issues"
