@@ -1,0 +1,13 @@
+MindLake/Cryptor.py,sha256=nDgENacdQ4-AfKEdODlz_w0BfdWYTqDebZxbjia2qxA,8428
+MindLake/DataLake.py,sha256=fbCoUZepQpsILXZiQsNaOXPjHeSKM3pqVhu99JZ9XGM,1933
+MindLake/KeyHelper.py,sha256=swxb1wTkJ1yvDsN8cGv40dFC1xSuFUX4gT77kb6jotg,3242
+MindLake/LICENSE,sha256=M2f4ib6GoBkRF3PuFHwGkPYjY8pX0x_krNDubuq8GP8,1085
+MindLake/Permission.py,sha256=ka2Vf4PVMSwU-8zZs2Z1ivYez0TbnmcZbBuQBAlXFRQ,5755
+MindLake/README.md,sha256=1bNhJO9_RdF-XFKzqGXZbvB2pNgTrH663mMOyohxOJ8,115
+MindLake/Settings.py,sha256=CCFkkOkyO953nsapm_g-tYFhsjZusTd69qGv-bjlifk,2635
+MindLake/__init__.py,sha256=_XocfrpufNPVb6PAw6HKR6TjLuLcFGBDPR6FhpoUxeI,5228
+MindLake/message.py,sha256=PtiBlfkqzWDFJlpYpK6gz3iPc5_oPGT4ACzxcSRW04U,6313
+MindLake/utils.py,sha256=toy3ZleY3MT-R3M8KelJWV9n1-GYrWXBgnmusD0kCG4,4576
+mindlake-0.9.0.dist-info/METADATA,sha256=AiW4p5e0i3gQIzqYgcjSYoOYDXDDeHPiN2l_3eK3NSQ,2301
+mindlake-0.9.0.dist-info/WHEEL,sha256=y1bSCq4r5i4nMmpXeUJMqs3ipKvkZObrIXSvJHm1qCI,87
+mindlake-0.9.0.dist-info/RECORD,,
