@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+infobotbytoken.egg-info/PKG-INFO
+infobotbytoken.egg-info/SOURCES.txt
+infobotbytoken.egg-info/dependency_links.txt
+infobotbytoken.egg-info/requires.txt
+infobotbytoken.egg-info/top_level.txt
