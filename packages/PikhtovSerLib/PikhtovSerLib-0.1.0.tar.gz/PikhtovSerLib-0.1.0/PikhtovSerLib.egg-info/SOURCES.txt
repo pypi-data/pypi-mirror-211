@@ -1,0 +1,14 @@
+README.md
+setup.py
+PikhtovSerLib/__init__.py
+PikhtovSerLib/constants.py
+PikhtovSerLib/create_ser.py
+PikhtovSerLib/json_serealazer.py
+PikhtovSerLib/main.py
+PikhtovSerLib/my_serelizator.py
+PikhtovSerLib/xml_serealazer.py
+PikhtovSerLib.egg-info/PKG-INFO
+PikhtovSerLib.egg-info/SOURCES.txt
+PikhtovSerLib.egg-info/dependency_links.txt
+PikhtovSerLib.egg-info/requires.txt
+PikhtovSerLib.egg-info/top_level.txt
