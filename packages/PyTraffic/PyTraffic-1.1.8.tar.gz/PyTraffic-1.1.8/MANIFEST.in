@@ -1,0 +1,6 @@
+include LICENSE.txt
+include README.md
+include CREDITS.md
+
+graft PyTraffic/models
+graft PyTraffic/sample_media
