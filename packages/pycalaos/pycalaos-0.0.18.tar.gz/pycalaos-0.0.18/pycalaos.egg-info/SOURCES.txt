@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pycalaos/__init__.py
+pycalaos/client.py
+pycalaos/discovery.py
+pycalaos.egg-info/PKG-INFO
+pycalaos.egg-info/SOURCES.txt
+pycalaos.egg-info/dependency_links.txt
+pycalaos.egg-info/top_level.txt
