@@ -1,0 +1,12 @@
+lib_dzne_math/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+lib_dzne_math/functions/__init__.py,sha256=OIA-GTBEaHVkdfX2wO2Nd-3OX915XywJBbkh4T-1Jg8,73
+lib_dzne_math/na/__init__.py,sha256=NV0aYweO1K3l_dYzBEvpYW0l_CDGwKFTV7wvNG3Xx5o,455
+lib_dzne_math/numerals/__init__.py,sha256=QMyx3tYLnqwMEERbAOS88WszBj-Cegb5GJ9y-r7yjMs,873
+lib_dzne_math/statistics/__init__.py,sha256=LF4GKS4BKH9vMI9elZQHBWAWn9ovpo6TGthdjE6x4JI,1568
+lib_dzne_math/statistics/plots/DataEntry.py,sha256=hetcvlkJAMSYwow_vAtgMxdhL8uekYOAdxFEc4_dmaQ,28
+lib_dzne_math/statistics/plots/__init__.py,sha256=JwsreXUCp6-Y2hnHO1cGN0lTZDDSr0z-bgTzZDuiNM4,35
+lib_dzne_math-0.2.0.dist-info/LICENSE,sha256=2bPxBkU91Xj55wL5yLbQfric9lyguXz9zn0uv8eD7es,1066
+lib_dzne_math-0.2.0.dist-info/METADATA,sha256=2YGDX_8FXlSApozVVXLdPwNUtUmXC-4lsHyB2XV4Wa8,1493
+lib_dzne_math-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+lib_dzne_math-0.2.0.dist-info/top_level.txt,sha256=M_N5bnQn3sRnZwdkZV3hd9hdXT6N4C5RJP5ztXQ_12s,14
+lib_dzne_math-0.2.0.dist-info/RECORD,,
