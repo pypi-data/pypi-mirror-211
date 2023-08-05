@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+wxpay_sec_test.egg-info/PKG-INFO
+wxpay_sec_test.egg-info/SOURCES.txt
+wxpay_sec_test.egg-info/dependency_links.txt
+wxpay_sec_test.egg-info/top_level.txt
