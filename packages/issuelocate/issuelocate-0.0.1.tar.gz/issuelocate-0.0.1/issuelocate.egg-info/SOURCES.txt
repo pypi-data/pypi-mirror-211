@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+issuelocate.egg-info/PKG-INFO
+issuelocate.egg-info/SOURCES.txt
+issuelocate.egg-info/dependency_links.txt
+issuelocate.egg-info/top_level.txt
