@@ -1,0 +1,17 @@
+VisageSnap/__init__.py,sha256=cG6WMFmtdFsL14d9FnN_kIrvIt1aFHmJAG6H7aRc3bs,148
+VisageSnap/classes.py,sha256=FQPXRzurv4m0tK17Wj4zIpVYx-oDZIc7gnYJyo7gQG0,587
+VisageSnap/main.py,sha256=vlS4QrcAddecussnShgN6uuD6JUzVoah1-yk7ZDpMA4,2530
+VisageSnap/utils.py,sha256=W-3g-wnFk4ZQky2a-nYvLqqrZTihZx3IcNBZFJeMLCU,795
+VisageSnap/image/__init__.py,sha256=Hy42Tmd9LRtVSC-QLMaXK5Wy-98AruUy_McvdH0sbYc,36
+VisageSnap/image/imageloader.py,sha256=3tWGDfv-GJauIv8e99A-pl295dqSM18o2mDs-u6RgPY,2701
+VisageSnap/model/__init__.py,sha256=XpCd3DKmB5flIrGh5VW7MPDNqUH6Yq1eX_DiDYO_yPo,38
+VisageSnap/model/modelhandler.py,sha256=fHCuHXkGQk9K9zl4F53L11ygS_QQOOOYsih084iXowI,1193
+VisageSnap/processor/__init__.py,sha256=8swI7xovaJziduQoOr5495c5Ck77yK8Nx8QLH0HASIQ,102
+VisageSnap/processor/faceprocessor.py,sha256=i04FXCFBdC5HA7YWjfjKC8ek3Bi5jx0Yo6WY4vCtBt0,2730
+VisageSnap/processor/predictor.py,sha256=VaqLFHxrgHcER3F8KijwCl61jLGr9wRChzJNENpQLlw,3846
+VisageSnap/processor/trainer.py,sha256=7O5SQh7DFXi6iHS83zxsctQjOvlibSfOzvKH_YmqNFw,1720
+VisageSnap-0.3.0.dist-info/LICENSE,sha256=OfRuCIu6H3ZaQOGUenrZgS7ViybIheApejteEnOqdVg,1066
+VisageSnap-0.3.0.dist-info/METADATA,sha256=SeZm8hp88qKZqiLDcnWi8WOWzeaK0NrFLC3dokZnG94,4376
+VisageSnap-0.3.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+VisageSnap-0.3.0.dist-info/top_level.txt,sha256=R7JQsoj74rKSRUiy2TT1amQxqtpd-7krb2nLEpvKjeU,11
+VisageSnap-0.3.0.dist-info/RECORD,,
