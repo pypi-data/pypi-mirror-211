@@ -1,0 +1,8 @@
+pandas
+pydantic
+
+[alpaca]
+alpaca-py
+
+[robinhood]
+robin-stocks
