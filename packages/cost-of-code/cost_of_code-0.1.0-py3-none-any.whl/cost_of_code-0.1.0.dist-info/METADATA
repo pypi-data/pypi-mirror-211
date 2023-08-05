@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: cost-of-code
+Version: 0.1.0
+Requires-Dist: GitPython
+Requires-Dist: tiktoken
+Requires-Dist: pathspec
+
