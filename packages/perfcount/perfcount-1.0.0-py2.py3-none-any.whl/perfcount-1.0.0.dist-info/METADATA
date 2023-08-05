@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: perfcount
+Version: 1.0.0
+Summary: Useful Python library for performance testing that contains multiple function decorators
+Author-email: Carl Furtado <carlzfurtado@gmail.com>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Project-URL: Home, https://github.com/User0332/perfcount
+
+# PerfCount - a Python library used for performance testing
+
+Install it with `pip install perfcount`.
+
+There are multiple decorators included for testing in the library, including `perf.perf`, `perfcount.perf_ns`, `perfcount.shouldtake`, and `perfcount.timeout`. The `perfcount.time_this_program` module can be imported to time the program from the time of importing the `perfcount.time_this_program` module to interpreter exit.
+
+The command `perftcount` can be used to measure execution time of a command. Ex. `perfcount python script.py`.
