@@ -1,0 +1,5 @@
+jupyterlab
+jupyterlab_templates
+jupyter-app-launcher
+typer
+maskpass
