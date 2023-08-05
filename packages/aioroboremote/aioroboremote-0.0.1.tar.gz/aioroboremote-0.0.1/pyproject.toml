@@ -1,0 +1,27 @@
+[project]
+name = "aioroboremote"
+version = "0.0.1"
+authors = [
+  { name="Anton Kondrachkov", email="sx91@protonmail.com" },
+]
+description = "RobotFramework remote library implementation for Python's asyncio"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.9"
+keywords = ["asyncio", "robotframework", "testing", "testautomation", "remoteinterface"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "aiohttp~=3.8.4",
+    "aiohttp_xmlrpc~=1.5.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/SX91/aioroboremote"
+"Repository" = "https://github.com/SX91/aioroboremote"
+"Bug Tracker" = "https://github.com/SX91/aioroboremote/issues"
