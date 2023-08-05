@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: webdns
+Version: 0.0.8
+Summary: DnsMasq utility to name IP addresses from Netbox NSOT.
+Home-page: https://git.rnp.br/pop-rj/dns-conectividade
+Author: PoP-RJ/RNP - BR
+Author-email: infra@pop-rj.rnp.br
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+
+DnsMasq utility to name IP addresses from Netbox NSOT.
