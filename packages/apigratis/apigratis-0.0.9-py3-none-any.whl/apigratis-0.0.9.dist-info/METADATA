@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: apigratis
+Version: 0.0.9
+Summary: Transforme seus projetos em soluções inteligentes com nossa API. Com recursos como  API do WhatsApp, geolocalização, rastreamento de encomendas, verificação de CPF/CNPJ e mais, você pode criar soluções eficientes e funcionais. Comece agora.
+Home-page: UNKNOWN
+Author: APIBRASIL
+Author-email: contato@apibrasil.com.br
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
+
