@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: acl-anthology-py
+Version: 0.1.0
+Summary: A library for accessing the ACL Anthology
+Home-page: https://github.com/mbollmann/acl-anthology-py
+License: Apache-2.0
+Author: Marcel Bollmann
+Author-email: marcel@bollmann.me
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: app-paths (>=0.0.7,<0.0.8)
+Requires-Dist: diskcache (>=5.6.1,<6.0.0)
+Requires-Dist: docopt (>=0.6.2,<0.7.0)
+Requires-Dist: latexcodec (>=2.0.1,<3.0.0)
+Requires-Dist: lxml (>=4.9.2,<5.0.0)
+Requires-Dist: rich (>=13.3.5,<14.0.0)
+Project-URL: Repository, https://github.com/mbollmann/acl-anthology-py
+Description-Content-Type: text/markdown
+
+# acl-anthology-py
+
+[![License](https://img.shields.io/github/license/mbollmann/acl-anthology-py)](LICENSE)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/mbollmann/acl-anthology-py/main.yml)](https://github.com/mbollmann/acl-anthology-py/actions/workflows/main.yml)
+[![Code Coverage](https://img.shields.io/codecov/c/gh/mbollmann/acl-anthology-py)](https://codecov.io/gh/mbollmann/acl-anthology-py)
+
+This package accesses data from the [ACL
+Anthology](https://github.com/acl-org/acl-anthology).
+
+## About
+
+:warning::warning::warning: **This repository is WORK IN PROGRESS and not yet
+functional.** :warning::warning::warning:
+
+## Developing
+
+This package uses **Python 3.11** with the
+[**Poetry**](https://python-poetry.org/) packaging system.
+
+To install the package and its dependencies in development mode, clone the
+repository and run `poetry install`.
+
+### Running checks and pre-commit hooks
+
+To run [black](https://github.com/psf/black),
+[ruff](https://github.com/charliermarsh/ruff), and some other pre-commit hooks
+on all files in the repo:
+
+```bash
+poetry run pre-commit run --all-files
+```
+
+To install pre-commit hooks so they run on every attempted commit:
+
+```bash
+poetry run pre-commit install
+```
+
+### Running tests
+
+```bash
+poetry run pytest
+```
+
+### Running benchmarks
+
+```bash
+poetry run richbench benchmarks/
+```
+
