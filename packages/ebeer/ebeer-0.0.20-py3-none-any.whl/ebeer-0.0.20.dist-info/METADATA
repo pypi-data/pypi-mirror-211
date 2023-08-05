@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: ebeer
+Version: 0.0.20
+Summary: CNN Trained to predict brazilian beers
+Author-email: diego vasque maldonado <diegoomal13@gmail.com>
+Project-URL: Homepage, https://github.com/Diegoomal/proj_integrado_trabalho_final
+Project-URL: Bug Tracker, https://github.com/Diegoomal/proj_integrado_trabalho_final/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: tensorflow
+Requires-Dist: Pillow
+Requires-Dist: importlib-resources
+
+# ebeer - pre-trained CNN
+
+CNN Trained to predict brazilian beers
+
+
+## Example implementation
+
+```
+
+import ebeer
+
+n_pos = ebeer.BeerClassifier.predict("assets/beer_imgs/0.jpg")
+
+print("Label:", ebeer.DataLabel[n_pos]["name"])
+
+```
+
+## Simple example implementation
+
+```
+
+import ebeer
+
+beerData = ebeer.BeerClassifier.predict_simple(
+    "assets/beer_imgs/0.jpg")
+
+print('beerData:', beerData)
+
+```
