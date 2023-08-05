@@ -1,0 +1,15 @@
+core/__init__.py,sha256=YqhUwSRPoRNWDBDLaCYbHVVupHNvn3KMl0-z-m_G8QA,34
+core/constants.py,sha256=QwHPw4q45pXheZfgqnhgIdYQaiIMB1Nlk5Ae39qbBks,1004
+core/factory.py,sha256=K87S5iVFh1eaDTtzixaTxvCXlAe4VGJiRajdhuL4G4c,302
+core/serializer.py,sha256=WWld7pRtbb279raF7j3PHjlskfjhDHZ0Deqfa1pDcSY,7576
+core/formats/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+core/formats/parsers.py,sha256=g8xXJlxrIv1H5YQihjBhv70FfzySRVtHqaChX7qHCO0,4101
+core/formats/json/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+core/formats/json/json.py,sha256=TvHCBjUnFJUnx3mBW4lNiYWeO4XsOB0g91Qm7jbd4JA,515
+core/formats/xml/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+core/formats/xml/constants.py,sha256=ztQ6imnnQJsESoY2bdVHy4OgOuoN-ZfnzEjB61Tqi9Y,682
+core/formats/xml/xml.py,sha256=XrosWT9gTq0jrS5rWHlIZw3CoTPXGEqC4ElCt9jc-yo,543
+custom_json_serializer_1234-1.2.dist-info/METADATA,sha256=BIxsQAvrb7R0-PwuSomeuudeu9n6-QDPDPAziznmMxc,753
+custom_json_serializer_1234-1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+custom_json_serializer_1234-1.2.dist-info/top_level.txt,sha256=0ebp8k35dOTHVwbY3UcokRsjC7cWLN_iaJ70tIcmODU,5
+custom_json_serializer_1234-1.2.dist-info/RECORD,,
