@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: pcax
+Version: 0.1.0
+Summary: Minimal Principal Component Analysis (PCA) implementation using JAX.
+Author-email: Albert Alonso <alonfnt@pm.me>
+License: MIT License
+        
+        Copyright (c) 2023 Albert Alonso
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/alonfnt/pcax
+Project-URL: Documentation, https://github.com/alonfnt/pcax
+Project-URL: Source, https://github.com/alonfnt/pcax
+Project-URL: Bug Tracker, https://github.com/alonfnt/pcax/issues
+Keywords: jax,pca,machine-learning
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pcax
+Minimal Principal Component Analsys (PCA) implementation using jax.
+
+The aim of this project is to provide a JAX-based PCA implementation, eliminating the need for unnecessary data transfer to CPU or conversions to Numpy. This can provide performance benefits when working with large datasets or in GPU-intensive workflow
+
+## Usage
+```python
+import pcax
+
+# Fit the PCA model with 3 components on your data X
+state = pcax.fit(X, n_components=3)
+
+# Transform X to its principal components
+X_pca = pcax.transform(state, X)
+
+# Recover the original X from its principal components
+X_recover = pcax.recover(state, X_pca)
+```
+
+## Installation
+`pcax` can be installed from PyPI via `pip`
+```
+pip install pcax
+```
+
+Alternatively, it can be installed directly from the GitHub repository:
+```
+pip install git+git://github.com/alonfnt/pcax.git
+```
+

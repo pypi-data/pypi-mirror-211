@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+pcax/__init__.py
+pcax/pca.py
+pcax.egg-info/PKG-INFO
+pcax.egg-info/SOURCES.txt
+pcax.egg-info/dependency_links.txt
+pcax.egg-info/top_level.txt
+tests/test_pca.py
