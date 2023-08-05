@@ -1,0 +1,6 @@
+include Authors.txt
+include ChangeLog.txt
+include example.pkgs
+include LICENSE.txt
+include Makefile
+include README.md

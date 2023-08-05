@@ -1,0 +1,3 @@
+[console_scripts]
+pmcyg = pmcyg.command_line:main
+
