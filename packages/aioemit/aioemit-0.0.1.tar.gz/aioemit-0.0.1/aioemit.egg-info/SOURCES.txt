@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+aioemit/__init__.py
+aioemit.egg-info/PKG-INFO
+aioemit.egg-info/SOURCES.txt
+aioemit.egg-info/dependency_links.txt
+aioemit.egg-info/top_level.txt
+tests/__init__.py
+tests/test_emitter.py

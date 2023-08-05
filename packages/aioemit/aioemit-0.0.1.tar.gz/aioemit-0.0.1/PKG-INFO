@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: aioemit
+Version: 0.0.1
+Summary: A minimalistic async event bus implementation
+Home-page: UNKNOWN
+Author: iunary
+Author-email: contact@yusuf.im
+License: MIT License
+        
+        Copyright (c) 2023 Youssef
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Keywords: emitter,event bus,pubsub,async,subscribe,emit,publish,aioemit
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![aioemit](https://github.com/iunary/aioemit/actions/workflows/app.yml/badge.svg)](https://github.com/iunary/aioemit/actions/workflows/app.yml)
+
+# aioemit
+
+aioemit allows you to manage events asynchonosly and notify subscribers when those events occur. It provides a simple way to implement event bus pattern in an event driven architecture application.
+
+## Installation
+
+```bash
+pip install aioemit
+```
+
+## Usage
+
+### Creating Events
+
+The `Event` class represents an event with a specified event type and optional data. You can create an event by initializing an instance of the `Event` class with the event type and data (if any).
+
+```python
+event = Event("example_event", "example_data")
+```
+
+### Creating an Emitter
+
+To use the event emitter, create an instance of the `Emitter` class.
+
+```python
+emitter = Emitter()
+```
+
+### Subscribing to Events
+
+To subscribe to events, use the `subscribe` method of the `Emitter` class. Pass the event type and an observer function that will be called when the event is emitted.
+
+```python
+def event_observer(event):
+    # Handle the event
+    print("Received event:", event)
+
+emitter.subscribe("example_event", event_observer)
+```
+
+### Unsubscribing from Events
+
+If you no longer want to receive notifications for a specific event, you can unsubscribe from it using the `unsubscribe` method. Provide the event type and the observer function that you want to remove.
+
+```python
+emitter.unsubscribe("example_event", event_observer)
+```
+
+### Emitting Events
+
+To emit an event and notify all subscribers, use the `emit` method of the `Emitter` class. Pass the event you want to emit.
+
+```python
+event = Event("example_event", "example_data")
+await emitter.emit(event)
+```
+
+The `emit` method will asynchronously call all the subscribed observer functions that are associated with the event type.
+
+
+## License
+
+This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the code as per the terms of the license.
+
+
