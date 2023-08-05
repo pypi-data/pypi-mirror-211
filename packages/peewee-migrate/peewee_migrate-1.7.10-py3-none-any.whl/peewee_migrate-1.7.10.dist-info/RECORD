@@ -1,0 +1,15 @@
+peewee_migrate/__init__.py,sha256=qGc4Hp1Xeq-i9emk2W3ua1H333iZkdiYWFG0AHFYnTc,146
+peewee_migrate/__main__.py,sha256=ICmR8ilvLyOr_kvBfNXkTjtte-Lz_PRbv_n2oXgJABQ,78
+peewee_migrate/auto.py,sha256=OitpAPpb631OUxQZjW5yx0GJ4dCCpAH1ADxO21VjK00,12050
+peewee_migrate/cli.py,sha256=lcn5959MqNl2zaSXllPhtAfRAwjmDtdweWu16Cunkqk,6597
+peewee_migrate/logs.py,sha256=k11EGrJz5kClxgClZ1iDrEI9D_Zc2PDBXafb65MsB9I,146
+peewee_migrate/migrator.py,sha256=M4h73dZ3Cq-ibiQDC9dSSHaDvPKpirBVHL_TPCshiNw,17190
+peewee_migrate/models.py,sha256=EoxHy9vRgngER1n-ZvJp8-dr47ROIKffa2-uwPBGD1I,461
+peewee_migrate/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+peewee_migrate/router.py,sha256=gLPCSBT9HO89zrZXjN0h8Q2NzU_lFS17EO_DE2xdQAY,12235
+peewee_migrate/template.py,sha256=VDzjLLLwjmMxaw9V7Ssdo0qwOEkGzP7OPD0NjutYF5c,1802
+peewee_migrate/types.py,sha256=Koru-ZTXjvzJhPxDXbi6HU8g6N5R0VK22XhVP1yqOtI,249
+peewee_migrate-1.7.10.dist-info/METADATA,sha256=3vhKEDuoFgE-E-WOA6rQWzqtYTzpxbbsLgMpHifprLQ,5441
+peewee_migrate-1.7.10.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+peewee_migrate-1.7.10.dist-info/entry_points.txt,sha256=5LuDLzQr47lseYcJRcHQDA1euvZ8ooZk2yWC3mslvt8,87
+peewee_migrate-1.7.10.dist-info/RECORD,,
