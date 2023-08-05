@@ -1,0 +1,12 @@
+LICENSE.md
+MANIFEST.in
+README.md
+pyproject.toml
+src/__init__.py
+src/acrcloud/__init__.py
+src/acrcloud/client.py
+src/acrcloudclient.egg-info/PKG-INFO
+src/acrcloudclient.egg-info/SOURCES.txt
+src/acrcloudclient.egg-info/dependency_links.txt
+src/acrcloudclient.egg-info/requires.txt
+src/acrcloudclient.egg-info/top_level.txt
