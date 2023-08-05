@@ -1,0 +1,36 @@
+version: "3"
+
+networks:
+  core:
+    driver: bridge
+
+services:
+  dj:
+    container_name: dj
+    stdin_open: true
+    tty: true
+    networks:
+      - core
+    environment:
+      - DOTENV_FILE=.docker-env/.env
+    build: .
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db_migration
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  db_migration:
+    container_name: db_migration
+    networks:
+      - core
+    environment:
+      - DOTENV_FILE=.docker-env/.env
+    build: .
+    volumes:
+      - .:/code
+    command: alembic upgrade head
+    restart: on-failure

@@ -1,0 +1,36 @@
+{
+  "ref": "refs/heads/main",
+  "before": "0000000000000000000000000000000000000000",
+  "after": "abcdef1234567890abcdef1234567890abcdef12",
+  "repository": {
+    "id": 123456789,
+    "name": "example-repo",
+    "full_name": "your-username/example-repo",
+    "owner": {
+      "login": "your-username",
+      "id": 1234567
+    },
+    "default_branch": "main"
+  },
+  "pusher": {
+    "name": "your-username"
+  },
+  "commits": [
+    {
+      "id": "abcdef1234567890abcdef1234567890abcdef12",
+      "message": "Update dj/__about__.py",
+      "timestamp": "2023-05-23T12:34:56Z",
+      "author": {
+        "name": "Your Name",
+        "email": "your-email@example.com"
+      },
+      "committer": {
+        "name": "Your Name",
+        "email": "your-email@example.com"
+      },
+      "added": [],
+      "removed": [],
+      "modified": ["dj/__about__.py"]
+    }
+  ]
+}

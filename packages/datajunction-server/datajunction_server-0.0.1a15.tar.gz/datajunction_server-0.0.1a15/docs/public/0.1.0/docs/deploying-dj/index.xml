@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deploying DJ on DataJunction</title>
+    <link>0.1.0/docs/deploying-dj/</link>
+    <description>Recent content in Deploying DJ on DataJunction</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="0.1.0/docs/deploying-dj/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Components of a DJ Deployment</title>
+      <link>0.1.0/docs/deploying-dj/the-components-of-a-dj-deployment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/deploying-dj/the-components-of-a-dj-deployment/</guid>
+      <description> The Components of a DJ Deployment # </description>
+    </item>
+    
+    <item>
+      <title>Running a DJ Server</title>
+      <link>0.1.0/docs/deploying-dj/running-a-dj-server/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/deploying-dj/running-a-dj-server/</guid>
+      <description> Running a DJ Server # </description>
+    </item>
+    
+    <item>
+      <title>Materialization Service</title>
+      <link>0.1.0/docs/deploying-dj/materialization-service/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/deploying-dj/materialization-service/</guid>
+      <description> Materialization Service # </description>
+    </item>
+    
+    <item>
+      <title>Query Service</title>
+      <link>0.1.0/docs/deploying-dj/query-service/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/deploying-dj/query-service/</guid>
+      <description> Query Service # </description>
+    </item>
+    
+    <item>
+      <title>Reflection Service</title>
+      <link>0.1.0/docs/deploying-dj/reflection-service/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/deploying-dj/reflection-service/</guid>
+      <description> Reflection Service # </description>
+    </item>
+    
+    <item>
+      <title>Running DJ on Kubernetes</title>
+      <link>0.1.0/docs/deploying-dj/running-dj-on-kubernetes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/deploying-dj/running-dj-on-kubernetes/</guid>
+      <description> Running DJ on Kubernetes # </description>
+    </item>
+    
+  </channel>
+</rss>

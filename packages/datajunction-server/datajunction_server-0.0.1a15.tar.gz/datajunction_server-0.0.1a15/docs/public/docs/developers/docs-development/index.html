@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Docs Development # The DJ project uses the Hugo framework for building the docs site and all of the pages are defined as markdown files. The deployed docs site is actually a combination of multiple sites for different versions of DJ. This page will help to understand how to modify, locally test, and deploy DJ docs.
+Running the Docs Site Locally # Clone the DJ repo locally.
+git clone https://github.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
+<meta property="og:description" content="Docs Development # The DJ project uses the Hugo framework for building the docs site and all of the pages are defined as markdown files. The deployed docs site is actually a combination of multiple sites for different versions of DJ. This page will help to understand how to modify, locally test, and deploy DJ docs.
+Running the Docs Site Locally # Clone the DJ repo locally.
+git clone https://github." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="--cleanDestinationDir/docs/developers/docs-development/" /><meta property="article:section" content="docs" />
+
+
+<title>Docs Development | DataJunction</title>
+<link rel="manifest" href="/--cleanDestinationDir/manifest.json">
+<link rel="icon" href="/--cleanDestinationDir/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/--cleanDestinationDir/book.min.25238d768e1f627f906826dba6a7c2574c9bf20c014e26e2b8d8dc2f922e2739.css" >
+  <script defer src="/--cleanDestinationDir/flexsearch.min.js"></script>
+  <script defer src="/--cleanDestinationDir/en.search.min.843ae58feb62abb2371e90127ba8ca121e7f14fd1ce7d67e7571be181e588fb2.js" ></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script
+  type="text/javascript"
+  src="https://unpkg.com/@excalidraw/excalidraw/dist/excalidraw.production.min.js"
+></script>
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="--cleanDestinationDir/"><img src="/--cleanDestinationDir/dj-logo.png" alt="Logo" /><span>DataJunction</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<a href="/versions" style="color: #ff7900; font-size: 0.8rem">Other Versions</a>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Getting Started</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/getting-started/docker-compose/" class="">Docker Compose</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2b8d7e68acacf0de5c4f58935c86c1d2" class="toggle"  />
+    <label for="section-2b8d7e68acacf0de5c4f58935c86c1d2" class="flex justify-between">
+      <a role="button" class="">Creating Nodes</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/getting-started/creating-nodes/sources/" class="">Sources</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/getting-started/creating-nodes/transforms/" class="">Transforms</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/getting-started/creating-nodes/dimensions/" class="">Dimensions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/getting-started/creating-nodes/metrics/" class="">Metrics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/getting-started/creating-nodes/cubes/" class="">Cubes</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/getting-started/listing-nodes/" class="">Listing Nodes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/getting-started/requesting-sql/" class="">Requesting SQL</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/getting-started/requesting-data/" class="">Requesting Data</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>DJ Concepts</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/dj-concepts/nodes/" class="">Nodes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/dj-concepts/the-dj-dag/" class="">The DJ DAG</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/dj-concepts/dimension-discovery/" class="">Dimension Discovery</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/dj-concepts/node-dependencies/" class="">Node Dependencies</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/dj-concepts/dag-impact-analysis/" class="">DAG Impact Analysis</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/dj-concepts/materialization/" class="">Materialization</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/dj-concepts/table-reflection/" class="">Table Reflection</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5e8b12c271b2b367e7ed1fc38b0a98c3" class="toggle"  />
+    <label for="section-5e8b12c271b2b367e7ed1fc38b0a98c3" class="flex justify-between">
+      <a role="button" class="">Deploying DJ</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/deploying-dj/the-components-of-a-dj-deployment/" class="">The Components of a DJ Deployment</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/deploying-dj/running-a-dj-server/" class="">Running a DJ Server</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/deploying-dj/materialization-service/" class="">Materialization Service</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/deploying-dj/query-service/" class="">Query Service</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/deploying-dj/reflection-service/" class="">Reflection Service</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/deploying-dj/running-dj-on-kubernetes/" class="">Running DJ on Kubernetes</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-46cdd03a513e8b21f7b96d28d8d84c3d" class="toggle"  />
+    <label for="section-46cdd03a513e8b21f7b96d28d8d84c3d" class="flex justify-between">
+      <a role="button" class="">Tutorials</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/tutorials/analyzing-a-b-tests/" class="">Analyzing A/B Tests</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/tutorials/publishing-draft-nodes/" class="">Publishing Draft Nodes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/tutorials/debugging-invalid-nodes/" class="">Debugging Invalid Nodes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/tutorials/improving-performance-using-materialization/" class="">Improving Performance Using Materialization</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/tutorials/connecting-superset-to-dj/" class="">Connecting Superset to DJ</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-12aad16aea37bbd376260baf2d0199b2" class="toggle" checked />
+    <label for="section-12aad16aea37bbd376260baf2d0199b2" class="flex justify-between">
+      <a role="button" class="">Developers</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/the-datajunction-api-specification/" class="">The Datajunction API Specification</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/codebase-overview/" class="">Codebase Overview</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/api-routes/" class="">API Routes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/djs-sql-ast/" class="">DJ&#39;s SQL AST</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/djs-sql-parser/" class="">DJ&#39;s SQL Parser</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/how-metric-requests-are-converted-to-sql/" class="">How Metric Requests are Converted to SQL</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/functions/" class="">Functions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/testing/" class="">Testing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/opening-and-reviewing-prs/" class="">Opening and Reviewing PR&#39;s</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/versioning/" class="">Versioning</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/openapi/" class="">OpenAPI</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/docs-development/" class="active">Docs Development</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/publishing-to-pypi/" class="">Publishing to Pypi</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/--cleanDestinationDir/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Docs Development</strong>
+
+  <label for="toc-control">
+    
+    <img src="/--cleanDestinationDir/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#running-the-docs-site-locally">Running the Docs Site Locally</a></li>
+    <li><a href="#updating-content">Updating Content</a></li>
+    <li><a href="#updating-the-datajunction-api-specification-page">Updating the DataJunction API Specification Page</a></li>
+    <li><a href="#adding-new-pages">Adding New Pages</a></li>
+    <li><a href="#deployment">Deployment</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="docs-development">
+  Docs Development
+  <a class="anchor" href="#docs-development">#</a>
+</h1>
+<p>The DJ project uses the <a href="https://gohugo.io/">Hugo</a> framework for building the docs site and all of the pages are defined as
+markdown files. The deployed docs site is actually a combination of multiple sites for different versions
+of DJ. This page will help to understand how to modify, locally test, and deploy DJ docs.</p>
+<h2 id="running-the-docs-site-locally">
+  Running the Docs Site Locally
+  <a class="anchor" href="#running-the-docs-site-locally">#</a>
+</h2>
+<p>Clone the DJ repo locally.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git clone https://github.com/datajunction/dj
+</span></span></code></pre></div><p>Change into the docs directory.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cd dj/docs
+</span></span></code></pre></div><p>Using hugo, start a local server for the specific DJ docs version you want to view.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>hugo serve --contentDir content/0.1.0/
+</span></span></code></pre></div><blockquote class="book-hint info">
+  By default, the docs site will be launched at http://localhost:1313/
+</blockquote>
+
+<p>In addition to different versions of the docs site, there is a <code>Versions</code> page that is deployed as a
+small sub-site to the <code>/versions/</code> route. This is a connecting page that all versions of the site
+link to and lists release notes for each DJ release. The following command will serve the versions page.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>hugo serve --contentDir content/versions/
+</span></span></code></pre></div><h2 id="updating-content">
+  Updating Content
+  <a class="anchor" href="#updating-content">#</a>
+</h2>
+<p>Content for all pages are stored in reStructuredText files located at <code>docs/content/</code>. A sub-directory can
+be found for each version of DJ. In order to update content for an existing docs page, open a PR against that page.
+In most cases, it&rsquo;s enough to add updates for the latest version, however when necessary, you can additionally make
+changes to previous versions of an existing page.</p>
+<p>Here are some tips on deciding on whether you should backport changes to previous versions.</p>
+<ul>
+<li>
+<p>Open a PR against the latest version of a page to&hellip;</p>
+<ul>
+<li>
+<p>clarify or extend an existing section</p>
+</li>
+<li>
+<p>add a page or section for a new feature</p>
+</li>
+<li>
+<p>add a tutorial</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Open a PR against all versions of a page to&hellip;</p>
+<ul>
+<li>
+<p>fix broken links</p>
+</li>
+<li>
+<p>annotate feature descriptions with version-specific peculiarities</p>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote class="book-hint info">
+  The DJ docs site uses a Hugo theme called <a href="https://github.com/alex-shpak/hugo-book">hugo-book</a>. The readme for the
+theme includes many configurations that can be used in the <a href="https://gohugo.io/content-management/front-matter/">front matter</a>
+for content pages.
+</blockquote>
+
+<h2 id="updating-the-datajunction-api-specification-page">
+  Updating the DataJunction API Specification Page
+  <a class="anchor" href="#updating-the-datajunction-api-specification-page">#</a>
+</h2>
+<p><a href="../the-datajunction-api-specification">The DataJunction API Specification</a> page is generated using the <code>openapi.json</code>
+spec file and the <a href="https://github.com/Mermade/widdershins">widdershins</a> CLI tool.</p>
+<p>Install <code>dj</code> from source.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span>pip install <span style="color:#f92672">.</span>
+</span></span></code></pre></div><blockquote class="book-hint info">
+  The generated <code>openapi.json</code> file in the next step will be generated from the currently installed DJ library.
+</blockquote>
+
+<p>Use the <code>generate-openapi.py</code> script to update the <code>openapi.json</code> file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span>python <span style="color:#f92672">./</span>scripts<span style="color:#f92672">/</span>generate<span style="color:#f92672">-</span>openapi<span style="color:#f92672">.</span>py <span style="color:#f92672">-</span>o openapi<span style="color:#f92672">.</span>json
+</span></span></code></pre></div><p>Use <code>widdershins</code> to generate a markdown file from the <code>openapi.json</code> file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>widdershins openapi.json -o docs/content/0.1.0/docs/developers/the-datajunction-api-specification.md --code<span style="color:#f92672">=</span>true --omitBody<span style="color:#f92672">=</span>true --summary<span style="color:#f92672">=</span>true
+</span></span></code></pre></div><p>Launch the hugo server locally to visually inspect the datajunction specification page.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cd docs
+</span></span><span style="display:flex;"><span>hugo serve --contentDir<span style="color:#f92672">=</span>content/0.1.0
+</span></span></code></pre></div><p>The following are a few manual cleanups that need to be performed on the generated file.</p>
+<p>Replace all of the front-matter with a single value <code>weight: 1</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-diff" data-lang="diff"><span style="display:flex;"><span><span style="font-weight:bold">---
+</span></span></span><span style="display:flex;"><span><span style="font-weight:bold"></span><span style="color:#f92672">- title: DJ server v0.0.post1.dev763+gdf7a15b.d20230411
+</span></span></span><span style="display:flex;"><span><span style="color:#f92672">- language_tabs:
+</span></span></span><span style="display:flex;"><span><span style="color:#f92672">-   - shell: Shell
+</span></span></span><span style="display:flex;"><span><span style="color:#f92672">-   - http: HTTP
+</span></span></span><span style="display:flex;"><span><span style="color:#f92672">-   - javascript: JavaScript
+</span></span></span><span style="display:flex;"><span><span style="color:#f92672">-   - ruby: Ruby
+</span></span></span><span style="display:flex;"><span><span style="color:#f92672">-   - python: Python
+</span></span></span><span style="display:flex;"><span><span style="color:#f92672">-   - php: PHP
+</span></span></span><span style="display:flex;"><span><span style="color:#f92672">-   - java: Java
+</span></span></span><span style="display:flex;"><span><span style="color:#f92672">-   - go: Go
+</span></span></span><span style="display:flex;"><span><span style="color:#f92672">- toc_footers: []
+</span></span></span><span style="display:flex;"><span><span style="color:#f92672">- includes: []
+</span></span></span><span style="display:flex;"><span><span style="color:#f92672">- search: true
+</span></span></span><span style="display:flex;"><span><span style="color:#f92672">- highlight_theme: darkula
+</span></span></span><span style="display:flex;"><span><span style="color:#f92672">- headingLevel: 2
+</span></span></span><span style="display:flex;"><span><span style="color:#f92672"></span><span style="color:#a6e22e">+ weight: 11
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e"></span><span style="font-weight:bold">---
+</span></span></span></code></pre></div><p>Replace the header with an H1 page title.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-diff" data-lang="diff"><span style="display:flex;"><span><span style="color:#f92672">- &lt;!-- Generator: Widdershins v4.0.1 --&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#f92672">- 
+</span></span></span><span style="display:flex;"><span><span style="color:#f92672">- &lt;h1 id=&#34;dj-server&#34;&gt;DJ server v0.0.post1.dev763+gdf7a15b.d20230411&lt;/h1&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#f92672">- 
+</span></span></span><span style="display:flex;"><span><span style="color:#f92672">- &gt; Scroll down for code samples, example requests and responses. Select a language for code samples from the tabs above or the mobile navigation menu.
+</span></span></span><span style="display:flex;"><span><span style="color:#f92672">- 
+</span></span></span><span style="display:flex;"><span><span style="color:#f92672">- A DataJunction metrics layer
+</span></span></span><span style="display:flex;"><span><span style="color:#f92672">- 
+</span></span></span><span style="display:flex;"><span><span style="color:#f92672">- License: &lt;a href=&#34;https://mit-license.org/&#34;&gt;MIT License&lt;/a&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#f92672">- 
+</span></span></span><span style="display:flex;"><span><span style="color:#f92672">- &lt;h1 id=&#34;dj-server-default&#34;&gt;Default&lt;/h1&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#f92672"></span><span style="color:#a6e22e">+ # The DataJunction API Specification
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">+
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">+ License: &lt;a href=&#34;https://mit-license.org/&#34;&gt;MIT License&lt;/a&gt;
+</span></span></span></code></pre></div><h2 id="adding-new-pages">
+  Adding New Pages
+  <a class="anchor" href="#adding-new-pages">#</a>
+</h2>
+<p>A new page can be added by creating an <code>.md</code> file anywhere within the <code>docs/content</code> directory. By default, the
+page will appear in the side navigation menu and the title will be the file name converted to a display format. For
+example, the content for this page is defined in a file named <code>docs-development.md</code> and the title automatically
+appears in the menu as <code>Docs Development</code>. The title can also be overriden by setting it explicitly in the pages
+front-matter.</p>
+<p><em>example.md</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>title: My Docs Page
+</span></span><span style="display:flex;"><span>---
+</span></span></code></pre></div><p>A weight can also be added to position the page in the side menu. Items with higher weights are displayed below items
+with lower weights.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>title: My Docs Page
+</span></span><span style="display:flex;"><span>weight: <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>---
+</span></span></code></pre></div><h2 id="deployment">
+  Deployment
+  <a class="anchor" href="#deployment">#</a>
+</h2>
+<p>In order to make it easier to build the entire docs-site (including multiple versions) a build script can be found
+at <code>docs/build-docs.sh</code>. The script takes two positional arguments. You can run the script without any arguments
+to see the help output.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>./build-docs.sh
+</span></span></code></pre></div><p><em>output</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>Build a specified version of the DJ docs
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Syntax: ./build-docs.sh &lt;VERSION&gt; &lt;SET_AS_LATEST&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>VERSION: The version of the docs site to build, i.e. 0.1.0
+</span></span><span style="display:flex;"><span>SET_AS_LATEST: Additionally build the specified version as the default/latest docs site, i.e. true
+</span></span></code></pre></div><p>For example, by running the following you can build the docs for versions <code>0.1.0</code>, <code>0.1.1</code>, and
+<code>0.1.2</code>, building <code>0.1.2</code> as the latest version that&rsquo;s shown when navigating to the root site.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>./build-docs.sh 0.1.2 true
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Start building sites …
+</span></span><span style="display:flex;"><span>Total in <span style="color:#ae81ff">2496</span> ms
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>./build-docs.sh 0.1.1 false
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Start building sites …
+</span></span><span style="display:flex;"><span>Total in <span style="color:#ae81ff">2472</span> ms
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>./build-docs.sh 0.1.0 false
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Start building sites …
+</span></span><span style="display:flex;"><span>Total in <span style="color:#ae81ff">2549</span> ms
+</span></span></code></pre></div><blockquote class="book-hint warning">
+  The important thing to note is that only the latest version should have the SET_AS_LATEST flag set to true and
+that build should be performed first. This is because the latest site is built at the root and starts by cleaning
+out the root directory. Subsequent non-latest builds will happen in sub-directories.
+</blockquote>
+
+<p>After the builds are completed, the entire site will be deployed to the <code>docs/public</code> directory. Any local server
+can be used to render the entire site from the public directory locally such as the popular
+<a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server</a> extension for VSCode.</p>
+<h1 id="adding-excalidraw-diagrams">
+  Adding Excalidraw Diagrams
+  <a class="anchor" href="#adding-excalidraw-diagrams">#</a>
+</h1>
+<p>The DataJunction docs site uses <a href="https://docs.excalidraw.com/">excalidraw</a> to create diagrams and renders them within the docs pages
+using an excalidraw shortcode. You can create new excalidraw diagrams by developing them either on <a href="https://excalidraw.com/">excalidraw.com</a>
+or using the <a href="https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor">Excalidraw VSCode extension</a>.</p>
+<p>To add diagrams to the docs site, export the diagram as a <code>.excalidraw</code> file and place it in the <code>static/excalidraw-drawings/</code> directory. You
+can then add the diagram using the <code>excalidraw</code> shortcode.</p>
+<p>As an example, if you&rsquo;ve added an excalidraw file named <code>excalidraw_is_awesome.excalidraw</code>, you can add it to any markdown page with the following
+shortcode.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#f92672">{{</span>&lt; excalidraw excalidraw_is_awesome &gt;<span style="color:#f92672">}}</span>
+</span></span></code></pre></div><p>Here&rsquo;s an example of how the excalidraw diagram will appear.
+<div class="container">
+    <div id=excalidraw_is_awesome></div>
+</div>
+<script>
+    fetch("/excalidraw-drawings/excalidraw_is_awesome.excalidraw")
+    .then(response => response.json())
+    .then(initialData => {
+    const excalidraw_is_awesomeApp = () => {
+        return React.createElement(
+            React.Fragment,
+            null,
+            React.createElement(
+            "div",
+            {
+                style: { height: "500px" },
+            },
+            React.createElement(ExcalidrawLib.Excalidraw, {
+                    name: "excalidraw_is_awesome",
+                    initialData: initialData,
+                    zenModeEnabled: true,
+                    gridModeEnabled: false,
+                    viewModeEnabled: true,
+                }
+            ),
+            ),
+        );
+    };
+    
+    const excalidraw_is_awesome = ReactDOM.createRoot(document.getElementById("excalidraw_is_awesome"));
+    excalidraw_is_awesome.render(React.createElement(excalidraw_is_awesomeApp));
+    });
+</script>
+<blockquote class="book-hint info">
+  <strong>Tip: Finding the Center</strong><br>
+The excalidraw diagram will always render in the center of the canvas. It may take some repositioning of the components to find
+the exact location where you want the initial rendering to focus when the page is loaded.
+</blockquote>
+</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#running-the-docs-site-locally">Running the Docs Site Locally</a></li>
+    <li><a href="#updating-content">Updating Content</a></li>
+    <li><a href="#updating-the-datajunction-api-specification-page">Updating the DataJunction API Specification Page</a></li>
+    <li><a href="#adding-new-pages">Adding New Pages</a></li>
+    <li><a href="#deployment">Deployment</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

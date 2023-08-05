@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Functions Currently, DJ supports only a small subset of SQL functions, limiting the definition of metrics. In order to add new functions to DJ we need to implement two things:
+Type inference for the function. This is easier in some functions and harder in others. For example, the COUNT function always return an integer, so its return type is the same regardless of the input arguments. The MAX function, on the other hands, return a value with the same type as the input argument.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
+<meta property="og:description" content="Functions Currently, DJ supports only a small subset of SQL functions, limiting the definition of metrics. In order to add new functions to DJ we need to implement two things:
+Type inference for the function. This is easier in some functions and harder in others. For example, the COUNT function always return an integer, so its return type is the same regardless of the input arguments. The MAX function, on the other hands, return a value with the same type as the input argument." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="--cleanDestinationDir/docs/developers/functions/" /><meta property="article:section" content="docs" />
+
+
+<title>Functions | DataJunction</title>
+<link rel="manifest" href="/--cleanDestinationDir/manifest.json">
+<link rel="icon" href="/--cleanDestinationDir/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/--cleanDestinationDir/book.min.25238d768e1f627f906826dba6a7c2574c9bf20c014e26e2b8d8dc2f922e2739.css" >
+  <script defer src="/--cleanDestinationDir/flexsearch.min.js"></script>
+  <script defer src="/--cleanDestinationDir/en.search.min.843ae58feb62abb2371e90127ba8ca121e7f14fd1ce7d67e7571be181e588fb2.js" ></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script
+  type="text/javascript"
+  src="https://unpkg.com/@excalidraw/excalidraw/dist/excalidraw.production.min.js"
+></script>
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="--cleanDestinationDir/"><img src="/--cleanDestinationDir/dj-logo.png" alt="Logo" /><span>DataJunction</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<a href="/versions" style="color: #ff7900; font-size: 0.8rem">Other Versions</a>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Getting Started</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/getting-started/docker-compose/" class="">Docker Compose</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2b8d7e68acacf0de5c4f58935c86c1d2" class="toggle"  />
+    <label for="section-2b8d7e68acacf0de5c4f58935c86c1d2" class="flex justify-between">
+      <a role="button" class="">Creating Nodes</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/getting-started/creating-nodes/sources/" class="">Sources</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/getting-started/creating-nodes/transforms/" class="">Transforms</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/getting-started/creating-nodes/dimensions/" class="">Dimensions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/getting-started/creating-nodes/metrics/" class="">Metrics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/getting-started/creating-nodes/cubes/" class="">Cubes</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/getting-started/listing-nodes/" class="">Listing Nodes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/getting-started/requesting-sql/" class="">Requesting SQL</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/getting-started/requesting-data/" class="">Requesting Data</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>DJ Concepts</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/dj-concepts/nodes/" class="">Nodes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/dj-concepts/the-dj-dag/" class="">The DJ DAG</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/dj-concepts/dimension-discovery/" class="">Dimension Discovery</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/dj-concepts/node-dependencies/" class="">Node Dependencies</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/dj-concepts/dag-impact-analysis/" class="">DAG Impact Analysis</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/dj-concepts/materialization/" class="">Materialization</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/dj-concepts/table-reflection/" class="">Table Reflection</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5e8b12c271b2b367e7ed1fc38b0a98c3" class="toggle"  />
+    <label for="section-5e8b12c271b2b367e7ed1fc38b0a98c3" class="flex justify-between">
+      <a role="button" class="">Deploying DJ</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/deploying-dj/the-components-of-a-dj-deployment/" class="">The Components of a DJ Deployment</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/deploying-dj/running-a-dj-server/" class="">Running a DJ Server</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/deploying-dj/materialization-service/" class="">Materialization Service</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/deploying-dj/query-service/" class="">Query Service</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/deploying-dj/reflection-service/" class="">Reflection Service</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/deploying-dj/running-dj-on-kubernetes/" class="">Running DJ on Kubernetes</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-46cdd03a513e8b21f7b96d28d8d84c3d" class="toggle"  />
+    <label for="section-46cdd03a513e8b21f7b96d28d8d84c3d" class="flex justify-between">
+      <a role="button" class="">Tutorials</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/tutorials/analyzing-a-b-tests/" class="">Analyzing A/B Tests</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/tutorials/publishing-draft-nodes/" class="">Publishing Draft Nodes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/tutorials/debugging-invalid-nodes/" class="">Debugging Invalid Nodes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/tutorials/improving-performance-using-materialization/" class="">Improving Performance Using Materialization</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/tutorials/connecting-superset-to-dj/" class="">Connecting Superset to DJ</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-12aad16aea37bbd376260baf2d0199b2" class="toggle" checked />
+    <label for="section-12aad16aea37bbd376260baf2d0199b2" class="flex justify-between">
+      <a role="button" class="">Developers</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/the-datajunction-api-specification/" class="">The Datajunction API Specification</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/codebase-overview/" class="">Codebase Overview</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/api-routes/" class="">API Routes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/djs-sql-ast/" class="">DJ&#39;s SQL AST</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/djs-sql-parser/" class="">DJ&#39;s SQL Parser</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/how-metric-requests-are-converted-to-sql/" class="">How Metric Requests are Converted to SQL</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/functions/" class="active">Functions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/testing/" class="">Testing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/opening-and-reviewing-prs/" class="">Opening and Reviewing PR&#39;s</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/versioning/" class="">Versioning</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/openapi/" class="">OpenAPI</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/docs-development/" class="">Docs Development</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/publishing-to-pypi/" class="">Publishing to Pypi</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/--cleanDestinationDir/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Functions</strong>
+
+  <label for="toc-control">
+    
+    <img src="/--cleanDestinationDir/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><div class="document" id="functions-1">
+<span id="functions"></span>
+<h1 class="title">Functions</h1>
+
+<p>Currently, DJ supports only a small subset of SQL functions, limiting the definition of metrics. In order to add new functions to DJ we need to implement two things:</p>
+<ol class="arabic simple">
+<li>Type inference for the function. This is easier in some functions and harder in others. For example, the <tt class="docutils literal">COUNT</tt> function always return an integer, so its return type is the same regardless of the input arguments. The <tt class="docutils literal">MAX</tt> function, on the other hands, return a value with the same type as the input argument.</li>
+<li>Translation to SQLAlchemy. In order to run queries, DJ parses the metric definitions (written in ANSI SQL), and converts them to a SQLAlchemy query object, so it can be translated to different dialects (Hive, Trino, Postgres, etc.). Some functions are easier to translate, especially if they are already defined in <tt class="docutils literal">sqlalchemy.sql.functions</tt>. Others, like <tt class="docutils literal">DATE_TRUNC</tt>, are more complex because they are dialect specific.</li>
+</ol>
+<div class="section" id="supported-functions">
+<h2>Supported functions</h2>
+</div>
+<div class="section" id="avg">
+<h2><tt class="docutils literal">AVG</tt></h2>
+<p>Return the average of a given column:</p>
+<pre class="code sql literal-block">
+<span class="operator">&gt;</span><span class="whitespace"> </span><span class="keyword">SELECT</span><span class="whitespace"> </span><span class="keyword">AVG</span><span class="punctuation">(</span><span class="keyword">column</span><span class="punctuation">);</span><span class="whitespace">
+</span><span class="literal number integer">1</span><span class="punctuation">.</span><span class="literal number integer">2</span>
+</pre>
+</div>
+<div class="section" id="coalesce">
+<h2><tt class="docutils literal">COALESCE</tt></h2>
+<p>Return the first non-null value:</p>
+<pre class="code sql literal-block">
+<span class="operator">&gt;</span><span class="whitespace"> </span><span class="keyword">SELECT</span><span class="whitespace"> </span><span class="name">column_a</span><span class="punctuation">,</span><span class="whitespace"> </span><span class="name">column_b</span><span class="whitespace"> </span><span class="keyword">FROM</span><span class="whitespace"> </span><span class="name">some_table</span><span class="punctuation">;</span><span class="whitespace">
+</span><span class="literal number integer">1</span><span class="punctuation">,</span><span class="whitespace"> </span><span class="keyword">NULL</span><span class="whitespace">
+</span><span class="keyword">NULL</span><span class="punctuation">,</span><span class="whitespace"> </span><span class="literal number integer">10</span><span class="whitespace">
+</span><span class="keyword">NULL</span><span class="punctuation">,</span><span class="whitespace"> </span><span class="keyword">NULL</span><span class="whitespace">
+</span><span class="operator">&gt;</span><span class="whitespace"> </span><span class="keyword">SELECT</span><span class="whitespace"> </span><span class="keyword">COALESCE</span><span class="punctuation">(</span><span class="name">column_a</span><span class="punctuation">,</span><span class="whitespace"> </span><span class="name">column_b</span><span class="punctuation">,</span><span class="whitespace"> </span><span class="operator">-</span><span class="literal number integer">1</span><span class="punctuation">)</span><span class="whitespace"> </span><span class="keyword">FROM</span><span class="whitespace"> </span><span class="name">some_table</span><span class="punctuation">;</span><span class="whitespace">
+</span><span class="literal number integer">1</span><span class="whitespace">
+</span><span class="literal number integer">10</span><span class="whitespace">
+</span><span class="operator">-</span><span class="literal number integer">1</span>
+</pre>
+</div>
+<div class="section" id="count">
+<h2><tt class="docutils literal">COUNT</tt></h2>
+<p>The humble <tt class="docutils literal">COUNT()</tt>.</p>
+<pre class="code sql literal-block">
+<span class="operator">&gt;</span><span class="whitespace"> </span><span class="keyword">SELECT</span><span class="whitespace"> </span><span class="keyword">COUNT</span><span class="punctuation">(</span><span class="operator">*</span><span class="punctuation">)</span><span class="whitespace"> </span><span class="keyword">FROM</span><span class="whitespace"> </span><span class="name">some_table</span><span class="punctuation">;</span><span class="whitespace">
+</span><span class="literal number integer">10</span><span class="whitespace">
+</span><span class="operator">&gt;</span><span class="whitespace"> </span><span class="keyword">SELECT</span><span class="whitespace"> </span><span class="keyword">COUNT</span><span class="punctuation">(</span><span class="literal number integer">1</span><span class="punctuation">)</span><span class="whitespace"> </span><span class="keyword">FROM</span><span class="whitespace"> </span><span class="name">some_table</span><span class="punctuation">;</span><span class="whitespace">
+</span><span class="literal number integer">10</span><span class="whitespace">
+</span><span class="operator">&gt;</span><span class="whitespace"> </span><span class="keyword">SELECT</span><span class="whitespace"> </span><span class="keyword">COUNT</span><span class="punctuation">(</span><span class="keyword">column</span><span class="punctuation">)</span><span class="whitespace"> </span><span class="keyword">FROM</span><span class="whitespace"> </span><span class="name">some_table</span><span class="punctuation">;</span><span class="whitespace">  </span><span class="comment single">-- ignores NULLs
+</span><span class="literal number integer">5</span>
+</pre>
+</div>
+<div class="section" id="date-trunc">
+<h2><tt class="docutils literal">DATE_TRUNC</tt></h2>
+<p>Truncate a <tt class="docutils literal">TIMESTAMP</tt> column to a given resolution:</p>
+<pre class="code sql literal-block">
+<span class="operator">&gt;</span><span class="whitespace"> </span><span class="keyword">SELECT</span><span class="whitespace"> </span><span class="name">DATE_TRUNC</span><span class="punctuation">(</span><span class="literal string single">'minute'</span><span class="punctuation">,</span><span class="whitespace"> </span><span class="keyword">CAST</span><span class="punctuation">(</span><span class="literal string single">'2022-01-01T12:34:56Z'</span><span class="whitespace"> </span><span class="keyword">AS</span><span class="whitespace"> </span><span class="keyword">TIMESTAMP</span><span class="punctuation">);</span><span class="whitespace">
+</span><span class="literal number integer">2022</span><span class="operator">-</span><span class="literal number integer">01</span><span class="operator">-</span><span class="literal number integer">01</span><span class="name">T12</span><span class="punctuation">:</span><span class="literal number integer">34</span><span class="punctuation">:</span><span class="literal number integer">00</span><span class="name">Z</span>
+</pre>
+</div>
+<div class="section" id="max">
+<h2><tt class="docutils literal">MAX</tt></h2>
+<p>Return the maximum value from a column:</p>
+<pre class="code sql literal-block">
+<span class="operator">&gt;</span><span class="whitespace"> </span><span class="keyword">SELECT</span><span class="whitespace"> </span><span class="keyword">MAX</span><span class="punctuation">(</span><span class="keyword">column</span><span class="punctuation">);</span>
+</pre>
+</div>
+<div class="section" id="min">
+<h2><tt class="docutils literal">MIN</tt></h2>
+<p>Return the minimum value from a column:</p>
+<pre class="code sql literal-block">
+<span class="operator">&gt;</span><span class="whitespace"> </span><span class="keyword">SELECT</span><span class="whitespace"> </span><span class="keyword">MIN</span><span class="punctuation">(</span><span class="keyword">column</span><span class="punctuation">);</span><span class="whitespace">
+</span><span class="literal number integer">1</span>
+</pre>
+</div>
+<div class="section" id="sum">
+<h2><tt class="docutils literal">SUM</tt></h2>
+<p>Return the sum of a given column:</p>
+<pre class="code sql literal-block">
+<span class="operator">&gt;</span><span class="whitespace"> </span><span class="keyword">SELECT</span><span class="whitespace"> </span><span class="keyword">SUM</span><span class="punctuation">(</span><span class="name">sales</span><span class="punctuation">)</span><span class="whitespace">
+</span><span class="literal number integer">12345</span>
+</pre>
+</div>
+<div class="section" id="adding-new-functions">
+<h2>Adding new functions</h2>
+<p>Let's look at the <tt class="docutils literal">COUNT</tt> function in DJ:</p>
+<pre class="code python literal-block">
+<span class="keyword namespace">from</span> <span class="name namespace">sqlalchemy.sql</span> <span class="keyword namespace">import</span> <span class="name">func</span><span class="whitespace">
+</span><span class="keyword namespace">from</span> <span class="name namespace">sqlalchemy.sql.schema</span> <span class="keyword namespace">import</span> <span class="name">Column</span> <span class="keyword">as</span> <span class="name">SqlaColumn</span><span class="whitespace">
+
+</span><span class="keyword namespace">from</span> <span class="name namespace">dj.models.column</span> <span class="keyword namespace">import</span> <span class="name">Column</span><span class="whitespace">
+</span><span class="keyword namespace">from</span> <span class="name namespace">dj.sql.parsing.types</span> <span class="keyword namespace">import</span> <span class="name">ColumnType</span><span class="punctuation">;</span> <span class="keyword namespace">import</span> <span class="name namespace">dj.sql.parsing.types</span> <span class="keyword">as</span> <span class="name namespace">ct</span><span class="whitespace">
+
+
+</span><span class="keyword">class</span> <span class="name class">Count</span><span class="punctuation">(</span><span class="name">Function</span><span class="punctuation">):</span><span class="whitespace">
+    </span><span class="literal string doc">&quot;&quot;&quot;
+    The ``COUNT`` function.
+    &quot;&quot;&quot;</span><span class="whitespace">
+
+</span>    <span class="name">is_aggregation</span> <span class="operator">=</span> <span class="keyword constant">True</span><span class="whitespace">
+
+</span>    <span class="name decorator">&#64;staticmethod</span><span class="whitespace">
+</span>    <span class="keyword">def</span> <span class="name function">infer_type</span><span class="punctuation">(</span><span class="name">argument</span><span class="punctuation">:</span> <span class="name">Union</span><span class="punctuation">[</span><span class="name">Column</span><span class="punctuation">,</span> <span class="literal string double">&quot;Wildcard&quot;</span><span class="punctuation">,</span> <span class="name builtin">int</span><span class="punctuation">])</span> <span class="operator">-&gt;</span> <span class="name">ColumnType</span><span class="punctuation">:</span><span class="whitespace">
+</span>        <span class="keyword">return</span> <span class="name">ColumnType</span><span class="operator">.</span><span class="name">INT</span><span class="whitespace">
+
+</span>    <span class="name decorator">&#64;staticmethod</span><span class="whitespace">
+</span>    <span class="keyword">def</span> <span class="name function">get_sqla_function</span><span class="punctuation">(</span><span class="whitespace">
+</span>        <span class="name">argument</span><span class="punctuation">:</span> <span class="name">Union</span><span class="punctuation">[</span><span class="name">SqlaColumn</span><span class="punctuation">,</span> <span class="name builtin">str</span><span class="punctuation">,</span> <span class="name builtin">int</span><span class="punctuation">],</span><span class="whitespace">
+</span>        <span class="operator">*</span><span class="punctuation">,</span><span class="whitespace">
+</span>        <span class="name">dialect</span><span class="punctuation">:</span> <span class="name">Optional</span><span class="punctuation">[</span><span class="name builtin">str</span><span class="punctuation">]</span> <span class="operator">=</span> <span class="keyword constant">None</span><span class="punctuation">,</span><span class="whitespace">
+</span>    <span class="punctuation">)</span> <span class="operator">-&gt;</span> <span class="name">SqlaFunction</span><span class="punctuation">:</span><span class="whitespace">
+</span>        <span class="keyword">return</span> <span class="name">func</span><span class="operator">.</span><span class="name">count</span><span class="punctuation">(</span><span class="name">argument</span><span class="punctuation">)</span>
+</pre>
+<p>The first method, <tt class="docutils literal">infer_type</tt>, is responsible for type inference. The function is usually called as <tt class="docutils literal">COUNT(column)</tt>, <tt class="docutils literal">COUNT(1)</tt> or <tt class="docutils literal"><span class="pre">COUNT(*)</span></tt>, so we define the input argument as either a column, a star, or a number. In retrospect we could have also added a default value, to make <tt class="docutils literal">COUNT</tt> valid. We can see that the method always return an integer.</p>
+<p>Compare that to the same method in the <tt class="docutils literal">MAX</tt> function</p>
+<pre class="code python literal-block">
+<span class="keyword">class</span> <span class="name class">Max</span><span class="punctuation">(</span><span class="name">Function</span><span class="punctuation">):</span><span class="whitespace">
+
+</span>    <span class="name decorator">&#64;staticmethod</span><span class="whitespace">
+</span>    <span class="keyword">def</span> <span class="name function">infer_type</span><span class="punctuation">(</span><span class="name">column</span><span class="punctuation">:</span> <span class="name">Column</span><span class="punctuation">)</span> <span class="operator">-&gt;</span> <span class="name">ColumnType</span><span class="punctuation">:</span><span class="whitespace">
+</span>        <span class="keyword">return</span> <span class="name">column</span><span class="operator">.</span><span class="name">type</span>
+</pre>
+<p><tt class="docutils literal">MAX</tt> takes a column, and returns a value with the same type as the column.</p>
+<p>Now let's look at the second method, <tt class="docutils literal">get_sqla_function</tt>, which is responsible for translating the function and its arguments to a SQLAlchemy function. For <tt class="docutils literal">COUNT</tt> the method is very simple, because SQLAlchemy already has the <a class="reference external" href="https://github.com/sqlalchemy/sqlalchemy/blob/13a8552053c21a9fa7ff6f992ed49ee92cca73e4/lib/sqlalchemy/sql/functions.py#L1278">function defined</a>.</p>
+<p>But what should we do when the function is not defined in SQLAlchemy? The <tt class="docutils literal">func</tt> object in SQLAlchemy is a special function generator, and it accepts <strong>any</strong> attribute. If the function exists, like <tt class="docutils literal">func.count</tt>, SQLAlchemy will know how to translate that function to different dialects, and also its return type. If the function doesn't exist, on the other hand, SQLAlchemy will just translate it as-is. For example, the code <tt class="docutils literal">func.my_function(1)</tt> will be translated to <tt class="docutils literal">my_function(1)</tt>, and will probably fail when ran in a database.</p>
+<p>Let's take a look at the <tt class="docutils literal">DATE_TRUNC</tt> function to understand this better. Some databases (like Trino and Postgres) support <tt class="docutils literal">DATE_TRUNC</tt>, while others (like Druid and SQLite) don't. We can write our method like this, then:</p>
+<pre class="code python literal-block">
+<span class="keyword">class</span> <span class="name class">DateTrunc</span><span class="punctuation">(</span><span class="name">Function</span><span class="punctuation">):</span><span class="whitespace">
+
+    </span><span class="literal string doc">&quot;&quot;&quot;
+    Truncate a datetime column to a given resolution.
+
+    Eg:
+
+        &gt; DATE_TRUNC('day', TIMESTAMP '2022-01-01T12:34:56Z')
+        2022-01-01T00:00:00Z
+
+    &quot;&quot;&quot;</span><span class="whitespace">
+
+</span>    <span class="name decorator">&#64;staticmethod</span><span class="whitespace">
+</span>    <span class="keyword">def</span> <span class="name function">get_sqla_function</span><span class="punctuation">(</span><span class="whitespace">
+</span>        <span class="name">resolution</span><span class="punctuation">:</span> <span class="name">TextClause</span><span class="punctuation">,</span><span class="whitespace">
+</span>        <span class="name">column</span><span class="punctuation">:</span> <span class="name">SqlaColumn</span><span class="punctuation">,</span><span class="whitespace">
+</span>        <span class="operator">*</span><span class="punctuation">,</span><span class="whitespace">
+</span>        <span class="name">dialect</span><span class="punctuation">:</span> <span class="name">Optional</span><span class="punctuation">[</span><span class="name builtin">str</span><span class="punctuation">]</span> <span class="operator">=</span> <span class="keyword constant">None</span><span class="punctuation">,</span><span class="whitespace">
+</span>    <span class="punctuation">)</span> <span class="operator">-&gt;</span> <span class="name">SqlaFunction</span><span class="punctuation">:</span><span class="whitespace">
+</span>        <span class="keyword">if</span> <span class="name">dialect</span> <span class="operator word">is</span> <span class="keyword constant">None</span><span class="punctuation">:</span><span class="whitespace">
+</span>            <span class="keyword">raise</span> <span class="name exception">Exception</span><span class="punctuation">(</span><span class="literal string double">&quot;A dialect is needed for `DATE_TRUNC`&quot;</span><span class="punctuation">)</span><span class="whitespace">
+
+</span>        <span class="keyword">if</span> <span class="name">dialect</span> <span class="operator word">in</span> <span class="name">DATE_TRUNC_DIALECTS</span><span class="punctuation">:</span><span class="whitespace">
+</span>            <span class="keyword">return</span> <span class="name">func</span><span class="operator">.</span><span class="name">date_trunc</span><span class="punctuation">(</span><span class="name builtin">str</span><span class="punctuation">(</span><span class="name">resolution</span><span class="punctuation">),</span> <span class="name">column</span><span class="punctuation">,</span> <span class="name">type_</span><span class="operator">=</span><span class="name">DateTime</span><span class="punctuation">)</span><span class="whitespace">
+
+</span>        <span class="keyword">if</span> <span class="name">dialect</span> <span class="operator word">in</span> <span class="name">SQLITE_DIALECTS</span><span class="punctuation">:</span><span class="whitespace">
+</span>            <span class="keyword">if</span> <span class="name builtin">str</span><span class="punctuation">(</span><span class="name">resolution</span><span class="punctuation">)</span> <span class="operator">==</span> <span class="literal string double">&quot;minute&quot;</span><span class="punctuation">:</span><span class="whitespace">
+</span>                <span class="keyword">return</span> <span class="name">func</span><span class="operator">.</span><span class="name">datetime</span><span class="punctuation">(</span><span class="whitespace">
+</span>                    <span class="name">func</span><span class="operator">.</span><span class="name">strftime</span><span class="punctuation">(</span><span class="literal string double">&quot;%Y-%m-</span><span class="literal string interpol">%d</span><span class="literal string double">T%H:%M:00&quot;</span><span class="punctuation">,</span> <span class="name">column</span><span class="punctuation">),</span><span class="whitespace">
+</span>                    <span class="name">type_</span><span class="operator">=</span><span class="name">DateTime</span><span class="punctuation">,</span><span class="whitespace">
+</span>                <span class="punctuation">)</span><span class="whitespace">
+</span>            <span class="operator">...</span><span class="whitespace">
+</span>        <span class="operator">...</span>
+</pre>
+<p>The first thing to notice is that <tt class="docutils literal">DATE_TRUNC</tt> <strong>requires</strong> a dialect, since it's not a standard function. If the dialect is in the set of dialects that support <tt class="docutils literal">DATE_TRUNC</tt> natively we can simply translate the function to that using <tt class="docutils literal">func.date_trunc</tt>. Note that when using a custom function we should inform SQLAlchemy of the return type, using the <tt class="docutils literal">type_</tt> argument.</p>
+<p>If the dialect doesn't support <tt class="docutils literal">DATE_TRUNC</tt> and is part of the SQLite family we can implement the function using other functions supported by the dialect. In the code above we're translating a call like this:</p>
+<pre class="code sql literal-block">
+<span class="name">DATE_TRUNC</span><span class="punctuation">(</span><span class="literal string single">'minute'</span><span class="punctuation">,</span><span class="whitespace"> </span><span class="keyword">column</span><span class="punctuation">)</span>
+</pre>
+<p>To:</p>
+<pre class="code sql literal-block">
+<span class="keyword">TIMESTAMP</span><span class="punctuation">(</span><span class="name">STRFTIME</span><span class="punctuation">(</span><span class="literal string symbol">&quot;%Y-%m-%dT%H:%M:00&quot;</span><span class="punctuation">,</span><span class="whitespace"> </span><span class="keyword">column</span><span class="punctuation">))</span>
+</pre>
+<p>The code above converts the column to a string, replacing the seconds with zeros, and then converts it back to a datetime, reproducing the behavior of <tt class="docutils literal"><span class="pre">DATE_TRUNC('minute',</span> column)</tt>.</p>
+</div>
+</div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

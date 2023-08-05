@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DataJunction</title>
+    <link>0.1.0/docs/getting-started/</link>
+    <description>Recent content on DataJunction</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="0.1.0/docs/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>0.1.0/docs/getting-started/docker-compose/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/getting-started/docker-compose/</guid>
+      <description>Docker Compose # DataJunction Demo Docker Compose Setup # The easiest way to try out DJ is to use the dj-demo docker compose setup. This setup will launch and connect a DJ server, a DJRS server, and a jupyter lab instance with a few example notebooks.
+Clone the DJ demo repository along with the DJ and DJQS repositories.
+git clone git@github.com:DataJunction/dj-demo.git git clone git@github.com:DataJunction/dj.git git clone git@github.com:DataJunction/djqs.git Change into the dj-demo/ directory and start the docker compose environment.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>0.1.0/docs/getting-started/listing-nodes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/getting-started/listing-nodes/</guid>
+      <description> Listing Nodes # </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>0.1.0/docs/getting-started/requesting-sql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/getting-started/requesting-sql/</guid>
+      <description> Requesting SQL # </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>0.1.0/docs/getting-started/requesting-data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/getting-started/requesting-data/</guid>
+      <description> Requesting Data # </description>
+    </item>
+    
+  </channel>
+</rss>

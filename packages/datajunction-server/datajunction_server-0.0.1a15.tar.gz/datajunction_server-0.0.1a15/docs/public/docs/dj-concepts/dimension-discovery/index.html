@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Dimension Discovery # In data warehousing, dimensions are parts of the data model that play a huge role in making data understandable and intuitively composable. If you want to learn more about your users, it&rsquo;s convenient to have a users dimension table with all of the attributes that belong to each user. If your company is expanding into global markets, maintaining a country dimension table that keeps track of business-relevant data for each individual country will come in handy.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
+<meta property="og:description" content="Dimension Discovery # In data warehousing, dimensions are parts of the data model that play a huge role in making data understandable and intuitively composable. If you want to learn more about your users, it&rsquo;s convenient to have a users dimension table with all of the attributes that belong to each user. If your company is expanding into global markets, maintaining a country dimension table that keeps track of business-relevant data for each individual country will come in handy." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="--cleanDestinationDir/docs/dj-concepts/dimension-discovery/" /><meta property="article:section" content="docs" />
+
+
+<title>Dimension Discovery | DataJunction</title>
+<link rel="manifest" href="/--cleanDestinationDir/manifest.json">
+<link rel="icon" href="/--cleanDestinationDir/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/--cleanDestinationDir/book.min.25238d768e1f627f906826dba6a7c2574c9bf20c014e26e2b8d8dc2f922e2739.css" >
+  <script defer src="/--cleanDestinationDir/flexsearch.min.js"></script>
+  <script defer src="/--cleanDestinationDir/en.search.min.843ae58feb62abb2371e90127ba8ca121e7f14fd1ce7d67e7571be181e588fb2.js" ></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script
+  type="text/javascript"
+  src="https://unpkg.com/@excalidraw/excalidraw/dist/excalidraw.production.min.js"
+></script>
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="--cleanDestinationDir/"><img src="/--cleanDestinationDir/dj-logo.png" alt="Logo" /><span>DataJunction</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<a href="/versions" style="color: #ff7900; font-size: 0.8rem">Other Versions</a>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Getting Started</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/getting-started/docker-compose/" class="">Docker Compose</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2b8d7e68acacf0de5c4f58935c86c1d2" class="toggle"  />
+    <label for="section-2b8d7e68acacf0de5c4f58935c86c1d2" class="flex justify-between">
+      <a role="button" class="">Creating Nodes</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/getting-started/creating-nodes/sources/" class="">Sources</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/getting-started/creating-nodes/transforms/" class="">Transforms</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/getting-started/creating-nodes/dimensions/" class="">Dimensions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/getting-started/creating-nodes/metrics/" class="">Metrics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/getting-started/creating-nodes/cubes/" class="">Cubes</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/getting-started/listing-nodes/" class="">Listing Nodes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/getting-started/requesting-sql/" class="">Requesting SQL</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/getting-started/requesting-data/" class="">Requesting Data</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>DJ Concepts</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/dj-concepts/nodes/" class="">Nodes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/dj-concepts/the-dj-dag/" class="">The DJ DAG</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/dj-concepts/dimension-discovery/" class="active">Dimension Discovery</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/dj-concepts/node-dependencies/" class="">Node Dependencies</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/dj-concepts/dag-impact-analysis/" class="">DAG Impact Analysis</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/dj-concepts/materialization/" class="">Materialization</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/dj-concepts/table-reflection/" class="">Table Reflection</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5e8b12c271b2b367e7ed1fc38b0a98c3" class="toggle"  />
+    <label for="section-5e8b12c271b2b367e7ed1fc38b0a98c3" class="flex justify-between">
+      <a role="button" class="">Deploying DJ</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/deploying-dj/the-components-of-a-dj-deployment/" class="">The Components of a DJ Deployment</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/deploying-dj/running-a-dj-server/" class="">Running a DJ Server</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/deploying-dj/materialization-service/" class="">Materialization Service</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/deploying-dj/query-service/" class="">Query Service</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/deploying-dj/reflection-service/" class="">Reflection Service</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/deploying-dj/running-dj-on-kubernetes/" class="">Running DJ on Kubernetes</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-46cdd03a513e8b21f7b96d28d8d84c3d" class="toggle"  />
+    <label for="section-46cdd03a513e8b21f7b96d28d8d84c3d" class="flex justify-between">
+      <a role="button" class="">Tutorials</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/tutorials/analyzing-a-b-tests/" class="">Analyzing A/B Tests</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/tutorials/publishing-draft-nodes/" class="">Publishing Draft Nodes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/tutorials/debugging-invalid-nodes/" class="">Debugging Invalid Nodes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/tutorials/improving-performance-using-materialization/" class="">Improving Performance Using Materialization</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/tutorials/connecting-superset-to-dj/" class="">Connecting Superset to DJ</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-12aad16aea37bbd376260baf2d0199b2" class="toggle"  />
+    <label for="section-12aad16aea37bbd376260baf2d0199b2" class="flex justify-between">
+      <a role="button" class="">Developers</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/the-datajunction-api-specification/" class="">The Datajunction API Specification</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/codebase-overview/" class="">Codebase Overview</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/api-routes/" class="">API Routes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/djs-sql-ast/" class="">DJ&#39;s SQL AST</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/djs-sql-parser/" class="">DJ&#39;s SQL Parser</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/how-metric-requests-are-converted-to-sql/" class="">How Metric Requests are Converted to SQL</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/functions/" class="">Functions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/testing/" class="">Testing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/opening-and-reviewing-prs/" class="">Opening and Reviewing PR&#39;s</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/versioning/" class="">Versioning</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/openapi/" class="">OpenAPI</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/docs-development/" class="">Docs Development</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="--cleanDestinationDir/docs/developers/publishing-to-pypi/" class="">Publishing to Pypi</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/--cleanDestinationDir/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Dimension Discovery</strong>
+
+  <label for="toc-control">
+    
+    <img src="/--cleanDestinationDir/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-power-of-dimension-nodes-in-dj">The Power of Dimension Nodes in DJ</a></li>
+    <li><a href="#normalization--denormalization-techniques">Normalization &amp; Denormalization Techniques</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="dimension-discovery">
+  Dimension Discovery
+  <a class="anchor" href="#dimension-discovery">#</a>
+</h1>
+<p>In data warehousing, dimensions are parts of the data model that play a huge role in making data understandable and intuitively composable. If
+you want to learn more about your users, it&rsquo;s convenient to have a <code>users</code> dimension table with all of the attributes that belong
+to each user. If your company is expanding into global markets, maintaining a <code>country</code> dimension table that keeps track of business-relevant
+data for each individual country will come in handy. You can think of many more examples but the key role of dimensions in data warehousing
+is to categorize, describe, and segment your event data.</p>
+<p>A construction company may have a <code>repair_orders</code> table that contains all repair order requests. It&rsquo;s possible this table only has unique IDs
+for the repair order, the municipality where the work is to be performed, and the dispatcher that will coordinate the repair. To provide meaningful
+insights and reporting, you&rsquo;ll need to pull in more information from other dimension tables such as the requester&rsquo;s location, repair&rsquo;s location,
+dispatcher&rsquo;s contact information, estimate price, and actual final price.</p>
+<p>[Diagram of a simple repair_orders fact table with a few arrows pointing to the dimension ID fields]</p>
+<hr>
+<h2 id="the-power-of-dimension-nodes-in-dj">
+  The Power of Dimension Nodes in DJ
+  <a class="anchor" href="#the-power-of-dimension-nodes-in-dj">#</a>
+</h2>
+<p>At first glance, a dimension node in DJ looks very similar to transform nodes. It&rsquo;s a named node that includes a query which can select from one
+or more other nodes. However, a dimension node is different in that it can be referenced by columns on any source node, transform node, and even
+other dimension nodes. To understand that, let&rsquo;s look at a simple example of how a fact table is enriched with data from a dimension
+table.</p>
+<p>[Diagram of a simple left join from the <code>repair_orders</code> table to the <code>dispatchers</code> table]</p>
+<p>The <code>repair_orders</code> table contains an ID of the dispatcher who&rsquo;s responsible for coordinating the work. In order to
+pull in more information about the dispatcher, a join must be performed to the <code>dispatchers</code> dimension table which has a <code>dispatcher_id</code>
+column that serves as its primary key. As you can see, this requires knowledge of the table&rsquo;s layout and the proper dimension table to join to.
+It&rsquo;s not uncommon for a request for particular datasets to be &ldquo;enriched&rdquo; in this way to go through multiple channels until a data professional
+most familiar with the data model performs this join and stores the result in a new table.</p>
+<p>In DJ, you can pre-empt these kind of requests by tagging the column with information about which dimension node it is tied to. Instead of actually
+joining to the <code>dispatchers</code> dimension node, you can label the <code>dispatcher_id</code> column on the <code>repair_orders</code> node with a
+reference to the ID column on the <code>dispatchers</code> table. Now when someone makes a request asking DJ &ldquo;What dimension attributes are available for
+the metric <code>num_repair_orders</code>?&rdquo;, DJ will list all of the attribute columns from the <code>dispatchers</code> dimension node. If the user requests
+the number of repair orders grouped by each dispatcher, including the dispatcher&rsquo;s contact information, DJ uses the column label to perform the
+correct join and retrieve the extra attributes from the <code>dispatchers</code> table.</p>
+<p>[Diagram showing DJ use the column dimension label to join to the dispatchers dimension node]</p>
+<hr>
+<h2 id="normalization--denormalization-techniques">
+  Normalization &amp; Denormalization Techniques
+  <a class="anchor" href="#normalization--denormalization-techniques">#</a>
+</h2>
+<p>In data modeling, there are two analogous techniques to organizing tables. <strong>Normalization</strong> separates data into smaller tables and leans into linking
+them through join keys. The benefits of this technique is that it reduces redundant data and provides a more logical layout. For example, instead of
+including employee attributes such as name, phone number, and salary in many duplicated columns across multiple tables throughout your data model,
+a normalized data model would keep all of that information in a single <code>employees</code> dimension table with only the employee IDs existing in other
+tables. The downside of highly normalized data is that you pretty much always have to perform joins to enrich your event data beyond just IDs. In other
+words, when you <strong>do</strong> need specific employee attributes beyond their unique ID, you always have to join to pull that information in.</p>
+<p>The opposite technique is called <strong>Denormalization</strong> where data is stored in &ldquo;wider&rdquo; tables that already include many of the attributes of various
+dimensions. This technique leans into redundantly including attributes of the dimension on the same table. The benefit of denormalization is that it
+decreases the frequency with which joins need to be performed to pull in information about various dimensions. This means less work for the query engine
+to perform and the cost of redundancy in turn leads to better performing queries.</p>
+<p>DJ doesn&rsquo;t have an opinion on either data modeling technique. Both types of data models will work well and you can define metric and dimension nodes on
+either data model type. That being said, DJ does a great job at easing the burden of knowing which join to do in a highly normalized data model.
+Using dimension labels on columns, DJ abstracts away a complicated relationship model behind an intuitive API where data or SQL can be retrieved for
+a set of metrics and dimensions.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-power-of-dimension-nodes-in-dj">The Power of Dimension Nodes in DJ</a></li>
+    <li><a href="#normalization--denormalization-techniques">Normalization &amp; Denormalization Techniques</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

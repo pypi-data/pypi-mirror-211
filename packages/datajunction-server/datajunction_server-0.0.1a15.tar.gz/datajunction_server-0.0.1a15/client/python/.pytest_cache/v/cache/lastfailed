@@ -1,0 +1,9 @@
+{
+  "tests/test_dj_client.py::TestDJClient::test_sources": true,
+  "tests/test_dj_client.py::TestDJClient::test_dimensions": true,
+  "tests/test_dj_client.py::TestDJClient::test_transforms": true,
+  "tests/test_dj_client.py::TestDJClient::test_metrics": true,
+  "tests/test_dj_client.py::TestDJClient::test_nodes": true,
+  "tests/test_client.py::test_my_test": true,
+  "tests/test_client.py::TestDJClient::test_sql_failed": true
+}

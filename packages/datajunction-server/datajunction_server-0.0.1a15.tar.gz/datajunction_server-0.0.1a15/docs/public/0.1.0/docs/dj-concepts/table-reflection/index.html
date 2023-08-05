@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Table Reflection # Source nodes represent external tables that exist in a data warehouse or database. Of course, those tables are not under the management of the DJ server and are often the result of upstream data pipelines. This means changes to those tables can happen at any moment such as columns being dropped or renamed, types being changed, or entire tables being dropped, renamed, or moved. It&rsquo;s important that DJ is aware of these changes so that it can understand the effects to downstream nodes.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
+<meta property="og:description" content="Table Reflection # Source nodes represent external tables that exist in a data warehouse or database. Of course, those tables are not under the management of the DJ server and are often the result of upstream data pipelines. This means changes to those tables can happen at any moment such as columns being dropped or renamed, types being changed, or entire tables being dropped, renamed, or moved. It&rsquo;s important that DJ is aware of these changes so that it can understand the effects to downstream nodes." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="0.1.0/docs/dj-concepts/table-reflection/" /><meta property="article:section" content="docs" />
+
+
+<title>Table Reflection | DataJunction</title>
+<link rel="manifest" href="/0.1.0/manifest.json">
+<link rel="icon" href="/0.1.0/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/0.1.0/book.min.25238d768e1f627f906826dba6a7c2574c9bf20c014e26e2b8d8dc2f922e2739.css" >
+  <script defer src="/0.1.0/flexsearch.min.js"></script>
+  <script defer src="/0.1.0/en.search.min.bdf17dc32a348670b44a0dab817050b60324f032fd6977853e542386a5231587.js" ></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script
+  type="text/javascript"
+  src="https://unpkg.com/@excalidraw/excalidraw/dist/excalidraw.production.min.js"
+></script>
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="0.1.0/"><img src="/0.1.0/dj-logo.png" alt="Logo" /><span>DataJunction</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<a href="/versions" style="color: #ff7900; font-size: 0.8rem">Other Versions</a>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Getting Started</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/getting-started/docker-compose/" class="">Docker Compose</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2b8d7e68acacf0de5c4f58935c86c1d2" class="toggle"  />
+    <label for="section-2b8d7e68acacf0de5c4f58935c86c1d2" class="flex justify-between">
+      <a role="button" class="">Creating Nodes</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/getting-started/creating-nodes/sources/" class="">Sources</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/getting-started/creating-nodes/transforms/" class="">Transforms</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/getting-started/creating-nodes/dimensions/" class="">Dimensions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/getting-started/creating-nodes/metrics/" class="">Metrics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/getting-started/creating-nodes/cubes/" class="">Cubes</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/getting-started/listing-nodes/" class="">Listing Nodes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/getting-started/requesting-sql/" class="">Requesting SQL</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/getting-started/requesting-data/" class="">Requesting Data</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>DJ Concepts</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/dj-concepts/nodes/" class="">Nodes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/dj-concepts/the-dj-dag/" class="">The DJ DAG</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/dj-concepts/dimension-discovery/" class="">Dimension Discovery</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/dj-concepts/node-dependencies/" class="">Node Dependencies</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/dj-concepts/dag-impact-analysis/" class="">DAG Impact Analysis</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/dj-concepts/materialization/" class="">Materialization</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/dj-concepts/table-reflection/" class="active">Table Reflection</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5e8b12c271b2b367e7ed1fc38b0a98c3" class="toggle"  />
+    <label for="section-5e8b12c271b2b367e7ed1fc38b0a98c3" class="flex justify-between">
+      <a role="button" class="">Deploying DJ</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/deploying-dj/the-components-of-a-dj-deployment/" class="">The Components of a DJ Deployment</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/deploying-dj/running-a-dj-server/" class="">Running a DJ Server</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/deploying-dj/materialization-service/" class="">Materialization Service</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/deploying-dj/query-service/" class="">Query Service</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/deploying-dj/reflection-service/" class="">Reflection Service</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/deploying-dj/running-dj-on-kubernetes/" class="">Running DJ on Kubernetes</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-46cdd03a513e8b21f7b96d28d8d84c3d" class="toggle"  />
+    <label for="section-46cdd03a513e8b21f7b96d28d8d84c3d" class="flex justify-between">
+      <a role="button" class="">Tutorials</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/tutorials/analyzing-a-b-tests/" class="">Analyzing A/B Tests</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/tutorials/publishing-draft-nodes/" class="">Publishing Draft Nodes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/tutorials/debugging-invalid-nodes/" class="">Debugging Invalid Nodes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/tutorials/improving-performance-using-materialization/" class="">Improving Performance Using Materialization</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/tutorials/connecting-superset-to-dj/" class="">Connecting Superset to DJ</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-12aad16aea37bbd376260baf2d0199b2" class="toggle"  />
+    <label for="section-12aad16aea37bbd376260baf2d0199b2" class="flex justify-between">
+      <a role="button" class="">Developers</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/the-datajunction-api-specification/" class="">The Datajunction API Specification</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/codebase-overview/" class="">Codebase Overview</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/api-routes/" class="">API Routes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/djs-sql-ast/" class="">DJ&#39;s SQL AST</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/djs-sql-parser/" class="">DJ&#39;s SQL Parser</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/how-metric-requests-are-converted-to-sql/" class="">How Metric Requests are Converted to SQL</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/functions/" class="">Functions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/testing/" class="">Testing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/opening-and-reviewing-prs/" class="">Opening and Reviewing PR&#39;s</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/versioning/" class="">Versioning</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/openapi/" class="">OpenAPI</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/docs-development/" class="">Docs Development</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/publishing-to-pypi/" class="">Publishing to Pypi</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/0.1.0/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Table Reflection</strong>
+
+  <label for="toc-control">
+    
+    <img src="/0.1.0/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#schema-changes-to-external-tables">Schema Changes to External Tables</a></li>
+    <li><a href="#datajunction-reflection-service-djrs">DataJunction Reflection Service (DJRS)</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="table-reflection">
+  Table Reflection
+  <a class="anchor" href="#table-reflection">#</a>
+</h1>
+<p>Source nodes represent external tables that exist in a data warehouse or database. Of course, those tables are not under the management
+of the DJ server and are often the result of upstream data pipelines. This means changes to those tables can happen at any moment such as columns
+being dropped or renamed, types being changed, or entire tables being dropped, renamed, or moved. It&rsquo;s important that DJ is aware of these changes
+so that it can understand the effects to downstream nodes. Instead of generating queries based on false assumptions of external tables, live table
+reflection allows the system to tell you explicitly when a change in a source node (triggered by a change to an external table) has caused parts of
+the DJ DAG to become invalid.</p>
+<hr>
+<h2 id="schema-changes-to-external-tables">
+  Schema Changes to External Tables
+  <a class="anchor" href="#schema-changes-to-external-tables">#</a>
+</h2>
+<p>When an external table&rsquo;s schema is changed, reflection will update the corresponding source node. For example, if a <code>user_id</code> column is dropped
+from an external table, it will also be dropped from the source node. This change will propagate at the column level, meaning any downstream
+transform node or dimension node that use the <code>user_id</code> column will be marked as invalid. Requesting SQL or data for metrics that use that specific
+column will fail in the same way a typical query to a database will fail, specifically mentioning the missing column. Similarly, if a column is added
+to an external table, it will also be added to the source node and any downstream nodes will be notified. If nodes exist that were invalid only due to
+a broken reference to the added column, they&rsquo;ll now be marked as valid.</p>
+<p>[Diagram showing external table changes propagating node status changes throughout the DAG]</p>
+<hr>
+<h2 id="datajunction-reflection-service-djrs">
+  DataJunction Reflection Service (DJRS)
+  <a class="anchor" href="#datajunction-reflection-service-djrs">#</a>
+</h2>
+<p>Using reflection is recommended but not required. DJ uses an OpenAPI specification based plugin design where a decoupled reflection service can be
+utilized by the DJ server. The DJ project includes an open source reflection service <a href="https://github.com/DataJunction/djrs">DJRS</a> that leverages
+optional endpoints on a query service. The open source query service <a href="https://github.com/DataJunction/djqs">DJQS</a> implements these optional endpoints,
+however if you&rsquo;re running a custom query service, these endpoints are only necessary if you want to enable reflection. To learn more, check out the
+deployment guides for the <a href="../deploying-dj/reflection-service/">Reflection Service</a> and
+<a href="../deploying-dj/query-service/">Query Service</a>.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#schema-changes-to-external-tables">Schema Changes to External Tables</a></li>
+    <li><a href="#datajunction-reflection-service-djrs">DataJunction Reflection Service (DJRS)</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

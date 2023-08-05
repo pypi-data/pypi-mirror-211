@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Transforms # Transform nodes allow you to do arbitray SQL operations on sources, dimensions, and even other transform nodes. Of course with a perfect data model, you may not need to define any transform nodes. However, in some cases it may be convenient to use transform nodes to clean up your external data within DJ by joining, aggregating, casting types, or any other SQL operation that your query engine supports.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
+<meta property="og:description" content="Transforms # Transform nodes allow you to do arbitray SQL operations on sources, dimensions, and even other transform nodes. Of course with a perfect data model, you may not need to define any transform nodes. However, in some cases it may be convenient to use transform nodes to clean up your external data within DJ by joining, aggregating, casting types, or any other SQL operation that your query engine supports." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="0.1.0/docs/getting-started/creating-nodes/transforms/" /><meta property="article:section" content="docs" />
+
+
+<title>Transforms | DataJunction</title>
+<link rel="manifest" href="/0.1.0/manifest.json">
+<link rel="icon" href="/0.1.0/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/0.1.0/book.min.25238d768e1f627f906826dba6a7c2574c9bf20c014e26e2b8d8dc2f922e2739.css" >
+  <script defer src="/0.1.0/flexsearch.min.js"></script>
+  <script defer src="/0.1.0/en.search.min.bdf17dc32a348670b44a0dab817050b60324f032fd6977853e542386a5231587.js" ></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script
+  type="text/javascript"
+  src="https://unpkg.com/@excalidraw/excalidraw/dist/excalidraw.production.min.js"
+></script>
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="0.1.0/"><img src="/0.1.0/dj-logo.png" alt="Logo" /><span>DataJunction</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<a href="/versions" style="color: #ff7900; font-size: 0.8rem">Other Versions</a>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Getting Started</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/getting-started/docker-compose/" class="">Docker Compose</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2b8d7e68acacf0de5c4f58935c86c1d2" class="toggle" checked />
+    <label for="section-2b8d7e68acacf0de5c4f58935c86c1d2" class="flex justify-between">
+      <a role="button" class="">Creating Nodes</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/getting-started/creating-nodes/sources/" class="">Sources</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/getting-started/creating-nodes/transforms/" class="active">Transforms</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/getting-started/creating-nodes/dimensions/" class="">Dimensions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/getting-started/creating-nodes/metrics/" class="">Metrics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/getting-started/creating-nodes/cubes/" class="">Cubes</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/getting-started/listing-nodes/" class="">Listing Nodes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/getting-started/requesting-sql/" class="">Requesting SQL</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/getting-started/requesting-data/" class="">Requesting Data</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>DJ Concepts</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/dj-concepts/nodes/" class="">Nodes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/dj-concepts/the-dj-dag/" class="">The DJ DAG</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/dj-concepts/dimension-discovery/" class="">Dimension Discovery</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/dj-concepts/node-dependencies/" class="">Node Dependencies</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/dj-concepts/dag-impact-analysis/" class="">DAG Impact Analysis</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/dj-concepts/materialization/" class="">Materialization</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/dj-concepts/table-reflection/" class="">Table Reflection</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5e8b12c271b2b367e7ed1fc38b0a98c3" class="toggle"  />
+    <label for="section-5e8b12c271b2b367e7ed1fc38b0a98c3" class="flex justify-between">
+      <a role="button" class="">Deploying DJ</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/deploying-dj/the-components-of-a-dj-deployment/" class="">The Components of a DJ Deployment</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/deploying-dj/running-a-dj-server/" class="">Running a DJ Server</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/deploying-dj/materialization-service/" class="">Materialization Service</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/deploying-dj/query-service/" class="">Query Service</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/deploying-dj/reflection-service/" class="">Reflection Service</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/deploying-dj/running-dj-on-kubernetes/" class="">Running DJ on Kubernetes</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-46cdd03a513e8b21f7b96d28d8d84c3d" class="toggle"  />
+    <label for="section-46cdd03a513e8b21f7b96d28d8d84c3d" class="flex justify-between">
+      <a role="button" class="">Tutorials</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/tutorials/analyzing-a-b-tests/" class="">Analyzing A/B Tests</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/tutorials/publishing-draft-nodes/" class="">Publishing Draft Nodes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/tutorials/debugging-invalid-nodes/" class="">Debugging Invalid Nodes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/tutorials/improving-performance-using-materialization/" class="">Improving Performance Using Materialization</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/tutorials/connecting-superset-to-dj/" class="">Connecting Superset to DJ</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-12aad16aea37bbd376260baf2d0199b2" class="toggle"  />
+    <label for="section-12aad16aea37bbd376260baf2d0199b2" class="flex justify-between">
+      <a role="button" class="">Developers</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/the-datajunction-api-specification/" class="">The Datajunction API Specification</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/codebase-overview/" class="">Codebase Overview</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/api-routes/" class="">API Routes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/djs-sql-ast/" class="">DJ&#39;s SQL AST</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/djs-sql-parser/" class="">DJ&#39;s SQL Parser</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/how-metric-requests-are-converted-to-sql/" class="">How Metric Requests are Converted to SQL</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/functions/" class="">Functions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/testing/" class="">Testing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/opening-and-reviewing-prs/" class="">Opening and Reviewing PR&#39;s</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/versioning/" class="">Versioning</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/openapi/" class="">OpenAPI</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/docs-development/" class="">Docs Development</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/publishing-to-pypi/" class="">Publishing to Pypi</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/0.1.0/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Transforms</strong>
+
+  <label for="toc-control">
+    
+    <img src="/0.1.0/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#creating-transform-nodes">Creating Transform Nodes</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="transforms">
+  Transforms
+  <a class="anchor" href="#transforms">#</a>
+</h1>
+<p>Transform nodes allow you to do arbitray SQL operations on sources, dimensions, and even other transform nodes. Of course with
+a perfect data model, you may not need to define any transform nodes. However, in some cases it may be convenient to use transform
+nodes to clean up your external data within DJ by joining, aggregating, casting types, or any other SQL operation that your query
+engine supports.</p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>Unique name used by other nodes to select from this node</td>
+<td>string</td>
+</tr>
+<tr>
+<td>description</td>
+<td>A human readable description of the node</td>
+<td>string</td>
+</tr>
+<tr>
+<td>mode</td>
+<td><code>published</code> or <code>draft</code> (see <a href="../../../dj-concepts/node-dependencies/#node-mode">Node Mode</a>)</td>
+<td>string</td>
+</tr>
+<tr>
+<td>query</td>
+<td>A SQL query that selects from other nodes</td>
+<td>string</td>
+</tr>
+</tbody>
+</table>
+<h2 id="creating-transform-nodes">
+  Creating Transform Nodes
+  <a class="anchor" href="#creating-transform-nodes">#</a>
+</h2>
+<p>Transform nodes can be created by making a <code>POST</code> request to <code>/nodes/transform/</code>.</p>
+
+
+
+
+<div class="book-tabs"><input type="radio" class="toggle" name="tabs-creating transform nodes" id="tabs-creating transform nodes-0" checked="checked" />
+  <label for="tabs-creating transform nodes-0">curl</label>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>curl -X POST http://localhost:8000/nodes/transform/ <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>-H <span style="color:#e6db74">&#39;Content-Type: application/json&#39;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>-d <span style="color:#e6db74">&#39;{
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;name&#34;: &#34;repair_orders_w_dispatchers&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;description&#34;: &#34;Repair orders that have a dispatcher&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;mode&#34;: &#34;published&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;query&#34;: &#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        SELECT
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        repair_order_id,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        municipality_id,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        hard_hat_id,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        dispatcher_id
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        FROM repair_orders
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        WHERE dispatcher_id IS NOT NULL
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">}&#39;</span>
+</span></span></code></pre></div></div><input type="radio" class="toggle" name="tabs-creating transform nodes" id="tabs-creating transform nodes-1"  />
+  <label for="tabs-creating transform nodes-1">python</label>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#f92672">from</span> djclient <span style="color:#f92672">import</span> DJ, Transform
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>client <span style="color:#f92672">=</span> DJ(<span style="color:#e6db74">&#34;http://localhost:8000/&#34;</span>)
+</span></span><span style="display:flex;"><span>client<span style="color:#f92672">.</span>push(
+</span></span><span style="display:flex;"><span>    Transform(
+</span></span><span style="display:flex;"><span>        name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;repair_orders_w_dispatchers&#34;</span>,
+</span></span><span style="display:flex;"><span>        description<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Repair orders that have a dispatcher&#34;</span>,
+</span></span><span style="display:flex;"><span>        mode<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;published&#34;</span>,
+</span></span><span style="display:flex;"><span>        query<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            SELECT
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            repair_order_id,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            municipality_id,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            hard_hat_id,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            dispatcher_id
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            FROM repair_orders
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            WHERE dispatcher_id IS NOT NULL
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>,
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div></div></div>
+
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#creating-transform-nodes">Creating Transform Nodes</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

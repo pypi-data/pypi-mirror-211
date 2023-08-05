@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Nodes # In DJ, nodes play a central role. Understanding the relationships between nodes is key to understanding how DJ works. All node types are similar in many ways. Let’s start by covering their similarities.
+Similarities Between Node Types # A summary of things that are true of all nodes:
+All nodes have a name and a description All nodes have a schema defined as named columns, each with a specific type All nodes have a system-defined state of either valid or invalid All nodes have a user-defined mode of either draft or published All nodes track the parent nodes they depend on In addition to these universal statements about nodes, there are things that are common to a subset of node types.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
+<meta property="og:description" content="Nodes # In DJ, nodes play a central role. Understanding the relationships between nodes is key to understanding how DJ works. All node types are similar in many ways. Let’s start by covering their similarities.
+Similarities Between Node Types # A summary of things that are true of all nodes:
+All nodes have a name and a description All nodes have a schema defined as named columns, each with a specific type All nodes have a system-defined state of either valid or invalid All nodes have a user-defined mode of either draft or published All nodes track the parent nodes they depend on In addition to these universal statements about nodes, there are things that are common to a subset of node types." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="0.1.0/docs/dj-concepts/nodes/" /><meta property="article:section" content="docs" />
+
+
+<title>Nodes | DataJunction</title>
+<link rel="manifest" href="/0.1.0/manifest.json">
+<link rel="icon" href="/0.1.0/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/0.1.0/book.min.25238d768e1f627f906826dba6a7c2574c9bf20c014e26e2b8d8dc2f922e2739.css" >
+  <script defer src="/0.1.0/flexsearch.min.js"></script>
+  <script defer src="/0.1.0/en.search.min.bdf17dc32a348670b44a0dab817050b60324f032fd6977853e542386a5231587.js" ></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script
+  type="text/javascript"
+  src="https://unpkg.com/@excalidraw/excalidraw/dist/excalidraw.production.min.js"
+></script>
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="0.1.0/"><img src="/0.1.0/dj-logo.png" alt="Logo" /><span>DataJunction</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<a href="/versions" style="color: #ff7900; font-size: 0.8rem">Other Versions</a>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Getting Started</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/getting-started/docker-compose/" class="">Docker Compose</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2b8d7e68acacf0de5c4f58935c86c1d2" class="toggle"  />
+    <label for="section-2b8d7e68acacf0de5c4f58935c86c1d2" class="flex justify-between">
+      <a role="button" class="">Creating Nodes</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/getting-started/creating-nodes/sources/" class="">Sources</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/getting-started/creating-nodes/transforms/" class="">Transforms</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/getting-started/creating-nodes/dimensions/" class="">Dimensions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/getting-started/creating-nodes/metrics/" class="">Metrics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/getting-started/creating-nodes/cubes/" class="">Cubes</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/getting-started/listing-nodes/" class="">Listing Nodes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/getting-started/requesting-sql/" class="">Requesting SQL</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/getting-started/requesting-data/" class="">Requesting Data</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>DJ Concepts</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/dj-concepts/nodes/" class="active">Nodes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/dj-concepts/the-dj-dag/" class="">The DJ DAG</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/dj-concepts/dimension-discovery/" class="">Dimension Discovery</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/dj-concepts/node-dependencies/" class="">Node Dependencies</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/dj-concepts/dag-impact-analysis/" class="">DAG Impact Analysis</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/dj-concepts/materialization/" class="">Materialization</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/dj-concepts/table-reflection/" class="">Table Reflection</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5e8b12c271b2b367e7ed1fc38b0a98c3" class="toggle"  />
+    <label for="section-5e8b12c271b2b367e7ed1fc38b0a98c3" class="flex justify-between">
+      <a role="button" class="">Deploying DJ</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/deploying-dj/the-components-of-a-dj-deployment/" class="">The Components of a DJ Deployment</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/deploying-dj/running-a-dj-server/" class="">Running a DJ Server</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/deploying-dj/materialization-service/" class="">Materialization Service</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/deploying-dj/query-service/" class="">Query Service</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/deploying-dj/reflection-service/" class="">Reflection Service</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/deploying-dj/running-dj-on-kubernetes/" class="">Running DJ on Kubernetes</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-46cdd03a513e8b21f7b96d28d8d84c3d" class="toggle"  />
+    <label for="section-46cdd03a513e8b21f7b96d28d8d84c3d" class="flex justify-between">
+      <a role="button" class="">Tutorials</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/tutorials/analyzing-a-b-tests/" class="">Analyzing A/B Tests</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/tutorials/publishing-draft-nodes/" class="">Publishing Draft Nodes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/tutorials/debugging-invalid-nodes/" class="">Debugging Invalid Nodes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/tutorials/improving-performance-using-materialization/" class="">Improving Performance Using Materialization</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/tutorials/connecting-superset-to-dj/" class="">Connecting Superset to DJ</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-12aad16aea37bbd376260baf2d0199b2" class="toggle"  />
+    <label for="section-12aad16aea37bbd376260baf2d0199b2" class="flex justify-between">
+      <a role="button" class="">Developers</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/the-datajunction-api-specification/" class="">The Datajunction API Specification</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/codebase-overview/" class="">Codebase Overview</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/api-routes/" class="">API Routes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/djs-sql-ast/" class="">DJ&#39;s SQL AST</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/djs-sql-parser/" class="">DJ&#39;s SQL Parser</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/how-metric-requests-are-converted-to-sql/" class="">How Metric Requests are Converted to SQL</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/functions/" class="">Functions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/testing/" class="">Testing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/opening-and-reviewing-prs/" class="">Opening and Reviewing PR&#39;s</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/versioning/" class="">Versioning</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/openapi/" class="">OpenAPI</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/docs-development/" class="">Docs Development</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="0.1.0/docs/developers/publishing-to-pypi/" class="">Publishing to Pypi</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/0.1.0/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Nodes</strong>
+
+  <label for="toc-control">
+    
+    <img src="/0.1.0/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#similarities-between-node-types">Similarities Between Node Types</a></li>
+    <li><a href="#source-nodes">Source Nodes</a></li>
+    <li><a href="#transform-nodes">Transform Nodes</a></li>
+    <li><a href="#dimension-nodes">Dimension Nodes</a></li>
+    <li><a href="#metric-nodes">Metric Nodes</a></li>
+    <li><a href="#cube-nodes">Cube Nodes</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="nodes">
+  Nodes
+  <a class="anchor" href="#nodes">#</a>
+</h1>
+<p>In DJ, nodes play a central role. Understanding the relationships between nodes is key to understanding how DJ works.
+All node types are similar in many ways. Let’s start by covering their similarities.</p>
+<hr>
+<h2 id="similarities-between-node-types">
+  Similarities Between Node Types
+  <a class="anchor" href="#similarities-between-node-types">#</a>
+</h2>
+<p>A summary of things that are true of all nodes:</p>
+<ul>
+<li>All nodes have a name and a description</li>
+<li>All nodes have a schema defined as named columns, each with a specific type</li>
+<li>All nodes have a system-defined state of either valid or invalid</li>
+<li>All nodes have a user-defined mode of either draft or published</li>
+<li>All nodes track the parent nodes they depend on</li>
+</ul>
+<p>In addition to these universal statements about nodes, there are things that are common to a subset of node types.</p>
+<ul>
+<li><strong>Metrics</strong>, <strong>dimensions</strong>, and <strong>transforms</strong> always have a query.</li>
+<li><strong>Source</strong> nodes do not have a query but have a reference to an external table.</li>
+<li>Queries can reference any node by name, including <strong>source</strong> nodes</li>
+</ul>
+<p>Some node types have unique attributes, behaviors, and restrictions. For example, a <strong>metric</strong> node’s query can only include
+a single field in the select statement and that field must be used in an aggregation expression. Also, <strong>source</strong> nodes
+never have a query at all and instead must include a reference to an external table.</p>
+<hr>
+<h2 id="source-nodes">
+  Source Nodes
+  <a class="anchor" href="#source-nodes">#</a>
+</h2>
+<p>Real tables in a database or data warehouse are represented in DJ as source nodes. Each source node has a name and that
+name can be used by transform and dimension nodes as a “virtual” reference to the real table. In fact, you can change
+the table name in a source node’s definition to use a different real table and as long as the table schema is the same,
+you can be certain that all valid downstream nodes will remain valid.</p>
+<p>If a DJ deployment uses a reflection service, the main responsibility of that reflection service is to keep the schema
+defined in the source node in sync with the schema of the real table. This ensures that breaking changes to real tables
+are immediately identified and the impact to downstream nodes are communicated. When a source node’s schema is
+automatically updated to incorporate a change to the real table’s schema, this can break downstream nodes that relied on
+particular aspects of the table&rsquo;s schema that no longer exist. These breaking changes are communicated by labeling
+the impacted nodes as “invalid”.</p>
+<hr>
+<h2 id="transform-nodes">
+  Transform Nodes
+  <a class="anchor" href="#transform-nodes">#</a>
+</h2>
+<p>A lot of the heavy lifting in DJ is done by transform nodes. These nodes contain the queries that join, filter, and
+group data from various source nodes as well as other transform nodes. Although less common, transform nodes can even
+perform manipulations of dimension nodes.</p>
+<p>Since transform nodes can apply SQL manipulations of other transform nodes, they allow you to break up very complicated
+logic into smaller incremental processing steps. This is a very powerful feature and proper design of transform nodes
+can help optimize the speed and efficiency of a DJ server. Let’s take an example of two very similar queries that
+produce different tables.</p>
+<p><em>Query #1 - Recent Transaction Amounts by Customers with Active Accounts</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span>
+</span></span><span style="display:flex;"><span>t.amount
+</span></span><span style="display:flex;"><span>,t.purchase_date
+</span></span><span style="display:flex;"><span>,<span style="color:#66d9ef">c</span>.id <span style="color:#66d9ef">as</span> customer_id
+</span></span><span style="display:flex;"><span>,<span style="color:#66d9ef">c</span>.first_name <span style="color:#66d9ef">as</span> customer_first_name
+</span></span><span style="display:flex;"><span>,<span style="color:#66d9ef">c</span>.last_name <span style="color:#66d9ef">as</span> customer_last_name
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span> <span style="color:#66d9ef">transaction</span> <span style="color:#66d9ef">AS</span> t
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">LEFT</span> <span style="color:#66d9ef">JOIN</span> customer <span style="color:#66d9ef">AS</span> <span style="color:#66d9ef">c</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">ON</span> t.customer_id <span style="color:#f92672">=</span> <span style="color:#66d9ef">c</span>.id
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">WHERE</span> <span style="color:#66d9ef">c</span>.status <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;active&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">AND</span> t.purchase_date <span style="color:#f92672">&gt;=</span> (<span style="color:#ae81ff">3</span> months ago)
+</span></span></code></pre></div><p><em>Query #2 - Recent Transaction Amounts by Customers with Non-Trial Active Accounts</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span>
+</span></span><span style="display:flex;"><span>t.amount
+</span></span><span style="display:flex;"><span>,t.purchase_date
+</span></span><span style="display:flex;"><span>,<span style="color:#66d9ef">c</span>.id <span style="color:#66d9ef">as</span> customer_id
+</span></span><span style="display:flex;"><span>,<span style="color:#66d9ef">c</span>.first_name <span style="color:#66d9ef">as</span> customer_first_name
+</span></span><span style="display:flex;"><span>,<span style="color:#66d9ef">c</span>.last_name <span style="color:#66d9ef">as</span> customer_last_name
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span> <span style="color:#66d9ef">transaction</span> <span style="color:#66d9ef">AS</span> t
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">LEFT</span> <span style="color:#66d9ef">JOIN</span> customer <span style="color:#66d9ef">AS</span> <span style="color:#66d9ef">c</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">ON</span> t.customer_id <span style="color:#f92672">=</span> <span style="color:#66d9ef">c</span>.id
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">WHERE</span> <span style="color:#66d9ef">c</span>.status <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;active&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">AND</span> t.purchase_date <span style="color:#f92672">&gt;=</span> (<span style="color:#ae81ff">3</span> months ago)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">AND</span> <span style="color:#66d9ef">c</span>.account_type <span style="color:#f92672">&lt;&gt;</span> <span style="color:#e6db74">&#39;trial&#39;</span>
+</span></span></code></pre></div><p>If you look closely, you can see similarities between both queries. Both queries are joining the transaction table to
+the customer table and filtering out transactions by customers who have since deleted their account as well as
+filtering to only include transactions that have happened in the past three months. However, they differ in that query
+#2 also filters out customers who are using a free trial account. If these queries are materialized daily, the join and
+two out of the three filters are performed twice a day.</p>
+<p>A better design would be building query #2 as an additional transformation of query #1. Let’s say you created a DJ
+transform node for query #1.</p>
+<p><em>recent_transactions_active_customers</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span>
+</span></span><span style="display:flex;"><span>t.amount
+</span></span><span style="display:flex;"><span>,t.purchase_date
+</span></span><span style="display:flex;"><span>,<span style="color:#66d9ef">c</span>.id <span style="color:#66d9ef">as</span> customer_id
+</span></span><span style="display:flex;"><span>,<span style="color:#66d9ef">c</span>.first_name <span style="color:#66d9ef">as</span> customer_first_name
+</span></span><span style="display:flex;"><span>,<span style="color:#66d9ef">c</span>.last_name <span style="color:#66d9ef">as</span> customer_last_name
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span> <span style="color:#66d9ef">transaction</span> <span style="color:#66d9ef">AS</span> t
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">LEFT</span> <span style="color:#66d9ef">JOIN</span> customer <span style="color:#66d9ef">AS</span> <span style="color:#66d9ef">c</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">ON</span> t.customer_id <span style="color:#f92672">=</span> <span style="color:#66d9ef">c</span>.id
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">WHERE</span> <span style="color:#66d9ef">c</span>.status <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;active&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">AND</span> t.purchase_date <span style="color:#f92672">&gt;=</span> (<span style="color:#ae81ff">3</span> months ago)
+</span></span></code></pre></div><p>You can then create the equivalent of query #2 by defining a transform node that queries that transform node already
+defined.</p>
+<p><em>recent_transactions_non_trial_active_customers</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span>
+</span></span><span style="display:flex;"><span>amount
+</span></span><span style="display:flex;"><span>,purchase_date
+</span></span><span style="display:flex;"><span>,customer_id
+</span></span><span style="display:flex;"><span>,customer_first_name
+</span></span><span style="display:flex;"><span>,customer_last_name
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span> recent_transactions_active_customers
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">WHERE</span> account_type <span style="color:#f92672">&lt;&gt;</span> <span style="color:#e6db74">&#39;trial&#39;</span>
+</span></span></code></pre></div><p>With this design, materializing <em>recent_transactions_active_customers</em> is enough to no longer require performing a join
+to get the data for both nodes. If the filter to non-trial accounts is fast, you may choose not to materialize the
+second node at all!</p>
+<hr>
+<h2 id="dimension-nodes">
+  Dimension Nodes
+  <a class="anchor" href="#dimension-nodes">#</a>
+</h2>
+<p>One of the benefits of DJ is that it can easily find all of the available dimensions that you can use to group metrics
+as well as all of the metrics that can be grouped by a set of dimensions. Defining a dimension node includes a query to
+generate the dimension dataset as well as a label of the dimension’s primary key(s).</p>
+<p>If another node includes a foreign key for an existing dimension node, you can include a reference to the dimension
+node’s primary key in the other node’s definition. Furthermore, a dimension itself can include a foreign key that
+includes a reference to another dimension node’s primary key, meaning that dimension is also available as a second-join
+dimension. This metadata is what allows DJ to understand the relationships between metrics and dimensions and allows
+abstracting away the <code>JOIN</code> and <code>GROUP BY</code> clauses required to bring metrics and dimensions together!</p>
+<hr>
+<h2 id="metric-nodes">
+  Metric Nodes
+  <a class="anchor" href="#metric-nodes">#</a>
+</h2>
+<p>The primary component of a request for SQL or data from a DJ server is always one or more metrics. A metric node is
+defined as a single column from another existing node as well as an aggregation expression. If the existing node has
+other columns that are connected to dimension nodes, those dimensions will be revealed by DJ as available dimensions
+with which the metric can be grouped by. Additional dimensions will also be available if first-join dimensions contain
+foreign key(s) to other dimensions.</p>
+<hr>
+<h2 id="cube-nodes">
+  Cube Nodes
+  <a class="anchor" href="#cube-nodes">#</a>
+</h2>
+<p>In data analytics, a cube is a multi-dimensional dataset of one or more metrics. As more nodes are defined in DJ, a
+single metric can have a wide selection of dimension sets with which it can be grouped by. Also, many metrics will
+share common dimensions making it possible to create cubes of multiple metrics and multiple dimensions.
+Although materializing upstream transform nodes can serve as a huge performance optimization when creating these cubes,
+the final <code>JOIN</code> and <code>GROUP BY</code> operations happen at the moment a particular cube is requested.</p>
+<p>Since it’s not practical to schedule the materialization of all possible combinations of metrics and dimensions,
+cube nodes allow you to define specific sets of metrics and dimensions that should be materialized. This is useful
+when you want to to pre-compute a dataset that’s used by an analytics product such as a dashboard or report.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#similarities-between-node-types">Similarities Between Node Types</a></li>
+    <li><a href="#source-nodes">Source Nodes</a></li>
+    <li><a href="#transform-nodes">Transform Nodes</a></li>
+    <li><a href="#dimension-nodes">Dimension Nodes</a></li>
+    <li><a href="#metric-nodes">Metric Nodes</a></li>
+    <li><a href="#cube-nodes">Cube Nodes</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

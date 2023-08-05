@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Developers on DataJunction</title>
+    <link>0.1.0/docs/developers/</link>
+    <description>Recent content in Developers on DataJunction</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="0.1.0/docs/developers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>0.1.0/docs/developers/the-datajunction-api-specification/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/developers/the-datajunction-api-specification/</guid>
+      <description>The DataJunction API Specification # License: MIT License
+List Catalogs # GET /catalogs/
+List all available catalogs
+Example responses
+200 Response
+[ { &amp;#34;name&amp;#34;: &amp;#34;string&amp;#34;, &amp;#34;engines&amp;#34;: [] } ] Responses Status Meaning Description Schema 200 OK Successful Response Inline Response Schema Status Code 200
+Response List Catalogs Catalogs Get
+Name Type Required Restrictions Description Response List Catalogs Catalogs Get [CatalogInfo] false none [Class for catalog creation] » CatalogInfo CatalogInfo false none Class for catalog creation »» name string true none none »» engines [EngineInfo] false none [Class for engine creation] »»» EngineInfo EngineInfo false none Class for engine creation »»»» name string true none none »»»» version string true none none »»»» uri string false none none This operation does not require authentication Add A Catalog # POST /catalogs/</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>0.1.0/docs/developers/codebase-overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/developers/codebase-overview/</guid>
+      <description> Codebase Overview # </description>
+    </item>
+    
+    <item>
+      <title>API Routes</title>
+      <link>0.1.0/docs/developers/api-routes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/developers/api-routes/</guid>
+      <description> API Routes # </description>
+    </item>
+    
+    <item>
+      <title>DJ&#39;s SQL AST</title>
+      <link>0.1.0/docs/developers/djs-sql-ast/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/developers/djs-sql-ast/</guid>
+      <description> DJ&amp;rsquo;s SQL AST # </description>
+    </item>
+    
+    <item>
+      <title>DJ&#39;s SQL Parser</title>
+      <link>0.1.0/docs/developers/djs-sql-parser/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/developers/djs-sql-parser/</guid>
+      <description> DJ&amp;rsquo;s SQL Parser # </description>
+    </item>
+    
+    <item>
+      <title>How Metric Requests are Converted to SQL</title>
+      <link>0.1.0/docs/developers/how-metric-requests-are-converted-to-sql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/developers/how-metric-requests-are-converted-to-sql/</guid>
+      <description> How Metric Requests are Converted to SQL # </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>0.1.0/docs/developers/functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/developers/functions/</guid>
+      <description>Functions Currently, DJ supports only a small subset of SQL functions, limiting the definition of metrics. In order to add new functions to DJ we need to implement two things:
+Type inference for the function. This is easier in some functions and harder in others. For example, the COUNT function always return an integer, so its return type is the same regardless of the input arguments. The MAX function, on the other hands, return a value with the same type as the input argument.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>0.1.0/docs/developers/testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/developers/testing/</guid>
+      <description> Testing # </description>
+    </item>
+    
+    <item>
+      <title>Opening and Reviewing PR&#39;s</title>
+      <link>0.1.0/docs/developers/opening-and-reviewing-prs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/developers/opening-and-reviewing-prs/</guid>
+      <description> Opening and Reviewing PRs # </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>0.1.0/docs/developers/versioning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/developers/versioning/</guid>
+      <description> Versioning # </description>
+    </item>
+    
+    <item>
+      <title>OpenAPI</title>
+      <link>0.1.0/docs/developers/openapi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/developers/openapi/</guid>
+      <description> OpenAPI # </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>0.1.0/docs/developers/docs-development/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/developers/docs-development/</guid>
+      <description>Docs Development # The DJ project uses the Hugo framework for building the docs site and all of the pages are defined as markdown files. The deployed docs site is actually a combination of multiple sites for different versions of DJ. This page will help to understand how to modify, locally test, and deploy DJ docs.
+Running the Docs Site Locally # Clone the DJ repo locally.
+git clone https://github.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>0.1.0/docs/developers/publishing-to-pypi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/developers/publishing-to-pypi/</guid>
+      <description> Publishing to PyPI # The DataJunction project publishes server and client libraries to PyPI using poetry.
+To create an API token, go to PyPI, navigate to the account settings page, and scroll to the API tokens section. Configure poetry to use your PyPI API token.
+poetry config pypi-token.pypi $PYPI_API_TOKEN Build and publish the project.
+poetry publish --build To publish the djclient, run the above command in the djclient/ directory. </description>
+    </item>
+    
+  </channel>
+</rss>

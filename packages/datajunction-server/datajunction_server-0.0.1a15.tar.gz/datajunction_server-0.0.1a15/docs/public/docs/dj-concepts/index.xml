@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DJ Concepts on DataJunction</title>
+    <link>--cleanDestinationDir/docs/dj-concepts/</link>
+    <description>Recent content in DJ Concepts on DataJunction</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="--cleanDestinationDir/docs/dj-concepts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>--cleanDestinationDir/docs/dj-concepts/nodes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>--cleanDestinationDir/docs/dj-concepts/nodes/</guid>
+      <description>Nodes # In DJ, nodes play a central role. Understanding the relationships between nodes is key to understanding how DJ works. All node types are similar in many ways. Let’s start by covering their similarities.
+Similarities Between Node Types # A summary of things that are true of all nodes:
+All nodes have a name and a description All nodes have a schema defined as named columns, each with a specific type All nodes have a system-defined state of either valid or invalid All nodes have a user-defined mode of either draft or published All nodes track the parent nodes they depend on In addition to these universal statements about nodes, there are things that are common to a subset of node types.</description>
+    </item>
+    
+    <item>
+      <title>The DJ DAG</title>
+      <link>--cleanDestinationDir/docs/dj-concepts/the-dj-dag/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>--cleanDestinationDir/docs/dj-concepts/the-dj-dag/</guid>
+      <description> The DJ DAG # </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>--cleanDestinationDir/docs/dj-concepts/dimension-discovery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>--cleanDestinationDir/docs/dj-concepts/dimension-discovery/</guid>
+      <description>Dimension Discovery # In data warehousing, dimensions are parts of the data model that play a huge role in making data understandable and intuitively composable. If you want to learn more about your users, it&amp;rsquo;s convenient to have a users dimension table with all of the attributes that belong to each user. If your company is expanding into global markets, maintaining a country dimension table that keeps track of business-relevant data for each individual country will come in handy.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>--cleanDestinationDir/docs/dj-concepts/node-dependencies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>--cleanDestinationDir/docs/dj-concepts/node-dependencies/</guid>
+      <description>Node Dependencies # Relationships between nodes are tracked by a DJ server. A node&amp;rsquo;s position in the DJ DAG is determined by the node&amp;rsquo;s definition, particularly the query. Node queries reference other DJ nodes and this is what defines upstream and downstream dependencies for any given node. In other words&amp;ndash;given a node, the other nodes it queries are its upstream dependencies and nodes that query it are its downstream dependencies.</description>
+    </item>
+    
+    <item>
+      <title>DAG Impact Analysis</title>
+      <link>--cleanDestinationDir/docs/dj-concepts/dag-impact-analysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>--cleanDestinationDir/docs/dj-concepts/dag-impact-analysis/</guid>
+      <description> DAG Impact Analysis # </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>--cleanDestinationDir/docs/dj-concepts/materialization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>--cleanDestinationDir/docs/dj-concepts/materialization/</guid>
+      <description> Materialization # </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>--cleanDestinationDir/docs/dj-concepts/table-reflection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>--cleanDestinationDir/docs/dj-concepts/table-reflection/</guid>
+      <description>Table Reflection # Source nodes represent external tables that exist in a data warehouse or database. Of course, those tables are not under the management of the DJ server and are often the result of upstream data pipelines. This means changes to those tables can happen at any moment such as columns being dropped or renamed, types being changed, or entire tables being dropped, renamed, or moved. It&amp;rsquo;s important that DJ is aware of these changes so that it can understand the effects to downstream nodes.</description>
+    </item>
+    
+  </channel>
+</rss>

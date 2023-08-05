@@ -1,0 +1,4 @@
+additionalProperties:
+  packageName: djopenapi
+  projectName: djopenapi
+  nonCompliantUseDiscriminatorIfCompositionFails: true

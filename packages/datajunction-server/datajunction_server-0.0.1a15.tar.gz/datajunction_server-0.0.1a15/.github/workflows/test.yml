@@ -1,0 +1,75 @@
+name: Run tests for DJ
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    env:
+      PDM_DEPS: 'urllib3<2'
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.8', '3.9', '3.10']
+        library: ['client', 'server']
+
+    defaults:
+      run:
+        working-directory: ${{ matrix.library == 'server' && '.' || './client/python' }}
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - uses: pdm-project/setup-pdm@v3
+        name: Setup PDM
+        with:
+          python-version: ${{ matrix.python-version }}
+          architecture: x64
+          prerelease: true
+          enable-pep582: true
+
+      - name: Install dependencies
+        run: pdm sync -d
+
+      - name: Python Linters
+        run: |
+          pdm run pre-commit run --all-files
+
+      - name: Test DJ ${{ matrix.library }} with pytest
+        run: |
+          export module=${{ matrix.library == 'server' && 'dj' || 'datajunction' }}
+          pdm run pytest ${{ matrix.library == 'server' && '-n auto' || '' }} --cov-fail-under=100 --cov=$module -vv tests/ --doctest-modules $module --without-integration --without-slow-integration
+
+  build-javascript:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.x]
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install Dev Dependencies
+        run: npm install --only=dev
+        working-directory: ./client/javascript
+      - name: Build Javascript Client
+        run: npm run build
+        working-directory: ./client/javascript
+      - name: Lint Javascript Client
+        run: npm run lint
+        working-directory: ./client/javascript

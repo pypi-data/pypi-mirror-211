@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Introduction on DataJunction</title>
+    <link>0.1.0/</link>
+    <description>Recent content in Introduction on DataJunction</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="0.1.0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>0.1.0/docs/dj-concepts/nodes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/dj-concepts/nodes/</guid>
+      <description>Nodes # In DJ, nodes play a central role. Understanding the relationships between nodes is key to understanding how DJ works. All node types are similar in many ways. Let’s start by covering their similarities.
+Similarities Between Node Types # A summary of things that are true of all nodes:
+All nodes have a name and a description All nodes have a schema defined as named columns, each with a specific type All nodes have a system-defined state of either valid or invalid All nodes have a user-defined mode of either draft or published All nodes track the parent nodes they depend on In addition to these universal statements about nodes, there are things that are common to a subset of node types.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>0.1.0/docs/getting-started/creating-nodes/sources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/getting-started/creating-nodes/sources/</guid>
+      <description>Sources # Source nodes represent external tables in a database or data warehouse and make up the foundational layer on which other nodes are built upon.
+Attribute Description Type name Unique name used by other nodes to select from this node string description A human readable description of the node string mode published or draft (see Node Mode) string catalog The name of the external catalog string schema_ The name of the external schema string table The name of the external table string columns A map of the external table&amp;rsquo;s column names and types map Creating Source Nodes # Source nodes can be created by making a POST request to /nodes/source/.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>0.1.0/docs/getting-started/docker-compose/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/getting-started/docker-compose/</guid>
+      <description>Docker Compose # DataJunction Demo Docker Compose Setup # The easiest way to try out DJ is to use the dj-demo docker compose setup. This setup will launch and connect a DJ server, a DJRS server, and a jupyter lab instance with a few example notebooks.
+Clone the DJ demo repository along with the DJ and DJQS repositories.
+git clone git@github.com:DataJunction/dj-demo.git git clone git@github.com:DataJunction/dj.git git clone git@github.com:DataJunction/djqs.git Change into the dj-demo/ directory and start the docker compose environment.</description>
+    </item>
+    
+    <item>
+      <title>The Components of a DJ Deployment</title>
+      <link>0.1.0/docs/deploying-dj/the-components-of-a-dj-deployment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/deploying-dj/the-components-of-a-dj-deployment/</guid>
+      <description> The Components of a DJ Deployment # </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>0.1.0/docs/developers/the-datajunction-api-specification/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/developers/the-datajunction-api-specification/</guid>
+      <description>The DataJunction API Specification # License: MIT License
+List Catalogs # GET /catalogs/
+List all available catalogs
+Example responses
+200 Response
+[ { &amp;#34;name&amp;#34;: &amp;#34;string&amp;#34;, &amp;#34;engines&amp;#34;: [] } ] Responses Status Meaning Description Schema 200 OK Successful Response Inline Response Schema Status Code 200
+Response List Catalogs Catalogs Get
+Name Type Required Restrictions Description Response List Catalogs Catalogs Get [CatalogInfo] false none [Class for catalog creation] » CatalogInfo CatalogInfo false none Class for catalog creation »» name string true none none »» engines [EngineInfo] false none [Class for engine creation] »»» EngineInfo EngineInfo false none Class for engine creation »»»» name string true none none »»»» version string true none none »»»» uri string false none none This operation does not require authentication Add A Catalog # POST /catalogs/</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>0.1.0/docs/developers/codebase-overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/developers/codebase-overview/</guid>
+      <description> Codebase Overview # </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>0.1.0/docs/getting-started/creating-nodes/transforms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/getting-started/creating-nodes/transforms/</guid>
+      <description>Transforms # Transform nodes allow you to do arbitray SQL operations on sources, dimensions, and even other transform nodes. Of course with a perfect data model, you may not need to define any transform nodes. However, in some cases it may be convenient to use transform nodes to clean up your external data within DJ by joining, aggregating, casting types, or any other SQL operation that your query engine supports.</description>
+    </item>
+    
+    <item>
+      <title>Analyzing A/B Tests</title>
+      <link>0.1.0/docs/tutorials/analyzing-a-b-tests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/tutorials/analyzing-a-b-tests/</guid>
+      <description> Analyzing A/B Tests # </description>
+    </item>
+    
+    <item>
+      <title>Running a DJ Server</title>
+      <link>0.1.0/docs/deploying-dj/running-a-dj-server/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/deploying-dj/running-a-dj-server/</guid>
+      <description> Running a DJ Server # </description>
+    </item>
+    
+    <item>
+      <title>The DJ DAG</title>
+      <link>0.1.0/docs/dj-concepts/the-dj-dag/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/dj-concepts/the-dj-dag/</guid>
+      <description> The DJ DAG # </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>0.1.0/docs/dj-concepts/dimension-discovery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/dj-concepts/dimension-discovery/</guid>
+      <description>Dimension Discovery # In data warehousing, dimensions are parts of the data model that play a huge role in making data understandable and intuitively composable. If you want to learn more about your users, it&amp;rsquo;s convenient to have a users dimension table with all of the attributes that belong to each user. If your company is expanding into global markets, maintaining a country dimension table that keeps track of business-relevant data for each individual country will come in handy.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>0.1.0/docs/getting-started/listing-nodes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/getting-started/listing-nodes/</guid>
+      <description> Listing Nodes # </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>0.1.0/docs/tutorials/publishing-draft-nodes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/tutorials/publishing-draft-nodes/</guid>
+      <description> Publishing Draft Nodes # </description>
+    </item>
+    
+    <item>
+      <title>API Routes</title>
+      <link>0.1.0/docs/developers/api-routes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/developers/api-routes/</guid>
+      <description> API Routes # </description>
+    </item>
+    
+    <item>
+      <title>Materialization Service</title>
+      <link>0.1.0/docs/deploying-dj/materialization-service/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/deploying-dj/materialization-service/</guid>
+      <description> Materialization Service # </description>
+    </item>
+    
+    <item>
+      <title>Query Service</title>
+      <link>0.1.0/docs/deploying-dj/query-service/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/deploying-dj/query-service/</guid>
+      <description> Query Service # </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>0.1.0/docs/dj-concepts/node-dependencies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/dj-concepts/node-dependencies/</guid>
+      <description>Node Dependencies # Relationships between nodes are tracked by a DJ server. A node&amp;rsquo;s position in the DJ DAG is determined by the node&amp;rsquo;s definition, particularly the query. Node queries reference other DJ nodes and this is what defines upstream and downstream dependencies for any given node. In other words&amp;ndash;given a node, the other nodes it queries are its upstream dependencies and nodes that query it are its downstream dependencies.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>0.1.0/docs/getting-started/creating-nodes/dimensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/getting-started/creating-nodes/dimensions/</guid>
+      <description>Dimensions # Dimension nodes are critical for defining the cross edges of the DJ DAG and are instrumental in many of DJ&amp;rsquo;s core features. They include a query that can select from any other node to create a representation of a dimension. Any column in any DJ node can then be tagged as a join key to any column on the dimension node. These join paths are used by DJ to discover all dimensions that are accessible for each metric.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>0.1.0/docs/getting-started/creating-nodes/metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/getting-started/creating-nodes/metrics/</guid>
+      <description>Metrics # Metric nodes represent an aggregation of a measure defined as a single expression in a query that selects from a single source, transform, or dimension node.
+Attribute Description Type name Unique name used by other nodes to select from this node string description A human readable description of the node string mode published or draft (see Node Mode) string query A SQL query that selects a single expression from a single node string Creating Metric Nodes # Metric nodes can be created by making a POST request to /nodes/metric/.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>0.1.0/docs/tutorials/debugging-invalid-nodes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/tutorials/debugging-invalid-nodes/</guid>
+      <description> Debugging Invalid Nodes # </description>
+    </item>
+    
+    <item>
+      <title>DJ&#39;s SQL AST</title>
+      <link>0.1.0/docs/developers/djs-sql-ast/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/developers/djs-sql-ast/</guid>
+      <description> DJ&amp;rsquo;s SQL AST # </description>
+    </item>
+    
+    <item>
+      <title>DJ&#39;s SQL Parser</title>
+      <link>0.1.0/docs/developers/djs-sql-parser/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/developers/djs-sql-parser/</guid>
+      <description> DJ&amp;rsquo;s SQL Parser # </description>
+    </item>
+    
+    <item>
+      <title>Reflection Service</title>
+      <link>0.1.0/docs/deploying-dj/reflection-service/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/deploying-dj/reflection-service/</guid>
+      <description> Reflection Service # </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>0.1.0/docs/getting-started/creating-nodes/cubes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/getting-started/creating-nodes/cubes/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>0.1.0/docs/getting-started/requesting-sql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/getting-started/requesting-sql/</guid>
+      <description> Requesting SQL # </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>0.1.0/docs/tutorials/improving-performance-using-materialization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/tutorials/improving-performance-using-materialization/</guid>
+      <description> Improving Performance Using Materialization # </description>
+    </item>
+    
+    <item>
+      <title>How Metric Requests are Converted to SQL</title>
+      <link>0.1.0/docs/developers/how-metric-requests-are-converted-to-sql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/developers/how-metric-requests-are-converted-to-sql/</guid>
+      <description> How Metric Requests are Converted to SQL # </description>
+    </item>
+    
+    <item>
+      <title>Running DJ on Kubernetes</title>
+      <link>0.1.0/docs/deploying-dj/running-dj-on-kubernetes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/deploying-dj/running-dj-on-kubernetes/</guid>
+      <description> Running DJ on Kubernetes # </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>0.1.0/docs/developers/functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/developers/functions/</guid>
+      <description>Functions Currently, DJ supports only a small subset of SQL functions, limiting the definition of metrics. In order to add new functions to DJ we need to implement two things:
+Type inference for the function. This is easier in some functions and harder in others. For example, the COUNT function always return an integer, so its return type is the same regardless of the input arguments. The MAX function, on the other hands, return a value with the same type as the input argument.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>0.1.0/docs/developers/testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/developers/testing/</guid>
+      <description> Testing # </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>0.1.0/docs/getting-started/requesting-data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/getting-started/requesting-data/</guid>
+      <description> Requesting Data # </description>
+    </item>
+    
+    <item>
+      <title>Connecting Superset to DJ</title>
+      <link>0.1.0/docs/tutorials/connecting-superset-to-dj/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/tutorials/connecting-superset-to-dj/</guid>
+      <description> Connecting Superset to DJ # </description>
+    </item>
+    
+    <item>
+      <title>DAG Impact Analysis</title>
+      <link>0.1.0/docs/dj-concepts/dag-impact-analysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/dj-concepts/dag-impact-analysis/</guid>
+      <description> DAG Impact Analysis # </description>
+    </item>
+    
+    <item>
+      <title>Opening and Reviewing PR&#39;s</title>
+      <link>0.1.0/docs/developers/opening-and-reviewing-prs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/developers/opening-and-reviewing-prs/</guid>
+      <description> Opening and Reviewing PRs # </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>0.1.0/docs/developers/versioning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/developers/versioning/</guid>
+      <description> Versioning # </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>0.1.0/docs/dj-concepts/materialization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/dj-concepts/materialization/</guid>
+      <description> Materialization # </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>0.1.0/docs/dj-concepts/table-reflection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/dj-concepts/table-reflection/</guid>
+      <description>Table Reflection # Source nodes represent external tables that exist in a data warehouse or database. Of course, those tables are not under the management of the DJ server and are often the result of upstream data pipelines. This means changes to those tables can happen at any moment such as columns being dropped or renamed, types being changed, or entire tables being dropped, renamed, or moved. It&amp;rsquo;s important that DJ is aware of these changes so that it can understand the effects to downstream nodes.</description>
+    </item>
+    
+    <item>
+      <title>OpenAPI</title>
+      <link>0.1.0/docs/developers/openapi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/developers/openapi/</guid>
+      <description> OpenAPI # </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>0.1.0/docs/developers/docs-development/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/developers/docs-development/</guid>
+      <description>Docs Development # The DJ project uses the Hugo framework for building the docs site and all of the pages are defined as markdown files. The deployed docs site is actually a combination of multiple sites for different versions of DJ. This page will help to understand how to modify, locally test, and deploy DJ docs.
+Running the Docs Site Locally # Clone the DJ repo locally.
+git clone https://github.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>0.1.0/docs/developers/publishing-to-pypi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>0.1.0/docs/developers/publishing-to-pypi/</guid>
+      <description> Publishing to PyPI # The DataJunction project publishes server and client libraries to PyPI using poetry.
+To create an API token, go to PyPI, navigate to the account settings page, and scroll to the API tokens section. Configure poetry to use your PyPI API token.
+poetry config pypi-token.pypi $PYPI_API_TOKEN Build and publish the project.
+poetry publish --build To publish the djclient, run the above command in the djclient/ directory. </description>
+    </item>
+    
+  </channel>
+</rss>
