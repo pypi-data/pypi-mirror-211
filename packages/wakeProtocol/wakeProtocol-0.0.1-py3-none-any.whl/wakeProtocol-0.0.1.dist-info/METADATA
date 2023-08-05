@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: wakeProtocol
+Version: 0.0.1
+Summary: Point binary protocol (above pySerial)
+Home-page: https://github.com/Nixblr/pyWake
+Author: N1X (Uladzimir Kisel)
+Author-email: nixblr@gmail.com
+Keywords: pyserial,uart,rs-232,rs-485,p2p,serial,Wake
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+Wake - simple and lightweight binary protocol for exchange data
+                        between PC and different devices. Protocol has address and
+                        command fields, up to 255 bytes if data in one frame and
+                        CRC-8 check.
