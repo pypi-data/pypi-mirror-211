@@ -1,0 +1,8 @@
+README.rst
+setup.py
+uuid64.py
+temporaluuid64.egg-info/PKG-INFO
+temporaluuid64.egg-info/SOURCES.txt
+temporaluuid64.egg-info/dependency_links.txt
+temporaluuid64.egg-info/top_level.txt
+tests/test_overall.py
