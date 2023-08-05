@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+csv_to_xls/__init__.py
+csv_to_xls/_modidx.py
+csv_to_xls/core.py
+csv_to_xls.egg-info/PKG-INFO
+csv_to_xls.egg-info/SOURCES.txt
+csv_to_xls.egg-info/dependency_links.txt
+csv_to_xls.egg-info/entry_points.txt
+csv_to_xls.egg-info/not-zip-safe
+csv_to_xls.egg-info/requires.txt
+csv_to_xls.egg-info/top_level.txt
