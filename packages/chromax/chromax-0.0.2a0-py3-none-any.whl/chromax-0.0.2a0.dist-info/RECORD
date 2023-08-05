@@ -1,0 +1,14 @@
+chromax/__init__.py,sha256=ACUWh2ObeLTc-q3syEGFyXR40RRtYS498fcSxJx1w0w,57
+chromax/functional.py,sha256=mMtdwyIe9v7HxuBd61CtB5MB1NT8zxyISFPo3T_Jn6U,6465
+chromax/index_functions.py,sha256=oo-Btflxb_n0hm4QM5xq1bcw9QpEaOTJnF6ujZbRse4,4059
+chromax/simulator.py,sha256=-_Cb0xIcKQrxsI3OiTBBbgSmy0d7jpysJT15dg6sGI0,25107
+chromax/trait_model.py,sha256=nOBObyZzKmevfBjVx1H4wglhPRo2dL3DctOaqVrEKPA,1680
+chromax/typing.py,sha256=qZ2A23JPwdvxtY2JWniL409yOcsV40Cw4sqVu4TDs38,477
+chromax/sample_data/__init__.py,sha256=mDHo1pQ27-qjLSoVFTAkd-eN4-7oVNCQ0OrpH3Ms6mg,144
+chromax/sample_data/genetic_map.csv,sha256=QBWl48CIpm1uDzzj9L-y161UPoY1FghPzT5EnMq7u_k,1485917
+chromax/sample_data/genome.npy,sha256=PwM3b6k62wa2YNETt526HpfTsJ9OAWXF86eZZcOvdp8,7300666
+chromax-0.0.2a0.dist-info/LICENSE,sha256=2JPwTU3PiWS-fXgTFuFwORslK9DgMIATqbTM-ntoY9Q,1495
+chromax-0.0.2a0.dist-info/METADATA,sha256=1K9fDL919_h4AgpA-36DWwDMkNrb4Piqp3_vG3qeUqM,808
+chromax-0.0.2a0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+chromax-0.0.2a0.dist-info/top_level.txt,sha256=n5XGFkaIwqwm7RkKEmAW8AwOyPT9EexkSeOH_fWrewM,8
+chromax-0.0.2a0.dist-info/RECORD,,
