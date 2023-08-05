@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+py_myaskapi/__init__.py
+py_myaskapi.egg-info/PKG-INFO
+py_myaskapi.egg-info/SOURCES.txt
+py_myaskapi.egg-info/dependency_links.txt
+py_myaskapi.egg-info/requires.txt
+py_myaskapi.egg-info/top_level.txt
