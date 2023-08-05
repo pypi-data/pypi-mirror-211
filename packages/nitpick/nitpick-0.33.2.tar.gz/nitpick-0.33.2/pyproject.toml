@@ -1,0 +1,182 @@
+[tool.nitpick]
+# Use the default style and override some things (like the Python version)
+style = [
+    "nitpick-style",
+    "py://nitpick/resources/python/37.toml",
+    "py://nitpick/resources/python/stable.toml"
+]
+
+[tool.black]
+line-length = 120
+
+[tool.poetry]
+name = "nitpick"
+version = "0.33.2"
+description = "Enforce the same settings across multiple language-independent projects"
+authors = ["W. Augusto Andreoli <andreoliwa@gmail.com>"]
+license = "MIT"
+readme = "README.rst"
+repository = "https://github.com/andreoliwa/nitpick"
+keywords = ["python3", "flake8", "linter", "styleguide"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Plugins",
+    "Intended Audience :: Developers",
+    "Operating System :: MacOS",
+    "Operating System :: Unix",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Software Development :: Quality Assurance",
+]
+
+[tool.poetry.urls]
+"Documentation" = "https://nitpick.rtfd.io/"
+"Changelog" = "https://github.com/andreoliwa/nitpick/blob/develop/CHANGELOG.md"
+"Issue Tracker" = "https://github.com/andreoliwa/nitpick/issues"
+
+[tool.poetry.scripts]
+nitpick = "nitpick.cli:nitpick_cli"
+
+[tool.poetry.plugins."flake8.extension"]
+NIP = "nitpick.flake8:NitpickFlake8Extension"
+
+[tool.poetry.plugins.nitpick]
+text = "nitpick.plugins.text"
+json = "nitpick.plugins.json"
+ini = "nitpick.plugins.ini"
+toml = "nitpick.plugins.toml"
+yaml = "nitpick.plugins.yaml"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+# TODO: build: upgrading importlib-metadata to 4.10.1 downgrades the following packages:
+#  • Updating importlib-metadata (4.2.0 -> 4.10.1)
+#  • Updating pycodestyle (2.8.0 -> 2.7.0)
+#  • Updating pyflakes (2.4.0 -> 2.3.1)
+#  • Updating flake8 (4.0.1 -> 3.9.2)
+flake8 = ">=3.0.0"
+attrs = ">=20.1.0" # attr.define introduced in this version
+tomlkit = ">=0.8.0" # SingleKey() class introduced in this version
+toml = "*" # TODO: refactor: use only tomlkit and remove uiri/toml
+requests = "*"
+dictdiffer = "*"
+"ruamel.yaml" = "*"
+python-slugify = "*"
+jmespath = "*"
+sortedcontainers = "*"
+click = "*"
+# Pin marshmallow to avoid error on "pip install -U nitpick":
+# marshmallow-polyfield 5.7 has requirement marshmallow>=3.0.0b10, but you'll have marshmallow 2.19.5 which is incompatible.
+marshmallow = { version = ">=3.0.0b10" }
+# Pin to avoid error on "flake8 ." when there is an invalid TOML style:
+# TypeError: _deserialize() got an unexpected keyword argument 'partial'
+marshmallow-polyfield = "^5.10"
+identify = "*"
+"more-itertools" = "*"
+pluggy = "*"
+autorepr = "*"
+loguru = "*"
+ConfigUpdater = "*"
+importlib-resources = { version = "*", python = ">=3.7, <3.9" }
+flatten-dict = "*"
+dpath = "*"
+furl = "*"
+StrEnum = "*"
+# To avoid this error on python3.7: AttributeError: 'EntryPoints' object has no attribute 'get'
+# https://importlib-metadata.readthedocs.io/en/latest/history.html#v5-0-0
+importlib-metadata = {version = "<5.0", python = "<3.8"}
+
+# TODO: chore: move to dependency groups once the feature is on a stable version of Poetry
+#  https://python-poetry.org/docs/master/managing-dependencies/#dependency-groups
+# Group: lint
+pylint = { version = "*", optional = true }
+
+# Group: test
+pytest = { version = "*", optional = true }
+pytest-cov = { version = "*", optional = true }
+testfixtures = { version = "*", optional = true }
+responses = { version = "*", optional = true }
+freezegun = { version = "*", optional = true }
+pytest-testmon = { version = "*", optional = true }
+pytest-watch = { version = "*", optional = true }
+pytest-socket = "*"
+pytest-datadir = { version = "*", optional = true }
+
+# Group: doc
+sphinx = { version = "*", optional = true }
+sphinx_rtd_theme = { version = "*", optional = true }
+sphobjinv = { version = "*", optional = true }
+sphinx-gitref = { version = "*", optional = true }
+requests-cache = ">=1.0.0" # This version uses requests_cache.policy.expiration
+
+[tool.poetry.extras]
+lint = ["pylint"]
+test = ["pytest", "pytest-cov", "testfixtures", "responses", "freezegun", "pytest-testmon", "pytest-watch", "pytest-socket", "pytest-datadir"]
+doc = ["sphinx", "sphinx_rtd_theme", "sphobjinv", "sphinx-gitref"]
+
+[tool.poetry.dev-dependencies]
+ipython = "*"
+pudb = "*"
+icecream = "*"
+
+[build-system]
+# https://github.com/python-poetry/poetry/issues/1993
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+# https://beta.ruff.rs/docs/settings/#select
+select = ["ALL"]
+
+# https://beta.ruff.rs/docs/settings/#ignore
+ignore = [
+    "ANN", # https://beta.ruff.rs/docs/rules/#flake8-annotations-ann # TODO: fix: add typing annotations (fix 249 errors and remove this ignore)
+    "COM", # https://beta.ruff.rs/docs/rules/#flake8-commas-com
+    "D107", # Missing docstring in `__init__`
+    "D202", # No blank lines allowed after function docstring
+    "D203", # 1 blank line required before class docstring
+    "D213", # Multi-line docstring summary should start at the second line
+    "D401", # First line of docstring should be in imperative mood
+    "E402", # Module level import not at top of file
+    "E501", # Line too long
+    "FBT", # https://beta.ruff.rs/docs/rules/#flake8-boolean-trap-fbt
+    "TD002", # Missing author in TO DO
+    "TD003", # Missing issue link on the line following this TO DO
+]
+
+# https://beta.ruff.rs/docs/settings/#line-length
+line-length = 120
+
+# https://beta.ruff.rs/docs/settings/#target-version
+target-version = "py37"
+
+# https://beta.ruff.rs/docs/settings/#src
+src = ["src"]
+
+# https://beta.ruff.rs/docs/rules/#flake8-quotes-q
+[tool.ruff.flake8-quotes]
+inline-quotes = "double"
+
+# https://beta.ruff.rs/docs/rules/#mccabe-c90
+[tool.ruff.mccabe]
+# https://beta.ruff.rs/docs/settings/#max-complexity
+max-complexity = 10
+
+# https://beta.ruff.rs/docs/settings/#per-file-ignores
+[tool.ruff.per-file-ignores]
+# ANN https://beta.ruff.rs/docs/rules/#flake8-annotations-ann
+# ERA https://beta.ruff.rs/docs/rules/#eradicate-era
+# F401 imported but unused
+# INP001 File `xxx.py` is part of an implicit namespace package. Add an `__init__.py`.
+# PLR0913 Too many arguments to function call
+# S101 use of assert detected
+# S105 Possible hardcoded password
+# T201 `print` found
+# T203 `pprint` found
+"compat.py" = ["F401"]
+"docs/**" = ["ANN", "INP001", "T201", "T203"]
+"docs/conf.py" = ["ERA"]
+"docs/ideas/lab.py" = ["ERA"]
+"src/nitpick/blender.py" = ["ERA"]
+"tasks.py" = ["ANN", "PLR0913", "T201", "T203"]
+"tests/**" = ["ANN", "PLR0913", "S101", "S105", "T201", "T203"]
+"tests/data/**" = ["INP001"]
