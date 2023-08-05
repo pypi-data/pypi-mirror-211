@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: torchdevice
+Version: 0.2.0
+Home-page: https://github.com/speedcell4/torchdevice
+Author: speedcell4
+Author-email: speedcell4@gmail.com
+License: MIT
+Requires-Python: >=3.9
+Requires-Dist: torch
+Requires-Dist: filelock
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: hypothesis ; extra == 'dev'
+
