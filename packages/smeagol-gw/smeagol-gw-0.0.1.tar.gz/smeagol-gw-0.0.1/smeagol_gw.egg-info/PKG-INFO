@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: smeagol-gw
+Version: 0.0.1
+Summary: Companion package to Golum package for selection effects
+Home-page: https://github.com/lemnis12/smeagol
+Author: Justin Janquart
+Author-email: j.janquart@uu.nl
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Provides-Extra: faster_model_selection
+License-File: LICENSE
+
+Companion package to Golum package for selection effects

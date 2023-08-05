@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+smeagol/__init__.py
+smeagol/golum_to_hanabi.py
+smeagol/lensing_models.py
+smeagol/marginalized_likelihood.py
+smeagol/reweight_with_population_model.py
+smeagol_gw.egg-info/PKG-INFO
+smeagol_gw.egg-info/SOURCES.txt
+smeagol_gw.egg-info/dependency_links.txt
+smeagol_gw.egg-info/requires.txt
+smeagol_gw.egg-info/top_level.txt
