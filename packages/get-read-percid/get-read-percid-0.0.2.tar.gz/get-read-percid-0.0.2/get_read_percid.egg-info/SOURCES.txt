@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+get_read_percid/__init__.py
+get_read_percid/__main__.py
+get_read_percid/_version.py
+get_read_percid/defaults.py
+get_read_percid/extract.py
+get_read_percid/lib.py
+get_read_percid/utils.py
+get_read_percid.egg-info/PKG-INFO
+get_read_percid.egg-info/SOURCES.txt
+get_read_percid.egg-info/dependency_links.txt
+get_read_percid.egg-info/entry_points.txt
+get_read_percid.egg-info/requires.txt
+get_read_percid.egg-info/top_level.txt
