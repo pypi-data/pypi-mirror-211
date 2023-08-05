@@ -1,0 +1,1 @@
+from tablecheck.multitablecheck import MultiTableCheck

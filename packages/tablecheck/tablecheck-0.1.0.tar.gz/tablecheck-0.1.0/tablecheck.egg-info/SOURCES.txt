@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+setup.py
+tablecheck/__init__.py
+tablecheck/multitablecheck.py
+tablecheck.egg-info/PKG-INFO
+tablecheck.egg-info/SOURCES.txt
+tablecheck.egg-info/dependency_links.txt
+tablecheck.egg-info/requires.txt
+tablecheck.egg-info/top_level.txt

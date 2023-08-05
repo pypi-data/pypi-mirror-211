@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: tablecheck
+Version: 0.1.0
+Summary: A minimalistic framework for verifying criteria that has been logged across multiple sheets.
+Home-page: https://www.github.com/ryanbaekr/tablecheck
+Author: Ryan Baker
+License: AGPL
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+License-File: LICENSE.md
+
+UNKNOWN
+
