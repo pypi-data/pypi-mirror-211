@@ -1,0 +1,2 @@
+pandas>=1.5.3
+lib_dzne_seq>=0.2.0
