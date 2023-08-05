@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+roscopilot/__init__.py
+roscopilot/hello_world.py
+roscopilot.egg-info/PKG-INFO
+roscopilot.egg-info/SOURCES.txt
+roscopilot.egg-info/dependency_links.txt
+roscopilot.egg-info/top_level.txt
