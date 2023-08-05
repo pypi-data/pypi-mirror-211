@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+sympytorch/__init__.py
+sympytorch/hide_floats_m.py
+sympytorch/sympy_module.py
+sympytorch.egg-info/PKG-INFO
+sympytorch.egg-info/SOURCES.txt
+sympytorch.egg-info/dependency_links.txt
+sympytorch.egg-info/not-zip-safe
+sympytorch.egg-info/requires.txt
+sympytorch.egg-info/top_level.txt
