@@ -1,0 +1,78 @@
+# Get version from the value set by setuptools_scm.
+VERSION = $(shell dls-bxflow-epsic --version)
+
+# Shell to use instead of /bin/sh.
+SHELL := /bin/bash
+
+# Run all commands in the target in a single shell.
+.ONESHELL:
+
+# ------------------------------------------------------------------
+# Install into conda.
+CONDA_PREFIX = /dls_sw/apps/bxflow/conda/envs/dls-bxflow-epsic/$(VERSION)
+PYTHON_VERSION = 3.8
+CONDA_ACTIVATE = source $$(conda info --base)/etc/profile.d/conda.sh ; conda activate ; conda activate
+PIP_FIND_LINKS = /dls_sw/apps/bxflow/artifacts
+
+# Create the conda environment for this version.
+create_conda:
+	module load mamba && \
+	mamba create -y --prefix $(CONDA_PREFIX) python=$(PYTHON_VERSION)
+
+# Install the package into the conda environment.
+install_conda:
+	$(CONDA_ACTIVATE) $(CONDA_PREFIX)
+	export PIP_FIND_LINKS=$(PIP_FIND_LINKS)
+	python3 -m pip install --pre --upgrade .
+
+# Update specific packages from source in the pre-installed conda environment.
+upgrade_conda:
+	$(CONDA_ACTIVATE) $(CONDA_PREFIX)
+	export PIP_FIND_LINKS=$(PIP_FIND_LINKS)
+	python3 -m pip install --pre --upgrade dls-bxflow
+
+# Make this version be the edge version.
+edge_conda:
+	rm -f $(CONDA_PREFIX)/../edge
+	ln -s $(CONDA_PREFIX) $(CONDA_PREFIX)/../edge
+
+# ------------------------------------------------------------------
+# Install just enough requirements for running a task on HPC into a PYTHONPATH on the shared filesystem.
+
+PYTHON_VERSION = 3.10
+PIPPY_PREFIX_GLOBAL = /dls_sw/apps/bxflow/pippy_place
+PIPPY_PREFIX = $(PIPPY_PREFIX_GLOBAL)/dls-bxflow-epsic/$(VERSION)
+
+deploy_pippy:
+	module load mamba
+	export PIP_FIND_LINKS=$(PIP_FIND_LINKS)
+	pip install --no-deps --python-version $(PYTHON_VERSION) --target $(PIPPY_PREFIX) --upgrade \
+		dls-bxflow-epsic \
+		dls-bxflow \
+		dls-logformatter \
+		dls-utilpack
+	chgrp -R dls-softinst $(PIPPY_PREFIX)
+
+# ------------------------------------------------------------------
+# Deployment the current modules for loading.
+MODULE_TARGET ?= /dls_sw/apps/Modules/modulefiles/bxflow/epsic
+
+# Directory with module files in it.
+deploy_modules:
+	mkdir -p $(MODULE_TARGET)/$(VERSION)
+	cp modulefiles/* $(MODULE_TARGET)/$(VERSION)
+	rm -f $(MODULE_TARGET)/edge
+	ln -s $(MODULE_TARGET)/$(VERSION)/paths $(MODULE_TARGET)/edge
+	find $(MODULE_TARGET) -type f -exec chmod 664 {} \;
+	find $(MODULE_TARGET) -type d -exec chmod g+s {} \;
+	chgrp -R dls-softinst $(MODULE_TARGET)
+
+# Single module file.
+deploy_module:
+	mkdir -p $(MODULE_TARGET)
+	cp modulefiles/paths $(MODULE_TARGET)/$(VERSION)
+	rm -f $(MODULE_TARGET)/edge
+	ln -s $(MODULE_TARGET)/$(VERSION) $(MODULE_TARGET)/edge
+	find $(MODULE_TARGET) -type f -exec chmod 664 {} \;
+	find $(MODULE_TARGET) -type d -exec chmod g+s {} \;
+	chgrp -R dls-softinst $(MODULE_TARGET)	
