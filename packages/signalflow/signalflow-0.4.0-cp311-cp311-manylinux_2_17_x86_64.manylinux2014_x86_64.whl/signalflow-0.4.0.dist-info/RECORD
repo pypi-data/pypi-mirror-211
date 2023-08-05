@@ -1,0 +1,14 @@
+signalflow.so,sha256=zTy5HqoWHyw0mFeXFFcAqL0v8V6JVSKg5rK5-Ep6GHw,5552385
+signalflow.libs/libjack-f9825e83.so.0.1.0,sha256=gNtLs3CHLWneJzRFNCU4OqVr54y2kPLWXnIy4vgMQtY,674489
+signalflow.libs/libsndfile-49412e6b.so.1.0.35,sha256=3i-NFFGQCIIg_RO3by_TkpeHX725H4sVTFi_cNw2eWs,661009
+signalflow.libs/libfftw3f-4367ce36.so.3.3.2,sha256=mqPSEtPc2blhKv73RCR4HvbsCUY_dehkpnZBphWkhiQ,1582817
+signalflow.libs/libsoundio-2ddcc5a4.so.2.0.0,sha256=oZXDj0LfmDU0H0okn8yBfka1EDq4SVT1hwwqt8soMAY,283801
+signalflow.libs/libasound-be53cd2a.so.2.0.0,sha256=HI3_kPtRm3Ogx14NsQVoU4NWQHHKCu1gUFetzgcZg50,5414041
+signalflow_midi/signalflow_midi.py,sha256=4d6ORoyImKkEP7A3kgT3QMsekBYep2yDgTXN84vMsrE,5652
+signalflow_midi/__init__.py,sha256=ebubFuq3LGV1Q8rL5bUmytlaJk1CVHTYYmKv9vEaWWw,31
+signalflow-0.4.0.data/scripts/signalflow,sha256=CteGyuOQvOv4MAcoNOCoAx5gVw_tmd0IHMRvESlHHzM,5471
+signalflow-0.4.0.dist-info/top_level.txt,sha256=BAdQcVluDaaCq86Jfk6wf41x91sS9qnSkiSorbaQJz0,27
+signalflow-0.4.0.dist-info/RECORD,,
+signalflow-0.4.0.dist-info/METADATA,sha256=meQVu_EPW7gO5swZsWredG3OrrjGXv9k-g56j9GAlb0,7891
+signalflow-0.4.0.dist-info/WHEEL,sha256=8KU227XctfdX2qUwyjQUO-ciQuZtmyPUCKmeGV6Byto,152
+signalflow-0.4.0.dist-info/LICENSE.md,sha256=iWf03MwR9DrM_hLZ2PwfRDDd7eqA3DJ5bYlJaW4vUpY,1071
