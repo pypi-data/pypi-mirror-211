@@ -1,0 +1,28 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "cliiii"
+version = "0.0.1"
+authors = ["Shubham Dogra <shubham.dogra@pingsafe.com>"]
+description = "A small example package"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+
+[tool.poetry.dependencies]
+requests = "^2.30.0"
+
+
+[tool.poetry.scripts]
+cli = "piicli.main:run_cli"
+
+[tool.poetry.urls]
+"Homepage" = "https://github.com/pypa/sampleproject"
+"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
+
