@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/quik_ai/__init__.py
+src/quik_ai.egg-info/PKG-INFO
+src/quik_ai.egg-info/SOURCES.txt
+src/quik_ai.egg-info/dependency_links.txt
+src/quik_ai.egg-info/requires.txt
+src/quik_ai.egg-info/top_level.txt
