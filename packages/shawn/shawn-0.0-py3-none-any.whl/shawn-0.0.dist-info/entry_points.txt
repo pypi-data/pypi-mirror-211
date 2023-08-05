@@ -1,0 +1,3 @@
+[console_scripts]
+shawn=shawn.__main__:app
+
