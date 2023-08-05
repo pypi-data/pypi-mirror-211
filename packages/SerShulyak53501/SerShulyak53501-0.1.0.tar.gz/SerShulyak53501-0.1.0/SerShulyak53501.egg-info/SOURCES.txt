@@ -1,0 +1,12 @@
+README.md
+setup.py
+SerShulyak53501/constans.py
+SerShulyak53501/fabric_ser.py
+SerShulyak53501/json_ser.py
+SerShulyak53501/sezializer.py
+SerShulyak53501/xml_ser.py
+SerShulyak53501.egg-info/PKG-INFO
+SerShulyak53501.egg-info/SOURCES.txt
+SerShulyak53501.egg-info/dependency_links.txt
+SerShulyak53501.egg-info/requires.txt
+SerShulyak53501.egg-info/top_level.txt
