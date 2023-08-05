@@ -1,0 +1,3 @@
+[console_scripts]
+ygModbus-request = ygModbus.client:request
+ygModbus-runserver = ygModbus.server:run_server
