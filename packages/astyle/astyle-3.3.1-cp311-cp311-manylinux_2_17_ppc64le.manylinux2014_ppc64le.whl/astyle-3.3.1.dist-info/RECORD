@@ -1,0 +1,10 @@
+astyle-3.3.1.dist-info/RECORD,,
+astyle-3.3.1.dist-info/WHEEL,sha256=cnCS-dCqqVfFRgEso_IPmzwZ1YI1DvNymc0j1pZYsPQ,157
+astyle-3.3.1.dist-info/entry_points.txt,sha256=xtfUIcEbACGZomF3GoUksYC7VXFBu5IkVufBg1GSGSc,49
+astyle-3.3.1.dist-info/METADATA,sha256=n30k4n-GW8UP_Sl4V2ac-0qvEe0N3sf_xh9yiRogyoU,6831
+astyle-3.3.1.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+astyle/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+astyle/__main__.py,sha256=LkgIkaOeDLAS_s03qkQlL5xoonTOsY3nw9qAvVrFqFE,246
+astyle/__init__.py,sha256=nsSlG8cpodDHPToSLrMqKEw5MJjn0OoGzjR92M2xs3M,396
+astyle/data/share/man/astyle.1,sha256=u3CpwJJM11_lcmw3iRBLrIVddD8gsdJlGHJktPy6N9Q,16162
+astyle/data/bin/astyle,sha256=hLhL1Wc8TWSRl1uuAH_HsX3oNONjh8VFHltrZ2QCLkw,724584
