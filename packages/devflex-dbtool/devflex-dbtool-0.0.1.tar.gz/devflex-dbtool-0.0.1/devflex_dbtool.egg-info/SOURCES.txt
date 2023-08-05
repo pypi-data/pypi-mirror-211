@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+devflex_dbtool.egg-info/PKG-INFO
+devflex_dbtool.egg-info/SOURCES.txt
+devflex_dbtool.egg-info/dependency_links.txt
+devflex_dbtool.egg-info/requires.txt
+devflex_dbtool.egg-info/top_level.txt
