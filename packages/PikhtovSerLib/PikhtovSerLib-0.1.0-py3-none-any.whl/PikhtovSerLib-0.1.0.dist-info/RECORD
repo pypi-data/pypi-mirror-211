@@ -1,0 +1,11 @@
+PikhtovSerLib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PikhtovSerLib/constants.py,sha256=UxayYRb3QqLf_tNDpCWFn1agzBeVnvXJwM-1-iZKg3w,2021
+PikhtovSerLib/create_ser.py,sha256=ad3XX6lTIXDvOS2acZBSWKF4Z0LlSlW0naZKOy-VQ9o,418
+PikhtovSerLib/json_serealazer.py,sha256=d8GOw9zBrZENoYWzGIfNXUNkecggHT4Gm1x5d5WSvis,2569
+PikhtovSerLib/main.py,sha256=hQ-kGQSvpfIy5SGyTFnHsKJ7Ynd9lFM24m2SLRqM4L8,476
+PikhtovSerLib/my_serelizator.py,sha256=K6QUtxqWExf81GYxu7k0SDfYyKA6ZJAAz5RIFL1qC_M,12442
+PikhtovSerLib/xml_serealazer.py,sha256=nPzfx_NgDVs9Gv6Otc0aJumuxHNlrl6VyA5shxKMCdk,3113
+PikhtovSerLib-0.1.0.dist-info/METADATA,sha256=uDhV75SAAyh5JYHngEewwz9n_iOuEAbjge3CNt5ko5o,727
+PikhtovSerLib-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+PikhtovSerLib-0.1.0.dist-info/top_level.txt,sha256=oQLE8AoeoqjWOxghNDINxBifBJGGdm-BYBe-d4bU-EY,14
+PikhtovSerLib-0.1.0.dist-info/RECORD,,
