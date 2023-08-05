@@ -1,0 +1,9 @@
+imagenet_w/__init__.py,sha256=QB2RNCh3_p4yuSJ_im-0OoWsYOsFsokJt8tPzpJXJqY,243
+imagenet_w/watermark_transform.py,sha256=NaTXIwOImj3_VwNOtKY9LrKI-DKYunG46CGTbTVMGwc,3969
+imagenet_w/fonts/SourceHanSerifSC-ExtraLight.otf,sha256=n1YFMkyCsmTvyHp88Oji8moC7Gf1OYQzaPBmyy4IrtA,21280792
+imagenet_w-1.0.0.dist-info/LICENSE,sha256=S1MQVRJdzaNgWWUWNL20JK0mEvR1mz0gZ6cx0oI9HNw,19331
+imagenet_w-1.0.0.dist-info/METADATA,sha256=xQmp7PDUw2dUKDL3ZTr0QM3CUMKtM5B3Lv1zlISVQBI,10174
+imagenet_w-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+imagenet_w-1.0.0.dist-info/top_level.txt,sha256=tJnhHhVRvnu2XEgqOoI1AN90281kYmfe7mMV47ogYlk,11
+imagenet_w-1.0.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+imagenet_w-1.0.0.dist-info/RECORD,,
