@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: defi-services-lib
+Version: 1.0.3
+Summary: Calculate apy, apr, and wallet information,... in decentralized applications.
+Home-page: https://github.com/phamvietbang/defi-services-lib
+Author: Viet-Bang Pham
+Author-email: phamvietbang2965@gmail.com
+Project-URL: Bug Tracker, https://github.com/phamvietbang/defi-services-lib
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: web3 (==5.31.1)
+Requires-Dist: QueryStateLib (==1.1.4)
+
+# defi-services-lib
+Query EVM State and Calculate The APY/APR, Wallet Information,... in Decentralized Applications
+## Examples
+Lending Protocol: [examples/lending_pools](https://github.com/phamvietbang/defi-services-lib/tree/main/examples/lending_pools/bsc)
