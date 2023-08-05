@@ -1,0 +1,11 @@
+LICENSES
+README.md
+pyproject.toml
+setup.py
+src/semi_tensor_product.egg-info/PKG-INFO
+src/semi_tensor_product.egg-info/SOURCES.txt
+src/semi_tensor_product.egg-info/dependency_links.txt
+src/semi_tensor_product.egg-info/top_level.txt
+src/stp/__init__.py
+src/stp/stp.py
+src/stp/utils.py
