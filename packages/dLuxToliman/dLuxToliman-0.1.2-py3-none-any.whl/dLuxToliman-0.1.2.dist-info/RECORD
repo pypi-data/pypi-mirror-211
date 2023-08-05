@@ -1,0 +1,12 @@
+dLuxToliman/__init__.py,sha256=0i6moWvFreODQ0_jRQZFqjMcE_QvZCtjLb9RlbxCbPs,516
+dLuxToliman/diffractive_pupil.npy,sha256=lMK6j4VPVENy7ghGpFvAKzOuXUExcqEnx_Rd2rVEciM,16777344
+dLuxToliman/gradient_energy.py,sha256=w50alKrACuY1eAElHdZPynyVrWMVhBT-KNLME-b9t-M,2636
+dLuxToliman/instruments.py,sha256=pxwf8xWalH5OWfdvIMzrIpmNFFhyMu-wdMyQeFTBjWA,1134
+dLuxToliman/optical_layers.py,sha256=6a52-FtLzmMUyFJ3KTM4T_A5k13fY1sbw7OC9LHg0Po,6731
+dLuxToliman/optics.py,sha256=lDTN4J4z4sbACbFE_f1j2HVd6BVD3ccCfhxkYRRUhpc,8094
+dLuxToliman/sources.py,sha256=s3lj4877Ep5F6QEELnRLHQY7G6kmAQfxKnMZCYOffQw,8140
+dLuxToliman-0.1.2.dist-info/LICENSE,sha256=Yo4388dSukLK7m2VW3Z-uPp7w-WFRtBd40eqHGXwjW8,1498
+dLuxToliman-0.1.2.dist-info/METADATA,sha256=asdnV-qeWaEOZ0FzyygidG78S48hPIUkS89UpT6HQro,3139
+dLuxToliman-0.1.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dLuxToliman-0.1.2.dist-info/top_level.txt,sha256=EHqO5nQlU1PYEyEshzU9ouo2UYFgmjAaRCAiGXvc-js,12
+dLuxToliman-0.1.2.dist-info/RECORD,,
