@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: dinosub
+Version: 1.2.1
+Summary: Subdomains scanner
+Author: Danii Saahir
+Requires-Dist: requests
+Requires-Dist: setuptools
+

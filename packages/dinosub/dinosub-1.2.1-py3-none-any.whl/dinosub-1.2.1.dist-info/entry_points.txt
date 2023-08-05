@@ -1,0 +1,2 @@
+[console_scripts]
+dinosub = dinosub.main:main
