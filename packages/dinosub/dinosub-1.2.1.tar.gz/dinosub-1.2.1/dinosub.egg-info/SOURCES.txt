@@ -1,0 +1,9 @@
+setup.py
+dinosub/__init__.py
+dinosub/main.py
+dinosub.egg-info/PKG-INFO
+dinosub.egg-info/SOURCES.txt
+dinosub.egg-info/dependency_links.txt
+dinosub.egg-info/entry_points.txt
+dinosub.egg-info/requires.txt
+dinosub.egg-info/top_level.txt
