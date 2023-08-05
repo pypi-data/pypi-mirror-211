@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: pautobot
+Version: 0.0.5
+Summary: Private AutoGPT Robot - Your private task assistant with GPT!
+Home-page: https://github.com/vietanhdev/pautobot
+Author: Viet-Anh Nguyen
+Author-email: vietanh.dev@gmail.com
+License: Apache License 2.0
+Keywords: Personal Assistant,Automation,GPT,LLM,PrivateGPT
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+Requires-Dist: langchain (>=0.0.177)
+Requires-Dist: gpt4all (>=0.2.3)
+Requires-Dist: chromadb (>=0.3.23)
+Requires-Dist: llama-cpp-python (>=0.1.50)
+Requires-Dist: urllib3 (>=2.0.2)
+Requires-Dist: pdfminer.six (>=20221105)
+Requires-Dist: python-dotenv (>=1.0.0)
+Requires-Dist: unstructured (>=0.6.6)
+Requires-Dist: extract-msg (>=0.41.1)
+Requires-Dist: tabulate (>=0.9.0)
+Requires-Dist: pandoc (>=2.3)
+Requires-Dist: pypandoc (>=1.11)
+Requires-Dist: tqdm (>=4.65.0)
+Requires-Dist: fastapi
+Requires-Dist: requests
+
+<p align="center">
+  
+  <h1 align="center">🔥 PⒶutoBot 🔥</h1>
+  <p align="center" style="font-size:18px">Private AutoGPT Robot - Your private task assistant with GPT!</p>
+</p>
+
+**NOTE: This project is still in development.**
+
+- **Ask questions** to your documents without an internet connection, using the power of LLMs. 100% private, no data leaves your execution environment at any point. You can ingest documents and ask questions without an internet connection! Engine developed based on [PrivateGPT](https://github.com/imartinez/privateGPT).
+- **Automate tasks** easily with PAutoBot plugins. Easy for everyone!
+
+
+
+**The supported extensions are:**
+
+- `.csv`: CSV,
+- `.docx`: Word Document,
+- `.doc`: Word Document,
+- `.enex`: EverNote,
+- `.eml`: Email,
+- `.epub`: EPub,
+- `.html`: HTML File,
+- `.md`: Markdown,
+- `.msg`: Outlook Message,
+- `.odt`: Open Document Text,
+- `.pdf`: Portable Document Format (PDF),
+- `.pptx` : PowerPoint Document,
+- `.ppt` : PowerPoint Document,
+- `.txt`: Text file (UTF-8),
+
+# I. Installation and Usage
+
+## 1. Installation
+
+- Python 3.10 or higher.
+- Install **PAutoBot**:
+
+```shell
+pip install pautobot
+```
+
+## 2. Usage
+
+- Put your documents in `pautobot-data/documents` folder.
+- Ingest documents:
+
+```shell
+python -m pautobot.ingest
+```
+
+- Run the app:
+
+```shell
+python -m pautobot.app
+```
+
+Go to <http://localhost:5678/> to see the app.
