@@ -1,0 +1,7 @@
+datapath/__init__.py,sha256=4pHZYw7fW-7oJEWr1Gy5Sra2ihsPw4FK_M7O-I4SC7Y,75
+datapath/_pipe.py,sha256=dJmyHcENutCfjyYOXd1lF5f0qVkTWUFXfVP9pujn2LM,1003
+datapath/_value.py,sha256=WqHwUVCDzZnxw04F-K2-zC3GWHdBo6Xo4Vhss98xJvU,697
+nice_datapath-0.0.1.dist-info/METADATA,sha256=56BJuuw-MKGJZfy5kjX7NfK2T86WrF8CQUIjOnZlY_Q,2688
+nice_datapath-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nice_datapath-0.0.1.dist-info/top_level.txt,sha256=-MveXG2541wgKgFcOuzVww-xW5jkMETkzjFNSav3EaQ,9
+nice_datapath-0.0.1.dist-info/RECORD,,
