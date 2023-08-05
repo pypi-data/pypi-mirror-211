@@ -1,0 +1,3 @@
+[console_scripts]
+lab = lab_partner_utils.cli_command_factory:cli
+launch-kernel = lab_partner_utils.kernel_launcher:launch
