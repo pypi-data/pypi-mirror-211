@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+thsquant.egg-info/PKG-INFO
+thsquant.egg-info/SOURCES.txt
+thsquant.egg-info/dependency_links.txt
+thsquant.egg-info/entry_points.txt
+thsquant.egg-info/top_level.txt
