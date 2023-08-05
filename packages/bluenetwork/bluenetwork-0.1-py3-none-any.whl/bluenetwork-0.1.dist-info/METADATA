@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: bluenetwork
+Version: 0.1
+Summary: Network backend for blue engine and similar projects
+Home-page: https://github.com/MrBlueBlobGuy/blue-networking
+Author: Debojyoti Ganguly
+Author-email: debojyotiganguly70@gmail.com
+License: MIT
+Download-URL: https://github.com/MrBlueBlobGuy/blue-networking/archive/v_01.tar.gz
+Keywords: blue,engine
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE
+Requires-Dist: requests
+
+UNKNOWN
+
