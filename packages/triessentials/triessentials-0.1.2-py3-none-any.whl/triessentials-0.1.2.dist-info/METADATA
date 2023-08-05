@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: triessentials
+Version: 0.1.2
+Summary: A simple, yet efficent package full of useful functions. Created by Tristar1120
+Author: Tristar1120
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
