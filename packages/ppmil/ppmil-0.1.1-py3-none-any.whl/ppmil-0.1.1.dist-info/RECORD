@@ -1,0 +1,13 @@
+ppmil/__init__.py,sha256=5mH61PC2hU46YFXB4q-up2OlGHTJusmhrSdJeIhQ5ko,166
+ppmil/_version.py,sha256=8oAxKUG747GUokmxjkrWejyJa5yPNEsoJDlXxoedxTw,21
+ppmil/cgf.py,sha256=xhG3SNSpdA4gK4KquGssrnLL2rNujxNKKsCPMakdckI,1524
+ppmil/gto.py,sha256=91c2HCYUO6XI8FnqziS7tgiPsdAkz0bUALxe7mR3XsA,1603
+ppmil/integrals.py,sha256=FyEEs0qf8-2VdiVMCTwCSwkIRSZO7ftDpNeZgvWhkDs,4232
+ppmil/molecule.py,sha256=kPpiVM7fFBvOSHcKO6aX8EMs14q92XNM85tEaxjOcEs,4169
+ppmil/ppmil.py,sha256=IWCHo5UimHVxe9Kq5kfHAppKmK_oQr58728x-6Qmjw4,9397
+ppmil/quadrature.py,sha256=9dOjzQ-3wEG1IARopUXEVC-RBWRpc4mV01eRxZTMYQQ,3522
+ppmil-0.1.1.dist-info/LICENSE,sha256=4cCtcomD2KVzNeUs8QZPGv_R1FQXPYzr0-2LSnK0hwQ,35121
+ppmil-0.1.1.dist-info/METADATA,sha256=ggNDNONNc8ik1Qy_Jqou1hwqGkJQd_DfqTFSCBl1SQs,1274
+ppmil-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ppmil-0.1.1.dist-info/top_level.txt,sha256=uBYwz0l_kHyFOn_pSSaMU1hca2kmrAu6lUFViqO9y0c,6
+ppmil-0.1.1.dist-info/RECORD,,
