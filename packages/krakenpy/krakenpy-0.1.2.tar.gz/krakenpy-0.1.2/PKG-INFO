@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: krakenpy
+Version: 0.1.2
+Summary: krakenpy is tool in which we integrated kraken crypto exchange API
+Home-page: https://github.com/Sheikhharis50/krakenpy
+Keywords: kraken,kraken-api,python,crypto
+Author: Sheikh Haris Zahid
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: krakenex (>=2.1.0,<3.0.0)
+Project-URL: Repository, https://github.com/Sheikhharis50/krakenpy
+Description-Content-Type: text/markdown
+
+# krakenpy
+
+krakenpy is a python integration for kraken API. This package is using `krakenex` underneath, because `krakenex` only provides two methods `query_private` and `query_public` and it's really hard to guess the request params. Therefore, I have introduced Python `Typing` and `dataclasses` to readability.
+
+## Authors
+
+- [Sheikh Haris Zahid](https://github.com/sheikhharis50)
+
