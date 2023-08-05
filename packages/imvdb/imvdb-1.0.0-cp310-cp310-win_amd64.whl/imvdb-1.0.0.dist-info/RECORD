@@ -1,0 +1,16 @@
+imvdb/Imath-3_1.dll,sha256=3BKAHdSIBVsX0rU8j9GgWcIfBkcL_Z7Wfmm0vnapZPc,335360
+imvdb/__init__.py,sha256=2QplP_Ry1RLpCdDMNZHaFoY0z7stzY9EIaOtw8ARACE,68
+imvdb/__main__.py,sha256=7O4vMnE58-KArs0CsBpe0GBPt45i2A00l4kWskSUzoQ,5065
+imvdb/blosc.dll,sha256=4EUTAeqsrUtUR1IEzJvMa1Pd7etY3n-_8lLVbK8dRrY,56320
+imvdb/grid.py,sha256=KTYFWukaASCPo4cw1BO99sMXbYzdaWCVqef2mr1LFQY,2044
+imvdb/image.py,sha256=owkgyZtSmWyJqjUjPWPh9ogfOx29ZbCa49kykpeizb4,995
+imvdb/lz4.dll,sha256=Aw5Gyv9ASezphkxf9BYlakxkLgqsFfSHkutitYbe2WE,121344
+imvdb/openvdb.dll,sha256=YgXi0tpTSbh1VSZTre64e0DhaWfgPaFRvzU2B1T7pkE,24425984
+imvdb/tbb12.dll,sha256=V6MKyrSVwoeDlcTZ61Nt1GuwcLBSlLgrr0VcxFKzOrI,313856
+imvdb/vdb.cp310-win_amd64.pyd,sha256=UkmBFnLs7GuicWSq4zKblvnQpuoTpTB2net4nYlI528,492032
+imvdb/zlib1.dll,sha256=RX5PDb4Bz7LSkoe1VwKPu7TQAYaYXi89dUgGqaisYzA,89600
+imvdb/zstd.dll,sha256=sSKJ2maR9P60_yyFptIcMRzXVC6X0C7e2hOC3tbD95I,647680
+imvdb-1.0.0.dist-info/METADATA,sha256=DjjsZhHvMU9s-uCXTq4YjHYxsyzxnTDtmrJKDUiMFNs,661
+imvdb-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+imvdb-1.0.0.dist-info/top_level.txt,sha256=MtcExZYAYSRbAYb9aoAppo_aGrRaUnKcig1Ovxdhaeg,6
+imvdb-1.0.0.dist-info/RECORD,,
