@@ -1,0 +1,5 @@
+[console_scripts]
+csv2xls = csv_to_xls.core:convert
+
+[nbdev]
+csv_to_xls = csv_to_xls._modidx:d
