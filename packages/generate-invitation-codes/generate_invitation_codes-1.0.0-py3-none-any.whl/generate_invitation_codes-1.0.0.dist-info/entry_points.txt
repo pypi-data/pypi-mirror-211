@@ -1,0 +1,2 @@
+[console_scripts]
+generate_invitation_codes = generate_invitation_codes:main
