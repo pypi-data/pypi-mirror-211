@@ -1,0 +1,8 @@
+torch_adapters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torch_adapters/adapters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torch_adapters/adapters/lora.py,sha256=FmpqVND4bqrJaFcqRkNM9g6hq6YrOEQElfGipELfylU,856
+torch_adapters/utils.py,sha256=G-OVR2yjlOTN8WDrOA21DYESGsvPHjjToxF3L--66YY,830
+torch_adapters-0.0.1.dist-info/LICENSE,sha256=jQP3CLPNJ3wkjftPFHJIPy-DHXrZUqtjnHmzzooOAfA,1062
+torch_adapters-0.0.1.dist-info/METADATA,sha256=s31W31WxvP5jT5PVTDRuRTw1Bpu4IWP9RocWdmoIYH0,495
+torch_adapters-0.0.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+torch_adapters-0.0.1.dist-info/RECORD,,
