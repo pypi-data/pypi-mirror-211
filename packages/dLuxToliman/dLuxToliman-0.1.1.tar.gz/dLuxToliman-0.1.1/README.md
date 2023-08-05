@@ -1,0 +1,46 @@
+# dLuxToliman
+
+[![License](https://img.shields.io/badge/license-BSD%203--Clause-blue.svg)](LICENSE)
+
+## Description
+
+[∂Lux](https://louisdesdoigts.github.io/dLux/) is an open-source differentiable optical modelling framework harnessing the structural isomorphism between optical systems and neural networks, giving forwards models of optical system as a _parametric neural network_.
+
+∂Lux is built in [Zodiax](https://github.com/LouisDesdoigts/zodiax) which is an open-source object-oriented [Jax](https://github.com/google/jax) framework built as an extension of [Equinox](https://github.com/patrick-kidger/equinox) for scientific programming. This framework allows for the creation of complex optical systems involving many planes, phase and amplitude screens in each, and propagate between them in the Fraunhofer or Fresnel regimes. This enables [fast phase retrieval](https://louisdesdoigts.github.io/dLux/notebooks/phase_retrieval_demo/), image deconvolution, and [hardware design in high dimensions](https://louisdesdoigts.github.io/dLux/notebooks/designing_a_mask/). Because ∂Lux models are fully differentiable, you can [optimize them by gradient descent over millions of parameters](https://louisdesdoigts.github.io/dLux/notebooks/flatfield_calibration/); or use [Hamiltonian Monte Carlo to accelerate MCMC sampling](https://louisdesdoigts.github.io/dLux/notebooks/HMC/). Our code is fully open-source under an MIT license, and we encourage you to use it and build on it to solve problems in astronomy and beyond.
+
+
+## Features
+
+This package contains pre-built optical simulation models for the Toliman instrument.
+
+## Installation
+
+`dLuxToliman` is pip-installable. To install the latest release, simply run:
+
+```bash
+pip install dLuxToliman
+```
+
+## Usage  # TODO: Update this section for dLux 13.0
+
+Explain how users can import and use your package in their projects. Provide code examples or snippets if possible.
+
+## Contributing
+
+Let users know how they can contribute to your package, report issues, or submit pull requests.
+
+## Limitations
+
+Outline any known limitations or caveats that users should be aware of when using your package.
+
+## License
+
+This package is released under the BSD 3-Clause License. See the [LICENSE](LICENSE) file for more information.
+
+## Documentation  # TODO add
+
+If you have additional documentation or resources, provide links or instructions for accessing them.
+
+## Support
+
+If you encounter any problems or have any questions related to Toliman models, please contact me at `max.charles@sydney.edu.au`.
