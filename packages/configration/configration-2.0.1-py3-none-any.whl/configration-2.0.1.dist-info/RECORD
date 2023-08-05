@@ -1,0 +1,15 @@
+configration/__init__.py,sha256=Z0yYyUmOkhvSb4JQXexkVsCOM992lvjOBoXU3XBUgIg,175
+configration/_version.py,sha256=HVx0XJJ9OYFWBBPBCUFYb8Nm43ChPg9GZLh_dkxh9qI,22
+configration/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+configration/src/config.py,sha256=k7Kgy6hxAX4DQF68KSk4HggkoxmsaI45vSCMUfhNHnw,1695
+configration/src/constants.py,sha256=u3FGgbdJ_fiRE_Vb9t_aWtqSHYDdRpptqzipw7qN2Rw,350
+configration/src/json_config.py,sha256=jHbRowtlZ-QOv2No7eqM7eJr52hrWIDXMRngrGs4naM,952
+configration/src/toml_config.py,sha256=ou8glgK7u4rd5mYFJLSBiQ-aigmeHAZG0fNSEQ6c-6Y,948
+configration/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+configration/tests/test_json.py,sha256=74irKro7Iwqm4wQ1K04Lt-biowvnz0HxPDyZOX1iWEM,1563
+configration/tests/test_toml.py,sha256=uFD1-SrZtiBjApw5Fccfrt1thXP86UOMo2jABAGx_S0,1563
+configration-2.0.1.dist-info/LICENSE.txt,sha256=4h0e1iLfuruOGdqDfs8-aua1e_Ma97UnS8ZfwAau8aE,33889
+configration-2.0.1.dist-info/METADATA,sha256=BSKLo_RQkl66PFbdQ-bIlQrQggQ5g6XZt_uUKFGjqv8,826
+configration-2.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+configration-2.0.1.dist-info/top_level.txt,sha256=M9jipHyd_JJybXi0htpdet4t6gwXRRuaR6AgskCmZzY,13
+configration-2.0.1.dist-info/RECORD,,
