@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: torchlie
+Version: 0.0.1.dev1
+Summary: Torch extension for differentiable Lie groups.
+Home-page: https://github.com/facebookresearch/theseus/lie
+Author: Meta Research
+Keywords: lie groups,differentiable optimization
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown

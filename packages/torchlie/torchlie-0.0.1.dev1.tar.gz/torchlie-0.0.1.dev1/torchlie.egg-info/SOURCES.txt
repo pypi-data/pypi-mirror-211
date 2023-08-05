@@ -1,0 +1,16 @@
+README.md
+setup.py
+lie/__init__.py
+lie/lie_tensor.py
+lie/types.py
+lie/functional/__init__.py
+lie/functional/check_contexts.py
+lie/functional/constants.py
+lie/functional/lie_group.py
+lie/functional/se3_impl.py
+lie/functional/so3_impl.py
+lie/functional/utils.py
+torchlie.egg-info/PKG-INFO
+torchlie.egg-info/SOURCES.txt
+torchlie.egg-info/dependency_links.txt
+torchlie.egg-info/top_level.txt
