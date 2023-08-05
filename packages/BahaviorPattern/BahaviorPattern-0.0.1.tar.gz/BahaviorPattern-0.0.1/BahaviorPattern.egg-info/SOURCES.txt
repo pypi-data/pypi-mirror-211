@@ -1,0 +1,7 @@
+README.md
+setup.py
+BahaviorPattern.egg-info/PKG-INFO
+BahaviorPattern.egg-info/SOURCES.txt
+BahaviorPattern.egg-info/dependency_links.txt
+BahaviorPattern.egg-info/requires.txt
+BahaviorPattern.egg-info/top_level.txt
