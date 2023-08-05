@@ -1,0 +1,10 @@
+features/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+features/feature_generation.py,sha256=HuU1pkYO5TIiHSawmsnOJ6aBQqPzDZUKbt0O8nOKSVw,5807
+features/feature_spec.py,sha256=oEdRPXfEnp1Mpux7dlCsMOSJFAN1mXC_DwsEPLVMIXE,1730
+features/hyper_feature.py,sha256=iJ0Xqaq6GVNBnDmi90PWni53RLKzHipCo51tl7U_ORk,1341
+features/sql_gen.py,sha256=i-eKPNCqQWvzWMje4mbdSC8DSEyuQbvKtXw0vor9C8M,1779
+ben_mackenzie_features-0.0.17.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ben_mackenzie_features-0.0.17.dist-info/METADATA,sha256=a8MRMZoy10ppqpUDs3SI3lfnMRueXkBo5XUFfckuW7M,3808
+ben_mackenzie_features-0.0.17.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ben_mackenzie_features-0.0.17.dist-info/top_level.txt,sha256=LhiG-JJ9NYOYwpCeRdkmMrLrDaibcOoXNZ3NnC-gtC8,9
+ben_mackenzie_features-0.0.17.dist-info/RECORD,,
