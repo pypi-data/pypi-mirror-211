@@ -1,0 +1,7 @@
+openpyxl>=3.1.1
+pandas>=1.5.3
+tomli_w>=1.0.0
+lib-dzne-seq>=0.2.0
+lib-dzne-basetables>=0.1.1
+lib-dzne-tsv>=0.1.6
+lib-dzne-math>=0.2.0
