@@ -1,0 +1,10 @@
+tencentcloud/__init__.py,sha256=YYiWirQxqAWWekONp02AWdn9T3pWE2JjgfViVrXPPmU,630
+tencentcloud/vod/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/vod/v20180717/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/vod/v20180717/errorcodes.py,sha256=uB5akInj115-a3M43wPUv_V6MOyO-7Nfy1bkJKZRczI,25111
+tencentcloud/vod/v20180717/models.py,sha256=mfW2mkDI2MNK9uTOoGB5DbBgJ_-560kogxx8UHItESo,1201061
+tencentcloud/vod/v20180717/vod_client.py,sha256=Z4VAPmDnME0e-mB-uZ0UPmdAxdea4NmJUT3BbSnK85s,177071
+tencentcloud_sdk_python_vod-3.0.901.dist-info/METADATA,sha256=uaIm2Rqh7ZmKpbWwzRyc1BTCQVpmLGbWpYYP7xdvrSo,1432
+tencentcloud_sdk_python_vod-3.0.901.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+tencentcloud_sdk_python_vod-3.0.901.dist-info/top_level.txt,sha256=g-8OyzoqI6O6LiS85zkeNzhB-osEnRIPZMdyRd_0eL0,13
+tencentcloud_sdk_python_vod-3.0.901.dist-info/RECORD,,
