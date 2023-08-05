@@ -1,0 +1,14 @@
+aioroboremote/__init__.py,sha256=dbi7OZihYnVc-aAmj34a06oCe-xk5r9eBdB9aZs5yB8,94
+aioroboremote/deco.py,sha256=NThnykEvNbq9s_xSUt3bvAmlf9XxS9RB3wKUonMN9H4,1009
+aioroboremote/library.py,sha256=o8i_8yUutXCF77ORe4LeIZLSJ_2jnxkTOkpsfAqANv4,851
+aioroboremote/server.py,sha256=6rXV9Pvnq_w6OZs3meH9AeDzvOARsR6KrbPs9fjcyW8,959
+aioroboremote/internal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aioroboremote/internal/convert.py,sha256=WGvR6j0BDuqpNEVikEbZ5J0mqtllGD4yMX8WkPkFo04,2239
+aioroboremote/internal/interceptor.py,sha256=Ylv18dXNa6zWJOM2ACrjB766BvmHlwTSMOAOOcO5CJI,1979
+aioroboremote/internal/meta.py,sha256=3FDFTrPGWC9dr_LHJ691kOlA74ab3FaOmzNa6Tot2fI,2945
+aioroboremote/internal/view.py,sha256=AAJTVVe0OIADtNX-vs_Gz4W_55Yg81q4Q0zrhP8e2H4,3266
+aioroboremote-0.0.1.dist-info/LICENSE,sha256=bRE0j9D4IuSjuAf3ZI34ytoSdpVrQYPBa0-6JLw8GRs,1096
+aioroboremote-0.0.1.dist-info/METADATA,sha256=7AGLo2VbzSD5KTY5V7vP0qnjhIzQFkVEzSSH7t_W5XE,2151
+aioroboremote-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+aioroboremote-0.0.1.dist-info/top_level.txt,sha256=UCEhdT19hFmdOuxB4Lr9ngPwu1Mlg9BqCi5d7nBNIzQ,14
+aioroboremote-0.0.1.dist-info/RECORD,,
