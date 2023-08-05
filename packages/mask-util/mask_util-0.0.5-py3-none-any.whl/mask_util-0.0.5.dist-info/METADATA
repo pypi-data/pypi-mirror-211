@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: mask-util
+Version: 0.0.5
+Summary: a package to mask data
+Home-page: UNKNOWN
+Author: chenqixian
+License: Apache License, Version 2.0
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# 文本脱敏
+
