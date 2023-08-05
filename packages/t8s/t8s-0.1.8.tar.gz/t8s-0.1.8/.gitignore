@@ -1,0 +1,8 @@
+__pycache__/
+ts*.parquet
+dist/
+lixo*
+*.log
+.ruff_cache
+.pytest_cache
+
