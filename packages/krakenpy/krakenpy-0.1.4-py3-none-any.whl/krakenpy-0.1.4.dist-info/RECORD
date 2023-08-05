@@ -1,0 +1,9 @@
+krakenpy/__init__.py,sha256=iFr-_FTwj3Y6bM5PaM7WD3VDawu-uBBEFrBxY9eoj_M,86
+krakenpy/exceptions.py,sha256=TEXObVgmXmv7s5AJeHxIvqsX8w_VaJDXbXaYsuiEmr0,267
+krakenpy/payloads.py,sha256=VVFXTXcLr9aMLVioiTP1MWfTPr1hwcB5otEdMBW0bCs,1429
+krakenpy/response.py,sha256=PdtCm2daN9uZzuwq-FIULptkSNnUkxTEptRKwQOJ7qw,111
+krakenpy/service.py,sha256=2QgTZydHGK4cTNTaTxmfXlEI6FDCkRLka5hEpSXjasU,3897
+krakenpy/utils.py,sha256=fsHmFZMDhDf-fqAqVvA-snCXRIqvB7M0q7NSBw9tTv8,883
+krakenpy-0.1.4.dist-info/METADATA,sha256=8vOoIleUTDA1ltdMuBWoIJw8GL45PAnMvY6y86JV4nI,1599
+krakenpy-0.1.4.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+krakenpy-0.1.4.dist-info/RECORD,,
