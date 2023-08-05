@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+src/dktoparserhtml.egg-info/PKG-INFO
+src/dktoparserhtml.egg-info/SOURCES.txt
+src/dktoparserhtml.egg-info/dependency_links.txt
+src/dktoparserhtml.egg-info/requires.txt
+src/dktoparserhtml.egg-info/top_level.txt
+src/parserhtml/__init__.py
+src/parserhtml/_html_to_markdown.py
+src/parserhtml/_html_to_utf8.py
+src/parserhtml/_recurs_function.py
+src/parserhtml/_remove_duplicates.py
+src/parserhtml/_simplify_html.py
+src/parserhtml/_utf8_to_html.py
+src/parserhtml/remove_duplicates.py
