@@ -1,0 +1,2 @@
+include README.md
+graft dataherb/serve/mkdocs_template
