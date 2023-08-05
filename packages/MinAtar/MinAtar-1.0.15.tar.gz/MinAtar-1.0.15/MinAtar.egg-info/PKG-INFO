@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: MinAtar
+Version: 1.0.15
+Summary: A miniaturized version of the Arcade Learning Environment.
+Home-page: https://github.com/kenjyoung/MinAtar
+Author: Kenny Young
+Author-email: kjyoung@ualberta.ca
+License: GPL
+Provides-Extra: examples
