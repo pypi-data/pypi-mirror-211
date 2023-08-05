@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: tlcloud
+Version: 0.1
+Summary: A geo tools for tlcloud
+Author: tlcloud
+Author-email: oyty@tonglucloud.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+A geo tools for tlcloud
