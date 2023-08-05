@@ -1,0 +1,10 @@
+lvgl/SDL2.dll,sha256=CaTducSNSbOSxgSRMGUWKm87cuNwJMNMChUtPechap8,2510336
+lvgl/__init__.py,sha256=rvw1oWLgbunBvF_rDg_-3XMO8IoQVFab-SKD5Xk8muA,1107541
+lvgl/__lib_lvgl.cp310-win_amd64.pyd,sha256=X9Cj7q4V-xHuyY1k87p9ssjW48oC90GnxUCA-YUyzDQ,3100160
+lvgl/mpy.py,sha256=FfOVT0ysoPF43T-HtJMXMmCXCN4Vh2AlE6WiYlir16U,233580
+lvgl/__pycache__/__init__.cpython-310.pyc,sha256=kDUtMcFZd1BfOXVPhXjWVbYKGUvkaZA6CdG0AtV5y-0,764886
+lvgl-0.1.1b0.dist-info/LICENSE,sha256=7WSw2-ec15ooXuVWRSAjAZQidqIfyHpsONqIIUThYB8,3134
+lvgl-0.1.1b0.dist-info/METADATA,sha256=pFOHhC514kr-ZvXWocxMNSYwX_9r6CMrBcJaZ7iRzvg,5604
+lvgl-0.1.1b0.dist-info/WHEEL,sha256=jrOhEbqKwvzRFSJcbYXlJCyVkgVdHg4_7__YHrdTUfw,102
+lvgl-0.1.1b0.dist-info/top_level.txt,sha256=Ag5i6Xkx2ks-xRUopb4PLW9WGSI-zbwM8iMRNgZM200,16
+lvgl-0.1.1b0.dist-info/RECORD,,
