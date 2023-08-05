@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+api_client/APIRequest.py
+api_client/APIResponse.py
+api_client/Auth.py
+api_client/Endpoints.py
+api_client/__init__.py
+biblioteka.egg-info/PKG-INFO
+biblioteka.egg-info/SOURCES.txt
+biblioteka.egg-info/dependency_links.txt
+biblioteka.egg-info/top_level.txt
+data_processing/Data_parser.py
+data_processing/Data_transformer.py
+data_processing/__init__.py

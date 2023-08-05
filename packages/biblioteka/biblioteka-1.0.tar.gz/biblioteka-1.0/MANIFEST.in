@@ -1,0 +1,3 @@
+include README.md
+recursive-include python_pip/api_client *.py
+recursive-include python_pip/data_processing *.py
