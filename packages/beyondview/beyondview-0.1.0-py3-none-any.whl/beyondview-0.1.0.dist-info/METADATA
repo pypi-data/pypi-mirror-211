@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: beyondview
+Version: 0.1.0
+Summary: General python tools for beyondview
+Home-page: https://github.com/jgbv/beyondview
+Author: Jesson Go
+Author-email: jesson.go@beyondview.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Beyondview
+
+## General tools for Blender and other system resources
+
+Install with `pip install beyondview`
