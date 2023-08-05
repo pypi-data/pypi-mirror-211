@@ -1,0 +1,7 @@
+pyproject.toml
+projectb_testing_mypackage/functions.py
+projectb_testing_mypackage/greet.py
+projectb_testing_mypackage.egg-info/PKG-INFO
+projectb_testing_mypackage.egg-info/SOURCES.txt
+projectb_testing_mypackage.egg-info/dependency_links.txt
+projectb_testing_mypackage.egg-info/top_level.txt
