@@ -1,0 +1,10 @@
+my_provider/__init__.py,sha256=YSpxFq6muYPjULLYJ1YpGwKfyWyLRBIVbnIZ2ck2NGw,430
+my_provider/hooks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+my_provider/hooks/dlc_hook.py,sha256=fVM2P6aIR2xBcz5v79G2ZVzzead4kdd7TFISK9gYFng,7858
+my_provider/operators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+my_provider/operators/dlc_operator.py,sha256=hgKgT-TmRq4f_KFYU5y51u7BUfVTHcHlTky0gAxrjC4,2665
+my_provider-0.1.9.dist-info/METADATA,sha256=vK3Zi3AwXxWbAA3ODC1ffoiUArK_KvsvcVswQ88Wfw0,266
+my_provider-0.1.9.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+my_provider-0.1.9.dist-info/entry_points.txt,sha256=tU88Q-L7szaTOMUtQWoleC-GngcJTG8ktLEVTUtjm-w,82
+my_provider-0.1.9.dist-info/top_level.txt,sha256=iydYq2JEGQAAgZ8KjpGoLnaceh3xvpNUnZm9AINVTwg,12
+my_provider-0.1.9.dist-info/RECORD,,
