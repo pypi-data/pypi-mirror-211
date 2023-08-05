@@ -1,0 +1,15 @@
+maccarone/__init__.py,sha256=WfXVCF3dVPs_u3z5Dd2KCjka3w4uLDO4f4IiSJsYwaY,193
+maccarone/caching.py,sha256=MMAZX7YJdkbR_-kKUe2OV9AIONmakuqGIB-nqMJMA9Q,1015
+maccarone/enable.py,sha256=YRj8Qu_Jt5lyzy1satY_OXnr-hxRKg3PE1LiAXDiKsg,2211
+maccarone/openai.py,sha256=hcqwAmPUIsTMWffh2JaJfbvQOPX7qX4h9gmIYbOPdvc,1344
+maccarone/preprocessor.py,sha256=jPnzUGXzRGNIPDw-QNHXgS23eIZdNxsR1URYeh04ZyM,3694
+maccarone/scripts/preprocess.mn.py,sha256=qp02dVSulFaAApXtSV6fGejikJk4V4IdNgXiyDSy04c,1061
+maccarone/scripts/preprocess.py,sha256=T7jPMl7em7qGpvUcyC-Oo3--6AWMMoi9m4RYNpM-r0k,1210
+maccarone/test/test_caching.py,sha256=KyBxIprnk7b1IrwAkP-hzxNA55tsEZGoEbyEloLY0fM,532
+maccarone/test/test_preprocessor.py,sha256=zskVOJhZO4thxS31jkNVFTMrZjUonUGflKxlnWuw2GQ,2523
+maccarone-0.0.8.dist-info/LICENSE,sha256=2OW7B7pFLBp34WWu-Y8755nVJvAWxFUDUzWKVgojsZo,1074
+maccarone-0.0.8.dist-info/METADATA,sha256=0pwCfUj7P_FL2RUc0eeG9uYyx9jvrcpJ2wECOPpTVHw,558
+maccarone-0.0.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+maccarone-0.0.8.dist-info/entry_points.txt,sha256=XIz83xROdSBjyw6fudsqFTbrcLLIsbahNTZI6EJ7lSc,71
+maccarone-0.0.8.dist-info/top_level.txt,sha256=L7Y2yTK5s0BupF9Ip5mhvJ5ke8UwCk2uzBr-aCYfJp4,10
+maccarone-0.0.8.dist-info/RECORD,,
