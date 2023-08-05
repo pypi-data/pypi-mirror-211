@@ -1,0 +1,40 @@
+[build-system]
+requires = [
+    "setuptools>=61.0", "wheel", "build"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ebeer"
+version = "0.0.21"
+authors = [
+    { name="diego vasque maldonado", email="diegoomal13@gmail.com" }
+]
+description = "CNN Trained to predict brazilian beers"
+readme = "src/README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy", "tensorflow", "Pillow", "importlib_resources"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Diegoomal/proj_integrado_trabalho_final"
+"Bug Tracker" = "https://github.com/Diegoomal/proj_integrado_trabalho_final/issues"
+
+
+
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+file_cnn_weights = ["trained_model.h5"]
+metadata_json = ["general_metadata.json"]
