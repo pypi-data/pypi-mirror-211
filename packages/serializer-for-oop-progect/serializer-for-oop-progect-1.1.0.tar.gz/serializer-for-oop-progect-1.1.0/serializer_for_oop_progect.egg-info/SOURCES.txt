@@ -1,0 +1,7 @@
+setup.py
+MySer/JSONSer.py
+MySer/__init__.py
+serializer_for_oop_progect.egg-info/PKG-INFO
+serializer_for_oop_progect.egg-info/SOURCES.txt
+serializer_for_oop_progect.egg-info/dependency_links.txt
+serializer_for_oop_progect.egg-info/top_level.txt
