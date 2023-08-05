@@ -1,0 +1,10 @@
+ajm1102pandemic2d/__init__.py,sha256=URoPq8QgbGhPdRtFKYKCZP9ybfpLYmDSQ-loZEQosMA,47
+ajm1102pandemic2d/boundary_class.py,sha256=l80HX2L6N6JV9Md8TfBMh3Za67IuzOJd0LrmcbfLCn4,41
+ajm1102pandemic2d/person_class.py,sha256=HIKX3OMHk0nxV3ffqsT1_-lSycZbVCu-CgEm-aRUQ4g,2471
+ajm1102pandemic2d/simulation.py,sha256=YXrnErWjo6OcJsuANdVqExtH1XVN8sgLZEVGZPfj9Qo,7453
+ajm1102pandemic2d/simulation_class.py,sha256=YXrnErWjo6OcJsuANdVqExtH1XVN8sgLZEVGZPfj9Qo,7453
+ajm1102pandemic2d/virus_class.py,sha256=As7sO_UmR3Qmxem_iN2KfDNoRfPzmLd48-jI3XIilvY,89
+ajm1102pandemic2d-0.4.dist-info/METADATA,sha256=DOaLJ5DnK-NHhyra6_f9ozT80HCXAKhXsin1pXrgvy0,288
+ajm1102pandemic2d-0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ajm1102pandemic2d-0.4.dist-info/top_level.txt,sha256=dbfceC_sctK0vAYrIzSWVbe0sDDJvnEH6I6n4F6tCrc,18
+ajm1102pandemic2d-0.4.dist-info/RECORD,,

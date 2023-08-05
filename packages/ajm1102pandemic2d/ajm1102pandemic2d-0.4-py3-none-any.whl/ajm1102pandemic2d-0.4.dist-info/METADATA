@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: ajm1102pandemic2d
+Version: 0.4
+Home-page: https://github.com/ajm1102/2d_pandemic
+Author: Aidan Moore
+Author-email: ajm1102.moore@gmail.com
+License: MIT
+Keywords: example project
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+
