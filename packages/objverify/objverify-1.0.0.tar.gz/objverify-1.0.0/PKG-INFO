@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: objverify
+Version: 1.0.0
+Summary: Super useful library for Python object validation
+Author-email: Carl Furtado <carlzfurtado@gmail.com>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Project-URL: Home, https://github.com/User0332/objverify
+
+# Object Verify
+
+`objverify` is a Python utility that allows for complex typechecking in complex or nested Python objects using dictionaries. This module is still under development. Examples can be found in `test.py`.
+
+
