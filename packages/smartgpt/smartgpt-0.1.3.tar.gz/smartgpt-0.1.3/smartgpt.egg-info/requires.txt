@@ -1,0 +1,6 @@
+openai
+attrs
+cattrs
+pandas
+pyyaml
+prompt_toolkit
