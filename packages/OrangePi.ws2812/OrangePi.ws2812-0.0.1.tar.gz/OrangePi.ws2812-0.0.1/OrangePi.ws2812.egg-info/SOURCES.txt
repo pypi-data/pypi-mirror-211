@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+OrangePi.ws2812.egg-info/PKG-INFO
+OrangePi.ws2812.egg-info/SOURCES.txt
+OrangePi.ws2812.egg-info/dependency_links.txt
+OrangePi.ws2812.egg-info/requires.txt
+OrangePi.ws2812.egg-info/top_level.txt
