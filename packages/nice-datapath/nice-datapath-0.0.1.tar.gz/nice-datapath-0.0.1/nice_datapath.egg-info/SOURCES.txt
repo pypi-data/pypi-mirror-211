@@ -1,0 +1,9 @@
+README.md
+setup.py
+datapath/__init__.py
+datapath/_pipe.py
+datapath/_value.py
+nice_datapath.egg-info/PKG-INFO
+nice_datapath.egg-info/SOURCES.txt
+nice_datapath.egg-info/dependency_links.txt
+nice_datapath.egg-info/top_level.txt
