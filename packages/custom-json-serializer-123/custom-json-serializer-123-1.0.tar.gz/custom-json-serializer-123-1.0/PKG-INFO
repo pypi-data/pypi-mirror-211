@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: custom-json-serializer-123
+Version: 1.0
+Summary: serialization/deserialization package
+Home-page: https://github.com/donshester/PythonLabs/tree/lab3
+Author: Me
+Author-email: vlad.stepanov.2003@bk.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+
+UNKNOWN
+

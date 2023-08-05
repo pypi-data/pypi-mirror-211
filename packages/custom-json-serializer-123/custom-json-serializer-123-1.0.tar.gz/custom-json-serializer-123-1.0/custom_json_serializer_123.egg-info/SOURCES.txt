@@ -1,0 +1,12 @@
+setup.py
+core/formats/__init__.py
+core/formats/parsers.py
+core/formats/json/__init__.py
+core/formats/json/json.py
+core/formats/xml/__init__.py
+core/formats/xml/constants.py
+core/formats/xml/xml.py
+custom_json_serializer_123.egg-info/PKG-INFO
+custom_json_serializer_123.egg-info/SOURCES.txt
+custom_json_serializer_123.egg-info/dependency_links.txt
+custom_json_serializer_123.egg-info/top_level.txt
