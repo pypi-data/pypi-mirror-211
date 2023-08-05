@@ -1,0 +1,17 @@
+setup.py
+igi_lab3_redgateman.egg-info/PKG-INFO
+igi_lab3_redgateman.egg-info/SOURCES.txt
+igi_lab3_redgateman.egg-info/dependency_links.txt
+igi_lab3_redgateman.egg-info/top_level.txt
+serializers/__init__.py
+serializers/factory.py
+serializers/json_serializer/JsonSerializer.py
+serializers/json_serializer/__init__.py
+serializers/json_serializer/serialization_logic.py
+serializers/src/__init__.py
+serializers/src/constants.py
+serializers/src/deserialization.py
+serializers/src/serialization.py
+serializers/xml_serializer/XmlSerializer.py
+serializers/xml_serializer/__init__.py
+serializers/xml_serializer/serialization_logic.py

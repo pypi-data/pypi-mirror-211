@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: igi-lab3-redgateman
+Version: 1.0
+Summary: library for python serialization
+Home-page: https://github.com/RedGateMan/IGI/tree/Lab_3/Lab_3
+Author: Egor Chyzhou
+Author-email: egor.chijov@gmail.com
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
