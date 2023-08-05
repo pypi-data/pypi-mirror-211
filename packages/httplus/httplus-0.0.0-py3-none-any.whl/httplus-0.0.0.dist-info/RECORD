@@ -1,0 +1,8 @@
+httplus/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+httplus/client.py,sha256=sIYs6wVKrOP_Khusy9k7uDu-BpInke2233F1A61485U,3000
+httplus/request.py,sha256=mBrUK6S8vuepVIx2GgzlJn44zVGsGDuEkyB21Hvf-3E,1250
+httplus/response.py,sha256=Z6mQRdFuVGbhdjvD5Fthvr6hjdP6xafwV6lwsMr2r1o,26
+httplus-0.0.0.dist-info/LICENSE,sha256=yhbPoZBXj_8i63UO4uwmdNRGrOZTrGQ15q8p-vKBBPg,1070
+httplus-0.0.0.dist-info/METADATA,sha256=hjrbCVz6aw1wZ8cqTF3qLfcmegHd0_MPLUb3HfiSQog,470
+httplus-0.0.0.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+httplus-0.0.0.dist-info/RECORD,,
