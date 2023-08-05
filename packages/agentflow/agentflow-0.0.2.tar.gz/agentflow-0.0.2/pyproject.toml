@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentflow"
+version = "0.0.2"
+authors = [
+  {name="Stoyan Stoyanov"},
+]
+description = "A library for creating agents."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "urllib3==1.26.15"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/stoyan-stoyanov/llmflow"
+"github" = "https://github.com/stoyan-stoyanov/llmflow"
