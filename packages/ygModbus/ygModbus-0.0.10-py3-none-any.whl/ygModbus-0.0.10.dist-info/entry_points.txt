@@ -1,0 +1,2 @@
+[console_scripts]
+ygModbus = ygModbus.server:run_server

@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: ygModbus
+Version: 0.0.10
+Summary: simple Modebus client and server test by response of random number
+Home-page: https://github.com/devggu/
+Author: devggu
+Author-email: pshnb123@gmail.com
+Keywords: modebus,pshn123,devggu,TCP,server,client
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pyModbusTCP
+Requires-Dist: schedule
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+# Modbus TCP simulator
+
+-set config in register_params.json
+
+ex)
+<br>
+{<br>
+    "40001":{"max_int":300, "min_int":100, "address":40001},<br>
+    "40002":{"max_int":300, "min_int":20, "address":40002},<br>
+    "40004":{"max_int":300, "min_int":20, "address":40004}<br>
+}
+
+start simulating server by 'ygModBus runserver'
+
+ctrl+c for terminate server
+
+args:<br>
+    ('-H', '--host', type=str, default='127.0.0.1', help='Host (default: 127.0.0.1)')<br>
+    ('-p', '--port', type=int, default=502, help='TCP port (default: 502)')<br>
+    ('-j', '--json', type=str, default='register_params.json', help='JSON file with register parameters (default: register_params.json)')<br>
+    ('-i', '--interval', type=float, default=1.0, help='Interval in seconds for updating holding registers (default: 1.0)')<br>
