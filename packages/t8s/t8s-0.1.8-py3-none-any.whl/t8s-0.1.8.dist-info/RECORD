@@ -1,0 +1,11 @@
+t8s/__about__.py,sha256=W-rOjpmpMzf3eoSgxLlDFzYAwGVuj1lLaW9aqlxp2ro,141
+t8s/__init__.py,sha256=7mhYC9wmNEeBgOUbvA_USDmmEDyqgC3iV4H4NZ5vnS0,460
+t8s/io.py,sha256=VDSJk2wFsS6so-ls3OYI6IUArzLjwoBUsPj78z3E1_c,10768
+t8s/log_config.py,sha256=iU69piymyv2NjsP3xqo4UIc0P6SHPWkOUsqBL8-s_gk,1898
+t8s/ts.py,sha256=f99HbgKTcx5eAOtjWpxNicpnd2rJYwjN97s76OpAZjU,11277
+t8s/ts_builder.py,sha256=JNMYtLGNNjrXoMdN9Ki1WkFUuRvtHfcCdYBJT9QPFwE,5730
+t8s/ts_writer.py,sha256=Xk58T2OZMDnrpq4GAhPmx3AYSyvSroq0QEUnqx0wfO4,4694
+t8s-0.1.8.dist-info/METADATA,sha256=RjAdgKL82FviAAE8r0nXO3tyfOGP16oBelc0CdoN4gQ,2448
+t8s-0.1.8.dist-info/WHEEL,sha256=y1bSCq4r5i4nMmpXeUJMqs3ipKvkZObrIXSvJHm1qCI,87
+t8s-0.1.8.dist-info/licenses/LICENSE.txt,sha256=gmIGpxfy2mppSp_p-sXh9yurWoV2dN-MXP5iMgtTfqA,1111
+t8s-0.1.8.dist-info/RECORD,,
