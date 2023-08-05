@@ -1,0 +1,10 @@
+ProphetLite/__init__.py,sha256=M9j1NuexsmXRO0O_LLRNrLF7fEfPAHWIxm90hC6gV3I,27
+ProphetLite/fourier.py,sha256=hBEycC9UjSALrdYVf6GdQkvQPVF65OK6E6MaMxdyMYU,1264
+ProphetLite/linear_basis.py,sha256=spoHnaA2oeNRRkCsMxjvKn2-OiAioZJETUuIS3Vq8OY,2840
+ProphetLite/model.py,sha256=uoXhvJzyezu6Z3b7ajEZ71hCdO3xp8cveE_ra-N_Z8k,812
+ProphetLite/prophetlite.py,sha256=QKWI6FORgzho3c9XPLuz_hij3t1R2ylFqf-xMe1X8d0,6882
+ProphetLite-0.0.2.dist-info/LICENSE,sha256=Dk4ScfuH6m_hggBOkCWWWoKU4wkTVtAInrZB4yhn5HU,1087
+ProphetLite-0.0.2.dist-info/METADATA,sha256=0tv8def4Xy8Yq0l_yGHnZRHKd9FrQ8D01Phl-ecjf0k,1734
+ProphetLite-0.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+ProphetLite-0.0.2.dist-info/top_level.txt,sha256=5x6FqBoCEkjdRuAa6SQst9YZraSRXGly7qa9_qRuEg0,12
+ProphetLite-0.0.2.dist-info/RECORD,,
