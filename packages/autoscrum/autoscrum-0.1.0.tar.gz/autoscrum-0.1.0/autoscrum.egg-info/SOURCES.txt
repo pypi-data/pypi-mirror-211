@@ -1,0 +1,8 @@
+pyproject.toml
+autoscrum/__init__.py
+autoscrum.egg-info/PKG-INFO
+autoscrum.egg-info/SOURCES.txt
+autoscrum.egg-info/dependency_links.txt
+autoscrum.egg-info/entry_points.txt
+autoscrum.egg-info/requires.txt
+autoscrum.egg-info/top_level.txt
