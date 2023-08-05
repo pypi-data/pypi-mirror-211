@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+sosecrets_core/secrets.c
+sosecrets_core.egg-info/PKG-INFO
+sosecrets_core.egg-info/SOURCES.txt
+sosecrets_core.egg-info/dependency_links.txt
+sosecrets_core.egg-info/top_level.txt
