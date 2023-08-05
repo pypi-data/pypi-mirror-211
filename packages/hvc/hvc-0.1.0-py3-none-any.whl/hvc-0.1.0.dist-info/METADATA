@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: hvc
+Version: 0.1.0
+Summary: HVC is a Python library for Hyperdimensional Vector Computing
+Home-page: https://github.com/people-art/hvc
+License: MIT
+Project-URL: Source, https://github.com/people-art/hvc
+Project-URL: Documentation, https://hvc.readthedocs.io
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch (>=1.9.0)
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: requests
+Requires-Dist: tqdm
+Requires-Dist: openpyxl
+
+# Hyperdimensional Vector Computing
+
