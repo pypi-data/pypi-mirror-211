@@ -1,0 +1,17 @@
+tailraiders/__init__.py,sha256=Hvp8OCucu-OS4XVjsu0_g0u9hHWWraHrnygMY2MEFxg,1066
+tailraiders/boaboa/__init__.py,sha256=SOjeVnsQwUrlj9Zz7cxB31bRNDXk4jIsQAt3wm88x10,142
+tailraiders/boaboa/doc.py,sha256=-_GTNo5pZT03zgaApD2A44AKpTzU4YP8OoG9EtDHDoo,2556
+tailraiders/bugtrapper/__init__.py,sha256=vQ-siDJ9IIg9UNs1DjPYY5QYD7v4RZPg5XKOx0fVbIs,54
+tailraiders/gajalaka/__init__.py,sha256=molqnRHj-BnC49NDg47x7AwEJxeBgqa2MGMNLxafYfU,134
+tailraiders/gajalaka/nan.py,sha256=93thPAjluZ_RvqGNyVn-IFtFii7pS2sBB7X_iY8iPxM,2644
+tailraiders/gajalaka/plots.py,sha256=yANkeJQdE4mp7GF3GPeqz3Nng_jI3jY23WUelVzsiek,6313
+tailraiders/plunderer/__init__.py,sha256=2hnUuM2nnpR_IrATQ5qPWhyRREy1rAXR8LoP4PFjTJc,53
+tailraiders/protector/__init__.py,sha256=gDiw9QzQjcG1HWfY3E8n_lEBXZqh-R5LxdhyD6MshhE,235
+tailraiders/protector/nan.py,sha256=8QArNQxvPRK4oWWS5wYlBnr6sf-wj1I9rFxJLTNjnk4,3789
+tailraiders/protector/prep.py,sha256=hPIOKEtM1tmgA28XXbDPwviH4ju5hVlZWE0ZBMNEDR8,5395
+tailraiders/trouper/__init__.py,sha256=oJCJv63K4moj8TU7UNb1YPmzP9flJbING-WULCQy6CA,149
+tailraiders-0.0.8.dist-info/LICENSE,sha256=ZuZz-dyPhjA3PtMOTw7FV9MRhEiynhqCMVRVpbqdAGg,1087
+tailraiders-0.0.8.dist-info/METADATA,sha256=lBeS-grmNIBWgCcyx-3cOqG6ZNSFe8P12cUluNFKgBA,1010
+tailraiders-0.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tailraiders-0.0.8.dist-info/top_level.txt,sha256=q-eXgwA3Jkrns7l9nsafxBTClkQhNHOj5r4p5iJ6jis,12
+tailraiders-0.0.8.dist-info/RECORD,,
