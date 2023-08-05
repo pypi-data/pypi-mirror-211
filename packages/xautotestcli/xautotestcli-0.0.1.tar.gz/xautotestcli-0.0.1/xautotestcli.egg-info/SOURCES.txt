@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+xautotestcli.egg-info/PKG-INFO
+xautotestcli.egg-info/SOURCES.txt
+xautotestcli.egg-info/dependency_links.txt
+xautotestcli.egg-info/top_level.txt
