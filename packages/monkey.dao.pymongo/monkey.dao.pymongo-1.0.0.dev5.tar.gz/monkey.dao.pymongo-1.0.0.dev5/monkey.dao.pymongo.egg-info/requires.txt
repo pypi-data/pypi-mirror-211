@@ -1,0 +1,2 @@
+monkey.dao>=1.0.0.dev2
+pymongo>=4.3.3
