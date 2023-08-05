@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+lascerttokensvr.egg-info/PKG-INFO
+lascerttokensvr.egg-info/SOURCES.txt
+lascerttokensvr.egg-info/dependency_links.txt
+lascerttokensvr.egg-info/top_level.txt
