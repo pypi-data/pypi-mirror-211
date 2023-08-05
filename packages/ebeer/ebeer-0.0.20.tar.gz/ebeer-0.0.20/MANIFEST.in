@@ -1,0 +1,2 @@
+include src/ebeer/trained_model.h5
+include src/ebeer/metadata.json

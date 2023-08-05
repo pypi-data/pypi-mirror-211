@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/README.md
+src/ebeer/__init__.py
+src/ebeer/beer_classifier.py
+src/ebeer/metadata.json
+src/ebeer/trained_model.h5
+src/ebeer.egg-info/PKG-INFO
+src/ebeer.egg-info/SOURCES.txt
+src/ebeer.egg-info/dependency_links.txt
+src/ebeer.egg-info/requires.txt
+src/ebeer.egg-info/top_level.txt
+tests/test_classify.py
