@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: napari-gemspa
+Version: 0.0.1
+Summary: A plugin for analysis of single particle tracking experiments
+Home-page: https://github.com/liamholtlab/napari-gemspa
+Author: Sarah Keegan
+Author-email: sarah.keegan@nyulangone.org
+License: BSD-3-Clause
+Project-URL: Bug Tracker, https://github.com/liamholtlab/napari-gemspa/issues
+Project-URL: Documentation, https://github.com/liamholtlab/napari-gemspa#README.md
+Project-URL: Source Code, https://github.com/liamholtlab/napari-gemspa
+Project-URL: User Support, https://github.com/liamholtlab/napari-gemspa/issues
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Framework :: napari
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: testing
+License-File: LICENSE
+
+# napari-gemspa
+ 
