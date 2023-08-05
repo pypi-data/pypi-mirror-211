@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bloic"
+dynamic = [
+    "version"
+]
+authors = [
+    { name = "romaiiiiinnn" }
+]
+description = "Tool to convert and resize image for blog post."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.11"
+dependencies = [
+    "click==8.1.3",
+    "Pillow==9.5.0"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Utilities",
+]
+[project.scripts]
+bloic = "bloic.entrypoint:resize_image"
+
+[project.urls]
+"Homepage" = "https://gitlab.com/romaiiiinnn/blog-post-image-converter"
+"Bug Tracker" = "https://gitlab.com/romaiiiinnn/blog-post-image-converter/-/issues"
+
+[tool.setuptools_scm]
+write_to = "bloic/_version.py"
+
+[tool.pylint]
+max-line-length = 240

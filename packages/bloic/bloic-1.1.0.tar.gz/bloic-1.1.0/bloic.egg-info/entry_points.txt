@@ -1,0 +1,2 @@
+[console_scripts]
+bloic = bloic.entrypoint:resize_image
