@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "speechai"
+version = "0.0.3"
+description = "A Python package that generates conversational speech from text using a combination of Generative AI models and various text-to-speech engines, enabling applications to produce dynamic and contextually aware spoken responses."
+authors = ['Nicola Sebastianelli']
+license = "Apache-2.0"
+readme = "README.md"
+packages = [{include = "speechai"}]
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+openai = "^0.27.7"
+python-dotenv = "^1.0.0"
+gtts = "^2.3.2"
+cohere = "^4.5.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.3.2"
+pytest = "^7.3.1"
+pylint = "^2.17.4"
+black = "^23.3.0"
+isort = "^5.12.0"
+flake8 = "^6.0.0"
+pytest-mock = "^3.10.0"
+pytest-cov = "^4.0.0"
+coverage = "^7.2.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+target-version = ['py38']
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+    venv
+  )
+)
+'''
+
+[tool.pylint]
+ignore = "tests_*"
