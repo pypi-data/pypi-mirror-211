@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: scikit-chatgpt
+Version: 0.0.0
+Summary: A conversational interface to scikit-learn
+Author: Martin Walter
+Author-email: scikit.chat@gmail.com
+License-File: LICENSE
+
