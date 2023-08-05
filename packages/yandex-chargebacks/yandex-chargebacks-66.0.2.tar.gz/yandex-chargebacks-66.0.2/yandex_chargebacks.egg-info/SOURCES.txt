@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_chargebacks.egg-info/PKG-INFO
+yandex_chargebacks.egg-info/SOURCES.txt
+yandex_chargebacks.egg-info/dependency_links.txt
+yandex_chargebacks.egg-info/top_level.txt
