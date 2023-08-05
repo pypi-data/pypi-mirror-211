@@ -1,0 +1,7 @@
+setup.py
+zssfunniest/__init__.py
+zssfunniest.egg-info/PKG-INFO
+zssfunniest.egg-info/SOURCES.txt
+zssfunniest.egg-info/dependency_links.txt
+zssfunniest.egg-info/not-zip-safe
+zssfunniest.egg-info/top_level.txt
