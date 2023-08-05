@@ -1,0 +1,9 @@
+ebeer/__init__.py,sha256=duAi83PZyejC9S_JVdZBUH9IzJ6Q_6a7SE0tzIGDbeM,95
+ebeer/beer_classifier.py,sha256=ctClo8iVJotjjyY_V1UZxpyjODYBI7dbOmRhypW2TUo,2631
+ebeer/metadata.json,sha256=B5HWLS3-PCGkUnjyn3OrdQKFeEJUWYFjKZBbR-zZ2FA,1461
+ebeer/trained_model.h5,sha256=_P53mClDI6bdJhWtrj_L5puu7UQecSvedNXO3elq4EA,6671560
+ebeer-0.0.21.dist-info/LICENSE,sha256=JliY-S_2eTf4f-i4EWecLHEjSkesQJYC4L5_6M9GrLw,1066
+ebeer-0.0.21.dist-info/METADATA,sha256=MQ3zkSVteG2_SbBcgv2O31aMykcbv05xzZTAKkPX5B0,1067
+ebeer-0.0.21.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ebeer-0.0.21.dist-info/top_level.txt,sha256=zaJ3Oc1PbpSbNFzLs_8LwJQmM4s6rUPTNSLgDw_gdFI,6
+ebeer-0.0.21.dist-info/RECORD,,
