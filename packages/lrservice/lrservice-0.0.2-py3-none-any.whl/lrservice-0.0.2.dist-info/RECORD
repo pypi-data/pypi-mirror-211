@@ -1,0 +1,10 @@
+lrservice/__init__.py,sha256=rsjerTX1mnbmzWBhTS-FvyfojEDxpRl4Eg-XxIxrB9A,159
+lrservice/benchmark.py,sha256=EKe2wo8NRSB_5ESG09TKMbbvcza0L6gfHu5VFNU0jy0,1363
+lrservice/main.py,sha256=Dx9V2JV2EiaL7ltUxv9wKNtaKswsr-zE-FvNdrsX76Q,1882
+lrservice/simple_linear_regr.py,sha256=2yJL4nW-GW-Sj9rEq5zq4Ly-dm_a0P_5O-uc-R1KIww,3416
+lrservice/simple_linear_regr_utils.py,sha256=VsSNa27db__FOuhJ481Sg7Bk3vsJ4CvkgMzEHfGBE3Y,1840
+lrservice-0.0.2.dist-info/LICENSE,sha256=J7FOJIKjzgNu3TpmBnOKHhUucgEREHCYzDETx4qBjCA,1054
+lrservice-0.0.2.dist-info/METADATA,sha256=tdQr4AhLuZW4vnmNALcgplG7FHasiKxzGwJ0p3z3rSY,601
+lrservice-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+lrservice-0.0.2.dist-info/top_level.txt,sha256=RaVklVvVddjpVuY9QdsoZC6MT0A9sH_zNugiRXW-_1k,10
+lrservice-0.0.2.dist-info/RECORD,,
