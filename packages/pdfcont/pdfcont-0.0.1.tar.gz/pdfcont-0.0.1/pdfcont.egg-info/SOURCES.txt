@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+Infinitypdf/__init__.py
+Infinitypdf/pdfconvtool.py
+Infinitypdf/support6.py
+pdfcont.egg-info/PKG-INFO
+pdfcont.egg-info/SOURCES.txt
+pdfcont.egg-info/dependency_links.txt
+pdfcont.egg-info/top_level.txt
