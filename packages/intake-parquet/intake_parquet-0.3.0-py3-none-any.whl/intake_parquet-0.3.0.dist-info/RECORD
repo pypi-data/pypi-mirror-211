@@ -1,0 +1,9 @@
+intake_parquet/__init__.py,sha256=GPg4PyCMqupmcnEgg3v_EOTv1IExAE5q-SifcZDuYd4,156
+intake_parquet/_version.py,sha256=DHq_7SzCpJ6EtmIerrlZuMs-fJHrihTufNNRKWbsBGo,497
+intake_parquet/source.py,sha256=Yy4VIXzhumhunTp_PeO0L1-yn47qqFnRNcFLn_02VEg,4064
+intake_parquet-0.3.0.dist-info/LICENSE,sha256=fUH-19QZWQKsVH2vOE1QVACzdzwVgvkNBOePhR9d7AU,1330
+intake_parquet-0.3.0.dist-info/METADATA,sha256=dUOyWtODjRBCbv4MYj_h5MYpKqeLeEgdUEeMkMW2qgc,1802
+intake_parquet-0.3.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+intake_parquet-0.3.0.dist-info/entry_points.txt,sha256=7XRcJiqcLJljGMU1iRts0xtnuyf1kF3_KqYBTHvGyLQ,63
+intake_parquet-0.3.0.dist-info/top_level.txt,sha256=ozEu2Ujq0XzFSsp0-ImS_WqrglUxzDiQSL_7JgiClKg,15
+intake_parquet-0.3.0.dist-info/RECORD,,
