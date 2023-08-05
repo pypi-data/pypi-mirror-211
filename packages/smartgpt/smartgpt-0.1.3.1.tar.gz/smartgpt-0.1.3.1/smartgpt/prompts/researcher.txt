@@ -1,0 +1,7 @@
+Consider the following question:
+
+{question}
+
+You are a researcher tasked with investigating the following {N} response options to the above question. List the strengths and flaws of each answer option. Let's work this out in a step by step way to be sure we have all the errors:
+
+{answer_list}

@@ -1,0 +1,2 @@
+include smartgpt/data/questions/*.csv
+include smartgpt/prompts/*.txt
