@@ -1,0 +1,70 @@
+[tool.black]
+line_length = 88
+force_exclude = """
+        (.github/*)
+    """
+
+[tool.isort]
+profile = "black"
+quiet = "True"
+skip_glob = ".github/*"
+skip_gitignore = "True"
+combine_as_imports = "True"
+line_length = 88
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "keycloak-utils"
+version = "0.2.1"
+authors = [
+    { name = "Jerin Peter George", email = "jerinpetergeorge@gmail.com" },
+]
+description = "Helper classes for keycloak authentication in Django and FastAPI"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Environment :: Web Environment",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "requests<2.31.0",
+    "pyjwt[crypto]<2.7.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jerinpetergeorge/keycloak-auth-utils"
+
+[project.optional-dependencies]
+django = ["djangorestframework>=3.12.0"]
+fastapi = ["fastapi>=0.68.0"]
+all = ["keycloak-utils[django,fastapi]"]
+
+fastapi-test = ["fastapi[test]>=0.68.0"]
+test = [
+    "keycloak-utils[django,fastapi-test]",
+    "pytest-django~=4.5.2"
+]
+lint-and-formatting = [
+    "black",
+    "flake8",
+    "flake8-print",
+    "isort",
+    "pre-commit",
+]
+dev = ["keycloak-utils[test, lint-and-formatting]", "bump2version~=1.0.1"]
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "tests.test_rest_framework.settings"
+testpaths = ["tests"]
+markers = ["django_db"]
