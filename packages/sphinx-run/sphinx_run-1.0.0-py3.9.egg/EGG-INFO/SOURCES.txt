@@ -1,0 +1,6 @@
+setup.py
+sphinx_run.egg-info/PKG-INFO
+sphinx_run.egg-info/SOURCES.txt
+sphinx_run.egg-info/dependency_links.txt
+sphinx_run.egg-info/top_level.txt
+src/__init__.py
