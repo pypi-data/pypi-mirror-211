@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: pylibblkid
+Version: 0.3
+Summary: Python interface for the libblkid C library
+Home-page: http://github.com/vojtechtrefny/pyblkid
+Author: Vojtech Trefny
+Author-email: vtrefny@redhat.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pylibblkid
+
+[![PyPI version](https://badge.fury.io/py/pylibblkid.svg)](https://badge.fury.io/py/pylibblkid)
+
+Python bindings for libblkid library.
+
+```python
+import blkid
+
+pr = blkid.Probe()
+pr.set_device("/dev/sda1")
+
+pr.enable_superblocks(True)
+pr.set_superblocks_flags(blkid.SUBLKS_TYPE | blkid.SUBLKS_USAGE | blkid.SUBLKS_UUID)
+
+pr.do_safeprobe()
+
+# print usage
+pr["USAGE"]
+```

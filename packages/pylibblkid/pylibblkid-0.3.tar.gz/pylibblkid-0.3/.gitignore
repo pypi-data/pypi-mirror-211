@@ -1,0 +1,6 @@
+env/
+build/
+
+tests/__pycache__/*
+
+tests/*.img
