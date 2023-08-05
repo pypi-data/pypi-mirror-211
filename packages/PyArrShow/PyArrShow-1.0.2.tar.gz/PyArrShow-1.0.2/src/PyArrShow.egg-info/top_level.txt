@@ -1,0 +1,6 @@
+DataCursorFrame
+ImgDisplayFrame
+PilotFrame
+pyArrShow
+qrc_resources
+resources

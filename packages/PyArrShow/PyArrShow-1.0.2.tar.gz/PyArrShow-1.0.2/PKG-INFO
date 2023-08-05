@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: PyArrShow
+Version: 1.0.2
+Summary: Python ArrayShow for MRI data visualization.
+Home-page: https://github.com/15625148866/PyArrShow
+Download-URL: https://github.com/15625148866/PyArrShow/archive/refs/tags/v1.0.2.tar.gz
+Author: kaixuan,zhao
+Author-email: "Kaixuan,Zhao" <kaixuan_zhao@163.com>
+License: Apache License 2.0
+Project-URL: Homepage, https://github.com/15625148866/PyArrShow
+Project-URL: Bug Tracker, https://github.com/15625148866/PyArrShow/issues
+Keywords: MRI,visualization
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Example Package
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
+
