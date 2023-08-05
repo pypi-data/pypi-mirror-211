@@ -1,0 +1,3 @@
+pandas-stubs
+pandas>=1.0.5
+scipy
