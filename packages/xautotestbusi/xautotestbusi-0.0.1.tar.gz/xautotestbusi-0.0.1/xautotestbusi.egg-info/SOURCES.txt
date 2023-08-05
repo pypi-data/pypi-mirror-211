@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+xautotestbusi.egg-info/PKG-INFO
+xautotestbusi.egg-info/SOURCES.txt
+xautotestbusi.egg-info/dependency_links.txt
+xautotestbusi.egg-info/top_level.txt
