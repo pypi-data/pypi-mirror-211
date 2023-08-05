@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: myobjectserializer
+Version: 0.2.3
+Summary: Python JSON and XML serializer
+Author: WilderWine
+Author-email: vernikon72@gmail.com
+License: MIT
