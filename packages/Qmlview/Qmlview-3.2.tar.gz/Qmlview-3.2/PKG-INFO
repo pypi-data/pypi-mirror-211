@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: Qmlview
+Version: 3.2
+Summary: An alternative to qmlscene
+Home-page: https://github.com/amoh-godwin/Qmlview-wheel
+Author: Amoh - Gyebi Godwin Ampofo Michael
+Author-email: amohgyebigodwin@gmail.com
+Project-URL: Bug Tracker, https://github.com/amoh-godwin/Qmlview-wheel/issues
+Project-URL: Documentation, https://github.com/amoh-godwin/Qmlview-wheel/wiki
+Project-URL: Source Code, https://github.com/amoh-godwin/Qmlview-wheel
+Keywords: qmlview,qmlscene,ninja-preview,qml,pyqt,pyqt6,pyside,pyside6
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Qmlview-wheel [![Downloads](https://pepy.tech/badge/qmlview)](https://pepy.tech/project/qmlview)
+The wheel distribution repo for Qmlview
+
+Qmlview is a command line utility. But sort of to replace the non-existent qmlscene, which was used to preview qml source code before it is loaded by any C++, Java, or python code.
+
+
+
+
+## Change Log
+
+### V2.1
+* Supports QtCharts
+* Works with PyQt5.15
+* Bug fixes
+* * Delete resource file on app close
+
+### V2.1.2
+* Bugfix
+
+### V2.2
+Compress resource
+
+### V3.0
+* Works with PyQt6
+
+### v3.1
+* supports scene backend software parameter with `-software` parameter
+
+### V3.2
+* Support Qt6.5.1
