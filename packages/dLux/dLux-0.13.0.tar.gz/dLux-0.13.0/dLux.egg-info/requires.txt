@@ -1,0 +1,9 @@
+jax
+jaxlib
+zodiax==0.4.0
+optax
+matplotlib
+jupyter
+jupyterlab
+tqdm
+chainconsumer
