@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+DistributeSystemNotify.egg-info/PKG-INFO
+DistributeSystemNotify.egg-info/SOURCES.txt
+DistributeSystemNotify.egg-info/dependency_links.txt
+DistributeSystemNotify.egg-info/top_level.txt
