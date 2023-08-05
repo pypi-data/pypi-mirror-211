@@ -1,0 +1,12 @@
+zippy_form/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zippy_form/models.py,sha256=131lCEhlthbgIMoY12uMyNGavbGPgcBrhLqj4dt3MvE,4456
+zippy_form/serializers.py,sha256=7w1gZmV7d8bClci8ZzFGqHXMGj9_qfGKR7u_22b4k7o,7787
+zippy_form/urls.py,sha256=zPG8zdqAfBXPzPm5ifgdwbBCGRqI5ihHaQCMYbqNUrs,1949
+zippy_form/utils.py,sha256=nMxbth_W88u5EuIsSqjfu-v-wOLYDFufhRyB5YXxR1c,2094
+zippy_form/validation_rule.py,sha256=BwHzuSdA1klkJbpVH3Mb_K_xU2IIrhilTrRfoW4HeVs,4893
+zippy_form/validation_rule_schema.py,sha256=2N7hsXhja1SxmdlKManPxzFN59fkLzq9MqZ5YMNVy2A,7991
+zippy_form/views.py,sha256=I78wumaTwn1N18gBnrejP24rjfzQ63mh_VFtn37nlak,52932
+django_zippy_form-1.0.0.dist-info/METADATA,sha256=zLXLIMa4BGltycjF6DmSHSebWjLwkK1RW3PZ3KvVgeI,824
+django_zippy_form-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+django_zippy_form-1.0.0.dist-info/top_level.txt,sha256=hfm2eCQMGohQAq8nCnoxf4rG3lAg0gqJYGrKbyZsrjk,11
+django_zippy_form-1.0.0.dist-info/RECORD,,
