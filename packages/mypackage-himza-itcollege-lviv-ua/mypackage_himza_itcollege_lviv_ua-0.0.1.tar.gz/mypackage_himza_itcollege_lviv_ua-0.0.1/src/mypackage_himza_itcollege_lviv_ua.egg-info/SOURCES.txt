@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/mypackage_himza_itcollege_lviv_ua/__init__.py
+src/mypackage_himza_itcollege_lviv_ua/example.py
+src/mypackage_himza_itcollege_lviv_ua.egg-info/PKG-INFO
+src/mypackage_himza_itcollege_lviv_ua.egg-info/SOURCES.txt
+src/mypackage_himza_itcollege_lviv_ua.egg-info/dependency_links.txt
+src/mypackage_himza_itcollege_lviv_ua.egg-info/top_level.txt
