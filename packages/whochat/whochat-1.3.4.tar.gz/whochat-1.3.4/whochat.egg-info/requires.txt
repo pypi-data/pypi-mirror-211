@@ -1,0 +1,11 @@
+comtypes
+psutil
+click
+websockets
+jsonrpcserver
+jsonrpcclient
+schedule
+pydantic[dotenv]
+
+[httprpc]
+fastapi[uvicorn]
