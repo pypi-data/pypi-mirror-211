@@ -1,0 +1,10 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/file_manager.py,sha256=YxsfPv_fi9wntndkjah7ZYC1lLyUK8hTc2cy1NFuwiU,2603
+src/greetings_cli.py,sha256=jn4paZWcDWQ_zbi6g0RyL-a8D1zjJiiB-97JwxbPqoI,960
+src/subsys.py,sha256=UubhX7heyujs0gE3t2Z-pQdD1rQy1h1ltUmJ5TLG9zc,807
+gitinspired_cli-1.0.3.dist-info/LICENSE,sha256=8o9PTuzV25raDQfp6u7Hl7DiiX8bfgdGCuCCnYKz0Sc,1078
+gitinspired_cli-1.0.3.dist-info/METADATA,sha256=RWOVDJV5F4LXCz5xyVlIMrXUlsFszAbA7vZXnwM4q1Y,203
+gitinspired_cli-1.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+gitinspired_cli-1.0.3.dist-info/entry_points.txt,sha256=7YZRpg6aEgRcL8yYwqiXkJvZNLWSKwPA4ueizStVtvI,81
+gitinspired_cli-1.0.3.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+gitinspired_cli-1.0.3.dist-info/RECORD,,

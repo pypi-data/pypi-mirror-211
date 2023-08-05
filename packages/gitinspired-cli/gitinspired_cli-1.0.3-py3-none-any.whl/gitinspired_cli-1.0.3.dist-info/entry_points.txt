@@ -1,0 +1,4 @@
+[console_scripts]
+gitinspired = src.greetings_cli:main
+subsys = src.subsys:main
+
