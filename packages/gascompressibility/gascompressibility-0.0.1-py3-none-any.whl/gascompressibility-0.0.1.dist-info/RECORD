@@ -1,0 +1,9 @@
+gascompressibility/__init__.py,sha256=vacczuB4U9CRp5J5gHYik0p6VN_AeDtGm2TUVSf-P4k,89
+gascompressibility/zfactor.py,sha256=UchcoQaHEL_Xq_ndYHvuNuGPcN7DweBvkuIvdAEgia0,23949
+tests/__init__.py,sha256=7aPaym9q7c0QVfXvyPBwP9UxxgK54K2Id18dCsGL5uM,77
+tests/test_gascomp.py,sha256=5nzFI7AzgRbhNR46CGhVvH2yr6XfopHT-8UpascQ0Y8,9581
+gascompressibility-0.0.1.dist-info/LICENSE,sha256=Ja0SRwGFWlAlTEW1q3qegZfx_RxsTUoF5138pMzzb-k,1095
+gascompressibility-0.0.1.dist-info/METADATA,sha256=V3YYCG2kBk2vEI8sz_Zkr5WlVl5u_m9ZfDxgabPvY1c,2081
+gascompressibility-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gascompressibility-0.0.1.dist-info/top_level.txt,sha256=kkSuAg68uDCT62NRXmdqAriGCNTmjsrhWUgg3xWK9nw,25
+gascompressibility-0.0.1.dist-info/RECORD,,
