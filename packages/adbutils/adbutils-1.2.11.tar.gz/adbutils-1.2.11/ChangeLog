@@ -1,0 +1,479 @@
+CHANGES
+=======
+
+1.2.11
+------
+
+* limit version=3.6
+* limit only py36
+
+1.2.10
+------
+
+* limit python version to 3.6
+* fix for py36
+
+1.2.1
+-----
+
+* change back screenshot method
+
+1.2.0
+-----
+
+* update tests
+* add appinfo
+
+1.1.3
+-----
+
+* fix logcat
+
+1.1.2
+-----
+
+* change stop to stop\_nowait
+
+1.1.1
+-----
+
+* add reset and stop\_wait in StopEvent
+
+1.1.0
+-----
+
+* add logcat command, fix shell2(rstrip) not working bug
+
+1.0.10
+------
+
+
+1.0.9
+-----
+
+* fix apk install when version\_name has cn name
+* remove redundant import
+* read screenshot from stream rather than temp file
+* Bugfix: Fix utf-8 encoding command sending
+
+1.0.8
+-----
+
+* add examples of adb-reset
+* update typing
+
+1.0.7
+-----
+
+* update doc
+
+1.0.6
+-----
+
+* fix wheel platform tag
+
+1.0.5
+-----
+
+* change to adb push on windows
+* fix #48
+
+1.0.4
+-----
+
+* support linux wheel build
+
+1.0.3
+-----
+
+* fix merge
+
+1.0.2
+-----
+
+* not launch when install in command line, only launch when specified --launch
+* Update \_device.py
+
+1.0.1
+-----
+
+* fix scrcpy on specify device error
+* Replaced method devices to device\_list
+* add commit to doc
+
+1.0.0
+-----
+
+* remove d.screenrecord, use start\_recording and stop\_recording instread
+
+0.16.2
+------
+
+* add scrcpy test code, fix screenrecord
+
+0.16.1
+------
+
+* fix create\_connection
+
+0.16.0
+------
+
+* little update
+* fix screenrecord, ref #18
+
+0.15.5
+------
+
+* fix fix github build
+* fix github build
+* support #63, add more tests, add root, tcpip
+* close #54, support specify adb path through ADBUTILS\_ADB\_PATH
+* fix #45
+* ref #48
+
+0.15.4
+------
+
+* fix #60
+
+0.15.3
+------
+
+* add more tests
+* fix tests
+
+0.15.2
+------
+
+* Update \_device.py
+
+0.15.1
+------
+
+* export proto data
+
+0.15.0
+------
+
+* add screenshot, fix wlan\_ip, change code structure
+
+0.14.1
+------
+
+* add host and port property
+* sort imports
+
+0.14.0
+------
+
+* add read\_bytes, read\_text into sync
+* Download binaries from android.com
+
+0.13.1
+------
+
+* remove default timeout, because some operation, eg install will take very long time
+
+0.13.0
+------
+
+* support socket\_timeout, default to 60s
+
+0.12.3
+------
+
+* add retry for install error
+
+0.12.2
+------
+
+* fix yaml format
+
+0.12.1
+------
+
+* wrap TimeoutError to AdbTimeout
+* Fix typing error of shell
+
+0.12.0
+------
+
+* add --parse <uri> support
+
+0.11.1
+------
+
+* device: adb\_output: redirect subprocess' stdin to devnull
+* utils: \_is\_valid\_exe: redirect subprocess' stdin to devnull
+* Update README.md
+
+0.11.0
+------
+
+* add get\_{serialno,devpath,state} wait\_for command
+
+0.10.2
+------
+
+* fix windows stat error, close #42
+* Upgrade to GitHub-native Dependabot
+
+0.10.1
+------
+
+* support show current package info
+
+0.10.0
+------
+
+* add method create\_connection
+* update for function change
+
+0.9.3
+-----
+
+* format code, update api: install
+
+0.9.2
+-----
+
+* change to better name
+
+0.9.1
+-----
+
+* fix python3 -m adbutils -p  not working bug
+* add for github workflow
+
+0.9.0
+-----
+
+* add mac adb
+* add AdbClient.disconnect
+* fix conflict
+* uninstall first before install
+* Update \_\_init\_\_.py
+
+0.8.3
+-----
+
+* fix get rotation error
+* fix adbutils -i -launch not launch bug
+
+0.8.2
+-----
+
+* change localhost to 127.0.0.1
+* add support for reversing host port to device port
+* fix issue that fail to obtain rotation due to minicap output format
+* show version name when install
+
+0.8.1
+-----
+
+* remove useless data-files to prevent install permission denied
+
+0.8.0
+-----
+
+* func:shell support timeout argument
+* add cli:--track
+
+0.7.3
+-----
+
+* fix build\_wheel
+* fix travis
+* add more doc
+* add cli: --dump-info
+* update wheel code
+* add \_utils for get\_adb\_exe()
+
+0.7.2
+-----
+
+* fix download\_adb error on windows
+* support download adb.exe for windows
+
+0.7.1
+-----
+
+* ignore error in read\_util\_close
+
+0.7.0
+-----
+
+* add first\_install\_time add last\_update\_time into package\_info
+* add is\_screen\_on
+* add support uninstall app before install
+* add --launch support
+
+0.6.4
+-----
+
+* fix signature parse of package\_info, add flags to package\_info output
+
+0.6.3
+-----
+
+* add missing test file
+* fix app\_stop, close #15
+* fix bad code which raise unwanted ConnectionError
+* add track\_devices api
+* fix travis
+* support uninstall apk when install failed
+* use device\_list instread of devices
+
+0.6.2
+-----
+
+* fix datetime.datetime.fromtimestamp raise OSError bug
+* format and merge
+
+0.6.1
+-----
+
+* update screenrecord method
+* fix protocol error, when pull non-exists file
+* fix protocol error, when pull non-exists file
+
+0.6.0
+-----
+
+* add screenrecord method
+
+0.5.2
+-----
+
+* add pull in cli, fix d.sync.pull error
+
+0.5.1
+-----
+
+* fix list-packages error
+* add function to force-stop app
+
+0.5.0
+-----
+
+* change typing to send\_keys
+* add typing with escape special chars
+* add support to screenshot with minicap
+
+0.4.4
+-----
+
+* support env-var ANDROID\_SERIAL, pidcat change adb to adbutils
+* add home before install
+* update doc
+* add quick and dirty install-confirm
+* fix --qrcode
+
+0.4.3
+-----
+
+* add --qrcode xxxx.file
+
+0.4.2
+-----
+
+* fix unknown host service, close #11
+
+0.4.1
+-----
+
+* add pidcat
+* add open\_browser and --package in cli
+
+0.4.0
+-----
+
+* add stream in shell function
+* Fix getting window size and raw window size to properly respect overridden screen sizes
+
+0.3.4
+-----
+
+* fix fix requirements
+* add missing requirement, start adb server if not started
+
+0.3.3
+-----
+
+* set min support python 3.5
+* update forward\_port to support localabstract, cli add screenshot
+
+0.3.2
+-----
+
+* fix bug
+
+0.3.1
+-----
+
+* add current\_app, fix bugs
+
+0.3.0
+-----
+
+* fix many many bugs, add dump\_hierarchy
+
+0.2.7
+-----
+
+* add cli minicap install support, close #6
+* split part code to mixin.py
+
+0.2.6
+-----
+
+* support adb connect, close #3
+* update doc
+
+0.2.5
+-----
+
+* add list-devices in adbutils.cli
+* add forward, close #2
+* add pypi download link when click badge
+
+0.2.4
+-----
+
+* add badge for pypi
+* fix #1
+
+0.2.3
+-----
+
+* fix package\_info never return None bug
+
+0.2.2
+-----
+
+* add app\_start, use device() instead of device\_with\_serial
+* fix travis again
+* add install time
+
+0.2.1
+-----
+
+* fix travis
+* limit python to 3, add cli usage
+
+0.2.0
+-----
+
+* update package\_info
+* change for py3
+* add usage
+
+0.1.3
+-----
+
+* fix travis
+* add travis deployment
+* add travis
+* first ok version
+* Initial commit
