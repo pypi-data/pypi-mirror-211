@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: timeslime
+Version: 1.6.1
+Author: Christian Decker
+Author-email: christian.decker@lookslikematrix.de
+License: MIT
+Project-URL: Donate, https://www.buymeacoffee.com/lookslikematrix
+Project-URL: Source Code, https://gitlab.com/lookslikematrix/timeslime
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (==2.30.0)
+Requires-Dist: click (==8.1.3)
+Requires-Dist: peewee (==3.16.2)
+Requires-Dist: dbus-python (==1.3.2) ; platform_system == "Linux"
+
+# timeslime
+
+It's a tool to track your time.
+
+## Install
+
+~~~bash
+pip install --upgrade timeslime
+~~~
+
+## Usage
+
+~~~bash
+# initialize timeslime
+timeslime init
+# start time
+timeslime start
+# stop time
+timeslime stop
+# display time
+timeslime display
+~~~
+
+## Settings
+
+### Set settings
+
+You can set *timeslime* settings via the CLI. For example:
+
+~~~bash
+timeslime settings --key timeslime_server --value http://localhost:8000/
+~~~
+
+|Key             |Value                                                                         |Description                                                                                                 |
+|----------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+|weekly_hours    |['8:00:00', '8:00:00', '8:00:00', '8:00:00', '8:00:00', '0:00:00', '0:00:00'] |You can set your working time for each day in this array. Starting at monday.                               |
+|timeslime_server|http://localhost:8000/                                                        |You can run a [*timeslime-server*](https://gitlab.com/lookslikematrix/timeslime-server) to store your data. |
+|username        |test_user                                                                     |Your username for the *timeslime-server*                                                                    |
+|password        |super_secret                                                                  |Your password for the *timeslime-server*                                                                    |
+|utc_offset      |3600                                                                          |You can overwrite the UTC offset in seconds. Timeslime try to detect the UTC offset by your system timezone.|
+
+### Get settings
+
+You can get settings via the CLI. For example:
+
+~~~bash
+timeslime settings --key timeslime_server
+~~~
+
+### Delete settings
+
+You can delete settings via the CL. For example:
+
+~~~bash
+timeslime settings --key timeslime_server --delete
+~~~
+
+## Getting started
+
+~~~bash
+git clone https://gitlab.com/lookslikematrix/timeslime.git
+cd timeslime
+pipenv install --dev
+pipenv shell
+pytest tests -m "not server"
+~~~
+
+Test with timeslime server.
+
+~~~bash
+docker run -d -p 8000:8000 --name timeslime-server lookslikematrix/timeslime-server:v1.4.8
+pytest tests
+~~~
