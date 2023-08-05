@@ -1,0 +1,2 @@
+[console_scripts]
+cost-of-code = cost_of_code.main:main
