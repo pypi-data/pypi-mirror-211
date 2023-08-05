@@ -1,0 +1,16 @@
+cdsapi
+cfgrib
+cftime
+geopandas
+hdx-python-api>=5.6.4
+hdx-python-country
+netCDF4
+numpy
+pydantic
+python-dateutil
+pyyaml
+rasterio
+requests
+rioxarray
+wrapt
+xarray[parallel]
