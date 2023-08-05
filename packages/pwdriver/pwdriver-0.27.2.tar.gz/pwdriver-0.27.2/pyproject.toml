@@ -1,0 +1,52 @@
+[tool.poetry]
+name = "pwdriver"
+version = "0.27.2"
+description = "It will download a WebDriver, and then set basic configuration automatically."
+license = "MIT"
+authors = [
+    "Jinmoo Han <jinmoo21@naver.com>",
+]
+maintainers = [
+    "Jinmoo Han <jinmoo21@naver.com>",
+]
+readme = "README.md"
+repository = "https://github.com/jinmoo21/pwdriver"
+keywords = [
+    "python",
+    "testing",
+    "automation",
+    "webdriver",
+    "selenium",
+    "test-automation",
+    "selenium-webdriver",
+    "appium",
+    "appium-webdriver"
+]
+classifiers = [
+    "Topic :: Software Development :: Quality Assurance",
+    "Topic :: Software Development :: Testing",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+packages = [
+    { include = "pwdriver" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+selenium = "^4.9.1"
+Appium-Python-Client = "^2.10.1"
+requests = "^2.31.0"
+
+[tool.poetry.urls]
+"Homepage" = "https://github.com/jinmoo21/pwdriver"
+"Bug Reports" = "https://github.com/jinmoo21/pwdriver/issues"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
