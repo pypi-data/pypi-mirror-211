@@ -1,0 +1,2 @@
+[console_scripts]
+rclone_ls = rclone_ls:main
