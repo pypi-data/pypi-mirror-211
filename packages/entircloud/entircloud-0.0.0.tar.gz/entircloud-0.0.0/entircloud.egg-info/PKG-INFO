@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: entircloud
+Version: 0.0.0
+Summary: This library allows connecting to the self-hosted IoT messaging and device management cloud platform written in Go
+Home-page: https://entir.io
+Author: Thomas Harr
+Author-email: xDevThomas@gmail.com
+Classifier: Development Status :: 1 - Planning

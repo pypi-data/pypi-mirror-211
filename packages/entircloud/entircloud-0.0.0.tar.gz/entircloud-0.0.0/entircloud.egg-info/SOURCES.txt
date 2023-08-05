@@ -1,0 +1,5 @@
+setup.py
+entircloud.egg-info/PKG-INFO
+entircloud.egg-info/SOURCES.txt
+entircloud.egg-info/dependency_links.txt
+entircloud.egg-info/top_level.txt
