@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: trainkit
+Version: 0.0.1
+Summary: A library for simplifying training in Python
+Author: Enrique Mendez
+Author-email: enrique.phys@email.com
+License-File: LICENSE.md
