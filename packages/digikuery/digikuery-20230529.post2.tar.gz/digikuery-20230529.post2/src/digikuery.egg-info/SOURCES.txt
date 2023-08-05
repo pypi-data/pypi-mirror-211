@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/__init__.py
+src/digikuery.py
+src/digikuery.egg-info/PKG-INFO
+src/digikuery.egg-info/SOURCES.txt
+src/digikuery.egg-info/dependency_links.txt
+src/digikuery.egg-info/entry_points.txt
+src/digikuery.egg-info/requires.txt
+src/digikuery.egg-info/top_level.txt

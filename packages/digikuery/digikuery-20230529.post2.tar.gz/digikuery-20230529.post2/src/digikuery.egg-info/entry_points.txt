@@ -1,0 +1,2 @@
+[console_scripts]
+digikuery = digikuery:main
