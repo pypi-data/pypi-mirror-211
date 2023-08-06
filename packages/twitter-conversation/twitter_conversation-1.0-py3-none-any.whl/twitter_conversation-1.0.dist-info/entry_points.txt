@@ -1,0 +1,3 @@
+[console_scripts]
+obtain=twitter_conversation.scripts.reply_tree:main
+
