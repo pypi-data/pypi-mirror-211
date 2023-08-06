@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: taskanalytics-data-wrapper
+Version: 0.1.5
+Summary: a wrapper for using Task Analytics APIs and downloading survey responses
+Home-page: https://github.com/navikt/taskanalytics-data-wrapper
+Author: Tobias McVey
+Author-email: tobias.mcvey@nav.no
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE
