@@ -1,0 +1,40 @@
+<div class="p-2">
+        <h1>Your local apps:</h1>
+        {% if not apps %}
+            <h2>No local apps set up yet!</h2>
+        {% else %}
+        <div class="table-responsive">
+                <table class="table-dark table table-bordered table-striped table-hover">
+                <thead>
+                        <tr>
+                        <th scope="col">Project Name</th>
+                        <th scope="col">Loophost Address</th>
+                        <th scope="col">Public Address</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+        {% for x in apps %}
+        <tr>
+                <th scope="row"><a href="/config/{{x}}">{{x}}</a>
+                </th>
+                <td><a href="https://{{x}}.{{fqdn}}">https://{{x}}.{{fqdn}}</a></td>
+
+                <td>
+                {% if share[x] %} 
+                        <a href="https://{{x}}.{{config["tunnel"]}}">https://{{x}}.{{config["tunnel"]}}</a> 
+                {% else %} 
+                        {% if config["tunnel"] %}
+                                <a href="/config/{{x}}">(disabled)</a>
+                        
+                        {% else %}
+                                <a href="https://loophost.dev/upgrade.html">(disabled)</a>
+                        {% endif %} 
+                {% endif %}
+                </td>
+        </tr>
+        {% endfor %}
+        </tbody>
+        </table>
+        </div>
+        {% endif %}
+</div>
