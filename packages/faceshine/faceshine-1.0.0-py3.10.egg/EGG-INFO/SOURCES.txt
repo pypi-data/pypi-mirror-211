@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+faceshine/__init__.py
+faceshine/__main__.py
+faceshine/app.py
+faceshine/utils.py
+faceshine.egg-info/PKG-INFO
+faceshine.egg-info/SOURCES.txt
+faceshine.egg-info/dependency_links.txt
+faceshine.egg-info/entry_points.txt
+faceshine.egg-info/requires.txt
+faceshine.egg-info/top_level.txt
+faceshine/segmentation/__init__.py
+faceshine/segmentation/task_zero_background.py
+faceshine/segmentation/base/Task.py
+faceshine/segmentation/base/__init__.py
