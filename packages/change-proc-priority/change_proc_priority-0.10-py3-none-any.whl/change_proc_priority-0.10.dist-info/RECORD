@@ -1,0 +1,9 @@
+change_proc_priority/README.MD,sha256=0ME3Zzp1mKVwGBx0GQEdpbL6v0ojW3VOih1nTARbT8U,5573
+change_proc_priority/__init__.py,sha256=kBBZlHqpUvb86sPPNVmvsPmkz07ANge_WawC_gH4wXo,7379
+change_proc_priority/requirements.txt,sha256=2BuLJEuKFsZTEQ0szTDoP-Xxpu8r_7dL4Dt8uKQ9lOo,80
+change_proc_priority/thirdparty.json,sha256=TViR3XcfgJGjeNBkEDfO7Wfx2EyB0s3c-V2RUNdlXy4,7840
+change_proc_priority-0.10.dist-info/LICENSE.rst,sha256=57krgYrI6h5a_2WXQgGcjWo8PExV4ONSi1SPUj9Jk1g,1148
+change_proc_priority-0.10.dist-info/METADATA,sha256=kMIhIcyLHRIQznlOG5m8SFgyliUuXCDfENExt92WnZQ,6445
+change_proc_priority-0.10.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+change_proc_priority-0.10.dist-info/top_level.txt,sha256=IZwBHA86xV9ENJqWIGSPkNmtv5fbYbJp3gFszWdDP_8,21
+change_proc_priority-0.10.dist-info/RECORD,,
