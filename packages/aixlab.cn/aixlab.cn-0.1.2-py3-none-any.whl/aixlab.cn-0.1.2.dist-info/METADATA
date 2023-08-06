@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: aixlab.cn
+Version: 0.1.2
+Summary: Support for aixlab.cn
+Home-page: https://github.com/xuzycuan/aixlab.cn
+Author: Xu Ziyi
+Author-email: 759946140@qq.com
+License: MIT
+Requires-Dist: opencv-contrib-python
+Requires-Dist: Flask
+Requires-Dist: scipy
+Requires-Dist: matplotlib (==3.2.2)
+Requires-Dist: flask-cors
+Requires-Dist: torch (==1.8.0)
+Requires-Dist: torchvision (==0.10.0)
+Requires-Dist: requests
+
