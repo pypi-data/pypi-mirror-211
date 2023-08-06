@@ -1,0 +1,14 @@
+triclustering/Pattern.py,sha256=5vlqf5kkg7j2fGiEif7MsNIv6YLWnW1wwfmLzFAa4xg,3560
+triclustering/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+triclustering/association_rules.py,sha256=zUBcv2XszzP-_U1_KHp2f5i79ZFcJifsfPR57ql2OuA,7485
+triclustering/frequent_patterns.py,sha256=L_Cf8Lz5a8BftI_8CNkmE5wFVGQdSjspBycbEIewZyw,3837
+triclustering/generators.py,sha256=otS4Qj5YSUrdtx44tRnEF8mZPWYi7ouGL9xIhTU0Bms,2906
+triclustering/printing_util.py,sha256=m-SPKjyBDp32e_mFoBOvAVv3VP68p8Sv3h2gvaauF7Y,2160
+triclustering/processor.py,sha256=ZLWZ_Z3Jt5u3NL_JozavJHadlggA3Ay5ibAye9N-03c,10116
+triclustering/suffix_forest.py,sha256=uUIBsIR6YaYavUrKYdUs-SU4vsljpjiR2FZkqxp5-h8,3149
+triclustering/tricluster.py,sha256=aANQXpDeeVAgiYZ76RXbTmW1AkEsIM9OIG4w5wKdIzo,1885
+triclustering/util.py,sha256=DG1AA0TsytXJ8cCuTeO8n9bMj9xyFRtDJ8bkaOOBjQ0,171
+triclustering-2023.5.31.0.dist-info/METADATA,sha256=ZOqL4d8QGL81d91ChF5ErtmFTLQeYNTzyQNQm2ffuf8,1526
+triclustering-2023.5.31.0.dist-info/WHEEL,sha256=y1bSCq4r5i4nMmpXeUJMqs3ipKvkZObrIXSvJHm1qCI,87
+triclustering-2023.5.31.0.dist-info/licenses/LICENSE,sha256=4di7G3nc6N9_2xOfslIVM_UKhhywwZ1p3hN1ZJT-IWA,1086
+triclustering-2023.5.31.0.dist-info/RECORD,,
