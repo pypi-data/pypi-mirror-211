@@ -1,0 +1,6 @@
+README.md
+pyproject.toml
+democracy.egg-info/PKG-INFO
+democracy.egg-info/SOURCES.txt
+democracy.egg-info/dependency_links.txt
+democracy.egg-info/top_level.txt
