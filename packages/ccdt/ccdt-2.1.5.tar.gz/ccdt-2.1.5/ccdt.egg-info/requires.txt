@@ -1,0 +1,9 @@
+tqdm>=4.65.0
+opencv_python
+numpy
+pycocotools
+prettytable
+shapely
+psutil
+pypinyin
+Pillow
