@@ -1,0 +1,11 @@
+README.md
+setup.py
+baozun_winrobot.egg-info/PKG-INFO
+baozun_winrobot.egg-info/SOURCES.txt
+baozun_winrobot.egg-info/dependency_links.txt
+baozun_winrobot.egg-info/not-zip-safe
+baozun_winrobot.egg-info/top_level.txt
+winrobot/__init__.py
+winrobot/main.py
+winrobot/config/__init__.py
+winrobot/config/tmall.py
