@@ -1,0 +1,10 @@
+custodial_registration_proxy/__init__.py,sha256=GqioXKtlCAG9AAz8phfkJPoe4FP2BYpXPhhY5L7Dr0A,122
+custodial_registration_proxy/custodial_registration_proxy.py,sha256=bJT39QnluX6nXrDwPxWRP4-Jyboetx7DQ69SXROTyjU,2181
+custodial_registration_proxy/data/CustodialRegistrationProxy.bin,sha256=8AY0zahm6aqHoG6f73qmSoKeiFIsB20lsQOJ5z0ZQ9I,5160
+custodial_registration_proxy/runnable/publish.py,sha256=wQ88ExN9svy4UmZazSTzLcavc8ORFo3z7wIOM0uHdHI,3824
+custodial_registration_proxy-0.3.0.dist-info/LICENSE,sha256=ILBn-G3jdarm2w8oOrLmXeJNU3czuJvVhDLBASWdhM8,34522
+custodial_registration_proxy-0.3.0.dist-info/METADATA,sha256=2GhUogaun8LdRNKFsg-zAXXfd0NFDiR_z8JyccGW0TI,967
+custodial_registration_proxy-0.3.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+custodial_registration_proxy-0.3.0.dist-info/entry_points.txt,sha256=nUsuEpCmxHfwpA6_Kmw8JxOmFEQY4qOCCUiF5WUINJE,112
+custodial_registration_proxy-0.3.0.dist-info/top_level.txt,sha256=KEnqdKAyrnqxi1gNRCGfKmuVuBu4kDErXpl4r2uNUNs,29
+custodial_registration_proxy-0.3.0.dist-info/RECORD,,
