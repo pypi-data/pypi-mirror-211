@@ -1,0 +1,118 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[project]
+name = "leadtools"
+
+keywords = [
+    "Intelligent Character Recognition",
+    "ICR",
+    "DOC",
+    "DOCX",
+    "XLS",
+    "XLSX",
+    "PPT",
+    "PPTX",
+    "TXT",
+    "ID",
+    "IDCard",
+    "receipt",
+    "convert",
+    "conversion",
+    "Office",
+    "Microsoft",
+    "audio",
+    "video",
+    "scan",
+    "recognition",
+    "lead",
+    "leadtools",
+    "lead-tools",
+    "imaging",
+    "multimedia",
+    "annotation",
+    "image",
+    "markup",
+    "image-markup",
+    "mark-up",
+    "document",
+    "viewer",
+    "OCR",
+    "MICR",
+    "OMR",
+    "PDF",
+    "PDF/A",
+    "XML",
+    "XPS",
+    "SVG",
+    "Optical Character Recognition",
+    "Barcode",
+    "UPC",
+    "EAN",
+    "Code 128",
+    "QR",
+    "Data Matrix",
+    "PDF417",
+    "Codes",
+    "UCC/EAN",
+    "UCC-128",
+    "EAN-128",
+    "EAN-14",
+    "GTIN-14",
+    "GS1",
+    "DataBar",
+    "RSS-14",
+    "4-State",
+    "POSTNET",
+    "USPS4CB",
+    "Codabar",
+    "extract",
+    "text",
+    "bookmarks",
+    "annotations",
+    "replace",
+    "split",
+    "merge",
+    "linearize",
+    "forms recognition",
+    "form processing",
+    "invoice",
+    "driver's license",
+    "passport",
+    "bubble sheets",
+    "bank check"
+]
+
+version = "22.0.0.7"
+
+authors = [
+  { name="LEAD Technologies, Inc.", email="support@leadtools.com" },
+]
+
+description = "Powered by patented artificial intelligence and machine learning algorithms, LEADTOOLS is a collection of comprehensive toolkits to integrate recognition, document, medical, imaging, and multimedia technologies into desktop, server, tablet, web and mobile solutions."
+
+readme = "README.md"
+
+requires-python = ">=3.7"
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: Other/Proprietary License",
+    "Operating System :: OS Independent",
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Programming Language :: C#",
+    "Programming Language :: Python",
+    "Topic :: Software Development :: Build Tools",
+]
+
+install_requires=[
+    "pythonnet>=3.0.1",
+]
+
+[project.urls]
+"Homepage" = "https://www.leadtools.com"
+"Documentation" = "https://www.leadtools.com/support/webhelp"
+"Chat" = "https://www.leadtools.com/support/chat"

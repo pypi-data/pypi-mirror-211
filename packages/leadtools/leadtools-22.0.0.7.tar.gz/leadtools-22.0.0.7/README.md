@@ -1,0 +1,135 @@
+<div align="center">
+<img src="https://www.leadtools.com/images/header-nav/leadtools-logo-header.svg" style="width: 55vw;"><br>
+</div>
+
+---
+![Python - Version](https://img.shields.io/badge/Python-3.0%2B-brightgreen)
+[![Powered by LEADTOOLS](https://img.shields.io/badge/Powered%20by%20LEADTOOLS-Leadtools.com-blue)](https://www.leadtools.com?utm_source=pypi.org&utm_medium=PyPIPackage&utm_campaign=pypi&SrcOrigin=pypi.org)
+[![Twitter Follow](https://img.shields.io/twitter/follow/LEADtools?style=social)](https://twitter.com/leadtools)
+[![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCB32BVMh2jnYb89IbNxveVA?style=social)](https://www.youtube.com/@LeadtoolsSDK)
+
+# Build Better Apps with LEADTOOLS
+
+Powered by patented artificial intelligence and machine learning algorithms, LEADTOOLS SDKs have helped developers Build Better Apps for over 30 years. LEADTOOLS comprehensive collection of toolkits offer low-code, reliable controls for developers to integrate powerful recognition, document, medical, imaging and multimedia technologies into their applications.
+
+- [OCR / ICR / OMR / MICR](https://www.leadtools.com/sdk/ocr?utm_source=pypi.org&utm_medium=PyPIPackage&utm_campaign=pypi&SrcOrigin=pypi.org)
+
+- [Barcode](https://www.leadtools.com/sdk/barcode?utm_source=pypi.org&utm_medium=PyPIPackage&utm_campaign=pypi&SrcOrigin=pypi.org)
+
+- [PDF](https://www.leadtools.com/sdk/pdf?utm_source=pypi.org&utm_medium=PyPIPackage&utm_campaign=pypi&SrcOrigin=pypi.org)
+
+- [Forms Processing](https://www.leadtools.com/sdk/ocr/forms/recognition-processing?utm_source=pypi.org&utm_medium=PyPIPackage&utm_campaign=pypi&SrcOrigin=pypi.org)
+ 
+- [Document Editor](https://www.leadtools.com/sdk/document/document-editor-html5?utm_source=pypi.org&utm_medium=PyPIPackage&utm_campaign=pypi&SrcOrigin=pypi.org)
+
+- [Document Viewer](https://www.leadtools.com/sdk/document/document-viewer?utm_source=pypi.org&utm_medium=PyPIPackage&utm_campaign=pypi&SrcOrigin=pypi.org)
+
+- [Document Converter](https://www.leadtools.com/sdk/document/document-converter?utm_source=pypi.org&utm_medium=PyPIPackage&utm_campaign=pypi&SrcOrigin=pypi.org)
+
+- [Document Analyzer](https://www.leadtools.com/sdk/document/analyzer?utm_source=pypi.org&utm_medium=PyPIPackage&utm_campaign=pypi&SrcOrigin=pypi.org)
+
+- [DICOM](https://www.leadtools.com/sdk/medical/dicom?utm_source=pypi.org&utm_medium=PyPIPackage&utm_campaign=pypi&SrcOrigin=pypi.org)
+
+- [PACS](https://www.leadtools.com/sdk/medical/pacs?utm_source=pypi.org&utm_medium=PyPIPackage&utm_campaign=pypi&SrcOrigin=pypi.org)
+
+- [Image Processing](https://www.leadtools.com/sdk/image-processing?utm_source=pypi.org&utm_medium=PyPIPackage&utm_campaign=pypi&SrcOrigin=pypi.org)
+
+- [Office Formats](https://www.leadtools.com/sdk/formats?utm_source=pypi.org&utm_medium=PyPIPackage&utm_campaign=pypi&SrcOrigin=pypi.org)
+
+- [Multimedia Video and Audio](https://www.leadtools.com/sdk/engine/multimedia?utm_source=pypi.org&utm_medium=PyPIPackage&utm_campaign=pypi&SrcOrigin=pypi.org)
+
+
+## Where to get LEADTOOLS
+
+LEADTOOLS requires a license file for evaluation as well as production. The recommended way to receive a license file is to download the [Full Evaluation](https://www.leadtools.com/downloads?category=main&utm_source=pypi.org&utm_medium=PyPIPackage&utm_campaign=pypi&SrcOrigin=pypi.org), which includes all LEADTOOLS Recognition, Document, Medical, Vector, Multimedia, and Imaging technologies for all development and target platforms. The license file included with the [Full Evaluation Download](https://www.leadtools.com/downloads?category=main&utm_source=pypi.org&utm_medium=PyPIPackage&utm_campaign=pypi&SrcOrigin=pypi.org) unlocks all LEADTOOLS features for evaluation.
+
+LEADTOOLS also offers a package available at the [Python
+Package Index (PyPI)](https://pypi.org/project/leadtools/).
+
+The LEADTOOLS pip package can be installed through the command line:
+
+```sh
+pip install leadtools
+```
+
+Note that the LEADTOOLS SDK will still need to be downloaded from the [Full Evaluation Download](https://www.leadtools.com/downloads?category=main)
+
+## Starting off with LEADTOOLS
+
+LEADTOOLS has a multitude of tutorials available to make utilizing the SDK that much easier. 
+
+Go to the [LEADTOOLS Tutorials](https://www.leadtools.com/help/sdk/tutorials/home.html#/?utm_source=pypi.org&utm_medium=PyPIPackage&utm_campaign=pypi&SrcOrigin=pypi.org) page to find the tutorial that best fits your development needs. 
+
+Included with the [Full Evaluation Download](https://www.leadtools.com/downloads?category=main&utm_source=pypi.org&utm_medium=PyPIPackage&utm_campaign=pypi&SrcOrigin=pypi.org) are a multitude of demos with respective source code to aid in your evaluation of the SDK. These can be found at this filepath: `<INSTALL DIR>\Leadtools22\Examples`
+
+LEADTOOLS hosts a multitude of web demos which can be found at the [LEADTOOLS Web Demo Applications](https://www.leadtools.com/demos/html5) page
+
+## Getting a LEADTOOLS SDK License
+
+1. Register for a LEADTOOLS Portal account by [downloading the evaluation SDK](https://www.leadtools.com/downloads?utm_source=pypi.org&utm_medium=PyPIPackage&utm_campaign=pypi&SrcOrigin=pypi.org). 
+2. Once you've downloaded,  your evaluation license will be emailed to you. Your evaluation license can also be found within the [LEADTOOLS Portal](https://www.leadtools.com/portal/licenses?utm_source=pypi.org&utm_medium=PyPIPackage&utm_campaign=pypi&SrcOrigin=pypi.org)
+
+For additional details, refer to the [Obtaining a License](https://www.leadtools.com/help/sdk/mapping/obtaining-a-license.html?utm_source=pypi.org&utm_medium=PyPIPackage&utm_campaign=pypi&SrcOrigin=pypi.org) documentation.
+
+## Setting the LEADTOOLS SDK License in Python
+
+Setting your runtime license is required to use the LEADTOOLS SDK.
+
+1. Place your LEADTOOLS.LIC and LEADTOOLS.LIC.KEY files at this filepath: `<INSTALL DIR>\Leadtools22\Support\Common\License`. 
+2. Add the following to the top of your Python file:
+```Python
+import os
+import sys
+
+# Import LEADTOOLS Demo common modules
+sys.path.append("<INSTALL DIR>/Leadtools22/Examples/Common/Python")
+
+from DemosTools import *
+from UnlockSupport import Support
+
+# Add reference to LEADTOOLS
+from leadtools import LibraryLoader
+LibraryLoader.add_reference("Leadtools")
+from Leadtools import RasterSupport
+```
+3. In the DemosTools.py file found at `<INSTALL DIR>/Leadtools22/Examples/Common/Python` replace the get_bin() method with the following:
+```Python
+@staticmethod
+    def get_bin():
+        # try with version number first
+        bin_folder = os.path.abspath(
+            os.path.join(
+                DemosTools.get_root(), "<INSTALL DIR>/Leadtools22/Bin{}".format(DemosTools.get_version())
+            )
+        )
+        # then try without version number
+        if not os.path.exists(bin_folder):
+            bin_folder = os.path.abspath(os.path.join(DemosTools.get_root(), "INSTALL DIR/Leadtools22/Bin"))
+        return DemosTools.to_unix_path(bin_folder)
+```
+**Note: If the leadtools Wheel package is installed step 3 can be skipped**
+
+This can be done with the following in the command line:
+```sh
+pip install leadtools
+```
+4. To set your LEADTOOLS SDK license in your python application, place the following line before calling anything else from the SDK, such as the beginning of the main() method:
+```Python
+Support.set_license("<INSTALL DIR>/Leadtools22/Support/Common/License")
+```
+
+For a more detailed guide refer to our [Add Reference and Set a License - Python](https://www.leadtools.com/help/sdk/tutorials/python-add-references-and-set-a-license.html?utm_source=pypi.org&utm_medium=PyPIPackage&utm_campaign=pypi&SrcOrigin=pypi.org) tutorial.
+
+## LEADTOOLS Software License Agreement (EULA)
+
+All LEADTOOLS Python Packages are Copyright (c) 1991-2023 LEAD Technologies, Inc., ALL RIGHTS RESERVED and are subject to the [LEADTOOLS Software License Agreement](https://www.leadtools.com/help/sdk/licensing/leadtools-software-license-agreement.html).
+
+
+## Free Technical Support
+
+LEADTOOLS offers free [live chat](https://www.leadtools.com/support/chat?utm_source=pypi.org&utm_medium=PyPIPackage&utm_campaign=pypi&SrcOrigin=pypi.org) support to evaluating users and customers. 
+Chat is available Monday - Friday between 8:30am-6:00pm (Eastern Time). 
+
+LEADTOOLS support can also be reached at support@leadtools.com
+
+For any licensing related questions, please contact sales@leadtools.com
