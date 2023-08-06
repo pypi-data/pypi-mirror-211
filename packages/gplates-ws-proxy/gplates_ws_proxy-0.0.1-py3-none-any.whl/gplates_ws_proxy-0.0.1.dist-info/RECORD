@@ -1,0 +1,15 @@
+gplates_proxy/__init__.py,sha256=V5NuOr9wTrAW1GAvJ5W92iMldfBDEiIXgr77WH3s6bg,123
+gplates_proxy/__main__.py,sha256=YSKGAG8uhhP9BMp0TX31eohpMGxw148eKzNGZ2gIcLM,1324
+gplates_proxy/_auth.py,sha256=5S-1NgyU94YJTFUHBt2iZf6eQFTOukYu5K7nkaXev6U,2009
+gplates_proxy/coastlines.py,sha256=c9pONi1H6AzD9WdL1xR1wYmJAXMFUbrkMzLFtekYTmA,564
+gplates_proxy/gplates.py,sha256=V5NuOr9wTrAW1GAvJ5W92iMldfBDEiIXgr77WH3s6bg,123
+gplates_proxy/reconstruction.py,sha256=C89ivDBhGhuYPzYInnGppUaXgxq-F0AO_UTp2fEsRBY,2133
+gplates_proxy/rotation_model.py,sha256=WuWgtcgHiGqRF1ftFMHpamB-nmdmi2Rxk1yaD59Anr8,712
+gplates_proxy/test/importer.py,sha256=m76ZzovB-AddZepQ8T1-MqBuTjyYqdkSQiRyW2Cout8,631
+gplates_proxy/test/test_reconstruction.py,sha256=lLdgZhCbXygOmqVh5klYlGuXkN-yBFxd9Ft1dd2609w,304
+gplates_ws_proxy-0.0.1.dist-info/LICENSE,sha256=yh-hCLIHbzxzWTKC9YvHq8uHcbhgDXBpFY7H6QNadPk,1068
+gplates_ws_proxy-0.0.1.dist-info/METADATA,sha256=w2aWpw9GhxSxVT7tjbvHvmrmUAbuQqA_QLv6bXUAFXw,2061
+gplates_ws_proxy-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+gplates_ws_proxy-0.0.1.dist-info/entry_points.txt,sha256=9PS8e67i3S5Z8AkM9bRI40PoC6kmHstbpZBVJvh4dsY,62
+gplates_ws_proxy-0.0.1.dist-info/top_level.txt,sha256=PjVbrTJIKbcdHy9wzUTbk0HAStkzFkUttSFDuJHq_-g,14
+gplates_ws_proxy-0.0.1.dist-info/RECORD,,
