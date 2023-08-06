@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: skga
+Version: 0.0.2
+Summary: The python package implementing the HyperBRKGA algorithm optimizes hyperparameters of machine learning algorithms through a hybrid approach based on genetic algorithms.
+Home-page: https://github.com/MLRG-CEFET-RJ/skga
+Author: Leonardo Sauberman, João Pedro Nogueira, Eduardo Bezerra
+Author-email: leonardo.moraes@aluno.cefet-rj.br, joao.carneiro@aluno.cefet-rj.br, ebezerra@cefet-rj.br
+License: BSD License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# HyperBKRGA
+
+## Setting up the Environment 
+
+To run any code in this repository, it is necessary to follow these steps:
+
+- Create and activate a virtual environment:
+
+```bash
+$ python -m venv venv
+$ venv/Scripts/activate
+```
+
+- Install the dependencies contained in `requirements.txt`
+```bash
+pip install -r requirements.txt
+```
+
+## Basic Example
+With the environment set up, it is possible to run the simplest example as follows:
+
+```bash
+$ py ./src/examples/basic-example.py
+```
+
+## Experiments
+To reproduce the experiments carried out in this work, run the `src/main.py` file.
+Note that it is a time-consuming program.
+
+
