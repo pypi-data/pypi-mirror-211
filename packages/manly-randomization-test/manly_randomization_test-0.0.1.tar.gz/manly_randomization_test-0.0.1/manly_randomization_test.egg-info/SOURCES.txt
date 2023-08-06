@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+manly_randomization_test/__init__.py
+manly_randomization_test/manly_randomization_test.py
+manly_randomization_test.egg-info/PKG-INFO
+manly_randomization_test.egg-info/SOURCES.txt
+manly_randomization_test.egg-info/dependency_links.txt
+manly_randomization_test.egg-info/requires.txt
+manly_randomization_test.egg-info/top_level.txt
+tests/test_RandomizationTest.py

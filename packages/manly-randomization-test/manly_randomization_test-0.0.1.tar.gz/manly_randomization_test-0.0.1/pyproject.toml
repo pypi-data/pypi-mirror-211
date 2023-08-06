@@ -1,0 +1,31 @@
+[project]
+name = "manly_randomization_test"
+version = "0.0.1"
+description = "A python implementation of Manly randomization test"
+authors = [{email = "davesteps@gmail.com", name = "David Stephens"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+urls = {homepage = 'https://github.com/davesteps/manly_randomization_test'}
+
+dependencies = [
+    "numpy",
+]
+
+[project.optional-dependencies]
+dev = [
+    "bandit",
+    "black",
+    "flake8",
+    "isort",
+    "mypy",
+    "pytest",
+    "twine"
+]
+
+[tool.black]
+line-length = 120
+
+[tool.bandit]
+
+dependencies = true # to load [project.dependencies]
+optional_dependencies = ["dev"] # to load extras from [project.optional-dependencies]
