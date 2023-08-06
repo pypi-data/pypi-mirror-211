@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+fit_common.egg-info/PKG-INFO
+fit_common.egg-info/SOURCES.txt
+fit_common.egg-info/dependency_links.txt
+fit_common.egg-info/top_level.txt
