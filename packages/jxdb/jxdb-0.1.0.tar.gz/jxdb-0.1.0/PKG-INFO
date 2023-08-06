@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: jxdb
+Version: 0.1.0
+Summary: Secured Python Json Database
+Home-page: https://github.com/ent1tydev/jxdb
+Author: xinyc
+Author-email: csecinside@proton.me
+License: OpenSociety License
+        
+        Copyright (c) 2023 xinyc
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        1. Non-Commercial Use: In non-commercial use of the Software, there is no requirement to attribute the author.
+        
+        2. Commercial Use: In commercial use of the Software, proper attribution of the author is required.
+        
+        3. Modification: Any person may modify the Software based on the aforementioned conditions and distribute their modifications.
+        
+        4. Grant of License: This license allows any person to apply this license to their own software products, subject to the terms and conditions herein.
+        
+        5. No Warranty: The Software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. The author of the Software shall not be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the Software or the use or other dealings in the Software.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# JsonDB
+
+JsonDB provides secure data storage using AES encryption. All data stored in the database is automatically encrypted before being saved and decrypted when read. This ensures that data is protected from unauthorized access.
+
+## Installation
+
+You can install JsonDB using pip:
+
+pip install jxdb
+
+## Usage
+
+from jxdb import JsonDB
+
+# Create a new instance of JsonDB
+db = JsonDB()
+
+# Open an existing JSON database file
+db.open('data.json', 'File_Security_Password')
+
+# Get the value for a specific key
+value = db.get('key')
+
+# Set a new key-value pair
+db.set('new_key', 'new_value')
+
+# Delete a key-value pair
+db.delete('key_to_delete')
+
+# Find all values that contain a specific data
+result = db.concept('data')
+
+# Get a list of all keys
+keys = db.keys()
+
+# Get a list of all values
+values = db.values()
+
+# Get a list of all key-value pairs
+items = db.items()
+
+# Clear the entire database
+db.clear()
+
+# Get the count of key-value pairs
+count = db.count()
+
+# Delete all fields that contain a specific data
+db.delete_by_value('data')
+
+# Delete all fields that contain a specific key
+db.delete_by_key('key')
+
+# Save the changes to the JSON database file
+db.save('data.json', 'Your_Password')
+
+

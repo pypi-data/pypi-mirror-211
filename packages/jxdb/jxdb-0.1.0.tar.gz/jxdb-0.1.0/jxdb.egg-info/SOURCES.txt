@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+jxdb/__init__.py
+jxdb.egg-info/PKG-INFO
+jxdb.egg-info/SOURCES.txt
+jxdb.egg-info/dependency_links.txt
+jxdb.egg-info/requires.txt
+jxdb.egg-info/top_level.txt
