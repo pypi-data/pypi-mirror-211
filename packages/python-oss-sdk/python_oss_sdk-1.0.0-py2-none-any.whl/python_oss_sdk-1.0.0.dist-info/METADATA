@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: python-oss-sdk
+Version: 1.0.0
+Summary: OSS Python SDK
+Home-page: https://github.com/zeaone/oss-python-sdk
+Author: zhangjinzhi
+Author-email: zeaone@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests (!=2.9.0)
+Requires-Dist: crcmod (>=1.7)
+
+# oss-python-sdk
+
+
+
