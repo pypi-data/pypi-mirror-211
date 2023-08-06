@@ -1,0 +1,14 @@
+setup.py,sha256=2u9RaFATZI3YYMZ5b3H2T6Cyed1n__1FxOdeBtu4-Go,357
+mailtm/__init__.py,sha256=y3o8qjHrf4dCtmDqGiVWxc5MR9bSeajjhTLlaOxeTEE,27
+mailtm/mailtm.py,sha256=jA4kCSAsutSBtGzbuDquN3l-9zpNPLvzZxD1k45tJT8,7897
+mailtm/schemas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mailtm/schemas/account.py,sha256=XdCL1gI1a1EWPAhBKRmsueuTneXZegp3QB9H_iSEt4o,249
+mailtm/schemas/domains.py,sha256=S_RrELTlSBS-fEHzgMwcVZuwyygnFlkGbFLK2QapYBs,380
+mailtm/schemas/message.py,sha256=YC0X0BM9KZjMvsNU2YPCzYudqZ4RfPTJY3BYwx8JFnM,1916
+mailtm/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mailtm/utils/exceptions.py,sha256=oEZ6xxHlN4YYJZHktAweYjdrPXEdrKJHZTzZ3q191oA,105
+mailtm/utils/misc.py,sha256=qJbJFWABUICOClkm-2L3IeGUMhTxWGdBLWDoi1luVH8,297
+mailtmapi-1.0.0.dist-info/METADATA,sha256=bj1GBhw-_iEGw-mHbcZrPYbrEoIeDpDwvzJXYod0eMI,6257
+mailtmapi-1.0.0.dist-info/WHEEL,sha256=y1bSCq4r5i4nMmpXeUJMqs3ipKvkZObrIXSvJHm1qCI,87
+mailtmapi-1.0.0.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+mailtmapi-1.0.0.dist-info/RECORD,,
