@@ -1,0 +1,12 @@
+README.md
+setup.py
+junkpy/__init__.py
+junkpy/base.py
+junkpy/dataclasses.py
+junkpy/extensions.py
+junkpy.egg-info/PKG-INFO
+junkpy.egg-info/SOURCES.txt
+junkpy.egg-info/dependency_links.txt
+junkpy.egg-info/requires.txt
+junkpy.egg-info/top_level.txt
+test/test.py
