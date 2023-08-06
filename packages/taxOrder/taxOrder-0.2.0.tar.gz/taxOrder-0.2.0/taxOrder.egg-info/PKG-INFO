@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: taxOrder
+Version: 0.2.0
+Summary: Returns list of species in a phylogenetic tree ordered by increasing taxonomic distance to a reference species
+Author: Felix Langschied
+Author-email: langschied@bio.uni-frankfurt.de
+License: GPL-3.0
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+usage: taxOrder.py [-h] -t <path> -r str [--outfile [str]] [--format [str]] [--idmap [<path>]]
+
+Returns list of species in a phylogenetic tree ordered by increasing taxonomic distance to a reference species
+
+
+  -h, --help            show this help message and exit
+
+  -t <path>, --tree <path>
+                        Path to tree in Newick format
+
+  -r , --reference str
+                        Reference species
+
+optional arguments:
+
+  --outfile [str]       Save output to file
+
+  --format [str]        Tree format as specified at: https://etetoolkit.org/docs/latest/tutorial/tutorial_trees.html#reading-and-writing-newick-trees (Default: 1)
+
+  --idmap [<path>]      TaxOrder can map species names to taxids accepted by PhyloProfile if supplied with a tab-seperated file like: taxid name

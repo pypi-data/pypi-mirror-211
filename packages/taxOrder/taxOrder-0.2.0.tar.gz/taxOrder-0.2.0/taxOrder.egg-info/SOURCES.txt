@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+taxOrder/__init__.py
+taxOrder/requirements.txt
+taxOrder/taxOrder.py
+taxOrder.egg-info/PKG-INFO
+taxOrder.egg-info/SOURCES.txt
+taxOrder.egg-info/dependency_links.txt
+taxOrder.egg-info/entry_points.txt
+taxOrder.egg-info/requires.txt
+taxOrder.egg-info/top_level.txt
