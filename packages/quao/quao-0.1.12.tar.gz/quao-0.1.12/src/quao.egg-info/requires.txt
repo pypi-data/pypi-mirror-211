@@ -1,0 +1,14 @@
+qiskit==0.43.0
+qiskit_ibm_runtime==0.10.0
+qiskit-ibm-provider==0.6.0
+amazon-braket-sdk==1.38.1
+matplotlib==3.7.1
+pylatexenc==2.10
+qbraid==0.4.0
+
+[dev]
+black
+bumpver
+isort
+pip-tools
+pytest
