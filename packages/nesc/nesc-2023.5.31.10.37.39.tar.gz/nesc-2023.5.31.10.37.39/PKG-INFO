@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: nesc
+Version: 2023.5.31.10.37.39
+Summary: ai for nesc
+Home-page: https://github.com/Jie-Yuan/nesc
+Author: Betterme
+Author-email: yuanjie@example.com
+License: MIT license
+Keywords: nesc
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+<h1 align = "center">:rocket: nesc :rocket:</h1>
+
+
+
+![image](https://img.shields.io/pypi/v/nesc.svg)
+![image](https://img.shields.io/travis/Jie-Yuan/nesc.svg)
+![image](https://readthedocs.org/projects/nesc/badge/?version=latest)
+
+
+
+---
+# Install
+```python
+pip install -U nesc
+pip install -U --no-cache-dir -i https://pypi.python.org/pypi nesc
+```
+
+
+# Usages
+- nesc-cli --help
+- nesc-cli
+    - nesc-cli extract4ddl
+    - nesc-cli extract4excel
+    - nesc text-match '手机号' '标准字段.txt' --model-home chinese_roformer-sim-char-ft_L-6_H-384_A-6
+    - nesc text-match-v2 '手机号' '标准字段.txt' --model-home chinese_roformer-sim-char-ft_L-6_H-384_A-6
+
+- nesc-gui
+    - nesc-seg
+    - nesc-ocr
+
+
+
+
+---
+# TODO
+
+
+=======
+History
+=======
+
+0.0.0 (2021-09-04)
+------------------
+
+* First release on PyPI.
