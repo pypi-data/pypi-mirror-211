@@ -1,0 +1,3 @@
+aa-memberaudit>=2.0.0
+allianceauth>=3.0.0
+allianceauth-securegroups>=0.5.1
