@@ -1,0 +1,10 @@
+PyCyphORM/__init__.py,sha256=7XTdFpAvZBhwIEv-7ebj7Eex64JV_WFyTgRuVOx20Mg,82
+PyCyphORM/cli.py,sha256=At2Q8Fx2erRcV8YjDjLGfTXQaUKJ5Vk8FDw-nLca_uE,1391
+PyCyphORM/lib/__init__.py,sha256=2Br4Dx6sMIJLEHVL3P02LUoCcUnZbgZMlgGLxuglzaU,53
+PyCyphORM/lib/adapter.py,sha256=qLeiraGsm9OSzhie6j6XbGRmCknylBU5J7EsOtBLatU,1836
+PyCyphORM/lib/orm.py,sha256=9KOWv5yQngoN5M3ky_W9KEkMOfGCUXVF6Vl1Xt-9GlA,5212
+PyCyphORM-0.1.2.dev1.dist-info/METADATA,sha256=mFRGmiSRJcN_1HevXyZp4-w_scHlyctZYNLJdSTS0t4,1135
+PyCyphORM-0.1.2.dev1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+PyCyphORM-0.1.2.dev1.dist-info/entry_points.txt,sha256=6R4UorjfxYmbqjbF9d1fgmQybp5Zgy4Bw6PclOdO31Q,38
+PyCyphORM-0.1.2.dev1.dist-info/top_level.txt,sha256=ahpJTN6d1ACvc5oQSlPWSKmmaTqLyo7ctzhwNYoCCbA,10
+PyCyphORM-0.1.2.dev1.dist-info/RECORD,,
