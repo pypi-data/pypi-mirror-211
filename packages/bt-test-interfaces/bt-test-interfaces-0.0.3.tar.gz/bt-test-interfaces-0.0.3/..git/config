@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://github.com/google/bt-test-interfaces
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[gc]
+	auto = 0
+[http "https://github.com/"]
+	extraheader = AUTHORIZATION: basic eC1hY2Nlc3MtdG9rZW46Z2hzXzhkM21CWUVRN2ZxVmpsc3UzZ09lVUMyTWJGbTRLRTNwMXlPYw==
