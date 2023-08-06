@@ -1,0 +1,8 @@
+awscli-plugin-granica/__init__.py,sha256=T1yTKSgRALjSB-thtx_UAW2RnwEs7XliMCUgVwr7FsI,536
+awscli-plugin-granica/bolt_cli_hooks.py,sha256=V5vzpCpjCzU09MdejwOhDD6XvBcM-lGMgF17v7ezCV0,2620
+awscli-plugin-granica/bolt_router.py,sha256=36rxSMghEqkDsL0h5y2mhV7PCtTxFLxFeCVhm8vUrZk,9846
+awscli_plugin_granica-2.0.6.dist-info/LICENSE,sha256=LkcfUyuG9rxZ2eIdiNu3JL5YfUMz-PcUVG8dL7pwKaQ,11342
+awscli_plugin_granica-2.0.6.dist-info/METADATA,sha256=pr1pedC62CKzTmcT0xZvXEiWh2GDCme_FGQjDpj_E9I,2491
+awscli_plugin_granica-2.0.6.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+awscli_plugin_granica-2.0.6.dist-info/top_level.txt,sha256=IP6kuc5fG4Jpe8BC3qjgdj5HONCDTdoZcFvwxywnx9Q,22
+awscli_plugin_granica-2.0.6.dist-info/RECORD,,
