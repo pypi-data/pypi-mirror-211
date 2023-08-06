@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: midi-clip
+Version: 0.2
+Summary: A python package for midi clip.
+Home-page: https://github.com/kyaryunha/midi-clip
+Author: kyaryunha
+Author-email: kyaryunha@gmail.com
+License-File: LICENSE.md
