@@ -1,0 +1,12 @@
+mlflow_aws_rds_iam/__init__.py,sha256=lDmx29Tob2OLByFcev4QLNhLUQDYeVmpPItcJa8Rbts,227
+mlflow_aws_rds_iam/certs/global-bundle.pem,sha256=_vrJHWgAQERhzs52ckvAojg_T1VqHJvrCBP6xvLh5J8,174184
+mlflow_aws_rds_iam/listeners.py,sha256=J9u30vXpym_tY5D35V0S2_AFQiIrxxWpIZsJolzd86g,1078
+mlflow_aws_rds_iam/model_registry.py,sha256=INl3jOaYx9DNWSoRt6yd7TyXUbSGScsb0tUCcU9-8lA,2322
+mlflow_aws_rds_iam/ssl.py,sha256=3_srlKqJty9GZRXFyPcN1N011M6EmMszBAiQpbfx-40,983
+mlflow_aws_rds_iam/tracking.py,sha256=yQJn394o0WCnneGAR6FlqaZbAdkUmJJiGP2_8eg3nxs,2460
+mlflow_aws_rds_iam/utils.py,sha256=f6_CUIbDu1iwrrK5pOEhlJEBva6HO9X1UaSLtvpP9po,1050
+mlflow_aws_rds_iam-0.2.1.dist-info/LICENSE.md,sha256=FddZrCVZdjldW9vu1MhkTYUr4meA4OjcJ8HlJ1C_O8I,1085
+mlflow_aws_rds_iam-0.2.1.dist-info/METADATA,sha256=new4m9Qp4nndKkZMn1UT6Qu0HCDGE0bhHd3Cp1OZKeg,2449
+mlflow_aws_rds_iam-0.2.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+mlflow_aws_rds_iam-0.2.1.dist-info/entry_points.txt,sha256=Sg8dBWKYc8RAPdGpG1YH9Lfzf-avaAHTccJQgvFh0m8,164
+mlflow_aws_rds_iam-0.2.1.dist-info/RECORD,,
