@@ -1,0 +1,9 @@
+downscale_image/__init__.py,sha256=r54f2U9NtPl-eaIlm0uid9Oq3cm8rlJsLQFFUADvsPQ,2004
+downscale_image/__main__.py,sha256=2kblXq-XCETiZ4VNIeuGzWcQ4XdKmiDyfJPHTox-rXM,3312
+downscale_image/_registry_utils.py,sha256=dZyVL9Ox0ii2lNhetJ5EfS3Vkm1rImRNqpoPXpXb7vM,1275
+LICENSE,sha256=0zd3cCDrxkeG26Gso738LrkPQ8h-ZVnOPdfcwH2ygyk,1084
+downscale_image-1.3.0.dist-info/entry_points.txt,sha256=MIAN8uKZsqzJKu28D9yIKco-F3FsTRRppP88ZnhX-Og,65
+downscale_image-1.3.0.dist-info/LICENSE,sha256=0zd3cCDrxkeG26Gso738LrkPQ8h-ZVnOPdfcwH2ygyk,1084
+downscale_image-1.3.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+downscale_image-1.3.0.dist-info/METADATA,sha256=2lMQaI9kUbxg20pn9B7-NrywCTl97d8OS5ApBMGBNG4,1287
+downscale_image-1.3.0.dist-info/RECORD,,
