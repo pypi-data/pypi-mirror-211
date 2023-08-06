@@ -1,0 +1,9 @@
+README.md
+setup.py
+dfmodule_test.egg-info/PKG-INFO
+dfmodule_test.egg-info/SOURCES.txt
+dfmodule_test.egg-info/dependency_links.txt
+dfmodule_test.egg-info/not-zip-safe
+dfmodule_test.egg-info/requires.txt
+dfmodule_test.egg-info/top_level.txt
+sample/__init__.py
