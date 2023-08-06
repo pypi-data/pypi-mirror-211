@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: arcaflow-plugin-kill-pod
+Version: 0.0.2
+Summary: Chaos Engineering Kill Pod Plugin for Arcaflow
+Home-page: https://github.com/redhat-chaos/arcaflow-plugin-kill-pod
+License: Apache-2.0
+Requires-Python: >=3.9,<4.0
+Classifier: Environment :: Plugins
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: arcaflow-plugin-sdk (>=0.10.0,<0.11.0)
+Requires-Dist: kubernetes (>=26.1.0,<27.0.0)
+Description-Content-Type: text/markdown
+
+# Chaos Engineering Kill Pod Plugin for Arcaflow
+
+This plugin implements the Kill Pod scenario used by [redhat-chaos/krkn](https://github.com/redhat-chaos/krkn)
+for Chaos Engineering experiments on Kubernetes.
+
+## Testing
+
+For testing this plugin you need a kubernets instance. Within CI we are using [KinD](https://kind.sigs.k8s.io/).
+
+The test is going to read your kubeconfig file which defaults to `~/.kube/config`.
+
+The code requires Python >= 3.9 in order to work.
+
+```console
+python -m venv .venv
+source .venv/bin/activate
+pip install poetry
+poetry install
+poetry run python -m coverage run -a -m unittest discover -s tests -v
+poetry run python -m coverage html
+```
+

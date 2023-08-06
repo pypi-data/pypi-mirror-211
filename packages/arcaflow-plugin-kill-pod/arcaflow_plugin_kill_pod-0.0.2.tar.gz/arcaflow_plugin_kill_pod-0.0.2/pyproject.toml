@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "arcaflow_plugin_kill_pod"
+# Do not change, the version is automatically updated in CI.
+version = "0.0.2"
+description = "Chaos Engineering Kill Pod Plugin for Arcaflow"
+authors = []
+readme = "README.md"
+license = "Apache-2.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Environment :: Plugins"
+]
+homepage = "https://github.com/redhat-chaos/arcaflow-plugin-kill-pod"
+
+packages = [
+   { include="arcaflow_plugin_kill_pod.py", from="."  },
+]
+include = [
+   { path="docker-compose.yaml", format="sdist" },
+   { path="tests", format="sdist" },
+   { path="poetry.lock", format="sdist" },
+   { path="Dockerfile", format="sdist" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+arcaflow-plugin-sdk = "^0.10.0"
+kubernetes = "^26.1.0"
+
+[tool.poetry.dev-dependencies]
+coverage = "^6.5.0"
+pre-commit = "^2.20.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
