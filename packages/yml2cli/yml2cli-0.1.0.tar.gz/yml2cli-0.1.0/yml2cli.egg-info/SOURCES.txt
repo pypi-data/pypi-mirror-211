@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+yml2cli/__init__.py
+yml2cli/yml2cli.py
+yml2cli.egg-info/PKG-INFO
+yml2cli.egg-info/SOURCES.txt
+yml2cli.egg-info/dependency_links.txt
+yml2cli.egg-info/entry_points.txt
+yml2cli.egg-info/requires.txt
+yml2cli.egg-info/top_level.txt
