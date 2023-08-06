@@ -1,0 +1,10 @@
+aws_cdk/aws_shield/__init__.py,sha256=lfbBu5d6Cgp95g38V-0zyweJ8-1EfMzequ6Mn8ge0VI,108955
+aws_cdk/aws_shield/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_shield/_jsii/__init__.py,sha256=tBjQiLRsvsdS9R051hBgIvnp7JYDuhItPsOBPazvyIg,405
+aws_cdk/aws_shield/_jsii/aws-shield@1.203.0.jsii.tgz,sha256=KyoAWmwPf-tS2-8g3KJlFmuuGJ7uyn85IYsf9EXsfAQ,53266
+aws_cdk.aws_shield-1.203.0.dist-info/LICENSE,sha256=YA6CL2YE08NgoURWXRTrec3mNy-KAR-_UNdiMqgNVMI,11391
+aws_cdk.aws_shield-1.203.0.dist-info/METADATA,sha256=mSSigGeP8prvtxEG8OOiUy_O4tPLG_1ozoBqlw250vc,3141
+aws_cdk.aws_shield-1.203.0.dist-info/NOTICE,sha256=XtGET2JQh3C41orQUenLTefWItOqLmu2N-mGwW7t3Fo,113
+aws_cdk.aws_shield-1.203.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aws_cdk.aws_shield-1.203.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_shield-1.203.0.dist-info/RECORD,,
