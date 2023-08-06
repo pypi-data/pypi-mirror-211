@@ -1,0 +1,9 @@
+monotonic~=1.5
+backoff~=2.1
+python-dateutil~=2.2
+boto3~=1.17.0
+
+[test]
+mock==2.0.0
+pylint==2.8.0
+flake8==3.7.9
