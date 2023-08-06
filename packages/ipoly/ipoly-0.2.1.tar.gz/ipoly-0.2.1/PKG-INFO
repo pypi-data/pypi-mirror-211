@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: ipoly
+Version: 0.2.1
+Summary: Data Science utilities.
+Home-page: https://github.com/Danguilhen/ipoly
+License: MIT
+Author: Thomas Danguilhen
+Author-email: ipoly.8vqpv@slmails.com
+Requires-Python: >=3.10,<3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: dicom
+Provides-Extra: image
+Provides-Extra: ml
+Provides-Extra: table
+Provides-Extra: torch
+Requires-Dist: IPython (>=8.11)
+Requires-Dist: albumentations (>=1.3) ; extra == "image"
+Requires-Dist: beautifulsoup4 (>=4.10,<5.0)
+Requires-Dist: colorama (>=0.4,<0.5)
+Requires-Dist: glob2 (>=0.7,<0.8)
+Requires-Dist: lazypredict (>=0.2) ; extra == "ml"
+Requires-Dist: nptyping (>=1.4,<2.0)
+Requires-Dist: numpy (<1.24)
+Requires-Dist: nvsmi (>=0.4) ; extra == "ml"
+Requires-Dist: opencv-python (>=4.7) ; extra == "image"
+Requires-Dist: openpyxl (>=3.1) ; extra == "table"
+Requires-Dist: pandas (>=2.0)
+Requires-Dist: plyer (>=2.0,<3.0)
+Requires-Dist: polars (>=0.18.0) ; extra == "table"
+Requires-Dist: pyarrow (>=12.0) ; extra == "table"
+Requires-Dist: pydicom (>=2.3) ; extra == "dicom"
+Requires-Dist: scikit-image (>=0.20.0) ; extra == "image"
+Requires-Dist: scipy (>=1.10) ; extra == "ml"
+Requires-Dist: seaborn (>=0.12) ; extra == "ml"
+Requires-Dist: selenium (>=4.6,<5.0)
+Requires-Dist: tensorflow (>=2.7,<3.0)
+Requires-Dist: tensorflow-io-gcs-filesystem (==0.31.0)
+Requires-Dist: torch (>=2.0) ; extra == "torch"
+Requires-Dist: transformers (>=4.0) ; extra == "ml"
+Requires-Dist: typeguard (>=3.0.2)
+Requires-Dist: ultralytics (>=8.0) ; extra == "image"
+Requires-Dist: webdriver-manager (>=3.5,<4.0)
+Requires-Dist: xlrd (>=2.0) ; extra == "table"
+Project-URL: Documentation, https://ipoly.readthedocs.io/en/latest/source/ipoly.html
+Project-URL: Repository, https://github.com/Danguilhen/ipoly
+Description-Content-Type: text/markdown
+
+# ipoly
+
+[![Coverage Status](https://coveralls.io/repos/github/Danguilhen/ipoly/badge.svg?branch=main)](https://coveralls.io/github/Danguilhen/ipoly?branch=main) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues) ![GitHub CI](https://img.shields.io/github/actions/workflow/status/Danguilhen/ipoly/release.yml)
+![pypi version](https://img.shields.io/pypi/v/ipoly) ![pypi downloads](https://img.shields.io/pypi/dm/ipoly) ![commit activity](https://img.shields.io/github/commit-activity/m/Danguilhen/ipoly)
+![open issues](https://img.shields.io/github/issues-raw/Danguilhen/ipoly) ![dependencies](https://img.shields.io/librariesio/github/Danguilhen/ipoly) ![repo size](https://img.shields.io/github/repo-size/Danguilhen/ipoly)
+[![HitCount](https://hits.dwyl.com/Danguilhen/ipoly.svg?style=flat)](http://hits.dwyl.com/Danguilhen/ipoly) ![language](https://img.shields.io/github/languages/top/Danguilhen/ipoly) ![Python versions](https://img.shields.io/pypi/pyversions/ipoly) ![license](https://img.shields.io/pypi/l/ipoly)
+
+## Introduction
+
+**ipoly** (Polymorphic inputs) is a Python package aimed at making various data science tasks easier for users. With ipoly, data scientists can perform tasks such as web scraping, creating models with Tensorflow, visualizing data, handling exceptions, managing various file types, and sending emails, notifications, and generating PDF or LaTeX documents all within Python. The package aims to provide a simple and intuitive interface for these tasks, making it easier for data scientists to focus on what really matters: the data.
+
+## Installation
+
+```shell
+pip install ipoly
+```
+
+## Some Features
+
+- Input polymorphism
+- Type checking
+- Dynamic input capturing
+- Web scraping
+- Model creation with Tensorflow
+- Data visualization
+- Exception handling
+- Easy handling of file types
+- Sending emails and notifications
+- Generating PDF or LaTeX
+
+## Documentation
+
+Further documentation can be found [here](https://ipoly.readthedocs.io/en/latest/source/ipoly.html).
+
+## Requirements
+
+ipoly requires Python 3.10 or higher.
+
+## Contributing
+
+We would like to extend our thanks to the following contributors for helping to make ipoly better:
+
+<center><a href="https://github.com/Danguilhen/ipoly/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Danguilhen/ipoly" />
+</a></center>
+
+If you'd like to contribute to the development of ipoly, please see the [contributing guidelines](https://ipoly.readthedocs.io/en/latest/contributing.html).
+
+## License
+
+ipoly is licensed under the [MIT License](https://ipoly.readthedocs.io/en/latest/license.html).
+
