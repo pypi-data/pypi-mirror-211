@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+client_sso/__init__.py
+client_sso/client_base.py
+client_sso/client_office365.py
+client_sso/decorators.py
+django_sso_client.egg-info/PKG-INFO
+django_sso_client.egg-info/SOURCES.txt
+django_sso_client.egg-info/dependency_links.txt
+django_sso_client.egg-info/top_level.txt
