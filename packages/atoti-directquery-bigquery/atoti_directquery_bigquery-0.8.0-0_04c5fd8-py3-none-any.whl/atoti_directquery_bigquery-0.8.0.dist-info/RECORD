@@ -1,0 +1,14 @@
+atoti_directquery_bigquery/LICENSE,sha256=Q9b5T6w6Fv8QYaSLbHupmnRXMjoVLdIch_mE9BzcUDM,23472
+atoti_directquery_bigquery/__init__.py,sha256=z1vy7rgqV0LiQUkmyVWocAn_yZoPk_R_3XLcW7ZVIY0,200
+atoti_directquery_bigquery/_plugin.py,sha256=pvCbqqw8h5bIa5pxqgg3JDu1Z_cW3rVRnxGYS_tqxpc,515
+atoti_directquery_bigquery/connection.py,sha256=DThW6nG0_brxx-USqvyZBE6aMzUcXDb_pUWYVZbPnOo,1018
+atoti_directquery_bigquery/connection_info.py,sha256=5J2gCoWgS8mYMG90P8TkWOQiK3DHOHfjqwlx3N0yVEU,1562
+atoti_directquery_bigquery/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+atoti_directquery_bigquery/table.py,sha256=qRtCIIvq5dyhIMsnkWg2x6AwE58XlKxr4sn4WMr2geY,129
+atoti_directquery_bigquery/table_options.py,sha256=gjOykjq8cNfLc3LtIz-IB4VZabzYSqxSA9-0aUXoIs8,4497
+atoti_directquery_bigquery/data/atoti-directquery-bigquery.jar,sha256=K-u32yiIDRYFziiOkc5lyJl1bGHWT7pcB6SQhucvivs,59578909
+atoti_directquery_bigquery-0.8.0.dist-info/METADATA,sha256=q1-k9vg2k4ZexFiZopKJOUDqh2-XNDg_aNB6RzNWyPE,870
+atoti_directquery_bigquery-0.8.0.dist-info/WHEEL,sha256=xXVWFHOwiVUrSyw5z4tOAdevnUSxbBzqewjZqxZS0zU,109
+atoti_directquery_bigquery-0.8.0.dist-info/entry_points.txt,sha256=tMmIwx6G5VAYF5O4vHExOdy1yMaQwZLjYJ9Sg8CL59E,89
+atoti_directquery_bigquery-0.8.0.dist-info/top_level.txt,sha256=DWMj-vrysqYyxHiDcTTSYiiueEglaQQPwwNDn_-lQ-s,27
+atoti_directquery_bigquery-0.8.0.dist-info/RECORD,,
