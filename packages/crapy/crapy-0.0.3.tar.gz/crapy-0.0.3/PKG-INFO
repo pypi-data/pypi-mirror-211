@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: crapy
+Version: 0.0.3
+Summary: Make python worse
+Home-page: https://github.com/jessekrubin/crapy
+License: MIT
+Keywords: crap,python3,typed
+Author: jessekrubin
+Author-email: jessekrubin@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Project-URL: Repository, https://github.com/jessekrubin/crapy
+Description-Content-Type: text/markdown
+
+# crapy
+
+Make python worse
+
+## Install
+
+```bash
+pip install crapy
+```
+
+## Philosophy
+
+ - Make python worse
+ - Standard library rewrites should be as sanely-contrived as possible while still being technically correct
+
+
+## Contributing
+
+Contributions are welcome, feel free to send pull requests!
+
+
