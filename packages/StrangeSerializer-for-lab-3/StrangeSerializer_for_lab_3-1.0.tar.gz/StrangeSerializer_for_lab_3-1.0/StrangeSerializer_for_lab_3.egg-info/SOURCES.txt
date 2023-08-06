@@ -1,0 +1,8 @@
+setup.py
+StrangeSerializer_for_lab_3/AdditionalFunctions.py
+StrangeSerializer_for_lab_3/StrangeFactory.py
+StrangeSerializer_for_lab_3/__init__.py
+StrangeSerializer_for_lab_3.egg-info/PKG-INFO
+StrangeSerializer_for_lab_3.egg-info/SOURCES.txt
+StrangeSerializer_for_lab_3.egg-info/dependency_links.txt
+StrangeSerializer_for_lab_3.egg-info/top_level.txt
