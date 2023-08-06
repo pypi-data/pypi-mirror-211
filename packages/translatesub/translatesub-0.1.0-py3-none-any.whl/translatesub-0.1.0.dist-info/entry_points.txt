@@ -1,0 +1,3 @@
+[console_scripts]
+translatesub=translatesub.__main__:main
+
