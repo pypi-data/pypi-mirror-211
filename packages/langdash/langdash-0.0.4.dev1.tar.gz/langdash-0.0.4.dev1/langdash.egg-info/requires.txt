@@ -1,0 +1,13 @@
+torch
+
+[embeddings]
+faiss
+
+[rwkvcpp]
+tokenizers
+
+[sentence_transformers]
+sentence_transformers
+
+[transformers]
+transformers
