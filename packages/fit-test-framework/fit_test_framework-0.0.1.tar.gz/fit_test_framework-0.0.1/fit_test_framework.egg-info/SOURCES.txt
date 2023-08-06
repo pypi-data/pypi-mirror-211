@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+fit_test_framework.egg-info/PKG-INFO
+fit_test_framework.egg-info/SOURCES.txt
+fit_test_framework.egg-info/dependency_links.txt
+fit_test_framework.egg-info/top_level.txt
