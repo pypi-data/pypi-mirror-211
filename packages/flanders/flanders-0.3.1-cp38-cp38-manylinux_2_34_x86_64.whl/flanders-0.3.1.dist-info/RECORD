@@ -1,0 +1,5 @@
+flanders-0.3.1.dist-info/METADATA,sha256=2mMP7OJZMsmcvBA_28HaEzt3WBJ1_Z7iwN2PRaAW1Ew,5685
+flanders-0.3.1.dist-info/WHEEL,sha256=7c17bv8wtlJcVg3465BI_jIJ2jQyxFHKGEoeNWT5YRw,106
+flanders/__init__.py,sha256=QHrOA9QfrUHhNV6rCksDi2PN5KS9Ka2jRd2FmAYLCPs,115
+flanders/flanders.cpython-38-x86_64-linux-gnu.so,sha256=Q9xCwCIUYx_2RdrgrrjNf5xmpS_d4E3ob_oSFVC_Nkg,621016
+flanders-0.3.1.dist-info/RECORD,,
