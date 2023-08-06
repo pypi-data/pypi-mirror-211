@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+tweet2latex.py
+tweet2latex.egg-info/PKG-INFO
+tweet2latex.egg-info/SOURCES.txt
+tweet2latex.egg-info/dependency_links.txt
+tweet2latex.egg-info/pyproject.toml
+tweet2latex.egg-info/requires.txt
+tweet2latex.egg-info/top_level.txt
