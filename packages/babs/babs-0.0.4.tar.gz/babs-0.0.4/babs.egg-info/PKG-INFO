@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: babs
+Version: 0.0.4
+Summary: BABS (python): BIDS App BootStrap for DataLad-based, FAIRly big workflow of BIDS Apps
+Home-page: https://github.com/PennLINC/babs
+Author: The PennLINC developers
+Author-email: chenyzh@seas.upenn.edu
+Maintainer: Chenying Zhao, Sydney Covitz, Matt Cieslak
+Maintainer-email: chenyzh@seas.upenn.edu
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Provides-Extra: datalad
+Provides-Extra: doc
+Provides-Extra: tests
+License-File: LICENSE

@@ -1,0 +1,7 @@
+[console_scripts]
+babs-check-setup = babs.cli:babs_check_setup_main
+babs-init = babs.cli:babs_init_main
+babs-merge = babs.cli:babs_merge_main
+babs-status = babs.cli:babs_status_main
+babs-submit = babs.cli:babs_submit_main
+babs-unzip = babs.cli:babs_unzip_main
