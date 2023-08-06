@@ -1,0 +1,13 @@
+svgecko/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+svgecko/example.py,sha256=6kruKbhHvDfAQLM901entP8zls-sSKhH0FmlvJSX3Pw,396
+svgecko/svg.py,sha256=BS5_DKMOZsyya_oQDbJ5fNOO-w-BaUeQcCoQM4x3LTA,4801
+svgecko/svg_path.py,sha256=7tHtccRkEBvXtk3qKY0emXGrFNAtOb_LAtH7xqRwDuM,5595
+svgecko/utils.py,sha256=9bQUxPypVHGxKeXpQIube1_KGGcgFaDnq27V3Jk2Lps,394
+svgecko/resources/cross.svg,sha256=a1KAPFxQ-lTW4waxHbh_Ghst58LfwcMbRrcFs3sfB5I,167
+svgecko/resources/python-logo.svg,sha256=9S8WAwGNaULQ1XVXvxbnub6ACh1Pi5RwUQruKpAsIcw,9237
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_svg.py,sha256=HzGhYM14Qds-h7R51KQRFen4Aj5RcMElkfIsNBINtaY,2865
+svgecko-0.3.2.dist-info/METADATA,sha256=629MTE_g4whTqsI6dy2YmNs4xKmENFeK3-D0Y4J5my4,398
+svgecko-0.3.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+svgecko-0.3.2.dist-info/top_level.txt,sha256=3nxpnuHMsVjfyV-rQ0V5Y31fHY75K-Do9SZBydunzto,14
+svgecko-0.3.2.dist-info/RECORD,,
