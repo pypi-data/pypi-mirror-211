@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: MS-visualizer-lite
+Version: 0.0.2
+Summary: Description.
+Home-page: https://github.com/MatteoLacki/MS_visualizer2.git
+Author: ['ThiloSchild', 'David Teschner', 'MatteoLacki']
+Author-email: matteo.lacki@gmail.com
+Keywords: Great module,Devel Inside
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+
+Long description.
