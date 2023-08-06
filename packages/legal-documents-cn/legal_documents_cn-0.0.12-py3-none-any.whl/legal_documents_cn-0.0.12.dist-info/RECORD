@@ -1,0 +1,12 @@
+legal_documents_cn/__init__.py,sha256=Cg-lmoBNwoMkTZZrktvJabptBDK7p6xlwq23Yko1okM,231
+legal_documents_cn/apitest.py,sha256=BYZIZKa-ZmTX5FGPOUrXtvz3AT_wCVxcR_PNHPx8Pi0,600
+legal_documents_cn/criminal_law.csv,sha256=qX85ihqVnS6hkcQkLT6wlO7QlMkfuPxjUnmuiFKClL8,278058
+legal_documents_cn/criminal_law_cn.py,sha256=xlNBuS9ZtHK_0huaLvpkcdp8X1rusr5ou7rvr-1STHw,7492
+legal_documents_cn/process_data.py,sha256=dbfVs0KSlPb_7CEWnmfnkUrmSxx1reIc9rZVdYo2izo,8425
+legal_documents_cn/run_start_api.py,sha256=CP_2MFqp6sUh5Nz8FvtEl2DkBCANfWlXd1VnNdCeAj0,6339
+legal_documents_cn/start_api.py,sha256=YscoqypnG5j4mfp3TCUU9UMnsePIyQ_urrtGANDDEiU,1311
+legal_documents_cn-0.0.12.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+legal_documents_cn-0.0.12.dist-info/METADATA,sha256=p_2-rbizM8sVY2lGUgWM7d4HrPODBzyXHqA-4lwclEA,7145
+legal_documents_cn-0.0.12.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+legal_documents_cn-0.0.12.dist-info/top_level.txt,sha256=KJ6HPHOO543_J6-M94OST7QXO_jwRZMuwRceMsDX-iY,19
+legal_documents_cn-0.0.12.dist-info/RECORD,,
