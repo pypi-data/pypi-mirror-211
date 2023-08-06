@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: cmdsave
+Version: 1.0.3
+Summary: 💾 CMDs
+Keywords: save,cli,console,terminal,prductivity
+Platform: Windows
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+# CMDSave - Command Line Application for Saving and Managing Terminal Commands for Later Use
+
+> **This application is only supported on Windows.**
+
+This application allows you to save and manage terminal commands for easy reference and execution. It provides a command-line interface (CLI) to interact with the application and perform various operations such as saving commands, listing saved commands, deleting commands, and editing the command file.
+
+## Usage Commands
+
+To use the application, you can execute the following commands:
+
+### `cmds save`
+
+This command allows you to save a command for easy reference. It prompts you to enter the command you want to save and a name to associate with it. The command and its corresponding name are then stored in a CSV file.
+
+### `cmds list`
+
+This command lists all the saved commands stored in the CSV file. You can navigate through the list using the arrow keys and select a command by pressing Enter. The selected command is copied to the clipboard for easy access.
+
+### `cmds delete`
+
+This command enables you to delete a command from the list. It displays the saved commands and allows you to navigate through them using the arrow keys. Pressing Enter on a command prompts you for confirmation to delete it. If confirmed, the selected command is removed from the CSV file.
+
+### `cmds edit`
+
+This command opens the CSV file in the default text editor (in this case, Notepad). You can use this command to manually edit the CSV file and make changes to the saved commands. Advised to not use `cmds edit` to add new commands. Instead, use the `cmds save` command.
+
+---
+
+Please make sure you have the required dependencies installed before running the application.
