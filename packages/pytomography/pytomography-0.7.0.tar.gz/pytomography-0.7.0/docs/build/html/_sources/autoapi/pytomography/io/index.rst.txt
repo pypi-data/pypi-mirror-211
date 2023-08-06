@@ -1,0 +1,15 @@
+:py:mod:`pytomography.io`
+=========================
+
+.. py:module:: pytomography.io
+
+
+Subpackages
+-----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 3
+
+   SPECT/index.rst
+
+
