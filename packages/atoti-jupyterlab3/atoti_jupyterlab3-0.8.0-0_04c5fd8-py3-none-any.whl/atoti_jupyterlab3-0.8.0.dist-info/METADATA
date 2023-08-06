@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: atoti-jupyterlab3
+Version: 0.8.0
+Summary: Plugin to interactively visualize Atoti sessions in JupyterLab
+Home-page: https://www.atoti.io
+Author: ActiveViam
+Author-email: dev@atoti.io
+Project-URL: Documentation, https://docs.atoti.io/0.8.0/lib/atoti-jupyterlab3/atoti_jupyterlab3.html
+Project-URL: Bug Tracker, https://github.com/atoti/atoti/issues
+Keywords: atoti,chart,dataviz,interactive,jupyter,jupyterlab,kpi,pivot-table,visualization
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Jupyter
+Classifier: License :: Free To Use But Restricted
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Java
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Typing :: Typed
+License-File: atoti_jupyterlab3/LICENSE
+Requires-Dist: atoti (>=0.8.0)
+Requires-Dist: atoti-core (>=0.8.0)
+Requires-Dist: atoti-query (>=0.8.0)
+Requires-Dist: jupyterlab (<4,>=3.5.3)
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: test-utils ; extra == 'dev'
+

@@ -1,0 +1,2 @@
+[atoti.plugins]
+jupyterlab3 = atoti_jupyterlab3._plugin:JupyterLab3Plugin
