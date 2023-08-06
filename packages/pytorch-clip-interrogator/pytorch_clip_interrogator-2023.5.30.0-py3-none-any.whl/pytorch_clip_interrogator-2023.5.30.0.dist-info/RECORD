@@ -1,0 +1,17 @@
+pytorch_clip_interrogator/__init__.py,sha256=nabDDtVm4K9WIqo5BQOUj_7jKn-QUFqmt5Xry4UBdF4,604
+pytorch_clip_interrogator/blip.py,sha256=3N_kPmPaQGbieDj28qybFSW5cJgulFW52c5ipCPvhSU,5157
+pytorch_clip_interrogator/clip_interrogator.py,sha256=EmGTh-zu4tUsFeqdYKqAn-76NrTQpK5VJL7ddr2Hac8,6039
+pytorch_clip_interrogator/prompt_engineer.py,sha256=635CV9cvuEB2CjQ-vUoAJGD-4sDMgivXFJskfYKXuLg,3611
+pytorch_clip_interrogator/utils.py,sha256=kTCGGiAP93FAU0rr4c5FLYFV52qm6TPvMCGLQY5EVLA,2909
+pytorch_clip_interrogator/vocab.py,sha256=sYMfAluFfV-Zdzea7C-W8x7IpInZmTunzPwhes7VbTY,3948
+pytorch_clip_interrogator/data/artists.txt,sha256=AeSzD218_bYvRYLFvsZY4C15v5wZBSlJzjM21u_005U,82438
+pytorch_clip_interrogator/data/flavors.txt,sha256=yZ2Dp6Q1FXM587YKNHlMUk3jcVmpty86IDTfgkXEovE,1804274
+pytorch_clip_interrogator/data/mediums.txt,sha256=kfJrnQ19k_jjATmpT4lbpal3RAM-wLF0U586iLxJzSw,1606
+pytorch_clip_interrogator/data/movements.txt,sha256=FtYOy0iQGIXod8qSQ7PDK8hKJHfE0_Chz21mCGzkdIM,2683
+pytorch_clip_interrogator/data/sites.txt,sha256=ECO83UHd-9K9Nc7kKExSxuPOQO-CVAFf0uJIoO7TcOE,168
+pytorch_clip_interrogator-2023.5.30.0.dist-info/LICENSE,sha256=hLhRjE2iFLc-5Bz_y7wpdQRcKWlybuB-ZvJTJbQMWV0,1304
+pytorch_clip_interrogator-2023.5.30.0.dist-info/METADATA,sha256=MEAtL3zngooODyEQ6VxG_JmUxElntgzYhUkqhLBFL64,1952
+pytorch_clip_interrogator-2023.5.30.0.dist-info/WHEEL,sha256=tIy8_2ZxPExwRKcXlg4jzESby3jB9aLsFLrFCKKh88M,92
+pytorch_clip_interrogator-2023.5.30.0.dist-info/top_level.txt,sha256=ZDGHt6qk-sLdeMMPH2mErSG2_4YdgEIt5DZKT0XIr0w,26
+pytorch_clip_interrogator-2023.5.30.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pytorch_clip_interrogator-2023.5.30.0.dist-info/RECORD,,
