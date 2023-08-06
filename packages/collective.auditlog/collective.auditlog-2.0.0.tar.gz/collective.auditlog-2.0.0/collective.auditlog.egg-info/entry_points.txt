@@ -1,0 +1,5 @@
+[celery_tasks]
+audit = collective.auditlog.tasks
+
+[z3c.autoinclude.plugin]
+target = plone
