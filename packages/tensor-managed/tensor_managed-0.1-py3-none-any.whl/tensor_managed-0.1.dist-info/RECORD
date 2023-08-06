@@ -1,0 +1,11 @@
+managed/__init__.py,sha256=xpYpQIFInAxEsEziDKvJDQYRTvGolAMcgf3PFOUD1lE,330
+managed/_tensor.py,sha256=ycalUcZp2NiiZUqvqGT4ivqklkX2gWMR68sCNrnoEDE,1493
+managed/_utils.py,sha256=Iaxpyuop4X1v__hyL7rYKocmcqBSimfnh4KG1s7ytdo,4170
+managed/device_manager.py,sha256=q8v_INbD6fIOH4qLX9L94vbL_qtXWQnprVmLrPu4Zxc,12869
+managed/module.py,sha256=MudxJSX6uTNHuJzfV5KkSZ3tjXQwNTjfjrsu1FDnUIg,2525
+managed/tensor.py,sha256=7OfaZDPkMGHPAMAF-XNW9xsDegOv25DdLPu7OyFGBfA,7002
+tensor_managed-0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tensor_managed-0.1.dist-info/METADATA,sha256=r2nva1J4FrU9zgE2ONEG0VqyrSsBvlXZrvqHWRJvIxs,265
+tensor_managed-0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+tensor_managed-0.1.dist-info/top_level.txt,sha256=W0vCnxQOMMAUF9gQ5wDsxUqEoBB1ZthCFbQuV0LvjZY,8
+tensor_managed-0.1.dist-info/RECORD,,
