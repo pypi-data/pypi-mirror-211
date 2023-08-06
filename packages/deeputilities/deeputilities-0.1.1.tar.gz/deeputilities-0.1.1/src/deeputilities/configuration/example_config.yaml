@@ -1,0 +1,13 @@
+DATA:
+  INPUT: 1
+  DATA_PATH: default/path
+  LABEL_PATH: default/path
+MODEL_DATA:
+  MODEL: some-model
+  TASK_TYPE: classification
+MODEL_PARAMS:
+  BATCH_SIZE: 32
+  LEARNING_RATE: 0.5
+  OPTIMIZER: optimizer
+OUTPUT:
+  OUTPUT_PATH: output/path
