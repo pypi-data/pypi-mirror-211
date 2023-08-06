@@ -1,0 +1,9 @@
+elefantolib_django/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+elefantolib_django/middleware.py,sha256=7Mzf0IpihoTHBMlk22xXXDdBVevAjdP3Z-8gM5WVPS0,1444
+elefantolib_django/pagination.py,sha256=f956edLx5BVPtGoJim6QA-M-8LsLHyDIHUMstOqUKVU,145
+elefantolib_django/permissions.py,sha256=2LPF0mcH-UQrxiZ1sMNPKIKK-MkKMU0V_lxoATedkrc,420
+elefantolib_django/serializers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+elefantolib_django/serializers/mixins.py,sha256=LjIOMelVvyX7MECQDSaE9cLsvaxSCT4EvXwUv55Kft8,182
+elefantolib_django-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+elefantolib_django-0.1.0.dist-info/METADATA,sha256=vLuYccd45gox4xSo_0IfS37MJJNzCKA2T22ZJDLISFA,478
+elefantolib_django-0.1.0.dist-info/RECORD,,
