@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+Revive.egg-info/PKG-INFO
+Revive.egg-info/SOURCES.txt
+Revive.egg-info/dependency_links.txt
+Revive.egg-info/entry_points.txt
+Revive.egg-info/requires.txt
+Revive.egg-info/top_level.txt
