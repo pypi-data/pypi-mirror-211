@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: pipiyiTools
+Version: 0.0.1
+Summary: Personal tool library
+Home-page: UNKNOWN
+Author: pipiyi
+Author-email: smallpoliao@gmail.com
+License: UNKNOWN
+Description: 
+        # 一个小工具合集
+        
+        ----------
+        
+        - EpubSpliter      创建epub电子书
+        - FileOperation    操作文件
+        - ListQueue        list 队列
+        - Log              日志
+        - MyRequest        一个带随机header的requests
+        - PooledBase       数据库操作
+        - Storage          基于heapq队列
+Keywords: python
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
