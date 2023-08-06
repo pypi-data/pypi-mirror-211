@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: cfgcyk
+Version: 0.1
+Summary: A class for storing CNF grammar rules, generating grammatical strings, and checking if a string is grammatical.
+Home-page: https://github.com/JuneLowry/CFGCYK
+Author: June Lowry
+Author-email: june.w.lowry@gmail.com
+License: MIT
+Download-URL: https://github.com/JuneLowry/CFGCYK/archive/refs/tags/v0.1.tar.gz
+Description: UNKNOWN
+Keywords: CFG,CYK,CNF,grammar,phrase-structure
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
