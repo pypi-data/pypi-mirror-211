@@ -1,0 +1,3 @@
+[console_scripts]
+deeputils=src.deeputilities.client.deeputils_app:main
+
