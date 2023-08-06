@@ -1,0 +1,2 @@
+[console_scripts]
+abstract_security_test = abstract_security_test.main:main
