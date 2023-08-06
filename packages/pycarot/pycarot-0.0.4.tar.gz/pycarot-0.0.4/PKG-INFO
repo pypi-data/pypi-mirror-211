@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pycarot
+Version: 0.0.4
+Summary: pycarot - python tools
+Author-email: canoKes <siyah@keskinsoy.com>
+Maintainer-email: canoKes <siyah@keskinsoy.com>
+Project-URL: homepage, https://github.com/canoKes/pycarot
+Keywords: dependency,injection,event,IoC,container,progress,progressbar
+Classifier: Programming Language :: Python
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pycarot
