@@ -1,0 +1,11 @@
+setuptools
+packaging
+wheel
+silx>=1.0
+
+[full]
+pytest
+PyQt5
+
+[test]
+pytest
