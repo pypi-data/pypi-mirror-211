@@ -1,0 +1,3 @@
+[pytest11]
+alembic_migration_fixtures=alembic_migration_fixtures.fixtures
+
