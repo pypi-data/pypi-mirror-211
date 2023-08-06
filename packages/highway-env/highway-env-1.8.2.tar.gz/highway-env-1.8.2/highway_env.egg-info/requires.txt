@@ -1,0 +1,11 @@
+gymnasium>=0.27
+numpy
+pygame>=2.0.2
+matplotlib
+pandas
+scipy
+
+[deploy]
+pytest-runner
+sphinx<1.7.3
+sphinx_rtd_theme
