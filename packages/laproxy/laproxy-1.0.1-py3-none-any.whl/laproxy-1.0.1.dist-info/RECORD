@@ -1,0 +1,8 @@
+laproxy/__init__.py,sha256=K7LkEmtzMBaFK44WPrMweZdQqy5HlS9A8lQuPPlhTIE,406
+laproxy/_http.py,sha256=l_dudXU2who9y8YEoo-YHJdaAYwbeTMQtjXM-auS260,5086
+laproxy/_laproxy.py,sha256=CdeaiRx_N3A71qFAa-zQ7WdGKQ1_PgsXUB4Y84iD8nI,501
+laproxy/_tcp.py,sha256=y5bEQM7CLK7Iq1tsEuKltx-EscYriIW9Kv7bCw-Jx7U,2898
+laproxy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+laproxy-1.0.1.dist-info/METADATA,sha256=oo5AdnpPPtnBWPT9KDh4zxRspOvCYAbJJrMr_smXc_M,460
+laproxy-1.0.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+laproxy-1.0.1.dist-info/RECORD,,
