@@ -1,0 +1,11 @@
+Serialization/__init__.py,sha256=Rai-KYGKiyKMd8blrocQk72nsbr7c0wygfyThfGV4hw,642
+Serialization/base_serializer.py,sha256=TU5JNNZUq_-xHCa66RfwLcyo2AydPMUeiHCElNb1CGs,1101
+Serialization/dict_serializer.py,sha256=rf6AVplKyJGzP2G_v9aF_sU8Dj2nL5dnn1eHMuxgIW0,9214
+Serialization/json_serializer.py,sha256=P-M0WIIng8yJ6mS8DoLBLOYyAQkkO9eOw-CX6ZY-huk,3870
+Serialization/serializers_factory.py,sha256=eoNWbzZU5O0U1RFcWkz6W8Ckxc96FOU_xyAlZ_Nu_qE,486
+Serialization/type_constants.py,sha256=-ReB7RdhVFmi5vEK6RdNpDxKNvILYRlBXK3YqbYdun0,1211
+Serialization/xml_serializer.py,sha256=UoqBV3gFR6hSQasEJkD2rAmz8o2nWho7jr023exkS1U,4084
+GaikevichSerialization-0.1.1.dist-info/METADATA,sha256=b61BoOyVL-1xYCbfMmRJ5uM8azYGa930fLZI1GptWVM,476
+GaikevichSerialization-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+GaikevichSerialization-0.1.1.dist-info/top_level.txt,sha256=9R2ADyVo_CHDdYElZThjdfIvWH37C4SwS4Q2KzVmUiw,14
+GaikevichSerialization-0.1.1.dist-info/RECORD,,
