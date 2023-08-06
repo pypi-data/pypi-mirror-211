@@ -1,0 +1,3 @@
+include change_proc_priority/requirements.txt
+include change_proc_priority/thirdparty.json
+include change_proc_priority/README.MD
