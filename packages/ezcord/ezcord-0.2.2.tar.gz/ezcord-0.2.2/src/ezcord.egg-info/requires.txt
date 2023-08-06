@@ -1,0 +1,12 @@
+py-cord
+aiohttp
+colorama
+
+[dev]
+pre-commit
+
+[docs]
+sphinx
+furo
+sphinx-autodoc-typehints
+sphinx-copybutton
