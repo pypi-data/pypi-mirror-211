@@ -1,0 +1,3 @@
+[console_scripts]
+ghetto_cmd = ghettorecorder.cmd:main
+ghetto_url = ghettorecorder.__main__:main

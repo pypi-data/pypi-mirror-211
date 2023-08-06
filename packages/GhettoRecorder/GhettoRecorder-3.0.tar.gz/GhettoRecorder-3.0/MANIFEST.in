@@ -1,0 +1,9 @@
+include LICENSE.rst
+include MANIFEST.in
+include README.rst
+recursive-include ghettorecorder *
+
+prune ghettorecorder/test
+prune ghettorecorder/__pycache__
+prune docs
+prune venv
