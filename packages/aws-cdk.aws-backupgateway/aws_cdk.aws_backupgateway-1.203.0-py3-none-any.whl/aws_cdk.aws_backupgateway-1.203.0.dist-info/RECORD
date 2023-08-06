@@ -1,0 +1,10 @@
+aws_cdk/aws_backupgateway/__init__.py,sha256=uagalE9zYi4mY5dr-geH2iFgPnAtx-dIGWtvG75rhdc,23559
+aws_cdk/aws_backupgateway/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_backupgateway/_jsii/__init__.py,sha256=q8qtpVDPeFbVoYD6Cr2Zq-aIy017h1bfAP2c-KMtQtI,432
+aws_cdk/aws_backupgateway/_jsii/aws-backupgateway@1.203.0.jsii.tgz,sha256=6ztY51Y23H1Oqg_o0cQanTvrZXs9Z7kEyVAp_jk3uNY,22554
+aws_cdk.aws_backupgateway-1.203.0.dist-info/LICENSE,sha256=YA6CL2YE08NgoURWXRTrec3mNy-KAR-_UNdiMqgNVMI,11391
+aws_cdk.aws_backupgateway-1.203.0.dist-info/METADATA,sha256=yLVdzP8CT4lu2zCPh5KgKtyubNgGWjR0D5HXQNpIQTo,3218
+aws_cdk.aws_backupgateway-1.203.0.dist-info/NOTICE,sha256=XtGET2JQh3C41orQUenLTefWItOqLmu2N-mGwW7t3Fo,113
+aws_cdk.aws_backupgateway-1.203.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aws_cdk.aws_backupgateway-1.203.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_backupgateway-1.203.0.dist-info/RECORD,,
