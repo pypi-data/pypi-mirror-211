@@ -1,0 +1,12 @@
+pymolstyles/__init__.py,sha256=X5-XcZShWmeKQ2yZ-jAcy5sUc9TOkDz1WNRhFGuO0d0,347
+pymolstyles/environment.py,sha256=D2sFSCVn1_P6RkPoZHYkgL8O6XCeU3cBY8T5xp8811w,4912
+pymolstyles/external/cgo_arrow.py,sha256=39EjMRLJldsD72dn0mUxdRM5fALFDGCcI3yDhLUekh4,2077
+pymolstyles/plots.py,sha256=mUlw7TmTe-or9ABsNlA1fDeuN-2g941MFwRwUzAfnEM,3337
+pymolstyles/resources.py,sha256=SPFHXMNZtC4J6smOyZ---UPQMKbAHwZQku-N0UlgaBY,161
+pymolstyles/styles.py,sha256=aBMYAvvJMv3zMUTaFJfQsahT5loB3vUJTHj7Bgu7Ssk,1384
+pymolstyles/tools.py,sha256=FxoOHga5fPYEK7yitaUE7BC1FXporxb2bC3fwsOV-FE,2785
+pymolstyles/workspace.py,sha256=TvlI9ugBn2uXgzGypn6owocFQ4KEeF-BnILU9gez7tQ,236
+pymolstyles-1.0.2.dist-info/LICENSE.md,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pymolstyles-1.0.2.dist-info/METADATA,sha256=edDi2CpgQJSUbU-4W7Kzqxf3Ym-M3j4TwUrzailUTIk,644
+pymolstyles-1.0.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+pymolstyles-1.0.2.dist-info/RECORD,,
