@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+yard_wfs.egg-info/PKG-INFO
+yard_wfs.egg-info/SOURCES.txt
+yard_wfs.egg-info/dependency_links.txt
+yard_wfs.egg-info/top_level.txt
