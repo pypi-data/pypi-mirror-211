@@ -1,0 +1,9 @@
+opencv-python
+pynput
+gym==0.21.0
+joblib
+numba
+pyrealsense2
+dt-apriltags
+rich
+tqdm
