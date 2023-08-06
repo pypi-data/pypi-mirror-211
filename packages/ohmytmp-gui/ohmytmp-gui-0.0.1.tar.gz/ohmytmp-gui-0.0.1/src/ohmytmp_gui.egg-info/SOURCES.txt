@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/ohmytmp_gui.egg-info/PKG-INFO
+src/ohmytmp_gui.egg-info/SOURCES.txt
+src/ohmytmp_gui.egg-info/dependency_links.txt
+src/ohmytmp_gui.egg-info/requires.txt
+src/ohmytmp_gui.egg-info/top_level.txt
+src/ohmytmp_plugins/gui/__init__.py
+src/ohmytmp_plugins/gui/gui.py
+src/ohmytmp_plugins/gui/img.html

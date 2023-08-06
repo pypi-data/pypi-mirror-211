@@ -1,0 +1,44 @@
+[project]
+name = "ohmytmp-gui"
+version = "0.0.1"
+description = "ohmytmp plugin gui"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {file = "LICENSE"}
+keywords = ["ohmytmp"]
+
+authors = [
+  {name = "userElaina", email = "userelaina@pm.me" }
+]
+maintainers = [
+  {name = "userElaina", email = "userelaina@pm.me" }
+]
+
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3"
+]
+
+dependencies = [
+  "flask",
+  "ohmytmp>=0.0.5",
+  "ohmytmp-simimg>=0.0.2",
+  "ohmytmp-taggy>=0.0.2"
+]
+
+[tool.poetry]
+packages = [
+    { include = "ohmytmp_plugins.gui" },
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ohmytmp/plugin-gui"
+"Bug Reports" = "https://github.com/ohmytmp/plugin-gui/issues"
+"Source" = "https://github.com/ohmytmp/plugin-gui"
+
+[tool.setuptools]
+package-data = {"ohmytmp_plugins.gui" = ["*.html"]}
+
+[build-system]
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
