@@ -1,0 +1,5 @@
+apiVersion: elbv2.aws.infra/v1
+kind: LogGroup
+spec:
+  logGroupName: ${ project }-${ env }-${ infra.infraIdentifier }
+  retentionInDays: ${ vgateway.logGroup.retentionInDays }

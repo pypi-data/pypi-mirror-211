@@ -1,0 +1,20 @@
+ECSService:
+  Properties:
+    Cluster: !ImportValue
+      Fn::Sub: bc-300:ECSCluster
+    DeploymentConfiguration:
+      MaximumPercent: 200
+      MinimumHealthyPercent: 100
+    DesiredCount: !Ref 'DesiredCount'
+    LaunchType: FARGATE
+    NetworkConfiguration:
+      AwsvpcConfiguration:
+        AssignPublicIp: DISABLED
+        SecurityGroups: !Ref 'SecurityGroups'
+        Subnets: !Ref 'Subnets'
+    ServiceName: website-s810
+    ServiceRegistries:
+      - RegistryArn: !GetAtt 'ECSServiceDiscoveryRecord.Arn'
+    TaskDefinition: !Ref 'ECSTaskDefinition'
+  Type: AWS::ECS::Service
+

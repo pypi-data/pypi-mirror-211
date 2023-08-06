@@ -1,0 +1,49 @@
+apiVersion: elbv2.aws.infra/v1alpha1
+kind: LoadBalancer
+pipelineConfig:
+  no-apply: true
+  comment: 'no-apply: true prevents this file being apply by infra-operator. auto
+    added by infra-operator export. if need to apply, set to false'
+metadata:
+  Type: network
+  Name: tf-bin-dev-cross-proxy-nlb
+  VpcId: vpc-06e7bab377f9cb4e9
+  Scheme: internal
+  IpAddressType: ipv4
+  Tags:
+    project: bin
+    biz: arch
+    terraform: y
+    team: backend
+    env: dev
+    Name: tf-bin-dev-cross-proxy-nlb
+  Attributes:
+    access_logs.s3.prefix: tf-bin-dev-cross-proxy-nlb
+    deletion_protection.enabled: 'true'
+    load_balancing.cross_zone.enabled: 'true'
+    access_logs.s3.enabled: 'true'
+    access_logs.s3.bucket: tk-alb-logs-173062506398
+spec:
+  Subnets:
+    - subnet-09be8cd943053e566
+    - subnet-021f8d89ff645f054
+    - subnet-0ca4cb52526ef365e
+  Listeners:
+    - Protocol: TCP
+      Port: 9915
+      Rules: []
+      DefaultActions:
+        - Type: forward
+          Order: 1
+          ForwardConfig:
+            TargetGroups:
+              - TargetGroupArn: arn:aws:elasticloadbalancing:ap-northeast-1:173062506398:targetgroup/tf-bin-dev-cross-proxy-tg9915/c1567fe8e991b2f8
+    - Protocol: TCP
+      Port: 9916
+      Rules: []
+      DefaultActions:
+        - Type: forward
+          Order: 1
+          ForwardConfig:
+            TargetGroups:
+              - TargetGroupArn: arn:aws:elasticloadbalancing:ap-northeast-1:173062506398:targetgroup/tf-cross-nlb-tg9916/1b4f1141a3613941

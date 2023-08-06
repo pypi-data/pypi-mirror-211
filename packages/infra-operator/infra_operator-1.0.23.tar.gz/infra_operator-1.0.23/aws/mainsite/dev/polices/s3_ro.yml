@@ -1,0 +1,10 @@
+Version: '2012-10-17'
+Statement:
+- Action:
+  - s3:GetBucket*
+  - s3:GetObject*
+  - s3:List*
+  Effect: Allow
+  Resource:
+  - "${ s3_arn}"
+  - "${ s3_arn}/*"

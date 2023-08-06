@@ -1,0 +1,4 @@
+apiVersion: cloudfront.aws.infra/v1alpha1
+kind: Distribution
+metadata: {}
+spec: {}

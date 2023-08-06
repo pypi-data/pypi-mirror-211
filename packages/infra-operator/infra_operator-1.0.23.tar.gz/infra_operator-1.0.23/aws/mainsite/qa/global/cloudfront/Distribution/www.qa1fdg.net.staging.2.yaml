@@ -1,0 +1,144 @@
+apiVersion: cloudfront.aws.infra/v1alpha1
+kind: Distribution
+pipelineConfig:
+  no-apply: false
+  comment: 'no-apply: true prevents this file being apply by api-to-yaml. auto added
+    by api-to-yaml export. if need to apply, set to false'
+metadata:
+  Id: E17GZBZR6OZYFD
+  Comment: www.qa1fdg.net
+  WebACLId: arn:aws:wafv2:us-east-1:462475635429:global/webacl/qa_office_whitelist_ip_v2acl/450cf4be-3847-4c29-8ea9-b1da0d9330cf
+  PriceClass: PriceClass_All
+  HttpVersion: http2
+  CallerReference: api-to-yaml-20230223
+  DefaultRootObject: ''
+  ContinuousDeploymentPolicyId: ''
+  Enabled: true
+  Staging: true
+  IsIPV6Enabled: false
+  Tags:
+    biz: common-infra
+    devops-infra: y
+    env: qa
+    git: https://git.toolsfdg.net/devops/devops-infra/blob/master/aws/mainsite/qa/global/cloudfront/Distribution/www.qa1fdg.net.staging-2.yaml
+    project: bin
+    team: qa
+    terraform: y
+spec:
+  Aliases: []
+  OriginGroups: []
+  Logging:
+    Bucket: tf-bin-qa-bnbcflogs-qa1.s3.amazonaws.com
+    Prefix: cflogs/mainsite/
+    Enabled: true
+    IncludeCookies: false
+  ViewerCertificate:
+    Certificate: arn:aws:acm:us-east-1:462475635429:certificate/aae66257-a84c-486e-b941-e8d1ab093839
+    SSLSupportMethod: sni-only
+    ACMCertificateArn: arn:aws:acm:us-east-1:462475635429:certificate/aae66257-a84c-486e-b941-e8d1ab093839
+    CertificateSource: acm
+    MinimumProtocolVersion: TLSv1.2_2021
+    CloudFrontDefaultCertificate: false
+  Restrictions:
+    GeoRestriction:
+      RestrictionType: none
+      Items: []
+  DefaultCacheBehavior:
+    TargetOriginId: ELB-bin-qa-dispatcher-alb
+    ViewerProtocolPolicy: redirect-to-https
+    FieldLevelEncryptionId: ''
+    Compress: false
+    SmoothStreaming: false
+    MinTTL: 0
+    MaxTTL: 31536000
+    DefaultTTL: 86400
+    FunctionAssociations: []
+    LambdaFunctionAssociations: []
+    TrustedSigners:
+      Enabled: false
+      Items: []
+    AllowedMethods:
+      Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      CachedMethods:
+      - HEAD
+      - GET
+    ForwardedValues:
+      QueryString: true
+      Cookies:
+        Forward: all
+      Headers:
+      - '*'
+      QueryStringCacheKeys: []
+    TrustedKeyGroups:
+      Enabled: false
+      Items: []
+  CustomErrorResponses:
+  - ResponseCode: ''
+    ResponsePagePath: ''
+    ErrorCode: 404
+    ErrorCachingMinTTL: 0
+  Origins:
+    $map:
+      $items:
+      - Id: ELB-bin-qa-dispatcher-alb
+        DomainName: tk-qa1-dispatcher-cdn-alb-1058938889.ap-northeast-1.elb.amazonaws.com
+        CustomOriginConfig.OriginProtocolPolicy: https-only
+        CustomOriginConfig.HTTPPort: 80
+        CustomOriginConfig.HTTPSPort: 443
+        CustomOriginConfig.OriginReadTimeout: 30
+        CustomOriginConfig.OriginSslProtocols:
+        - TLSv1
+        - TLSv1.1
+        - TLSv1.2
+        CustomOriginConfig.OriginKeepaliveTimeout: 5
+        CustomHeaders:
+        - HeaderName: x-cfcalltag
+          HeaderValue: g22uazHiLT9eYgNyoECnfx20190327
+      - Id: tf-bin-qa-cloudfront-wellknown.s3.ap-northeast-1.amazonaws.com
+        DomainName: tf-bin-qa-cloudfront-wellknown.s3.ap-northeast-1.amazonaws.com
+        S3OriginConfig.OriginAccessIdentity: origin-access-identity/cloudfront/EYO3TD281GPZH
+      - Id: S3-tf-bin-qa-cloudfront-errorpages
+        DomainName: tf-bin-qa-cloudfront-errorpages.s3.amazonaws.com
+        S3OriginConfig.OriginAccessIdentity: origin-access-identity/cloudfront/E1UXN4SB1Z426C
+      - Id: S3-static.qa1fdg.net
+        DomainName: static.qa1fdg.net.s3.amazonaws.com
+        S3OriginConfig.OriginAccessIdentity: origin-access-identity/cloudfront/E1Y3SFVGGZUH0B
+      $expr:
+        $var_replace:
+          $remove_not_found: true
+          $template:
+            Id: ${Id}
+            DomainName: ${DomainName}
+            OriginPath: ${OriginPath}
+            CustomHeaders: ${CustomHeaders}
+            ConnectionTimeout: ${ConnectionTimeout}
+            ConnectionAttempts: ${ConnectionAttempts}
+            OriginAccessControlId: ${OriginAccessControlId}
+            OriginShield:
+              Enabled: ${OriginShield.Enabled}
+            S3OriginConfig:
+              OriginAccessIdentity: ${S3OriginConfig.OriginAccessIdentity}
+            CustomOriginConfig:
+              HTTPPort: ${CustomOriginConfig.HTTPPort}
+              HTTPSPort: ${CustomOriginConfig.HTTPSPort}
+              OriginReadTimeout: ${CustomOriginConfig.OriginReadTimeout}
+              OriginSslProtocols: ${CustomOriginConfig.OriginSslProtocols}
+              OriginProtocolPolicy: ${CustomOriginConfig.OriginProtocolPolicy}
+              OriginKeepaliveTimeout: ${CustomOriginConfig.OriginKeepaliveTimeout}
+          $values:
+            $merge:
+            - OriginPath: ''
+              OriginAccessControlId: ''
+              OriginShield.Enabled: false
+              CustomHeaders: []
+              ConnectionTimeout: 10
+              ConnectionAttempts: 3
+            - $item
+  CacheBehaviors: $yaml_content(qa1fdg.behaviors.yaml)

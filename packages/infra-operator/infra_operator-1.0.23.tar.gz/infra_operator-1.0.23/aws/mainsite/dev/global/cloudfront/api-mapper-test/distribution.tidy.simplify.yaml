@@ -1,0 +1,3872 @@
+CallerReference: terraform-20200206092834894900000002
+Aliases:
+- www.binance.com
+- support.binance.com
+- beta.binance.com
+- otc.binance.com
+- card.binance.com
+- merchant.binance.com
+- pay.binance.com
+DefaultRootObject: ''
+Origins:
+  $map:
+    $expr:
+      $var_replace:
+        $template:
+          Id: ${Id}
+          DomainName: ${DomainName}
+          OriginPath: ${OriginPath}
+          CustomHeaders: ${CustomHeaders}
+          CustomOriginConfig:
+            HTTPPort: ${CustomOriginConfig.HTTPPort}
+            HTTPSPort: ${CustomOriginConfig.HTTPSPort}
+            OriginProtocolPolicy: ${CustomOriginConfig.OriginProtocolPolicy}
+            OriginSslProtocols: ${CustomOriginConfig.OriginSslProtocols}
+            OriginReadTimeout: ${CustomOriginConfig.OriginReadTimeout}
+            OriginKeepaliveTimeout: ${CustomOriginConfig.OriginKeepaliveTimeout}
+          ConnectionAttempts: ${ConnectionAttempts}
+          ConnectionTimeout: ${ConnectionTimeout}
+          OriginShield:
+            Enabled: ${OriginShield.Enabled}
+          S3OriginConfig:
+            OriginAccessIdentity: ${S3OriginConfig.OriginAccessIdentity}
+        $values:
+          $merge:
+          - OriginPath: ''
+            CustomHeaders:
+            - HeaderName: x-cfcalltag
+              HeaderValue: g22uazHiLT9eYgNyoECnfx20190327
+            CustomOriginConfig.HTTPPort: 80
+            CustomOriginConfig.HTTPSPort: 443
+            CustomOriginConfig.OriginProtocolPolicy: https-only
+            CustomOriginConfig.OriginSslProtocols:
+            - TLSv1
+            - TLSv1.1
+            - TLSv1.2
+            CustomOriginConfig.OriginReadTimeout: 30
+            CustomOriginConfig.OriginKeepaliveTimeout: 5
+            ConnectionAttempts: 3
+            ConnectionTimeout: 10
+            OriginShield.Enabled: false
+          - $item
+    $items:
+    - Id: ELB-bin-prod-be-account-dispatcher-alb
+      DomainName: tf-bin-prod-be-account-disp-alb-771171003.ap-northeast-1.elb.amazonaws.com
+    - Id: ELB-bin-prod-fe-futures-dispatcher-alb
+      DomainName: tf-bin-prod-fe-futur-disp-alb-1016982162.ap-northeast-1.elb.amazonaws.com
+    - Id: ELB-bin-prod-be-business-unit-dispatcher-alb
+      DomainName: tf-bin-prod-be-bu-disp-alb-2003923821.ap-northeast-1.elb.amazonaws.com
+    - Id: ELB-bin-prod-be-slow-dispatcher-alb
+      DomainName: tf-bin-prod-be-slow-disp-alb-223518228.ap-northeast-1.elb.amazonaws.com
+    - Id: ELB-bin-prod-be-capital-dispatcher-alb
+      DomainName: tf-bin-prod-be-capital-disp-alb-1463754064.ap-northeast-1.elb.amazonaws.com
+    - Id: ELB-bin-prod-be-futures-dispatcher-alb
+      DomainName: tf-bin-prod-be-futures-disp-alb-506234104.ap-northeast-1.elb.amazonaws.com
+    - Id: ELB-bin-prod-nginx-www-fapi-alb
+      DomainName: futures-prod-nginx-www-fapi-a-1441272012.ap-northeast-1.elb.amazonaws.com
+    - Id: ELB-bin-prod-be-asset-dispatcher-alb
+      DomainName: tf-bin-prod-be-asset-disp-alb-1745043811.ap-northeast-1.elb.amazonaws.com
+    - Id: S3-bin.bnbstatic.com
+      DomainName: bin.bnbstatic.com.s3.amazonaws.com
+      CustomHeaders: []
+      S3OriginConfig.OriginAccessIdentity: origin-access-identity/cloudfront/E95WIJ16BFBZL
+    - Id: ELB-bin-prod-fe-trade-dispatcher-alb
+      DomainName: tf-bin-prod-fe-trade-disp-alb-1199548949.ap-northeast-1.elb.amazonaws.com
+    - Id: ELB-bin-prod-fe-basic-dispatcher-alb
+      DomainName: tf-bin-prod-fe-basic-disp-alb-1701157891.ap-northeast-1.elb.amazonaws.com
+    - Id: S3-bnbprod-cloudfront-errorpages
+      DomainName: bnbprod-cloudfront-errorpages.s3.amazonaws.com
+      CustomHeaders: []
+      S3OriginConfig.OriginAccessIdentity: origin-access-identity/cloudfront/E3GYMCU4G0IFQC
+    - Id: S3-wellknow-origin
+      DomainName: tf-bin-prod-binance-com-wellknow.s3.amazonaws.com
+      CustomHeaders: []
+      S3OriginConfig.OriginAccessIdentity: origin-access-identity/cloudfront/EOUZTVNYH79ZE
+    - Id: ELB-bin-prod-be-common-dispatcher-alb
+      DomainName: tf-bin-prod-be-common-disp-alb-31806585.ap-northeast-1.elb.amazonaws.com
+    - Id: ELB-bin-prod-dispatcher-alb
+      DomainName: bin-prod-dispatcher-alb-1351194062.ap-northeast-1.elb.amazonaws.com
+OriginGroups: []
+DefaultCacheBehavior:
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: all
+    Headers:
+    - '*'
+    QueryStringCacheKeys: []
+  MinTTL: 0
+  DefaultTTL: 86400
+  MaxTTL: 31536000
+CacheBehaviors:
+  $map:
+    $expr:
+      $var_replace:
+        $template:
+          PathPattern: ${PathPattern}
+          TargetOriginId: ${TargetOriginId}
+          TrustedSigners:
+            Enabled: ${TrustedSigners.Enabled}
+            Items: ${TrustedSigners.Items}
+          TrustedKeyGroups:
+            Enabled: ${TrustedKeyGroups.Enabled}
+            Items: ${TrustedKeyGroups.Items}
+          ViewerProtocolPolicy: ${ViewerProtocolPolicy}
+          AllowedMethods:
+            Items: ${AllowedMethods.Items}
+            CachedMethods: ${AllowedMethods.CachedMethods}
+          SmoothStreaming: ${SmoothStreaming}
+          Compress: ${Compress}
+          LambdaFunctionAssociations: ${LambdaFunctionAssociations}
+          FunctionAssociations: ${FunctionAssociations}
+          FieldLevelEncryptionId: ${FieldLevelEncryptionId}
+          ForwardedValues:
+            QueryString: ${ForwardedValues.QueryString}
+            Cookies:
+              Forward: ${ForwardedValues.Cookies.Forward}
+              WhitelistedNames: ${ForwardedValues.Cookies.WhitelistedNames}
+            Headers: ${ForwardedValues.Headers}
+            QueryStringCacheKeys: ${ForwardedValues.QueryStringCacheKeys}
+          MinTTL: ${MinTTL}
+          DefaultTTL: ${DefaultTTL}
+          MaxTTL: ${MaxTTL}
+        $values:
+          $merge:
+          - TargetOriginId: ELB-bin-prod-dispatcher-alb
+            TrustedSigners.Enabled: false
+            TrustedSigners.Items: []
+            TrustedKeyGroups.Enabled: false
+            TrustedKeyGroups.Items: []
+            ViewerProtocolPolicy: redirect-to-https
+            AllowedMethods.Items:
+            - HEAD
+            - GET
+            - OPTIONS
+            AllowedMethods.CachedMethods:
+            - HEAD
+            - GET
+            SmoothStreaming: false
+            Compress: false
+            LambdaFunctionAssociations: []
+            FunctionAssociations: []
+            FieldLevelEncryptionId: ''
+            ForwardedValues.QueryString: true
+            ForwardedValues.Cookies.Forward: none
+          - $item
+    $items:
+    - PathPattern: /
+      ForwardedValues.QueryString: false
+      ForwardedValues.Cookies.Forward: whitelist
+      ForwardedValues.Cookies.WhitelistedNames:
+      - lang
+      ForwardedValues.Headers:
+      - accept-language
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 120
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /tr
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Cookies.Forward: whitelist
+      ForwardedValues.Cookies.WhitelistedNames:
+      - home-ui-ab
+      - theme
+      - cr00
+      - color
+      - bnc-uuid
+      - BNC-Location
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - k8scluster
+      - CloudFront-Is-Mobile-Viewer
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 0
+      DefaultTTL: 0
+      MaxTTL: 0
+    - PathPattern: /.well-known*
+      TargetOriginId: S3-wellknow-origin
+      Compress: true
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers: []
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 0
+      DefaultTTL: 120
+      MaxTTL: 121
+    - PathPattern: /sitemap*
+      TargetOriginId: S3-bnbprod-cloudfront-errorpages
+      Compress: true
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers: []
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 0
+      DefaultTTL: 1800
+      MaxTTL: 86400
+    - PathPattern: /public/*
+      TargetOriginId: S3-bnbprod-cloudfront-errorpages
+      Compress: true
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers: []
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 1800
+      DefaultTTL: 86400
+      MaxTTL: 31536000
+    - PathPattern: /??/eth2/faq
+      TargetOriginId: ELB-bin-prod-fe-futures-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - k8scluster
+      - bnc-theme
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /??-??/eth2/faq
+      TargetOriginId: ELB-bin-prod-fe-futures-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - k8scluster
+      - bnc-theme
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /??/stock-token*
+      TargetOriginId: ELB-bin-prod-fe-futures-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - CloudFront-Viewer-Country
+      - k8scluster
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /??-??/stock-token*
+      TargetOriginId: ELB-bin-prod-fe-futures-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - CloudFront-Viewer-Country
+      - k8scluster
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /??/futures*
+      TargetOriginId: ELB-bin-prod-fe-futures-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Cookies.Forward: whitelist
+      ForwardedValues.Cookies.WhitelistedNames:
+      - theme
+      - futures-layout
+      - color
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - CloudFront-Viewer-Country
+      - k8scluster
+      - bnc-theme
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /??-??/futures*
+      TargetOriginId: ELB-bin-prod-fe-futures-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Cookies.Forward: whitelist
+      ForwardedValues.Cookies.WhitelistedNames:
+      - theme
+      - futures-layout
+      - color
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - CloudFront-Viewer-Country
+      - k8scluster
+      - bnc-theme
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /??/strategy/*
+      ForwardedValues.Cookies.Forward: whitelist
+      ForwardedValues.Cookies.WhitelistedNames:
+      - theme
+      - isRedUpGreenDown
+      - BNC-Location
+      ForwardedValues.Headers:
+      - CloudFront-Is-Tablet-Viewer
+      - k8scluster
+      - CloudFront-Is-Mobile-Viewer
+      - bnc-theme
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys:
+      - opt
+      - ref
+      - symbol
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /??-??/strategy/*
+      ForwardedValues.Cookies.Forward: whitelist
+      ForwardedValues.Cookies.WhitelistedNames:
+      - theme
+      - isRedUpGreenDown
+      - BNC-Location
+      ForwardedValues.Headers:
+      - CloudFront-Is-Tablet-Viewer
+      - k8scluster
+      - CloudFront-Is-Mobile-Viewer
+      - bnc-theme
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys:
+      - opt
+      - ref
+      - symbol
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /??/trade/*
+      TargetOriginId: ELB-bin-prod-fe-trade-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Cookies.Forward: whitelist
+      ForwardedValues.Cookies.WhitelistedNames:
+      - theme
+      - color
+      - BNC-Location
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - CloudFront-Viewer-Country
+      - k8scluster
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /??-??/trade/*
+      TargetOriginId: ELB-bin-prod-fe-trade-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Cookies.Forward: whitelist
+      ForwardedValues.Cookies.WhitelistedNames:
+      - theme
+      - color
+      - BNC-Location
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - CloudFront-Viewer-Country
+      - k8scluster
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /??/margin/*
+      TargetOriginId: ELB-bin-prod-fe-trade-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Cookies.Forward: whitelist
+      ForwardedValues.Cookies.WhitelistedNames:
+      - theme
+      - color
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - CloudFront-Viewer-Country
+      - k8scluster
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /??-??/margin/*
+      TargetOriginId: ELB-bin-prod-fe-trade-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Cookies.Forward: whitelist
+      ForwardedValues.Cookies.WhitelistedNames:
+      - theme
+      - color
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - CloudFront-Viewer-Country
+      - k8scluster
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /??/mp-cms/app
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.Cookies.Forward: whitelist
+      ForwardedValues.Cookies.WhitelistedNames:
+      - theme
+      - color
+      - BNC-Location
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - k8scluster
+      - bnc-theme
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys:
+      - _dp
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /??-??/mp-cms/app
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.Cookies.Forward: whitelist
+      ForwardedValues.Cookies.WhitelistedNames:
+      - theme
+      - color
+      - BNC-Location
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - k8scluster
+      - bnc-theme
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys:
+      - _dp
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /??/delivery/*
+      TargetOriginId: ELB-bin-prod-fe-futures-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Cookies.Forward: whitelist
+      ForwardedValues.Cookies.WhitelistedNames:
+      - theme
+      - futures-layout
+      - color
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - CloudFront-Viewer-Country
+      - k8scluster
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /??-??/delivery/*
+      TargetOriginId: ELB-bin-prod-fe-futures-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Cookies.Forward: whitelist
+      ForwardedValues.Cookies.WhitelistedNames:
+      - theme
+      - futures-layout
+      - color
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - CloudFront-Viewer-Country
+      - k8scluster
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /??/leveraged-tokens/*
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Cookies.Forward: whitelist
+      ForwardedValues.Cookies.WhitelistedNames:
+      - theme
+      - color
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - CloudFront-Viewer-Country
+      - k8scluster
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /??-??/leveraged-tokens/*
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Cookies.Forward: whitelist
+      ForwardedValues.Cookies.WhitelistedNames:
+      - theme
+      - color
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - CloudFront-Viewer-Country
+      - k8scluster
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /??/nft/*
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - k8scluster
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys:
+      - id
+      - isDev
+      - isOpen
+      - isProduct
+      - itemId
+      - nftInfoId
+      - productId
+      - serialsNo
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /??-??/nft/*
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - k8scluster
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys:
+      - id
+      - isDev
+      - isOpen
+      - isProduct
+      - itemId
+      - nftInfoId
+      - productId
+      - serialsNo
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /??/survey/*
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - k8scluster
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys:
+      - ns
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /??-??/survey/*
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - k8scluster
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys:
+      - ns
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /??/redirect/*
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - k8scluster
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys:
+      - oauth_token
+      - oauth_verifier
+      - url
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /??-??/redirect/*
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - k8scluster
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys:
+      - oauth_token
+      - oauth_verifier
+      - url
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /??-??/news*
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.Cookies.Forward: whitelist
+      ForwardedValues.Cookies.WhitelistedNames:
+      - theme
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - k8scluster
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys:
+      - page
+      MinTTL: 0
+      DefaultTTL: 86400
+      MaxTTL: 31536000
+    - PathPattern: /??/news*
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.Cookies.Forward: whitelist
+      ForwardedValues.Cookies.WhitelistedNames:
+      - theme
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - k8scluster
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys:
+      - page
+      MinTTL: 0
+      DefaultTTL: 86400
+      MaxTTL: 31536000
+    - PathPattern: /??/buy-sell-crypto*
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.Cookies.Forward: whitelist
+      ForwardedValues.Cookies.WhitelistedNames:
+      - challengeMd
+      - challengeJwt
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - k8scluster
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys:
+      - channel
+      - crypto
+      - fiat
+      - merchant
+      - recurring
+      - token
+      - type
+      MinTTL: 0
+      DefaultTTL: 86400
+      MaxTTL: 31536000
+    - PathPattern: /??-??/buy-sell-crypto*
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.Cookies.Forward: whitelist
+      ForwardedValues.Cookies.WhitelistedNames:
+      - challengeMd
+      - challengeJwt
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - k8scluster
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys:
+      - channel
+      - crypto
+      - fiat
+      - merchant
+      - recurring
+      - token
+      - type
+      MinTTL: 0
+      DefaultTTL: 86400
+      MaxTTL: 31536000
+    - PathPattern: /??/cynodeserver/*
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - k8scluster
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 0
+      DefaultTTL: 86400
+      MaxTTL: 31536000
+    - PathPattern: /??/margin/calculator
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - k8scluster
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys:
+      - color
+      - theme
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /??-??/margin/calculator
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - k8scluster
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys:
+      - color
+      - theme
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /??-??/usercenter/*
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - k8scluster
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys:
+      - asset
+      - direction
+      - email
+      - userId
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /??/usercenter/*
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - k8scluster
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys:
+      - asset
+      - direction
+      - email
+      - userId
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /??/blog*
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Cookies.Forward: whitelist
+      ForwardedValues.Cookies.WhitelistedNames:
+      - theme
+      - isRedUpGreenDown
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - k8scluster
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /??-??/blog*
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Cookies.Forward: whitelist
+      ForwardedValues.Cookies.WhitelistedNames:
+      - theme
+      - isRedUpGreenDown
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - k8scluster
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /??-??/login
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      ForwardedValues.Cookies.Forward: whitelist
+      ForwardedValues.Cookies.WhitelistedNames:
+      - cr00
+      - p20t
+      ForwardedValues.Headers:
+      - Origin
+      - x-gateway-gray
+      - k8scluster
+      - Host
+      ForwardedValues.QueryStringCacheKeys:
+      - return_to
+      MinTTL: 60
+      DefaultTTL: 60
+      MaxTTL: 120
+    - PathPattern: /??/login
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      ForwardedValues.Cookies.Forward: whitelist
+      ForwardedValues.Cookies.WhitelistedNames:
+      - cr00
+      - p20t
+      ForwardedValues.Headers:
+      - Origin
+      - x-gateway-gray
+      - k8scluster
+      - Host
+      ForwardedValues.QueryStringCacheKeys:
+      - return_to
+      MinTTL: 60
+      DefaultTTL: 60
+      MaxTTL: 120
+    - PathPattern: /??-??/register
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      ForwardedValues.Headers:
+      - Origin
+      - x-gateway-gray
+      - k8scluster
+      - Host
+      ForwardedValues.QueryStringCacheKeys:
+      - ref
+      - source
+      MinTTL: 60
+      DefaultTTL: 60
+      MaxTTL: 120
+    - PathPattern: /??/register
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      ForwardedValues.Headers:
+      - Origin
+      - x-gateway-gray
+      - k8scluster
+      - Host
+      ForwardedValues.QueryStringCacheKeys:
+      - ref
+      - source
+      MinTTL: 60
+      DefaultTTL: 60
+      MaxTTL: 120
+    - PathPattern: /??-??
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Cookies.Forward: whitelist
+      ForwardedValues.Cookies.WhitelistedNames:
+      - home-ui-ab
+      - theme
+      - color
+      - BNC-Location
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - k8scluster
+      - CloudFront-Is-Mobile-Viewer
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /??-??/
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Cookies.Forward: whitelist
+      ForwardedValues.Cookies.WhitelistedNames:
+      - home-ui-ab
+      - theme
+      - color
+      - BNC-Location
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - k8scluster
+      - CloudFront-Is-Mobile-Viewer
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /??
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Cookies.Forward: whitelist
+      ForwardedValues.Cookies.WhitelistedNames:
+      - home-ui-ab
+      - theme
+      - color
+      - BNC-Location
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - k8scluster
+      - CloudFront-Is-Mobile-Viewer
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /??/
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Cookies.Forward: whitelist
+      ForwardedValues.Cookies.WhitelistedNames:
+      - home-ui-ab
+      - theme
+      - color
+      - BNC-Location
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - k8scluster
+      - CloudFront-Is-Mobile-Viewer
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /??-??/earn*
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Cookies.Forward: whitelist
+      ForwardedValues.Cookies.WhitelistedNames:
+      - theme
+      - color
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - k8scluster
+      - CloudFront-Is-Mobile-Viewer
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /??/earn*
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Cookies.Forward: whitelist
+      ForwardedValues.Cookies.WhitelistedNames:
+      - theme
+      - color
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - k8scluster
+      - CloudFront-Is-Mobile-Viewer
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /??/support*
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.Cookies.Forward: whitelist
+      ForwardedValues.Cookies.WhitelistedNames:
+      - help-center-ui-ab
+      - theme
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - k8scluster
+      - Host
+      - Accept-Encoding
+      - x-host
+      ForwardedValues.QueryStringCacheKeys:
+      - c
+      - navId
+      MinTTL: 300
+      DefaultTTL: 300
+      MaxTTL: 300
+    - PathPattern: /??-??/support*
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.Cookies.Forward: whitelist
+      ForwardedValues.Cookies.WhitelistedNames:
+      - help-center-ui-ab
+      - theme
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - k8scluster
+      - Host
+      - Accept-Encoding
+      - x-host
+      ForwardedValues.QueryStringCacheKeys:
+      - c
+      - navId
+      MinTTL: 300
+      DefaultTTL: 300
+      MaxTTL: 300
+    - PathPattern: /??/*
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.Cookies.Forward: whitelist
+      ForwardedValues.Cookies.WhitelistedNames:
+      - theme
+      - color
+      - BNC-Location
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - k8scluster
+      - bnc-theme
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys:
+      - ref
+      - roomId
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /??-??/*
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.Cookies.Forward: whitelist
+      ForwardedValues.Cookies.WhitelistedNames:
+      - theme
+      - color
+      - BNC-Location
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - k8scluster
+      - bnc-theme
+      - Host
+      - Accept-Encoding
+      ForwardedValues.QueryStringCacheKeys:
+      - ref
+      - roomId
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /pwa*
+      TargetOriginId: S3-bin.bnbstatic.com
+      Compress: true
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers: []
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 60
+      DefaultTTL: 3600
+      MaxTTL: 86400
+    - PathPattern: /fapi/v1/exchangeInfo
+      TargetOriginId: ELB-bin-prod-nginx-www-fapi-alb
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - versioncode
+      - versionname
+      ForwardedValues.QueryStringCacheKeys:
+      - showall
+      MinTTL: 0
+      DefaultTTL: 0
+      MaxTTL: 0
+    - PathPattern: /fapi/v1/openInterest
+      TargetOriginId: ELB-bin-prod-nginx-www-fapi-alb
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - versioncode
+      - versionname
+      ForwardedValues.QueryStringCacheKeys:
+      - symbol
+      MinTTL: 0
+      DefaultTTL: 0
+      MaxTTL: 0
+    - PathPattern: /fapi/v1/serviceStatus
+      TargetOriginId: ELB-bin-prod-nginx-www-fapi-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - Host
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 300
+      DefaultTTL: 300
+      MaxTTL: 300
+    - PathPattern: /fapi/*
+      TargetOriginId: ELB-bin-prod-nginx-www-fapi-alb
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.Cookies.Forward: all
+      ForwardedValues.Headers:
+      - '*'
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 0
+      DefaultTTL: 86400
+      MaxTTL: 31536000
+    - PathPattern: /dapi/v1/exchangeInfo
+      TargetOriginId: ELB-bin-prod-be-common-dispatcher-alb
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - versioncode
+      - versionname
+      ForwardedValues.QueryStringCacheKeys:
+      - showall
+      MinTTL: 0
+      DefaultTTL: 0
+      MaxTTL: 0
+    - PathPattern: /dapi/v1/openInterest
+      TargetOriginId: ELB-bin-prod-be-common-dispatcher-alb
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - versioncode
+      - versionname
+      ForwardedValues.QueryStringCacheKeys:
+      - symbol
+      MinTTL: 0
+      DefaultTTL: 0
+      MaxTTL: 0
+    - PathPattern: /dapi/v1/serviceStatus
+      TargetOriginId: ELB-bin-prod-be-common-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - Host
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 300
+      DefaultTTL: 300
+      MaxTTL: 300
+    - PathPattern: /static/*
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Cookies.Forward: whitelist
+      ForwardedValues.Cookies.WhitelistedNames:
+      - canary
+      ForwardedValues.Headers:
+      - Host
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 0
+      DefaultTTL: 3600
+      MaxTTL: 3600
+    - PathPattern: /*api/*v1/public/asset-service/partner/supported-assets
+      TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - clientId
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/asset-service/product/currency
+      TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - fromC2C
+      MinTTL: 3
+      DefaultTTL: 3
+      MaxTTL: 3
+    - PathPattern: /*api/*v1/public/asset-service/product/get-c2c-top-products
+      TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - currency
+      MinTTL: 3
+      DefaultTTL: 3
+      MaxTTL: 3
+    - PathPattern: /*api/*v?/public/asset-service/product/get-currency-product
+      TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - includeEtf
+      - symbol
+      MinTTL: 3
+      DefaultTTL: 3
+      MaxTTL: 3
+    - PathPattern: /*api/*v1/public/asset-service/product/get-exchange-info
+      TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      - BNC-Location
+      ForwardedValues.QueryStringCacheKeys:
+      - symbol
+      MinTTL: 30
+      DefaultTTL: 30
+      MaxTTL: 30
+    - PathPattern: /*api/*v?/public/asset-service/product/get-products
+      TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      - BNC-Location
+      ForwardedValues.QueryStringCacheKeys:
+      - includeEtf
+      - symbol
+      MinTTL: 3
+      DefaultTTL: 3
+      MaxTTL: 3
+    - PathPattern: /*api/*v1/public/asset-service/product/get-sort-products
+      TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 3
+      DefaultTTL: 3
+      MaxTTL: 3
+    - PathPattern: /*api/*v1/public/asset-service/product/get-top-products
+      TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 3
+      DefaultTTL: 3
+      MaxTTL: 3
+    - PathPattern: /*api/*v1/public/asset-service/product/get-trade-fee
+      TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+      ForwardedValues.Cookies.Forward: whitelist
+      ForwardedValues.Cookies.WhitelistedNames:
+      - cr20
+      - p20t
+      ForwardedValues.Headers:
+      - '*'
+      ForwardedValues.QueryStringCacheKeys:
+      - symbol
+      MinTTL: 0
+      DefaultTTL: 0
+      MaxTTL: 0
+    - PathPattern: /*api/*v1/public/asset-service/product/price-convert
+      TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - amount
+      - date
+      - from
+      - to
+      MinTTL: 3
+      DefaultTTL: 3
+      MaxTTL: 3
+    - PathPattern: /*api/*v1/public/asset/asset/get
+      TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - asset
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v?/public/asset/asset/get-all-asset
+      TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - region
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/asset/biz-tags
+      TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - bizKey
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/asset/symbols/get
+      TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      - BNC-Location
+      ForwardedValues.QueryStringCacheKeys:
+      - baseAsset
+      - quoteAsset
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v2/public/asset-service/product/get-product-by-symbol
+      TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - symbol
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v2/public/asset-service/product/get-product-by-symbols
+      TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - symbols
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/mbxgateway/info/get-wssurl
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - Host
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 0
+      DefaultTTL: 0
+      MaxTTL: 0
+    - PathPattern: /*api/*v1/public/margin/symbols
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - Origin
+      - x-gateway-gray
+      - CloudFront-Is-Mobile-Viewer
+      - Host
+      - lang
+      - BNC-Location
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 60
+      DefaultTTL: 60
+      MaxTTL: 60
+    - PathPattern: /*api/*v1/public/common/config/url-and-project
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - Origin
+      - x-gateway-gray
+      - CloudFront-Is-Mobile-Viewer
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 60
+      DefaultTTL: 60
+      MaxTTL: 60
+    - PathPattern: /*api/*v1/public/margin/asset/all
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - Origin
+      - x-gateway-gray
+      - CloudFront-Is-Mobile-Viewer
+      - Host
+      - lang
+      - BNC-Location
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 60
+      DefaultTTL: 60
+      MaxTTL: 60
+    - PathPattern: /*api/*v1/friendly/staking/list*
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.Cookies.Forward: all
+      ForwardedValues.Headers:
+      - Origin
+      - x-gateway-gray
+      - CloudFront-Is-Mobile-Viewer
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 30
+      DefaultTTL: 30
+      MaxTTL: 30
+    - PathPattern: /*api/*v1/public/common/config/app/all
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 30
+      DefaultTTL: 30
+      MaxTTL: 30
+    - PathPattern: /*api/*v1/public/common/config/appchat-open-lang
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - Host
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 30
+      DefaultTTL: 30
+      MaxTTL: 30
+    - PathPattern: /*api/*v1/public/common/config/android/dynamic-config
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - Host
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 30
+      DefaultTTL: 30
+      MaxTTL: 30
+    - PathPattern: /*api/*v1/public/common/config/get-ref-switch
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - Host
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 30
+      DefaultTTL: 30
+      MaxTTL: 30
+    - PathPattern: /*api/*v1/public/common/config/bnb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - Host
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 30
+      DefaultTTL: 30
+      MaxTTL: 30
+    - PathPattern: /*api/*v1/public/common/config/get-c2c-wssurl
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - Host
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 30
+      DefaultTTL: 30
+      MaxTTL: 30
+    - PathPattern: /*api/*v1/public/common/config/register-open-status
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - Host
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 30
+      DefaultTTL: 30
+      MaxTTL: 30
+    - PathPattern: /*api/*v1/public/common/config/appchat-open-status
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - Host
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 30
+      DefaultTTL: 30
+      MaxTTL: 30
+    - PathPattern: /*api/*v1/public/account/user/agent-rate/get
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.Cookies.Forward: all
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - User-Agent
+      - Host
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 30
+      DefaultTTL: 30
+      MaxTTL: 30
+    - PathPattern: /*api/*v1/public/asset-service/product/get-currency-by-lang
+      TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 30
+      DefaultTTL: 30
+      MaxTTL: 30
+    - PathPattern: /*api/*v1/public/fiat-channel-gateway/get-selector
+      ForwardedValues.Headers:
+      - Origin
+      - Access-Control-Request-Method
+      - x-gateway-gray
+      - Access-Control-Allow-Origin
+      - Access-Control-Request-Headers
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - lang
+      MinTTL: 60
+      DefaultTTL: 60
+      MaxTTL: 60
+    - PathPattern: /*api/*v1/public/future/leverage/token/list
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - Host
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 2
+      DefaultTTL: 2
+      MaxTTL: 2
+    - PathPattern: /*api/*v1/public/margin/marketStats/*
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - asset
+      - limit
+      - period
+      - symbol
+      MinTTL: 300
+      DefaultTTL: 300
+      MaxTTL: 300
+    - PathPattern: /*api/*v1/public/hot/search/assets
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - Host
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 300
+      DefaultTTL: 300
+      MaxTTL: 300
+    - PathPattern: /*api/*v1/public/margin/pair/all
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - Host
+      - lang
+      - BNC-Location
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 30
+      DefaultTTL: 30
+      MaxTTL: 30
+    - PathPattern: /*api/*v1/public/isolated-margin/pair/*
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - Host
+      - lang
+      - BNC-Location
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 60
+      DefaultTTL: 60
+      MaxTTL: 60
+    - PathPattern: /*api/*v1/public/asset-service/wallet/get-support-asset
+      TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - Host
+      - BNC-Location
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 30
+      DefaultTTL: 30
+      MaxTTL: 30
+    - PathPattern: /*api/*v1/public/indicator/abnormal-trading-notice/list
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - Host
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/indicator/abnormal-trading-notice/listByNoticeType
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - Host
+      ForwardedValues.QueryStringCacheKeys:
+      - isBlockTrade
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/indicator/abnormal-trading-notice/pageList
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - Host
+      ForwardedValues.QueryStringCacheKeys:
+      - baseAsset
+      - endTime
+      - noticeType
+      - pageIndex
+      - pageSize
+      - quotaAsset
+      - startTime
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/indicator/capital-flow/info
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - Host
+      ForwardedValues.QueryStringCacheKeys:
+      - period
+      - symbol
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/indicator/capital-flow/netCapitalIn
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - Host
+      ForwardedValues.QueryStringCacheKeys:
+      - intervalEnum
+      - size
+      - symbol
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/indicator/capital-flow/volumeTypeNetCapitalIn
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - Host
+      ForwardedValues.QueryStringCacheKeys:
+      - groupCount
+      - groupSize
+      - period
+      - symbol
+      - volumeType
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/delivery/common/configs
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - Host
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 60
+      DefaultTTL: 60
+      MaxTTL: 60
+    - PathPattern: /*api/*v1/public/future/common/configs
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - Host
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 60
+      DefaultTTL: 60
+      MaxTTL: 60
+    - PathPattern: /*api/*v1/public/defi-pos/flexible/product/interest/summary/list
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - date
+      - pageIndex
+      - pageSize
+      - productId
+      MinTTL: 30
+      DefaultTTL: 30
+      MaxTTL: 30
+    - PathPattern: /*api/*v1/public/pos/flexible/product/interest/summary/list
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - date
+      - pageIndex
+      - pageSize
+      - productId
+      MinTTL: 30
+      DefaultTTL: 30
+      MaxTTL: 30
+    - PathPattern: /*api/*v1/public/marketing/config/international/web/query
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - country
+      - gary
+      - lang
+      MinTTL: 30
+      DefaultTTL: 30
+      MaxTTL: 30
+    - PathPattern: /*api/*v1/public/lending/union/assetList
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - type
+      MinTTL: 30
+      DefaultTTL: 30
+      MaxTTL: 30
+    - PathPattern: /*api/*v1/public/cms/article/*
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      - x-host
+      - isGray
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 120
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /*api/*v1/public/cms/carouselFlash/*
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      - x-host
+      - isGray
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 120
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /*api/*v1/public/cms/catalog/*
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      - x-host
+      - isGray
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 120
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /*api/*v1/public/cms/content*
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      - x-host
+      - isGray
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 120
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /*api/*v1/public/cms/flashContent/*
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      - x-host
+      - isGray
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 120
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /*api/*v1/public/cms/importantContent/*
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      - x-host
+      - isGray
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 120
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /*api/*v1/public/cms/news/*
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      - x-host
+      - isGray
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 120
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /*api/*v1/public/cms/released-events
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      - x-host
+      - isGray
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 120
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /*api/*v1/public/cms/playlist/*
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      - x-host
+      - isGray
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 120
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /bapi/composite/v1/public/bigdata/finance/kline/openPrice*
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      - x-host
+      - isGray
+      ForwardedValues.QueryStringCacheKeys:
+      - business
+      - datetime
+      - symbol
+      - timezone
+      MinTTL: 300
+      DefaultTTL: 300
+      MaxTTL: 300
+    - PathPattern: /bapi/composite/v1/public/cms/*
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.Cookies.Forward: all
+      ForwardedValues.Headers:
+      - '*'
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 0
+      DefaultTTL: 86400
+      MaxTTL: 31536000
+    - PathPattern: /*api/*v1/public/article/*
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      - x-host
+      - isGray
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 120
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /*api/*v2/public/cms/*
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      - x-host
+      - isGray
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 120
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /*api/*v1/public/marketing/blog/*
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      - x-host
+      - isGray
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 120
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /*api/*v1/public/content/blog/*
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      - x-host
+      - isGray
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 120
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /*api/*v?/public/common/config/stub/score
+      ForwardedValues.Headers:
+      - '*'
+      ForwardedValues.QueryStringCacheKeys:
+      - timestamp
+      MinTTL: 0
+      DefaultTTL: 0
+      MaxTTL: 0
+    - PathPattern: /*api/*v1/public/common/config/web/dynamic-config
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 30
+      DefaultTTL: 30
+      MaxTTL: 30
+    - PathPattern: /*api/*v1/public/country/support/check/code
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - countryCode
+      MinTTL: 30
+      DefaultTTL: 30
+      MaxTTL: 30
+    - PathPattern: /*api/*v1/public/lending/dot/dotProject/getProjectByCode
+      ForwardedValues.Headers:
+      - '*'
+      ForwardedValues.QueryStringCacheKeys:
+      - projectCode
+      MinTTL: 0
+      DefaultTTL: 0
+      MaxTTL: 0
+    - PathPattern: /*api/*v1/public/lending/launchpool/activity/detail
+      ForwardedValues.Headers:
+      - '*'
+      ForwardedValues.QueryStringCacheKeys:
+      - asset
+      MinTTL: 0
+      DefaultTTL: 0
+      MaxTTL: 0
+    - PathPattern: /*api/*v1/public/margin/vip/spec/history-interest-rate
+      ForwardedValues.Headers:
+      - '*'
+      ForwardedValues.QueryStringCacheKeys:
+      - asset
+      - current
+      - endTime
+      - size
+      - startTime
+      - vipLevel
+      MinTTL: 0
+      DefaultTTL: 0
+      MaxTTL: 0
+    - PathPattern: /*api/*v1/public/market/client/upload/presigned
+      ForwardedValues.Headers:
+      - '*'
+      ForwardedValues.QueryStringCacheKeys:
+      - fileExt
+      MinTTL: 0
+      DefaultTTL: 0
+      MaxTTL: 0
+    - PathPattern: /*api/*v1/public/market/client/versionInfo/new
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - client
+      - version
+      MinTTL: 120
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /*api/*v1/public/market/derivatives-entrance/config
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - currency
+      MinTTL: 600
+      DefaultTTL: 600
+      MaxTTL: 600
+    - PathPattern: /*api/*v1/public/marketing/app-configs/navbar/current
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - exchangeRate
+      - lang
+      MinTTL: 30
+      DefaultTTL: 30
+      MaxTTL: 30
+    - PathPattern: /*api/*v1/public/marketing/app/newer/guide
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - isNight
+      MinTTL: 30
+      DefaultTTL: 30
+      MaxTTL: 30
+    - PathPattern: /*api/*v1/public/marketing/app/recommend/features
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - isNight
+      - Host
+      - lang
+      - versionCode
+      ForwardedValues.QueryStringCacheKeys:
+      - currency
+      - isNight
+      - recommendType
+      MinTTL: 300
+      DefaultTTL: 300
+      MaxTTL: 300
+    - PathPattern: /bapi/composite/v1/public/marketing/app/carouselBanner
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - isNight
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 300
+      DefaultTTL: 300
+      MaxTTL: 300
+    - PathPattern: /*api/*v1/public/marketing/menu/list/all
+      ForwardedValues.Headers:
+      - clienttype
+      - referer
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - currency
+      - lang
+      - referer
+      MinTTL: 60
+      DefaultTTL: 60
+      MaxTTL: 60
+    - PathPattern: /*api/*v1/public/marketing/recommend/hotAsset/list
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      - BNC-Location
+      ForwardedValues.QueryStringCacheKeys:
+      - currency
+      - type
+      MinTTL: 300
+      DefaultTTL: 300
+      MaxTTL: 300
+    - PathPattern: /*api/*v1/public/marketing/user/task/list
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - currency
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/swap-api/vip/fee/listAll
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - poolId
+      MinTTL: 60
+      DefaultTTL: 60
+      MaxTTL: 60
+    - PathPattern: /*api/*v3/public/haodesk/common/config/js
+      ForwardedValues.Headers:
+      - authorization
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - hostParam
+      - pathName
+      MinTTL: 60
+      DefaultTTL: 60
+      MaxTTL: 60
+    - PathPattern: /*api/*v3/public/haodesk/std/common/config/js
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - hostParam
+      - pathName
+      MinTTL: 60
+      DefaultTTL: 60
+      MaxTTL: 60
+    - PathPattern: /*api/*v1/public/account/all/countries
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 30
+      DefaultTTL: 30
+      MaxTTL: 30
+    - PathPattern: /*api/*v1/public/c2c/agreement/detail
+      TargetOriginId: ELB-bin-prod-be-business-unit-dispatcher-alb
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - agrtId
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/chat/chat-business/open-status
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - lang
+      - language
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/chat/chat-tag/list
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - languageId
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/common/config/getLanguageMapByKey
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - key
+      MinTTL: 60
+      DefaultTTL: 60
+      MaxTTL: 60
+    - PathPattern: /*api/*v1/public/margin/price-index/history
+      ForwardedValues.Headers:
+      - '*'
+      ForwardedValues.QueryStringCacheKeys:
+      - endTime
+      - limit
+      - pair
+      - startTime
+      MinTTL: 0
+      DefaultTTL: 0
+      MaxTTL: 0
+    - PathPattern: /*api/*v1/public/market/client/versionInfo
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - client
+      - version
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/market/notice/get
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - order
+      - page
+      - rows
+      - sort
+      MinTTL: 300
+      DefaultTTL: 300
+      MaxTTL: 300
+    - PathPattern: /*api/*v1/public/marketing/app/findAllProAppDynamicMenuConfig
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - CloudFront-Viewer-Country
+      - isNight
+      - Host
+      - lang
+      - versionCode
+      ForwardedValues.QueryStringCacheKeys:
+      - depositNewStyle
+      - headerLang
+      - isNight
+      - order
+      - page
+      - recommendCurrency
+      - recommendType
+      - rows
+      - simpleStyle
+      - sort
+      - type
+      - userCurrency
+      - versionCode
+      MinTTL: 300
+      DefaultTTL: 300
+      MaxTTL: 300
+    - PathPattern: /*api/*v1/public/marketing/app/newerBanners
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - isNight
+      - Host
+      - lang
+      - versionCode
+      ForwardedValues.QueryStringCacheKeys:
+      - currency
+      - domain
+      - headerLang
+      - isNight
+      - lang
+      - pattern
+      - requestType
+      - type
+      - versionCode
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/marketing/app/newerFeatures
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - currency
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/marketing/article/titles
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - articleId
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/marketing/baiduSEO/tabInfo
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - tabId
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/marketing/lite/get-open
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - currency
+      MinTTL: 300
+      DefaultTTL: 300
+      MaxTTL: 300
+    - PathPattern: /*api/*v1/public/marketing/menu/list
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - currency
+      - lang
+      MinTTL: 60
+      DefaultTTL: 60
+      MaxTTL: 60
+    - PathPattern: /*api/*v1/public/marketing/symbol/list
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      - BNC-Location
+      ForwardedValues.QueryStringCacheKeys:
+      - limit
+      - sortBy
+      - start
+      MinTTL: 300
+      DefaultTTL: 300
+      MaxTTL: 300
+    - PathPattern: /*api/*v1/public/marketing/tardingPair/detail
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      - BNC-Location
+      ForwardedValues.QueryStringCacheKeys:
+      - isTrade
+      - language
+      - symbol
+      MinTTL: 300
+      DefaultTTL: 300
+      MaxTTL: 300
+    - PathPattern: /*api/*v1/public/marketing/vote2/project
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 3
+      DefaultTTL: 3
+      MaxTTL: 3
+    - PathPattern: /*api/*v1/public/notification/trade-notice/get-abnormal-trade-notice-list
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - offset
+      - page
+      MinTTL: 3
+      DefaultTTL: 3
+      MaxTTL: 3
+    - PathPattern: /*api/*v1/public/notification/trade-notice/get-volumn-market-activity-list
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 30
+      DefaultTTL: 30
+      MaxTTL: 30
+    - PathPattern: /*api/*v2/public/ocbs/get-supported-business-products
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 60
+      DefaultTTL: 60
+      MaxTTL: 60
+    - PathPattern: /*api/*v1/public/ocbs/app/get-sell-selector
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - lang
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/ocbs/coin-to-coin/get-selector
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - includeFiat
+      - preTest
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v?/public/swap-api/pool/pairList
+      ForwardedValues.Headers:
+      - '*'
+      ForwardedValues.QueryStringCacheKeys:
+      - type
+      MinTTL: 0
+      DefaultTTL: 0
+      MaxTTL: 0
+    - PathPattern: /*api/*v2/public/c2c/trade-method/list-by-page
+      TargetOriginId: ELB-bin-prod-be-business-unit-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - order
+      - page
+      - rows
+      - sort
+      MinTTL: 30
+      DefaultTTL: 30
+      MaxTTL: 30
+    - PathPattern: /*api/*v2/public/fiatpayment/currency/list-currency
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - businessType
+      - clientType
+      - currencyType
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/fiatpayment/menu*
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - x-cdn-region
+      - Host
+      - env-preview
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - currency
+      MinTTL: 60
+      DefaultTTL: 60
+      MaxTTL: 60
+    - PathPattern: /*api/*v?/public/market/notice/get
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - order
+      - page
+      - rows
+      - sort
+      - source
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v2/public/ocbs/other/get-selector
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - lang
+      - module
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/capital/getNetworkCoinAll
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      - BNC-Location
+      ForwardedValues.QueryStringCacheKeys:
+      - ignoreAsset
+      - includeEtf
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/capital/deposit-retrieval/sys
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 3600
+      DefaultTTL: 3600
+      MaxTTL: 8400
+    - PathPattern: /*api/*v1/public/certificate/countries
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - countryType
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/fiat-channel-gateway/get-support-list
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - cryptoAsset
+      - fiatAsset
+      - filterOwnerChannel
+      - isTest
+      - tradeType
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/market/all
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - order
+      - page
+      - rows
+      - sort
+      MinTTL: 300
+      DefaultTTL: 300
+      MaxTTL: 300
+    - PathPattern: /*api/*v1/public/marketing/eventWebPage
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - eventId
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/message/get-register-email-black-list
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 30
+      DefaultTTL: 30
+      MaxTTL: 30
+    - PathPattern: /*api/*v1/public/official-channel/verify
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - content
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/paxos/callback/
+      ForwardedValues.Headers:
+      - '*'
+      ForwardedValues.QueryStringCacheKeys:
+      - code
+      - state
+      MinTTL: 0
+      DefaultTTL: 0
+      MaxTTL: 0
+    - PathPattern: /*api/*v1/public/simplex/get-status
+      ForwardedValues.Headers:
+      - '*'
+      ForwardedValues.QueryStringCacheKeys:
+      - channelName
+      MinTTL: 0
+      DefaultTTL: 0
+      MaxTTL: 0
+    - PathPattern: /*api/*v1/public/zendesk/instant-search
+      ForwardedValues.Headers:
+      - '*'
+      ForwardedValues.QueryStringCacheKeys:
+      - locale
+      - query
+      MinTTL: 0
+      DefaultTTL: 0
+      MaxTTL: 0
+    - PathPattern: /*api/*v1/public/marketing/baiduSEO/pages/*
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - pageUrl
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/ocbs/trade/credit-host/get-card
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - cardId
+      - orderId
+      - sign
+      - token
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/ocbs/trade/credit-host/*
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.Headers:
+      - '*'
+      ForwardedValues.QueryStringCacheKeys:
+      - cardId
+      - orderId
+      - sign
+      - token
+      MinTTL: 0
+      DefaultTTL: 0
+      MaxTTL: 0
+    - PathPattern: /*api/*v1/public/common/config/client/dynamic-domain
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - k8scluster
+      - Host
+      ForwardedValues.QueryStringCacheKeys:
+      - tag
+      MinTTL: 86400
+      DefaultTTL: 86400
+      MaxTTL: 86400
+    - PathPattern: /*api/*v2/public/c2c/adv/selected-adv/*
+      TargetOriginId: ELB-bin-prod-be-business-unit-dispatcher-alb
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - advNo
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v2/public/ocbs/fiat-channel-gateway/get-fiat-channels/*
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - isPreTest
+      - lang
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/c2c/adv-order/*
+      TargetOriginId: ELB-bin-prod-be-business-unit-dispatcher-alb
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - advNo
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/chatbot/question/*
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - keyword
+      - language
+      - num
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/coin-to-coin/app/*
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - amount
+      - baseAsset
+      - fiatConvert
+      - fromAsset
+      - toAsset
+      - userId
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/common/config/*
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - versioncode
+      - lang
+      - versionname
+      ForwardedValues.QueryStringCacheKeys:
+      - name
+      - region
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/common/security/*
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - '*'
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 0
+      DefaultTTL: 0
+      MaxTTL: 0
+    - PathPattern: /*api/*v1/public/delivery/data/*
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - contractType
+      - endTime
+      - limit
+      - pair
+      - period
+      - startTime
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/launchpool/project/*
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - pageIndex
+      - pageSize
+      - projectId
+      MinTTL: 15
+      DefaultTTL: 15
+      MaxTTL: 15
+    - PathPattern: /*api/*v1/public/lpd/lotteryProject/*
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - lang
+      - projectId
+      MinTTL: 15
+      DefaultTTL: 15
+      MaxTTL: 15
+    - PathPattern: /*api/*v1/public/lpd/product/*
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - agreementId
+      - language
+      - productId
+      MinTTL: 15
+      DefaultTTL: 15
+      MaxTTL: 15
+    - PathPattern: /*api/*v1/public/lpd/project/*
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - lang
+      - page
+      - pageSize
+      - productType
+      - projectId
+      - status
+      - testFlag
+      MinTTL: 15
+      DefaultTTL: 15
+      MaxTTL: 15
+    - PathPattern: /*api/*v1/public/future/section/info
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 10
+      DefaultTTL: 10
+      MaxTTL: 10
+    - PathPattern: /*api/*v1/public/future/symbol/extInfo
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 10
+      DefaultTTL: 10
+      MaxTTL: 10
+    - PathPattern: /*api/*v1/public/future/announcement/announcement-history-v2
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - business
+      - device
+      - language
+      - status
+      MinTTL: 300
+      DefaultTTL: 300
+      MaxTTL: 300
+    - PathPattern: /*api/*v1/public/stock-token/market/klines
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - endTime
+      - interval
+      - limit
+      - startTime
+      - symbol
+      MinTTL: 2
+      DefaultTTL: 2
+      MaxTTL: 2
+    - PathPattern: /*api/*v1/public/market/luck/*
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - id
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/market/recommend/*
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - domain
+      - isNew
+      - lang
+      - order
+      - page
+      - region
+      - rows
+      - sort
+      MinTTL: 300
+      DefaultTTL: 300
+      MaxTTL: 300
+    - PathPattern: /*api/*v1/public/market/ws-cache/*
+      ForwardedValues.Headers:
+      - '*'
+      ForwardedValues.QueryStringCacheKeys:
+      - channel
+      MinTTL: 0
+      DefaultTTL: 0
+      MaxTTL: 0
+    - PathPattern: /*api/*v1/public/marketing/app/*
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - CloudFront-Viewer-Country
+      - isNight
+      - Host
+      - BNC-App-Mode
+      - lang
+      - versionCode
+      ForwardedValues.QueryStringCacheKeys:
+      - cryptoName
+      - currency
+      - type
+      - userCurrency
+      MinTTL: 300
+      DefaultTTL: 300
+      MaxTTL: 300
+    - PathPattern: /*api/*v1/public/marketing/deposit/*
+      ForwardedValues.Headers:
+      - '*'
+      ForwardedValues.QueryStringCacheKeys:
+      - productId
+      MinTTL: 0
+      DefaultTTL: 0
+      MaxTTL: 0
+    - PathPattern: /*api/*v2/public/capital/config/*
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      - BNC-Location
+      ForwardedValues.QueryStringCacheKeys:
+      - coin
+      - ignoreAsset
+      - includeEtf
+      - lang
+      - sameAddress
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v2/public/ocbs/fiat-channel-gateway/*
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - channel
+      - channelCode
+      - cryptoAsset
+      - fiatCode
+      - lang
+      - tradeType
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/fiat-channel-gateway/*
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - channelCode
+      - cryptoAsset
+      - fiatCode
+      - fiatCurrency
+      - lang
+      - tradeType
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /*api/*v1/public/margin/*
+      ForwardedValues.Headers:
+      - '*'
+      ForwardedValues.QueryStringCacheKeys:
+      - asset
+      - symbol
+      MinTTL: 0
+      DefaultTTL: 0
+      MaxTTL: 0
+    - PathPattern: /*api/*v1/public/fiatpayment/hz/3ds-callback/*/*
+      ForwardedValues.Headers:
+      - '*'
+      ForwardedValues.QueryStringCacheKeys:
+      - encodedBaseUrl
+      - paymentId
+      - sessionId
+      MinTTL: 0
+      DefaultTTL: 0
+      MaxTTL: 0
+    - PathPattern: /*api/*v1/public/c2c/agreement/*/*
+      TargetOriginId: ELB-bin-prod-be-business-unit-dispatcher-alb
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - lang
+      - theme
+      - userType
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /bapi/career/jobs-lever/v0/postings/binance
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - k8scluster
+      - Host
+      ForwardedValues.QueryStringCacheKeys:
+      - group
+      - mode
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /*api/*v?/public/asset-service/wallet/get-all-config
+      TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 3
+      DefaultTTL: 3
+      MaxTTL: 3
+    - PathPattern: /bapi/live/v*/public/live/room-list
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.Headers:
+      - k8scluster
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - hits
+      - languageType
+      - limit
+      - liveId
+      - liveStatus
+      - start
+      - videoType
+      MinTTL: 10
+      DefaultTTL: 10
+      MaxTTL: 10
+    - PathPattern: /bapi/live/v1/public/live/room-detail
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.Headers:
+      - k8scluster
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - id
+      MinTTL: 5
+      DefaultTTL: 5
+      MaxTTL: 5
+    - PathPattern: /bapi/live/v1/public/live/events
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.Headers:
+      - k8scluster
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - liveId
+      MinTTL: 10
+      DefaultTTL: 10
+      MaxTTL: 10
+    - PathPattern: /bapi/live/v1/public/live/category/*
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.Headers:
+      - k8scluster
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - categoryId
+      - hits
+      - limit
+      - liveId
+      - liveStatus
+      MinTTL: 10
+      DefaultTTL: 10
+      MaxTTL: 10
+    - PathPattern: /bapi/live/v1/public/live/chat-records
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.Headers:
+      - k8scluster
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - limit
+      - liveId
+      - msgSeq
+      MinTTL: 1
+      DefaultTTL: 1
+      MaxTTL: 1
+    - PathPattern: /bapi/eoptions/v1/public/eoptions/*
+      TargetOriginId: ELB-bin-prod-be-common-dispatcher-alb
+      ForwardedValues.Headers:
+      - clienttype
+      - x-gateway-gray
+      - Host
+      - lang
+      ForwardedValues.QueryStringCacheKeys:
+      - baseAsset
+      - contract
+      - endDate
+      - endTime
+      - expiration
+      - interval
+      - limit
+      - merge
+      - pageIndex
+      - pageSize
+      - startDate
+      - startTime
+      - symbol
+      - underlying
+      - underlyingAsset
+      MinTTL: 1
+      DefaultTTL: 1
+      MaxTTL: 1
+    - PathPattern: /bapi/composite/v1/public/growth-activity/button/info
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.QueryString: false
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - Host
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 60
+      DefaultTTL: 60
+      MaxTTL: 60
+    - PathPattern: /bapi/fe/micro/static/icon*
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.Headers:
+      - x-gateway-gray
+      - k8scluster
+      - Host
+      ForwardedValues.QueryStringCacheKeys:
+      - color
+      - iconName
+      MinTTL: 86400
+      DefaultTTL: 604800
+      MaxTTL: 2592000
+    - PathPattern: /bapi/mp/v3/apps/*/details
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.Headers:
+      - bnc-uuid
+      - clientType
+      - x-gateway-gray
+      - CloudFront-Viewer-Country
+      - k8scluster
+      - x-token
+      - Host
+      - versionName
+      - lang
+      - versionCode
+      ForwardedValues.QueryStringCacheKeys:
+      - channel
+      - version
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /bapi/mp/v4/tenant/apps/public/*/details
+      AllowedMethods.Items:
+      - HEAD
+      - GET
+      ForwardedValues.Headers:
+      - x-mp-gray
+      - clientType
+      - CloudFront-Viewer-Country
+      - k8scluster
+      - Host
+      - versionName
+      - lang
+      - versionCode
+      - host-app-id
+      ForwardedValues.QueryStringCacheKeys:
+      - appId
+      - version
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /bapi/mp/v?/apps/private/*
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.Headers:
+      - '*'
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 0
+      DefaultTTL: 0
+      MaxTTL: 0
+    - PathPattern: /bapi/mp/v?/apps/*
+      TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.Headers:
+      - clientType
+      - x-gateway-gray
+      - CloudFront-Viewer-Country
+      - k8scluster
+      - x-token
+      - Host
+      - versionName
+      - lang
+      - versionCode
+      ForwardedValues.QueryStringCacheKeys:
+      - channel
+      - count
+      - currentVersion
+      - cursor
+      - entranceId
+      - requestVersion
+      - revision
+      - text
+      - version
+      MinTTL: 60
+      DefaultTTL: 120
+      MaxTTL: 120
+    - PathPattern: /bapi/accounts/*
+      TargetOriginId: ELB-bin-prod-be-account-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.Cookies.Forward: all
+      ForwardedValues.Headers:
+      - '*'
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 0
+      DefaultTTL: 86400
+      MaxTTL: 31536000
+    - PathPattern: /bapi/futures/*
+      TargetOriginId: ELB-bin-prod-be-futures-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.Cookies.Forward: all
+      ForwardedValues.Headers:
+      - '*'
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 0
+      DefaultTTL: 86400
+      MaxTTL: 31536000
+    - PathPattern: /bapi/asset/*
+      TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.Cookies.Forward: all
+      ForwardedValues.Headers:
+      - '*'
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 0
+      DefaultTTL: 86400
+      MaxTTL: 31536000
+    - PathPattern: /bapi/capital/*
+      TargetOriginId: ELB-bin-prod-be-capital-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.Cookies.Forward: all
+      ForwardedValues.Headers:
+      - '*'
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 0
+      DefaultTTL: 86400
+      MaxTTL: 31536000
+    - PathPattern: /bapi/mbx/*
+      TargetOriginId: ELB-bin-prod-be-capital-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.Cookies.Forward: all
+      ForwardedValues.Headers:
+      - '*'
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 0
+      DefaultTTL: 86400
+      MaxTTL: 31536000
+    - PathPattern: /bapi/fiat/*
+      TargetOriginId: ELB-bin-prod-be-slow-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.Cookies.Forward: all
+      ForwardedValues.Headers:
+      - '*'
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 0
+      DefaultTTL: 86400
+      MaxTTL: 31536000
+    - PathPattern: /bapi/download/*
+      TargetOriginId: ELB-bin-prod-be-slow-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.Cookies.Forward: all
+      ForwardedValues.Headers:
+      - '*'
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 0
+      DefaultTTL: 86400
+      MaxTTL: 31536000
+    - PathPattern: /bapi/kyc/*
+      TargetOriginId: ELB-bin-prod-be-slow-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.Cookies.Forward: all
+      ForwardedValues.Headers:
+      - '*'
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 0
+      DefaultTTL: 86400
+      MaxTTL: 31536000
+    - PathPattern: /bapi/slow/*
+      TargetOriginId: ELB-bin-prod-be-slow-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.Cookies.Forward: all
+      ForwardedValues.Headers:
+      - '*'
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 0
+      DefaultTTL: 86400
+      MaxTTL: 31536000
+    - PathPattern: /bapi/c2c/*
+      TargetOriginId: ELB-bin-prod-be-business-unit-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.Cookies.Forward: all
+      ForwardedValues.Headers:
+      - '*'
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 0
+      DefaultTTL: 86400
+      MaxTTL: 31536000
+    - PathPattern: /bapi/nft/v1/public/nft/ranking/top-collections-v2/ALL/24H/volumeDesc/16
+      TargetOriginId: ELB-bin-prod-be-business-unit-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.Headers:
+      - accept-language
+      - Host
+      - language
+      - lang
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 300
+      DefaultTTL: 300
+      MaxTTL: 300
+    - PathPattern: /bapi/nft/*
+      TargetOriginId: ELB-bin-prod-be-business-unit-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.Cookies.Forward: all
+      ForwardedValues.Headers:
+      - '*'
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 0
+      DefaultTTL: 86400
+      MaxTTL: 31536000
+    - PathPattern: /bapi/*
+      TargetOriginId: ELB-bin-prod-be-common-dispatcher-alb
+      AllowedMethods.Items:
+      - HEAD
+      - DELETE
+      - POST
+      - GET
+      - OPTIONS
+      - PUT
+      - PATCH
+      ForwardedValues.Cookies.Forward: all
+      ForwardedValues.Headers:
+      - '*'
+      ForwardedValues.QueryStringCacheKeys: []
+      MinTTL: 0
+      DefaultTTL: 86400
+      MaxTTL: 31536000
+CustomErrorResponses:
+- ErrorCode: 404
+  ResponsePagePath: ''
+  ResponseCode: ''
+  ErrorCachingMinTTL: 0
+Comment: TF www.binance.com
+Logging:
+  Enabled: true
+  IncludeCookies: false
+  Bucket: bnbcflogs.s3.amazonaws.com
+  Prefix: cflogs/mainsite/
+PriceClass: PriceClass_All
+Enabled: true
+ViewerCertificate:
+  CloudFrontDefaultCertificate: false
+  ACMCertificateArn: arn:aws:acm:us-east-1:369096419186:certificate/72c0c276-76ed-48cd-9ac3-dbfebfcaf6ca
+  SSLSupportMethod: sni-only
+  MinimumProtocolVersion: TLSv1.2_2019
+  Certificate: arn:aws:acm:us-east-1:369096419186:certificate/72c0c276-76ed-48cd-9ac3-dbfebfcaf6ca
+  CertificateSource: acm
+Restrictions:
+  GeoRestriction:
+    RestrictionType: none
+    Items: []
+WebACLId: arn:aws:wafv2:us-east-1:369096419186:global/webacl/bin_prod_mainsite_cf_v2acl/3b615ee4-b419-45f9-86bd-8579a6822569
+HttpVersion: http2
+IsIPV6Enabled: false

@@ -1,0 +1,33 @@
+apiVersion: ec2.aws.infra/v1alpha1
+kind: SecurityGroup
+metadata:
+  Description: managed by https://git.toolsfdg.net/devops/devops-infra
+  GroupName: bin_dev_api_mapper_test_alb_sg
+  TagSpecifications:
+  - ResourceType: security-group
+    Tags:
+    - Key: terraform
+      Value: y
+    - Key: prow-pipeline
+      Value: y
+    - Key: engine
+      Value: devops-infra
+    - Key: devops-infra-service
+      Value: api-mapper-test
+    - Key: env
+      Value: dev
+  VpcId: vpc-06e7bab377f9cb4e9
+spec:
+  ingress:
+  - FromPort: 80
+    IpProtocol: tcp
+    IpRanges:
+    - CidrIp: 172.21.0.0/16
+      Description: all vpc
+    ToPort: 80
+  - FromPort: 443
+    IpProtocol: tcp
+    IpRanges:
+    - CidrIp: 172.21.0.0/16
+      Description: all vpc
+    ToPort: 443

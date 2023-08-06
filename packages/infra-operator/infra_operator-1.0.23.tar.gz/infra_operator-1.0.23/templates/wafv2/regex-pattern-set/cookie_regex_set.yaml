@@ -1,0 +1,16 @@
+apiVersion: wafv2.aws.binance/v1alpha1
+metadata:
+  description: managed by https://git.toolsfdg.net/devops/devops-infra
+spec:
+  RegularExpressionList:
+  - RegexString: 'wscript\.shell|domxssexecutionsink\(|ctxsys\.drithsx\.sn\(|\<script'
+  - RegexString: 'chr\(|createobject\(|gethostbyname\(|concat\(|benchmark\(|\;?waitfor\s+'
+  - RegexString: 'r87\.me|vulnweb\.com|website\.acu|acunetix|bxss\.me|example\.com'
+  - RegexString: 'select\s|where\s|rlike\s|declare|sqloledb|executsql|java\.net\.url\('
+  - RegexString: '%57%48%45%52%45%20|\<\/script|vbscript|sleep\s'
+  - RegexString: 'exec\(|exec\s|response\.write\(|sqlmap\s|bînance|xn--bnance-bwa\.com'
+  - RegexString: 'concat\(|nvl\(|substr\(|cast\(|\<caudio|javascript|benchmark\('
+  - RegexString: 'sleep\(|sleep\(|ascii\(|nslookup|\<cscript|alert\(|alert\(|echo\s'
+  - RegexString: 'xp_dirtree|syscolumns|print\(|dblink_connect|printf\(|onmouseover|burpcollaborator\.|\<\!entity|echo\s|generate_series\('
+  - RegexString: 'etc\/passwd'
+  # Added "HTML entity decode (Priority 0)" and "URL decode (Priority 1)", modified patterns accordingly.

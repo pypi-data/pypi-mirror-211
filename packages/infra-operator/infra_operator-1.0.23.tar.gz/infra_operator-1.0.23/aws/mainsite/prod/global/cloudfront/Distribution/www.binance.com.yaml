@@ -1,0 +1,192 @@
+apiVersion: cloudfront.aws.infra/v1alpha1
+kind: Distribution
+pipelineConfig:
+  no-apply: true
+  comment: 'no-apply: true prevents this file being apply by api-to-yaml. auto added
+    by api-to-yaml export. if need to apply, set to false'
+metadata:
+  Id: E2WI4311BZ114E
+  Comment: TF www.binance.com
+  WebACLId: arn:aws:wafv2:us-east-1:369096419186:global/webacl/bin_prod_mainsite_cf_v2acl/3b615ee4-b419-45f9-86bd-8579a6822569
+  PriceClass: PriceClass_All
+  HttpVersion: http2
+  CallerReference: terraform-20200206092834894900000002
+  DefaultRootObject: ''
+  ContinuousDeploymentPolicyId: ''
+  Enabled: true
+  Staging: false
+  IsIPV6Enabled: false
+  Tags:
+    app: mainsite
+    biz: cloudfront
+    env: prod
+    project: bin
+    team: devops
+    terraform: y
+spec:
+  Aliases:
+    - www.binance.com
+    - support.binance.com
+    - beta.binance.com
+    - otc.binance.com
+    - card.binance.com
+    - merchant.binance.com
+    - pay.binance.com
+  OriginGroups: []
+  Logging:
+    Bucket: bnbcflogs.s3.amazonaws.com
+    Prefix: cflogs/mainsite/
+    Enabled: true
+    IncludeCookies: false
+  ViewerCertificate:
+    Certificate: arn:aws:acm:us-east-1:369096419186:certificate/72c0c276-76ed-48cd-9ac3-dbfebfcaf6ca
+    SSLSupportMethod: sni-only
+    ACMCertificateArn: arn:aws:acm:us-east-1:369096419186:certificate/72c0c276-76ed-48cd-9ac3-dbfebfcaf6ca
+    CertificateSource: acm
+    MinimumProtocolVersion: TLSv1.2_2019
+    CloudFrontDefaultCertificate: false
+  Restrictions:
+    GeoRestriction:
+      RestrictionType: none
+      Items: []
+  DefaultCacheBehavior:
+    TargetOriginId: ELB-bin-prod-dispatcher-alb
+    ViewerProtocolPolicy: redirect-to-https
+    FieldLevelEncryptionId: ''
+    Compress: false
+    SmoothStreaming: false
+    MinTTL: 0
+    MaxTTL: 31536000
+    DefaultTTL: 86400
+    FunctionAssociations: []
+    LambdaFunctionAssociations: []
+    TrustedSigners:
+      Enabled: false
+      Items: []
+    AllowedMethods:
+      Items:
+        - HEAD
+        - DELETE
+        - POST
+        - GET
+        - OPTIONS
+        - PUT
+        - PATCH
+      CachedMethods:
+        - HEAD
+        - GET
+    ForwardedValues:
+      QueryString: true
+      Cookies:
+        Forward: all
+      Headers:
+        - '*'
+      QueryStringCacheKeys: []
+    TrustedKeyGroups:
+      Enabled: false
+      Items: []
+  CustomErrorResponses:
+    - ResponseCode: ''
+      ResponsePagePath: ''
+      ErrorCode: 404
+      ErrorCachingMinTTL: 0
+  CacheBehaviors: $yaml_content(binance.behaviors.yaml)
+  Origins:
+    $map:
+      $items:
+        - Id: ELB-bin-prod-be-account-dispatcher-alb
+          DomainName: tf-bin-prod-be-account-disp-alb-771171003.ap-northeast-1.elb.amazonaws.com
+        - Id: ELB-bin-prod-fe-futures-dispatcher-alb
+          DomainName: tf-bin-prod-fe-futur-disp-alb-1016982162.ap-northeast-1.elb.amazonaws.com
+        - Id: ELB-bin-prod-be-business-unit-dispatcher-alb
+          DomainName: tf-bin-prod-be-bu-disp-alb-2003923821.ap-northeast-1.elb.amazonaws.com
+        - Id: ELB-bin-prod-be-slow-dispatcher-alb
+          DomainName: tf-bin-prod-be-slow-disp-alb-223518228.ap-northeast-1.elb.amazonaws.com
+        - Id: ELB-bin-prod-be-capital-dispatcher-alb
+          DomainName: tf-bin-prod-be-capital-disp-alb-1463754064.ap-northeast-1.elb.amazonaws.com
+        - Id: ELB-bin-prod-be-futures-dispatcher-alb
+          DomainName: tf-bin-prod-be-futures-disp-alb-506234104.ap-northeast-1.elb.amazonaws.com
+        - Id: ELB-bin-prod-nginx-www-fapi-alb
+          DomainName: futures-prod-nginx-www-fapi-a-1441272012.ap-northeast-1.elb.amazonaws.com
+        - Id: ELB-bin-prod-be-asset-dispatcher-alb
+          DomainName: tf-bin-prod-be-asset-disp-alb-1745043811.ap-northeast-1.elb.amazonaws.com
+        - Id: S3-bin.bnbstatic.com
+          DomainName: bin.bnbstatic.com.s3.amazonaws.com
+          CustomOriginConfig.HTTPPort: $remove_field
+          CustomOriginConfig.HTTPSPort: $remove_field
+          S3OriginConfig.OriginAccessIdentity: origin-access-identity/cloudfront/E95WIJ16BFBZL
+          CustomOriginConfig.OriginReadTimeout: $remove_field
+          CustomOriginConfig.OriginSslProtocols: $remove_field
+          CustomOriginConfig.OriginProtocolPolicy: $remove_field
+          CustomOriginConfig.OriginKeepaliveTimeout: $remove_field
+          CustomHeaders: []
+        - Id: ELB-bin-prod-fe-trade-dispatcher-alb
+          DomainName: tf-bin-prod-fe-trade-disp-alb-1199548949.ap-northeast-1.elb.amazonaws.com
+        - Id: ELB-bin-prod-fe-basic-dispatcher-alb
+          DomainName: tf-bin-prod-fe-basic-disp-alb-1701157891.ap-northeast-1.elb.amazonaws.com
+        - Id: S3-bnbprod-cloudfront-errorpages
+          DomainName: bnbprod-cloudfront-errorpages.s3.amazonaws.com
+          CustomOriginConfig.HTTPPort: $remove_field
+          CustomOriginConfig.HTTPSPort: $remove_field
+          S3OriginConfig.OriginAccessIdentity: origin-access-identity/cloudfront/E3GYMCU4G0IFQC
+          CustomOriginConfig.OriginReadTimeout: $remove_field
+          CustomOriginConfig.OriginSslProtocols: $remove_field
+          CustomOriginConfig.OriginProtocolPolicy: $remove_field
+          CustomOriginConfig.OriginKeepaliveTimeout: $remove_field
+          CustomHeaders: []
+        - Id: S3-wellknow-origin
+          DomainName: tf-bin-prod-binance-com-wellknow.s3.amazonaws.com
+          CustomOriginConfig.HTTPPort: $remove_field
+          CustomOriginConfig.HTTPSPort: $remove_field
+          S3OriginConfig.OriginAccessIdentity: origin-access-identity/cloudfront/EOUZTVNYH79ZE
+          CustomOriginConfig.OriginReadTimeout: $remove_field
+          CustomOriginConfig.OriginSslProtocols: $remove_field
+          CustomOriginConfig.OriginProtocolPolicy: $remove_field
+          CustomOriginConfig.OriginKeepaliveTimeout: $remove_field
+          CustomHeaders: []
+        - Id: ELB-bin-prod-be-common-dispatcher-alb
+          DomainName: tf-bin-prod-be-common-disp-alb-31806585.ap-northeast-1.elb.amazonaws.com
+        - Id: ELB-bin-prod-dispatcher-alb
+          DomainName: bin-prod-dispatcher-alb-1351194062.ap-northeast-1.elb.amazonaws.com
+      $expr:
+        $var_replace:
+          $remove_not_found: true
+          $template:
+            Id: ${Id}
+            DomainName: ${DomainName}
+            OriginPath: ${OriginPath}
+            CustomHeaders: ${CustomHeaders}
+            ConnectionTimeout: ${ConnectionTimeout}
+            ConnectionAttempts: ${ConnectionAttempts}
+            OriginAccessControlId: ${OriginAccessControlId}
+            OriginShield:
+              Enabled: ${OriginShield.Enabled}
+            S3OriginConfig:
+              OriginAccessIdentity: ${S3OriginConfig.OriginAccessIdentity}
+            CustomOriginConfig:
+              HTTPPort: ${CustomOriginConfig.HTTPPort}
+              HTTPSPort: ${CustomOriginConfig.HTTPSPort}
+              OriginReadTimeout: ${CustomOriginConfig.OriginReadTimeout}
+              OriginSslProtocols: ${CustomOriginConfig.OriginSslProtocols}
+              OriginProtocolPolicy: ${CustomOriginConfig.OriginProtocolPolicy}
+              OriginKeepaliveTimeout: ${CustomOriginConfig.OriginKeepaliveTimeout}
+          $values:
+            $merge:
+              - OriginPath: ''
+                OriginAccessControlId: ''
+                CustomOriginConfig.OriginProtocolPolicy: https-only
+                OriginShield.Enabled: false
+                ConnectionTimeout: 10
+                ConnectionAttempts: 3
+                CustomOriginConfig.HTTPPort: 80
+                CustomOriginConfig.HTTPSPort: 443
+                CustomOriginConfig.OriginReadTimeout: 30
+                CustomOriginConfig.OriginSslProtocols:
+                  - TLSv1
+                  - TLSv1.1
+                  - TLSv1.2
+                CustomOriginConfig.OriginKeepaliveTimeout: 5
+                CustomHeaders:
+                  - HeaderName: x-cfcalltag
+                    HeaderValue: g22uazHiLT9eYgNyoECnfx20190327
+              - $item

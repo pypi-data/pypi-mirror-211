@@ -1,0 +1,24 @@
+apiVersion: elbv2.aws.infra/v1
+kind: VirtualGateway
+meshName: $import( infra.meshName )
+spec:
+   BackendDefaults:
+      ClientPolicy:
+        TLS:
+          Validation:
+            Trust:
+              ACM:
+                CertificateAuthorityArns:
+                      - ${ infra.RootCaArn }
+        Listeners:
+          - ConnectionPool:
+              HTTP:
+                MaxConnections: 65535
+                MaxPendingRequests: 65535
+            PortMapping:
+              Port: ${ vgateway.ECSservice.containerPort }
+              Protocol: http
+        Logging:
+          AccessLog:
+            File:
+              Path: /dev/stdout

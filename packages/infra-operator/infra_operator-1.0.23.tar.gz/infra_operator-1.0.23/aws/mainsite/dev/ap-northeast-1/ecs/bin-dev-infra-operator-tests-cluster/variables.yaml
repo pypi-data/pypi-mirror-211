@@ -1,0 +1,20 @@
+prefix: bin
+cluster-vpc-id: vpc-06e7bab377f9cb4e9
+
+managed_by_prow_tags: &managed_by_prow_tags
+  message: managed by https://git.toolsfdg.net/devops/devops-infra
+
+devops_common_infra_tags:
+  <<: *managed_by_prow_tags
+  team: devops
+  biz: common-infra
+
+internal-alb-subnets:
+  - subnet-005223e14aa168a2c
+  - subnet-0e5d061593dd742a0
+  - subnet-0f7c148c34aff7ba0
+
+ecs-nat-subnets:
+  - subnet-058843ebf1d588db2
+  - subnet-08a4644bcd3d87697
+  - subnet-0fefc1f828c888665

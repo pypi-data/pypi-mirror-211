@@ -1,0 +1,61 @@
+apiVersion: ecs.aws.infra/v1alpha1
+kind: TaskDefinition
+ref: 
+  - name: execRoleArn
+    type: string 
+  - name: infraIdentifier
+    type: string
+  - name: EnvoyImage
+    type: string 
+  - name: Cpu 
+    type: string  
+  - name: ContainerPort
+    type: string
+  
+properties:
+  family: ${ project }-${ env }-vgateway-${ ref.infraIdentifier }
+  taskRoleArn: $file(vg_taskrole.yml)
+  executionRoleArn: ref.execRoleArn
+  networkMode: awsvpc
+  containerDefinitions: 
+    - name: envoy
+      image: ref.EnvoyImage
+      portMappings: 
+        - ContainerPort: 9901
+          Protocol: tcp
+        - ContainerPort: ref.ContainerPort
+          Protocol: tcp
+      essential: true
+      command: [] 
+      environment: 
+          - Name: ENVOY_LOG_LEVEL
+            Value: info
+          - Name: ENABLE_ENVOY_DOG_STATSD
+            Value: '1'
+          - Name: APPMESH_METRIC_EXTENSION_VERSION
+            Value: '1'
+          - Name: APPMESH_RESOURCE_ARN
+            Value: $file(vg_mesh_vgateway.yml)
+      ulimits: 
+        - hardLimit: 65535
+          Name: nofile
+          softLimit: 65535
+      healthCheck: 
+        command:
+          - CMD-SHELL
+          - curl -s http://localhost:9901/ready
+        interval: 5
+        retries: 10
+        timeout: 10
+      logConfiguration: 
+        logDriver: awslogs
+        options: 
+          awslogs-group: $file(vg_loggroup.yml)
+          awslogs-region: ${ region }
+          awslogs-stream-prefix: ${ ref.infraIdentifier }-custody-devvgateway-vg-service
+      user: '1337'
+  cpu: ref.Cpu
+  memory: ref.Memory
+  requiresCompatibilities:
+   - FARGATE 
+  

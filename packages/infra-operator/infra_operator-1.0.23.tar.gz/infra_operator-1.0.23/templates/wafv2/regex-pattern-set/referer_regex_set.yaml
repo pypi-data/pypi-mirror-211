@@ -1,0 +1,15 @@
+apiVersion: wafv2.aws.binance/v1alpha1
+metadata:
+  description: managed by https://git.toolsfdg.net/devops/devops-infra
+spec:
+  RegularExpressionList:
+  - RegexString: 'wscript\.shell|domxssexecutionsink\(|ctxsys\.drithsx\.sn\(|\<script'
+  - RegexString: 'r87\.me|vulnweb\.com|website\.acu|acunetix|bxss\.me|example\.com'
+  - RegexString: 'select\s|where\s|rlike\s|declare|sqloledb|executsql|java\.net\.url\('
+  - RegexString: 'exec\(|exec\s|response\.write\(|sqlmap|clickingtraffictrack|printf\s'
+  - RegexString: '%57%48%45%52%45%20|\<\/script|vbscript|sleep\s'
+  - RegexString: 'concat\(|nvl\(|substr\(|cast\(|\<audio|javascript|benchmark\('
+  - RegexString: 'xp_dirtree|syscolumns|print\(|dblink_connect|printf\(|proxy\.php'
+  - RegexString: 'chr\(|createobject\(|gethostbyname\(|concat\(|:\/\/xn--|picshop'
+  - RegexString: 'sleep\(|sleep\(|ascii\(|nslookup|\<script|alert\(|alert\(|echo\s|onmouseover|burpcollaborator\.|\<\!entity|echo\s|generate_series\('
+  - RegexString: 'binance\.click|admin-ajax\.php|string\.fromcharcode\(|hackforums'

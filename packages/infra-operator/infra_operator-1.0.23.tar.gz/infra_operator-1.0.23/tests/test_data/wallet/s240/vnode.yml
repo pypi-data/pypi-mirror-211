@@ -1,0 +1,94 @@
+VirtualNode:
+    Properties:
+      MeshName: !ImportValue
+        Fn::Sub: bc-300:Mesh
+      Spec:
+        BackendDefaults:
+          ClientPolicy:
+            TLS:
+              Validation:
+                Trust:
+                  ACM:
+                    CertificateAuthorityArns:
+                      - arn:aws:acm-pca:ap-northeast-1:427363878074:certificate-authority/52a5aff2-4103-486b-88cb-b9389e8de291
+        Backends:
+          - VirtualService:
+              VirtualServiceName: walletservice
+          - VirtualService:
+              VirtualServiceName: cserver
+          - VirtualService:
+              VirtualServiceName: userservice
+          - VirtualService:
+              VirtualServiceName: openplatformapi
+          - VirtualService:
+              VirtualServiceName: adminbackend
+          - VirtualService:
+              VirtualServiceName: billing
+          - VirtualService:
+              VirtualServiceName: convert
+          - VirtualService:
+              VirtualServiceName: defi
+          - VirtualService:
+              VirtualServiceName: doradoadmin
+          - VirtualService:
+              VirtualServiceName: dorado_push
+          - VirtualService:
+              VirtualServiceName: openapi
+          - VirtualService:
+              VirtualServiceName: cttrade
+          - VirtualService:
+              VirtualServiceName: adminweb
+          - VirtualService:
+              VirtualServiceName: doradopush
+          - VirtualService:
+              VirtualServiceName: doradomessage
+          - VirtualService:
+              VirtualServiceName: apigateway
+          - VirtualService:
+              VirtualServiceName: ledgerservice
+          - VirtualService:
+              VirtualServiceName: nis
+          - VirtualService:
+              VirtualServiceName: userapp
+          - VirtualService:
+              VirtualServiceName: send
+          - VirtualService:
+              VirtualServiceName: spottrading
+          - VirtualService:
+              VirtualServiceName: assetservice
+        Listeners:
+          - ConnectionPool:
+              HTTP:
+                MaxConnections: 65535
+                MaxPendingRequests: 65535
+            HealthCheck:
+              HealthyThreshold: 2
+              IntervalMillis: 5000
+              Path: /health.html
+              Port: 3000
+              Protocol: http
+              TimeoutMillis: 10000
+              UnhealthyThreshold: 5
+            PortMapping:
+              Port: 3000
+              Protocol: http
+            TLS:
+              Certificate:
+                ACM:
+                  CertificateArn: arn:aws:acm:ap-northeast-1:427363878074:certificate/e4a494d5-9f1a-4f7f-805a-a2037c06eccc
+              Mode: STRICT
+            Timeout:
+              HTTP:
+                PerRequest:
+                  Unit: s
+                  Value: 16
+        Logging:
+          AccessLog:
+            File:
+              Path: /dev/stdout
+        ServiceDiscovery:
+          AWSCloudMap:
+            NamespaceName: !Ref 'NamespaceName'
+            ServiceName: website-s810
+      VirtualNodeName: website-s810-vn
+    Type: AWS::AppMesh::VirtualNode

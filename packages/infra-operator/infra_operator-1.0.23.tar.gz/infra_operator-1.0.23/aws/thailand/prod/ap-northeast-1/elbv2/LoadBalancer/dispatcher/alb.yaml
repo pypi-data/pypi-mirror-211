@@ -1,0 +1,28 @@
+apiVersion: elbv2.aws.binance/v1alpha1
+kind: LoadBalancer
+metadata:
+  Name: cloud-prod-dispatcher-alb
+  Subnets: ${albPublicSubnets}
+  SecurityGroups:
+    - $file(alb.sg-dispatcher.yaml)
+  Scheme: internet-facing
+  Tags:
+    message: managed by https://git.toolsfdg.net/devops/devops-infra
+  Type: application
+  IpAddressType: ipv4
+spec:
+  Listeners:
+    - Protocol: HTTPS
+      Port: 443
+      Certificates: ${albCertificates}
+      DefaultActions:
+        - Type: forward
+          Order: 1
+          ForwardConfig:
+            TargetGroups:
+              - TargetGroupArn: $file(tg-dispatcher_r0.yaml)
+                Weight: 100
+              - TargetGroupArn: $file(tg-dispatcher_r1.yaml)
+                Weight: 0
+            TargetGroupStickinessConfig:
+              Enabled: false

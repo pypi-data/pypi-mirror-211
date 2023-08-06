@@ -1,0 +1,188 @@
+ECSTaskDefinition:
+    Properties:
+      ContainerDefinitions:
+        - Cpu: '2816'
+          DependsOn:
+            - Condition: HEALTHY
+              ContainerName: envoy
+            - Condition: HEALTHY
+              ContainerName: log_router
+            - Condition: COMPLETE
+              ContainerName: install-oneagent
+          DockerLabels:
+            PROMETHEUS_EXPORTER_PORT: 28081
+          EnvironmentFiles:
+            - Type: s3
+              Value: !Ref 'EnvFile'
+          Essential: true
+          HealthCheck:
+            Command:
+              - CMD-SHELL
+              - !Ref 'HealthCheckCMD'
+            Interval: 18
+            Retries: 10
+            Timeout: 10
+          Image: !Ref 'ContainerImage'
+          LogConfiguration:
+            LogDriver: awsfirelens
+            Options:
+              Brokers: >-
+                b-3.custodynonprodlog.to4yxu.c2.kafka.ap-northeast-1.amazonaws.com:9092,b-1.custodynonprodlog.to4yxu.c2.kafka.ap-northeast-1.amazonaws.com:9092,b-2.custodynonprodlog.to4yxu.c2.kafka.ap-northeast-1.amazonaws.com:9092
+              Name: kafka
+              Topics: ecs-custody-pre-website-logs
+              timestamp_format: iso8601
+              timestamp_key: fluent_time
+          Memory: '6656'
+          MountPoints:
+            - ContainerPath: /opt/dynatrace/oneagent
+              ReadOnly: false
+              SourceVolume: oneagent
+          Name: !Ref 'ServiceName'
+          PortMappings:
+            - ContainerPort: 9999
+              Protocol: tcp
+            - ContainerPort: 28081
+              Protocol: tcp
+            - ContainerPort: 3000
+              Protocol: tcp
+          Ulimits:
+            - HardLimit: 65535
+              Name: nofile
+              SoftLimit: 65535
+        - DependsOn:
+            - Condition: HEALTHY
+              ContainerName: envoy
+          Environment:
+            - Name: DT_API_URL
+              Value: https://envag.ejeokvv.com:9999/e/a5132982-23c6-4a76-adf0-590f69abe19f/api
+            - Name: DT_ONEAGENT_OPTIONS
+              Value: default
+            - Name: DT_PAAS_TOKEN
+              Value: dt0c01.EAOTXTPFMV63XVUZ6KJI3RVG.HSDNJOALZC46B5XJ2WYO5SZ47C5PF3ARN6AHRXQ3SFYX7OLV77OXZTIZXVWSMGZB
+          Essential: false
+          Image: 740529195164.dkr.ecr.ap-northeast-1.amazonaws.com/custody-devops/custody-dynatrace:35621e7483edc3e3b79edcbf7936c4c3cd025b4c
+          LogConfiguration:
+            LogDriver: awslogs
+            Options:
+              awslogs-group: /custody-pre-website-mesh
+              awslogs-region: !Ref 'AWS::Region'
+              awslogs-stream-prefix: s810-website-install-oneagent
+          MountPoints:
+            - ContainerPath: /opt/dynatrace/oneagent
+              ReadOnly: false
+              SourceVolume: oneagent
+          Name: install-oneagent
+          PortMappings: []
+          Ulimits:
+            - HardLimit: 65535
+              Name: nofile
+              SoftLimit: 65535
+        - Cpu: '1024'
+          DockerLabels:
+            OTEL_ENVOY_EXPORTER_PATH: /stats/prometheus
+            OTEL_ENVOY_EXPORTER_PORT: 9901
+            PROMETHEUS_EXPORTER_PATH: /stats/prometheus
+            PROMETHEUS_EXPORTER_PORT: 9901
+          Environment:
+            - Name: ENVOY_LOG_LEVEL
+              Value: info
+            - Name: ENABLE_ENVOY_DOG_STATSD
+              Value: '1'
+            - Name: APPMESH_METRIC_EXTENSION_VERSION
+              Value: '1'
+            - Name: APPMESH_RESOURCE_ARN
+              Value: !Ref 'VirtualNode'
+            - Name: ENABLE_ENVOY_XRAY_TRACING
+              Value: '1'
+          Essential: true
+          HealthCheck:
+            Command:
+              - CMD-SHELL
+              - curl -s http://localhost:9901/server_info | grep "state" | grep "LIVE"
+            Interval: 5
+            Retries: 10
+            Timeout: 10
+          Image: !Ref 'EnvoyImage'
+          LogConfiguration:
+            LogDriver: awsfirelens
+            Options:
+              Brokers: >-
+                b-3.custodynonprodlog.to4yxu.c2.kafka.ap-northeast-1.amazonaws.com:9092,b-1.custodynonprodlog.to4yxu.c2.kafka.ap-northeast-1.amazonaws.com:9092,b-2.custodynonprodlog.to4yxu.c2.kafka.ap-northeast-1.amazonaws.com:9092
+              Name: kafka
+              Topics: ecs-custody-pre-website-envoy-service
+              timestamp_format: iso8601
+              timestamp_key: fluent_time
+          Memory: '1024'
+          Name: envoy
+          PortMappings:
+            - ContainerPort: 9901
+              Protocol: tcp
+            - ContainerPort: 15000
+              Protocol: tcp
+            - ContainerPort: 15001
+              Protocol: tcp
+          Ulimits:
+            - HardLimit: 65535
+              Name: nofile
+              SoftLimit: 65535
+          User: '1337'
+        - Cpu: '256'
+          DependsOn:
+            - Condition: HEALTHY
+              ContainerName: envoy
+          DockerLabels:
+            PROMETHEUS_EXPORTER_PATH: /api/v1/metrics/prometheus
+            PROMETHEUS_EXPORTER_PORT: 2020
+          Environment:
+            - Name: APP_ECS_VERSION
+              Value: cc5b1fa011a09bb5a8f628aa9f8ee551e474299a
+          Essential: false
+          FirelensConfiguration:
+            Type: fluentbit
+          HealthCheck:
+            Command:
+              - CMD-SHELL
+              - 'echo ''{"health": "check"}'' | nc 127.0.0.1 8877 || exit 1'
+            Interval: 5
+            Retries: 10
+            Timeout: 10
+          Image: 740529195164.dkr.ecr.ap-northeast-1.amazonaws.com/aws-for-fluent-bit:cc373c9a11059da298b42f27708da01309c0e3b3
+          LogConfiguration:
+            LogDriver: awslogs
+            Options:
+              awslogs-group: /custody-pre-website-mesh
+              awslogs-region: !Ref 'AWS::Region'
+              awslogs-stream-prefix: s810-website-logrouter
+          Memory: '512'
+          Name: log_router
+          PortMappings: []
+          Ulimits:
+            - HardLimit: 65535
+              Name: nofile
+              SoftLimit: 65535
+      Cpu: !Ref 'Cpus'
+      ExecutionRoleArn: !ImportValue
+        Fn::Sub: bc-300:ExecutionRole
+      Family: custody-pre-website-s810
+      Memory: !Ref 'Memory'
+      NetworkMode: awsvpc
+      ProxyConfiguration:
+        ContainerName: envoy
+        ProxyConfigurationProperties:
+          - Name: IgnoredUID
+            Value: 1337
+          - Name: ProxyIngressPort
+            Value: 15000
+          - Name: ProxyEgressPort
+            Value: 15001
+          - Name: AppPorts
+            Value: 3000
+          - Name: EgressIgnoredIPS
+            Value: 169.254.170.2,169.254.169.254
+        Type: APPMESH
+      RequiresCompatibilities:
+        - FARGATE
+      TaskRoleArn: !Ref 'TaskRoleArn'
+      Volumes:
+        - Name: oneagent
+    Type: AWS::ECS::TaskDefinition

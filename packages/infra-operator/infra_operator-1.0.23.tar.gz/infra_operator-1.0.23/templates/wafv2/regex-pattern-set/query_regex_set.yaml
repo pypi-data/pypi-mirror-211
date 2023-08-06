@@ -1,0 +1,15 @@
+apiVersion: wafv2.aws.binance/v1alpha1
+metadata:
+  description: managed by https://git.toolsfdg.net/devops/devops-infra
+spec:
+  RegularExpressionList:
+  - RegexString: 'wscript\.shell|domxssexecutionsink\(|ctxsys\.drithsx\.sn\(|\<script'
+  - RegexString: 'chr\(|createobject\(|gethostbyname\(|concat\(|benchmark\(|\;?waitfor\s+'
+  - RegexString: 'select\s|where\s|rlike\s|declare|sqloledb|executsql|java\.net\.url\('
+  - RegexString: 'exec\(|exec\s|response\.write\(|search_query|email\.gr'
+  - RegexString: '%57%48%45%52%45%20|\<\/script|vbscript|sleep\s'
+  - RegexString: 'concat\(|nvl\(|substr\(|cast\(|\<audio|javascript|benchmark\('
+  - RegexString: 'xp_dirtree|syscolumns|print\(|dblink_connect|printf\(|proxy\.php'
+  - RegexString: 'r87\.me|vulnweb\.com|website\.acu|acunetix|bxss\.me|example\.|r87\.com'
+  - RegexString: 'sleep\(|sleep\(|ascii\(|nslookup|\<script|alert\(|alert\(|onmouseover|burpcollaborator\.|\<\!entity|echo\s|generate_series\('
+  - RegexString: admin-ajax\.php|string\.fromcharcode\(|java\.(io|lang)\.|getinputstream\(|select(\s|\()|hackforums|or\s+\'1\'\=\'1|email\.tst|(\<|\>)

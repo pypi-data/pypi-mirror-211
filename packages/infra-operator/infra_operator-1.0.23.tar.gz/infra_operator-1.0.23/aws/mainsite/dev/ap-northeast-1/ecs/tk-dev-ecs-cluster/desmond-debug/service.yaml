@@ -1,0 +1,39 @@
+apiVersion: ecs.aws.infra/v1alpha1
+kind: Service
+pipelineConfig:
+  no-apply: false
+  comment: 'no-apply: true prevents this file being apply by infra-operator. auto
+    added by infra-operator export. if need to apply, set to false'
+metadata:
+  launchType: FARGATE
+  serviceName: bin-dev-desmond-debug-service
+  propagateTags: NONE
+  taskDefinition: arn:aws:ecs:ap-northeast-1:173062506398:task-definition/bin-dev-desmond-debug:39
+  platformVersion: LATEST
+  schedulingStrategy: REPLICA
+  enableECSManagedTags: true
+  enableExecuteCommand: false
+  desiredCount: 1
+  healthCheckGracePeriodSeconds: 0
+spec:
+  deploymentController:
+    type: ECS
+  deploymentConfiguration:
+    maximumPercent: 200
+    minimumHealthyPercent: 0
+    deploymentCircuitBreaker:
+      enable: false
+      rollback: false
+  loadBalancers:
+    - containerName: main
+      targetGroupArn: arn:aws:elasticloadbalancing:ap-northeast-1:173062506398:targetgroup/bin-dev-desmond-debug-tg/5a71031c6dd3d446
+      containerPort: 80
+  networkConfiguration:
+    awsvpcConfiguration:
+      assignPublicIp: DISABLED
+      subnets:
+        - subnet-058843ebf1d588db2
+        - subnet-0fefc1f828c888665
+        - subnet-08a4644bcd3d87697
+      securityGroups:
+        - sg-08127c965ec52878e

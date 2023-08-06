@@ -1,0 +1,4 @@
+infraIdentifier: infra-operator-1
+devops_common_infra_tags:
+  infra_opertor: "y"
+  role: "infra"

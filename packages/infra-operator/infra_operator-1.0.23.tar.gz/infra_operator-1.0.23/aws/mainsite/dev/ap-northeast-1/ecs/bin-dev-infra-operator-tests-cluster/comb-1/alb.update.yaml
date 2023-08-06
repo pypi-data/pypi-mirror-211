@@ -1,0 +1,89 @@
+apiVersion: elbv2.aws.infra/v1alpha1
+kind: LoadBalancer
+metadata:
+  Name: ${prefix}-${env}-${name}-alb
+  Subnets: ${internal-alb-subnets}
+  SecurityGroups:
+    - $file(alb.sg.yaml)
+  Scheme: internal # | internet-facing
+  Tags: ${devops_common_infra_tags}
+  Type: application # | network
+  IpAddressType: ipv4 # | dualstack
+  Attributes:
+    idle_timeout.timeout_seconds: '66'
+    routing.http.preserve_host_header.enabled: 'true'
+spec:
+  Listeners:
+    - Protocol: HTTP
+      Port: 80
+      DefaultActions:
+        - Type: redirect
+          Order: 1
+          RedirectConfig:
+            Protocol: "HTTPS"
+            Port: "443"
+            Host: "#{host}"
+            Path: "/#{path}"
+            Query: "#{query}"
+            StatusCode: "HTTP_302"
+      Rules:
+        - Conditions:
+            - Field: host-header
+              Values:
+                - www.devfdg.net
+                - www.fe.devfdg.net
+            - Field: path-pattern
+              Values:
+                - /hello
+            - Field: http-header
+              HttpHeaderConfig:
+                HttpHeaderName: ABC
+                Values:
+                  - ddddd
+          Priority: 2
+          Actions:
+            - Type: forward # forward|authenticate-oidc|authenticate-cognito|redirect|fixed-response
+              Order: 1
+              ForwardConfig:
+                TargetGroups:
+                  - TargetGroupArn: $file(targetGroup.yaml)
+                    Weight: 1
+                TargetGroupStickinessConfig:
+                  Enabled: False
+    - Protocol: HTTPS # HTTP|HTTPS|TCP|TLS|UDP|TCP_UDP
+      # LoadBalancerArn: string
+      Port: 443
+      SslPolicy: ELBSecurityPolicy-2016-08
+      Certificates:
+        - CertificateArn: arn:aws:acm:ap-northeast-1:173062506398:certificate/c1092697-0b35-4f44-a1b2-2df881888b1d
+      DefaultActions:
+        - Order: 1
+          Type: fixed-response
+          FixedResponseConfig:
+            ContentType: text/plain
+            MessageBody: Forbiden
+            StatusCode: "403"
+      Rules:
+        - Conditions:
+            - Field: host-header
+              Values:
+                - www.devfdg.net
+                - www.fe.devfdg.net
+            - Field: path-pattern
+              Values:
+                - /en/*
+            - Field: http-header
+              HttpHeaderConfig:
+                HttpHeaderName: ABC
+                Values:
+                  - GGGGGG
+          Priority: 2
+          Actions:
+            - Type: forward # forward|authenticate-oidc|authenticate-cognito|redirect|fixed-response
+              Order: 1
+              ForwardConfig:
+                TargetGroups:
+                  - TargetGroupArn: $file(targetGroup.yaml)
+                    Weight: 1
+                TargetGroupStickinessConfig:
+                  Enabled: False

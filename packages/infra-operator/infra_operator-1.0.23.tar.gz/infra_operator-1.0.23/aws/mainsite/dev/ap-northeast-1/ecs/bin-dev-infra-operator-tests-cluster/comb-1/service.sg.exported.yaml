@@ -1,0 +1,41 @@
+apiVersion: ec2.aws.infra/v1alpha1
+kind: SecurityGroup
+pipelineConfig:
+  no-apply: true
+  comment: 'no-apply: true prevents this file being apply by infra-operator. auto
+    added by infra-operator export. if need to apply, set to false'
+metadata:
+  VpcId: vpc-06e7bab377f9cb4e9
+  GroupName: bin_dev_comb_1_svc_sg
+  Description: managed by https://git.toolsfdg.net/devops/devops-infra
+  Tags:
+    devops-infra-service: comb-1
+    engine: devops-infra
+    env: dev
+    prow-pipeline: y
+    terraform: y
+spec:
+  egress:
+    - IpProtocol: '-1'
+      IpRanges:
+        - CidrIp: 10.0.0.0/8
+          Description: internal vpc
+        - CidrIp: 172.16.0.0/12
+          Description: internal vpc
+        - CidrIp: 192.168.0.0/16
+          Description: internal vpc
+  ingress:
+    - IpProtocol: tcp
+      ToPort: 80
+      FromPort: 80
+      UserIdGroupPairs:
+        - UserId: '173062506398'
+          GroupId: $file(alb.sg.yaml)
+          Description: Allow alb access
+    - IpProtocol: tcp
+      ToPort: 443
+      FromPort: 443
+      UserIdGroupPairs:
+        - UserId: '173062506398'
+          GroupId: $file(alb.sg.yaml)
+          Description: Allow alb access

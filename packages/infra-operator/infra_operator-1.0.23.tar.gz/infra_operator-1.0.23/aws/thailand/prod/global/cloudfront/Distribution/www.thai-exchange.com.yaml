@@ -1,0 +1,165 @@
+apiVersion: cloudfront.aws.binance/v1alpha1
+kind: Distribution
+pipelineConfig:
+  no-apply: false
+  comment: 'no-apply: true prevents this file being apply by api-to-yaml. auto added
+    by api-to-yaml export. if need to apply, set to false'
+metadata:
+  Comment: www.thai-exchange.com by Infra Operator
+  WebACLId: arn:xxxx
+  PriceClass: PriceClass_All
+  HttpVersion: http2and3
+  CallerReference: fe-sop-infra-operator-www.thai-exchange.com
+  DefaultRootObject: ''
+  ContinuousDeploymentPolicyId: ''
+  Enabled: true
+  Staging: false
+  IsIPV6Enabled: false
+  Tags:
+    app: dispatcher
+    biz: thailand
+    env: prod
+    git: https://git.toolsfdg.net/devops/devops-infra/blob/master/aws/mainsite/prod}/global/cloudfront/Distribution/www.thai-exchange.com.yaml
+    project: thailand
+    team: cloud
+    terraform: y
+spec:
+  Aliases:
+    - thai-exchange.com
+    - www.thai-exchange.com
+  OriginGroups: []
+  Logging:
+    Bucket: ${cloudfrontLogging.bucket}.s3.amazonaws.com
+    Prefix: cflogs/www.thai-exchange.com/
+    Enabled: true
+    IncludeCookies: false
+  ViewerCertificate:
+    Certificate: ${cloudfront-certificate}
+    SSLSupportMethod: sni-only
+    ACMCertificateArn: ${cloudfront-certificate}
+    CertificateSource: acm
+    MinimumProtocolVersion: TLSv1.2_2021
+    CloudFrontDefaultCertificate: false
+  Restrictions:
+    GeoRestriction:
+      RestrictionType: none
+      Items: []
+  Origins:
+    - Id: thailand-prod-dispatcher-alb
+      DomainName: $file(elbv2/LoadBalancer/alb-dispatcher.yaml domainName)
+      OriginPath: ''
+      CustomHeaders:
+        - HeaderName: x-cfcalltag
+          HeaderValue: cfcalltag
+      ConnectionTimeout: 10
+      ConnectionAttempts: 3
+      OriginAccessControlId: ''
+  CustomErrorResponses:
+    - ResponseCode: ''
+      ResponsePagePath: ''
+      ErrorCode: 404
+      ErrorCachingMinTTL: 0
+  DefaultCacheBehavior:
+    TargetOriginId: ELB-thailand}-{{env}-dispatcher-alb
+    ViewerProtocolPolicy: redirect-to-https
+    FieldLevelEncryptionId: ''
+    Compress: true
+    SmoothStreaming: false
+    MinTTL: 0
+    MaxTTL: 31536000
+    DefaultTTL: 86400
+    FunctionAssociations: []
+    LambdaFunctionAssociations: []
+    TrustedSigners:
+      Enabled: false
+      Items: []
+    AllowedMethods:
+      Items:
+        - HEAD
+        - DELETE
+        - POST
+        - GET
+        - OPTIONS
+        - PUT
+        - PATCH
+      CachedMethods:
+        - HEAD
+        - GET
+        - OPTIONS
+    ForwardedValues:
+      QueryString: true
+      Cookies:
+        Forward: all
+      Headers:
+        - '*'
+      QueryStringCacheKeys: []
+    TrustedKeyGroups:
+      Enabled: false
+      Items: []
+  CacheBehaviors:
+    - MinTTL: 60
+      MaxTTL: 120
+      Compress: true
+      DefaultTTL: 120
+      PathPattern: /??-??
+      TargetOriginId: ELB-thailand}-{{env}-dispatcher-alb
+      SmoothStreaming: false
+      ViewerProtocolPolicy: redirect-to-https
+      FunctionAssociations: []
+      FieldLevelEncryptionId: ''
+      LambdaFunctionAssociations: []
+    - MinTTL: 60
+      MaxTTL: 120
+      Compress: true
+      DefaultTTL: 120
+      PathPattern: /??-??/
+      TargetOriginId: ELB-thailand}-{{env}-dispatcher-alb
+      SmoothStreaming: false
+      ViewerProtocolPolicy: redirect-to-https
+      FunctionAssociations: []
+      FieldLevelEncryptionId: ''
+      LambdaFunctionAssociations: []
+    - MinTTL: 60
+      MaxTTL: 120
+      Compress: true
+      DefaultTTL: 120
+      PathPattern: /??-??/*
+      TargetOriginId: ELB-thailand}-{{env}-dispatcher-alb
+      SmoothStreaming: false
+      ViewerProtocolPolicy: redirect-to-https
+      FunctionAssociations: []
+      FieldLevelEncryptionId: ''
+      LambdaFunctionAssociations: []
+    - MinTTL: 60
+      MaxTTL: 120
+      Compress: true
+      DefaultTTL: 120
+      PathPattern: /??
+      TargetOriginId: ELB-thailand}-{{env}-dispatcher-alb
+      SmoothStreaming: false
+      ViewerProtocolPolicy: redirect-to-https
+      FunctionAssociations: []
+      FieldLevelEncryptionId: ''
+      LambdaFunctionAssociations: []
+    - MinTTL: 60
+      MaxTTL: 120
+      Compress: true
+      DefaultTTL: 120
+      PathPattern: /??/
+      TargetOriginId: ELB-thailand}-{{env}-dispatcher-alb
+      SmoothStreaming: false
+      ViewerProtocolPolicy: redirect-to-https
+      FunctionAssociations: []
+      FieldLevelEncryptionId: ''
+      LambdaFunctionAssociations: []
+    - MinTTL: 60
+      MaxTTL: 120
+      Compress: true
+      DefaultTTL: 120
+      PathPattern: /??/*
+      TargetOriginId: ELB-thailand}-{{env}-dispatcher-alb
+      SmoothStreaming: false
+      ViewerProtocolPolicy: redirect-to-https
+      FunctionAssociations: []
+      FieldLevelEncryptionId: ''
+      LambdaFunctionAssociations: []

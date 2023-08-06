@@ -1,0 +1,59 @@
+apiVersion: iam.aws.infra/v1alpha1
+kind: Role
+pipelineConfig:
+  no-apply: true
+  comment: 'no-apply: true prevents this file being apply by infra-operator. auto
+    added by infra-operator export. if need to apply, set to false'
+metadata:
+  Path: /
+  RoleName: tf_bin_dev_cross_proxy_ecs_task_role
+  Description: tf_bin_dev_cross_proxy_ecs_task_role
+  MaxSessionDuration: 3600
+  Tags:
+    terraform: y
+    taskrole: y
+spec:
+  managed-policies: []
+  AssumeRolePolicyDocument:
+    Version: '2012-10-17'
+    Statement:
+      - Sid: ''
+        Effect: Allow
+        Action: sts:AssumeRole
+        Principal:
+          Service: ecs-tasks.amazonaws.com
+      - Sid: ''
+        Effect: Allow
+        Action: sts:AssumeRoleWithWebIdentity
+        Principal:
+          Federated: arn:aws:iam::173062506398:oidc-provider/oidc.eks.ap-northeast-1.amazonaws.com/id/D116FBFD33E08FE5A807582B0E72F712
+        Condition:
+          StringEquals:
+            oidc.eks.ap-northeast-1.amazonaws.com/id/D116FBFD33E08FE5A807582B0E72F712:sub: system:serviceaccount:backend:cross-proxy
+  inline-policies:
+    - PolicyName: kms-20220829114039525400000002
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Sid: '0'
+            Effect: Allow
+            Action: kms:Decrypt
+            Resource: arn:aws:kms:ap-northeast-1:173062506398:key/a73839a6-2c75-4290-8a32-431af8807142
+    - PolicyName: s3-20220829114040127500000003
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Sid: '0'
+            Effect: Allow
+            Resource: arn:aws:s3:::tk-alb-logs-173062506398/*
+            Action:
+              - s3:PutObjectAcl
+              - s3:PutObject
+    - PolicyName: secretsmanager-20220829114038950300000001
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Sid: '0'
+            Effect: Allow
+            Action: secretsmanager:GetSecretValue
+            Resource: arn:aws:secretsmanager:ap-northeast-1:173062506398:secret:bin_dev_cross_proxy-*

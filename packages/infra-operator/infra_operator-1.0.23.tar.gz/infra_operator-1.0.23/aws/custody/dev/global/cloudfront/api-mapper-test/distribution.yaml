@@ -1,0 +1,429 @@
+apiVersion: cloudfront.aws.infra/v1alpha1
+kind: Distribution
+metadata:
+  Id: E2SKK8PK8XBWKH
+  Aliases:
+  - www.binance.com
+  - support.binance.com
+  - beta.binance.com
+  - otc.binance.com
+  - card.binance.com
+  - merchant.binance.com
+  - pay.binance.com
+  DefaultRootObject: ''
+  Origins:
+  - Id: ELB-bin-prod-be-account-dispatcher-alb
+    DomainName: tf-bin-prod-be-account-disp-alb-771171003.ap-northeast-1.elb.amazonaws.com
+    OriginPath: ''
+    CustomHeaders:
+    - HeaderName: x-cfcalltag
+      HeaderValue: g22uazHiLT9eYgNyoECnfx20190327
+    CustomOriginConfig:
+      HTTPPort: 80
+      HTTPSPort: 443
+      OriginProtocolPolicy: https-only
+      OriginSslProtocols:
+      - TLSv1
+      - TLSv1.1
+      - TLSv1.2
+      OriginReadTimeout: 30
+      OriginKeepaliveTimeout: 5
+    ConnectionAttempts: 3
+    ConnectionTimeout: 10
+    OriginShield:
+      Enabled: false
+  - Id: ELB-bin-prod-fe-futures-dispatcher-alb
+    DomainName: tf-bin-prod-fe-futur-disp-alb-1016982162.ap-northeast-1.elb.amazonaws.com
+    OriginPath: ''
+    CustomHeaders:
+    - HeaderName: x-cfcalltag
+      HeaderValue: g22uazHiLT9eYgNyoECnfx20190327
+    CustomOriginConfig:
+      HTTPPort: 80
+      HTTPSPort: 443
+      OriginProtocolPolicy: https-only
+      OriginSslProtocols:
+      - TLSv1
+      - TLSv1.1
+      - TLSv1.2
+      OriginReadTimeout: 30
+      OriginKeepaliveTimeout: 5
+    ConnectionAttempts: 3
+    ConnectionTimeout: 10
+    OriginShield:
+      Enabled: false
+  - Id: ELB-bin-prod-be-business-unit-dispatcher-alb
+    DomainName: tf-bin-prod-be-bu-disp-alb-2003923821.ap-northeast-1.elb.amazonaws.com
+    OriginPath: ''
+    CustomHeaders:
+    - HeaderName: x-cfcalltag
+      HeaderValue: g22uazHiLT9eYgNyoECnfx20190327
+    CustomOriginConfig:
+      HTTPPort: 80
+      HTTPSPort: 443
+      OriginProtocolPolicy: https-only
+      OriginSslProtocols:
+      - TLSv1
+      - TLSv1.1
+      - TLSv1.2
+      OriginReadTimeout: 30
+      OriginKeepaliveTimeout: 5
+    ConnectionAttempts: 3
+    ConnectionTimeout: 10
+    OriginShield:
+      Enabled: false
+  - Id: ELB-bin-prod-be-slow-dispatcher-alb
+    DomainName: tf-bin-prod-be-slow-disp-alb-223518228.ap-northeast-1.elb.amazonaws.com
+    OriginPath: ''
+    CustomHeaders:
+    - HeaderName: x-cfcalltag
+      HeaderValue: g22uazHiLT9eYgNyoECnfx20190327
+    CustomOriginConfig:
+      HTTPPort: 80
+      HTTPSPort: 443
+      OriginProtocolPolicy: https-only
+      OriginSslProtocols:
+      - TLSv1
+      - TLSv1.1
+      - TLSv1.2
+      OriginReadTimeout: 30
+      OriginKeepaliveTimeout: 5
+    ConnectionAttempts: 3
+    ConnectionTimeout: 10
+    OriginShield:
+      Enabled: false
+  - Id: ELB-bin-prod-be-capital-dispatcher-alb
+    DomainName: tf-bin-prod-be-capital-disp-alb-1463754064.ap-northeast-1.elb.amazonaws.com
+    OriginPath: ''
+    CustomHeaders:
+    - HeaderName: x-cfcalltag
+      HeaderValue: g22uazHiLT9eYgNyoECnfx20190327
+    CustomOriginConfig:
+      HTTPPort: 80
+      HTTPSPort: 443
+      OriginProtocolPolicy: https-only
+      OriginSslProtocols:
+      - TLSv1
+      - TLSv1.1
+      - TLSv1.2
+      OriginReadTimeout: 30
+      OriginKeepaliveTimeout: 5
+    ConnectionAttempts: 3
+    ConnectionTimeout: 10
+    OriginShield:
+      Enabled: false
+  - Id: ELB-bin-prod-be-futures-dispatcher-alb
+    DomainName: tf-bin-prod-be-futures-disp-alb-506234104.ap-northeast-1.elb.amazonaws.com
+    OriginPath: ''
+    CustomHeaders:
+    - HeaderName: x-cfcalltag
+      HeaderValue: g22uazHiLT9eYgNyoECnfx20190327
+    CustomOriginConfig:
+      HTTPPort: 80
+      HTTPSPort: 443
+      OriginProtocolPolicy: https-only
+      OriginSslProtocols:
+      - TLSv1
+      - TLSv1.1
+      - TLSv1.2
+      OriginReadTimeout: 30
+      OriginKeepaliveTimeout: 5
+    ConnectionAttempts: 3
+    ConnectionTimeout: 10
+    OriginShield:
+      Enabled: false
+  - Id: ELB-bin-prod-nginx-www-fapi-alb
+    DomainName: futures-prod-nginx-www-fapi-a-1441272012.ap-northeast-1.elb.amazonaws.com
+    OriginPath: ''
+    CustomHeaders:
+    - HeaderName: x-cfcalltag
+      HeaderValue: g22uazHiLT9eYgNyoECnfx20190327
+    CustomOriginConfig:
+      HTTPPort: 80
+      HTTPSPort: 443
+      OriginProtocolPolicy: https-only
+      OriginSslProtocols:
+      - TLSv1
+      - TLSv1.1
+      - TLSv1.2
+      OriginReadTimeout: 30
+      OriginKeepaliveTimeout: 5
+    ConnectionAttempts: 3
+    ConnectionTimeout: 10
+    OriginShield:
+      Enabled: false
+  - Id: ELB-bin-prod-be-asset-dispatcher-alb
+    DomainName: tf-bin-prod-be-asset-disp-alb-1745043811.ap-northeast-1.elb.amazonaws.com
+    OriginPath: ''
+    CustomHeaders:
+    - HeaderName: x-cfcalltag
+      HeaderValue: g22uazHiLT9eYgNyoECnfx20190327
+    CustomOriginConfig:
+      HTTPPort: 80
+      HTTPSPort: 443
+      OriginProtocolPolicy: https-only
+      OriginSslProtocols:
+      - TLSv1
+      - TLSv1.1
+      - TLSv1.2
+      OriginReadTimeout: 30
+      OriginKeepaliveTimeout: 5
+    ConnectionAttempts: 3
+    ConnectionTimeout: 10
+    OriginShield:
+      Enabled: false
+  - Id: S3-bin.bnbstatic.com
+    DomainName: bin.bnbstatic.com.s3.amazonaws.com
+    OriginPath: ''
+    CustomHeaders:
+      Quantity: 0
+    S3OriginConfig:
+      OriginAccessIdentity: origin-access-identity/cloudfront/E95WIJ16BFBZL
+    ConnectionAttempts: 3
+    ConnectionTimeout: 10
+    OriginShield:
+      Enabled: false
+  - Id: ELB-bin-prod-fe-trade-dispatcher-alb
+    DomainName: tf-bin-prod-fe-trade-disp-alb-1199548949.ap-northeast-1.elb.amazonaws.com
+    OriginPath: ''
+    CustomHeaders:
+    - HeaderName: x-cfcalltag
+      HeaderValue: g22uazHiLT9eYgNyoECnfx20190327
+    CustomOriginConfig:
+      HTTPPort: 80
+      HTTPSPort: 443
+      OriginProtocolPolicy: https-only
+      OriginSslProtocols:
+      - TLSv1
+      - TLSv1.1
+      - TLSv1.2
+      OriginReadTimeout: 30
+      OriginKeepaliveTimeout: 5
+    ConnectionAttempts: 3
+    ConnectionTimeout: 10
+    OriginShield:
+      Enabled: false
+  - Id: ELB-bin-prod-fe-basic-dispatcher-alb
+    DomainName: tf-bin-prod-fe-basic-disp-alb-1701157891.ap-northeast-1.elb.amazonaws.com
+    OriginPath: ''
+    CustomHeaders:
+    - HeaderName: x-cfcalltag
+      HeaderValue: g22uazHiLT9eYgNyoECnfx20190327
+    CustomOriginConfig:
+      HTTPPort: 80
+      HTTPSPort: 443
+      OriginProtocolPolicy: https-only
+      OriginSslProtocols:
+      - TLSv1
+      - TLSv1.1
+      - TLSv1.2
+      OriginReadTimeout: 30
+      OriginKeepaliveTimeout: 5
+    ConnectionAttempts: 3
+    ConnectionTimeout: 10
+    OriginShield:
+      Enabled: false
+  - Id: S3-bnbprod-cloudfront-errorpages
+    DomainName: bnbprod-cloudfront-errorpages.s3.amazonaws.com
+    OriginPath: ''
+    CustomHeaders:
+      Quantity: 0
+    S3OriginConfig:
+      OriginAccessIdentity: origin-access-identity/cloudfront/E3GYMCU4G0IFQC
+    ConnectionAttempts: 3
+    ConnectionTimeout: 10
+    OriginShield:
+      Enabled: false
+  - Id: S3-wellknow-origin
+    DomainName: tf-bin-prod-binance-com-wellknow.s3.amazonaws.com
+    OriginPath: ''
+    CustomHeaders:
+      Quantity: 0
+    S3OriginConfig:
+      OriginAccessIdentity: origin-access-identity/cloudfront/EOUZTVNYH79ZE
+    ConnectionAttempts: 3
+    ConnectionTimeout: 10
+    OriginShield:
+      Enabled: false
+  - Id: ELB-bin-prod-be-common-dispatcher-alb
+    DomainName: tf-bin-prod-be-common-disp-alb-31806585.ap-northeast-1.elb.amazonaws.com
+    OriginPath: ''
+    CustomHeaders:
+    - HeaderName: x-cfcalltag
+      HeaderValue: g22uazHiLT9eYgNyoECnfx20190327
+    CustomOriginConfig:
+      HTTPPort: 80
+      HTTPSPort: 443
+      OriginProtocolPolicy: https-only
+      OriginSslProtocols:
+      - TLSv1
+      - TLSv1.1
+      - TLSv1.2
+      OriginReadTimeout: 30
+      OriginKeepaliveTimeout: 5
+    ConnectionAttempts: 3
+    ConnectionTimeout: 10
+    OriginShield:
+      Enabled: false
+  - Id: ELB-bin-prod-dispatcher-alb
+    DomainName: bin-prod-dispatcher-alb-1351194062.ap-northeast-1.elb.amazonaws.com
+    OriginPath: ''
+    CustomHeaders:
+    - HeaderName: x-cfcalltag
+      HeaderValue: g22uazHiLT9eYgNyoECnfx20190327
+    CustomOriginConfig:
+      HTTPPort: 80
+      HTTPSPort: 443
+      OriginProtocolPolicy: https-only
+      OriginSslProtocols:
+      - TLSv1
+      - TLSv1.1
+      - TLSv1.2
+      OriginReadTimeout: 30
+      OriginKeepaliveTimeout: 5
+    ConnectionAttempts: 3
+    ConnectionTimeout: 10
+    OriginShield:
+      Enabled: false
+  OriginGroups:
+    Quantity: 0
+  DefaultCacheBehavior:
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Quantity: 0
+  TrustedKeyGroups:
+    Enabled: false
+    Quantity: 0
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    CachedMethods:
+    - HEAD
+    - GET
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations:
+    Quantity: 0
+  FunctionAssociations:
+    Quantity: 0
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: all
+    Headers:
+    - "*"
+    QueryStringCacheKeys:
+      Quantity: 0
+  MinTTL: 0
+  DefaultTTL: 86400
+  MaxTTL: 31536000
+spec:
+  CacheBehaviors:
+    Items:
+      "$map":
+        "$expr":
+          "$var_replace":
+            "$template":
+              PathPattern: "${path_pattern}"
+              TargetOriginId: "${target_origin_id}"
+              TrustedSigners:
+                Enabled: false
+                Quantity: 0
+              TrustedKeyGroups:
+                Enabled: false
+                Quantity: 0
+              ViewerProtocolPolicy: redirect-to-https
+              AllowedMethods:
+                Items: "${allowed_methods}"
+                CachedMethods:
+                - HEAD
+                - GET
+              SmoothStreaming: false
+              Compress: false
+              LambdaFunctionAssociations:
+                Quantity: 0
+              FunctionAssociations:
+                Quantity: 0
+              FieldLevelEncryptionId: ''
+              ForwardedValues:
+                QueryString: true
+                Cookies:
+                  Forward: whitelist
+                  WhitelistedNames:
+                    Items: "${forwarded_cookies_whitelisted}"
+                Headers:
+                  Items: "${forwarded_headers}"
+                QueryStringCacheKeys:
+                  Items: "${forwarded_cache_keys}"
+              MinTTL: "${min_ttl}"
+              DefaultTTL: "${default_ttl}"
+              MaxTTL: "${max_ttl}"
+            "$values":
+              "$merge":
+              - target_origin_id: ELB-bin-prod-dispatcher-alb
+                min_ttl: 60
+                default_ttl: 120
+                max_ttl: 120
+              - "$item"
+        "$items":
+        - path_pattern: "/??-??/strategy/*"
+          allowed_methods:
+          - GET
+          - HEAD
+          - OPTIONS
+          min_ttl: 60
+          default_ttl: 120
+          max_ttl: 120
+          forwarded_headers:
+          - Host
+          - k8scluster
+          - Accept-Encoding
+          - bnc-theme
+          - CloudFront-Is-Mobile-Viewer
+          - CloudFront-Is-Tablet-Viewer
+          forwarded_query_string: true
+          forwarded_cache_keys:
+          - opt
+          - ref
+          - symbol
+          forwarded_cookies_forward: whitelist
+          forwarded_cookies_whitelisted:
+          - BNC-Location
+          - isRedUpGreenDown
+          - theme
+  CustomErrorResponses:
+  - ErrorCode: 404
+    ResponsePagePath: ''
+    ResponseCode: ''
+    ErrorCachingMinTTL: 0
+  Comment: TF www.binance.com
+  Logging:
+    Enabled: true
+    IncludeCookies: false
+    Bucket: bnbcflogs.s3.amazonaws.com
+    Prefix: cflogs/mainsite/
+  PriceClass: PriceClass_All
+  Enabled: true
+  ViewerCertificate:
+    CloudFrontDefaultCertificate: false
+    ACMCertificateArn: arn:aws:acm:us-east-1:369096419186:certificate/72c0c276-76ed-48cd-9ac3-dbfebfcaf6ca
+    SSLSupportMethod: sni-only
+    MinimumProtocolVersion: TLSv1.2_2019
+    Certificate: arn:aws:acm:us-east-1:369096419186:certificate/72c0c276-76ed-48cd-9ac3-dbfebfcaf6ca
+    CertificateSource: acm
+  Restrictions:
+    GeoRestriction:
+      RestrictionType: none
+      Quantity: 0
+  WebACLId: arn:aws:wafv2:us-east-1:369096419186:global/webacl/bin_prod_mainsite_cf_v2acl/3b615ee4-b419-45f9-86bd-8579a6822569
+  HttpVersion: http2
+  IsIPV6Enabled: false

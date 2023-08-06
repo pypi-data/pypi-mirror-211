@@ -1,0 +1,42 @@
+apiVersion: ecs.aws.infra/v1alpha1
+kind: Service
+properties:
+  cluster: $import( infra.meshName )
+  serviceName: ${ project }-${ env }-vgateway
+  taskDefinition: $file(vg_taskdef.yml)
+  loadBalancers:
+    - containerName: envoy
+      targetGroupArn: $file(vg_target.yml)
+      containerPort: ${ vgateway.ECSservice.containerPort }
+  ServiceRegistries:
+    - RegistryArn: $file(vg_sd.yml)
+  desiredCount: ${ vgateway.ECSservice.desiredCount }
+  deploymentConfiguration:
+    maximumPercent: 200
+    minimumHealthyPercent: 0
+    deploymentCircuitBreaker:
+      enable: false
+      rollback: false
+
+  launchType: FARGATE
+  platformVersion: LATEST
+
+  networkConfiguration:
+    awsvpcConfiguration:
+      assignPublicIp: DISABLED
+      subnets: ${ infra.ecs_nat_sunbets }
+      securityGroups: ${ vgateway.securityGroups }
+
+  healthCheckGracePeriodSeconds: 0
+  schedulingStrategy: REPLICA
+  deploymentController:
+    type: ECS
+
+  enableECSManagedTags: true
+  enableExecuteCommand: false
+ 
+  
+
+
+  
+

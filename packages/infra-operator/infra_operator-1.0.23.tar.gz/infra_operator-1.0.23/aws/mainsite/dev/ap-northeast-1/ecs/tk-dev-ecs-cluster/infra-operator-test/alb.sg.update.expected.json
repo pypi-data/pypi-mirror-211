@@ -1,0 +1,150 @@
+{
+    "Description": "managed by https://git.toolsfdg.net/devops/devops-infra",
+    "GroupName": "bin_dev_api_mapper_test_alb_sg",
+    "IpPermissions": [
+        {
+            "FromPort": 443,
+            "IpProtocol": "tcp",
+            "IpRanges": [
+                {
+                    "CidrIp": "123.32.12.42/32",
+                    "Description": "test pc"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": [],
+            "ToPort": 443,
+            "UserIdGroupPairs": []
+        },
+        {
+            "FromPort": 8080,
+            "IpProtocol": "tcp",
+            "IpRanges": [
+                {
+                    "CidrIp": "172.21.0.0/16",
+                    "Description": "all vpc"
+                },
+                {
+                    "CidrIp": "123.32.12.42/32",
+                    "Description": "test pc"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": [],
+            "ToPort": 8080,
+            "UserIdGroupPairs": []
+        }
+    ],
+    "IpPermissionsEgress": [
+        {
+            "IpProtocol": "-1",
+            "IpRanges": [
+                {
+                    "CidrIp": "0.0.0.0/0"
+                }
+            ],
+            "Ipv6Ranges": [],
+            "PrefixListIds": [],
+            "UserIdGroupPairs": []
+        }
+    ],
+    "Tags": [
+        {
+            "Key": "devops-infra-service",
+            "Value": "api-mapper-test"
+        },
+        {
+            "Key": "engine",
+            "Value": "devops-infra"
+        },
+        {
+            "Key": "env",
+            "Value": "dev"
+        },
+        {
+            "Key": "prow-pipeline",
+            "Value": "y"
+        },
+        {
+            "Key": "terraform",
+            "Value": "y"
+        }
+    ],
+    "VpcId": "vpc-06e7bab377f9cb4e9",
+    "Rules": [
+        {
+            "IsEgress": false,
+            "IpProtocol": "tcp",
+            "FromPort": 443,
+            "ToPort": 443,
+            "CidrIpv4": "123.32.12.42/32",
+            "Description": "test pc",
+            "Tags": [
+                {
+                    "Key": "engine",
+                    "Value": "devops-infra"
+                },
+                {
+                    "Key": "prow-pipeline",
+                    "Value": "y"
+                },
+                {
+                    "Key": "terraform",
+                    "Value": "y"
+                }
+            ]
+        },
+        {
+            "IsEgress": false,
+            "IpProtocol": "tcp",
+            "FromPort": 8080,
+            "ToPort": 8080,
+            "CidrIpv4": "123.32.12.42/32",
+            "Description": "test pc",
+            "Tags": [
+                {
+                    "Key": "engine",
+                    "Value": "devops-infra"
+                },
+                {
+                    "Key": "prow-pipeline",
+                    "Value": "y"
+                },
+                {
+                    "Key": "terraform",
+                    "Value": "y"
+                }
+            ]
+        },
+        {
+            "IsEgress": false,
+            "IpProtocol": "tcp",
+            "FromPort": 8080,
+            "ToPort": 8080,
+            "CidrIpv4": "172.21.0.0/16",
+            "Description": "all vpc",
+            "Tags": [
+                {
+                    "Key": "engine",
+                    "Value": "devops-infra"
+                },
+                {
+                    "Key": "prow-pipeline",
+                    "Value": "y"
+                },
+                {
+                    "Key": "terraform",
+                    "Value": "y"
+                }
+            ]
+        },
+        {
+            "IsEgress": true,
+            "IpProtocol": "-1",
+            "FromPort": -1,
+            "ToPort": -1,
+            "CidrIpv4": "0.0.0.0/0",
+            "Tags": []
+        }
+    ]
+}

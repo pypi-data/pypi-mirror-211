@@ -1,0 +1,137 @@
+VirtualNode:
+    Properties:
+      MeshName: !ImportValue
+        Fn::Sub: bc-300:Mesh
+      Spec:
+        BackendDefaults:
+          ClientPolicy:
+            TLS:
+              Validation:
+                Trust:
+                  ACM:
+                    CertificateAuthorityArns:
+                      - arn:aws:acm-pca:ap-northeast-1:427363878074:certificate-authority/52a5aff2-4103-486b-88cb-b9389e8de291
+        Backends:
+          - VirtualService:
+              VirtualServiceName: walletservice
+          - VirtualService:
+              VirtualServiceName: cserver
+          - VirtualService:
+              VirtualServiceName: userservice
+          - VirtualService:
+              VirtualServiceName: openplatformapi
+          - VirtualService:
+              VirtualServiceName: adminbackend
+          - VirtualService:
+              VirtualServiceName: billing
+          - VirtualService:
+              VirtualServiceName: convert
+          - VirtualService:
+              VirtualServiceName: defi
+          - VirtualService:
+              VirtualServiceName: doradoadmin
+          - VirtualService:
+              VirtualServiceName: dorado_push
+          - VirtualService:
+              VirtualServiceName: openapi
+          - VirtualService:
+              VirtualServiceName: cttrade
+          - VirtualService:
+              VirtualServiceName: adminweb
+          - VirtualService:
+              VirtualServiceName: doradopush
+          - VirtualService:
+              VirtualServiceName: doradomessage
+          - VirtualService:
+              VirtualServiceName: apigateway
+          - VirtualService:
+              VirtualServiceName: ledgerservice
+          - VirtualService:
+              VirtualServiceName: nis
+          - VirtualService:
+              VirtualServiceName: userapp
+          - VirtualService:
+              VirtualServiceName: send
+          - VirtualService:
+              VirtualServiceName: spottrading
+          - VirtualService:
+              VirtualServiceName: assetservice
+        Listeners:
+          - ConnectionPool:
+              HTTP:
+                MaxConnections: 65535
+                MaxPendingRequests: 65535
+            HealthCheck:
+              HealthyThreshold: 2
+              IntervalMillis: 5000
+              Path: /health.html
+              Port: 3000
+              Protocol: http
+              TimeoutMillis: 10000
+              UnhealthyThreshold: 5
+            PortMapping:
+              Port: 3000
+              Protocol: http
+            TLS:
+              Certificate:
+                ACM:
+                  CertificateArn: arn:aws:acm:ap-northeast-1:427363878074:certificate/e4a494d5-9f1a-4f7f-805a-a2037c06eccc
+              Mode: STRICT
+            Timeout:
+              HTTP:
+                PerRequest:
+                  Unit: s
+                  Value: 16
+        Logging:
+          AccessLog:
+            File:
+              Path: /dev/stdout
+        ServiceDiscovery:
+          AWSCloudMap:
+            NamespaceName: !Ref 'NamespaceName'
+            ServiceName: website-s810
+      VirtualNodeName: website-s810-vn
+    Type: AWS::AppMesh::VirtualNode
+
+taskset 
+alb + target group
+
+
+mesh 架构
+/publish dev s230 (header)
+
+merge PR 
+创建 gray 目录/ 生成一个部署PR(随机目录)
+生产清理目录，生产老的服务下线，老的目录所有资源清理。
+
+infra 目录 （自动化的）
+application 目录（手工改）
+
+及时清理目录，关闭PR，merge PR 清理掉目录。删掉目录里面的所有资源。 
+
+QA 验收 通过 
+根据目录 创建服务, 生产不用Header访问 
+
+step function ---> 
+查询一下资源创建情况，总情况。 
+调用清理接口，删除资源。
+调用创建资源接口，需要按照顺序创建资源。镜像有问题，ECS 无限重启，监听到这个事件，自动取消部署。stop service. DesiredCount 0.
+调用更新资源接口，更新image.
+
+{
+  ""
+}
+
+
+/publish dev s230 (header) --> operator 读取template + s230 + iam + sg + 服务名 --> ( 创建目录和文件 && 返回状态(资源)获取元数据) --> 将元数据存到 dynamdb --> 触发step function 
+--> 创建资源 --> 传给operator path --> 【operator 需要 merge(admin)】 ---> operator 创建资源 --> stepfunc --> 查询一下资源创建情况，总情况 --> 如何失败，已创建成功的不要创建，未创建的创建  --> mesh 
+--> 部署完了 --> step func --> id 和path --> operator 清理资源。
+
+
+关闭PR -> 清理资源 --> stepfunc --> 传递 identifer id + path ---> operator ---找到资源去删除 --> 返回状态 --> stepfunc --> 更新dynanoDB,删除相关条目.
+
+
+
+
+
+

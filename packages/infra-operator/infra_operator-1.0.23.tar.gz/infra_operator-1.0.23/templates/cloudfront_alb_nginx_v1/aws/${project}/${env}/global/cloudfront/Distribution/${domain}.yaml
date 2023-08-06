@@ -1,0 +1,236 @@
+apiVersion: cloudfront.aws.binance/v1alpha1
+kind: Distribution
+pipelineConfig:
+  no-apply: false
+  comment: 'no-apply: true prevents this file being apply by api-to-yaml. auto added
+    by api-to-yaml export. if need to apply, set to false'
+metadata:
+  Comment: ${domain} by Infra Operator
+  WebACLId: ${cloudfront-waf}
+  PriceClass: PriceClass_All
+  HttpVersion: http2and3
+  CallerReference: fe-sop-infra-operator-${domain}
+  DefaultRootObject: ''
+  ContinuousDeploymentPolicyId: ''
+  Enabled: true
+  Staging: false
+  IsIPV6Enabled: false
+  Tags:
+    app: ${app}
+    biz: ${biz}
+    env: ${env}
+    git: https://git.toolsfdg.net/devops/devops-infra/blob/master/aws/mainsite/${env}}/global/cloudfront/Distribution/${domain}.yaml
+    project: ${project}
+    team: ${team}
+    terraform: y
+spec:
+  Aliases: ${domains}
+  OriginGroups: []
+  Logging:
+    Bucket: ${cloudfrontLogging.bucket}.s3.amazonaws.com
+    Prefix: cflogs/${domain}/
+    Enabled: true
+    IncludeCookies: false
+  ViewerCertificate:
+    Certificate: ${cloudfront-certificate}
+    SSLSupportMethod: sni-only
+    ACMCertificateArn: ${cloudfront-certificate}
+    CertificateSource: acm
+    MinimumProtocolVersion: TLSv1.2_2021
+    CloudFrontDefaultCertificate: false
+  Restrictions:
+    GeoRestriction:
+      RestrictionType: none
+      Items: []
+  Origins:
+    $map:
+      $items:
+        - Id: ${project}-${env}-${name}-alb
+          DomainName: $file(elbv2/LoadBalancer/alb-${name}.yaml domainName)
+      $expr:
+        $var_replace:
+          $remove_not_found: true
+          $template:
+            Id: ${Id}
+            DomainName: ${DomainName}
+            OriginPath: ${OriginPath}
+            CustomHeaders: ${CustomHeaders}
+            ConnectionTimeout: ${ConnectionTimeout}
+            ConnectionAttempts: ${ConnectionAttempts}
+            OriginAccessControlId: ${OriginAccessControlId}
+            OriginShield:
+              Enabled: ${OriginShield.Enabled}
+            S3OriginConfig:
+              OriginAccessIdentity: ${S3OriginConfig.OriginAccessIdentity}
+            CustomOriginConfig:
+              HTTPPort: ${CustomOriginConfig.HTTPPort}
+              HTTPSPort: ${CustomOriginConfig.HTTPSPort}
+              OriginReadTimeout: ${CustomOriginConfig.OriginReadTimeout}
+              OriginSslProtocols: ${CustomOriginConfig.OriginSslProtocols}
+              OriginProtocolPolicy: ${CustomOriginConfig.OriginProtocolPolicy}
+              OriginKeepaliveTimeout: ${CustomOriginConfig.OriginKeepaliveTimeout}
+          $values:
+            $merge:
+              - OriginPath: ''
+                OriginAccessControlId: ''
+                CustomOriginConfig.OriginProtocolPolicy: https-only
+                OriginShield.Enabled: false
+                ConnectionTimeout: 10
+                ConnectionAttempts: 3
+                CustomOriginConfig.HTTPPort: 80
+                CustomOriginConfig.HTTPSPort: 443
+                CustomOriginConfig.OriginReadTimeout: 30
+                CustomOriginConfig.OriginSslProtocols:
+                  - TLSv1
+                  - TLSv1.1
+                  - TLSv1.2
+                CustomOriginConfig.OriginKeepaliveTimeout: 5
+                CustomHeaders:
+                  - HeaderName: x-cfcalltag
+                    HeaderValue: cfcalltag
+              - $item
+  CustomErrorResponses:
+    - ResponseCode: ''
+      ResponsePagePath: ''
+      ErrorCode: 404
+      ErrorCachingMinTTL: 0
+  DefaultCacheBehavior:
+    TargetOriginId: ELB-${project}}-{{env}-dispatcher-alb
+    ViewerProtocolPolicy: redirect-to-https
+    FieldLevelEncryptionId: ''
+    Compress: true
+    SmoothStreaming: false
+    MinTTL: 0
+    MaxTTL: 31536000
+    DefaultTTL: 86400
+    FunctionAssociations: []
+    LambdaFunctionAssociations: []
+    TrustedSigners:
+      Enabled: false
+      Items: []
+    AllowedMethods:
+      Items:
+        - HEAD
+        - DELETE
+        - POST
+        - GET
+        - OPTIONS
+        - PUT
+        - PATCH
+      CachedMethods:
+        - HEAD
+        - GET
+        - OPTIONS
+    ForwardedValues:
+      QueryString: true
+      Cookies:
+        Forward: all
+      Headers:
+        - '*'
+      QueryStringCacheKeys: []
+    TrustedKeyGroups:
+      Enabled: false
+      Items: []
+  CacheBehaviors:
+    $map:
+      $items:
+        - PathPattern: /??-??
+          MinTTL: 60
+          MaxTTL: 120
+          DefaultTTL: 120
+          ForwardedValues.Headers:
+            - Host
+            - k8scluster
+        - PathPattern: /??-??/
+          MinTTL: 60
+          MaxTTL: 120
+          DefaultTTL: 120
+          ForwardedValues.Headers:
+            - Host
+            - k8scluster
+        - PathPattern: /??-??/*
+          MinTTL: 60
+          MaxTTL: 120
+          DefaultTTL: 120
+          ForwardedValues.Headers:
+            - Host
+            - k8scluster
+        - PathPattern: /??
+          MinTTL: 60
+          MaxTTL: 120
+          DefaultTTL: 120
+          ForwardedValues.Headers:
+            - Host
+            - k8scluster
+        - PathPattern: /??/
+          MinTTL: 60
+          MaxTTL: 120
+          DefaultTTL: 120
+          ForwardedValues.Headers:
+            - Host
+            - k8scluster
+        - PathPattern: /??/*
+          MinTTL: 60
+          MaxTTL: 120
+          DefaultTTL: 120
+          ForwardedValues.Headers:
+            - Host
+            - k8scluster
+      $expr:
+        $var_replace:
+          $remove_not_found: true
+          $template:
+            MinTTL: ${MinTTL}
+            MaxTTL: ${MaxTTL}
+            Compress: ${Compress}
+            DefaultTTL: ${DefaultTTL}
+            PathPattern: ${PathPattern}
+            TargetOriginId: ${TargetOriginId}
+            SmoothStreaming: ${SmoothStreaming}
+            ViewerProtocolPolicy: ${ViewerProtocolPolicy}
+            FunctionAssociations: ${FunctionAssociations}
+            FieldLevelEncryptionId: ${FieldLevelEncryptionId}
+            LambdaFunctionAssociations: ${LambdaFunctionAssociations}
+            TrustedSigners:
+              Items: ${TrustedSigners.Items}
+              Enabled: ${TrustedSigners.Enabled}
+            AllowedMethods:
+              Items: ${AllowedMethods.Items}
+              CachedMethods: ${AllowedMethods.CachedMethods}
+            TrustedKeyGroups:
+              Items: ${TrustedKeyGroups.Items}
+              Enabled: ${TrustedKeyGroups.Enabled}
+            ForwardedValues:
+              Headers: ${ForwardedValues.Headers}
+              QueryString: ${ForwardedValues.QueryString}
+              QueryStringCacheKeys: ${ForwardedValues.QueryStringCacheKeys}
+              Cookies:
+                Forward: ${ForwardedValues.Cookies.Forward}
+                WhitelistedNames: ${ForwardedValues.Cookies.WhitelistedNames}
+          $values:
+            $merge:
+              - TargetOriginId: ELB-${project}}-{{env}-dispatcher-alb
+                ViewerProtocolPolicy: redirect-to-https
+                FieldLevelEncryptionId: ''
+                ForwardedValues.Headers:
+                  - Host
+                  - k8scluster
+                ForwardedValues.QueryString: false
+                ForwardedValues.Cookies.Forward: none
+                Compress: true
+                AllowedMethods.Items:
+                  - HEAD
+                  - GET
+                  - OPTIONS
+                AllowedMethods.CachedMethods:
+                  - HEAD
+                  - GET
+                  - OPTIONS
+                SmoothStreaming: false
+                TrustedSigners.Enabled: false
+                TrustedKeyGroups.Enabled: false
+                TrustedSigners.Items: []
+                FunctionAssociations: []
+                TrustedKeyGroups.Items: []
+                LambdaFunctionAssociations: []
+              - $item

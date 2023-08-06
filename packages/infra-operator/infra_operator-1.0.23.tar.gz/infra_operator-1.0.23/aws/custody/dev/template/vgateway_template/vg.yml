@@ -1,0 +1,146 @@
+AWSTemplateFormatVersion: '2010-09-09'
+
+Resources:
+  ECSGatewayService:
+    Properties:
+      Cluster: !ImportValue
+        Fn::Sub: bc-100:ECSCluster
+      DeploymentConfiguration:
+        MaximumPercent: 200
+        MinimumHealthyPercent: 100
+      DesiredCount: !Ref 'DesiredCount'
+      LaunchType: FARGATE
+      LoadBalancers:
+        - ContainerName: envoy
+          ContainerPort: !Ref 'ContainerPort'
+          TargetGroupArn: !Ref 'TargetGroupArn'
+      NetworkConfiguration:
+        AwsvpcConfiguration:
+          AssignPublicIp: DISABLED
+          SecurityGroups: !Ref 'SecurityGroups'
+          Subnets: !Ref 'Subnets'
+      ServiceName: custody-dev-vgateway
+      ServiceRegistries:
+        - RegistryArn: !GetAtt 'GatewayServiceDiscoveryRecord.Arn'
+      TaskDefinition: !Ref 'GatewayTaskDefinition'
+    Type: AWS::ECS::Service
+  
+  
+  
+  
+  ECSServiceLogGroup:
+    Properties:
+      LogGroupName: /vgateway-bc-100
+      RetentionInDays: 7
+    Type: AWS::Logs::LogGroup
+  GatewayServiceDiscoveryRecord:
+    Properties:
+      DnsConfig:
+        DnsRecords:
+          - TTL: 300
+            Type: A
+        NamespaceId: ns-zru2kasn363wtcb4
+      Name: vgateway-bc-100
+    Type: AWS::ServiceDiscovery::Service
+  GatewayTaskDefinition:
+    Properties:
+      ContainerDefinitions:
+        - Environment:
+            - Name: ENVOY_LOG_LEVEL
+              Value: info
+            - Name: ENABLE_ENVOY_DOG_STATSD
+              Value: '1'
+            - Name: APPMESH_METRIC_EXTENSION_VERSION
+              Value: '1'
+            - Name: APPMESH_RESOURCE_ARN
+              Value: !Ref 'VirtualGateway'
+          Essential: true
+          HealthCheck:
+            Command:
+              - CMD-SHELL
+              - curl -s http://localhost:9901/ready
+            Interval: 5
+            Retries: 10
+            Timeout: 10
+          Image: !Ref 'EnvoyImage'
+          LogConfiguration:
+            LogDriver: awslogs
+            Options:
+              awslogs-group: !Ref 'ECSServiceLogGroup'
+              awslogs-region: !Ref 'AWS::Region'
+              awslogs-stream-prefix: bc-100-custody-devvgateway-vg-service
+          Name: envoy
+          PortMappings:
+            - ContainerPort: 9901
+              Protocol: tcp
+            - ContainerPort: !Ref 'ContainerPort'
+              Protocol: tcp
+          Ulimits:
+            - HardLimit: 65535
+              Name: nofile
+              SoftLimit: 65535
+          User: '1337'
+        - Environment:
+            - Name: DT_API_URL
+              Value: https://envag.ejeokvv.com:9999/e/27c854e9-2b08-44dc-aff8-45e3094e230c/api
+            - Name: DT_ONEAGENT_OPTIONS
+              Value: default
+            - Name: DT_PAAS_TOKEN
+              Value: dt0c01.JIEBX2YVPBAUIEMOGYZTSGQD.OKLXYDVJHUCTOLYXDFMDJF4VJH7PACDXK3MXMV2HH3ZLDVSBMF6KZ3NNFMKCTBVW
+          Essential: false
+          Image: 740529195164.dkr.ecr.ap-northeast-1.amazonaws.com/custody-devops/custody-dynatrace:35621e7483edc3e3b79edcbf7936c4c3cd025b4c
+          LogConfiguration:
+            LogDriver: awslogs
+            Options:
+              awslogs-group: !Ref 'ECSServiceLogGroup'
+              awslogs-region: !Ref 'AWS::Region'
+              awslogs-stream-prefix: bc-100-vgateway-install-oneagent
+          MountPoints:
+            - ContainerPath: /opt/dynatrace/oneagent
+              ReadOnly: false
+              SourceVolume: oneagent
+          Name: install-oneagent
+          PortMappings: []
+          Ulimits:
+            - HardLimit: 65535
+              Name: nofile
+              SoftLimit: 65535
+      Cpu: !Ref 'Cpus'
+      ExecutionRoleArn: !ImportValue
+        Fn::Sub: bc-100:ExecutionRole
+      Family: custody-dev-vgateway-bc-100
+      Memory: !Ref 'Memory'
+      NetworkMode: awsvpc
+      RequiresCompatibilities:
+        - FARGATE
+      TaskRoleArn: !Ref 'TaskRoleArn'
+      Volumes:
+        - Name: oneagent
+    Type: AWS::ECS::TaskDefinition
+  VirtualGateway:
+    Properties:
+      MeshName: !ImportValue
+        Fn::Sub: bc-100:Mesh
+      Spec:
+        BackendDefaults:
+          ClientPolicy:
+            TLS:
+              Validation:
+                Trust:
+                  ACM:
+                    CertificateAuthorityArns:
+                      - arn:aws:acm-pca:ap-northeast-1:221542130948:certificate-authority/54e12f8c-a8e7-4ce4-b01d-d39789453812
+        Listeners:
+          - ConnectionPool:
+              HTTP:
+                MaxConnections: 65535
+                MaxPendingRequests: 65535
+            PortMapping:
+              Port: !Ref 'ContainerPort'
+              Protocol: http
+        Logging:
+          AccessLog:
+            File:
+              Path: /dev/stdout
+      VirtualGatewayName: custody-dev-vgateway
+    Type: AWS::AppMesh::VirtualGateway

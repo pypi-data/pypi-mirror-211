@@ -1,0 +1,36 @@
+apiVersion: ecs.aws.infra/v1alpha1
+kind: Service
+pipelineConfig:
+  no-apply: true
+  comment: 'no-apply: true prevents this file being apply by infra-operator. auto
+    added by infra-operator export. if need to apply, set to false'
+metadata:
+  launchType: FARGATE
+  serviceName: bin-dev-comb-1-service
+  propagateTags: NONE
+  taskDefinition: $file(taskDefinition.yaml)
+  platformVersion: LATEST
+  schedulingStrategy: REPLICA
+  enableECSManagedTags: true
+  enableExecuteCommand: false
+  desiredCount: 2
+  healthCheckGracePeriodSeconds: 0
+spec:
+  deploymentController:
+    type: ECS
+  deploymentConfiguration:
+    maximumPercent: 200
+    minimumHealthyPercent: 0
+    deploymentCircuitBreaker:
+      enable: false
+      rollback: false
+  loadBalancers:
+    - containerName: main
+      targetGroupArn: $file(targetGroup.yaml)
+      containerPort: 80
+  networkConfiguration:
+    awsvpcConfiguration:
+      assignPublicIp: DISABLED
+      subnets: ${ecs-nat-subnets}
+      securityGroups:
+        - $file(service.sg.yaml)

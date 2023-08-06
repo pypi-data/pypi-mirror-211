@@ -1,0 +1,23 @@
+apiVersion: elbv2.aws.binance/v1alpha1
+kind: TargetGroup
+metadata:
+  Name: cloud-prod-dispatcher-tg-r1
+  Tags:
+    team: thailand
+    biz: exchange
+  TargetType: instance
+spec:
+  Protocol: HTTP
+  Port: 80
+  VpcId: vpc-123456
+  TargetType: instance
+  HealthCheckEnabled: true
+  UnhealthyThresholdCount: 2
+  HealthyThresholdCount: 3
+  HealthCheckPath: /
+  Matcher:
+    HttpCode: '200'
+  HealthCheckProtocol: HTTP
+  HealthCheckPort: traffic-port
+  HealthCheckIntervalSeconds: 10
+  HealthCheckTimeoutSeconds: 5

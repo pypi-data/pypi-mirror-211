@@ -1,0 +1,8 @@
+apiVersion: appmesh.aws.infra/v1alpha1
+kind: Mesh
+metadata:
+  meshName: ${project}-${env}-${infra.infraIdentifier}
+  tags: ${infra.devops_common_infra_tags}
+spec:
+  egressFilter:
+    type: ALLOW_ALL

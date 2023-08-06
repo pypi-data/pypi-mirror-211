@@ -1,0 +1,15 @@
+apiVersion: anyscale.aws.infra/v1alpha1
+kind: ScalableTarget
+metadata:
+  ServiceNamespace: ecs
+  ScalableDimension: ecs:service:DesiredCount
+  ResourceId:
+    $arn_body:
+      $file(service.yaml)
+spec:
+  MinCapacity: 1
+  MaxCapacity: 10
+  SuspendedState:
+    DynamicScalingInSuspended: false
+    DynamicScalingOutSuspended: false
+    ScheduledScalingSuspended: false

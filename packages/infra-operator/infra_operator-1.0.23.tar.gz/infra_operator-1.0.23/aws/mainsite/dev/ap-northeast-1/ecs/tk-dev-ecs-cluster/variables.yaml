@@ -1,0 +1,133 @@
+sns_resource_arn: arn:aws:sns:ap-northeast-1:173062506398:cache-proxy
+internal-alb-subnets:
+  - subnet-005223e14aa168a2c
+  - subnet-0e5d061593dd742a0
+  - subnet-0f7c148c34aff7ba0
+internal-alb-subnets-2:
+  - subnet-0ca4cb52526ef365e
+  - subnet-021f8d89ff645f054
+  - subnet-09be8cd943053e566
+ecs-nat-subnets:
+  - subnet-0fefc1f828c888665
+  - subnet-058843ebf1d588db2
+  - subnet-08a4644bcd3d87697
+ecs-private-cidrip:
+  - CidrIp: 172.21.92.0/24
+  - CidrIp: 172.21.93.0/24
+  - CidrIp: 172.21.91.0/24
+ecs-public-cidrip:
+  - CidrIp: 172.21.72.0/24
+  - CidrIp: 172.21.71.0/24
+  - CidrIp: 172.21.73.0/24
+sg-id-for-xxljob: sg-05181a64145e8fcd5
+exec-role: arn:aws:iam::173062506398:role/ec2_jenkins_role
+cluster-vpc-id: vpc-06e7bab377f9cb4e9
+vpc-cidr: 172.21.0.0/16
+aws_account_id: "173062506398"
+prefix: bin
+es_log_topic: "dev-fe-firelens-logs"
+es_log_broker: "kafka-devqa-log.devfdg.net:30001,kafka-devqa-log.devfdg.net:30002,kafka-devqa-log.devfdg.net:30003"
+common-ui:
+  - name: ACCOUNTS_HOST_PUBLIC
+    value: "https://accounts.binance.com"
+  - name: ACCOUNTS_PREFIX
+    value: "accounts"
+  - name: API_ACCELERATE_HOST_PUBLIC
+    value: "https://www.{{rootDomain}}"
+  - name: API_HOST
+    value: "https://www.{{rootDomain}}"
+  - name: API_HOST_PRIVATE
+    value: "https://www.{{rootDomain}}"
+  - name: SOCIAL_TRADING_API_HOST
+    value: "https://www.{{rootDomain}}"
+  - name: OAUTH_REDIRECT_URI
+    value: "https://www.{{rootDomain}}"
+  - name: INTERNAL_API_HOST
+    value: "https://www.{{rootDomain}}"
+  - name: API_HOST_PUBLIC
+    value: "https://www.{{rootDomain}}"
+  - name: ENABLE_GOOGLE_TRANSLATE
+    value: "true"
+  - name: I18N_BASE_PRIVATE
+    value: "http://bin.bnbstatic.com.s3.ap-northeast-1.amazonaws.com/api/i18n/-/web/cms"
+  - name: I18N_BASE_PUBLIC
+    value: "https://bin.bnbstatic.com/api/i18n/-/web/cms"
+  - name: LOGAN_HOST
+    value: "https://logan-log.binance.gg"
+  - name: REDIS_READ
+    value: "redis.fe-master.devfdg.net:6379"
+  - name: REDIS_WRITE
+    value: "redis.fe-master.devfdg.net:6379"
+  - name: RENDER_CACHE_ENABLED
+    value: "true"
+  - name: SENSORS_SERVER_HOST
+    value: "https://sensors.binance.cloud/sa?project"
+  - name: SENSORS_WEB_HOST
+    value: "https://s.datasconsole.com/?project"
+  - name: SENTRY_DSN
+    value: "https://7b0916eed4e748dea6bbdcfcfd4e326c@report.binance.gg/10"
+  - name: SITE_HOST
+    value: "https://www.{{rootDomain}}"
+  - name: STATIC_HOST
+    value: "https://static.devfdg.net"
+  - name: STATIC_HOST_PRIVATE
+    value: "https://static.devfdg.net"
+  - name: STATIC_HOST_PUBLIC
+    value: "https://bin.bnbstatic.com"
+  - name: STATIC_HOST_SHARE
+    value: "https://public.bnbstatic.com"
+  - name: ACCELERATE_DEFAULT_DOMAIN
+    value: "www.{{rootDomain}}"
+  - name: ACCELERATE_ENBLED_SITES
+    value: "www.{{rootDomain}}"
+  - name: ACCELERATE_AVAILABLE_DOMAIN
+    value: "www.{{rootDomain}}"
+  - name: TRADINGVIEW_STATIC_PATH
+    value: tradingview
+  - name: API_HOST_TEMPLATE
+    value: "https://www.{{rootDomain}}"
+  - name: SITE_HOST_TEMPLATE
+    value: "https://www.{{rootDomain}}"
+  - name: DEFAULT_SITE_HOST
+    value: "https://www.traderwagon.com"
+
+managed_by_prow_tags: &managed_by_prow_tags
+  message: managed by https://git.toolsfdg.net/devops/devops-infra
+
+devops_common_infra_tags:
+  <<: *managed_by_prow_tags
+  team: devops
+  biz: common-infra
+
+devops_cmdb_tags:
+  <<: *managed_by_prow_tags
+  team: devops
+  biz: cmdb
+
+devops_sre_portal_tags:
+  <<: *managed_by_prow_tags
+  team: devops
+  biz: sre_portal
+
+bigdata_bdp_ecs_tags:
+  <<: *managed_by_prow_tags
+  team: bigdata
+  biz: bdp_ecs
+
+bigdata_chatbot_tags:
+  <<: *managed_by_prow_tags
+  team: bigdata
+  biz: chatbot
+
+wea_notifier:
+  '.*': 8752665b21284af4bc6199e4ba231da5 # fallback notification group
+  'dev-.*': c8ef172fddf54837a76b00718b15d731
+  'dom-debug.*': c8ef172fddf54837a76b00718b15d731
+  '.*debug.*': c8ef172fddf54837a76b00718b15d731
+  '.*etracer.*': c8ef172fddf54837a76b00718b15d731
+
+service_discory_namespace_id: ns-drvpjvvir6wac222
+service_discory_namespace_name: local
+appmesh_mesh_name: bin-dev-dom-debug-mesh
+ecs_prometheus_endpoint: http://nonprod-dev.vminsert.internal:80/insert/0/prometheus
+kms_key: arn:aws:kms:ap-northeast-1:173062506398:key/a73839a6-2c75-4290-8a32-431af8807142

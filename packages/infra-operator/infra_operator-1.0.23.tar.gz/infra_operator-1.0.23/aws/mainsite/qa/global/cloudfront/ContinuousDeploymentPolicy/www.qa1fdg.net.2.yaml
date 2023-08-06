@@ -1,0 +1,16 @@
+apiVersion: cloudfront.aws.infra/v1alpha1
+kind: ContinuousDeploymentPolicy
+pipelineConfig:
+  no-apply: false
+  comment: 'no-apply: true prevents this file being apply by api-to-yaml. auto added
+    by api-to-yaml export. if need to apply, set to false'
+metadata:
+  Enabled: true
+spec:
+  StagingDistributionDnsNames:
+    - $file(Distribution/www.qa1fdg.net.staging.2.yaml, DomainName)
+  TrafficConfig:
+    Type: SingleHeader
+    SingleHeaderConfig:
+      Value: 'true'
+      Header: aws-cf-cd-debug

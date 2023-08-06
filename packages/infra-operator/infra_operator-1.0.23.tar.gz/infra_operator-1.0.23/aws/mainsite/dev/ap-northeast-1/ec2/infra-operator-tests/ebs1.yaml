@@ -1,0 +1,25 @@
+apiVersion: ec2.aws.infra/v1alpha1
+kind: Volume
+metadata:
+  VolumeId: vol-01f3e9d85c9246271
+  SnapshotId: snap-08a7cb489033af8c7
+  VolumeType: gp2
+  AvailabilityZone: ap-northeast-1d
+  Encrypted: false
+  MultiAttachEnabled: false
+  Size: 50
+  Iops: 150
+  Tags:
+    terraform: y
+    engine: devops-infra
+    biz: common-infra
+    devops-infra-service: infra-operator-tests
+    env: dev
+    team: dex
+    updateSSMAgentAuto: y
+    dexdev: y
+    prow-pipeline: y
+    Name: bin_dev_infra_operator_tests_1
+    devops: y
+    project: fullnode
+spec: {}

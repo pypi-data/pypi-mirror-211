@@ -1,0 +1,27 @@
+input:
+  infra:
+    $merge:
+      - project: custody
+        environment: dev
+        app_name: infra-100
+        biz_alias: cd
+        prefix: cd
+        enable_s3: false
+        s3_arn: arn:aws:s3:::static.devfdg.net
+        ServiceName: infra 
+        infraIdentifier: bc-100 
+        InfraRole: arn:aws:iam::221542130948:role/custody_dev_prow_infra_role
+        Region: ap-northeast-1
+        devops_common_infra_tags:
+          infra_opertor: "y"
+          terraform: "n"
+          role: "infra"
+      - $yaml_content(../common.yml)
+
+output:
+  meshName: $file(/aws/custody/dev/template/infra_template/mesh.yml, meshName)
+  execRoleName: $file(/aws/custody/dev/template/infra_template/exec_role.yml, RoleName)
+  execRoleArn: $file(/aws/custody/dev/template/infra_template/exec_role.yml)
+  clusterName: $file(/aws/custody/dev/template/infra_template/cluster.yml, clusterName)
+  clusterArn: $file(/aws/custody/dev/template/infra_template/cluster.yml)
+  nameSpaceId: $file(/aws/custody/dev/template/infra_template/namespace.yml)

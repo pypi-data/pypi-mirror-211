@@ -1,0 +1,10 @@
+apiVersion: iam.aws.infra/v1alpha1
+kind: Policy
+metadata:
+  PolicyName: bin_dev_api_mapper_test_alb_sg
+  Description: 'string'
+  Path: 'string'
+  Tags:
+    team: devops
+spec:
+  PolicyDocument: $file_content(./policy.json)

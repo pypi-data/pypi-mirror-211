@@ -1,0 +1,20 @@
+apiVersion: ecs.aws.infra/v1alpha1
+kind: ECS/Cluster
+pipelineConfig:
+  no-apply: true
+  comment: 'no-apply: true prevents this file being apply by infra-operator. auto
+    added by infra-operator export. if need to apply, set to false'
+metadata:
+  clusterName: bin-dev-infra-operator-tests-cluster
+  tags:
+    prow-pipeline: y
+    biz: common-infra
+    engine: devops-infra
+    terraform: y
+    team: devops
+    env: dev
+    message: managed by https://git.toolsfdg.net/devops/devops-infra
+spec:
+  settings:
+    - name: containerInsights
+      value: disabled

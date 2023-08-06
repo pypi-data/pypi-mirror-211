@@ -1,0 +1,15 @@
+ContainerImage: "xxxxx"
+Cpus: 100
+DesiredCount: 5
+EnvFile: "s3://xxxx"
+EnvironmentName: dev
+EnvoyImage: "ecr://"
+HealthCheckCMD: "curl xxxx"
+Memory: 1024
+MonitorImage: 
+MultilinePattern: "xxx"
+NamespaceName: "xxxxx"
+SecurityGroups: ../sg.yml
+ServiceName: wallet 
+Subnets: "xxxxx"
+TaskRoleArn: "xxxxx"

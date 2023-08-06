@@ -1,0 +1,69 @@
+apiVersion: ec2.aws.infra/v1alpha1
+kind: Instance
+pipelineConfig:
+  no-apply: true
+  comment: 'no-apply: true prevents this file being apply by infra-operator. auto
+    added by infra-operator export. if need to apply, set to false'
+metadata:
+  ImageId: ami-0c3fd0f5d33134a76
+  KeyName: tk_dev_kp
+  SubnetId: subnet-01858d6f76a83bbb1
+  InstanceId: i-044dc10affa48d4f2
+  InstanceType: m5.2xlarge
+  EbsOptimized: true
+  Tags:
+    Name: bin_dev_infra_operator_tests_ec2_1
+    biz: common-infra
+    devops-infra-service: infra-operator-tests
+    env: dev
+    team: devops
+    engine: devops-infra
+    terraform: y
+    project: infra-operator
+    devops: y
+    prow-pipeline: y
+spec:
+  Placement:
+    Tenancy: default
+    GroupName: ''
+    AvailabilityZone: ap-northeast-1d
+  IamInstanceProfile:
+    Arn: arn:aws:iam::173062506398:instance-profile/bin_dev_SessionManagerInstanceProfile
+  MaintenanceOptions:
+    AutoRecovery: default
+  CapacityReservationSpecification:
+    CapacityReservationPreference: open
+  Monitoring:
+    Enabled: false
+  EnclaveOptions:
+    Enabled: false
+  HibernationOptions:
+    Configured: false
+  PrivateDnsNameOptions:
+    HostnameType: ip-name
+    EnableResourceNameDnsARecord: false
+    EnableResourceNameDnsAAAARecord: false
+  TagSpecifications:
+    - ResourceType: volume
+      Tags:
+        biz: common-infra
+        env: dev
+        Name: bin_dev_infra_operator_tests_ec2_1_ebs
+        team: devops
+        project: infra-operator
+  BlockDeviceMappings:
+    - DeviceName: /dev/xvda
+      Ebs:
+        VolumeId: vol-0ea9b1d0472960b90
+        SnapshotId: snap-08a7cb489033af8c7
+        VolumeType: gp2
+        Encrypted: false
+        DeleteOnTermination: true
+        VolumeSize: 50
+    - DeviceName: /dev/sdb
+      Ebs:
+        VolumeId: vol-0b41523125d0e5f67
+        VolumeType: gp2
+        Encrypted: false
+        DeleteOnTermination: true
+        VolumeSize: 2048

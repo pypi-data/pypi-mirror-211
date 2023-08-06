@@ -1,0 +1,19 @@
+apiVersion: elbv2.aws.infra/v1
+kind: TargetGroup
+spec:
+  Name: ${ project }-${ env }-${ infra.infraIdentifier }-vgateway-tg
+  VpcId: ${ infra.vpc_id }
+  Protocol: ${ vgateway.targetGroup.Protocol }
+  TargetType: ${ vgateway.targetGroup.TargetType }
+  HealthCheckPort: ${ vgateway.targetGroup.HealthCheckPort }
+  HealthCheckPath: ${ vgateway.targetGroup.HealthCheckPath }
+  HealthCheckProtocol: ${ vgateway.targetGroup.HealthCheckProtocol }
+  HealthCheckEnabled: ${ vgateway.targetGroup.HealthCheckEnabled }
+  Port: ${ vgateway.targetGroup.Port }
+  HealthyThresholdCount:  ${ vgateway.targetGroup.HealthyThresholdCount }
+  UnhealthyThresholdCount: ${ vgateway.targetGroup.UnhealthyThresholdCount }
+  HealthCheckTimeoutSeconds: ${ vgateway.targetGroup.HealthCheckTimeoutSeconds }
+  HealthCheckIntervalSeconds: ${ vgateway.targetGroup.HealthCheckIntervalSeconds }
+  Matcher:
+    HttpCode: '200'
+  

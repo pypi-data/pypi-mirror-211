@@ -1,0 +1,43 @@
+apiVersion: ec2.aws.infra/v1alpha1
+kind: SecurityGroup
+metadata:
+  Description: managed by https://git.toolsfdg.net/devops/devops-infra
+  GroupName:
+    $lower:
+      $underscore:
+        ${prefix}_${env}_${name}_sg
+  VpcId: ${cluster-vpc-id}
+spec:
+  ingress:
+  - FromPort: 80
+    ToPort: 80
+    IpProtocol: tcp
+    IpRanges:
+    - CidrIp: 192.168.0.0/16
+      Description: all sh office
+    - CidrIp: 10.198.0.0/16
+      Description: vpn
+  - FromPort: 443
+    ToPort: 443
+    IpProtocol: tcp
+    IpRanges:
+    - CidrIp: 192.168.0.0/16
+      Description: all sh office
+    - CidrIp: 10.198.0.0/16
+      Description: vpn
+  - FromPort: 8090
+    ToPort: 8090
+    IpProtocol: tcp
+    IpRanges:
+    - CidrIp: 192.168.0.0/16
+      Description: all sh office
+    - CidrIp: 10.198.0.0/16
+      Description: vpn
+  - FromPort: 9004
+    ToPort: 9004
+    IpProtocol: tcp
+    IpRanges:
+    - CidrIp: 192.168.0.0/16
+      Description: all sh office
+    - CidrIp: 10.198.0.0/16
+      Description: vpn

@@ -1,0 +1,87 @@
+apiVersion: ec2.aws.infra/v1alpha1
+kind: SecurityGroup
+pipelineConfig:
+  no-apply: true
+  comment: 'no-apply: true prevents this file being apply by infra-operator. auto
+    added by infra-operator export. if need to apply, set to false'
+metadata:
+  VpcId: vpc-06e7bab377f9cb4e9
+  GroupName: tf_bin_dev_cross_proxy_eks_pod_sg
+  Description: tf_bin_dev_cross_proxy_eks_pod_sg
+  Tags:
+    Name: tf_bin_dev_cross_proxy_eks_pod_sg
+    biz: common-infra
+    team: backend
+    terraform: y
+spec:
+  egress:
+    - IpProtocol: '-1'
+      IpRanges:
+        - CidrIp: 0.0.0.0/0
+  ingress:
+    - IpProtocol: tcp
+      ToPort: 9915
+      FromPort: 9915
+      IpRanges:
+        - CidrIp: 172.21.160.0/20
+          Description: tf allow all ecs to access cross_proxy
+        - CidrIp: 172.21.176.0/20
+          Description: tf allow all ecs to access cross_proxy
+        - CidrIp: 172.21.144.0/20
+          Description: tf allow all ecs to access cross_proxy
+      UserIdGroupPairs:
+        - UserId: '173062506398'
+          GroupId: sg-05181a64145e8fcd5
+          Description: tf allow all ecs to access cross_proxy
+    - IpProtocol: tcp
+      ToPort: 9916
+      FromPort: 9915
+      UserIdGroupPairs:
+        - VpcId: vpc-0cbdeca779f0a7eb0
+          UserId: '289663586776'
+          GroupId: sg-0ecdd6468fd3581cf
+          Description: tf allow fiat dev cross_proxy to access cross_proxy
+          PeeringStatus: active
+          VpcPeeringConnectionId: pcx-08835bb181b1563f1
+    - IpProtocol: tcp
+      ToPort: 9916
+      FromPort: 9916
+      IpRanges:
+        - CidrIp: 172.21.160.0/20
+          Description: tf allow all ecs to access cross_proxy
+        - CidrIp: 172.21.144.0/20
+          Description: tf allow all ecs to access cross_proxy
+        - CidrIp: 172.21.176.0/20
+          Description: tf allow all ecs to access cross_proxy
+      UserIdGroupPairs:
+        - UserId: '173062506398'
+          GroupId: sg-05181a64145e8fcd5
+          Description: tf allow all ecs to access cross_proxy
+    - IpProtocol: tcp
+      ToPort: 39915
+      FromPort: 39915
+      IpRanges:
+        - CidrIp: 172.21.160.0/20
+          Description: tf allow all ecs to access cross_proxy
+        - CidrIp: 172.21.176.0/20
+          Description: tf allow all ecs to access cross_proxy
+        - CidrIp: 172.21.144.0/20
+          Description: tf allow all ecs to access cross_proxy
+      UserIdGroupPairs:
+        - UserId: '173062506398'
+          GroupId: sg-05181a64145e8fcd5
+          Description: tf allow all ecs to access cross_proxy
+    - IpProtocol: tcp
+      ToPort: 49915
+      FromPort: 49915
+      IpRanges:
+        - CidrIp: 172.21.160.0/20
+          Description: tf allow all ecs to access cross_proxy
+        - CidrIp: 172.21.176.0/20
+          Description: tf allow all ecs to access cross_proxy
+        - CidrIp: 172.21.144.0/20
+          Description: tf allow all ecs to access cross_proxy
+      UserIdGroupPairs:
+        - UserId: '173062506398'
+          GroupId: sg-05181a64145e8fcd5
+          Description: tf allow all ecs to access cross_proxy

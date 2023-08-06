@@ -1,0 +1,9 @@
+apiVersion: elbv2.aws.infra/v1
+kind: ServiceDiscovery
+spec:
+  Name: vgateway-${ infra.infraIdentifier }
+  NamespaceId: ${ infra.NamespaceId }
+  DnsConfig: 
+    DnsRecords: 
+      - TTL: 300 
+        Type: A

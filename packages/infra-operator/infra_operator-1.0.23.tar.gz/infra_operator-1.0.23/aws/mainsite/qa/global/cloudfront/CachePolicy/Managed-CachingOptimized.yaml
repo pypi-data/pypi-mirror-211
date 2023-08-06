@@ -1,0 +1,23 @@
+apiVersion: cloudfront.aws.infra/v1alpha1
+kind: CachePolicy
+pipelineConfig:
+  no-apply: true
+  comment: 'no-apply: true prevents this file being apply by infra-operator. auto
+    added by infra-operator export. if need to apply, set to false'
+metadata:
+  Id: 658327ea-f89d-4fab-a63d-7e88639e58f6
+  Name: Managed-CachingOptimized
+  Comment: Policy with caching enabled. Supports Gzip and Brotli compression.
+  MaxTTL: 31536000
+  MinTTL: 1
+  DefaultTTL: 86400
+spec:
+  ParametersInCacheKeyAndForwardedToOrigin:
+    EnableAcceptEncodingGzip: true
+    EnableAcceptEncodingBrotli: true
+    HeadersConfig:
+      HeaderBehavior: none
+    CookiesConfig:
+      CookieBehavior: none
+    QueryStringsConfig:
+      QueryStringBehavior: none

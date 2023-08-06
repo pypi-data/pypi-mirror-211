@@ -1,0 +1,56 @@
+apiVersion: iam.aws.infra/v1alpha1
+kind: Role
+pipelineConfig:
+  no-apply: true
+  comment: 'no-apply: true prevents this file being apply by infra-operator. auto
+    added by infra-operator export. if need to apply, set to false'
+metadata:
+  Path: /
+  RoleName: bin_dev_comb_1_ecs_task_role
+  Description: managed by https://git.toolsfdg.net/devops/devops-infra
+  MaxSessionDuration: 3600
+  Tags:
+    terraform: y
+    prow-pipeline: y
+    engine: devops-infra
+    devops-infra-service: comb-1
+    env: dev
+spec:
+  managed-policies:
+    - PolicyArn: arn:aws:iam::aws:policy/AmazonEC2FullAccess
+      PolicyName: AmazonEC2FullAccess
+  AssumeRolePolicyDocument:
+    Version: '2012-10-17'
+    Statement:
+      - Sid: ''
+        Effect: Allow
+        Action: sts:AssumeRole
+        Principal:
+          Service: ecs-tasks.amazonaws.com
+  inline-policies:
+    - PolicyName: CloudwatchLogs
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Sid: VisualEditor0
+            Effect: Allow
+            Resource: '*'
+            Action:
+              - logs:CreateLogStream
+              - logs:CreateLogGroup
+    - PolicyName: S3AccessPolicy
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Sid: VisualEditor0
+            Effect: Allow
+            Resource: arn:aws:s3:::static.devfdg.net/api/i18n/*
+            Action:
+              - s3:GetObject
+              - s3:PutObject
+              - s3:DeleteObject
+          - Sid: VisualEditor1
+            Effect: Allow
+            Resource: arn:aws:s3:::static.devfdg.net
+            Action:
+              - s3:ListBucket

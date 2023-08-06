@@ -1,0 +1,5 @@
+*.pyc
+dist/
+.DS_Store
+tfe-to-yaml/
+.idea/

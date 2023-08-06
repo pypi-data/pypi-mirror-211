@@ -1,0 +1,12 @@
+apiVersion: elbv2.aws.infra/v1
+kind: TargetGroupAttribute
+pipelineConfig:
+  no-apply: false
+  comment: 'no-apply: true prevents this file being apply by infra-operator. auto
+    added by infra-operator export. if need to apply, set to false'
+spec:
+  TargetGroupArn: $file(vg_target.yml)
+  Attributes: 
+    - Key: deregistration_delay
+      Value: ${ vgateway.targetGroup.DeregistrationDelay }
+  

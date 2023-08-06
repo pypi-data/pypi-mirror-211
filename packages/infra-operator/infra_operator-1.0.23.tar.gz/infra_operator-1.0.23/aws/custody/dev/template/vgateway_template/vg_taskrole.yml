@@ -1,0 +1,2 @@
+apiVersion: iam.aws.infra/v1
+kind: Role

@@ -1,0 +1,32 @@
+[project]
+name = "infra-operator-server"
+version = "1.0.23"
+authors = [
+  { name="Desmond", email="desmond.cao@binance.com" },
+]
+description = "Provide api for turning apis into declarative yaml files"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+  'infra-operator==1.0.22',
+  'Flask==2.2.3'
+]
+
+[project.urls]
+"Homepage" = "https://git.toolsfdg.net/devops/infra-operator"
+"Bug Tracker" = "https://git.toolsfdg.net/devops/infra-operator/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+include = [
+  "src/**/*.py"
+]

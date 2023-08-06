@@ -1,0 +1,27 @@
+apiVersion: cloudfront.aws.infra/v1alpha1
+kind: CachePolicy
+pipelineConfig:
+  no-apply: true
+  comment: 'no-apply: true prevents this file being apply by infra-operator. auto
+    added by infra-operator export. if need to apply, set to false'
+metadata:
+  Id: 13042973-ef51-4b4b-a7ad-9f70a76b90b9
+  Name: CachingS3CORS
+  Comment: Cache policy for S3 CORS
+  MaxTTL: 31536000
+  MinTTL: 3600
+  DefaultTTL: 86400
+spec:
+  ParametersInCacheKeyAndForwardedToOrigin:
+    EnableAcceptEncodingGzip: true
+    EnableAcceptEncodingBrotli: true
+    CookiesConfig:
+      CookieBehavior: none
+    QueryStringsConfig:
+      QueryStringBehavior: none
+    HeadersConfig:
+      HeaderBehavior: whitelist
+      Headers:
+        - Origin
+        - Access-Control-Request-Method
+        - Access-Control-Request-Headers

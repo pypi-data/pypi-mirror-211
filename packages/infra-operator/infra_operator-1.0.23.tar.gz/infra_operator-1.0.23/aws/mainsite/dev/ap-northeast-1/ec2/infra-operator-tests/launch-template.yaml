@@ -1,0 +1,142 @@
+apiVersion: ec2.aws.binance/v1alpha1
+kind: LaunchTemplate
+metadata:
+  LaunchTemplateName: ${prefix}_${env}_${name}_lt
+  DefaultVersionNumber: 5
+  Tags:
+    app: nginx_test
+    biz: monitoring
+    devops: y
+    project: bin
+    terraform: y
+    team: devops
+    env: dev
+    Name: ${prefix}_${env}_${name}_lt
+spec:
+  LaunchTemplateData:
+    ImageId: ami-0428387d7845a191b
+    KeyName: jenkins-dev-ec2
+    UserData: |-
+      #!/bin/bash
+      curl --version || yum install python-pip curl -y
+      aws --version || pip install awscli
+
+      REGION=`curl -s http://169.254.169.254/latest/meta-data/placement/availability-zone | awk '{ print substr($1, 1, length($1)-1) }'`
+      aws configure set default.region $REGION
+      aws configure set default.output text
+      IP_ADDRESS=`/opt/aws/bin/ec2-metadata -o | awk '{ print $2 }'`
+      INSTANCE_ID=`/opt/aws/bin/ec2-metadata -i | awk '{ print $2 }'`
+      SHORT_ID=`echo $INSTANCE_ID | cut -d"-" -f2`
+      HOST_NAME="tf_bin_dev_nginx_test_$SHORT_ID"
+      aws ec2 create-tags --resources $INSTANCE_ID --tags Key="Name",Value="$HOST_NAME"
+      hostnamectl set-hostname --static $HOST_NAME
+      echo "$IP_ADDRESS $HOST_NAME" >> /etc/hosts
+
+      touch ~/.disk_index
+      echo "IyEvYmluL2Jhc2gKbj0kKGNhdCB+Ly5kaXNrX2luZGV4KQpmb3IgaSBpbiAkKGxzYmxrIHwgYXdrICcvZGlzay97cHJpbnQgJDF9Jyk7IGRvCiAgaWYgWyAkKGZpbGUgLXMgL2Rldi8kaSB8IGF3ayAne3ByaW50ICQyfScpID0gImRhdGEiIF07IHRoZW4KICAgIG1rZGlyIC1wIC9zZXJ2ZXIkbgogICAgbWtmcy54ZnMgL2Rldi8kaQogICAgVVVJRD1gYmxraWQgfCBncmVwICRpIHwgYXdrIC1GICciJyAne3ByaW50ICQyfSdgCiAgICBlY2hvICJVVUlEPSRVVUlEICAgICAvc2VydmVyJG4gICAgICAgICAgIHhmcyAgICBkZWZhdWx0cyAgMCAgIDAiID4+IC9ldGMvZnN0YWIKICAgIG49JCgoJG4rMSkpCiAgICBlY2hvICRuID4gfi8uZGlza19pbmRleAogIGZpCmRvbmUKbW91bnQgLWEK" > ~/mount.sh
+      base64 -d ~/mount.sh | bash
+
+
+
+      # Install teleport service component
+      bash -c "$(curl --max-time 10 -fsSL https://static.iac.toolsfdg.net/_scripts/teleport/install.sh)"
+
+      cat <<'CUSTOMSCRIPT' >/tmp/custom_script.sh
+      #!/bin/sh
+
+      # To ensure nginx only start if config is pulled successfully.
+      set -ex
+
+      # Stop Nginx to ensure below step completed first.
+      systemctl stop nginx
+
+      # Install aws-cli
+      curl --version || yum install python-pip curl -y
+      aws --version || pip install awscli
+
+      # Setup hostname
+      REGION=`curl -s http://169.254.169.254/latest/meta-data/placement/availability-zone | awk '{ print substr($1, 1, length($1)-1) }'`
+      aws configure set default.region $REGION
+      aws configure set default.output text
+      IP_ADDRESS=`/opt/aws/bin/ec2-metadata -o | awk '{ print $2 }'`
+      INSTANCE_ID=`/opt/aws/bin/ec2-metadata -i | awk '{ print $2 }'`
+      SHORT_ID=`echo $INSTANCE_ID | cut -d"-" -f2`
+      HOST_NAME=`aws ec2 describe-tags --filters "Name=resource-id,Values=$INSTANCE_ID" "Name=key,Values=Name" | cut -f 5`
+      hostnamectl set-hostname --static ""$HOST_NAME"_"$SHORT_ID""
+      echo "$IP_ADDRESS $HOST_NAME" >> /etc/hosts
+
+      # Clone Nginx Config
+      rm -rf /server/binance-nginx-configs
+      git clone https://32e92739c0c78382b11a8c29dfa4156187fd925b@git.toolsfdg.net/devops/binance-nginx-configs.git /server/binance-nginx-configs
+      rm -rf /etc/nginx/*
+      cp -r /server/binance-nginx-configs/mainsite/dev/mainsite-dispatcher/. /etc/nginx
+
+      ## Get CDN IP Range
+      yum install -y jq
+      for i in `curl -s http://d7uri8nf7uskq.cloudfront.net/tools/list-cloudfront-ips | jq '.[][]' -r`;do echo "set_real_ip_from " $i";";done > /etc/cloudfront_ip.conf
+
+      ## Create log dir and update nginx config to use this log
+      LOG_DIR=/server/log/nginx/
+      mkdir -p $LOG_DIR
+
+      ## Check Nginx config
+      /sbin/nginx -t -c /etc/nginx/nginx.conf
+
+      ## Start and Enable Nginx
+      systemctl start nginx
+      systemctl enable nginx
+
+      ## Fix log dir permission
+      chown -R www $LOG_DIR
+      chmod -R 755 $LOG_DIR
+
+      ## Configure log rotation
+      yum install -y logrotate
+      echo ''"$LOG_DIR"'/*.log {
+          daily
+          missingok
+          rotate 7
+          compress
+          delaycompress
+          notifempty
+          sharedscripts
+          postrotate
+              [ ! -f /var/run/nginx.pid ] || kill -USR1 `cat /var/run/nginx.pid`
+          endscript
+      }' > /etc/logrotate.d/nginx
+
+      # Node Exporter setup
+      sed -i 's/bijieprd/root/' /etc/systemd/system/node_exporter.service
+      systemctl daemon-reload
+      systemctl restart node_exporter.service
+      CUSTOMSCRIPT
+
+      # Execute
+      bash /tmp/custom_script.sh
+
+      # Remove
+      rm /tmp/custom_script.sh
+    InstanceType: c5.large
+    EbsOptimized: true
+    SecurityGroupIds:
+      - sg-036558297ffc4f59f
+    IamInstanceProfile:
+      Name: bin_dev_SessionManagerInstanceProfile
+    Monitoring:
+      Enabled: true
+    TagSpecifications:
+      - ResourceType: volume
+        Tags:
+          env: dev
+          biz: monitoring
+          app: nginx_test
+          team: devops
+          Name: ${prefix}_${env}_${name}_lt
+          devops: y
+          project: bin
+          terraform: y
+    BlockDeviceMappings:
+      - DeviceName: /dev/xvda
+        Ebs:
+          Encrypted: true
+          VolumeSize: 50

@@ -1,0 +1,44 @@
+apiVersion: iam.aws.infra/v1alpha1
+kind: Role
+pipelineConfig:
+  no-apply: true
+  comment: 'no-apply: true prevents this file being apply by infra-operator. auto
+    added by infra-operator export. if need to apply, set to false'
+metadata:
+  Path: /
+  RoleName: bin_comb_1_ecs_exec_role
+  Description: managed by https://git.toolsfdg.net/devops/devops-infra
+  MaxSessionDuration: 3600
+  Tags:
+    terraform: y
+    prow-pipeline: y
+    engine: devops-infra
+    devops-infra-service: comb-1
+    env: dev
+spec:
+  managed-policies:
+    - PolicyArn: arn:aws:iam::aws:policy/CloudFrontReadOnlyAccess
+      PolicyName: CloudFrontReadOnlyAccess
+    - PolicyArn: arn:aws:iam::aws:policy/CloudWatchLogsReadOnlyAccess
+      PolicyName: CloudWatchLogsReadOnlyAccess
+  AssumeRolePolicyDocument:
+    Version: '2012-10-17'
+    Statement:
+      - Effect: Allow
+        Action: sts:AssumeRole
+        Principal:
+          Service: ecs-tasks.amazonaws.com
+  inline-policies:
+    - PolicyName: ECRRepoPullPolicy
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Sid: AllowPull
+            Effect: Allow
+            Resource: '*'
+            Action:
+              - ecr:GetAuthorizationToken
+              - ecr:BatchGetImage
+              - ecr:BatchCheckLayerAvailability
+              - ecr:ListTagsForResource
+              - ecr:GetDownloadUrlForLayer

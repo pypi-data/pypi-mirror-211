@@ -1,0 +1,92 @@
+apiVersion: ecs.aws.binance/v1alpha1
+kind: TaskDefinition
+metadata:
+  family: ${prefix}-${env}-${name}
+  networkMode: awsvpc
+  memory: "4096"
+  cpu: "1024"
+  taskRoleArn: $file(task.role.yaml)
+  executionRoleArn: $file(exec.role.yaml)
+  requiresCompatibilities:
+    - FARGATE
+  tags:
+    message: managed by https://git.toolsfdg.net/devops/devops-infra
+spec:
+  containerDefinitions:
+    - name: main
+      image: 918323888678.dkr.ecr.ap-northeast-1.amazonaws.com/dom-d/hello-world:6cb3289f740d4bd0c2fee300689aac0b4c22748d
+      memoryReservation: 2049
+      cpu: 1024
+      essential: true
+      dependsOn:
+        - containerName: log_router
+          condition: HEALTHY
+      portMappings:
+        - containerPort: 80
+          protocol: tcp
+      entryPoint: []
+      command:
+        - nginx
+        - -g
+        - daemon off;
+      environment:
+        - name: A
+          value: B
+      # secrets:
+      #   - name: Secret
+      #     valueFrom: arn:aws:secretsmanager:ap-northeast-1:173062506398:secret:bin_dev_test-e3Lo8b
+      logConfiguration:
+        logDriver: awsfirelens
+        options:
+          Name: "kafka"
+          Format: "json"
+          Match: "*"
+          Topics: "ecs-fe-logs"
+          Brokers: "kafka-log1.devfdg.net:9092,kafka-log2.devfdg.net:9092,kafka-log3.devfdg.net:9092"
+      ulimits:
+        - name: nofile
+          softLimit: 65535
+          hardLimit: 65535
+      startTimeout: 10
+      stopTimeout: 60
+      healthCheck:
+        command:
+          - CMD-SHELL
+          - curl -f http://localhost || exit 1
+        interval: 5
+        timeout: 2
+        startPeriod: 2
+        retries: 3
+    - name: log_router
+      image: 906394416424.dkr.ecr.ap-northeast-1.amazonaws.com/aws-for-fluent-bit:latest
+      essential: true
+      healthCheck:
+        command:
+          - CMD-SHELL
+          - echo hello
+        interval: 5
+        timeout: 2
+        startPeriod: 2
+        retries: 3
+      firelensConfiguration:
+        type: fluentbit
+      logConfiguration:
+        logDriver: awslogs
+        options:
+          awslogs-group: ${prefix}-${env}-ecs-firelens
+          awslogs-region: ${region}
+          awslogs-create-group: "true"
+          awslogs-stream-prefix: /${prefix}-${env}-${name}-firelens
+    - name: aws-collector
+      image: 918323888678.dkr.ecr.ap-northeast-1.amazonaws.com/devops/aws-otel-collector:2ce592eb2d378913a1190c842c4ef24cb6c1024b
+      command: ["--config=/etc/ecs/ecs-amp-prom.yaml"]
+      logConfiguration:
+        logDriver: awslogs
+        options:
+          awslogs-group: ${prefix}-${env}-ecs
+          awslogs-region: ${region}
+          awslogs-create-group: "true"
+          awslogs-stream-prefix: /${prefix}-${env}-${name}
+      environment:
+        - name: AWS_PROMETHEUS_ENDPOINT
+          value: http://nonprod-dev.vminsert.internal:80/insert/0/prometheus

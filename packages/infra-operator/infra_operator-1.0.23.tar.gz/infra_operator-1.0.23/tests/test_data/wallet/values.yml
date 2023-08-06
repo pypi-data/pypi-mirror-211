@@ -1,0 +1,27 @@
+ContainerImage: "xxxxx"
+Cpus: 100
+DesiredCount: 5
+EnvFile: "s3://xxxx"
+EnvironmentName: dev
+EnvoyImage: "ecr://"
+HealthCheckCMD: "curl xxxx"
+Memory: 1024
+MonitorImage: 
+  MultilinePattern:
+    Description: The split of log format
+    Type: String
+  NamespaceName:
+    Description: Namespace domain
+    Type: String
+  SecurityGroups:
+    Description: ECS security groups
+    Type: CommaDelimitedList
+  ServiceName:
+    Description: ServiceName for app
+    Type: String
+  Subnets:
+    Description: ECS Subnets
+    Type: CommaDelimitedList
+  TaskRoleArn:
+    Description: 'The task role arn '
+    Type: String

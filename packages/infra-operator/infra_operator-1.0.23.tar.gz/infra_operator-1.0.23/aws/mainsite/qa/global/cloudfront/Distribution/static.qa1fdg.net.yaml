@@ -1,0 +1,356 @@
+apiVersion: cloudfront.aws.infra/v1alpha1
+kind: Distribution
+pipelineConfig:
+  no-apply: true
+  comment: 'no-apply: true prevents this file being apply by infra-operator. auto
+    added by infra-operator export. if need to apply, set to false'
+metadata:
+  Id: E2M6L906GR9VL2
+  Comment: static.qa1fdg.net in s3
+  WebACLId: arn:aws:wafv2:us-east-1:462475635429:global/webacl/qa_office_whitelist_ip_v2acl/450cf4be-3847-4c29-8ea9-b1da0d9330cf
+  PriceClass: PriceClass_All
+  HttpVersion: http2and3
+  CallerReference: '1565760428731'
+  DefaultRootObject: ''
+  ContinuousDeploymentPolicyId: ''
+  Enabled: true
+  Staging: false
+  IsIPV6Enabled: true
+  Tags:
+    biz: common-infra
+    git: https://git.toolsfdg.net/devops/devops-infra/blob/master/aws/mainsite/qa/global/cloudfront/Distribution/static.qa1fdg.net.yaml
+    team: devops
+    terraform: y
+spec:
+  Aliases:
+    - static.qa1fdg.net
+  OriginGroups: []
+  CustomErrorResponses: []
+  Logging:
+    Bucket: ''
+    Prefix: ''
+    Enabled: false
+    IncludeCookies: false
+  ViewerCertificate:
+    Certificate: arn:aws:acm:us-east-1:462475635429:certificate/948624c1-27e8-42cb-9aa6-4868d3477792
+    SSLSupportMethod: sni-only
+    ACMCertificateArn: arn:aws:acm:us-east-1:462475635429:certificate/948624c1-27e8-42cb-9aa6-4868d3477792
+    CertificateSource: acm
+    MinimumProtocolVersion: TLSv1.2_2021
+    CloudFrontDefaultCertificate: false
+  Restrictions:
+    GeoRestriction:
+      RestrictionType: none
+      Items: []
+  DefaultCacheBehavior:
+    CachePolicyId: $file(CachePolicy/CachingS3CORS.yaml)
+    TargetOriginId: S3-static.qa1fdg.net
+    ViewerProtocolPolicy: redirect-to-https
+    FieldLevelEncryptionId: ''
+    Compress: true
+    SmoothStreaming: false
+    FunctionAssociations: []
+    LambdaFunctionAssociations: []
+    TrustedSigners:
+      Enabled: false
+      Items: []
+    AllowedMethods:
+      Items:
+        - HEAD
+        - DELETE
+        - POST
+        - GET
+        - OPTIONS
+        - PUT
+        - PATCH
+      CachedMethods:
+        - HEAD
+        - GET
+        - OPTIONS
+    TrustedKeyGroups:
+      Enabled: false
+      Items: []
+  Origins:
+    $map:
+      $items:
+        - Id: static-qa.binance.us.s3.ap-northeast-1.amazonaws.com
+          DomainName: static-qa.binance.us.s3.ap-northeast-1.amazonaws.com
+          S3OriginConfig.OriginAccessIdentity: origin-access-identity/cloudfront/E2CB1HBZ1RJFR6
+        - Id: S3-tk-qa1-s3-bucket
+          DomainName: tk-qa1-s3-bucket.s3.amazonaws.com
+          S3OriginConfig.OriginAccessIdentity: origin-access-identity/cloudfront/EJIZ7RPFTU3HE
+        - Id: S3-tf-bin-qa1-live-stream
+          DomainName: tf-bin-qa1-live-stream.s3.amazonaws.com
+          S3OriginConfig.OriginAccessIdentity: origin-access-identity/cloudfront/E17P8RV7LR3TIZ
+        - Id: S3-tf-bin-qa1-nft-file-center-sandbox-clean
+          DomainName: tf-bin-qa1-nft-file-center-sandbox-clean.s3.amazonaws.com
+          S3OriginConfig.OriginAccessIdentity: origin-access-identity/cloudfront/E17P8RV7LR3TIZ
+        - Id: S3-static.qa1fdg.net
+          DomainName: static.qa1fdg.net.s3.amazonaws.com
+          S3OriginConfig.OriginAccessIdentity: origin-access-identity/cloudfront/E1Y3SFVGGZUH0B
+        - Id: S3-dali-binance-qa
+          DomainName: dali-binance-qa.s3.amazonaws.com
+          S3OriginConfig.OriginAccessIdentity: origin-access-identity/cloudfront/E1Y3SFVGGZUH0B
+      $expr:
+        $var_replace:
+          $remove_not_found: true
+          $template:
+            Id: ${Id}
+            DomainName: ${DomainName}
+            OriginPath: ${OriginPath}
+            CustomHeaders: ${CustomHeaders}
+            ConnectionTimeout: ${ConnectionTimeout}
+            ConnectionAttempts: ${ConnectionAttempts}
+            OriginAccessControlId: ${OriginAccessControlId}
+            OriginShield:
+              Enabled: ${OriginShield.Enabled}
+            S3OriginConfig:
+              OriginAccessIdentity: ${S3OriginConfig.OriginAccessIdentity}
+          $values:
+            $merge:
+              - OriginPath: ''
+                OriginAccessControlId: ''
+                OriginShield.Enabled: false
+                CustomHeaders: []
+                ConnectionTimeout: 10
+                ConnectionAttempts: 3
+              - $item
+  CacheBehaviors:
+    $map:
+      $items:
+        - PathPattern: /image/admin_mgs_image_upload/*
+          CachePolicyId: $file(CachePolicy/CachingS3CORS.yaml)
+          TargetOriginId: S3-static.qa1fdg.net
+          ForwardedValues.QueryString: $remove_field
+          ForwardedValues.Cookies.Forward: $remove_field
+          ForwardedValues.QueryStringCacheKeys: $remove_field
+          AllowedMethods.CachedMethods:
+            - HEAD
+            - GET
+            - OPTIONS
+        - PathPattern: /image/c2c/*
+          TargetOriginId: S3-static.qa1fdg.net
+          Compress: false
+          MinTTL: 0
+          MaxTTL: 31536000
+          DefaultTTL: 86400
+          AllowedMethods.Items:
+            - HEAD
+            - GET
+          ForwardedValues.Headers: []
+        - PathPattern: /image/julia/*
+          TargetOriginId: S3-static.qa1fdg.net
+          Compress: false
+          MinTTL: 60
+          MaxTTL: 31536000
+          DefaultTTL: 86400
+          AllowedMethods.Items:
+            - HEAD
+            - GET
+          ForwardedValues.Headers: []
+        - PathPattern: /client_upload/c2c/*
+          Compress: false
+          MinTTL: 0
+          MaxTTL: 31536000
+          DefaultTTL: 86400
+          AllowedMethods.Items:
+            - HEAD
+            - DELETE
+            - POST
+            - GET
+            - OPTIONS
+            - PUT
+            - PATCH
+          ForwardedValues.Headers: []
+        - PathPattern: /client_upload/mp-management-backend/*
+          CachePolicyId: $file(CachePolicy/Managed-CachingOptimized.yaml)
+          ForwardedValues.QueryString: $remove_field
+          ForwardedValues.Cookies.Forward: $remove_field
+          ForwardedValues.QueryStringCacheKeys: $remove_field
+          AllowedMethods.Items:
+            - HEAD
+            - GET
+        - PathPattern: /internal_upload/*
+          CachePolicyId: $file(CachePolicy/CachingS3CORS.yaml)
+          ForwardedValues.QueryString: $remove_field
+          ForwardedValues.Cookies.Forward: $remove_field
+          ForwardedValues.QueryStringCacheKeys: $remove_field
+          AllowedMethods.CachedMethods:
+            - HEAD
+            - GET
+            - OPTIONS
+        - PathPattern: /image/kline/*
+          TargetOriginId: static-qa.binance.us.s3.ap-northeast-1.amazonaws.com
+          Compress: false
+          MinTTL: 0
+          MaxTTL: 31536000
+          DefaultTTL: 86400
+          ForwardedValues.Headers: []
+        - PathPattern: /image/antibot/*
+          TargetOriginId: S3-static.qa1fdg.net
+          Compress: false
+          MinTTL: 0
+          MaxTTL: 31536000
+          DefaultTTL: 86400
+          ForwardedValues.Headers: []
+        - PathPattern: /image/radar/*
+          TargetOriginId: S3-static.qa1fdg.net
+          MinTTL: 0
+          MaxTTL: 31536000
+          DefaultTTL: 86400
+          AllowedMethods.Items:
+            - HEAD
+            - GET
+          ForwardedValues.Headers:
+            - Origin
+            - Access-Control-Request-Method
+            - Access-Control-Request-Headers
+        - PathPattern: /image/*
+          Compress: false
+          MinTTL: 60
+          MaxTTL: 31536000
+          DefaultTTL: 86400
+          ForwardedValues.Headers:
+            - Origin
+            - Authorization
+            - Access-Control-Request-Method
+            - Access-Control-Request-Headers
+            - CloudFront-Forwarded-Proto
+        - PathPattern: /images/*
+          Compress: false
+          MinTTL: 0
+          MaxTTL: 31536000
+          DefaultTTL: 86400
+          AllowedMethods.Items:
+            - HEAD
+            - GET
+          ForwardedValues.Headers: []
+        - PathPattern: /client_upload/*
+          CachePolicyId: $file(CachePolicy/CachingS3CORS.yaml)
+          ForwardedValues.QueryString: $remove_field
+          ForwardedValues.Cookies.Forward: $remove_field
+          ForwardedValues.QueryStringCacheKeys: $remove_field
+          AllowedMethods.CachedMethods:
+            - HEAD
+            - GET
+            - OPTIONS
+        - PathPattern: /qa_nft/*
+          CachePolicyId: $file(CachePolicy/Managed-CachingOptimized.yaml)
+          TargetOriginId: S3-tf-bin-qa1-nft-file-center-sandbox-clean
+          ForwardedValues.QueryString: $remove_field
+          ForwardedValues.Cookies.Forward: $remove_field
+          ForwardedValues.QueryStringCacheKeys: $remove_field
+          AllowedMethods.CachedMethods:
+            - HEAD
+            - GET
+            - OPTIONS
+        - PathPattern: /static/nft/*
+          CachePolicyId: $file(CachePolicy/Managed-CachingOptimized.yaml)
+          ForwardedValues.QueryString: $remove_field
+          ForwardedValues.Cookies.Forward: $remove_field
+          ForwardedValues.QueryStringCacheKeys: $remove_field
+          AllowedMethods.CachedMethods:
+            - HEAD
+            - GET
+            - OPTIONS
+        - PathPattern: /be/nftdex/*
+          CachePolicyId: $file(CachePolicy/Managed-CachingOptimized.yaml)
+          ForwardedValues.QueryString: $remove_field
+          ForwardedValues.Cookies.Forward: $remove_field
+          ForwardedValues.QueryStringCacheKeys: $remove_field
+          AllowedMethods.CachedMethods:
+            - HEAD
+            - GET
+            - OPTIONS
+        - PathPattern: /static/ib/*
+          CachePolicyId: $file(CachePolicy/Managed-CachingOptimized.yaml)
+          ForwardedValues.QueryString: $remove_field
+          ForwardedValues.Cookies.Forward: $remove_field
+          ForwardedValues.QueryStringCacheKeys: $remove_field
+          AllowedMethods.CachedMethods:
+            - HEAD
+            - GET
+            - OPTIONS
+        - PathPattern: /static/mini-program/*
+          CachePolicyId: $file(CachePolicy/Managed-CachingOptimized.yaml)
+          ForwardedValues.QueryString: $remove_field
+          ForwardedValues.Cookies.Forward: $remove_field
+          ForwardedValues.QueryStringCacheKeys: $remove_field
+          AllowedMethods.Items:
+            - HEAD
+            - GET
+        - PathPattern: /live/*
+          TargetOriginId: S3-tf-bin-qa1-live-stream
+          Compress: false
+          MinTTL: 60
+          MaxTTL: 31536000
+          DefaultTTL: 86400
+          AllowedMethods.Items:
+            - HEAD
+            - GET
+          ForwardedValues.Headers: []
+        - PathPattern: /dali/*
+          TargetOriginId: S3-dali-binance-qa
+          Compress: false
+          MinTTL: 300
+          MaxTTL: 300
+          DefaultTTL: 300
+          AllowedMethods.Items:
+            - HEAD
+            - GET
+          ForwardedValues.Headers: []
+      $expr:
+        $var_replace:
+          $remove_not_found: true
+          $template:
+            MinTTL: ${MinTTL}
+            MaxTTL: ${MaxTTL}
+            Compress: ${Compress}
+            DefaultTTL: ${DefaultTTL}
+            PathPattern: ${PathPattern}
+            CachePolicyId: ${CachePolicyId}
+            TargetOriginId: ${TargetOriginId}
+            SmoothStreaming: ${SmoothStreaming}
+            ViewerProtocolPolicy: ${ViewerProtocolPolicy}
+            FunctionAssociations: ${FunctionAssociations}
+            FieldLevelEncryptionId: ${FieldLevelEncryptionId}
+            LambdaFunctionAssociations: ${LambdaFunctionAssociations}
+            TrustedSigners:
+              Items: ${TrustedSigners.Items}
+              Enabled: ${TrustedSigners.Enabled}
+            AllowedMethods:
+              Items: ${AllowedMethods.Items}
+              CachedMethods: ${AllowedMethods.CachedMethods}
+            TrustedKeyGroups:
+              Items: ${TrustedKeyGroups.Items}
+              Enabled: ${TrustedKeyGroups.Enabled}
+            ForwardedValues:
+              Headers: ${ForwardedValues.Headers}
+              QueryString: ${ForwardedValues.QueryString}
+              QueryStringCacheKeys: ${ForwardedValues.QueryStringCacheKeys}
+              Cookies:
+                Forward: ${ForwardedValues.Cookies.Forward}
+          $values:
+            $merge:
+              - TargetOriginId: S3-tk-qa1-s3-bucket
+                ViewerProtocolPolicy: redirect-to-https
+                FieldLevelEncryptionId: ''
+                ForwardedValues.Cookies.Forward: none
+                Compress: true
+                SmoothStreaming: false
+                TrustedSigners.Enabled: false
+                TrustedKeyGroups.Enabled: false
+                ForwardedValues.QueryString: false
+                TrustedSigners.Items: []
+                AllowedMethods.Items:
+                  - HEAD
+                  - GET
+                  - OPTIONS
+                FunctionAssociations: []
+                TrustedKeyGroups.Items: []
+                LambdaFunctionAssociations: []
+                AllowedMethods.CachedMethods:
+                  - HEAD
+                  - GET
+                ForwardedValues.QueryStringCacheKeys: []
+              - $item

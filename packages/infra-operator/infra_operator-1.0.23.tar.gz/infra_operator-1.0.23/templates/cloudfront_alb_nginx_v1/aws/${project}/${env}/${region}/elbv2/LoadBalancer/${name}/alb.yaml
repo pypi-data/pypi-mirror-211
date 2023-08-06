@@ -1,0 +1,30 @@
+apiVersion: elbv2.aws.binance/v1alpha1
+kind: LoadBalancer
+metadata:
+  Name: ${prefix}-${env}-${name}-alb
+  Subnets:
+    ${albPublicSubnets}
+  SecurityGroups:
+    - $file(alb.sg-${name}.yaml)
+  Scheme: internet-facing  # | internal
+  Tags:
+    message: managed by https://git.toolsfdg.net/devops/devops-infra
+  Type: application # | network
+  IpAddressType: ipv4  # | dualstack
+spec:
+  Listeners:
+    - Protocol: HTTPS
+      Port: 443
+      Certificates: ${albCertificates}
+      DefaultActions:
+        - Type: forward  # |authenticate-oidc|authenticate-cognito|redirect|fixed-response
+          # specify if only forward to one target group
+          Order: 1
+          ForwardConfig:
+            TargetGroups: 
+              - TargetGroupArn: $file(tg-${name}_r0.yaml)
+                Weight: 100
+              - TargetGroupArn: $file(tg-${name}_r1.yaml)
+                Weight: 0
+            TargetGroupStickinessConfig:
+              Enabled: False

@@ -1,0 +1,22 @@
+apiVersion: ec2.aws.infra/v1alpha1
+kind: SecurityGroup
+metadata:
+  Description: managed by https://git.toolsfdg.net/devops/devops-infra
+  GroupName: bin_dev_api_mapper_test_alb_sg
+  VpcId: vpc-06e7bab377f9cb4e9
+spec:
+  ingress:
+  - FromPort: 8080
+    IpProtocol: tcp
+    IpRanges:
+    - CidrIp: 172.21.0.0/16
+      Description: all vpc
+    - CidrIp: 123.32.12.42/32
+      Description: test pc
+    ToPort: 8080
+  - FromPort: 443
+    IpProtocol: tcp
+    IpRanges:
+    - CidrIp: 123.32.12.42/32
+      Description: test pc
+    ToPort: 443

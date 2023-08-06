@@ -1,0 +1,98 @@
+apiVersion: elbv2.aws.infra/v1alpha1
+kind: LoadBalancer
+pipelineConfig:
+  no-apply: false
+  comment: 'no-apply: true prevents this file being apply by infra-operator. auto
+    added by infra-operator export. if need to apply, set to false'
+metadata:
+  Type: application
+  Name: bin-dev-desmond-debug-alb
+  VpcId: vpc-06e7bab377f9cb4e9
+  Scheme: internal
+  IpAddressType: ipv4
+  Tags:
+    prow-pipeline: y
+    biz: common-infra
+    engine: devops-infra
+    devops-infra-service: desmond-debug
+    terraform: y
+    team: devops
+    message: managed by https://git.toolsfdg.net/devops/devops-infra
+  Attributes:
+    access_logs.s3.enabled: 'false'
+    access_logs.s3.bucket: ''
+    access_logs.s3.prefix: ''
+    idle_timeout.timeout_seconds: '66'
+    deletion_protection.enabled: 'false'
+    routing.http2.enabled: 'true'
+    routing.http.drop_invalid_header_fields.enabled: 'false'
+    routing.http.xff_client_port.enabled: 'false'
+    routing.http.preserve_host_header.enabled: 'false'
+    routing.http.xff_header_processing.mode: append
+    load_balancing.cross_zone.enabled: 'true'
+    routing.http.desync_mitigation_mode: defensive
+    waf.fail_open.enabled: 'false'
+    routing.http.x_amzn_tls_version_and_cipher_suite.enabled: 'false'
+spec:
+  Subnets:
+    - subnet-005223e14aa168a2c
+    - subnet-0e5d061593dd742a0
+    - subnet-0f7c148c34aff7ba0
+  SecurityGroups:
+    - sg-08bef9f168dcbafba
+    - sg-0775fd1862783c47e
+  Listeners:
+    - Protocol: HTTPS
+      SslPolicy: ELBSecurityPolicy-2016-08
+      ListenerArn: arn:aws:elasticloadbalancing:ap-northeast-1:173062506398:listener/app/bin-dev-desmond-debug-alb/c35e4fc77a40cf0c/ef2e715b214a098c
+      Port: 443
+      Certificates:
+        - CertificateArn: arn:aws:acm:ap-northeast-1:173062506398:certificate/c1092697-0b35-4f44-a1b2-2df881888b1d
+      DefaultActions:
+        - Type: fixed-response
+          Order: 1
+          FixedResponseConfig:
+            StatusCode: '404'
+            MessageBody: Not Found
+            ContentType: text/plain
+      Rules:
+        - RuleArn: arn:aws:elasticloadbalancing:ap-northeast-1:173062506398:listener-rule/app/bin-dev-desmond-debug-alb/c35e4fc77a40cf0c/ef2e715b214a098c/f188938f308629b1
+          Priority: 2
+          Conditions:
+            - Field: host-header
+              Values:
+                - www.devfdg.net
+                - www.fe.devfdg.net
+            - Field: path-pattern
+              Values:
+                - /hello
+                - /en/*
+                - /BG/*
+            - Field: http-header
+              HttpHeaderConfig:
+                HttpHeaderName: ABC
+                Values:
+                  - fffff
+          Actions:
+            - Type: forward
+              Order: 1
+              ForwardConfig:
+                TargetGroupStickinessConfig:
+                  Enabled: false
+                TargetGroups:
+                  - TargetGroupArn: arn:aws:elasticloadbalancing:ap-northeast-1:173062506398:targetgroup/bin-dev-desmond-debug-tg/5a71031c6dd3d446
+                    Weight: 1
+    - Protocol: HTTP
+      ListenerArn: arn:aws:elasticloadbalancing:ap-northeast-1:173062506398:listener/app/bin-dev-desmond-debug-alb/c35e4fc77a40cf0c/f4327c898e606a78
+      Port: 80
+      Rules: []
+      DefaultActions:
+        - Type: redirect
+          Order: 1
+          RedirectConfig:
+            Port: '443'
+            Host: '#{host}'
+            Path: /#{path}
+            Query: '#{query}'
+            Protocol: HTTPS
+            StatusCode: HTTP_301

@@ -1,0 +1,86 @@
+# Infra-Operator
+> turn APIs into declarative yaml files
+
+## What is Infra-Operator
+1. A cli&lib that can call aws apis providing yaml files.including all Create/Read/Update/Delete operations.
+
+## What can Infra-Operator do
+1. It can be used to manage your aws resources.
+   1. Do Create/Read/Update/Delete operations to your aws resources.
+   2. Export existing aws resources into yaml files that can be managed by the tool.
+   3. Referencing other resources in yaml.
+
+## Design Principal
+1. We use direct mapping from aws api.No new abstraction is created. All fields are throw to aws api.
+2. We provide yaml operators that can transform yaml files, which enable users to create their abstractions.
+3. We emphasis on bidirectional Data Flow.
+   1. you can turn a yaml file into actual aws resource.
+   2. also turn an aws resource into yaml files.
+4. Redefine the `Infa-as-Code`
+   1. All infra resources can be defined as the CRD YAML (not relying on terraform), not just only k8s, but also other aws infra resources or google infra resources. If this service could provide API, we can use the same code format to finish the infra resources provisioning. You can see the [example code](https://docs.google.com/document/d/1AEI27Dqhlb-WV3rXgyCZnGQPHstE8gdtDDcXawSwWZI/edit#heading=h.dcop1ip52x4v) here.
+
+## Current Supported Resources Types
+| Type                                  | Create | Export | Update | Delete | Tests | ETA  | Extra               |
+| ------------------------------------- | ------ | ------ | ------ | ------ | ----- | ---- | ------------------- |
+| IAM/Role                              | ✅      | ✅      | ✅      | ✅      | ✅     | 5/22 |
+| EC2/SecurityGroup                     | ✅      | ✅      | ✅      | ✅      | ✅     | 5/16 | Prefix List Support |
+| ECS/Cluster                           | ✅      | ✅      | ✅      | ✅      | ✅     | 5/14 |
+| ECS/Service                           | ✅      | ✅      | ✅      | ✅      | ✅     | 5/19 |
+| ECS/TaskDefinition                    | ✅      | ✅      | ✅      | ✅      | ✅     | 5/18 |
+| EC2/Alb                               | ✅      | ✅      | ✅      | ✅      | ✅     | 5/23 |
+| EC2/TargetGroup                       | ✅      | ✅      | ✅      | ✅      | ✅     | 5/17 |
+| ECR/Repository                        | 📝      | 📝      | 📝      | 📝      | 📝     | 6/7  |
+| SecretsManager/Secret                 | 📝      | 📝      | 📝      | 📝      | 📝     | 6/8  |
+| EBS/Volume                            | ✅      | ✅      | 📝      | 📝      | 📝     | 6/9  |
+| EC2/Instance                          | ✅      | ✅      | 📝      | ✅      | ✅     | 6/8  |
+| EC2/LaunchTemplate                    | ✅      | ✅      | 📝      | 📝      | 📝     | 6/6  |
+| EC2/ASG                               | 📝      | 📝      | 📝      | 📝      | 📝     | 6/7  |
+| S3/Bucket                             | 📝      | 📝      | 📝      | 📝      | 📝     |      |
+| Route53                               | 📝      | 📝      | 📝      | 📝      | 📝     |      |
+| ACM                                   | 📝      | 📝      | 📝      | 📝      | 📝     |      |
+| Appmesh/Mesh                          | ✅      | ✅      | ✅      | ✅      | ✅     | 5/12 |
+| Appmesh/VirtualService                | ✅      | ✅      | ✅      | ✅      | 📝     |
+| Appmesh/VirtualRouter                 | ✅      | ✅      | ✅      | ✅      | 📝     |
+| Appmesh/VirtualGatewayRoute           | ✅      | ✅      | ✅      | ✅      | 📝     |
+| Appmesh/ServiceDiscoveryService       | ✅      | ✅      | ✅      | ✅      | 📝     |
+| Appmesh/VirtualNode                   | ✅      | ✅      | ✅      | ✅      | 📝     |
+| Appmesh/Route                         | ✅      | ✅      | ✅      | ✅      | 📝     |
+| CloudFront/Distribution               | ✅      | ✅      | ✅      | ✅      | 📝     |
+| CloudFront/CachePolicy                | ✅      | ✅      | ✅      | ✅      | 📝     |
+| CloudFront/ContinuousDeploymentPolicy | ✅      | ✅      | ✅      | ✅      | 📝     |
+| WAFv2/ip-set                          | 📝      | 📝      | 📝      | 📝      | 📝     |
+| WAFv2/regex-pattern-set               | 📝      | 📝      | 📝      | 📝      | 📝     |
+| WAFv2/web-acl                         | 📝      | 📝      | 📝      | 📝      | 📝     |
+| ElastiCache                           | 📝      | 📝      | 📝      | 📝      | 📝     |
+
+## RoadMap
+
+1. Render action support. ETA: 5/26
+
+## Development
+
+1. to build
+
+`python3 -m build`
+
+2. to install locally
+
+`python3 -m pip install ./dist/infra_operator-1.0.22.tar.gz`
+
+or `pip3 install --editable .`
+
+3. to run in command line
+
+`python3 -m infra_operator.cli export`
+
+4. to upload to pypi
+
+`python3 -m twine upload dist/* --verbose`
+
+4. to test
+
+`pytest -s`
+
+4. with docker
+
+`docker run -it --mount src="/Users/user/.aws",target=/root/.aws,type=bind --mount src="/Users/user/Documents/binance/Infra-Operator/aws",target=/workspace/src/aws,type=bind prow-ci-aws`

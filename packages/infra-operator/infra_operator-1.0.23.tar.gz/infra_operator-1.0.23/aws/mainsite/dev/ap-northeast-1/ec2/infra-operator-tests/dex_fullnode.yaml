@@ -1,0 +1,53 @@
+apiVersion: ec2.aws.infra/v1alpha1
+kind: Instance
+pipelineConfig:
+  no-apply: true
+  comment: 'no-apply: true prevents this file being apply by infra-operator. auto
+    added by infra-operator export. if need to apply, set to false'
+metadata:
+  ImageId: ami-0c3fd0f5d33134a76
+  KeyName: tk_dev_kp
+  SubnetId: subnet-01858d6f76a83bbb1
+  InstanceId: i-0bee62e5f1cfe6d4f
+  InstanceType: m5.2xlarge
+  EbsOptimized: true
+  Tags:
+    team: dex
+    biz: common-infra
+    env: dev
+    project: fullnode
+    updateSSMAgentAuto: y
+    Name: tk_dev_dex_fullnode_ec2_2
+    dexdev: y
+    devops: y
+spec:
+  Placement:
+    Tenancy: default
+    GroupName: ''
+    AvailabilityZone: ap-northeast-1d
+  IamInstanceProfile:
+    Arn: arn:aws:iam::173062506398:instance-profile/bin_dev_SessionManagerInstanceProfile
+  MaintenanceOptions:
+    AutoRecovery: default
+  PrivateDnsNameOptions: {}
+  CapacityReservationSpecification:
+    CapacityReservationPreference: open
+  Monitoring:
+    Enabled: false
+  EnclaveOptions:
+    Enabled: false
+  HibernationOptions:
+    Configured: false
+  BlockDeviceMappings:
+    - DeviceName: /dev/xvda
+      Ebs:
+        Status: attached
+        VolumeId: vol-0d777875a740c83d9
+        AttachTime: 2019-06-26 08:12:05+00:00
+        DeleteOnTermination: true
+    - DeviceName: /dev/sdb
+      Ebs:
+        Status: attached
+        VolumeId: vol-0586d9fbe199dd4b5
+        AttachTime: 2019-06-26 08:12:05+00:00
+        DeleteOnTermination: false

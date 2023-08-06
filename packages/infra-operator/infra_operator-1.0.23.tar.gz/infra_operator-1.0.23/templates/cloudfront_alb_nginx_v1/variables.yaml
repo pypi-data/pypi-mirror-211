@@ -1,0 +1,22 @@
+vendor: aws
+prefix: cloud
+project: thailand
+env: prod
+region: ap-northeast-1
+team: cloud
+biz: thailand
+app: dispatcher
+domain: www.thai-exchange.com
+domains:
+  - thai-exchange.com
+  - www.thai-exchange.com
+name: dispatcher
+tags:
+  team: thailand
+  biz: exchange
+vpc-id: vpc-123456
+alb-certificates:
+  - arn:acm:xxxx
+albWaf: arn:xxxx
+cloudfront-prefix-list: pl-123456
+cloudfront-waf: arn:xxxx

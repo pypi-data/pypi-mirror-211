@@ -1,0 +1,27 @@
+apiVersion: ec2.aws.infra/v1alpha1
+kind: SecurityGroup
+metadata:
+  Description: managed by https://git.toolsfdg.net/devops/devops-infra
+  GroupName:
+    $lower:
+      $underscore: ${prefix}_${env}_${name}_svc_sg
+  VpcId: ${cluster-vpc-id}
+spec:
+  ingress:
+    - FromPort: 80
+      ToPort: 80
+      IpProtocol: tcp
+      UserIdGroupPairs:
+        - Description: Allow alb access
+          GroupId: $file(alb.sg.yaml)
+  egress:
+    - FromPort: 0
+      ToPort: 65535
+      IpProtocol: "-1"
+      IpRanges:
+        - CidrIp: 10.0.0.0/8
+          Description: internal vpc
+        - CidrIp: 172.16.0.0/12
+          Description: internal vpc
+        - CidrIp: 192.168.0.0/16
+          Description: internal vpc

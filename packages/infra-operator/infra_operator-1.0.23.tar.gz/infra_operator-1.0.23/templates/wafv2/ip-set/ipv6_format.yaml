@@ -1,0 +1,7 @@
+apiVersion: wafv2.aws.binance/v1alpha1
+metadata:
+  description: managed by https://git.toolsfdg.net/devops/devops-infra
+  ip-address-version: IPV6
+spec:
+  addresses:
+    - '::/24' # IPv6 example, remove this line and use addresses: [] instead if you expect to create an empty ip-set.

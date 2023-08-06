@@ -1,0 +1,12 @@
+apiVersion: wafv2.aws.binance/v1alpha1
+metadata:
+  description: managed by https://git.toolsfdg.net/devops/devops-infra
+  ip-address-version: IPV4
+  prow-pipeline:
+    message: Do not edit this ip-set, as it's managed by a lambda
+    update: abort
+  tags:
+    ddos_lambda_ip_blocker: y
+spec:
+  addresses: [] # remove '[]' if at least one IP need to be added.
+    #- 127.0.0.1/32 # example

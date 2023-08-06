@@ -1,0 +1,23 @@
+ECSService:
+  Properties:
+    Cluster: ${cluster_name}
+    DeploymentConfiguration:
+      MaximumPercent: 200
+      MinimumHealthyPercent: 100
+    DesiredCount: ${DesiredCount}
+    LaunchType: FARGATE
+    NetworkConfiguration:
+      AwsvpcConfiguration:
+        AssignPublicIp: DISABLED
+        SecurityGroups: $file($SecurityGroups)
+        Subnets: !Ref 'Subnets'
+    ServiceName: website-s810
+    ServiceRegistries:
+      - RegistryArn: !GetAtt 'ECSServiceDiscoveryRecord.Arn'
+    TaskDefinition: !Ref 'ECSTaskDefinition'
+  Type: AWS::ECS::Service
+
+{
+  "identifierId": "s230",
+  
+}

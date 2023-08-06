@@ -1,0 +1,11 @@
+apiVersion: appmesh.aws.infra/v1alpha1
+kind: Mesh
+pipelineConfig:
+  no-apply: true
+  comment: 'no-apply: true prevents this file being apply by infra-operator. auto
+    added by infra-operator export. if need to apply, set to false'
+metadata:
+  meshName: bin-dev-infra-operator-tests-mesh
+spec:
+  egressFilter:
+    type: ALLOW_ALL

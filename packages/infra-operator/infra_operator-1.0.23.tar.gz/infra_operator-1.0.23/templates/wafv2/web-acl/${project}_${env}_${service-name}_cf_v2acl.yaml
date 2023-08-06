@@ -1,0 +1,424 @@
+apiVersion: wafv2.aws.binance/v1alpha1
+metadata:
+  description: managed by https://git.toolsfdg.net/devops/devops-infra
+  default-action:
+    Allow: {}
+  LogDestinationBucket: aws-waf-logs-${aws_account_id}
+  visibility-config:
+    SampledRequestsEnabled: true
+    CloudWatchMetricsEnabled: true
+    MetricName: ${project}_${env}_${name}_cf_v2acl
+spec:
+  rules: 
+    # - Name: mgs_lambda_ip_block_v2rule #Block IPs that violated mainsite mgs rules, remove it if it's unnecessary.
+    #   Statement:
+    #     AndStatement:
+    #       Statements:
+    #         - OrStatement:
+    #             Statements:
+    #               - IPSetReferenceStatement:
+    #                   ARN: $file(ip-set/mgs_lambda_ip_block_set_1.yaml)
+    #               - IPSetReferenceStatement:
+    #                   ARN: $file(ip-set/mgs_lambda_ip_block_set_2.yaml) 
+    #               - IPSetReferenceStatement:
+    #                   ARN: $file(ip-set/mgs_lambda_ip_block_set_3.yaml)                                                                         
+    #         - NotStatement:
+    #             Statement:
+    #               IPSetReferenceStatement:
+    #                 ARN: $file(ip-set/project_env_mgs_lambda_ip_whitelist_set.yaml)
+    #   Action:
+    #     Block: {}
+    #   VisibilityConfig:
+    #     SampledRequestsEnabled: true
+    #     CloudWatchMetricsEnabled: true
+    #     MetricName: mgs_lambda_ip_block_v2rule
+    - Name: ${project}_${env}_${name}_ip_block_v2rule #Explict deny spicific IPs
+      Statement:
+        IPSetReferenceStatement:
+          ARN: $file(ip-set/${project}_${env}_${name}_ip_block_set.yaml)
+      Action:
+        Block: {}
+      VisibilityConfig:
+        SampledRequestsEnabled: true
+        CloudWatchMetricsEnabled: true
+        MetricName: ${project}_${env}_${name}_ip_block_v2rule
+    - Name: ${project}_${env}_${name}_xff_noip6_v2rule
+      Statement:
+        RegexMatchStatement:
+          RegexString: '[^\d\,\.\s]'
+          FieldToMatch:
+            SingleHeader:
+              Name: x-forwarded-for
+          TextTransformations:
+            - Priority: 0
+              Type: NONE
+      Action:
+        Block: {}
+      VisibilityConfig:
+        SampledRequestsEnabled: true
+        CloudWatchMetricsEnabled: true
+        MetricName: ${project}_${env}_${name}_xff_noip6_v2rule
+    - Name: ${project}_${env}_${name}_global_ratelimit_v2rule #Block requests that exceed the limits.
+      Statement:
+        RateBasedStatement:
+          Limit: 20000
+          AggregateKeyType: IP
+          # ScopeDownStatement:
+          #   NotStatement:
+          #     Statement:
+          #       IPSetReferenceStatement:
+          #         ARN: $file(ip-set/${project}_${env}_${name}_global_ratelimit_whitelist_ip_set.yaml)          
+      Action:
+        Block: {}
+      VisibilityConfig:
+        SampledRequestsEnabled: true
+        CloudWatchMetricsEnabled: true
+        MetricName: ${project}_${env}_${name}_global_ratelimit_v2rule
+    - Name: ${project}_${env}_${name}_proxy_blcok_v2rule #Block requests which sending from some unwelcome user-agent relating to proxy.
+      Statement:
+        OrStatement:
+          Statements:
+            - ByteMatchStatement:
+                SearchString: 1.1 scaleway001 (squid
+                FieldToMatch:
+                  SingleHeader:
+                    Name: via
+                TextTransformations:
+                  - Priority: 0
+                    Type: NONE
+                PositionalConstraint: CONTAINS
+            - ByteMatchStatement:
+                SearchString: 'HTTP/1.1 sophos.http.proxy:3128'
+                FieldToMatch:
+                  SingleHeader:
+                    Name: via
+                TextTransformations:
+                  - Priority: 0
+                    Type: NONE
+                PositionalConstraint: CONTAINS
+            - ByteMatchStatement:
+                SearchString: 1.1 Proxy.server (squid
+                FieldToMatch:
+                  SingleHeader:
+                    Name: via
+                TextTransformations:
+                  - Priority: 0
+                    Type: NONE
+                PositionalConstraint: CONTAINS
+            - ByteMatchStatement:
+                SearchString: 'HTTP/1.1 forward.http.proxy:3128'
+                FieldToMatch:
+                  SingleHeader:
+                    Name: via
+                TextTransformations:
+                  - Priority: 0
+                    Type: NONE
+                PositionalConstraint: CONTAINS
+            - ByteMatchStatement:
+                SearchString: 1.1 NGWebfilter (squid
+                FieldToMatch:
+                  SingleHeader:
+                    Name: via
+                TextTransformations:
+                  - Priority: 0
+                    Type: NONE
+                PositionalConstraint: CONTAINS
+            - ByteMatchStatement:
+                SearchString: 'forward.http.proxy:3128'
+                FieldToMatch:
+                  SingleHeader:
+                    Name: via
+                TextTransformations:
+                  - Priority: 0
+                    Type: NONE
+                PositionalConstraint: CONTAINS
+            - ByteMatchStatement:
+                SearchString: Mikrotik HttpProxy
+                FieldToMatch:
+                  SingleHeader:
+                    Name: via
+                TextTransformations:
+                  - Priority: 0
+                    Type: NONE
+                PositionalConstraint: CONTAINS
+      Action:
+        Block: {}
+      VisibilityConfig:
+        SampledRequestsEnabled: true
+        CloudWatchMetricsEnabled: true
+        MetricName: ${project}_${env}_${name}_proxy_blcok_v2rule
+    - Name: bin_prod_path_regex_v2rule
+      Statement:
+        RegexPatternSetReferenceStatement:
+          FieldToMatch:
+            UriPath: {}
+          ARN: $file(regex-pattern-set/path_regex_set.yaml)
+          TextTransformations:
+            - Priority: 0
+              Type: URL_DECODE
+            - Priority: 1
+              Type: HTML_ENTITY_DECODE
+            - Priority: 2
+              Type: LOWERCASE
+      Action:
+        Block: {}
+      VisibilityConfig:
+        SampledRequestsEnabled: true
+        CloudWatchMetricsEnabled: true
+        MetricName: bin_prod_path_regex_v2rule  
+    - Name: query_regex_v2rule #Block the requests which match suspicious patterns in query string.
+      Statement:
+        RegexPatternSetReferenceStatement:
+          ARN: $file(regex-pattern-set/query_regex_set.yaml)
+          FieldToMatch:
+            QueryString: {}
+          TextTransformations:
+            - Priority: 0
+              Type: URL_DECODE
+            - Priority: 1
+              Type: HTML_ENTITY_DECODE
+            - Priority: 2
+              Type: LOWERCASE
+      Action:
+        Block: {}
+      VisibilityConfig:
+        SampledRequestsEnabled: true
+        CloudWatchMetricsEnabled: true
+        MetricName: query_regex_v2rule
+    - Name: referer_regex_v2rule #Block the requests which match suspicious patterns in referer string.
+      Statement:
+        RegexPatternSetReferenceStatement:
+          ARN: $file(regex-pattern-set/referer_regex_set.yaml)
+          FieldToMatch:
+            SingleHeader:
+              Name: referer
+          TextTransformations:
+            - Priority: 0
+              Type: URL_DECODE
+            - Priority: 1
+              Type: HTML_ENTITY_DECODE
+            - Priority: 2
+              Type: LOWERCASE
+      Action:
+        Block: {}
+      VisibilityConfig:
+        SampledRequestsEnabled: true
+        CloudWatchMetricsEnabled: true
+        MetricName: referer_regex_v2rule
+    - Name: cookie_regex_v2rule #Block the requests which match suspicious patterns in cookie.
+      Statement:
+        RegexPatternSetReferenceStatement:
+          ARN: $file(regex-pattern-set/cookie_regex_set.yaml)
+          FieldToMatch:
+            SingleHeader:
+              Name: cookie
+          TextTransformations:
+            - Priority: 0
+              Type: URL_DECODE
+            - Priority: 1
+              Type: HTML_ENTITY_DECODE
+            - Priority: 2
+              Type: LOWERCASE
+      Action:
+        Block: {}
+      VisibilityConfig:
+        SampledRequestsEnabled: true
+        CloudWatchMetricsEnabled: true
+        MetricName: cookie_regex_v2rule
+    - Name: ua_regex_v2rule #Block the requests which match suspicious patterns in user-agent.
+      Statement:
+        RegexPatternSetReferenceStatement:
+          ARN: $file(regex-pattern-set/ua_regex_set.yaml)
+          FieldToMatch:
+            SingleHeader:
+              Name: user-agent
+          TextTransformations:
+            - Priority: 0
+              Type: URL_DECODE
+            - Priority: 1
+              Type: HTML_ENTITY_DECODE
+            - Priority: 2
+              Type: LOWERCASE
+      Action:
+        Block: {}
+      VisibilityConfig:
+        SampledRequestsEnabled: true
+        CloudWatchMetricsEnabled: true
+        MetricName: ua_regex_v2rule
+    - Name: body_regex_v2rule
+      Statement:
+        RegexPatternSetReferenceStatement:
+          ARN: $file(regex-pattern-set/body_regex_set.yaml)
+          FieldToMatch:
+            Body: 
+              OversizeHandling: CONTINUE
+          TextTransformations:
+            - Priority: 0
+              Type: URL_DECODE
+            - Priority: 1
+              Type: HTML_ENTITY_DECODE
+            - Priority: 2
+              Type: LOWERCASE 
+      Action:
+        Block: {}
+      VisibilityConfig:
+        SampledRequestsEnabled: true
+        CloudWatchMetricsEnabled: true
+        MetricName: body_regex_v2rule
+    - Name: sql_block_v2rule  
+      Statement:
+        OrStatement:
+          Statements:
+            - SqliMatchStatement:
+                FieldToMatch:
+                  SingleHeader:
+                    Name: user-agent
+                TextTransformations:
+                  - Priority: 0
+                    Type: URL_DECODE                   
+            - SqliMatchStatement:
+                FieldToMatch:
+                  QueryString: {}
+                TextTransformations:
+                  - Priority: 0
+                    Type: URL_DECODE
+            - SqliMatchStatement:
+                FieldToMatch:
+                  AllQueryArguments: {}
+                TextTransformations:
+                  - Priority: 0
+                    Type: URL_DECODE
+            - SqliMatchStatement:
+                FieldToMatch:
+                  SingleHeader:
+                    Name: referer
+                TextTransformations:
+                  - Priority: 0
+                    Type: URL_DECODE
+            - SqliMatchStatement:
+                FieldToMatch:
+                  Cookies:
+                    MatchScope: ALL
+                    MatchPattern:
+                      All: {}
+                      # ExcludedCookies:
+                      #   - OptanonConsent
+                    OversizeHandling: CONTINUE
+                TextTransformations:
+                  - Type: URL_DECODE
+                    Priority: 0
+                SensitivityLevel: LOW
+            - SqliMatchStatement:
+                FieldToMatch:
+                  UriPath: {}
+                TextTransformations:
+                  - Priority: 0
+                    Type: URL_DECODE                    
+            - SqliMatchStatement:
+                FieldToMatch:
+                  Body:
+                    OversizeHandling: CONTINUE
+                TextTransformations:
+                  - Priority: 0
+                    Type: URL_DECODE
+                  - Priority: 1
+                    Type: HTML_ENTITY_DECODE
+      Action:
+        Block: {}
+      VisibilityConfig:
+        SampledRequestsEnabled: true
+        CloudWatchMetricsEnabled: true
+        MetricName: sql_block_v2rule
+    - Name: xss_block_v2rule 
+      Statement:
+        OrStatement:
+          Statements:
+            - XssMatchStatement:
+                FieldToMatch:
+                  SingleHeader:
+                    Name: user-agent
+                TextTransformations:
+                  - Priority: 0
+                    Type: URL_DECODE  
+                  - Priority: 1
+                    Type: HTML_ENTITY_DECODE                 
+            - XssMatchStatement:
+                FieldToMatch:
+                  AllQueryArguments: {}     #aws suggest to use AllQueryArguments with xss
+                TextTransformations:
+                  - Priority: 0
+                    Type: URL_DECODE  
+                  - Priority: 1
+                    Type: HTML_ENTITY_DECODE  
+            # - XssMatchStatement:         太容易误拦截了，先注释掉
+            #     FieldToMatch:
+            #       SingleHeader:
+            #         Name: referer
+            #     TextTransformations:
+            #       - Priority: 0
+            #         Type: URL_DECODE  
+            #       - Priority: 1
+            #         Type: HTML_ENTITY_DECODE 
+            - XssMatchStatement:
+                FieldToMatch:
+                  SingleHeader:
+                    Name: cookie                #cookie urldecode解码后，容易触发误拦截，因此先去掉url解码
+                TextTransformations:
+                  - Priority: 0
+                    Type: HTML_ENTITY_DECODE
+            - XssMatchStatement:
+                FieldToMatch:
+                  UriPath: {}
+                TextTransformations:
+                  - Priority: 0
+                    Type: URL_DECODE  
+                  - Priority: 1
+                    Type: HTML_ENTITY_DECODE                   
+      Action:
+        Block: {}
+      VisibilityConfig:
+        SampledRequestsEnabled: true
+        CloudWatchMetricsEnabled: true
+        MetricName: xss_block_v2rule  
+    - Name: request_v2rule #Block the requests which contains harmful strings in argument.
+      Statement:
+        OrStatement:
+          Statements:
+            - ByteMatchStatement:
+                SearchString: 'echo '
+                FieldToMatch:
+                  AllQueryArguments: {}
+                TextTransformations:
+                  - Priority: 0
+                    Type: LOWERCASE
+                PositionalConstraint: CONTAINS
+            - ByteMatchStatement:
+                SearchString: function(
+                FieldToMatch:
+                  AllQueryArguments: {}
+                TextTransformations:
+                  - Priority: 0
+                    Type: LOWERCASE
+                PositionalConstraint: CONTAINS
+            - ByteMatchStatement:
+                SearchString: ../.
+                FieldToMatch:
+                  AllQueryArguments: {}
+                TextTransformations:
+                  - Priority: 0
+                    Type: LOWERCASE
+                PositionalConstraint: CONTAINS
+            - ByteMatchStatement:
+                SearchString: java.lang.
+                FieldToMatch:
+                  AllQueryArguments: {}
+                TextTransformations:
+                  - Priority: 0
+                    Type: LOWERCASE
+                PositionalConstraint: CONTAINS
+      Action:
+        Block: {}
+      VisibilityConfig:
+        SampledRequestsEnabled: true
+        CloudWatchMetricsEnabled: true
+        MetricName: request_v2rule

@@ -1,0 +1,57 @@
+apiVersion: ec2.aws.infra/v1alpha1
+kind: Instance
+metadata:
+  ImageId: ami-0c3fd0f5d33134a76
+  KeyName: tk_dev_kp
+  SubnetId: subnet-01858d6f76a83bbb1
+  InstanceType: m5.2xlarge
+  EbsOptimized: true
+  Tags:
+    Name: bin_dev_infra_operator_tests_ec2_1
+    biz: common-infra
+    env: dev
+    team: devops
+    project: infra-operator
+spec:
+  Placement:
+    Tenancy: default
+    GroupName: ''
+    AvailabilityZone: ap-northeast-1d
+  IamInstanceProfile:
+    Arn: arn:aws:iam::173062506398:instance-profile/bin_dev_SessionManagerInstanceProfile
+  MaintenanceOptions:
+    AutoRecovery: default
+  CapacityReservationSpecification:
+    CapacityReservationPreference: open
+  Monitoring:
+    Enabled: false
+  EnclaveOptions:
+    Enabled: false
+  HibernationOptions:
+    Configured: false
+  PrivateDnsNameOptions:
+    HostnameType: ip-name
+    EnableResourceNameDnsARecord: false
+    EnableResourceNameDnsAAAARecord: false
+  TagSpecifications:
+    - ResourceType: volume
+      Tags:
+        biz: common-infra
+        env: dev
+        Name: bin_dev_infra_operator_tests_ec2_1_ebs
+        team: devops
+        project: infra-operator
+  BlockDeviceMappings:
+    - DeviceName: /dev/xvda
+      Ebs:
+        SnapshotId: snap-08a7cb489033af8c7
+        VolumeType: gp2
+        Encrypted: false
+        DeleteOnTermination: true
+        VolumeSize: 50
+    - DeviceName: /dev/sdb
+      Ebs:
+        VolumeType: gp2
+        Encrypted: false
+        DeleteOnTermination: true
+        VolumeSize: 2048

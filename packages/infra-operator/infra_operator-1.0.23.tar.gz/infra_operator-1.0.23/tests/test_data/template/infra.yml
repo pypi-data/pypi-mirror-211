@@ -1,0 +1,23 @@
+application:
+  CommitID: 2269bcb993d4cfc2210106ec1ecfc23018685881
+  Commiter: lucas-x
+  Bucket: sourcecode-tools-740529195164
+  Target: infra 
+  Env: tools
+
+
+infra: 
+  dev: 
+    - Project: custody
+      Environment: dev 
+      ServiceName: infra 
+      InfraIdentifier: bc-100 
+      InfraRole: arn:aws:iam::221542130948:role/custody_dev_prow_infra_role
+      Region: ap-northeast-1
+      RootCaArn: arn:aws:acm-pca:ap-northeast-1:221542130948:certificate-authority/54e12f8c-a8e7-4ce4-b01d-d39789453812
+      CertsArn: arn:aws:acm:ap-northeast-1:221542130948:certificate/de40f7cd-5f18-469e-929d-0dc5bdd34adf
+      Envoyimage: 740529195164.dkr.ecr.eu-west-1.amazonaws.com/custody-appmesh-envoy:amd64-v1.23.1.0-trace-prod
+      Monitorimage: 740529195164.dkr.ecr.ap-northeast-1.amazonaws.com/custody-monitorrepo/dev:1fdcc5e5a3a494b4dd0ed7e9117dfbeb6ed65ec8
+      logrouterImage: 740529195164.dkr.ecr.ap-northeast-1.amazonaws.com/aws-for-fluent-bit:cc373c9a11059da298b42f27708da01309c0e3b3
+      KafkaBrokers: b-3.custodynonprodlog.to4yxu.c2.kafka.ap-northeast-1.amazonaws.com:9092,b-1.custodynonprodlog.to4yxu.c2.kafka.ap-northeast-1.amazonaws.com:9092,b-2.custodynonprodlog.to4yxu.c2.kafka.ap-northeast-1.amazonaws.com:9092
+  

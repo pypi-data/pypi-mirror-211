@@ -1,0 +1,31 @@
+apiVersion: ecr.aws.binance/v1alpha1
+kind: ECR
+metadata:
+  Name: "cross-proxy"
+  Tags:
+    message: "managed by https://git.toolsfdg.net/devops/devops-infra-pipeline"
+    team: "backend"
+    biz: "common-infra"
+    app: "cross-proxy"
+    env: "dev"
+spec:
+    policy:
+      Version: "2008-10-17"
+      Statement:
+        - Effect: "Allow"
+          Principal: 
+            AWS:
+              - "arn:aws:iam::918323888678:root"
+              - "arn:aws:iam::173062506398:root"
+          Action:
+              - "ecr:*"
+    lifecycle-policy:
+      rules:
+      - rulePriority: 1
+        description: Purge images when count more than 500
+        selection:
+          tagStatus: any
+          countType: imageCountMoreThan
+          countNumber: 500
+        action:
+          type: expire      

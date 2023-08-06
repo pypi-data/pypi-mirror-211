@@ -1,0 +1,5 @@
+meshName: custody-dev-bc-100
+execRoleName: custody-dev-ExecutionRole-bc-100
+execRoleArn: arn:aws:iam::173062506398:role/custody-dev-ExecutionRole-bc-100
+clusterName: custody-dev-bc-100
+clusterArn: arn:aws:ecs:ap-northeast-1:173062506398:cluster/custody-dev-bc-100

@@ -1,0 +1,61 @@
+layouts:
+  - name: cloudfront
+    path: ${vendor}/${project}/${env}/global/${ctrl}/${kind}/${filename}
+    require:
+      vendor: aws
+      ctrl: cloudfront
+  - name: elbv2
+    path: ${vendor}/${project}/${env}/${region}/${ctrl}/${kind}/${name}/${filename}
+    require:
+      vendor: aws
+      ctrl: elbv2
+  - name: wafv2
+    path: ${vendor}/${project}/${env}/${region}/${ctrl}/${kind}/${filename}
+    require:
+      vendor: aws
+      ctrl: wafv2
+    set:
+      name: $stripped_filename  
+  - name: ecr
+    path: ${vendor}/${project}/${env}/${region}/${ctrl}/${kind}/${filename}
+    require:
+      vendor: aws
+      ctrl: ecr
+    set:
+      name: $stripped_filename  
+  - name: ecs-cluster
+    path: ${vendor}/${project}/${env}/${region}/${ctrl}/${ecs_cluster}/${filename}
+    require:
+      vendor: aws
+      ctrl: ecs
+      filename: cluster.yaml
+  - name: ecs
+    path: ${vendor}/${project}/${env}/${region}/${ctrl}/${ecs_cluster}/${name}/${filename}
+    require:
+      vendor: aws
+      ctrl: ecs
+  - name: appmesh-mesh
+    path: ${vendor}/${project}/${env}/${region}/${ctrl}/${mesh}/${filename}
+    require:
+      vendor: aws
+      ctrl: appmesh
+      filename: mesh.yaml
+  - name: appmesh
+    path: ${vendor}/${project}/${env}/${region}/${ctrl}/${mesh}/${name}/${filename}
+    require:
+      vendor: aws
+      ctrl: appmesh
+  - name: ec2
+    path: ${vendor}/${project}/${env}/${region}/${ctrl}/${name}/${filename}
+    require:
+      vendor: aws
+      ctrl: ec2
+  - name: templates-variables
+    path: ${vendor}/${template_name}/<recursive>
+    require:
+      vendor: templates
+      filename: variables.yaml
+  - name: templates
+    path: ${vendor}/${template_name}/${ctrl}/${kind}/${filename}
+    require:
+      vendor: templates

@@ -1,0 +1,15 @@
+apiVersion: secretsmanager.aws.infra/v1alpha1
+kind: Secret
+pipelineConfig:
+  no-apply: true
+  comment: 'no-apply: true prevents this file being apply by infra-operator. auto
+    added by infra-operator export. if need to apply, set to false'
+metadata:
+  Name: bin_dev_cross_proxy
+  KmsKeyId: arn:aws:kms:ap-northeast-1:173062506398:key/a73839a6-2c75-4290-8a32-431af8807142
+  Tags:
+    app: cross-proxy
+    biz: arch
+    team: backend
+    env: dev
+spec: {}

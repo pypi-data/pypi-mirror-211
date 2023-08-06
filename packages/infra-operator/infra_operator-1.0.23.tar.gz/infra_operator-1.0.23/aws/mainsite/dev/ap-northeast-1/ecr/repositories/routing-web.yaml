@@ -1,0 +1,25 @@
+apiVersion: ecr.aws.infra/v1alpha1
+kind: Repository
+pipelineConfig:
+  no-apply: true
+  comment: 'no-apply: true prevents this file being apply by infra-operator. auto
+    added by infra-operator export. if need to apply, set to false'
+metadata:
+  registryId: '173062506398'
+  repositoryName: routing-web/dev/routing-web
+  imageTagMutability: MUTABLE
+spec:
+  encryptionConfiguration:
+    encryptionType: AES256
+  imageScanningConfiguration:
+    scanOnPush: false
+  lifecycle-policy:
+    rules:
+      - description: Purge images when count more than 500
+        action:
+          type: expire
+        rulePriority: 1
+        selection:
+          tagStatus: any
+          countType: imageCountMoreThan
+          countNumber: 500

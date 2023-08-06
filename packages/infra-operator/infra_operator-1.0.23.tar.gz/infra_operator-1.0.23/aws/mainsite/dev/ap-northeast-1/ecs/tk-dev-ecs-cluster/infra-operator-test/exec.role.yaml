@@ -1,0 +1,43 @@
+apiVersion: iam.aws.infra/v1alpha1
+kind: Role
+metadata:
+  Description: managed by https://git.toolsfdg.net/devops/devops-infra
+  RoleName:
+    $lower:
+      $underscore: ${prefix}_${name}_ecs_exec_role
+  AssumeRolePolicyDocument:
+    Version: "2012-10-17"
+    Statement:
+      - Effect: Allow
+        Principal:
+          Service: ecs-tasks.amazonaws.com
+        Action: sts:AssumeRole
+spec:
+  managed-policies:
+    - PolicyArn: arn:aws:iam::aws:policy/service-role/AmazonECSTaskExecutionRolePolicy
+    - PolicyArn: $file(./policy.yaml)
+  inline-policies:
+    - PolicyName: "ECRRepoPullPolicy"
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Sid: AllowPull
+            Effect: Allow
+            Action:
+              - ecr:GetAuthorizationToken
+              - ecr:BatchGetImage
+              - ecr:BatchCheckLayerAvailability
+              - ecr:ListTagsForResource
+              - ecr:GetDownloadUrlForLayer
+            Resource: "*"
+    - PolicyName: "secretsmanager"
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Sid: VisualEditor0
+            Effect: Allow
+            Action:
+              - ssm:GetParameters
+              - secretsmanager:GetSecretValue
+              - kms:Decrypt
+            Resource: $file(sm.yaml)

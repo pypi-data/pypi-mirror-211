@@ -1,0 +1,45 @@
+apiVersion: iam.aws.infra/v1alpha1
+kind: Role
+metadata:
+  Description: managed by https://git.toolsfdg.net/devops/devops-infra
+  RoleName:
+    $lower:
+      $underscore: ${prefix}_${env}_${name}_ecs_task_role
+  AssumeRolePolicyDocument:
+    Version: "2012-10-17"
+    Statement:
+      - Sid: ""
+        Effect: Allow
+        Principal:
+          Service: ecs-tasks.amazonaws.com
+        Action: sts:AssumeRole
+spec:
+  managed-policies:
+    - PolicyArn: arn:aws:iam::aws:policy/AmazonEC2FullAccess
+  inline-policies:
+    - PolicyName: "CloudwatchLogs"
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Sid: VisualEditor0
+            Effect: Allow
+            Action:
+              - logs:CreateLogStream
+              - logs:CreateLogGroup
+            Resource: "*"
+    - PolicyName: "S3AccessPolicy"
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Sid: VisualEditor0
+            Effect: Allow
+            Action:
+              - s3:GetObject
+              - s3:PutObject
+              - s3:DeleteObject
+            Resource: arn:aws:s3:::static.devfdg.net/api/i18n/*
+          - Sid: VisualEditor1
+            Effect: Allow
+            Action:
+              - s3:ListBucket
+            Resource: arn:aws:s3:::static.devfdg.net

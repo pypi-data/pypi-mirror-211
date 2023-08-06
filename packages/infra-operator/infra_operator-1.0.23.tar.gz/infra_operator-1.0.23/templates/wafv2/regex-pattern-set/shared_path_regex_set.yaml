@@ -1,0 +1,6 @@
+apiVersion: wafv2.aws.binance/v1alpha1
+metadata:
+  description: managed by https://git.toolsfdg.net/devops/devops-infra
+spec:
+  RegularExpressionList:
+    $file(shared/prod/global/wafv2/regex-pattern-set/path_regex_pattern_set.yaml)

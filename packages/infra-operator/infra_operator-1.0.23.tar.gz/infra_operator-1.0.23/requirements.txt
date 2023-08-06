@@ -1,0 +1,5 @@
+pytest==7.2.0
+pytest-order==1.1.0
+oyaml==1.0
+boto3==1.26.65
+PyGithub==1.57

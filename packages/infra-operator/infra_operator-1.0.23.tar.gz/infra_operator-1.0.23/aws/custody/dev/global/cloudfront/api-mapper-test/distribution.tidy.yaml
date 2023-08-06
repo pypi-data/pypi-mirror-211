@@ -1,0 +1,9482 @@
+CallerReference: terraform-20200206092834894900000002
+Aliases:
+- www.binance.com
+- support.binance.com
+- beta.binance.com
+- otc.binance.com
+- card.binance.com
+- merchant.binance.com
+- pay.binance.com
+DefaultRootObject: ''
+Origins:
+- Id: ELB-bin-prod-be-account-dispatcher-alb
+  DomainName: tf-bin-prod-be-account-disp-alb-771171003.ap-northeast-1.elb.amazonaws.com
+  OriginPath: ''
+  CustomHeaders:
+  - HeaderName: x-cfcalltag
+    HeaderValue: g22uazHiLT9eYgNyoECnfx20190327
+  CustomOriginConfig:
+    HTTPPort: 80
+    HTTPSPort: 443
+    OriginProtocolPolicy: https-only
+    OriginSslProtocols:
+    - TLSv1
+    - TLSv1.1
+    - TLSv1.2
+    OriginReadTimeout: 30
+    OriginKeepaliveTimeout: 5
+  ConnectionAttempts: 3
+  ConnectionTimeout: 10
+  OriginShield:
+    Enabled: false
+- Id: ELB-bin-prod-fe-futures-dispatcher-alb
+  DomainName: tf-bin-prod-fe-futur-disp-alb-1016982162.ap-northeast-1.elb.amazonaws.com
+  OriginPath: ''
+  CustomHeaders:
+  - HeaderName: x-cfcalltag
+    HeaderValue: g22uazHiLT9eYgNyoECnfx20190327
+  CustomOriginConfig:
+    HTTPPort: 80
+    HTTPSPort: 443
+    OriginProtocolPolicy: https-only
+    OriginSslProtocols:
+    - TLSv1
+    - TLSv1.1
+    - TLSv1.2
+    OriginReadTimeout: 30
+    OriginKeepaliveTimeout: 5
+  ConnectionAttempts: 3
+  ConnectionTimeout: 10
+  OriginShield:
+    Enabled: false
+- Id: ELB-bin-prod-be-business-unit-dispatcher-alb
+  DomainName: tf-bin-prod-be-bu-disp-alb-2003923821.ap-northeast-1.elb.amazonaws.com
+  OriginPath: ''
+  CustomHeaders:
+  - HeaderName: x-cfcalltag
+    HeaderValue: g22uazHiLT9eYgNyoECnfx20190327
+  CustomOriginConfig:
+    HTTPPort: 80
+    HTTPSPort: 443
+    OriginProtocolPolicy: https-only
+    OriginSslProtocols:
+    - TLSv1
+    - TLSv1.1
+    - TLSv1.2
+    OriginReadTimeout: 30
+    OriginKeepaliveTimeout: 5
+  ConnectionAttempts: 3
+  ConnectionTimeout: 10
+  OriginShield:
+    Enabled: false
+- Id: ELB-bin-prod-be-slow-dispatcher-alb
+  DomainName: tf-bin-prod-be-slow-disp-alb-223518228.ap-northeast-1.elb.amazonaws.com
+  OriginPath: ''
+  CustomHeaders:
+  - HeaderName: x-cfcalltag
+    HeaderValue: g22uazHiLT9eYgNyoECnfx20190327
+  CustomOriginConfig:
+    HTTPPort: 80
+    HTTPSPort: 443
+    OriginProtocolPolicy: https-only
+    OriginSslProtocols:
+    - TLSv1
+    - TLSv1.1
+    - TLSv1.2
+    OriginReadTimeout: 30
+    OriginKeepaliveTimeout: 5
+  ConnectionAttempts: 3
+  ConnectionTimeout: 10
+  OriginShield:
+    Enabled: false
+- Id: ELB-bin-prod-be-capital-dispatcher-alb
+  DomainName: tf-bin-prod-be-capital-disp-alb-1463754064.ap-northeast-1.elb.amazonaws.com
+  OriginPath: ''
+  CustomHeaders:
+  - HeaderName: x-cfcalltag
+    HeaderValue: g22uazHiLT9eYgNyoECnfx20190327
+  CustomOriginConfig:
+    HTTPPort: 80
+    HTTPSPort: 443
+    OriginProtocolPolicy: https-only
+    OriginSslProtocols:
+    - TLSv1
+    - TLSv1.1
+    - TLSv1.2
+    OriginReadTimeout: 30
+    OriginKeepaliveTimeout: 5
+  ConnectionAttempts: 3
+  ConnectionTimeout: 10
+  OriginShield:
+    Enabled: false
+- Id: ELB-bin-prod-be-futures-dispatcher-alb
+  DomainName: tf-bin-prod-be-futures-disp-alb-506234104.ap-northeast-1.elb.amazonaws.com
+  OriginPath: ''
+  CustomHeaders:
+  - HeaderName: x-cfcalltag
+    HeaderValue: g22uazHiLT9eYgNyoECnfx20190327
+  CustomOriginConfig:
+    HTTPPort: 80
+    HTTPSPort: 443
+    OriginProtocolPolicy: https-only
+    OriginSslProtocols:
+    - TLSv1
+    - TLSv1.1
+    - TLSv1.2
+    OriginReadTimeout: 30
+    OriginKeepaliveTimeout: 5
+  ConnectionAttempts: 3
+  ConnectionTimeout: 10
+  OriginShield:
+    Enabled: false
+- Id: ELB-bin-prod-nginx-www-fapi-alb
+  DomainName: futures-prod-nginx-www-fapi-a-1441272012.ap-northeast-1.elb.amazonaws.com
+  OriginPath: ''
+  CustomHeaders:
+  - HeaderName: x-cfcalltag
+    HeaderValue: g22uazHiLT9eYgNyoECnfx20190327
+  CustomOriginConfig:
+    HTTPPort: 80
+    HTTPSPort: 443
+    OriginProtocolPolicy: https-only
+    OriginSslProtocols:
+    - TLSv1
+    - TLSv1.1
+    - TLSv1.2
+    OriginReadTimeout: 30
+    OriginKeepaliveTimeout: 5
+  ConnectionAttempts: 3
+  ConnectionTimeout: 10
+  OriginShield:
+    Enabled: false
+- Id: ELB-bin-prod-be-asset-dispatcher-alb
+  DomainName: tf-bin-prod-be-asset-disp-alb-1745043811.ap-northeast-1.elb.amazonaws.com
+  OriginPath: ''
+  CustomHeaders:
+  - HeaderName: x-cfcalltag
+    HeaderValue: g22uazHiLT9eYgNyoECnfx20190327
+  CustomOriginConfig:
+    HTTPPort: 80
+    HTTPSPort: 443
+    OriginProtocolPolicy: https-only
+    OriginSslProtocols:
+    - TLSv1
+    - TLSv1.1
+    - TLSv1.2
+    OriginReadTimeout: 30
+    OriginKeepaliveTimeout: 5
+  ConnectionAttempts: 3
+  ConnectionTimeout: 10
+  OriginShield:
+    Enabled: false
+- Id: S3-bin.bnbstatic.com
+  DomainName: bin.bnbstatic.com.s3.amazonaws.com
+  OriginPath: ''
+  CustomHeaders: []
+  S3OriginConfig:
+    OriginAccessIdentity: origin-access-identity/cloudfront/E95WIJ16BFBZL
+  ConnectionAttempts: 3
+  ConnectionTimeout: 10
+  OriginShield:
+    Enabled: false
+- Id: ELB-bin-prod-fe-trade-dispatcher-alb
+  DomainName: tf-bin-prod-fe-trade-disp-alb-1199548949.ap-northeast-1.elb.amazonaws.com
+  OriginPath: ''
+  CustomHeaders:
+  - HeaderName: x-cfcalltag
+    HeaderValue: g22uazHiLT9eYgNyoECnfx20190327
+  CustomOriginConfig:
+    HTTPPort: 80
+    HTTPSPort: 443
+    OriginProtocolPolicy: https-only
+    OriginSslProtocols:
+    - TLSv1
+    - TLSv1.1
+    - TLSv1.2
+    OriginReadTimeout: 30
+    OriginKeepaliveTimeout: 5
+  ConnectionAttempts: 3
+  ConnectionTimeout: 10
+  OriginShield:
+    Enabled: false
+- Id: ELB-bin-prod-fe-basic-dispatcher-alb
+  DomainName: tf-bin-prod-fe-basic-disp-alb-1701157891.ap-northeast-1.elb.amazonaws.com
+  OriginPath: ''
+  CustomHeaders:
+  - HeaderName: x-cfcalltag
+    HeaderValue: g22uazHiLT9eYgNyoECnfx20190327
+  CustomOriginConfig:
+    HTTPPort: 80
+    HTTPSPort: 443
+    OriginProtocolPolicy: https-only
+    OriginSslProtocols:
+    - TLSv1
+    - TLSv1.1
+    - TLSv1.2
+    OriginReadTimeout: 30
+    OriginKeepaliveTimeout: 5
+  ConnectionAttempts: 3
+  ConnectionTimeout: 10
+  OriginShield:
+    Enabled: false
+- Id: S3-bnbprod-cloudfront-errorpages
+  DomainName: bnbprod-cloudfront-errorpages.s3.amazonaws.com
+  OriginPath: ''
+  CustomHeaders: []
+  S3OriginConfig:
+    OriginAccessIdentity: origin-access-identity/cloudfront/E3GYMCU4G0IFQC
+  ConnectionAttempts: 3
+  ConnectionTimeout: 10
+  OriginShield:
+    Enabled: false
+- Id: S3-wellknow-origin
+  DomainName: tf-bin-prod-binance-com-wellknow.s3.amazonaws.com
+  OriginPath: ''
+  CustomHeaders: []
+  S3OriginConfig:
+    OriginAccessIdentity: origin-access-identity/cloudfront/EOUZTVNYH79ZE
+  ConnectionAttempts: 3
+  ConnectionTimeout: 10
+  OriginShield:
+    Enabled: false
+- Id: ELB-bin-prod-be-common-dispatcher-alb
+  DomainName: tf-bin-prod-be-common-disp-alb-31806585.ap-northeast-1.elb.amazonaws.com
+  OriginPath: ''
+  CustomHeaders:
+  - HeaderName: x-cfcalltag
+    HeaderValue: g22uazHiLT9eYgNyoECnfx20190327
+  CustomOriginConfig:
+    HTTPPort: 80
+    HTTPSPort: 443
+    OriginProtocolPolicy: https-only
+    OriginSslProtocols:
+    - TLSv1
+    - TLSv1.1
+    - TLSv1.2
+    OriginReadTimeout: 30
+    OriginKeepaliveTimeout: 5
+  ConnectionAttempts: 3
+  ConnectionTimeout: 10
+  OriginShield:
+    Enabled: false
+- Id: ELB-bin-prod-dispatcher-alb
+  DomainName: bin-prod-dispatcher-alb-1351194062.ap-northeast-1.elb.amazonaws.com
+  OriginPath: ''
+  CustomHeaders:
+  - HeaderName: x-cfcalltag
+    HeaderValue: g22uazHiLT9eYgNyoECnfx20190327
+  CustomOriginConfig:
+    HTTPPort: 80
+    HTTPSPort: 443
+    OriginProtocolPolicy: https-only
+    OriginSslProtocols:
+    - TLSv1
+    - TLSv1.1
+    - TLSv1.2
+    OriginReadTimeout: 30
+    OriginKeepaliveTimeout: 5
+  ConnectionAttempts: 3
+  ConnectionTimeout: 10
+  OriginShield:
+    Enabled: false
+OriginGroups: []
+DefaultCacheBehavior:
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: all
+    Headers:
+    - '*'
+    QueryStringCacheKeys: []
+  MinTTL: 0
+  DefaultTTL: 86400
+  MaxTTL: 31536000
+CacheBehaviors:
+- PathPattern: /
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: whitelist
+      WhitelistedNames:
+      - lang
+    Headers:
+    - accept-language
+    - Host
+    - lang
+    QueryStringCacheKeys: []
+  MinTTL: 120
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /tr
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: whitelist
+      WhitelistedNames:
+      - home-ui-ab
+      - theme
+      - cr00
+      - color
+      - bnc-uuid
+      - BNC-Location
+    Headers:
+    - x-gateway-gray
+    - k8scluster
+    - CloudFront-Is-Mobile-Viewer
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys: []
+  MinTTL: 0
+  DefaultTTL: 0
+  MaxTTL: 0
+- PathPattern: /.well-known*
+  TargetOriginId: S3-wellknow-origin
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: true
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers: []
+    QueryStringCacheKeys: []
+  MinTTL: 0
+  DefaultTTL: 120
+  MaxTTL: 121
+- PathPattern: /sitemap*
+  TargetOriginId: S3-bnbprod-cloudfront-errorpages
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: true
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers: []
+    QueryStringCacheKeys: []
+  MinTTL: 0
+  DefaultTTL: 1800
+  MaxTTL: 86400
+- PathPattern: /public/*
+  TargetOriginId: S3-bnbprod-cloudfront-errorpages
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: true
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers: []
+    QueryStringCacheKeys: []
+  MinTTL: 1800
+  DefaultTTL: 86400
+  MaxTTL: 31536000
+- PathPattern: /??/eth2/faq
+  TargetOriginId: ELB-bin-prod-fe-futures-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - k8scluster
+    - bnc-theme
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys: []
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /??-??/eth2/faq
+  TargetOriginId: ELB-bin-prod-fe-futures-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - k8scluster
+    - bnc-theme
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys: []
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /??/stock-token*
+  TargetOriginId: ELB-bin-prod-fe-futures-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - CloudFront-Viewer-Country
+    - k8scluster
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys: []
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /??-??/stock-token*
+  TargetOriginId: ELB-bin-prod-fe-futures-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - CloudFront-Viewer-Country
+    - k8scluster
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys: []
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /??/futures*
+  TargetOriginId: ELB-bin-prod-fe-futures-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: whitelist
+      WhitelistedNames:
+      - theme
+      - futures-layout
+      - color
+    Headers:
+    - x-gateway-gray
+    - CloudFront-Viewer-Country
+    - k8scluster
+    - bnc-theme
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys: []
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /??-??/futures*
+  TargetOriginId: ELB-bin-prod-fe-futures-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: whitelist
+      WhitelistedNames:
+      - theme
+      - futures-layout
+      - color
+    Headers:
+    - x-gateway-gray
+    - CloudFront-Viewer-Country
+    - k8scluster
+    - bnc-theme
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys: []
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /??/strategy/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: whitelist
+      WhitelistedNames:
+      - theme
+      - isRedUpGreenDown
+      - BNC-Location
+    Headers:
+    - CloudFront-Is-Tablet-Viewer
+    - k8scluster
+    - CloudFront-Is-Mobile-Viewer
+    - bnc-theme
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys:
+    - opt
+    - ref
+    - symbol
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /??-??/strategy/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: whitelist
+      WhitelistedNames:
+      - theme
+      - isRedUpGreenDown
+      - BNC-Location
+    Headers:
+    - CloudFront-Is-Tablet-Viewer
+    - k8scluster
+    - CloudFront-Is-Mobile-Viewer
+    - bnc-theme
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys:
+    - opt
+    - ref
+    - symbol
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /??/trade/*
+  TargetOriginId: ELB-bin-prod-fe-trade-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: whitelist
+      WhitelistedNames:
+      - theme
+      - color
+      - BNC-Location
+    Headers:
+    - x-gateway-gray
+    - CloudFront-Viewer-Country
+    - k8scluster
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys: []
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /??-??/trade/*
+  TargetOriginId: ELB-bin-prod-fe-trade-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: whitelist
+      WhitelistedNames:
+      - theme
+      - color
+      - BNC-Location
+    Headers:
+    - x-gateway-gray
+    - CloudFront-Viewer-Country
+    - k8scluster
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys: []
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /??/margin/*
+  TargetOriginId: ELB-bin-prod-fe-trade-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: whitelist
+      WhitelistedNames:
+      - theme
+      - color
+    Headers:
+    - x-gateway-gray
+    - CloudFront-Viewer-Country
+    - k8scluster
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys: []
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /??-??/margin/*
+  TargetOriginId: ELB-bin-prod-fe-trade-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: whitelist
+      WhitelistedNames:
+      - theme
+      - color
+    Headers:
+    - x-gateway-gray
+    - CloudFront-Viewer-Country
+    - k8scluster
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys: []
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /??/mp-cms/app
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: whitelist
+      WhitelistedNames:
+      - theme
+      - color
+      - BNC-Location
+    Headers:
+    - x-gateway-gray
+    - k8scluster
+    - bnc-theme
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys:
+    - _dp
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /??-??/mp-cms/app
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: whitelist
+      WhitelistedNames:
+      - theme
+      - color
+      - BNC-Location
+    Headers:
+    - x-gateway-gray
+    - k8scluster
+    - bnc-theme
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys:
+    - _dp
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /??/delivery/*
+  TargetOriginId: ELB-bin-prod-fe-futures-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: whitelist
+      WhitelistedNames:
+      - theme
+      - futures-layout
+      - color
+    Headers:
+    - x-gateway-gray
+    - CloudFront-Viewer-Country
+    - k8scluster
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys: []
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /??-??/delivery/*
+  TargetOriginId: ELB-bin-prod-fe-futures-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: whitelist
+      WhitelistedNames:
+      - theme
+      - futures-layout
+      - color
+    Headers:
+    - x-gateway-gray
+    - CloudFront-Viewer-Country
+    - k8scluster
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys: []
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /??/leveraged-tokens/*
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: whitelist
+      WhitelistedNames:
+      - theme
+      - color
+    Headers:
+    - x-gateway-gray
+    - CloudFront-Viewer-Country
+    - k8scluster
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys: []
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /??-??/leveraged-tokens/*
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: whitelist
+      WhitelistedNames:
+      - theme
+      - color
+    Headers:
+    - x-gateway-gray
+    - CloudFront-Viewer-Country
+    - k8scluster
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys: []
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /??/nft/*
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - k8scluster
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys:
+    - id
+    - isDev
+    - isOpen
+    - isProduct
+    - itemId
+    - nftInfoId
+    - productId
+    - serialsNo
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /??-??/nft/*
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - k8scluster
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys:
+    - id
+    - isDev
+    - isOpen
+    - isProduct
+    - itemId
+    - nftInfoId
+    - productId
+    - serialsNo
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /??/survey/*
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - k8scluster
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys:
+    - ns
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /??-??/survey/*
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - k8scluster
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys:
+    - ns
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /??/redirect/*
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - k8scluster
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys:
+    - oauth_token
+    - oauth_verifier
+    - url
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /??-??/redirect/*
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - k8scluster
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys:
+    - oauth_token
+    - oauth_verifier
+    - url
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /??-??/news*
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: whitelist
+      WhitelistedNames:
+      - theme
+    Headers:
+    - x-gateway-gray
+    - k8scluster
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys:
+    - page
+  MinTTL: 0
+  DefaultTTL: 86400
+  MaxTTL: 31536000
+- PathPattern: /??/news*
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: whitelist
+      WhitelistedNames:
+      - theme
+    Headers:
+    - x-gateway-gray
+    - k8scluster
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys:
+    - page
+  MinTTL: 0
+  DefaultTTL: 86400
+  MaxTTL: 31536000
+- PathPattern: /??/buy-sell-crypto*
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: whitelist
+      WhitelistedNames:
+      - challengeMd
+      - challengeJwt
+    Headers:
+    - x-gateway-gray
+    - k8scluster
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys:
+    - channel
+    - crypto
+    - fiat
+    - merchant
+    - recurring
+    - token
+    - type
+  MinTTL: 0
+  DefaultTTL: 86400
+  MaxTTL: 31536000
+- PathPattern: /??-??/buy-sell-crypto*
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: whitelist
+      WhitelistedNames:
+      - challengeMd
+      - challengeJwt
+    Headers:
+    - x-gateway-gray
+    - k8scluster
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys:
+    - channel
+    - crypto
+    - fiat
+    - merchant
+    - recurring
+    - token
+    - type
+  MinTTL: 0
+  DefaultTTL: 86400
+  MaxTTL: 31536000
+- PathPattern: /??/cynodeserver/*
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - k8scluster
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys: []
+  MinTTL: 0
+  DefaultTTL: 86400
+  MaxTTL: 31536000
+- PathPattern: /??/margin/calculator
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - k8scluster
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys:
+    - color
+    - theme
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /??-??/margin/calculator
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - k8scluster
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys:
+    - color
+    - theme
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /??-??/usercenter/*
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - k8scluster
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys:
+    - asset
+    - direction
+    - email
+    - userId
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /??/usercenter/*
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - k8scluster
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys:
+    - asset
+    - direction
+    - email
+    - userId
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /??/blog*
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: whitelist
+      WhitelistedNames:
+      - theme
+      - isRedUpGreenDown
+    Headers:
+    - x-gateway-gray
+    - k8scluster
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys: []
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /??-??/blog*
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: whitelist
+      WhitelistedNames:
+      - theme
+      - isRedUpGreenDown
+    Headers:
+    - x-gateway-gray
+    - k8scluster
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys: []
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /??-??/login
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: whitelist
+      WhitelistedNames:
+      - cr00
+      - p20t
+    Headers:
+    - Origin
+    - x-gateway-gray
+    - k8scluster
+    - Host
+    QueryStringCacheKeys:
+    - return_to
+  MinTTL: 60
+  DefaultTTL: 60
+  MaxTTL: 120
+- PathPattern: /??/login
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: whitelist
+      WhitelistedNames:
+      - cr00
+      - p20t
+    Headers:
+    - Origin
+    - x-gateway-gray
+    - k8scluster
+    - Host
+    QueryStringCacheKeys:
+    - return_to
+  MinTTL: 60
+  DefaultTTL: 60
+  MaxTTL: 120
+- PathPattern: /??-??/register
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - Origin
+    - x-gateway-gray
+    - k8scluster
+    - Host
+    QueryStringCacheKeys:
+    - ref
+    - source
+  MinTTL: 60
+  DefaultTTL: 60
+  MaxTTL: 120
+- PathPattern: /??/register
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - Origin
+    - x-gateway-gray
+    - k8scluster
+    - Host
+    QueryStringCacheKeys:
+    - ref
+    - source
+  MinTTL: 60
+  DefaultTTL: 60
+  MaxTTL: 120
+- PathPattern: /??-??
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: whitelist
+      WhitelistedNames:
+      - home-ui-ab
+      - theme
+      - color
+      - BNC-Location
+    Headers:
+    - x-gateway-gray
+    - k8scluster
+    - CloudFront-Is-Mobile-Viewer
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys: []
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /??-??/
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: whitelist
+      WhitelistedNames:
+      - home-ui-ab
+      - theme
+      - color
+      - BNC-Location
+    Headers:
+    - x-gateway-gray
+    - k8scluster
+    - CloudFront-Is-Mobile-Viewer
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys: []
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /??
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: whitelist
+      WhitelistedNames:
+      - home-ui-ab
+      - theme
+      - color
+      - BNC-Location
+    Headers:
+    - x-gateway-gray
+    - k8scluster
+    - CloudFront-Is-Mobile-Viewer
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys: []
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /??/
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: whitelist
+      WhitelistedNames:
+      - home-ui-ab
+      - theme
+      - color
+      - BNC-Location
+    Headers:
+    - x-gateway-gray
+    - k8scluster
+    - CloudFront-Is-Mobile-Viewer
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys: []
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /??-??/earn*
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: whitelist
+      WhitelistedNames:
+      - theme
+      - color
+    Headers:
+    - x-gateway-gray
+    - k8scluster
+    - CloudFront-Is-Mobile-Viewer
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys: []
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /??/earn*
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: whitelist
+      WhitelistedNames:
+      - theme
+      - color
+    Headers:
+    - x-gateway-gray
+    - k8scluster
+    - CloudFront-Is-Mobile-Viewer
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys: []
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /??/support*
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: whitelist
+      WhitelistedNames:
+      - help-center-ui-ab
+      - theme
+    Headers:
+    - x-gateway-gray
+    - k8scluster
+    - Host
+    - Accept-Encoding
+    - x-host
+    QueryStringCacheKeys:
+    - c
+    - navId
+  MinTTL: 300
+  DefaultTTL: 300
+  MaxTTL: 300
+- PathPattern: /??-??/support*
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: whitelist
+      WhitelistedNames:
+      - help-center-ui-ab
+      - theme
+    Headers:
+    - x-gateway-gray
+    - k8scluster
+    - Host
+    - Accept-Encoding
+    - x-host
+    QueryStringCacheKeys:
+    - c
+    - navId
+  MinTTL: 300
+  DefaultTTL: 300
+  MaxTTL: 300
+- PathPattern: /??/*
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: whitelist
+      WhitelistedNames:
+      - theme
+      - color
+      - BNC-Location
+    Headers:
+    - x-gateway-gray
+    - k8scluster
+    - bnc-theme
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys:
+    - ref
+    - roomId
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /??-??/*
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: whitelist
+      WhitelistedNames:
+      - theme
+      - color
+      - BNC-Location
+    Headers:
+    - x-gateway-gray
+    - k8scluster
+    - bnc-theme
+    - Host
+    - Accept-Encoding
+    QueryStringCacheKeys:
+    - ref
+    - roomId
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /pwa*
+  TargetOriginId: S3-bin.bnbstatic.com
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: true
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers: []
+    QueryStringCacheKeys: []
+  MinTTL: 60
+  DefaultTTL: 3600
+  MaxTTL: 86400
+- PathPattern: /fapi/v1/exchangeInfo
+  TargetOriginId: ELB-bin-prod-nginx-www-fapi-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - versioncode
+    - versionname
+    QueryStringCacheKeys:
+    - showall
+  MinTTL: 0
+  DefaultTTL: 0
+  MaxTTL: 0
+- PathPattern: /fapi/v1/openInterest
+  TargetOriginId: ELB-bin-prod-nginx-www-fapi-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - versioncode
+    - versionname
+    QueryStringCacheKeys:
+    - symbol
+  MinTTL: 0
+  DefaultTTL: 0
+  MaxTTL: 0
+- PathPattern: /fapi/v1/serviceStatus
+  TargetOriginId: ELB-bin-prod-nginx-www-fapi-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - Host
+    QueryStringCacheKeys: []
+  MinTTL: 300
+  DefaultTTL: 300
+  MaxTTL: 300
+- PathPattern: /fapi/*
+  TargetOriginId: ELB-bin-prod-nginx-www-fapi-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: all
+    Headers:
+    - '*'
+    QueryStringCacheKeys: []
+  MinTTL: 0
+  DefaultTTL: 86400
+  MaxTTL: 31536000
+- PathPattern: /dapi/v1/exchangeInfo
+  TargetOriginId: ELB-bin-prod-be-common-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - versioncode
+    - versionname
+    QueryStringCacheKeys:
+    - showall
+  MinTTL: 0
+  DefaultTTL: 0
+  MaxTTL: 0
+- PathPattern: /dapi/v1/openInterest
+  TargetOriginId: ELB-bin-prod-be-common-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - versioncode
+    - versionname
+    QueryStringCacheKeys:
+    - symbol
+  MinTTL: 0
+  DefaultTTL: 0
+  MaxTTL: 0
+- PathPattern: /dapi/v1/serviceStatus
+  TargetOriginId: ELB-bin-prod-be-common-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - Host
+    QueryStringCacheKeys: []
+  MinTTL: 300
+  DefaultTTL: 300
+  MaxTTL: 300
+- PathPattern: /static/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: whitelist
+      WhitelistedNames:
+      - canary
+    Headers:
+    - Host
+    QueryStringCacheKeys: []
+  MinTTL: 0
+  DefaultTTL: 3600
+  MaxTTL: 3600
+- PathPattern: /*api/*v1/public/asset-service/partner/supported-assets
+  TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - clientId
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/asset-service/product/currency
+  TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - fromC2C
+  MinTTL: 3
+  DefaultTTL: 3
+  MaxTTL: 3
+- PathPattern: /*api/*v1/public/asset-service/product/get-c2c-top-products
+  TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - currency
+  MinTTL: 3
+  DefaultTTL: 3
+  MaxTTL: 3
+- PathPattern: /*api/*v?/public/asset-service/product/get-currency-product
+  TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - includeEtf
+    - symbol
+  MinTTL: 3
+  DefaultTTL: 3
+  MaxTTL: 3
+- PathPattern: /*api/*v1/public/asset-service/product/get-exchange-info
+  TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    - BNC-Location
+    QueryStringCacheKeys:
+    - symbol
+  MinTTL: 30
+  DefaultTTL: 30
+  MaxTTL: 30
+- PathPattern: /*api/*v?/public/asset-service/product/get-products
+  TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    - BNC-Location
+    QueryStringCacheKeys:
+    - includeEtf
+    - symbol
+  MinTTL: 3
+  DefaultTTL: 3
+  MaxTTL: 3
+- PathPattern: /*api/*v1/public/asset-service/product/get-sort-products
+  TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys: []
+  MinTTL: 3
+  DefaultTTL: 3
+  MaxTTL: 3
+- PathPattern: /*api/*v1/public/asset-service/product/get-top-products
+  TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys: []
+  MinTTL: 3
+  DefaultTTL: 3
+  MaxTTL: 3
+- PathPattern: /*api/*v1/public/asset-service/product/get-trade-fee
+  TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: whitelist
+      WhitelistedNames:
+      - cr20
+      - p20t
+    Headers:
+    - '*'
+    QueryStringCacheKeys:
+    - symbol
+  MinTTL: 0
+  DefaultTTL: 0
+  MaxTTL: 0
+- PathPattern: /*api/*v1/public/asset-service/product/price-convert
+  TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - amount
+    - date
+    - from
+    - to
+  MinTTL: 3
+  DefaultTTL: 3
+  MaxTTL: 3
+- PathPattern: /*api/*v1/public/asset/asset/get
+  TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - asset
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v?/public/asset/asset/get-all-asset
+  TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - region
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/asset/biz-tags
+  TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - bizKey
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/asset/symbols/get
+  TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    - BNC-Location
+    QueryStringCacheKeys:
+    - baseAsset
+    - quoteAsset
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v2/public/asset-service/product/get-product-by-symbol
+  TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - symbol
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v2/public/asset-service/product/get-product-by-symbols
+  TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - symbols
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/mbxgateway/info/get-wssurl
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - Host
+    QueryStringCacheKeys: []
+  MinTTL: 0
+  DefaultTTL: 0
+  MaxTTL: 0
+- PathPattern: /*api/*v1/public/margin/symbols
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - Origin
+    - x-gateway-gray
+    - CloudFront-Is-Mobile-Viewer
+    - Host
+    - lang
+    - BNC-Location
+    QueryStringCacheKeys: []
+  MinTTL: 60
+  DefaultTTL: 60
+  MaxTTL: 60
+- PathPattern: /*api/*v1/public/common/config/url-and-project
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - Origin
+    - x-gateway-gray
+    - CloudFront-Is-Mobile-Viewer
+    - Host
+    - lang
+    QueryStringCacheKeys: []
+  MinTTL: 60
+  DefaultTTL: 60
+  MaxTTL: 60
+- PathPattern: /*api/*v1/public/margin/asset/all
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - Origin
+    - x-gateway-gray
+    - CloudFront-Is-Mobile-Viewer
+    - Host
+    - lang
+    - BNC-Location
+    QueryStringCacheKeys: []
+  MinTTL: 60
+  DefaultTTL: 60
+  MaxTTL: 60
+- PathPattern: /*api/*v1/friendly/staking/list*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: all
+    Headers:
+    - Origin
+    - x-gateway-gray
+    - CloudFront-Is-Mobile-Viewer
+    - Host
+    - lang
+    QueryStringCacheKeys: []
+  MinTTL: 30
+  DefaultTTL: 30
+  MaxTTL: 30
+- PathPattern: /*api/*v1/public/common/config/app/all
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    QueryStringCacheKeys: []
+  MinTTL: 30
+  DefaultTTL: 30
+  MaxTTL: 30
+- PathPattern: /*api/*v1/public/common/config/appchat-open-lang
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - Host
+    QueryStringCacheKeys: []
+  MinTTL: 30
+  DefaultTTL: 30
+  MaxTTL: 30
+- PathPattern: /*api/*v1/public/common/config/android/dynamic-config
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - Host
+    QueryStringCacheKeys: []
+  MinTTL: 30
+  DefaultTTL: 30
+  MaxTTL: 30
+- PathPattern: /*api/*v1/public/common/config/get-ref-switch
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - Host
+    QueryStringCacheKeys: []
+  MinTTL: 30
+  DefaultTTL: 30
+  MaxTTL: 30
+- PathPattern: /*api/*v1/public/common/config/bnb
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - Host
+    QueryStringCacheKeys: []
+  MinTTL: 30
+  DefaultTTL: 30
+  MaxTTL: 30
+- PathPattern: /*api/*v1/public/common/config/get-c2c-wssurl
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - Host
+    QueryStringCacheKeys: []
+  MinTTL: 30
+  DefaultTTL: 30
+  MaxTTL: 30
+- PathPattern: /*api/*v1/public/common/config/register-open-status
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - Host
+    QueryStringCacheKeys: []
+  MinTTL: 30
+  DefaultTTL: 30
+  MaxTTL: 30
+- PathPattern: /*api/*v1/public/common/config/appchat-open-status
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - Host
+    QueryStringCacheKeys: []
+  MinTTL: 30
+  DefaultTTL: 30
+  MaxTTL: 30
+- PathPattern: /*api/*v1/public/account/user/agent-rate/get
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: all
+    Headers:
+    - x-gateway-gray
+    - User-Agent
+    - Host
+    QueryStringCacheKeys: []
+  MinTTL: 30
+  DefaultTTL: 30
+  MaxTTL: 30
+- PathPattern: /*api/*v1/public/asset-service/product/get-currency-by-lang
+  TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys: []
+  MinTTL: 30
+  DefaultTTL: 30
+  MaxTTL: 30
+- PathPattern: /*api/*v1/public/fiat-channel-gateway/get-selector
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - Origin
+    - Access-Control-Request-Method
+    - x-gateway-gray
+    - Access-Control-Allow-Origin
+    - Access-Control-Request-Headers
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - lang
+  MinTTL: 60
+  DefaultTTL: 60
+  MaxTTL: 60
+- PathPattern: /*api/*v1/public/future/leverage/token/list
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - Host
+    QueryStringCacheKeys: []
+  MinTTL: 2
+  DefaultTTL: 2
+  MaxTTL: 2
+- PathPattern: /*api/*v1/public/margin/marketStats/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - asset
+    - limit
+    - period
+    - symbol
+  MinTTL: 300
+  DefaultTTL: 300
+  MaxTTL: 300
+- PathPattern: /*api/*v1/public/hot/search/assets
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - Host
+    QueryStringCacheKeys: []
+  MinTTL: 300
+  DefaultTTL: 300
+  MaxTTL: 300
+- PathPattern: /*api/*v1/public/margin/pair/all
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - Host
+    - lang
+    - BNC-Location
+    QueryStringCacheKeys: []
+  MinTTL: 30
+  DefaultTTL: 30
+  MaxTTL: 30
+- PathPattern: /*api/*v1/public/isolated-margin/pair/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - Host
+    - lang
+    - BNC-Location
+    QueryStringCacheKeys: []
+  MinTTL: 60
+  DefaultTTL: 60
+  MaxTTL: 60
+- PathPattern: /*api/*v1/public/asset-service/wallet/get-support-asset
+  TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - Host
+    - BNC-Location
+    QueryStringCacheKeys: []
+  MinTTL: 30
+  DefaultTTL: 30
+  MaxTTL: 30
+- PathPattern: /*api/*v1/public/indicator/abnormal-trading-notice/list
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - Host
+    QueryStringCacheKeys: []
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/indicator/abnormal-trading-notice/listByNoticeType
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - Host
+    QueryStringCacheKeys:
+    - isBlockTrade
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/indicator/abnormal-trading-notice/pageList
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - Host
+    QueryStringCacheKeys:
+    - baseAsset
+    - endTime
+    - noticeType
+    - pageIndex
+    - pageSize
+    - quotaAsset
+    - startTime
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/indicator/capital-flow/info
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - Host
+    QueryStringCacheKeys:
+    - period
+    - symbol
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/indicator/capital-flow/netCapitalIn
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - Host
+    QueryStringCacheKeys:
+    - intervalEnum
+    - size
+    - symbol
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/indicator/capital-flow/volumeTypeNetCapitalIn
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - Host
+    QueryStringCacheKeys:
+    - groupCount
+    - groupSize
+    - period
+    - symbol
+    - volumeType
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/delivery/common/configs
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - Host
+    QueryStringCacheKeys: []
+  MinTTL: 60
+  DefaultTTL: 60
+  MaxTTL: 60
+- PathPattern: /*api/*v1/public/future/common/configs
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - Host
+    QueryStringCacheKeys: []
+  MinTTL: 60
+  DefaultTTL: 60
+  MaxTTL: 60
+- PathPattern: /*api/*v1/public/defi-pos/flexible/product/interest/summary/list
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - date
+    - pageIndex
+    - pageSize
+    - productId
+  MinTTL: 30
+  DefaultTTL: 30
+  MaxTTL: 30
+- PathPattern: /*api/*v1/public/pos/flexible/product/interest/summary/list
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - date
+    - pageIndex
+    - pageSize
+    - productId
+  MinTTL: 30
+  DefaultTTL: 30
+  MaxTTL: 30
+- PathPattern: /*api/*v1/public/marketing/config/international/web/query
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - country
+    - gary
+    - lang
+  MinTTL: 30
+  DefaultTTL: 30
+  MaxTTL: 30
+- PathPattern: /*api/*v1/public/lending/union/assetList
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - type
+  MinTTL: 30
+  DefaultTTL: 30
+  MaxTTL: 30
+- PathPattern: /*api/*v1/public/cms/article/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    - x-host
+    - isGray
+    QueryStringCacheKeys: []
+  MinTTL: 120
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /*api/*v1/public/cms/carouselFlash/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    - x-host
+    - isGray
+    QueryStringCacheKeys: []
+  MinTTL: 120
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /*api/*v1/public/cms/catalog/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    - x-host
+    - isGray
+    QueryStringCacheKeys: []
+  MinTTL: 120
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /*api/*v1/public/cms/content*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    - x-host
+    - isGray
+    QueryStringCacheKeys: []
+  MinTTL: 120
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /*api/*v1/public/cms/flashContent/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    - x-host
+    - isGray
+    QueryStringCacheKeys: []
+  MinTTL: 120
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /*api/*v1/public/cms/importantContent/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    - x-host
+    - isGray
+    QueryStringCacheKeys: []
+  MinTTL: 120
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /*api/*v1/public/cms/news/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    - x-host
+    - isGray
+    QueryStringCacheKeys: []
+  MinTTL: 120
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /*api/*v1/public/cms/released-events
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    - x-host
+    - isGray
+    QueryStringCacheKeys: []
+  MinTTL: 120
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /*api/*v1/public/cms/playlist/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    - x-host
+    - isGray
+    QueryStringCacheKeys: []
+  MinTTL: 120
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /bapi/composite/v1/public/bigdata/finance/kline/openPrice*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    - x-host
+    - isGray
+    QueryStringCacheKeys:
+    - business
+    - datetime
+    - symbol
+    - timezone
+  MinTTL: 300
+  DefaultTTL: 300
+  MaxTTL: 300
+- PathPattern: /bapi/composite/v1/public/cms/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: all
+    Headers:
+    - '*'
+    QueryStringCacheKeys: []
+  MinTTL: 0
+  DefaultTTL: 86400
+  MaxTTL: 31536000
+- PathPattern: /*api/*v1/public/article/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    - x-host
+    - isGray
+    QueryStringCacheKeys: []
+  MinTTL: 120
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /*api/*v2/public/cms/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    - x-host
+    - isGray
+    QueryStringCacheKeys: []
+  MinTTL: 120
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /*api/*v1/public/marketing/blog/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    - x-host
+    - isGray
+    QueryStringCacheKeys: []
+  MinTTL: 120
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /*api/*v1/public/content/blog/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    - x-host
+    - isGray
+    QueryStringCacheKeys: []
+  MinTTL: 120
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /*api/*v?/public/common/config/stub/score
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - '*'
+    QueryStringCacheKeys:
+    - timestamp
+  MinTTL: 0
+  DefaultTTL: 0
+  MaxTTL: 0
+- PathPattern: /*api/*v1/public/common/config/web/dynamic-config
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys: []
+  MinTTL: 30
+  DefaultTTL: 30
+  MaxTTL: 30
+- PathPattern: /*api/*v1/public/country/support/check/code
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - countryCode
+  MinTTL: 30
+  DefaultTTL: 30
+  MaxTTL: 30
+- PathPattern: /*api/*v1/public/lending/dot/dotProject/getProjectByCode
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - '*'
+    QueryStringCacheKeys:
+    - projectCode
+  MinTTL: 0
+  DefaultTTL: 0
+  MaxTTL: 0
+- PathPattern: /*api/*v1/public/lending/launchpool/activity/detail
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - '*'
+    QueryStringCacheKeys:
+    - asset
+  MinTTL: 0
+  DefaultTTL: 0
+  MaxTTL: 0
+- PathPattern: /*api/*v1/public/margin/vip/spec/history-interest-rate
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - '*'
+    QueryStringCacheKeys:
+    - asset
+    - current
+    - endTime
+    - size
+    - startTime
+    - vipLevel
+  MinTTL: 0
+  DefaultTTL: 0
+  MaxTTL: 0
+- PathPattern: /*api/*v1/public/market/client/upload/presigned
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - '*'
+    QueryStringCacheKeys:
+    - fileExt
+  MinTTL: 0
+  DefaultTTL: 0
+  MaxTTL: 0
+- PathPattern: /*api/*v1/public/market/client/versionInfo/new
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - client
+    - version
+  MinTTL: 120
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /*api/*v1/public/market/derivatives-entrance/config
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - currency
+  MinTTL: 600
+  DefaultTTL: 600
+  MaxTTL: 600
+- PathPattern: /*api/*v1/public/marketing/app-configs/navbar/current
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - exchangeRate
+    - lang
+  MinTTL: 30
+  DefaultTTL: 30
+  MaxTTL: 30
+- PathPattern: /*api/*v1/public/marketing/app/newer/guide
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - isNight
+  MinTTL: 30
+  DefaultTTL: 30
+  MaxTTL: 30
+- PathPattern: /*api/*v1/public/marketing/app/recommend/features
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - isNight
+    - Host
+    - lang
+    - versionCode
+    QueryStringCacheKeys:
+    - currency
+    - isNight
+    - recommendType
+  MinTTL: 300
+  DefaultTTL: 300
+  MaxTTL: 300
+- PathPattern: /bapi/composite/v1/public/marketing/app/carouselBanner
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - isNight
+    - Host
+    - lang
+    QueryStringCacheKeys: []
+  MinTTL: 300
+  DefaultTTL: 300
+  MaxTTL: 300
+- PathPattern: /*api/*v1/public/marketing/menu/list/all
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - referer
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - currency
+    - lang
+    - referer
+  MinTTL: 60
+  DefaultTTL: 60
+  MaxTTL: 60
+- PathPattern: /*api/*v1/public/marketing/recommend/hotAsset/list
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    - BNC-Location
+    QueryStringCacheKeys:
+    - currency
+    - type
+  MinTTL: 300
+  DefaultTTL: 300
+  MaxTTL: 300
+- PathPattern: /*api/*v1/public/marketing/user/task/list
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - currency
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/swap-api/vip/fee/listAll
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - poolId
+  MinTTL: 60
+  DefaultTTL: 60
+  MaxTTL: 60
+- PathPattern: /*api/*v3/public/haodesk/common/config/js
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - authorization
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - hostParam
+    - pathName
+  MinTTL: 60
+  DefaultTTL: 60
+  MaxTTL: 60
+- PathPattern: /*api/*v3/public/haodesk/std/common/config/js
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - hostParam
+    - pathName
+  MinTTL: 60
+  DefaultTTL: 60
+  MaxTTL: 60
+- PathPattern: /*api/*v1/public/account/all/countries
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys: []
+  MinTTL: 30
+  DefaultTTL: 30
+  MaxTTL: 30
+- PathPattern: /*api/*v1/public/c2c/agreement/detail
+  TargetOriginId: ELB-bin-prod-be-business-unit-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - agrtId
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/chat/chat-business/open-status
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - lang
+    - language
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/chat/chat-tag/list
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - languageId
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/common/config/getLanguageMapByKey
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - key
+  MinTTL: 60
+  DefaultTTL: 60
+  MaxTTL: 60
+- PathPattern: /*api/*v1/public/margin/price-index/history
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - '*'
+    QueryStringCacheKeys:
+    - endTime
+    - limit
+    - pair
+    - startTime
+  MinTTL: 0
+  DefaultTTL: 0
+  MaxTTL: 0
+- PathPattern: /*api/*v1/public/market/client/versionInfo
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - client
+    - version
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/market/notice/get
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - order
+    - page
+    - rows
+    - sort
+  MinTTL: 300
+  DefaultTTL: 300
+  MaxTTL: 300
+- PathPattern: /*api/*v1/public/marketing/app/findAllProAppDynamicMenuConfig
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - CloudFront-Viewer-Country
+    - isNight
+    - Host
+    - lang
+    - versionCode
+    QueryStringCacheKeys:
+    - depositNewStyle
+    - headerLang
+    - isNight
+    - order
+    - page
+    - recommendCurrency
+    - recommendType
+    - rows
+    - simpleStyle
+    - sort
+    - type
+    - userCurrency
+    - versionCode
+  MinTTL: 300
+  DefaultTTL: 300
+  MaxTTL: 300
+- PathPattern: /*api/*v1/public/marketing/app/newerBanners
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - isNight
+    - Host
+    - lang
+    - versionCode
+    QueryStringCacheKeys:
+    - currency
+    - domain
+    - headerLang
+    - isNight
+    - lang
+    - pattern
+    - requestType
+    - type
+    - versionCode
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/marketing/app/newerFeatures
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - currency
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/marketing/article/titles
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - articleId
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/marketing/baiduSEO/tabInfo
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - tabId
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/marketing/lite/get-open
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - currency
+  MinTTL: 300
+  DefaultTTL: 300
+  MaxTTL: 300
+- PathPattern: /*api/*v1/public/marketing/menu/list
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - currency
+    - lang
+  MinTTL: 60
+  DefaultTTL: 60
+  MaxTTL: 60
+- PathPattern: /*api/*v1/public/marketing/symbol/list
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    - BNC-Location
+    QueryStringCacheKeys:
+    - limit
+    - sortBy
+    - start
+  MinTTL: 300
+  DefaultTTL: 300
+  MaxTTL: 300
+- PathPattern: /*api/*v1/public/marketing/tardingPair/detail
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    - BNC-Location
+    QueryStringCacheKeys:
+    - isTrade
+    - language
+    - symbol
+  MinTTL: 300
+  DefaultTTL: 300
+  MaxTTL: 300
+- PathPattern: /*api/*v1/public/marketing/vote2/project
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys: []
+  MinTTL: 3
+  DefaultTTL: 3
+  MaxTTL: 3
+- PathPattern: /*api/*v1/public/notification/trade-notice/get-abnormal-trade-notice-list
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - offset
+    - page
+  MinTTL: 3
+  DefaultTTL: 3
+  MaxTTL: 3
+- PathPattern: /*api/*v1/public/notification/trade-notice/get-volumn-market-activity-list
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys: []
+  MinTTL: 30
+  DefaultTTL: 30
+  MaxTTL: 30
+- PathPattern: /*api/*v2/public/ocbs/get-supported-business-products
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys: []
+  MinTTL: 60
+  DefaultTTL: 60
+  MaxTTL: 60
+- PathPattern: /*api/*v1/public/ocbs/app/get-sell-selector
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - lang
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/ocbs/coin-to-coin/get-selector
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - includeFiat
+    - preTest
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v?/public/swap-api/pool/pairList
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - '*'
+    QueryStringCacheKeys:
+    - type
+  MinTTL: 0
+  DefaultTTL: 0
+  MaxTTL: 0
+- PathPattern: /*api/*v2/public/c2c/trade-method/list-by-page
+  TargetOriginId: ELB-bin-prod-be-business-unit-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - order
+    - page
+    - rows
+    - sort
+  MinTTL: 30
+  DefaultTTL: 30
+  MaxTTL: 30
+- PathPattern: /*api/*v2/public/fiatpayment/currency/list-currency
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - businessType
+    - clientType
+    - currencyType
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/fiatpayment/menu*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - x-cdn-region
+    - Host
+    - env-preview
+    - lang
+    QueryStringCacheKeys:
+    - currency
+  MinTTL: 60
+  DefaultTTL: 60
+  MaxTTL: 60
+- PathPattern: /*api/*v?/public/market/notice/get
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - order
+    - page
+    - rows
+    - sort
+    - source
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v2/public/ocbs/other/get-selector
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - lang
+    - module
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/capital/getNetworkCoinAll
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    - BNC-Location
+    QueryStringCacheKeys:
+    - ignoreAsset
+    - includeEtf
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/capital/deposit-retrieval/sys
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys: []
+  MinTTL: 3600
+  DefaultTTL: 3600
+  MaxTTL: 8400
+- PathPattern: /*api/*v1/public/certificate/countries
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - countryType
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/fiat-channel-gateway/get-support-list
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - cryptoAsset
+    - fiatAsset
+    - filterOwnerChannel
+    - isTest
+    - tradeType
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/market/all
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - order
+    - page
+    - rows
+    - sort
+  MinTTL: 300
+  DefaultTTL: 300
+  MaxTTL: 300
+- PathPattern: /*api/*v1/public/marketing/eventWebPage
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - eventId
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/message/get-register-email-black-list
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys: []
+  MinTTL: 30
+  DefaultTTL: 30
+  MaxTTL: 30
+- PathPattern: /*api/*v1/public/official-channel/verify
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - content
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/paxos/callback/
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - '*'
+    QueryStringCacheKeys:
+    - code
+    - state
+  MinTTL: 0
+  DefaultTTL: 0
+  MaxTTL: 0
+- PathPattern: /*api/*v1/public/simplex/get-status
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - '*'
+    QueryStringCacheKeys:
+    - channelName
+  MinTTL: 0
+  DefaultTTL: 0
+  MaxTTL: 0
+- PathPattern: /*api/*v1/public/zendesk/instant-search
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - '*'
+    QueryStringCacheKeys:
+    - locale
+    - query
+  MinTTL: 0
+  DefaultTTL: 0
+  MaxTTL: 0
+- PathPattern: /*api/*v1/public/marketing/baiduSEO/pages/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - pageUrl
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/ocbs/trade/credit-host/get-card
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - cardId
+    - orderId
+    - sign
+    - token
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/ocbs/trade/credit-host/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - '*'
+    QueryStringCacheKeys:
+    - cardId
+    - orderId
+    - sign
+    - token
+  MinTTL: 0
+  DefaultTTL: 0
+  MaxTTL: 0
+- PathPattern: /*api/*v1/public/common/config/client/dynamic-domain
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - k8scluster
+    - Host
+    QueryStringCacheKeys:
+    - tag
+  MinTTL: 86400
+  DefaultTTL: 86400
+  MaxTTL: 86400
+- PathPattern: /*api/*v2/public/c2c/adv/selected-adv/*
+  TargetOriginId: ELB-bin-prod-be-business-unit-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - advNo
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v2/public/ocbs/fiat-channel-gateway/get-fiat-channels/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - isPreTest
+    - lang
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/c2c/adv-order/*
+  TargetOriginId: ELB-bin-prod-be-business-unit-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - advNo
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/chatbot/question/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - keyword
+    - language
+    - num
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/coin-to-coin/app/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - amount
+    - baseAsset
+    - fiatConvert
+    - fromAsset
+    - toAsset
+    - userId
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/common/config/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - versioncode
+    - lang
+    - versionname
+    QueryStringCacheKeys:
+    - name
+    - region
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/common/security/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - '*'
+    QueryStringCacheKeys: []
+  MinTTL: 0
+  DefaultTTL: 0
+  MaxTTL: 0
+- PathPattern: /*api/*v1/public/delivery/data/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - contractType
+    - endTime
+    - limit
+    - pair
+    - period
+    - startTime
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/launchpool/project/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - pageIndex
+    - pageSize
+    - projectId
+  MinTTL: 15
+  DefaultTTL: 15
+  MaxTTL: 15
+- PathPattern: /*api/*v1/public/lpd/lotteryProject/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - lang
+    - projectId
+  MinTTL: 15
+  DefaultTTL: 15
+  MaxTTL: 15
+- PathPattern: /*api/*v1/public/lpd/product/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - agreementId
+    - language
+    - productId
+  MinTTL: 15
+  DefaultTTL: 15
+  MaxTTL: 15
+- PathPattern: /*api/*v1/public/lpd/project/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - lang
+    - page
+    - pageSize
+    - productType
+    - projectId
+    - status
+    - testFlag
+  MinTTL: 15
+  DefaultTTL: 15
+  MaxTTL: 15
+- PathPattern: /*api/*v1/public/future/section/info
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys: []
+  MinTTL: 10
+  DefaultTTL: 10
+  MaxTTL: 10
+- PathPattern: /*api/*v1/public/future/symbol/extInfo
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys: []
+  MinTTL: 10
+  DefaultTTL: 10
+  MaxTTL: 10
+- PathPattern: /*api/*v1/public/future/announcement/announcement-history-v2
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - business
+    - device
+    - language
+    - status
+  MinTTL: 300
+  DefaultTTL: 300
+  MaxTTL: 300
+- PathPattern: /*api/*v1/public/stock-token/market/klines
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - endTime
+    - interval
+    - limit
+    - startTime
+    - symbol
+  MinTTL: 2
+  DefaultTTL: 2
+  MaxTTL: 2
+- PathPattern: /*api/*v1/public/market/luck/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - id
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/market/recommend/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - domain
+    - isNew
+    - lang
+    - order
+    - page
+    - region
+    - rows
+    - sort
+  MinTTL: 300
+  DefaultTTL: 300
+  MaxTTL: 300
+- PathPattern: /*api/*v1/public/market/ws-cache/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - '*'
+    QueryStringCacheKeys:
+    - channel
+  MinTTL: 0
+  DefaultTTL: 0
+  MaxTTL: 0
+- PathPattern: /*api/*v1/public/marketing/app/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - CloudFront-Viewer-Country
+    - isNight
+    - Host
+    - BNC-App-Mode
+    - lang
+    - versionCode
+    QueryStringCacheKeys:
+    - cryptoName
+    - currency
+    - type
+    - userCurrency
+  MinTTL: 300
+  DefaultTTL: 300
+  MaxTTL: 300
+- PathPattern: /*api/*v1/public/marketing/deposit/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - '*'
+    QueryStringCacheKeys:
+    - productId
+  MinTTL: 0
+  DefaultTTL: 0
+  MaxTTL: 0
+- PathPattern: /*api/*v2/public/capital/config/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    - BNC-Location
+    QueryStringCacheKeys:
+    - coin
+    - ignoreAsset
+    - includeEtf
+    - lang
+    - sameAddress
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v2/public/ocbs/fiat-channel-gateway/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - channel
+    - channelCode
+    - cryptoAsset
+    - fiatCode
+    - lang
+    - tradeType
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/fiat-channel-gateway/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - channelCode
+    - cryptoAsset
+    - fiatCode
+    - fiatCurrency
+    - lang
+    - tradeType
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /*api/*v1/public/margin/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - '*'
+    QueryStringCacheKeys:
+    - asset
+    - symbol
+  MinTTL: 0
+  DefaultTTL: 0
+  MaxTTL: 0
+- PathPattern: /*api/*v1/public/fiatpayment/hz/3ds-callback/*/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - '*'
+    QueryStringCacheKeys:
+    - encodedBaseUrl
+    - paymentId
+    - sessionId
+  MinTTL: 0
+  DefaultTTL: 0
+  MaxTTL: 0
+- PathPattern: /*api/*v1/public/c2c/agreement/*/*
+  TargetOriginId: ELB-bin-prod-be-business-unit-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - lang
+    - theme
+    - userType
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /bapi/career/jobs-lever/v0/postings/binance
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - k8scluster
+    - Host
+    QueryStringCacheKeys:
+    - group
+    - mode
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /*api/*v?/public/asset-service/wallet/get-all-config
+  TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys: []
+  MinTTL: 3
+  DefaultTTL: 3
+  MaxTTL: 3
+- PathPattern: /bapi/live/v*/public/live/room-list
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - k8scluster
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - hits
+    - languageType
+    - limit
+    - liveId
+    - liveStatus
+    - start
+    - videoType
+  MinTTL: 10
+  DefaultTTL: 10
+  MaxTTL: 10
+- PathPattern: /bapi/live/v1/public/live/room-detail
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - k8scluster
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - id
+  MinTTL: 5
+  DefaultTTL: 5
+  MaxTTL: 5
+- PathPattern: /bapi/live/v1/public/live/events
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - k8scluster
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - liveId
+  MinTTL: 10
+  DefaultTTL: 10
+  MaxTTL: 10
+- PathPattern: /bapi/live/v1/public/live/category/*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - k8scluster
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - categoryId
+    - hits
+    - limit
+    - liveId
+    - liveStatus
+  MinTTL: 10
+  DefaultTTL: 10
+  MaxTTL: 10
+- PathPattern: /bapi/live/v1/public/live/chat-records
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - k8scluster
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - limit
+    - liveId
+    - msgSeq
+  MinTTL: 1
+  DefaultTTL: 1
+  MaxTTL: 1
+- PathPattern: /bapi/eoptions/v1/public/eoptions/*
+  TargetOriginId: ELB-bin-prod-be-common-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    - OPTIONS
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clienttype
+    - x-gateway-gray
+    - Host
+    - lang
+    QueryStringCacheKeys:
+    - baseAsset
+    - contract
+    - endDate
+    - endTime
+    - expiration
+    - interval
+    - limit
+    - merge
+    - pageIndex
+    - pageSize
+    - startDate
+    - startTime
+    - symbol
+    - underlying
+    - underlyingAsset
+  MinTTL: 1
+  DefaultTTL: 1
+  MaxTTL: 1
+- PathPattern: /bapi/composite/v1/public/growth-activity/button/info
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: false
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - Host
+    QueryStringCacheKeys: []
+  MinTTL: 60
+  DefaultTTL: 60
+  MaxTTL: 60
+- PathPattern: /bapi/fe/micro/static/icon*
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - x-gateway-gray
+    - k8scluster
+    - Host
+    QueryStringCacheKeys:
+    - color
+    - iconName
+  MinTTL: 86400
+  DefaultTTL: 604800
+  MaxTTL: 2592000
+- PathPattern: /bapi/mp/v3/apps/*/details
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - bnc-uuid
+    - clientType
+    - x-gateway-gray
+    - CloudFront-Viewer-Country
+    - k8scluster
+    - x-token
+    - Host
+    - versionName
+    - lang
+    - versionCode
+    QueryStringCacheKeys:
+    - channel
+    - version
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /bapi/mp/v4/tenant/apps/public/*/details
+  TargetOriginId: ELB-bin-prod-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - GET
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - x-mp-gray
+    - clientType
+    - CloudFront-Viewer-Country
+    - k8scluster
+    - Host
+    - versionName
+    - lang
+    - versionCode
+    - host-app-id
+    QueryStringCacheKeys:
+    - appId
+    - version
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /bapi/mp/v?/apps/private/*
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - '*'
+    QueryStringCacheKeys: []
+  MinTTL: 0
+  DefaultTTL: 0
+  MaxTTL: 0
+- PathPattern: /bapi/mp/v?/apps/*
+  TargetOriginId: ELB-bin-prod-fe-basic-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - clientType
+    - x-gateway-gray
+    - CloudFront-Viewer-Country
+    - k8scluster
+    - x-token
+    - Host
+    - versionName
+    - lang
+    - versionCode
+    QueryStringCacheKeys:
+    - channel
+    - count
+    - currentVersion
+    - cursor
+    - entranceId
+    - requestVersion
+    - revision
+    - text
+    - version
+  MinTTL: 60
+  DefaultTTL: 120
+  MaxTTL: 120
+- PathPattern: /bapi/accounts/*
+  TargetOriginId: ELB-bin-prod-be-account-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: all
+    Headers:
+    - '*'
+    QueryStringCacheKeys: []
+  MinTTL: 0
+  DefaultTTL: 86400
+  MaxTTL: 31536000
+- PathPattern: /bapi/futures/*
+  TargetOriginId: ELB-bin-prod-be-futures-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: all
+    Headers:
+    - '*'
+    QueryStringCacheKeys: []
+  MinTTL: 0
+  DefaultTTL: 86400
+  MaxTTL: 31536000
+- PathPattern: /bapi/asset/*
+  TargetOriginId: ELB-bin-prod-be-asset-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: all
+    Headers:
+    - '*'
+    QueryStringCacheKeys: []
+  MinTTL: 0
+  DefaultTTL: 86400
+  MaxTTL: 31536000
+- PathPattern: /bapi/capital/*
+  TargetOriginId: ELB-bin-prod-be-capital-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: all
+    Headers:
+    - '*'
+    QueryStringCacheKeys: []
+  MinTTL: 0
+  DefaultTTL: 86400
+  MaxTTL: 31536000
+- PathPattern: /bapi/mbx/*
+  TargetOriginId: ELB-bin-prod-be-capital-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: all
+    Headers:
+    - '*'
+    QueryStringCacheKeys: []
+  MinTTL: 0
+  DefaultTTL: 86400
+  MaxTTL: 31536000
+- PathPattern: /bapi/fiat/*
+  TargetOriginId: ELB-bin-prod-be-slow-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: all
+    Headers:
+    - '*'
+    QueryStringCacheKeys: []
+  MinTTL: 0
+  DefaultTTL: 86400
+  MaxTTL: 31536000
+- PathPattern: /bapi/download/*
+  TargetOriginId: ELB-bin-prod-be-slow-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: all
+    Headers:
+    - '*'
+    QueryStringCacheKeys: []
+  MinTTL: 0
+  DefaultTTL: 86400
+  MaxTTL: 31536000
+- PathPattern: /bapi/kyc/*
+  TargetOriginId: ELB-bin-prod-be-slow-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: all
+    Headers:
+    - '*'
+    QueryStringCacheKeys: []
+  MinTTL: 0
+  DefaultTTL: 86400
+  MaxTTL: 31536000
+- PathPattern: /bapi/slow/*
+  TargetOriginId: ELB-bin-prod-be-slow-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: all
+    Headers:
+    - '*'
+    QueryStringCacheKeys: []
+  MinTTL: 0
+  DefaultTTL: 86400
+  MaxTTL: 31536000
+- PathPattern: /bapi/c2c/*
+  TargetOriginId: ELB-bin-prod-be-business-unit-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: all
+    Headers:
+    - '*'
+    QueryStringCacheKeys: []
+  MinTTL: 0
+  DefaultTTL: 86400
+  MaxTTL: 31536000
+- PathPattern: /bapi/nft/v1/public/nft/ranking/top-collections-v2/ALL/24H/volumeDesc/16
+  TargetOriginId: ELB-bin-prod-be-business-unit-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: none
+    Headers:
+    - accept-language
+    - Host
+    - language
+    - lang
+    QueryStringCacheKeys: []
+  MinTTL: 300
+  DefaultTTL: 300
+  MaxTTL: 300
+- PathPattern: /bapi/nft/*
+  TargetOriginId: ELB-bin-prod-be-business-unit-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: all
+    Headers:
+    - '*'
+    QueryStringCacheKeys: []
+  MinTTL: 0
+  DefaultTTL: 86400
+  MaxTTL: 31536000
+- PathPattern: /bapi/*
+  TargetOriginId: ELB-bin-prod-be-common-dispatcher-alb
+  TrustedSigners:
+    Enabled: false
+    Items: []
+  TrustedKeyGroups:
+    Enabled: false
+    Items: []
+  ViewerProtocolPolicy: redirect-to-https
+  AllowedMethods:
+    Items:
+    - HEAD
+    - DELETE
+    - POST
+    - GET
+    - OPTIONS
+    - PUT
+    - PATCH
+    CachedMethods:
+    - HEAD
+    - GET
+  SmoothStreaming: false
+  Compress: false
+  LambdaFunctionAssociations: []
+  FunctionAssociations: []
+  FieldLevelEncryptionId: ''
+  ForwardedValues:
+    QueryString: true
+    Cookies:
+      Forward: all
+    Headers:
+    - '*'
+    QueryStringCacheKeys: []
+  MinTTL: 0
+  DefaultTTL: 86400
+  MaxTTL: 31536000
+CustomErrorResponses:
+- ErrorCode: 404
+  ResponsePagePath: ''
+  ResponseCode: ''
+  ErrorCachingMinTTL: 0
+Comment: TF www.binance.com
+Logging:
+  Enabled: true
+  IncludeCookies: false
+  Bucket: bnbcflogs.s3.amazonaws.com
+  Prefix: cflogs/mainsite/
+PriceClass: PriceClass_All
+Enabled: true
+ViewerCertificate:
+  CloudFrontDefaultCertificate: false
+  ACMCertificateArn: arn:aws:acm:us-east-1:369096419186:certificate/72c0c276-76ed-48cd-9ac3-dbfebfcaf6ca
+  SSLSupportMethod: sni-only
+  MinimumProtocolVersion: TLSv1.2_2019
+  Certificate: arn:aws:acm:us-east-1:369096419186:certificate/72c0c276-76ed-48cd-9ac3-dbfebfcaf6ca
+  CertificateSource: acm
+Restrictions:
+  GeoRestriction:
+    RestrictionType: none
+    Items: []
+WebACLId: arn:aws:wafv2:us-east-1:369096419186:global/webacl/bin_prod_mainsite_cf_v2acl/3b615ee4-b419-45f9-86bd-8579a6822569
+HttpVersion: http2
+IsIPV6Enabled: false

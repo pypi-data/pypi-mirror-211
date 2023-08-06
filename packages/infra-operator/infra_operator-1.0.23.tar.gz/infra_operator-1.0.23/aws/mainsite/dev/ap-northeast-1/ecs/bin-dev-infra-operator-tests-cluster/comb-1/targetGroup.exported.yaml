@@ -1,0 +1,23 @@
+apiVersion: elbv2.aws.infra/v1alpha1
+kind: TargetGroup
+pipelineConfig:
+  no-apply: true
+  comment: 'no-apply: true prevents this file being apply by infra-operator. auto
+    added by infra-operator export. if need to apply, set to false'
+metadata:
+  Name: bin-dev-comb-1-tg
+  VpcId: vpc-06e7bab377f9cb4e9
+  Protocol: HTTP
+  TargetType: ip
+  HealthCheckPort: traffic-port
+  HealthCheckPath: /health
+  HealthCheckProtocol: HTTP
+  HealthCheckEnabled: true
+  Port: 80
+  HealthyThresholdCount: 5
+  UnhealthyThresholdCount: 2
+  HealthCheckTimeoutSeconds: 30
+  HealthCheckIntervalSeconds: 35
+spec:
+  Matcher:
+    HttpCode: '200'

@@ -1,0 +1,37 @@
+apiVersion: appmesh.aws.infra/v1alpha1
+kind: VirtualRouter
+pipelineConfig:
+  no-apply: true
+  comment: 'no-apply: true prevents this file being apply by infra-operator. auto
+    added by infra-operator export. if need to apply, set to false'
+metadata:
+  meshName: bin-dev-demo-appmesh
+  virtualRouterName: bin-dev-demo-appmesh-green-vr
+spec:
+  listeners:
+    - portMapping:
+        protocol: http
+        port: 80
+  routes:
+    - name: bin-dev-demo-appmesh-green-route
+      priority: 900
+      httpRoute:
+        match:
+          prefix: /
+        action:
+          weightedTargets:
+            - virtualNode: bin-dev-demo-appmesh-green-vn
+              weight: 100
+    - name: bin-dev-demo-appmesh-gray-route
+      priority: 800
+      httpRoute:
+        match:
+          prefix: /
+          headers:
+            - name: k8scluster
+              match:
+                exact: 'true'
+        action:
+          weightedTargets:
+            - virtualNode: bin-dev-demo-appmesh-gray-vn
+              weight: 100

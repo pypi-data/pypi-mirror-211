@@ -1,0 +1,20 @@
+apiVersion: elbv2.aws.infra/v1alpha1
+kind: TargetGroup
+metadata:
+  Name: ${prefix}-${env}-${name}-tg
+  VpcId: ${cluster-vpc-id}
+  Tags:
+    message: managed by https://git.toolsfdg.net/devops/devops-infra
+  # Attributes:
+  #   stickiness.enabled: true
+spec:
+  Port: 80
+  Protocol: HTTP # HTTP|HTTPS|TCP|TLS|UDP|TCP_UDP,
+  TargetType: ip # instance|ip|lambda
+  HealthCheckProtocol: HTTP # 'HTTP'|'HTTPS'|'TCP'|'TLS'|'UDP'|'TCP_UDP'
+  HealthCheckPort: traffic-port
+  HealthCheckPath: /health
+  HealthCheckIntervalSeconds: 35
+  HealthCheckTimeoutSeconds: 30
+  HealthyThresholdCount: 5
+  UnhealthyThresholdCount: 2

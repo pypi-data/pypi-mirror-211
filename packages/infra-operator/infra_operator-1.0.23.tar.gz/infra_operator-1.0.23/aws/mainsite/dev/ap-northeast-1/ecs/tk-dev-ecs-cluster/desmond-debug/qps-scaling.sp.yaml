@@ -1,0 +1,29 @@
+apiVersion: anyscale.aws.infra/v1alpha1
+kind: ScalingPolicy
+metadata:
+  PolicyName:
+    $basename:
+      ${filename}
+  ServiceNamespace: ecs
+  ScalableDimension: ecs:service:DesiredCount
+  ResourceId:
+    $arn_body:
+      $file(service.yaml)
+  PolicyType: TargetTrackingScaling
+spec:
+  TargetTrackingScalingPolicyConfiguration:
+    PredefinedMetricSpecification:
+      PredefinedMetricType: ALBRequestCountPerTarget
+      ResourceLabel:
+        $join:
+          $separator: '/'
+          $items:
+            - $strip_prefix:
+                $value:
+                  $arn_body:
+                    $file(alb.yaml)
+            - $arn_body:
+                $file(targetGroup.yaml)
+    TargetValue: 100
+    ScaleOutCooldown: 60
+    ScaleInCooldown: 300

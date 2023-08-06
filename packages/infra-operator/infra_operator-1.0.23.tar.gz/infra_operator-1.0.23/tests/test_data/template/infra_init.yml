@@ -1,0 +1,59 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Outputs:
+  Cluster:
+    Description: A reference to the ECS cluster
+    Export:
+      Name: !Sub 'bc-100:ECSCluster'
+    Value: !Ref 'ECSCluster'
+  ExecutionRole:
+    Description: A reference to the Task Execution Role
+    Export:
+      Name: !Sub 'bc-100:ExecutionRole'
+    Value: !GetAtt 'ExecutionRole.Arn'
+  Mesh:
+    Description: A reference to the AppMesh Mesh
+    Export:
+      Name: !Sub 'bc-100:Mesh'
+    Value: !GetAtt 'AppMesh.MeshName'
+Parameters:
+  AppMeshName:
+    Description: The Name of AppMesh
+    Type: String
+  ClusterName:
+    Description: The Name of Cluster
+    Type: String
+  EnvironmentName:
+    Description: The Name of Environment
+    Type: String
+Resources:
+  AppMesh:
+    Properties:
+      MeshName: !Ref 'AppMeshName'
+      Spec:
+        EgressFilter:
+          Type: ALLOW_ALL
+    Type: AWS::AppMesh::Mesh
+  ECSCluster:
+    Properties:
+      ClusterName: !Ref 'ClusterName'
+      ClusterSettings:
+        - Name: containerInsights
+          Value: enabled
+    Type: AWS::ECS::Cluster
+  ExecutionRole:
+    Properties:
+      AssumeRolePolicyDocument:
+        Statement:
+          - Action:
+              - sts:AssumeRole
+            Effect: Allow
+            Principal:
+              Service:
+                - ecs-tasks.amazonaws.com
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AmazonECSTaskExecutionRolePolicy
+        - arn:aws:iam::aws:policy/CloudWatchLogsFullAccess
+        - arn:aws:iam::aws:policy/AmazonSSMReadOnlyAccess
+        - arn:aws:iam::221542130948:policy/custody-dev-infra-excute-role-policy
+      RoleName: !Sub '${EnvironmentName}-ExecutionRole-bc-100'
+    Type: AWS::IAM::Role

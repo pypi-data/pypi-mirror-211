@@ -1,0 +1,14 @@
+apiVersion: ec2.aws.binance/v1alpha1
+kind: SecurityGroup
+metadata:
+  Description: managed by https://git.toolsfdg.net/devops/devops-infra
+  GroupName: cloud-dispatcher-dispatcher-alb-sg
+  VpcId: vpc-123456
+spec:
+  ingress:
+    - FromPort: 443
+      ToPort: 443
+      IpProtocol: tcp
+      UserIdGroupPairs:
+        - GroupId: ${cloudfront_prefix_list}
+          Description: Allow Access from CloudFront

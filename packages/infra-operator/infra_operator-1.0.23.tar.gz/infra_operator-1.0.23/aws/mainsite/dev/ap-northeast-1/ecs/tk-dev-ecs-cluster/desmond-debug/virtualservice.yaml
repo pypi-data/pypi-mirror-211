@@ -1,0 +1,13 @@
+apiVersion: appmesh.aws.infra/v1alpha1
+kind: VirtualService
+pipelineConfig:
+  no-apply: true
+  comment: 'no-apply: true prevents this file being apply by infra-operator. auto
+    added by infra-operator export. if need to apply, set to false'
+metadata:
+  meshName: bin-dev-demo-appmesh
+  virtualServiceName: bin-dev-demo-appmesh-green.local
+spec:
+  provider:
+    virtualRouter:
+      virtualRouterName: bin-dev-demo-appmesh-green-vr

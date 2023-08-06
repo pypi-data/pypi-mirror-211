@@ -1,0 +1,25 @@
+apiVersion: appmesh.aws.infra/v1alpha1
+kind: VirtualNode
+pipelineConfig:
+  no-apply: true
+  comment: 'no-apply: true prevents this file being apply by infra-operator. auto
+    added by infra-operator export. if need to apply, set to false'
+metadata:
+  meshName: bin-dev-demo-appmesh
+  virtualNodeName: bin-dev-demo-appmesh-green-vn
+spec:
+  serviceDiscovery:
+    dns:
+      hostname: bin-dev-demo-appmesh-green.local
+  listeners:
+    - healthCheck:
+        path: /
+        protocol: http
+        port: 80
+        timeoutMillis: 2000
+        intervalMillis: 5000
+        healthyThreshold: 5
+        unhealthyThreshold: 3
+      portMapping:
+        protocol: http
+        port: 80

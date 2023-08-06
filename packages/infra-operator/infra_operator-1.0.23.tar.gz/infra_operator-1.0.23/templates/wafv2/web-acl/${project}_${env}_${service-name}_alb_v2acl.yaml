@@ -1,0 +1,31 @@
+apiVersion: wafv2.aws.binance/v1alpha1
+metadata:
+  description: managed by https://git.toolsfdg.net/devops/devops-infra
+  default-action:
+    Allow: {}
+  LogDestinationBucket: aws-waf-logs-${aws_account_id}
+  visibility-config:
+    SampledRequestsEnabled: true
+    CloudWatchMetricsEnabled: true
+    MetricName: ${project}_${env}_${name}_alb_v2acl
+spec:
+  rules:
+    - Name: ${project}_${env}_${name}_cdn_bypass_v2rule 
+      Statement:
+        NotStatement:
+          Statement:
+            ByteMatchStatement:
+              SearchString: {{range(10000000, 100000000) | random()}} # Put the secret string here.
+              FieldToMatch:
+                SingleHeader:
+                  Name: x-cfcalltag
+              TextTransformations:
+                - Priority: 0
+                  Type: NONE
+              PositionalConstraint: EXACTLY
+      Action:
+        Block: {}
+      VisibilityConfig:
+        SampledRequestsEnabled: true
+        CloudWatchMetricsEnabled: true
+        MetricName: ${project}_${env}_${name}_cdn_bypass_v2rule

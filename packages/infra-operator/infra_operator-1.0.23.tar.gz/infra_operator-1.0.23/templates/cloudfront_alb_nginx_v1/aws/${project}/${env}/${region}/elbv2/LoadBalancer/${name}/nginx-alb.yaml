@@ -1,0 +1,42 @@
+apiVersion: elbv2.aws.binance/v1alpha1
+kind: LoadBalancer
+metadata:
+  Name: bin-${name}-alb
+  Subnets: ${internal-alb-subnets}
+  SecurityGroups:
+    - sg-07d76fb46754f58cf
+  Scheme: internal
+  Tags:
+    message: managed by https://git.toolsfdg.net/devops/devops-infra
+  Type: application
+  IpAddressType: ipv4
+spec:
+  Listeners:
+    - Protocol: HTTP
+      Port: 80
+      DefaultActions:
+        - Type: forward
+          Order: 1
+          ForwardConfig:
+            TargetGroups:
+              - TargetGroupArn: $file(targetGroup.yaml)
+                Weight: 1
+            TargetGroupStickinessConfig:
+              Enabled: false
+      Rules:
+        - Conditions:
+            - Field: http-header
+              HttpHeaderConfig:
+                HttpHeaderName: k8scluster
+                Values:
+                  - 'true'
+          Priority: 2
+          Actions:
+            - Type: forward
+              Order: 1
+              ForwardConfig:
+                TargetGroups:
+                  - TargetGroupArn: $file(gray.targetGroup.yaml)
+                    Weight: 1
+                TargetGroupStickinessConfig:
+                  Enabled: false

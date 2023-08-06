@@ -1,0 +1,24 @@
+apiVersion: ecs.aws.infra/v1alpha1
+kind: Service
+metadata:
+  enableECSManagedTags: true
+  launchType: FARGATE
+  loadBalancers:
+    - containerName: main
+      containerPort: 80
+      targetGroupArn: $file(targetGroup.yaml)
+  networkConfiguration:
+    awsvpcConfiguration:
+      assignPublicIp: DISABLED
+      securityGroups:
+        - $file(service.sg.yaml)
+      subnets: ${ecs-nat-subnets}
+  platformVersion: LATEST
+  schedulingStrategy: REPLICA
+  serviceName: ${prefix}-${env}-${name}-service
+  desiredCount: 1
+spec:
+  deploymentConfiguration:
+    maximumPercent: 200
+    minimumHealthyPercent: 0
+  taskDefinition: $file(taskDefinition.yaml)

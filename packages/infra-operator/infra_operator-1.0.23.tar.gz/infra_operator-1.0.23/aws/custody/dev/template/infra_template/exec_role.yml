@@ -1,0 +1,28 @@
+# rerun
+apiVersion: iam.aws.infra/v1alpha1
+kind: Role
+metadata:
+  Description: managed by infra operator
+  RoleName: ${project}-${env}-ExecutionRole-${infra.infraIdentifier}
+  AssumeRolePolicyDocument:
+    Version: "2012-10-17"
+    Statement:
+      - Effect: Allow
+        Principal:
+          Service: ecs-tasks.amazonaws.com
+        Action: sts:AssumeRole
+  Tags: ${infra.devops_common_infra_tags}
+spec:
+  managed-policies:
+    - PolicyArn: arn:aws:iam::aws:policy/CloudWatchLogsFullAccess
+    - PolicyArn: arn:aws:iam::aws:policy/service-role/AmazonECSTaskExecutionRolePolicy
+    - PolicyArn: arn:aws:iam::aws:policy/AmazonSSMReadOnlyAccess
+  inline-policies:
+    $if:
+      $expr: ${infra.enable_s3}
+      $true: 
+        - PolicyName: ${project}-${infra.app_name}-infra-excute-role-policy
+          PolicyDocument: $yaml_content(/aws/custody/dev/polices/s3_ro.yml)
+      $false:
+        []
+

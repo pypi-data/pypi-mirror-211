@@ -1,0 +1,328 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "cli.py debug",
+            "type": "python",
+            "request": "launch",
+            "program": "src/infra_operator/cli.py",
+            "args": [
+                "-t",
+                "aws/mainsite/dev/ap-northeast-1/ec2/infra-operator-tests/launch-template.yaml",
+                "create"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "cli.py render",
+            "type": "python",
+            "request": "launch",
+            "program": "src/infra_operator/cli.py",
+            "args": [
+                "-t",
+                "templates/cloudfront_alb_nginx_v1",
+                "render",
+                "-v",
+                "templates/cloudfront_alb_nginx_v1/variables.yaml"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "cli.py ec2 debug",
+            "type": "python",
+            "request": "launch",
+            "program": "src/infra_operator/cli.py",
+            "args": [
+                "-t",
+                "aws/mainsite/dev/ap-northeast-1/ec2/infra-operator-tests/dex_fullnode.yaml",
+                "export"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "cli.py export test cluster",
+            "type": "python",
+            "request": "launch",
+            "program": "src/infra_operator/cli.py",
+            "args": [
+                "-t",
+                "aws/mainsite/dev/ap-northeast-1/ecs/bin-dev-infra-operator-tests-cluster/cluster.yaml",
+                "export"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "cli.py delete test cluster",
+            "type": "python",
+            "request": "launch",
+            "program": "src/infra_operator/cli.py",
+            "args": [
+                "-t",
+                "aws/mainsite/dev/ap-northeast-1/ecs/bin-dev-infra-operator-tests-cluster/cluster.yaml",
+                "delete"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "cli.py create test cluster",
+            "type": "python",
+            "request": "launch",
+            "program": "src/infra_operator/cli.py",
+            "args": [
+                "-t",
+                "aws/mainsite/dev/ap-northeast-1/ecs/bin-dev-infra-operator-tests-cluster/cluster.yaml",
+                "create"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "cli.py export-ref cloudfront",
+            "type": "python",
+            "request": "launch",
+            "program": "src/infra_operator/cli.py",
+            "args": [
+                "-t",
+                "aws/mainsite/qa/global/cloudfront/Distribution/static.qa1fdg.net.yaml",
+                "export-ref"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "cli.py export-ref mesh",
+            "type": "python",
+            "request": "launch",
+            "program": "src/infra_operator/cli.py",
+            "args": [
+                "-t",
+                "aws/mainsite/dev/ap-northeast-1/ecs/tk-dev-ecs-cluster/demo-appmesh/mesh.yaml",
+                "export-ref"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "cli.py export mesh",
+            "type": "python",
+            "request": "launch",
+            "program": "src/infra_operator/cli.py",
+            "args": [
+                "-t",
+                "aws/mainsite/dev/ap-northeast-1/ecs/tk-dev-ecs-cluster/desmond-debug/mesh.yaml",
+                "export"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "cli.py export gatewayroute",
+            "type": "python",
+            "request": "launch",
+            "program": "src/infra_operator/cli.py",
+            "args": [
+                "-t",
+                "aws/mainsite/dev/ap-northeast-1/ecs/tk-dev-ecs-cluster/desmond-debug/gatewayroute.yaml",
+                "export"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "cli.py export virtualservice",
+            "type": "python",
+            "request": "launch",
+            "program": "src/infra_operator/cli.py",
+            "args": [
+                "-t",
+                "aws/mainsite/dev/ap-northeast-1/ecs/tk-dev-ecs-cluster/desmond-debug/virtualservice.yaml",
+                "export"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "cli.py export virtualrouter",
+            "type": "python",
+            "request": "launch",
+            "program": "src/infra_operator/cli.py",
+            "args": [
+                "-t",
+                "aws/mainsite/dev/ap-northeast-1/ecs/tk-dev-ecs-cluster/desmond-debug/virtualrouter.yaml",
+                "export"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "cli.py export virtualnode",
+            "type": "python",
+            "request": "launch",
+            "program": "src/infra_operator/cli.py",
+            "args": [
+                "-t",
+                "aws/mainsite/dev/ap-northeast-1/ecs/tk-dev-ecs-cluster/desmond-debug/virtualnode.yaml",
+                "export"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "cli.py export virtualgateway",
+            "type": "python",
+            "request": "launch",
+            "program": "src/infra_operator/cli.py",
+            "args": [
+                "-t",
+                "aws/mainsite/dev/ap-northeast-1/ecs/tk-dev-ecs-cluster/desmond-debug/virtualgateway.yaml",
+                "export"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "cli.py output infra_100",
+            "type": "python",
+            "request": "launch",
+            "program": "src/infra_operator/cli.py",
+            "args": [
+                "-t",
+                "aws/custody/dev/template/infra_template",
+                "-v",
+                "aws/custody/dev/ap-northeast-1/ecs_mesh/infra_100/infra.yml",
+                "output"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "cli.py create infra_100/exec_role",
+            "type": "python",
+            "request": "launch",
+            "program": "src/infra_operator/cli.py",
+            "args": [
+                "-t",
+                "aws/custody/dev/template/infra_template/exec_role.yml",
+                "-v",
+                "aws/custody/dev/ap-northeast-1/ecs_mesh/infra_100/infra.yml",
+                "create"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "cli.py create infra_100",
+            "type": "python",
+            "request": "launch",
+            "program": "src/infra_operator/cli.py",
+            "args": [
+                "-t",
+                "aws/custody/dev/template/infra_template",
+                "-v",
+                "aws/custody/dev/ap-northeast-1/ecs_mesh/infra_100/infra.yml",
+                "create"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "cli.py create desmond-debug",
+            "type": "python",
+            "request": "launch",
+            "program": "src/infra_operator/cli.py",
+            "args": [
+                "-t",
+                "aws/mainsite/dev/ap-northeast-1/ecs/tk-dev-ecs-cluster/desmond-debug",
+                "create"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "cli.py create taskDefinition.yaml",
+            "type": "python",
+            "request": "launch",
+            "program": "src/infra_operator/cli.py",
+            "args": [
+                "-t",
+                "aws/mainsite/dev/ap-northeast-1/ecs/tk-dev-ecs-cluster/desmond-debug/taskDefinition.yaml",
+                "create"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "cli.py create alb.sg.yaml",
+            "type": "python",
+            "request": "launch",
+            "program": "src/infra_operator/cli.py",
+            "args": [
+                "-t",
+                "aws/mainsite/dev/ap-northeast-1/ecs/tk-dev-ecs-cluster/desmond-debug/alb.sg.yaml",
+                "create"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "cli.py export alb.sg.yaml",
+            "type": "python",
+            "request": "launch",
+            "program": "src/infra_operator/cli.py",
+            "args": [
+                "-t",
+                "aws/mainsite/dev/ap-northeast-1/ecs/tk-dev-ecs-cluster/desmond-debug/alb.sg.yaml",
+                "export"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "cli.py export-ref static.qa1fdg.net",
+            "type": "python",
+            "request": "launch",
+            "program": "src/infra_operator/cli.py",
+            "args": [
+                "-t",
+                "aws/mainsite/qa/global/cloudfront/Distribution/static.qa1fdg.net.yaml",
+                "export-ref"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "cli.py diff alb.sg.yaml",
+            "type": "python",
+            "request": "launch",
+            "program": "src/infra_operator/cli.py",
+            "args": [
+                "-t",
+                "aws/mainsite/dev/ap-northeast-1/ecs/tk-dev-ecs-cluster/desmond-debug/alb.sg.yaml",
+                "diff"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "cli.py delete alb.sg.yaml",
+            "type": "python",
+            "request": "launch",
+            "program": "src/infra_operator/cli.py",
+            "args": [
+                "-t",
+                "aws/mainsite/dev/ap-northeast-1/ecs/tk-dev-ecs-cluster/desmond-debug/alb.sg.yaml",
+                "delete"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}

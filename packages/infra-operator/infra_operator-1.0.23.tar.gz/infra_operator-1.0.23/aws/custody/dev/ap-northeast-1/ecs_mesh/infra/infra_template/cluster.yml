@@ -1,0 +1,9 @@
+apiVersion: ecs.aws.infra/v1alpha1
+kind: ECS/Cluster
+spec:
+  cluster_name: ${infra.project}-${infra.environment}-${infra.infraIdentifier}
+  tags: ${devops_common_infra_tags}
+  settings: 
+    - name: containerInsights
+      value: enabled
+  
