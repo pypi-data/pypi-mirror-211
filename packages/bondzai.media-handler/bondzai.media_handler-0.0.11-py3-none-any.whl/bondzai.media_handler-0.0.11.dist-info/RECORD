@@ -1,0 +1,13 @@
+bondzai.media_handler-0.0.11-py3.11-nspkg.pth,sha256=GaUdUWunJyFVhGgJl0Nf0QYV1Zlch9NCqd-3J3CkhTo,544
+bondzai/media_handler/__init__.py,sha256=OnRwN1MQJIPqxt6YRCg_GA9sXe11fjfQ-yGAo08XG4s,1116
+bondzai/media_handler/audio.py,sha256=JfTlaLVHp4vj_92UoZ3YNKqPnQWi-VZLew2DPKH3sWc,664
+bondzai/media_handler/base.py,sha256=K9jjCN7zDB38E2aonBaQ6sLO69fK3ri_kO0kWrwdK34,661
+bondzai/media_handler/image.py,sha256=DwjYrlN6BNCbmT9TnVpzd0iZEXFw8TyMBIeF24ouF4Q,888
+bondzai/media_handler/video.py,sha256=nufvleevLEimS5pu85HtVBvSVSZTBt-cDk2tcCkdh3g,868
+bondzai.media_handler-0.0.11.dist-info/LICENCE.txt,sha256=g4gX3d__gnPyhkhEExeWz93jD8PkfHWR5LzA_fmCZWA,1273
+bondzai.media_handler-0.0.11.dist-info/METADATA,sha256=6kYAnpTxlX5ConTPAwp4_uT_A7qu8rNbrQwRM2MVKo4,1765
+bondzai.media_handler-0.0.11.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+bondzai.media_handler-0.0.11.dist-info/namespace_packages.txt,sha256=MnOdBENZHj1WBT4-FWCMGpbukfxq9cc0OjvfBXZDWI4,8
+bondzai.media_handler-0.0.11.dist-info/top_level.txt,sha256=MnOdBENZHj1WBT4-FWCMGpbukfxq9cc0OjvfBXZDWI4,8
+bondzai.media_handler-0.0.11.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+bondzai.media_handler-0.0.11.dist-info/RECORD,,
