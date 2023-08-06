@@ -1,0 +1,11 @@
+pose3d/__init__.py,sha256=yxG117xDmskfIKriORceelBfgZx9h4jWbOR5-rV9lvI,134
+pose3d/er.py,sha256=Zoplxl0P2HQYZew9MXsqlHQhIglGPe1q0SZNQylqAiQ,11316
+pose3d/et.py,sha256=BwFoF2lqS_ztIJ8hB_bYrVwclSBsEFs6--MOAmI7ztA,6589
+pose3d/pose.py,sha256=8GcbY4Ps6HN1N32FjtqgiZk_-UB_gQcE8eLy9Xg13q4,2344
+pose3d/transform.py,sha256=XTumVsx71AcT3nWsHTCo-eSHgQbhNotvNChlfPbxUd4,4921
+pose3d/transform_set.py,sha256=Ye6HsAbR_wImk9tdbXUjSSgmT4OaEnRbkPXQ2SADOzQ,6810
+pose3d/utils.py,sha256=5SVWeSmqay_p5vZcUb0TeVmzOuY-jRIf4EKTPqUz_9k,597
+pose3d-2.1.1a1.dist-info/LICENSE,sha256=MV6P-U79BdwHVOLxfthu0g1FO-z6kSLDmT-JX5-VVWo,1073
+pose3d-2.1.1a1.dist-info/METADATA,sha256=tlpBR3t7yqK0NrgH172YZr6FB18QfLe-EISD1lGX6Pc,1535
+pose3d-2.1.1a1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+pose3d-2.1.1a1.dist-info/RECORD,,
