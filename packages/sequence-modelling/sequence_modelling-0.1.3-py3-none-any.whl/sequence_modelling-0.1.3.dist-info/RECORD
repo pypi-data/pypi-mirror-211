@@ -1,0 +1,13 @@
+sequence_modelling/DiscreteOptim.py,sha256=LRgFxVgBR8WjBy-XhoTRvfzG-oubMdDMLkXaMznfRCg,9871
+sequence_modelling/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sequence_modelling/emissionplus.py,sha256=hSaqo9-Bh24rzAIVPqpCEZltyWg1ncPQKz7Qx2C935M,5887
+sequence_modelling/emmissions.py,sha256=XFZ2gTmcAkk8--N-pkVEcTC3UrKRHJ2o0Vzqz-Hi33g,5211
+sequence_modelling/hmm.py,sha256=vY3KydjMjdYudGXXqu1IgmdNQ-1HvdrrXwJ0WVl8j64,18426
+sequence_modelling/hmmviz.py,sha256=ZneBS_LyUSx-gZXVytp9qZncsiKEISXxBA9jFWJQeBo,5900
+sequence_modelling/qdhmm.py,sha256=PsyKXwaveyNOXsNJLyECJbXZWBUcYceRBXAww73BFu4,14709
+sequence_modelling/qdhmm_logscaled.py,sha256=NtW06qOS0n1xhToRNurPJfsqtr2gfq_k3zqvGa4_rcs,11895
+sequence_modelling/utils.py,sha256=0gtRMcOxTnxAqcaP3f96eqq8fGKTXt-FPJQ6_BrPBC4,1531
+sequence_modelling-0.1.3.dist-info/LICENSE,sha256=AxpIJzLiv3yhJePfGjd4S3_rnJFjb5DUA-aiG1_cYi8,1500
+sequence_modelling-0.1.3.dist-info/METADATA,sha256=qfJyoL3LGPq5l_94qma4_jdkI2Id8S45k26CGDHxU5s,2987
+sequence_modelling-0.1.3.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+sequence_modelling-0.1.3.dist-info/RECORD,,
