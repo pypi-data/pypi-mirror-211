@@ -1,0 +1,14 @@
+setup.py
+SeleCrawler.egg-info/PKG-INFO
+SeleCrawler.egg-info/SOURCES.txt
+SeleCrawler.egg-info/dependency_links.txt
+SeleCrawler.egg-info/requires.txt
+SeleCrawler.egg-info/top_level.txt
+selecrawler/__init__.py
+selecrawler/browsing.py
+selecrawler/controller.py
+selecrawler.egg-info/PKG-INFO
+selecrawler.egg-info/SOURCES.txt
+selecrawler.egg-info/dependency_links.txt
+selecrawler.egg-info/requires.txt
+selecrawler.egg-info/top_level.txt
