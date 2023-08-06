@@ -1,0 +1,13 @@
+fire
+jinja2
+python-slugify
+
+[dev]
+black
+isort
+jupyter
+pydocstyle
+pylint
+pytest
+pytest-cov
+types-python-slugify
