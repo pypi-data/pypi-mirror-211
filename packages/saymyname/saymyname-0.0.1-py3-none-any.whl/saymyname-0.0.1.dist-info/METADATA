@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: saymyname
+Version: 0.0.1
+Summary: My first pip library
+Home-page: UNKNOWN
+Author: Thirumalai K G
+License: UNKNOWN
+Keywords: python,hello
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+A package that says hello to you!
+
