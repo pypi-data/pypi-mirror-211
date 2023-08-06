@@ -1,0 +1,7 @@
+attrs
+bidict
+bo4e
+frozendict
+networkx
+pydantic
+typeguard
