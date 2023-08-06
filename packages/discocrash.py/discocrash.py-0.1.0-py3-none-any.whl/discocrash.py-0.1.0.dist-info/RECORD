@@ -1,0 +1,12 @@
+discocrash/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+discocrash/channels.py,sha256=kNBn6BMIp6bt8f8LND1tXZYeWB1hMu2gzMi5_2uJ-LI,614
+discocrash/crash.py,sha256=c-9Bkx6K6NdxnhXym6Ztoz7fCFWm17-Kz3MS_oj86C4,828
+discocrash/loghooks.py,sha256=1rT2F-tcgJktrh4roVUmgrMNIh-D3vb-ttA3i7JHFF4,1910
+discocrash/members.py,sha256=3x-c8FaLO5MKxCmnveeAzCkTKgOaG-AyNtZ4qdof51o,565
+discocrash/perms.py,sha256=aXC-s6TaGAYLXGyL6H3wdVsTPh0ov3w97LffYjmPM2o,609
+discocrash/spam.py,sha256=eOYgiLokAP_aHXbsjRaIn3v7ZKBar-cofDXp0enH5MI,514
+discocrash.py-0.1.0.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+discocrash.py-0.1.0.dist-info/METADATA,sha256=aB_NVN8nIpn9MnGt5IY68mLD9ZtyjxhUVlfPuF_4-5Q,1358
+discocrash.py-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+discocrash.py-0.1.0.dist-info/top_level.txt,sha256=1jcliTKtGZeC4iyvivm26IGGPxJ1eekKzJms5bt5fMI,11
+discocrash.py-0.1.0.dist-info/RECORD,,
