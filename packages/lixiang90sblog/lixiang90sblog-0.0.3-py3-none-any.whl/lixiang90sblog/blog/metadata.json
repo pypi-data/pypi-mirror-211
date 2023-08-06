@@ -1,0 +1,16 @@
+[
+    {
+        "path":"blog/0.txt",
+        "title":"大家好！",
+        "type":"txt",
+        "tags":["公告"],
+        "timestamp":"20230602"
+    },
+    {
+        "path":"blog/1.txt",
+        "title":"马前卒社会化抚养批判(大纲)",
+        "type":"txt",
+        "tags":["社会","生育率","社会批判","马前卒"],
+        "timestamp":"20230602"
+    }
+]
