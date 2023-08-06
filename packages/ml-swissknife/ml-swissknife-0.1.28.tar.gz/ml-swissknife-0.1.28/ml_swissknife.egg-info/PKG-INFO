@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ml-swissknife
+Version: 0.1.28
+Summary: Reusable ML research primitives for fast prototyping.
+Home-page: https://github.com/lxuechen/ml-swissknife
+Author: Xuechen Li, Yann Dubois, Tianyi Zhang
+Author-email: lxuechen@cs.toronto.edu, yanndubs@stanford.edu, tz58@stanford.edu
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: ~=3.7
+Provides-Extra: latex
+Provides-Extra: full
+License-File: LICENSE
