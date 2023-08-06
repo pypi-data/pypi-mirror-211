@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: loophost
+Version: 1.1.5
+Summary: Loophost: for a better local dev
+License: Apache-2.0
+Author: Joshua McKenty
+Author-email: jmckenty@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: certbot (>=2.6.0,<3.0.0)
+Requires-Dist: flask (>=2.3.2,<3.0.0)
+Requires-Dist: flask-wtf (>=1.1.1,<2.0.0)
+Requires-Dist: fling-cli (>=0.1.7,<0.2.0)
+Requires-Dist: fling-start (>=0.1.14,<0.2.0)
+Requires-Dist: lastversion (>=2.4.15,<3.0.0)
+Requires-Dist: paramiko (>=3.1.0,<4.0.0)
+Requires-Dist: pyuac (>=0.0.3,<0.0.4)
+Project-URL: documentation, https://readthedocs.org/loophost
+Project-URL: homepage, https://loophost.dev
+Project-URL: repository, https://github.com/delving-co/loophost.git
+Description-Content-Type: text/markdown
+
+# Loophost
+### The secure local web dev experience you always wanted
