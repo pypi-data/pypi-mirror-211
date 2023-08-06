@@ -1,0 +1,6 @@
+cmem_plugin_pyshacl/__init__.py,sha256=3y6IGiyOnvbBSdwVAVcwsHZggkffgOwYlN8VpvrWTQ0,46
+cmem_plugin_pyshacl/plugin_pyshacl.py,sha256=AnSfErzmONmVx9y7nggHSu2jVZvtF8R9xMu_opgq7Zg,26844
+cmem_plugin_pyshacl-4.2.0rc3.dist-info/LICENSE,sha256=5t6lcWcFU3TBO5wwq9PYNbgzfVfFUuL-80v5BTGuuMQ,11334
+cmem_plugin_pyshacl-4.2.0rc3.dist-info/METADATA,sha256=bUdwXK3qcsyU3KrfrAosP6jLfpPWFE9hWFH053E1N9g,5684
+cmem_plugin_pyshacl-4.2.0rc3.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+cmem_plugin_pyshacl-4.2.0rc3.dist-info/RECORD,,
