@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+pysorcerer.py
+setup.py
+pysorcerer.egg-info/PKG-INFO
+pysorcerer.egg-info/SOURCES.txt
+pysorcerer.egg-info/dependency_links.txt
+pysorcerer.egg-info/requires.txt
+pysorcerer.egg-info/top_level.txt
