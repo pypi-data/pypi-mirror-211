@@ -1,0 +1,8 @@
+bnlearn
+networkx
+matplotlib
+pgmpy
+numpy
+itertools
+pandas
+sklearn
