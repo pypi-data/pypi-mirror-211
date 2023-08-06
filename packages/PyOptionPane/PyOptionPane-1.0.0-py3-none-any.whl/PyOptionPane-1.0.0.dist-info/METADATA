@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: PyOptionPane
+Version: 1.0.0
+Summary: Python GUIs made easy
+Author: yavda1
+Author-email: <yavda1@courvix.com>
+Keywords: python,tkinter,gui,JOptionPane
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: tk
+Requires-Dist: Pillow
+
