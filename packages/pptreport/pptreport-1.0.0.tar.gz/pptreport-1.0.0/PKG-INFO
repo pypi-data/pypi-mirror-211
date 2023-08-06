@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pptreport
+Version: 1.0.0
+Home-page: https://github.com/msbentsen/pptreport
+Author: Mette Bentsen
+Author-email: mette.bentsen@mpi-bn.mpg.de
+License: MIT
+Platform: Linux
+Platform: Mac OS X
+Platform: Windows
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pptreport
+
+The documentation for pptreport can be accessed via the following link:
+
+[https://loosolab.pages.gwdg.de/software/pptreport/](https://loosolab.pages.gwdg.de/software/pptreport/)

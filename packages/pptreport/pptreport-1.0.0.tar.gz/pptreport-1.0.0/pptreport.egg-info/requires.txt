@@ -1,0 +1,5 @@
+numpy
+python-pptx>=0.6.18
+pymupdf
+natsort
+mistune
