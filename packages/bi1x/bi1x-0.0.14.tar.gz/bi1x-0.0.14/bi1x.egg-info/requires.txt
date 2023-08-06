@@ -1,0 +1,7 @@
+numpy
+scipy
+bokeh
+scikit-image
+matplotlib
+pandas
+numba
