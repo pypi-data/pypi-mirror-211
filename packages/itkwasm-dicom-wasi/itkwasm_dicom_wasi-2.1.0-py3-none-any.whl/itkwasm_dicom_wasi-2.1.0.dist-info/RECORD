@@ -1,0 +1,13 @@
+itkwasm_dicom_wasi/__init__.py,sha256=WOJd2AeoepJarBKgR8Y_z5lJcXDE0dGpCC4r8ADAS1c,415
+itkwasm_dicom_wasi/_version.py,sha256=Xybt2skBZamGMNlLuOX1IG-h4uIxqUDGAO8MIGWrJac,22
+itkwasm_dicom_wasi/apply_presentation_state_to_image.py,sha256=BVNN-yIbu1PpFFcgeJPSaR9dYAdXhLsr38Z4F6URca0,3207
+itkwasm_dicom_wasi/read_dicom_encapsulated_pdf.py,sha256=5AjT-ilG6H5_cHxV0lljgSfhlc0_vq2fcl9mquQxh8k,4367
+itkwasm_dicom_wasi/structured_report_to_html.py,sha256=VH0_MRiLn2AAOWR4AGDHZSBUfyfJCOOMpby7xR5A62o,10505
+itkwasm_dicom_wasi/structured_report_to_text.py,sha256=i2Js_zg7CnHI3ED3myhGEdqvVD0sETJqx15_sEMKWC8,4877
+itkwasm_dicom_wasi/wasm_modules/apply-presentation-state-to-image.wasi.wasm,sha256=YE1VFRu95YsxtyGP63qKxwO_1yrVE9PPReAfgJTFSEs,5324653
+itkwasm_dicom_wasi/wasm_modules/read-dicom-encapsulated-pdf.wasi.wasm,sha256=cHTGGTU4jH6JbmFH5jNrnv7uWEPX3B8-AmUkQRw98fE,1903693
+itkwasm_dicom_wasi/wasm_modules/structured-report-to-html.wasi.wasm,sha256=Q3WzpsZGYgAOFMCcmn-2xZnfOZgWoHEeDCMT5P6iagU,4704402
+itkwasm_dicom_wasi/wasm_modules/structured-report-to-text.wasi.wasm,sha256=W4mKimj3HoGKyqJBI8mWRw7R6Jyye1Qc7FqdaX4brcY,4685062
+itkwasm_dicom_wasi-2.1.0.dist-info/METADATA,sha256=BbyANGLAwsbVt1b6gIjZsJT7Xtmor3ecF7E23g3xgJI,1851
+itkwasm_dicom_wasi-2.1.0.dist-info/WHEEL,sha256=y1bSCq4r5i4nMmpXeUJMqs3ipKvkZObrIXSvJHm1qCI,87
+itkwasm_dicom_wasi-2.1.0.dist-info/RECORD,,
