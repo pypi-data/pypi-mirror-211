@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+pyproject.toml
+src/additive/__init__.py
+src/additive/additive.py
+src/additive.egg-info/PKG-INFO
+src/additive.egg-info/SOURCES.txt
+src/additive.egg-info/dependency_links.txt
+src/additive.egg-info/requires.txt
+src/additive.egg-info/top_level.txt
