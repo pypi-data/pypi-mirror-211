@@ -1,0 +1,6 @@
+src/example_package_gyoza/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/example_package_gyoza/example.py,sha256=X4bE2aofVJAbmacOI_Ny0Oc7m2Ru4ShxUscmJqVps1Q,43
+gyoza-0.0.1.dist-info/METADATA,sha256=T_o8u_MsI732_1_ZZR7hsJd0SBy6W-W5z8TwckpzFjY,895
+gyoza-0.0.1.dist-info/WHEEL,sha256=y1bSCq4r5i4nMmpXeUJMqs3ipKvkZObrIXSvJHm1qCI,87
+gyoza-0.0.1.dist-info/licenses/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+gyoza-0.0.1.dist-info/RECORD,,
