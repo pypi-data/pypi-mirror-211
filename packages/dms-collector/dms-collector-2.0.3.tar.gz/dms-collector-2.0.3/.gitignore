@@ -1,0 +1,9 @@
+bin/dms-env
+__pycache__
+*.pyc
+dist
+dms_collector.egg-info
+env
+build
+.DS_Store
+.python-version
