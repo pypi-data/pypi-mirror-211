@@ -1,0 +1,10 @@
+naif_eop_predict/__init__.py,sha256=AibFWdoZgQu6oMP7adYJ2Q4iOTr0dGXLfq8j-_9QFxs,234
+naif_eop_predict/earth_200101_990628_predict.bpc,sha256=vB3RH0G0FEPcVXaVxMUNQiDNS_T92pGuTa3p2p04QEw,15121408
+naif_eop_predict/earth_200101_990628_predict.md5,sha256=8Ealc9KnfauHzTsWVAC_-WbyaVzHcy3BpYAqtu0SO1A,65
+naif_eop_predict/fetch.py,sha256=1UVQysgjBddGWtX2X-VMxHvugtqxxDTVytCPn7rR_ko,2176
+naif_eop_predict/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+naif_eop_predict/tests/test_naif_eop_predict.py,sha256=EVrMdimlhfgFzVE3vWpnEvoB2keSBf3ngGqrGAwTh84,407
+naif_eop_predict-2020.4.11.dist-info/METADATA,sha256=bIu7RBLBXHwBqcVFHUfVKxTcMSc4Ze7hF8spTzfTKIY,2662
+naif_eop_predict-2020.4.11.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+naif_eop_predict-2020.4.11.dist-info/top_level.txt,sha256=OTdjKA_nDuFRDbWFJf_0s_Sq57H7fkCT_Vt4rnYQ6ak,17
+naif_eop_predict-2020.4.11.dist-info/RECORD,,
