@@ -1,0 +1,8 @@
+ngrad/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ngrad/engine.py,sha256=GINfInhSfvl07mXL2YFycb3vvw5O7n819ZV0Pc2bkXA,5211
+ngrad/library.py,sha256=Amw6LDI1PtDwOxCMpQUoIYfG5VXo7vFFJpyfoGGIMLQ,1896
+ngrad-1.0.1.dist-info/LICENSE,sha256=PHx8JEoXi-iMOf_PQlBQSJZwvoqjVpOvOabIE-mRD3g,1061
+ngrad-1.0.1.dist-info/METADATA,sha256=i69KkfpEVPWdUgijwXH_bmZ4Lk1Bxa0zwUuK62Ba0Bk,3954
+ngrad-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ngrad-1.0.1.dist-info/top_level.txt,sha256=gIPDvXGG4UCOfL9Ynev-rzRbnPNNSf5YdHxcbhSswLQ,6
+ngrad-1.0.1.dist-info/RECORD,,
