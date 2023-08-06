@@ -1,0 +1,2 @@
+[trytond.modules]
+party_vcarddav = trytond.modules.party_vcarddav
