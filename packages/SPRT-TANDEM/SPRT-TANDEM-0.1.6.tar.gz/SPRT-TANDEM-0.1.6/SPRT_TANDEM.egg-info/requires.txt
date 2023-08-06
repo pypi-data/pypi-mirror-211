@@ -1,0 +1,5 @@
+loguru
+optuna
+torch
+torchinfo
+tqdm
