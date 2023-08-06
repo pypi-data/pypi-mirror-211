@@ -1,0 +1,8 @@
+setup.py
+ic50/__init__.py
+ic50/ic50.py
+ic50.egg-info/PKG-INFO
+ic50.egg-info/SOURCES.txt
+ic50.egg-info/dependency_links.txt
+ic50.egg-info/requires.txt
+ic50.egg-info/top_level.txt
