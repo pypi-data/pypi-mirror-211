@@ -1,0 +1,2 @@
+[console_scripts]
+blenderline = blenderline.command_line:cli
