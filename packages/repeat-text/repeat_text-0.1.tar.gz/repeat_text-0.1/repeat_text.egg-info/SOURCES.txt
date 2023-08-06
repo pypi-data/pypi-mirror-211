@@ -1,0 +1,8 @@
+repeat_text.py
+setup.py
+repeat_text.egg-info/PKG-INFO
+repeat_text.egg-info/SOURCES.txt
+repeat_text.egg-info/dependency_links.txt
+repeat_text.egg-info/entry_points.txt
+repeat_text.egg-info/requires.txt
+repeat_text.egg-info/top_level.txt
