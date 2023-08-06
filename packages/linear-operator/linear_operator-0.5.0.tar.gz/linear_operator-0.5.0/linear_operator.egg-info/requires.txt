@@ -1,0 +1,14 @@
+torch>=1.11
+scipy
+jaxtyping>=0.2.9
+typeguard~=2.13.3
+
+[dev]
+ufmt
+twine
+pre-commit
+
+[test]
+flake8==5.0.4
+flake8-print==5.0.0
+pytest
