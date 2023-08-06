@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: torch-pp
+Version: 0.0.3.dev0
+Summary: StandardScaler for pytorch tensors
+Home-page: https://github.com/Pravuk/torch-preprocessing
+Author: Roman Pravuk
+Author-email: r.pravuk@gmail.com
+License: MIT
+License-File: LICENSE
