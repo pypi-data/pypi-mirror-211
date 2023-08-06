@@ -1,0 +1,10 @@
+multidimensionalks-0.2.5.dist-info/RECORD,,
+multidimensionalks-0.2.5.dist-info/LICENSE,sha256=em3TLc-cJJTNwXflqEqx-QbwciOM3sgAjlK3qewXPvc,1067
+multidimensionalks-0.2.5.dist-info/WHEEL,sha256=W-pU-cFOu69TzD0GcM7W5uXD-phWoqlzBGq2AooVPxM,110
+multidimensionalks-0.2.5.dist-info/top_level.txt,sha256=3ee7F0VhexKoUa4zWLTQohI9GQ6Pfo2qgOprEn53x5k,36
+multidimensionalks-0.2.5.dist-info/METADATA,sha256=NVQg-PnB5Ha9T3WD41wFIoxNonx6cKjB1IpLECw2RmU,2786
+multidimensionalks/avx2.cpython-38-darwin.so,sha256=Uj5TBks-XY76LvrkNLHRdxpbML9J1PzvEDr7NJPMOzk,258944
+multidimensionalks/avx512.cpython-38-darwin.so,sha256=Bw3SsSQUHAZenQUQATGfs2dZSL9zjAb9IzN4MFfGrtY,258960
+multidimensionalks/__init__.py,sha256=eQP1aAg4VyColtRyy7saWR40kviZYtTB0D5wAOlfcdo,1167
+multidimensionalks/pure.cpython-38-darwin.so,sha256=2dJJ1V-Lhy-cyxacgbSBkd8fPxqlcV4uteUJvCAh3yA,258880
+multidimensionalks/.dylibs/libboost_system.dylib,sha256=wU1oHh-w0xwfH5yFMaWxvK6OrjjAq0QQUat5Sz5UNe4,35456
