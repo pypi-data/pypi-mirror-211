@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: vat-utils
+Version: 0.2.0
+Author: VAT Dev
+Author-email: vatdev@invalid.in
+License-File: LICENSE.txt
+Requires-Dist: boto3
+Requires-Dist: jsonpointer
+
