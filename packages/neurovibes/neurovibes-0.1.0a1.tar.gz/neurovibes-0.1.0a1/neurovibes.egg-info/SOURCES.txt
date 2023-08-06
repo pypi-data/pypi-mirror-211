@@ -1,0 +1,5 @@
+pyproject.toml
+neurovibes.egg-info/PKG-INFO
+neurovibes.egg-info/SOURCES.txt
+neurovibes.egg-info/dependency_links.txt
+neurovibes.egg-info/top_level.txt
