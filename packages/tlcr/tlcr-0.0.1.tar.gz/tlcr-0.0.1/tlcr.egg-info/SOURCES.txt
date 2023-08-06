@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+tlcr/Bioinspired.py
+tlcr/ImageNet.py
+tlcr/Line.py
+tlcr/Video.py
+tlcr/__init__.py
+tlcr/tlcr.py
+tlcr.egg-info/PKG-INFO
+tlcr.egg-info/SOURCES.txt
+tlcr.egg-info/dependency_links.txt
+tlcr.egg-info/top_level.txt
