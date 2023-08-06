@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+wirewalk/__init__.py
+wirewalk/_modidx.py
+wirewalk/core.py
+wirewalk.egg-info/PKG-INFO
+wirewalk.egg-info/SOURCES.txt
+wirewalk.egg-info/dependency_links.txt
+wirewalk.egg-info/entry_points.txt
+wirewalk.egg-info/not-zip-safe
+wirewalk.egg-info/requires.txt
+wirewalk.egg-info/top_level.txt
