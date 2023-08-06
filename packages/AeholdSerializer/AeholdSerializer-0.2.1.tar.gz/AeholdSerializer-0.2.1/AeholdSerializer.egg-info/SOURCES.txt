@@ -1,0 +1,6 @@
+setup.py
+AeholdSerializer.egg-info/PKG-INFO
+AeholdSerializer.egg-info/SOURCES.txt
+AeholdSerializer.egg-info/dependency_links.txt
+AeholdSerializer.egg-info/entry_points.txt
+AeholdSerializer.egg-info/top_level.txt

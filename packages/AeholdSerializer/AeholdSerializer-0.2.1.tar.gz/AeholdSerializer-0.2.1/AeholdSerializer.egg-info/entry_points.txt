@@ -1,0 +1,2 @@
+[console_scripts]
+aehold = aehold.lib:main
