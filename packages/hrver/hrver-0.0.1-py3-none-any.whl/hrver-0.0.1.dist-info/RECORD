@@ -1,0 +1,13 @@
+hrver/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hrver/api.py,sha256=EDnZbPhTE7vk3a0AuNXC6LddUE1jbbF5JI0gE2TDYKk,11998
+hrver/constants.py,sha256=TztLSdw_Zx__DxX0JlnGDH4joPfNq3EmnAC__QNENLI,1481
+hrver/features.py,sha256=_tBMxuU_n5C8YvzLbk57CRiulxWMt_rR53uRlaqVLr4,14862
+hrver/utils.py,sha256=HAbFBmHLFCu7HEsTkzJSTzShVtL8ftlnHxfLpZgUNSE,330
+hrver/examples/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hrver/examples/api/databases.py,sha256=Ww7xVLevZw55buL17ne_AucJxP9MydWMN8UdfLCI1CQ,5780
+hrver/examples/app/app.py,sha256=TbTB2DkU-4SzbMkigru6FhnD6SywCbzTS7iudhc5boA,18020
+hrver-0.0.1.dist-info/LICENSE,sha256=dpYQo-BstYd4cjCKh84fgq05TFgngOOxRRLIqBLp1rk,1084
+hrver-0.0.1.dist-info/METADATA,sha256=Jm11vEKy9x1EyDIkiEFarv3OtiewUYoUbHVS9wdyXLY,591
+hrver-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+hrver-0.0.1.dist-info/top_level.txt,sha256=E_jZJ7YyQRDruca0oSyf5ndjJTxZs7q7Zq5LKNYJL1g,6
+hrver-0.0.1.dist-info/RECORD,,
