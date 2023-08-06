@@ -1,0 +1,10 @@
+dash
+plotly
+pandas
+jsonschema
+opentimspy
+opentims_bruker_bridge
+dash-bootstrap-components==1.2.1
+flask_caching
+toml
+Flask
