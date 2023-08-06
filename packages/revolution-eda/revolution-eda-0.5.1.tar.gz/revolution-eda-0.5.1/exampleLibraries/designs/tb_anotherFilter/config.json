@@ -1,0 +1,39 @@
+[
+    {
+        "viewName": "config"
+    },
+    {
+        "reference": "schematic"
+    },
+    {
+        "anotherFilter": [
+            "designs",
+            "symbol",
+            [
+                "schematic",
+                "symbol"
+            ]
+        ],
+        "gnd": [
+            "analogLib",
+            "symbol",
+            [
+                "symbol"
+            ]
+        ],
+        "cap": [
+            "analogLib",
+            "symbol",
+            [
+                "symbol"
+            ]
+        ],
+        "vsin": [
+            "analogLib",
+            "symbol",
+            [
+                "symbol"
+            ]
+        ]
+    }
+]

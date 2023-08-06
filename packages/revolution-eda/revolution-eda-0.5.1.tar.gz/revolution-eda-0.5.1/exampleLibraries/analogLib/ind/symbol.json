@@ -1,0 +1,247 @@
+[
+    {
+        "cellView": "symbol"
+    },
+    {
+        "type": "arc",
+        "st": [
+            1190,
+            -680
+        ],
+        "end": [
+            1210,
+            -660
+        ],
+        "pen": "symbolPen",
+        "loc": [
+            -1200.0,
+            620.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "arc",
+        "st": [
+            1190,
+            -680
+        ],
+        "end": [
+            1210,
+            -660
+        ],
+        "pen": "symbolPen",
+        "loc": [
+            -1200.0,
+            600.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "arc",
+        "st": [
+            1190,
+            -680
+        ],
+        "end": [
+            1210,
+            -660
+        ],
+        "pen": "symbolPen",
+        "loc": [
+            -1200.0,
+            580.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "arc",
+        "st": [
+            1190,
+            -680
+        ],
+        "end": [
+            1210,
+            -660
+        ],
+        "pen": "symbolPen",
+        "loc": [
+            -1200.0,
+            560.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "line",
+        "st": [
+            1200,
+            -740
+        ],
+        "end": [
+            1200,
+            -740
+        ],
+        "pen": "symbolPen",
+        "loc": [
+            -1200.0,
+            620.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "line",
+        "st": [
+            1200,
+            -780
+        ],
+        "end": [
+            1200,
+            -740
+        ],
+        "pen": "symbolPen",
+        "loc": [
+            -1200.0,
+            620.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "line",
+        "st": [
+            1200,
+            -620
+        ],
+        "end": [
+            1200,
+            -660
+        ],
+        "pen": "symbolPen",
+        "loc": [
+            -1200.0,
+            620.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "pin",
+        "st": [
+            1200,
+            -780
+        ],
+        "pen": "pinPen",
+        "nam": "PLUS",
+        "pd": "Inout",
+        "pt": "Signal",
+        "loc": [
+            -1200.0,
+            620.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "pin",
+        "st": [
+            1200,
+            -620
+        ],
+        "pen": "pinPen",
+        "nam": "MINUS",
+        "pd": "Input",
+        "pt": "Signal",
+        "loc": [
+            -1200.0,
+            620.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "label",
+        "st": [
+            1230,
+            -750
+        ],
+        "pen": "labelPen",
+        "nam": "instName",
+        "def": "[@instName]",
+        "txt": null,
+        "val": "?",
+        "vis": true,
+        "lt": "NLPLabel",
+        "ht": "12",
+        "al": "Left",
+        "or": "R0",
+        "use": "Normal",
+        "loc": [
+            -1190.0,
+            580.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "label",
+        "st": [
+            1230,
+            -710
+        ],
+        "pen": "labelPen",
+        "nam": "cellName",
+        "def": "[@cellName]",
+        "txt": null,
+        "val": "?",
+        "vis": true,
+        "lt": "NLPLabel",
+        "ht": "12",
+        "al": "Left",
+        "or": "R0",
+        "use": "Normal",
+        "loc": [
+            -1270.0,
+            620.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "circle",
+        "cen": [
+            1200,
+            -750
+        ],
+        "end": [
+            1200,
+            -750
+        ],
+        "pen": "symbolPen",
+        "loc": [
+            -1200.0,
+            620.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "label",
+        "st": [
+            150,
+            -100
+        ],
+        "pen": "labelPen",
+        "nam": "L",
+        "def": "[@L:L=%:L=1n]",
+        "txt": "L=?",
+        "val": "?",
+        "vis": true,
+        "lt": "NLPLabel",
+        "ht": "12",
+        "al": "Left",
+        "or": "R0",
+        "use": "Normal",
+        "loc": [
+            -120.0,
+            -10.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "attr",
+        "nam": "XyceNetlistLine",
+        "def": "L[@instName] [@pinList] [@L:L=%:L=1n]"
+    }
+]

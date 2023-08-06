@@ -1,0 +1,234 @@
+[
+    {
+        "cellView": "schematic"
+    },
+    {
+        "type": "symbolShape",
+        "lib": "analogLib",
+        "cell": "cap",
+        "view": "symbol",
+        "nam": "I4",
+        "ic": 4,
+        "ld": {
+            "cellName": [
+                "cap",
+                true
+            ],
+            "instName": [
+                "I4",
+                true
+            ],
+            "C": [
+                "1p",
+                true
+            ]
+        },
+        "loc": [
+            60.0,
+            360.0
+        ],
+        "ang": 0.0
+    },
+    {
+        "type": "symbolShape",
+        "lib": "analogLib",
+        "cell": "res",
+        "view": "symbol",
+        "nam": "I2",
+        "ic": 2,
+        "ld": {
+            "cellName": [
+                "res",
+                true
+            ],
+            "instName": [
+                "I2",
+                true
+            ],
+            "R": [
+                "1k",
+                true
+            ]
+        },
+        "loc": [
+            -250.0,
+            170.0
+        ],
+        "ang": 90.0
+    },
+    {
+        "type": "schematicPin",
+        "st": [
+            0,
+            0
+        ],
+        "pen": "pinPen",
+        "pn": "INP",
+        "pd": "Input",
+        "pt": "Signal",
+        "loc": [
+            -460.0,
+            170.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "schematicPin",
+        "st": [
+            0,
+            0
+        ],
+        "pen": "pinPen",
+        "pn": "VSS",
+        "pd": "Inout",
+        "pt": "Signal",
+        "loc": [
+            -450.0,
+            380.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            60,
+            380
+        ],
+        "end": [
+            60,
+            380
+        ],
+        "pen": "wirePen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": "VSS",
+        "ns": false
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            60,
+            360
+        ],
+        "end": [
+            60,
+            380
+        ],
+        "pen": "wirePen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": "VSS",
+        "ns": false
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            -140,
+            -180
+        ],
+        "end": [
+            60,
+            -180
+        ],
+        "pen": "wirePen",
+        "loc": [
+            -310.0,
+            350.0
+        ],
+        "nam": "INP",
+        "ns": false
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            -450,
+            380
+        ],
+        "end": [
+            60,
+            380
+        ],
+        "pen": "wirePen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": "VSS",
+        "ns": false
+    },
+    {
+        "type": "schematicPin",
+        "st": [
+            0,
+            0
+        ],
+        "pen": "pinPen",
+        "pn": "OUT",
+        "pd": "Input",
+        "pt": "Signal",
+        "loc": [
+            200.0,
+            170.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            -90,
+            170
+        ],
+        "end": [
+            200,
+            170
+        ],
+        "pen": "wirePen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": "OUT",
+        "ns": false
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            60,
+            170
+        ],
+        "end": [
+            60,
+            200
+        ],
+        "pen": "wirePen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": "OUT",
+        "ns": false
+    },
+    {
+        "type": "text",
+        "st": [
+            320,
+            -350
+        ],
+        "pen": "textPen",
+        "tc": "A simple RC low-pass filter",
+        "ff": "Cascadia Code",
+        "fs": "Regular",
+        "th": "12",
+        "ta": "Left",
+        "to": "R0",
+        "loc": [
+            -660.0,
+            810.0
+        ],
+        "ang": 0
+    }
+]

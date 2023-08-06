@@ -1,0 +1,40 @@
+[
+    {
+        "viewName": "config"
+    },
+    {
+        "reference": "schematic"
+    },
+    {
+        "gnd": [
+            "analogLib",
+            "symbol",
+            [
+                "symbol"
+            ]
+        ],
+        "capVa": [
+            "analogLib",
+            "veriloga",
+            [
+                "veriloga",
+                "symbol"
+            ]
+        ],
+        "higherOrderFilter": [
+            "designs",
+            "symbol",
+            [
+                "schematic",
+                "symbol"
+            ]
+        ],
+        "nmos": [
+            "analogLib",
+            "symbol",
+            [
+                "symbol"
+            ]
+        ]
+    }
+]

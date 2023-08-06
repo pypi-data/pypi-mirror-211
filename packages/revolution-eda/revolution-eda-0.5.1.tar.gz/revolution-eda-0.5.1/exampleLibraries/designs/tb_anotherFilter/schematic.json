@@ -1,0 +1,365 @@
+[
+    {
+        "cellView": "schematic"
+    },
+    {
+        "type": "symbolShape",
+        "lib": "analogLib",
+        "cell": "vsin",
+        "view": "symbol",
+        "nam": "I4",
+        "ic": 4,
+        "ld": {
+            "FREQ": [
+                "100k",
+                true
+            ],
+            "V0": [
+                "0",
+                true
+            ],
+            "cellName": [
+                "vsin",
+                true
+            ],
+            "instName": [
+                "I4",
+                true
+            ],
+            "VA": [
+                "1",
+                true
+            ],
+            "TD": [
+                "0",
+                true
+            ]
+        },
+        "loc": [
+            -620.0,
+            250.0
+        ],
+        "ang": 0.0
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            -480,
+            10
+        ],
+        "end": [
+            -620,
+            10
+        ],
+        "pen": "wirePen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": null,
+        "ns": false
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            -620,
+            240
+        ],
+        "end": [
+            -620,
+            300
+        ],
+        "pen": "wirePen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": "gnd!",
+        "ns": false
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            -310,
+            300
+        ],
+        "end": [
+            -310,
+            340
+        ],
+        "pen": "wirePen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": "gnd!",
+        "ns": false
+    },
+    {
+        "type": "symbolShape",
+        "lib": "analogLib",
+        "cell": "cap",
+        "view": "symbol",
+        "nam": "I2",
+        "ic": 2,
+        "ld": {
+            "cellName": [
+                "cap",
+                true
+            ],
+            "instName": [
+                "I2",
+                true
+            ],
+            "C": [
+                "5p",
+                true
+            ]
+        },
+        "loc": [
+            -120.0,
+            240.0
+        ],
+        "ang": 0.0
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            -200,
+            10
+        ],
+        "end": [
+            -120,
+            10
+        ],
+        "pen": "wirePen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": null,
+        "ns": false
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            -570,
+            300
+        ],
+        "end": [
+            -130,
+            300
+        ],
+        "pen": "wirePen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": "gnd!",
+        "ns": false
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            -620,
+            300
+        ],
+        "end": [
+            -570,
+            300
+        ],
+        "pen": "wirePen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": "gnd!",
+        "ns": false
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            -340,
+            150
+        ],
+        "end": [
+            -340,
+            300
+        ],
+        "pen": "otherPen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": null,
+        "ns": false
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            -620,
+            10
+        ],
+        "end": [
+            -620,
+            80
+        ],
+        "pen": "wirePen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": "INP",
+        "ns": false
+    },
+    {
+        "type": "symbolShape",
+        "lib": "designs",
+        "cell": "anotherFilter",
+        "view": "symbol",
+        "nam": "I8",
+        "ic": 8,
+        "ld": {
+            "cellName": [
+                "anotherFilter",
+                true
+            ],
+            "instName": [
+                "I8",
+                true
+            ]
+        },
+        "loc": [
+            -420.0,
+            -70.0
+        ],
+        "ang": 0.0
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            -340,
+            150
+        ],
+        "end": [
+            -340,
+            300
+        ],
+        "pen": "wirePen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": null,
+        "ns": false
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            -200,
+            10
+        ],
+        "end": [
+            -120,
+            10
+        ],
+        "pen": "otherPen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": null,
+        "ns": false
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            -120,
+            300
+        ],
+        "end": [
+            -130,
+            300
+        ],
+        "pen": "wirePen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": "gnd!",
+        "ns": false
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            -120,
+            240
+        ],
+        "end": [
+            -120,
+            300
+        ],
+        "pen": "wirePen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": "gnd!",
+        "ns": false
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            -120,
+            10
+        ],
+        "end": [
+            -120,
+            80
+        ],
+        "pen": "wirePen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": "OUT",
+        "ns": true
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            -480,
+            10
+        ],
+        "end": [
+            -620,
+            10
+        ],
+        "pen": "otherPen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": null,
+        "ns": false
+    },
+    {
+        "type": "symbolShape",
+        "lib": "analogLib",
+        "cell": "gnd",
+        "view": "symbol",
+        "nam": "I3",
+        "ic": 3,
+        "ld": {
+            "instName": [
+                "I3",
+                false
+            ]
+        },
+        "loc": [
+            -310.0,
+            340.0
+        ],
+        "ang": 0.0
+    }
+]

@@ -1,0 +1,117 @@
+[
+    {
+        "cellView": "symbol"
+    },
+    {
+        "type": "label",
+        "st": [
+            -70,
+            -20
+        ],
+        "pen": "labelPen",
+        "nam": "instName",
+        "def": "[@instName]",
+        "txt": null,
+        "val": null,
+        "vis": false,
+        "lt": "NLPLabel",
+        "ht": "10",
+        "al": "Left",
+        "or": "R0",
+        "use": "Normal",
+        "loc": [
+            80.0,
+            10.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "line",
+        "st": [
+            -60,
+            0
+        ],
+        "end": [
+            -120,
+            0
+        ],
+        "pen": "symbolPen",
+        "loc": [
+            90.0,
+            40.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "line",
+        "st": [
+            -90,
+            30
+        ],
+        "end": [
+            -60,
+            0
+        ],
+        "pen": "symbolPen",
+        "loc": [
+            90.0,
+            40.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "line",
+        "st": [
+            -130,
+            10
+        ],
+        "end": [
+            -100,
+            40
+        ],
+        "pen": "symbolPen",
+        "loc": [
+            100.0,
+            30.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "line",
+        "st": [
+            -90,
+            -40
+        ],
+        "end": [
+            -90,
+            0
+        ],
+        "pen": "symbolPen",
+        "loc": [
+            90.0,
+            40.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "pin",
+        "st": [
+            -90,
+            -40
+        ],
+        "pen": "pinPen",
+        "nam": "gnd!",
+        "pd": "Input",
+        "pt": "Signal",
+        "loc": [
+            90.0,
+            40.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "attr",
+        "nam": "XyceNetlistPass",
+        "def": "1"
+    }
+]

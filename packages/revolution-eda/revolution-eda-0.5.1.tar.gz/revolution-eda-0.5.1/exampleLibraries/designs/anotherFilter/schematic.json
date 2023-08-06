@@ -1,0 +1,282 @@
+[
+    {
+        "cellView": "schematic"
+    },
+    {
+        "type": "symbolShape",
+        "lib": "analogLib",
+        "cell": "capVa",
+        "view": "symbol",
+        "nam": "I1",
+        "ic": 1,
+        "ld": {
+            "c": [
+                "1p",
+                true
+            ],
+            "vaModel": [
+                "capacitorModel",
+                false
+            ],
+            "vaModule": [
+                "capacitor",
+                false
+            ],
+            "vaFile": [
+                "/home/eskiyerli/Documents/CAD/Xyce/cap.va",
+                false
+            ],
+            "instName": [
+                "I1",
+                true
+            ],
+            "cellName": [
+                "capVa",
+                true
+            ]
+        },
+        "loc": [
+            900.0,
+            210.0
+        ],
+        "ang": 0.0
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            70,
+            70
+        ],
+        "end": [
+            -30,
+            70
+        ],
+        "pen": "wirePen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": "INP",
+        "ns": false
+    },
+    {
+        "type": "symbolShape",
+        "lib": "designs",
+        "cell": "highPassFilter",
+        "view": "symbol",
+        "nam": "I4",
+        "ic": 4,
+        "ld": {
+            "instName": [
+                "I4",
+                true
+            ],
+            "cellName": [
+                "highPassFilter",
+                true
+            ]
+        },
+        "loc": [
+            130.0,
+            -10.0
+        ],
+        "ang": 0.0
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            210,
+            210
+        ],
+        "end": [
+            210,
+            470
+        ],
+        "pen": "wirePen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": "VSS",
+        "ns": false
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            -10,
+            470
+        ],
+        "end": [
+            980,
+            470
+        ],
+        "pen": "wirePen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": "VSS",
+        "ns": false
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            730,
+            70
+        ],
+        "end": [
+            1080,
+            70
+        ],
+        "pen": "wirePen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": null,
+        "ns": false
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            980,
+            350
+        ],
+        "end": [
+            980,
+            470
+        ],
+        "pen": "wirePen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": "VSS",
+        "ns": false
+    },
+    {
+        "type": "schematicPin",
+        "st": [
+            1070,
+            60
+        ],
+        "pen": "pinPen",
+        "pn": "OUT",
+        "pd": "Output",
+        "pt": "Signal",
+        "loc": [
+            0.0,
+            10.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            450,
+            70
+        ],
+        "end": [
+            350,
+            70
+        ],
+        "pen": "wirePen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": null,
+        "ns": false
+    },
+    {
+        "type": "schematicPin",
+        "st": [
+            -10,
+            470
+        ],
+        "pen": "pinPen",
+        "pn": "VSS",
+        "pd": "Inout",
+        "pt": "Signal",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "symbolShape",
+        "lib": "designs",
+        "cell": "highPassFilter",
+        "view": "symbol",
+        "nam": "I1",
+        "ic": 1,
+        "ld": {
+            "instName": [
+                "I1",
+                true
+            ],
+            "cellName": [
+                "highPassFilter",
+                true
+            ]
+        },
+        "loc": [
+            510.0,
+            -10.0
+        ],
+        "ang": 0.0
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            590,
+            210
+        ],
+        "end": [
+            590,
+            470
+        ],
+        "pen": "wirePen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": null,
+        "ns": false
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            980,
+            150
+        ],
+        "end": [
+            980,
+            70
+        ],
+        "pen": "wirePen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": "OUT",
+        "ns": false
+    },
+    {
+        "type": "schematicPin",
+        "st": [
+            -40,
+            70
+        ],
+        "pen": "pinPen",
+        "pn": "INP",
+        "pd": "Input",
+        "pt": "Signal",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "ang": 0
+    }
+]

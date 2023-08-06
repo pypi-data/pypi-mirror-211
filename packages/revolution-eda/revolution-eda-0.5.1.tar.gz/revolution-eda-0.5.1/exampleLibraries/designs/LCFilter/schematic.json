@@ -1,0 +1,59 @@
+[
+    {
+        "cellView": "schematic"
+    },
+    {
+        "type": "symbolShape",
+        "lib": "analogLib",
+        "cell": "ind",
+        "view": "symbol",
+        "nam": "I2",
+        "ic": 2,
+        "ld": {
+            "instName": [
+                "I2",
+                true
+            ],
+            "cellName": [
+                "ind",
+                true
+            ],
+            "L": [
+                "?",
+                true
+            ]
+        },
+        "loc": [
+            -480.0,
+            50.0
+        ],
+        "ang": 0.0
+    },
+    {
+        "type": "symbolShape",
+        "lib": "analogLib",
+        "cell": "cap",
+        "view": "symbol",
+        "nam": "I1",
+        "ic": 1,
+        "ld": {
+            "cellName": [
+                "cap",
+                true
+            ],
+            "instName": [
+                "I1",
+                true
+            ],
+            "C": [
+                "1p",
+                true
+            ]
+        },
+        "loc": [
+            -219.99999999999994,
+            -40.0
+        ],
+        "ang": 540.0
+    }
+]

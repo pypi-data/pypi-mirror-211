@@ -1,0 +1,14 @@
+[
+    {
+        "cellView": "veriloga"
+    },
+    {
+        "filePath": "cap.va"
+    },
+    {
+        "vaModule": "capacitor"
+    },
+    {
+        "netlistLine": "Ycapacitor [@instName] [@pinList]  capacitorModel [@c:c=%:c=0]"
+    }
+]

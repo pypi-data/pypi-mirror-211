@@ -1,0 +1,258 @@
+[
+    {
+        "cellView": "symbol"
+    },
+    {
+        "type": "line",
+        "st": [
+            30,
+            50
+        ],
+        "end": [
+            130,
+            50
+        ],
+        "pen": "symbolPen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "line",
+        "st": [
+            30,
+            30
+        ],
+        "end": [
+            130,
+            30
+        ],
+        "pen": "symbolPen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "pin",
+        "st": [
+            80,
+            140
+        ],
+        "pen": "pinPen",
+        "nam": "n",
+        "pd": "Input",
+        "pt": "Signal",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "line",
+        "st": [
+            80,
+            140
+        ],
+        "end": [
+            80,
+            50
+        ],
+        "pen": "symbolPen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "pin",
+        "st": [
+            80,
+            -60
+        ],
+        "pen": "pinPen",
+        "nam": "p",
+        "pd": "Input",
+        "pt": "Signal",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "line",
+        "st": [
+            80,
+            -60
+        ],
+        "end": [
+            80,
+            30
+        ],
+        "pen": "symbolPen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "label",
+        "st": [
+            160,
+            0
+        ],
+        "pen": "labelPen",
+        "nam": "c",
+        "def": "[@c:c=%:c=0]",
+        "txt": "c=0",
+        "val": "0",
+        "vis": true,
+        "lt": "NLPLabel",
+        "ht": "12",
+        "al": "Center",
+        "or": "R0",
+        "use": "Instance",
+        "loc": [
+            -30.0,
+            10.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "label",
+        "st": [
+            40,
+            80
+        ],
+        "pen": "labelPen",
+        "nam": "vaModel",
+        "def": "[@vaModel:vaModel=%:vaModel=capacitorModel]",
+        "txt": "vaModel=capacitorModel",
+        "val": "capacitorModel",
+        "vis": false,
+        "lt": "NLPLabel",
+        "ht": "12",
+        "al": "Center",
+        "or": "R0",
+        "use": "Instance",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "label",
+        "st": [
+            40,
+            64
+        ],
+        "pen": "labelPen",
+        "nam": "vaModule",
+        "def": "[@vaModule:vaModule=%:vaModule=capacitor]",
+        "txt": "vaModule=capacitor",
+        "val": "capacitor",
+        "vis": false,
+        "lt": "NLPLabel",
+        "ht": "12",
+        "al": "Center",
+        "or": "R0",
+        "use": "Instance",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "label",
+        "st": [
+            40,
+            48
+        ],
+        "pen": "labelPen",
+        "nam": "vaFile",
+        "def": "[@vaFile:vaFile=%:vaFile=C:\\Users\\eskiy\\OneDrive - Revolution Semiconductor\\Projects\\exampleLibraries\\analogLib\\capVa\\cap.va]",
+        "txt": null,
+        "val": null,
+        "vis": false,
+        "lt": "NLPLabel",
+        "ht": "12",
+        "al": "Center",
+        "or": "R0",
+        "use": "Instance",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "label",
+        "st": [
+            160,
+            -16
+        ],
+        "pen": "labelPen",
+        "nam": "instName",
+        "def": "[@instName]",
+        "txt": null,
+        "val": null,
+        "vis": true,
+        "lt": "NLPLabel",
+        "ht": "12",
+        "al": "Center",
+        "or": "R0",
+        "use": "Instance",
+        "loc": [
+            -30.0,
+            0.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "label",
+        "st": [
+            40,
+            32
+        ],
+        "pen": "labelPen",
+        "nam": "cellName",
+        "def": "[@cellName]",
+        "txt": null,
+        "val": null,
+        "vis": true,
+        "lt": "NLPLabel",
+        "ht": "12",
+        "al": "Center",
+        "or": "R0",
+        "use": "Instance",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "attr",
+        "nam": "c",
+        "def": "0"
+    },
+    {
+        "type": "attr",
+        "nam": "XyceNetlistLine",
+        "def": "Ycapacitor [@instName] [@pinList]  capacitorModel [@c:c=%:c=0]"
+    },
+    {
+        "type": "attr",
+        "nam": "pinOrder",
+        "def": "p,n"
+    }
+]

@@ -1,0 +1,83 @@
+[
+    {
+        "cellView": "symbol"
+    },
+    {
+        "type": "label",
+        "st": [
+            0,
+            -10
+        ],
+        "pen": "labelPen",
+        "nam": "instName",
+        "def": "[@instName]",
+        "txt": null,
+        "val": null,
+        "vis": false,
+        "lt": "NLPLabel",
+        "ht": "12",
+        "al": "Left",
+        "or": "R0",
+        "use": "Normal",
+        "loc": [
+            10.0,
+            -40.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "line",
+        "st": [
+            -40,
+            -20
+        ],
+        "end": [
+            20,
+            -20
+        ],
+        "pen": "symbolPen",
+        "loc": [
+            10.0,
+            -30.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "line",
+        "st": [
+            -10,
+            30
+        ],
+        "end": [
+            -10,
+            -20
+        ],
+        "pen": "symbolPen",
+        "loc": [
+            10.0,
+            -30.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "pin",
+        "st": [
+            -10,
+            30
+        ],
+        "pen": "pinPen",
+        "nam": "vdd!",
+        "pd": "Inout",
+        "pt": "Signal",
+        "loc": [
+            10.0,
+            -30.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "attr",
+        "nam": "XyceNetlistPass",
+        "def": "1"
+    }
+]

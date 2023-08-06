@@ -1,0 +1,167 @@
+[
+    {
+        "cellView": "symbol"
+    },
+    {
+        "type": "label",
+        "st": [
+            -10,
+            -90
+        ],
+        "pen": "labelPen",
+        "nam": "b101",
+        "def": "b101",
+        "txt": "b101",
+        "val": null,
+        "vis": true,
+        "lt": "Normal",
+        "ht": "10",
+        "al": "Left",
+        "or": "R0",
+        "use": "Normal",
+        "loc": [
+            0.0,
+            -20.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "label",
+        "st": [
+            0,
+            -80
+        ],
+        "pen": "labelPen",
+        "nam": "cellName",
+        "def": "[@cellName]",
+        "txt": null,
+        "val": "?",
+        "vis": true,
+        "lt": "NLPLabel",
+        "ht": "12",
+        "al": "Left",
+        "or": "R0",
+        "use": "Normal",
+        "loc": [
+            -20.0,
+            -20.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "label",
+        "st": [
+            60,
+            -160
+        ],
+        "pen": "labelPen",
+        "nam": "instName",
+        "def": "[@instName]",
+        "txt": null,
+        "val": "?",
+        "vis": true,
+        "lt": "NLPLabel",
+        "ht": "12",
+        "al": "Left",
+        "or": "R0",
+        "use": "Normal",
+        "loc": [
+            -20.0,
+            -10.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "circle",
+        "cen": [
+            -40,
+            -60
+        ],
+        "end": [
+            -10,
+            -60
+        ],
+        "pen": "symbolPen",
+        "loc": [
+            40.0,
+            -30.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "pin",
+        "st": [
+            -40,
+            -160
+        ],
+        "pen": "pinPen",
+        "nam": "PLUS",
+        "pd": "Inout",
+        "pt": "Signal",
+        "loc": [
+            40.0,
+            -10.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "pin",
+        "st": [
+            -40,
+            20
+        ],
+        "pen": "pinPen",
+        "nam": "MINUS",
+        "pd": "Input",
+        "pt": "Signal",
+        "loc": [
+            40.0,
+            -30.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "line",
+        "st": [
+            -10,
+            -170
+        ],
+        "end": [
+            -10,
+            -120
+        ],
+        "pen": "symbolPen",
+        "loc": [
+            10.0,
+            0.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "line",
+        "st": [
+            -30,
+            -60
+        ],
+        "end": [
+            -30,
+            -10
+        ],
+        "pen": "symbolPen",
+        "loc": [
+            30.0,
+            0.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "attr",
+        "nam": "XyceNetlistLine",
+        "def": "V[@instName] [@pinList]  [@V0:V0=%:V0=0V]  [@VA:VA=%:VA=0V] [@FREQ:FREQ=%] [@TD:TD=%:TD=0]"
+    },
+    {
+        "type": "attr",
+        "nam": "pinOrder",
+        "def": "PLUS, MINUS"
+    }
+]

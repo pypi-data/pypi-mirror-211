@@ -1,0 +1,452 @@
+[
+    {
+        "cellView": "schematic"
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            840,
+            140
+        ],
+        "end": [
+            840,
+            -20
+        ],
+        "pen": "wirePen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": null,
+        "ns": false
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            180,
+            330
+        ],
+        "end": [
+            180,
+            430
+        ],
+        "pen": "wirePen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": null,
+        "ns": false
+    },
+    {
+        "type": "symbolShape",
+        "lib": "analogLib",
+        "cell": "nmos",
+        "view": "symbol",
+        "nam": "I4",
+        "ic": 4,
+        "ld": {
+            "as": [
+                "560n",
+                true
+            ],
+            "m": [
+                "2",
+                true
+            ],
+            "nf": [
+                "2",
+                true
+            ],
+            "w": [
+                "2u",
+                true
+            ],
+            "l": [
+                "0.18u",
+                true
+            ],
+            "instName": [
+                "I4",
+                true
+            ]
+        },
+        "loc": [
+            910.0,
+            200.0
+        ],
+        "ang": 90.0
+    },
+    {
+        "type": "symbolShape",
+        "lib": "analogLib",
+        "cell": "gnd",
+        "view": "symbol",
+        "nam": "I12",
+        "ic": 12,
+        "ld": {
+            "instName": [
+                "I12",
+                false
+            ]
+        },
+        "loc": [
+            840.0,
+            380.0
+        ],
+        "ang": 0.0
+    },
+    {
+        "type": "symbolShape",
+        "lib": "analogLib",
+        "cell": "capVa",
+        "view": "symbol",
+        "nam": "I10",
+        "ic": 10,
+        "ld": {
+            "c": [
+                "1p",
+                true
+            ],
+            "vaModel": [
+                "capacitorModel",
+                false
+            ],
+            "vaModule": [
+                "capacitor",
+                false
+            ],
+            "vaFile": [
+                "/home/eskiyerli/OneDrive_reveda/Projects/exampleLibraries/analogLib/capVa/cap.va",
+                false
+            ],
+            "instName": [
+                "I10",
+                true
+            ],
+            "cellName": [
+                "capVa",
+                true
+            ]
+        },
+        "loc": [
+            100.0,
+            190.0
+        ],
+        "ang": 0.0
+    },
+    {
+        "type": "symbolShape",
+        "lib": "designs",
+        "cell": "higherOrderFilter",
+        "view": "symbol",
+        "nam": "I1",
+        "ic": 1,
+        "ld": {
+            "instName": [
+                "I1",
+                true
+            ],
+            "cellName": [
+                "higherOrderFilter",
+                true
+            ]
+        },
+        "loc": [
+            360.0,
+            -100.0
+        ],
+        "ang": 0.0
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            180,
+            130
+        ],
+        "end": [
+            180,
+            -20
+        ],
+        "pen": "wirePen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": null,
+        "ns": false
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            710,
+            250
+        ],
+        "end": [
+            710,
+            330
+        ],
+        "pen": "wirePen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": "gnd!",
+        "ns": false
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            840,
+            300
+        ],
+        "end": [
+            910,
+            300
+        ],
+        "pen": "wirePen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": "gnd!",
+        "ns": false
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            180,
+            -20
+        ],
+        "end": [
+            240,
+            -20
+        ],
+        "pen": "wirePen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": null,
+        "ns": false
+    },
+    {
+        "type": "text",
+        "st": [
+            430,
+            410
+        ],
+        "pen": "textPen",
+        "tc": "Revolution EDA is the best!",
+        "ff": "Cascadia Mono SemiBold",
+        "fs": "SemiBold",
+        "th": "24",
+        "ta": "Left",
+        "to": "R0",
+        "loc": [
+            -190.0,
+            -30.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            840,
+            250
+        ],
+        "end": [
+            840,
+            380
+        ],
+        "pen": "wirePen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": null,
+        "ns": false
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            300,
+            -20
+        ],
+        "end": [
+            10,
+            -20
+        ],
+        "pen": "wirePen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": null,
+        "ns": false
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            500,
+            -10
+        ],
+        "end": [
+            620,
+            -10
+        ],
+        "pen": "wirePen",
+        "loc": [
+            0.0,
+            -10.0
+        ],
+        "nam": "net0",
+        "ns": false
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            910,
+            250
+        ],
+        "end": [
+            910,
+            300
+        ],
+        "pen": "wirePen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": null,
+        "ns": false
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            710,
+            330
+        ],
+        "end": [
+            840,
+            330
+        ],
+        "pen": "wirePen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": "gnd!",
+        "ns": false
+    },
+    {
+        "type": "schematicPin",
+        "st": [
+            220,
+            30
+        ],
+        "pen": "pinPen",
+        "pn": "INP",
+        "pd": "Input",
+        "pt": "Signal",
+        "loc": [
+            -220.0,
+            -50.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "symbolShape",
+        "lib": "designs",
+        "cell": "higherOrderFilter",
+        "view": "symbol",
+        "nam": "I2",
+        "ic": 2,
+        "ld": {
+            "instName": [
+                "I2",
+                true
+            ],
+            "cellName": [
+                "higherOrderFilter",
+                true
+            ]
+        },
+        "loc": [
+            680.0,
+            -100.0
+        ],
+        "ang": 0.0
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            770,
+            250
+        ],
+        "end": [
+            710,
+            250
+        ],
+        "pen": "wirePen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": null,
+        "ns": false
+    },
+    {
+        "type": "schematicPin",
+        "st": [
+            620,
+            -200
+        ],
+        "pen": "pinPen",
+        "pn": "OUT",
+        "pd": "Input",
+        "pt": "Signal",
+        "loc": [
+            360.0,
+            180.0
+        ],
+        "ang": 0
+    },
+    {
+        "type": "symbolShape",
+        "lib": "analogLib",
+        "cell": "gnd",
+        "view": "symbol",
+        "nam": "I12",
+        "ic": 14,
+        "ld": {
+            "instName": [
+                "I14",
+                false
+            ]
+        },
+        "loc": [
+            180.0,
+            440.0
+        ],
+        "ang": 0.0
+    },
+    {
+        "type": "schematicNet",
+        "st": [
+            820,
+            -20
+        ],
+        "end": [
+            980,
+            -20
+        ],
+        "pen": "wirePen",
+        "loc": [
+            0.0,
+            0.0
+        ],
+        "nam": "OUT",
+        "ns": false
+    }
+]

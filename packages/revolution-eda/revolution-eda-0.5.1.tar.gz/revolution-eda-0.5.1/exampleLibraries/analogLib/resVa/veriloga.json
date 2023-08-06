@@ -1,0 +1,14 @@
+[
+    {
+        "cellView": "veriloga"
+    },
+    {
+        "filePath": "res.va"
+    },
+    {
+        "vaModule": "res1"
+    },
+    {
+        "netlistLine": "Yres1 [@instName] [|p:%] [|n:%]  res1Model [@r:r=%:r=1]"
+    }
+]

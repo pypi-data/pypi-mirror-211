@@ -1,0 +1,30 @@
+`include "disciplines.vams"
+`include "constants.vams"
+module vaVco(in, out) ;
+   electrical in, out ;
+   electrical theta;
+   parameter real amplitude = 1.0 (* type="instance" xyceAlsoModel="yes"*);
+   parameter real centre_frequency = 1000 (* type="instance" xyceAlsoModel="yes" *);
+   parameter real gain = 1000 (* type="instance" xyceAlsoModel="yes" *);
+   parameter integer steps_per_cycle=20 ;
+   analog
+     begin
+        real vin, instantaneousFreq ;
+        real omegac;
+        real omega_gain;
+
+        omegac = 2.0 * `M_PI * centre_frequency;
+        omega_gain = 2.0 * `M_PI * gain ;
+        vin = V(in) ;
+
+        // This is basically a capacitor fed with a current source
+        // the voltage across the capacitor is the integral of the current.
+        I(theta) <+ -(vin*omega_gain+omegac);
+        I(theta) <+ ddt(V(theta));
+
+        instantaneousFreq = centre_frequency + gain * vin ;
+        $bound_step (1.0 / instantaneousFreq / steps_per_cycle) ;
+
+        V(out) <+ amplitude*sin(V(theta));
+     end
+endmodule

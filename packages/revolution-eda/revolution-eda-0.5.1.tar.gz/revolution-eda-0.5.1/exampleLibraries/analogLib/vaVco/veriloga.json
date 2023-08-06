@@ -1,0 +1,14 @@
+[
+    {
+        "cellView": "veriloga"
+    },
+    {
+        "filePath": "vaVco.va"
+    },
+    {
+        "vaModule": "vaVco"
+    },
+    {
+        "netlistLine": "YvaVco [@instName] [@pinList]  vaVcoModel [@amplitude:amplitude=%:amplitude=1.0] [@centre_frequency:centre_frequency=%:centre_frequency=1000] [@gain:gain=%:gain=1000]"
+    }
+]

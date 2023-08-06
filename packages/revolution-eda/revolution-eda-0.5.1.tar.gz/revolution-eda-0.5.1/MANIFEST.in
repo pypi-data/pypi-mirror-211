@@ -1,0 +1,5 @@
+include .env
+recursive-include docs *
+include mozillaPublicLicense.txt
+graft exampleLibraries/analogLib
+graft exampleLibraries/designs 
