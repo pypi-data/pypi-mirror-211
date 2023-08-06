@@ -1,0 +1,9 @@
+[build-system]
+requires = ["setuptools>=64", "wheel", "oldest-supported-numpy", "scipy>=0.13.2", "setuptools_scm>=6.2", "cmake>=3.18"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+write_to = "src/osqp/_version.py"
+
+[tool.pytest.ini_options]
+testpaths = ["src/osqp/tests"]

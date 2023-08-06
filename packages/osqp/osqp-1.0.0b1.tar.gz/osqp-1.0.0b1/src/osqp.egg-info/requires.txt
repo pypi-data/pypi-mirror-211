@@ -1,0 +1,16 @@
+numpy>=1.7
+scipy>=0.13.2
+qdldl
+jinja2
+
+[cuda]
+osqp-cuda
+
+[dev]
+pytest>=6
+torch
+numdifftools
+pre-commit
+
+[mkl]
+osqp-mkl
