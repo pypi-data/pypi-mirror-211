@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: fabric-virt-tools
+Version: 1.0.0b1
+Summary: Fabric Aggregate Manager Handlers
+Keywords: Fabric Virtual Machine Tools
+Author-email: Komal Thareja <kthare10@renci.org>
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: libvirt-python
+Requires-Dist: psutil
+Requires-Dist: click
+Requires-Dist: pytest ; extra == "test"
+Project-URL: Home, https://fabric-testbed.net/
+Project-URL: Sources, https://github.com/fabric-testbed/VirtTools
+Provides-Extra: test
+
+[![PyPI](https://img.shields.io/pypi/v/virt-tools?style=plastic)](https://pypi.org/project/virt-tools/)
+
+
+# FABRIC TESTBED LibVert ToolsCLI
+
+## Overview
+This package supports User facing APIs as well as CLI.
+- Cpu: vCPU management for the VMs
+- Numa: Numa management for the VMs
+
