@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: easypip
+Version: 1.2.0
+Summary: Allows easier and lighter pip install within notebooks
+Author-email: Benjamin Piwowarski <benjamin@piwowarski.fr>
+Project-URL: homepage, https://github.com/bpiwowar/easypip
+Description-Content-Type: text/markdown
+
+# easypip
+
+Ease the import / installation of packages in python and especially in notebooks
+
+Usage
+```
+from easypip import easyimport
+
+torch = easyimport("torch >= 1.8.0")
+```
