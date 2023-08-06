@@ -1,0 +1,8 @@
+setup.py
+brunospackage/__init__.py
+brunospackage/functions.py
+brunospackage.egg-info/PKG-INFO
+brunospackage.egg-info/SOURCES.txt
+brunospackage.egg-info/dependency_links.txt
+brunospackage.egg-info/requires.txt
+brunospackage.egg-info/top_level.txt
