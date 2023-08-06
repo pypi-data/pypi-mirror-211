@@ -1,0 +1,8 @@
+Change Log
+==================
+
+1.0.4 (30/05/2023)
+------------------
+- Modified Documentation
+- Modified classes to adapt ANN model.
+- Created `model_utils` package.
