@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+siconfig/ErrorTypes.py
+siconfig/__init__.py
+siconfig/siconfig.py
+siconfig.egg-info/PKG-INFO
+siconfig.egg-info/SOURCES.txt
+siconfig.egg-info/dependency_links.txt
+siconfig.egg-info/top_level.txt
