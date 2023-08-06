@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "jsa"
+version = "0.6.0"
+description = ""
+authors = ["Jack Delahunt <45426048+jackdelahunt@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "jsa"}]
+include = [
+    { path = "jsa/client/**/*", format=["sdist", "wheel"] },
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+microsoft-kiota-abstractions = "^0.5.1"
+microsoft-kiota-http = "^0.4.3"
+microsoft-kiota-serialization-json = "^0.3.4"
+microsoft-kiota-serialization-text = "^0.2.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.3.1"
+
+[tool.pytest.ini_options]
+pythonpath = [ "jsa" ]
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
