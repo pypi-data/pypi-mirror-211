@@ -1,0 +1,6 @@
+[console_scripts]
+anygpt-prepare-data = anyGPT.data.prepare_data:main
+anygpt-pretrain = anyGPT.training.pretrain:main
+anygpt-rl-train = anyGPT.training.rl_train:main
+anygpt-run = anyGPT.inference.run:main
+anygpt-serve = anyGPT.service.app:main
