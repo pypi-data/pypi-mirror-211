@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: pykrak
+Version: 2.0.1
+Summary: Normal mode wave equation solver for stratified fluids
+Home-page: https://github.com/hunterakins/pykrak
+Author: F. Hunter Akins
+Author-email: fakins@ucsd.edu
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Python: >=3.7, <4
