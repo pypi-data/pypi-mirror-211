@@ -1,0 +1,9 @@
+pop_llm/__init__.py,sha256=xMxHeT9GnAaYwPeXWYcgkuKaUJ-E3WfZfQOLYwoOltI,29
+pop_llm/chat_agent.py,sha256=lQQySDAePyDHcc1qJ09sU1W4PiWiqmC0-3TyUKuIHhk,12589
+pop_llm/pop.py,sha256=DlC-jEpedNBq81ZOYPw7CkW08xMUjL6tOX7vu4_R4qo,2682
+pop_llm/prompts.py,sha256=e41IE2ChO6wFLMnhOMEQdjNZ_JsH7dTo6Ho4SbCpvac,1689
+pop_llm-0.0.4.dist-info/LICENSE,sha256=Fo4W8Hy8OvIs993MwbH_R2MMROazDWrXhZc2ylxND30,1065
+pop_llm-0.0.4.dist-info/METADATA,sha256=jZo1hF4ks2HmW-yflUl5sMwB7aXHerMwjlPXnCd-Rks,1911
+pop_llm-0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pop_llm-0.0.4.dist-info/top_level.txt,sha256=t5nAg9l6hOxiHFg065so3Gq_UaZqCEgt2RYjcfz4Boc,8
+pop_llm-0.0.4.dist-info/RECORD,,
