@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: minidevice
+Version: 1.0.0
+Summary: Android Auto Pypi
+Home-page: https://www.python.org/
+Author: KateTseng
+Author-email: Kate.TsengK@outlook.com
+License: MIT
+Keywords: game
+Platform: UNKNOWN
+Requires-Python: >=3
+Requires-Dist: opencv-python (>=4.7.0.72)
+Requires-Dist: uiautomator2 (>=2.16.23)
+
+UNKNOWN
+
