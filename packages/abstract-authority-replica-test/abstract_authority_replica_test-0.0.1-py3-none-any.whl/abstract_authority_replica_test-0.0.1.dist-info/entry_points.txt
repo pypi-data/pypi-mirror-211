@@ -1,0 +1,2 @@
+[console_scripts]
+abstract_authority_replica_test = abstract_authority_replica_test.main:main
