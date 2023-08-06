@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: kevbits
+Version: 0.5.0
+Summary: Small helper functions and objects
+Author: Evgeny Klunko
+Author-email: eklunko@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+## Steps to release a new package version
+* Run tests, linter, formatter, ...: `poetry run pytest (pylint, black, ...)`
+* Bump project's version: `poetry version ...`
+* Build: `poetry build`
+* Publish: `poetry publish`
+
