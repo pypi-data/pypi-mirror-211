@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+omc_sdk.egg-info/PKG-INFO
+omc_sdk.egg-info/SOURCES.txt
+omc_sdk.egg-info/dependency_links.txt
+omc_sdk.egg-info/top_level.txt
