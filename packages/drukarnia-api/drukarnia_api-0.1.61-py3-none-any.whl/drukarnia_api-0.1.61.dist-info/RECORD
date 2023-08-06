@@ -1,0 +1,10 @@
+drukarnia_api/__init__.py,sha256=fulNrkiFat8pcQ7EH6RQnzmfLFVf-35k7vCafPO_O9o,100
+drukarnia_api/article.py,sha256=nOzPxpggLButSJsiJ_t6ohCQykb-JgJJ56VNUWdVtTE,569
+drukarnia_api/author.py,sha256=TK3cJOO8ItA4BH9TW2jvTJSGiCWYiGvG9mOgQtxIn9o,3264
+drukarnia_api/connection.py,sha256=LBVlc_cHOpVNkgL-17aUDrRSJemD7kcIM8v7C3wTMqs,680
+drukarnia_api/drukarnia_api.py,sha256=Il_GkcAUnpiT2VRkiDyLXicODX5pW5-l6fF3gr0UGLA,890
+drukarnia_api-0.1.61.dist-info/LICENSE,sha256=haxq1bbnxfkKej3Xmn8lIZ70XgFfz8q13grK6yQfKMY,1063
+drukarnia_api-0.1.61.dist-info/METADATA,sha256=tJfz2p19v3HLcdM6u3SFO5EG9yx25PVL18LZBkztedw,2385
+drukarnia_api-0.1.61.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+drukarnia_api-0.1.61.dist-info/top_level.txt,sha256=T3c9xnST3cKZbtOqe7nKs5jfrb31GucBGzI2vdK61SU,14
+drukarnia_api-0.1.61.dist-info/RECORD,,
