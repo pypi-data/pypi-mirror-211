@@ -1,0 +1,6 @@
+biopython
+numpy
+pandas
+PyVCF3
+matplotlib
+matplotlib_venn
