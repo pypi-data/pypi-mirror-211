@@ -1,0 +1,9 @@
+README.md
+setup.py
+wordpress_auth/__init__.py
+wordpress_auth/wordpress_auth.py
+wordpress_auth.egg-info/PKG-INFO
+wordpress_auth.egg-info/SOURCES.txt
+wordpress_auth.egg-info/dependency_links.txt
+wordpress_auth.egg-info/requires.txt
+wordpress_auth.egg-info/top_level.txt
