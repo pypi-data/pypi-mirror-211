@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+legal_documents_cn/__init__.py
+legal_documents_cn/apitest.py
+legal_documents_cn/criminal_law.csv
+legal_documents_cn/criminal_law_cn.py
+legal_documents_cn/process_data.py
+legal_documents_cn/run_start_api.py
+legal_documents_cn/start_api.py
+legal_documents_cn.egg-info/PKG-INFO
+legal_documents_cn.egg-info/SOURCES.txt
+legal_documents_cn.egg-info/dependency_links.txt
+legal_documents_cn.egg-info/requires.txt
+legal_documents_cn.egg-info/top_level.txt
