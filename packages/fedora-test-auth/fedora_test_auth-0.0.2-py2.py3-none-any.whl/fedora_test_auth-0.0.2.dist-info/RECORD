@@ -1,0 +1,14 @@
+test_auth/__init__.py,sha256=6s2MS_uTBPDzQ4K8OFXYnGWLpMh9EFdzwils1MCHORQ,517
+test_auth/defaults.py,sha256=HzEfv8fIl7ljlbaeuRXw6BPoQUllmbt6a5MAQWHhZXQ,490
+test_auth/utilities.py,sha256=UDAwkVIcPtdAyCLSX5Pxp2bib8_44PgwgTSA21ItN1E,459
+test_auth/oidc/__init__.py,sha256=4MavXiSMbj2-SWhZrF8gqKZZzMBQCXbp6YIAwnrtOU8,2121
+test_auth/oidc/templates/home.html,sha256=7g0ZIFhEM6Eqd5HafOCA2HmVBFM2c66dIetDKfN6__M,116
+test_auth/openid/__init__.py,sha256=kp3yVa3uCjVU_oIqARjyXKRtsWIWoxqyyYLaooiEg7U,1356
+test_auth/openid/templates/home.html,sha256=lMCfjfvMREaE8OYMT9dvzozQMyMkxLFQ-ehS5lsuUgk,120
+test_auth/templates/main.html,sha256=D_V3-1OHI2SS1n9z45aZdbzm-Etd4vVUGon6D3TVxsg,2822
+test_auth/templates/root.html,sha256=NbQKwM_d6SRb_294cZ3ZM1toxVMM525RIQCzM8b2z2M,118
+fedora_test_auth-0.0.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+fedora_test_auth-0.0.2.dist-info/METADATA,sha256=bZMWtVOTLLEKcuoHEfYmBFigQK3Xooy1WCllxgf3pOE,1817
+fedora_test_auth-0.0.2.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+fedora_test_auth-0.0.2.dist-info/top_level.txt,sha256=7u2HiovbWOELvCRgXmojQ-0YVDhWkIixvuW-FTcmeaw,10
+fedora_test_auth-0.0.2.dist-info/RECORD,,
