@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/chug/__init__.py
+src/chug.egg-info/PKG-INFO
+src/chug.egg-info/SOURCES.txt
+src/chug.egg-info/dependency_links.txt
+src/chug.egg-info/requires.txt
+src/chug.egg-info/top_level.txt
+src/chug/torchdata/__init__.py
+src/chug/webdataset/__init__.py
