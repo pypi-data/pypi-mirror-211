@@ -1,0 +1,13 @@
+pmemo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pmemo/custom_select.py,sha256=3e4oLGhDIa0ulTuiz43qiEZsiIF2yOlCCVFbePKvMn0,4942
+pmemo/main.py,sha256=vC206m55CCTo3x1R3Xef-kdrujAVBLqUdjKpVwS1muY,5440
+pmemo/memo.py,sha256=T_W7fsgwIN4SuZ9TmTY6Url8LIYNu9Rrz9v2EhSVw5I,5266
+pmemo/openai_completion.py,sha256=lGy9CjzJgu5yhSMwyff9jSlJgOTEzdqo9Dquoe_S7OY,3205
+pmemo/pmemo_editor.py,sha256=97wt6LegHz8Y6y-nnQmvjvs8fY8cnCvhXo7E_cPyafI,9687
+pmemo/preferences.py,sha256=WLQWmU91eTskWZ2qD9zcKVN60bOjfEYLMLO9k5UFlC8,2415
+pmemo/utils.py,sha256=GQgJ2uFRca1xn0IfC0h6Tz6peVg2y8cs1u7R8oaHO8M,667
+pmemo-0.3.0.dist-info/LICENSE,sha256=yDAGRbsikbiwNt9vCBzH0tOY3HAi2Q9NDcwkqGCQ29c,1065
+pmemo-0.3.0.dist-info/METADATA,sha256=6DoIpXDjmTW0YIL3iuizkNhHzAvn0sbwtC798vENa6g,3558
+pmemo-0.3.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+pmemo-0.3.0.dist-info/entry_points.txt,sha256=GgxN_WVtCm1X--IhWp4AH8dU5zHn0sCquqGG5Qw0Cyc,38
+pmemo-0.3.0.dist-info/RECORD,,
