@@ -1,0 +1,12 @@
+tqdm
+pyyaml
+Pillow
+flask
+flask_socketio
+
+[dev]
+tqdm
+pyyaml
+Pillow
+flask
+flask_socketio

@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+pyaipersonality/__init__.py
+pyaipersonality/binding.py
+pyaipersonality/langchain_integration.py
+pyaipersonality/server.py
+pyaipersonality.egg-info/PKG-INFO
+pyaipersonality.egg-info/SOURCES.txt
+pyaipersonality.egg-info/dependency_links.txt
+pyaipersonality.egg-info/requires.txt
+pyaipersonality.egg-info/top_level.txt
