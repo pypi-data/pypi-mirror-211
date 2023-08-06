@@ -1,0 +1,10 @@
+MANIFEST.in
+README.rst
+fakeldap.py
+pyproject.toml
+setup.cfg
+fakeldap.egg-info/PKG-INFO
+fakeldap.egg-info/SOURCES.txt
+fakeldap.egg-info/dependency_links.txt
+fakeldap.egg-info/requires.txt
+fakeldap.egg-info/top_level.txt
