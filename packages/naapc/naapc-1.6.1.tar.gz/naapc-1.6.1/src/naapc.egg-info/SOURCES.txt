@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/naapc/__init__.py
+src/naapc/nconfig.py
+src/naapc/ndict.py
+src/naapc.egg-info/PKG-INFO
+src/naapc.egg-info/SOURCES.txt
+src/naapc.egg-info/dependency_links.txt
+src/naapc.egg-info/requires.txt
+src/naapc.egg-info/top_level.txt
+test/test.py
