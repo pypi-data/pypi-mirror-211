@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+[project]
+name = "hf-chat"
+authors = [
+    { name = "Vladislav Lyubimov", email = "grifon7676@gmail.com" },
+]
+dynamic = ["version"]
+description = "Unofficial Huggingface chat async wrapper for reverse engineered api"
+dependencies = ["aiohttp"]
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.hatch.version]
+path = "src/hf_chat/__init__.py"
+
+[project.urls]
+"Homepage" = "https://github.com/LyubimovVladislav/hf-chat"
+"Bug Tracker" = "https://github.com/LyubimovVladislav/hf-chat/issues"
