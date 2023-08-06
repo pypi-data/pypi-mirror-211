@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: markdown-to-json
+Version: 1.1.0
+Home-page: https://github.com/njvack/bids-json-writer
+Author: Nathan Vack
+Author-email: njvack@wisc.edu
+License: MIT
+License-File: LICENSE
