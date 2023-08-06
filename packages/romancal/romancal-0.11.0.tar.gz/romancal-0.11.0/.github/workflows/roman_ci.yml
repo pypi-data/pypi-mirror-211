@@ -1,0 +1,89 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+      - '*x'
+    tags:
+      - '*'
+  pull_request:
+    branches:
+      - main
+  schedule:
+    # Weekly Monday 9AM build
+    - cron: "0 9 * * 1"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  crds:
+    name: retrieve current CRDS context
+    runs-on: ubuntu-latest
+    env:
+      OBSERVATORY: roman
+      CRDS_SERVER_URL: https://roman-crds-test.stsci.edu
+      CRDS_PATH: /tmp/crds_cache
+    steps:
+      - id: context
+        run: >
+          echo "pmap=$(
+          curl -s -X POST -d '{"jsonrpc": "1.0", "method": "get_default_context", "params": ["${{ env.OBSERVATORY }}"], "id": 1}' ${{ env.CRDS_SERVER_URL }}/json/ |
+          python -c "import sys, json; print(json.load(sys.stdin)['result'])"
+          )" >> $GITHUB_OUTPUT
+        # Get default CRDS_CONTEXT without installing crds client
+        # See https://hst-crds.stsci.edu/static/users_guide/web_services.html#generic-request
+      - id: path
+        run: echo "path=${{ env.CRDS_PATH }}" >> $GITHUB_OUTPUT
+      - id: server
+        run: echo "url=${{ env.CRDS_SERVER_URL }}" >> $GITHUB_OUTPUT
+    outputs:
+      context: ${{ steps.context.outputs.pmap }}
+      path: ${{ steps.path.outputs.path }}
+      server: ${{ steps.server.outputs.url }}
+  check:
+    uses: OpenAstronomy/github-actions-workflows/.github/workflows/tox.yml@v1
+    with:
+      envs: |
+        - linux: check-style
+        - linux: check-dependencies
+        - linux: build-dist
+  test:
+    uses: OpenAstronomy/github-actions-workflows/.github/workflows/tox.yml@main
+    needs: [ crds ]
+    with:
+      setenv: |
+        CRDS_PATH: ${{ needs.crds.outputs.path }}
+        CRDS_SERVER_URL: ${{ needs.crds.outputs.server }}
+        CRDS_CLIENT_RETRY_COUNT: 3
+        CRDS_CLIENT_RETRY_DELAY_SECONDS: 20
+        DD_SERVICE: romancal
+        DD_ENV: ci
+        DD_GIT_REPOSITORY_URL: ${{ github.repositoryUrl }}
+        DD_GIT_COMMIT_SHA: ${{ github.sha }}
+        DD_GIT_BRANCH: ${{ github.ref_name }}
+      cache-path: /tmp/crds_cache
+      cache-key: crds-${{ needs.crds_context.outputs.pmap }}
+      envs: |
+        - linux: test-oldestdeps-cov-xdist
+          python-version: 3.9
+          pytest-results-summary: true
+        - linux: test-xdist
+          python-version: 3.9
+          pytest-results-summary: true
+        - linux: test-xdist
+          python-version: 3.10
+          pytest-results-summary: true
+        - linux: test-xdist-ddtrace
+          python-version: 3.11
+          pytest-results-summary: true
+        - macos: test-xdist-ddtrace
+          python-version: 3.11
+          pytest-results-summary: true
+        - linux: test-devdeps-xdist
+          pytest-results-summary: true
+        - linux: test-cov-xdist
+          coverage: codecov
+          pytest-results-summary: true

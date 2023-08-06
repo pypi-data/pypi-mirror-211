@@ -1,0 +1,8 @@
+[console_scripts]
+okify_regtests = romancal.scripts.okify_regtests:main
+schema_editor = romancal.scripts.schema_editor:main
+schemadoc = romancal.scripts.schemadoc:main
+verify_install_requires = romancal.scripts.verify_install_requires:main
+
+[stpipe.steps]
+romancal = romancal.stpipe.integration:get_steps
