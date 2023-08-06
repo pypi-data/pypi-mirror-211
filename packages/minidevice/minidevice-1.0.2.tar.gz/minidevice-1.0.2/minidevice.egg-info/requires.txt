@@ -1,0 +1,3 @@
+opencv-python>=4.7.0.72
+uiautomator2>=2.16.23
+pyminitouch>=0.3.3
