@@ -1,0 +1,1 @@
+{"buildTargets":["branch","build","docs","lint","porcelain","publish","reformat","test","tests"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}

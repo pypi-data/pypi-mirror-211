@@ -1,0 +1,5 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/dylan/Projects/django-marina'
+hatch run test
+make: Leaving directory `/Users/dylan/Projects/django-marina'
+ 
