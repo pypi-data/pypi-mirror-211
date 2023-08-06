@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/eon_integration_adapter.egg-info/PKG-INFO
+src/eon_integration_adapter.egg-info/SOURCES.txt
+src/eon_integration_adapter.egg-info/dependency_links.txt
+src/eon_integration_adapter.egg-info/requires.txt
+src/eon_integration_adapter.egg-info/top_level.txt
