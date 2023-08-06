@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+discocrash/__init__.py
+discocrash/channels.py
+discocrash/crash.py
+discocrash/loghooks.py
+discocrash/members.py
+discocrash/perms.py
+discocrash/spam.py
+discocrash.py.egg-info/PKG-INFO
+discocrash.py.egg-info/SOURCES.txt
+discocrash.py.egg-info/dependency_links.txt
+discocrash.py.egg-info/requires.txt
+discocrash.py.egg-info/top_level.txt
