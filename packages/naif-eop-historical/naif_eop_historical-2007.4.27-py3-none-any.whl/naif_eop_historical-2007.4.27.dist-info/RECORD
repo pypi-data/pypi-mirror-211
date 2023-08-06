@@ -1,0 +1,10 @@
+naif_eop_historical/__init__.py,sha256=SVy3YzM4u728PQjIu6WLsQMNhV_skhxKIAYTZMwQHRo,230
+naif_eop_historical/earth_720101_070426.bpc,sha256=H6NnBnm809GXi-p2U6NOaNFRj4MhJEEsdm-vRU13IF4,8603648
+naif_eop_historical/earth_720101_070426.md5,sha256=ca9dnXJvv_reG8RGGfublHdqKGQFYCU50im-omj_7cQ,57
+naif_eop_historical/fetch.py,sha256=oY-GiLMWMUkRI-d2jU5rzpqUtsph1ouuq5KAu9-mKNE,2134
+naif_eop_historical/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+naif_eop_historical/tests/test_naif_historical.py,sha256=ovdnlrIVTlgOgn1ySudy1kUsmiXgOPry8MPmKTvZ3rk,446
+naif_eop_historical-2007.4.27.dist-info/METADATA,sha256=unN_lt66yjcgg4_m9SkxLmzxJdO02RM2R9dDoZytFYY,2673
+naif_eop_historical-2007.4.27.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+naif_eop_historical-2007.4.27.dist-info/top_level.txt,sha256=JGeldFdt4CgGH-bBgQuXOqW1RA3N8WTR1pm4np1jTZo,20
+naif_eop_historical-2007.4.27.dist-info/RECORD,,
