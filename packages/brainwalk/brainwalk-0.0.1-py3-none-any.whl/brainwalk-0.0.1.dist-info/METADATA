@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: brainwalk
+Version: 0.0.1
+Summary: Spatial graph embeddings for ObsidianMD
+Home-page: https://github.com/TesfaAsmara/brainwalk
+Author: tesfaasmara
+Author-email: 57428343+TesfaAsmara@users.noreply.github.com
+License: Apache Software License 2.0
+Keywords: nbdev jupyter notebook python
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: networkx
+Requires-Dist: numpy
+Requires-Dist: gensim
+Requires-Dist: editdistance
+Provides-Extra: dev
+
+# brainwalk
+
+::: {.cell 0=‘h’ 1=‘i’ 2=‘d’ 3=‘e’}
+
+``` python
+from brainwalk.core import *
+```
+
+:::
+
+> Spatial graph embeddings for ObsidianMD
+
+This file will become your README and also the index of your
+documentation.
+
+## Install
+
+``` sh
+pip install brainwalk
+```
+
+## How to use
