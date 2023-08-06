@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+RWexptest/_init_.py
+RWexptest/example.py
+RWexptest/mnist.py
+RWexptest/toml.py
+RWexptest.egg-info/PKG-INFO
+RWexptest.egg-info/SOURCES.txt
+RWexptest.egg-info/dependency_links.txt
+RWexptest.egg-info/requires.txt
+RWexptest.egg-info/top_level.txt
