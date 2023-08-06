@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ippython
+Version: 0.0.2
+Summary: A package that provides functions to retrieve IP geolocation information.
+Home-page: UNKNOWN
+Author: Aneko
+Author-email: anekobtww@gmail.com
+License: UNKNOWN
+Keywords: python,ip,geography,city,country
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: requests
+Requires-Dist: bs4
+
+UNKNOWN
+
