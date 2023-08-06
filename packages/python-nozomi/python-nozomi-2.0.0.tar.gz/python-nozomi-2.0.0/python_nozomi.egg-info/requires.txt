@@ -1,0 +1,5 @@
+requests
+dacite
+
+[dev]
+pytest
