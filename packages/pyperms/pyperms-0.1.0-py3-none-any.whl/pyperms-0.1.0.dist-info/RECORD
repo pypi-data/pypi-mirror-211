@@ -1,0 +1,16 @@
+pyperms/__init__.py,sha256=gmpNrUl2-1PZHoBpmFgebW31GQZVbxwm1WvVKddRdUY,191
+pyperms/builder.py,sha256=oeDmgDFSVsx4WDWUle4MTQ8p1WVLTcXXLuE48V90O2E,1500
+pyperms/conditions/__init__.py,sha256=NrQt2j2Ra4lSCNKwqwfrMC3pWKtCjJK9iN3U_fcxus0,62
+pyperms/conditions/attribute.py,sha256=xITJ8Hi8BHQfRRvjHMrNcLxhJykW7CtDYKxllWwC0p4,521
+pyperms/conditions/base.py,sha256=GX9Ng9Svk0-klspCeIXZJWCmXvlUuINAK7oSDFnKH08,1714
+pyperms/conditions/operators.py,sha256=nDiMWQ2zPYvRAA5vUrVcvVGsnMHk0EVE8BH68RwKcxE,1921
+pyperms/conditions/types.py,sha256=bqdhkd7yAnZ8vNw0GghI8SwstS7pzMPEz04Glc2Ibj0,65
+pyperms/conditions/utils.py,sha256=8DYUVZq2YeZ_BDtl3Xuw-_ZY0VnoPyIeZjmgCr2ACX4,223
+pyperms/permissions.py,sha256=y-b73pe4zueHoUOEPOQADlrhj8WGiKx0fz09r02Lzi4,1261
+pyperms/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyperms/rule.py,sha256=FZ63MJyJzeAY2GUu1cgiii8dR0AqA7n6-WZ23ka0Ge0,1526
+pyperms/types.py,sha256=Oq7O32KIoduWKyISEjaJJ3c9fFWv8_HA5P7tYkY5iyo,110
+pyperms-0.1.0.dist-info/LICENSE,sha256=veDqyDC3lwe2xOd9PYNh9grzhcARDJcAazBL9NgtyYs,1063
+pyperms-0.1.0.dist-info/METADATA,sha256=LSgGy4rR1nzfYkYI-yfH32hfEWc0uOcxNe3cmkn23pE,5192
+pyperms-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+pyperms-0.1.0.dist-info/RECORD,,
