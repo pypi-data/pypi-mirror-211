@@ -1,0 +1,2 @@
+[console_scripts]
+argon_88_sk = argon_88_sk.lib:main
