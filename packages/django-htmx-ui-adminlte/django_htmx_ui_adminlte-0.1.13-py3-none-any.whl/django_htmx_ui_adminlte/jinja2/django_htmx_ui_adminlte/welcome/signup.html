@@ -1,0 +1,80 @@
+{% from "django_htmx_ui_adminlte/macros/callouts.html" import callout %}
+
+<div class="register-box">
+    {% include 'django_htmx_ui_adminlte/welcome/logo.html' %}
+    <div class="card">
+        <div class="card-body register-card-body">
+            {% if success %}
+            <div class="row">
+                <div class="col-12 text-center">
+                    <span class="big-icon text-success"><i class="far fa-check-circle"></i></span>
+                    <p>Your account is ready! You can now <a href="{{ url('django_htmx_ui_adminlte:welcome:login') }}">login</a>.</p>
+                </div>
+            </div>
+            {% elif invalid %}
+            <div class="row">
+                <div class="col-12 text-center">
+                    <span class="big-icon text-danger"><i class="far fa-times-circle"></i></span>
+                    <p>This signup voucher is not valid.</p>
+                </div>
+            </div>
+            {% else %}
+            <p class="login-box-msg">Register a new membership</p>
+            <form name="signup">
+                <div class="form-group" x-data="{ is_invalid: {{ 'true' if form.email.errors else 'false' }} }">
+                    <div class="input-group mb-3" :class="{ 'is-invalid': is_invalid }">
+                        {{ form.email }}
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-envelope"></span>
+                            </div>
+                        </div>
+                    </div>
+                    {{ form.email.errors }}
+                </div>
+                <div class="form-group" x-data="{ is_invalid: {{ 'true' if form.password1.errors else 'false' }} }">
+                    <div class="input-group mb-3" :class="{ 'is-invalid': is_invalid }">
+                        {{ form.password1 }}
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-lock"></span>
+                            </div>
+                        </div>
+                    </div>
+                    {{ form.password1.errors }}
+                </div>
+                <div class="form-group" x-data="{ is_invalid: {{ 'true' if form.password2.errors else 'false' }} }">
+                    <div class="input-group mb-3" :class="{ 'is-invalid': is_invalid }">
+                        {{ form.password2 }}
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-lock"></span>
+                            </div>
+                        </div>
+                    </div>
+                    {{ form.password2.errors }}
+                </div>
+                {% if form.non_field_errors() %}
+                {% call callout(type='danger', class="is-invalid text-danger py-1") %}
+                    <span class="is-invalid"></span>
+                    {{ form.non_field_errors() }}
+                {% endcall %}
+                {% endif %}
+                <div class="row">
+                    <div class="col-8">
+                    </div>
+
+                    <div class="col-4">
+                        <button type="submit" class="btn btn-primary btn-block"
+                                hx-post="#"
+                                hx-target="#page"
+                                hx-trigger="click">Register</button>
+                    </div>
+
+                </div>
+            </form>
+            {% endif %}
+        </div>
+
+    </div>
+</div>
