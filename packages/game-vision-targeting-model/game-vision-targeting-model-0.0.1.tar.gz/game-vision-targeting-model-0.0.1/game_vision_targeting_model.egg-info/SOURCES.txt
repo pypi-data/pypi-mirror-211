@@ -1,0 +1,5 @@
+pyproject.toml
+game_vision_targeting_model.egg-info/PKG-INFO
+game_vision_targeting_model.egg-info/SOURCES.txt
+game_vision_targeting_model.egg-info/dependency_links.txt
+game_vision_targeting_model.egg-info/top_level.txt
