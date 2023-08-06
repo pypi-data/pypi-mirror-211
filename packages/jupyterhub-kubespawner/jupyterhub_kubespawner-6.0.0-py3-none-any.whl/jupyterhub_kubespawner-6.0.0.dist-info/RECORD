@@ -1,0 +1,16 @@
+jupyterhub_config.py,sha256=LEByWN8RPYgn_xkNaw7BLqp1Cou6yd-dCNdyY4THLa8,4305
+docs/source/conf.py,sha256=waRJZV9ihcofR8Dc5IznWm88I9M5Sq-ctRjGLDuWk6M,3310
+kubespawner/__init__.py,sha256=NtaKhitJt4f6ZS8s87_wPLjDNXEPYcgUcwVwBWpFXjw,511
+kubespawner/_version.py,sha256=uYvS_jdBk2KVYYYlDz5ox5_hlwmNTJaOtz4FiNiR0PU,154
+kubespawner/clients.py,sha256=41ztdOxOHO7hy-A99C9QlW3u531PJ6GGcxuHnQIXBCg,3733
+kubespawner/objects.py,sha256=GH3n3FVoGC5JaO7IIOrQlMpuVoZTP6JrLGBFvn04e4U,37969
+kubespawner/proxy.py,sha256=t24h4mszA0FLkabzFiVsoZHBz4xaz7klh47MK9qLYrM,22365
+kubespawner/reflector.py,sha256=l4dQw50q0AC22PLi82eSg3ibYFR7bYw4W8SZjzrsDwQ,16100
+kubespawner/spawner.py,sha256=aCQmz71jaTPRCQCxAjxiOi1m2s4qGsp3XJx6p5fJm50,124127
+kubespawner/utils.py,sha256=FrGV11bG_-RPEy_MkVWvPXyn5C-Sw2-ubvGut_Mwuqg,8415
+kubespawner/templates/form.html,sha256=ghtdMvNXByuT9bE10u0UVBG-ce2KDePEIzoeGb6IpgI,1841
+kubespawner/templates/style.css,sha256=dWGwTyIt3PJ6Tm-tmPn-Y55R3yZjiTVR6DbnvcNMWT0,636
+jupyterhub_kubespawner-6.0.0.dist-info/METADATA,sha256=FokVUEnfiwBonvd8ZDdP_Gdmkiyzw4CTLu4HUXAJT9I,8117
+jupyterhub_kubespawner-6.0.0.dist-info/WHEEL,sha256=y1bSCq4r5i4nMmpXeUJMqs3ipKvkZObrIXSvJHm1qCI,87
+jupyterhub_kubespawner-6.0.0.dist-info/licenses/LICENSE,sha256=iHnKwx1qJa6IAYBWnqTYDKmyTqnnOnO1YEqXEfF0Sik,1528
+jupyterhub_kubespawner-6.0.0.dist-info/RECORD,,
