@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/sysml2py/__init__.py
+src/sysml2py/formatting.py
+src/sysml2py/types.py
+src/sysml2py.egg-info/PKG-INFO
+src/sysml2py.egg-info/SOURCES.txt
+src/sysml2py.egg-info/dependency_links.txt
+src/sysml2py.egg-info/top_level.txt
+src/sysml2py/textx/xtext_to_textx.py
