@@ -1,0 +1,9 @@
+pandas
+numpy
+scipy
+plotly
+igraph
+scikit-learn
+pyarrow
+urllib3
+requests
