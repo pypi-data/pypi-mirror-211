@@ -1,0 +1,10 @@
+mzarr/__init__.py,sha256=jiXBM7xjaKIiRp6FrvQiXzIGNKLxhAgljJSHRqOyDAk,145
+mzarr/mzarr.py,sha256=l74nvNMgdfl3p46fiXweY_8MhYdwACBcunce986Zhgg,11483
+mzarr/nifti2mzarr.py,sha256=jnLKgThyscYctcj4vlsFXNErvDVSG1tEVMJO2_2cq5A,5483
+mzarr/tiff2mzarr.py,sha256=8Ky58iVm_i5x7N_fT4aiHLciJHTj3k8KJKqgKmPtLWY,3390
+mzarr/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mzarr-0.0.4.dist-info/LICENSE,sha256=CUvt2ilcBwKAfRAnoA4RNPTLcdUj3En21LPK9YkFMGg,11358
+mzarr-0.0.4.dist-info/METADATA,sha256=tmzG6r8o4pRf3jPl4YUp2okIPdvVvKqsFbMV1YHu2pM,5910
+mzarr-0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+mzarr-0.0.4.dist-info/top_level.txt,sha256=U3UMDP_8YXV4E3_OSszmQ_ai6N5w-npkjP3rXfR9FPo,6
+mzarr-0.0.4.dist-info/RECORD,,
