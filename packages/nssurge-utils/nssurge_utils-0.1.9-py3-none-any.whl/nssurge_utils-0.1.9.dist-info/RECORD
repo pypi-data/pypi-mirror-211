@@ -1,0 +1,14 @@
+nssurge_utils/__init__.py,sha256=2uYVJ4eLF8kKOzfX6k2Go3u7xIwcGSuemAueAoXn-5o,22
+nssurge_utils/add_to_section.py,sha256=R2wTPCgNDSAGkaWB3mCl2XidZ4mCCRAEVsIaiDKi9UI,3964
+nssurge_utils/config.py,sha256=XPRVIzYgYdTHbNB1JnymrRSF09B3I84VM3ZjADO-yL8,815
+nssurge_utils/data/countryFlagsNamesAndDialCodes.json,sha256=-hZe6qZf1Zk5eYikcxVlDyXWzB4o2BiRmU2527t--k4,25596
+nssurge_utils/extract_proxy.py,sha256=ou5G0qOagSoWFBvOFOwUP20eLCir4cbi1DHRRidUs3o,8701
+nssurge_utils/parsers.py,sha256=Seb9ZgrckSwwVteS2AY1HBoS-at5c975Lc50uCH8Am4,1809
+nssurge_utils/predicates.py,sha256=Qa3_dPjbgzHfNnt4rf8YCNE3rgSYYAgWaMcXqTS6WZ4,880
+nssurge_utils/transform.py,sha256=Wr7nHblibHrjs8dc3xUl7brUfXzqBf0Yh7o31Yut8Fw,1738
+nssurge_utils/types.py,sha256=QybL_iwy5a13Y8RvD7QTkMZzKxpNWZ3a-77NTJrsXgs,298
+nssurge_utils/utils.py,sha256=26jzPLXUZhTETuppbDNRYsQdIZ5LrneOAEO6dIDG7HM,8883
+nssurge_utils-0.1.9.dist-info/METADATA,sha256=Q4z3eFjyZEt5NGy2UR4dUV1Aq_Fjcts3-gqe2JJE5sw,654
+nssurge_utils-0.1.9.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+nssurge_utils-0.1.9.dist-info/entry_points.txt,sha256=lF1ufKuAo-wR-idtdlmwDkTzbXGIm0UReI2iJKyMaPo,131
+nssurge_utils-0.1.9.dist-info/RECORD,,
