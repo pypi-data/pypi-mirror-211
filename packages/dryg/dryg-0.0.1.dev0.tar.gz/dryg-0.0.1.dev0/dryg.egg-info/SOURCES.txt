@@ -1,0 +1,8 @@
+MANIFEST.in
+requirements.txt
+setup.py
+dryg.egg-info/PKG-INFO
+dryg.egg-info/SOURCES.txt
+dryg.egg-info/dependency_links.txt
+dryg.egg-info/requires.txt
+dryg.egg-info/top_level.txt
