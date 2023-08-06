@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: swagger-petstore-3-sdk
+Version: 2.0.1
+Summary: ## Swagger Petstore - OpenAPI 3.0
+Author-email: Apimatic Developer <developer@apimatic.io>
+Project-URL: Documentation, https://dev.apimatic.io/api-docs-preview/dashboard/647726e85a75e59f9aa0ed19/v/1_0_11#/http/step-by-step-tutorial
+Keywords: OpenAPI,swagger,apimatic,petstore
+Requires-Python: >=3.7
+Provides-Extra: testutils
+License-File: LICENSE
