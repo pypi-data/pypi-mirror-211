@@ -1,0 +1,17 @@
+kognic/base_clients/__init__.py,sha256=qOZVTeWqKLc3WDY4sGbN-Yj3hTft4_edC73cNoa5cFw,193
+kognic/base_clients/_version.py,sha256=CilGHycSRzmSEnCMQvTRJ5J_LWxMs---UqkVbOmQ2rA,160
+kognic/base_clients/async_retry_support.py,sha256=DXZTmWDlpAhTE302-pO80NUdaBi2RfOPHtTqEs9MEyU,3212
+kognic/base_clients/http_client.py,sha256=G_uAnp0KRLWviGH64p600m0N6SK52bB5lyKHH8uxzWY,6340
+kognic/base_clients/models.py,sha256=48cRFVTDdtgIGdR_xPVJ099vpw2A9jvTmZqZjvvMlM4,739
+kognic/base_clients/retry_support.py,sha256=bsGKIcVRT0sk9uw-9ZHmvwOtXQfRFRXYBCFi36KNGMs,2875
+kognic/base_clients/util.py,sha256=9eRcfYVnvfkn9Bmp6ucyWkgXJejoJjDlhu0XG3Xcesw,1289
+kognic/base_clients/cloud_storage/__init__.py,sha256=ZbddbkXGltJO74KM8yTwXvyuI5M55OqCoOfyscoOQ28,107
+kognic/base_clients/cloud_storage/async_file_resource_client.py,sha256=Mtohk2nSOa1W8ESkIca1FP-td6tyxYXhtStAUTIFkHw,1865
+kognic/base_clients/cloud_storage/download_handler.py,sha256=MYiPDw1Ki0w_n5DdF3QvQj1u1i60ihoyrGRBBYjAago,1518
+kognic/base_clients/cloud_storage/file_resource_client.py,sha256=7H18u8-YnAlEQWkXD9jt1dawkbeo9WDUMBBqpwVA-9E,1877
+kognic/base_clients/cloud_storage/upload_handler.py,sha256=IwTi19xyNkQPbhLt3OW0jYOsUthYie3UGU0XjL9_BPU,3889
+kognic/base_clients/cloud_storage/upload_spec.py,sha256=QewFbmukZkhypGTpFs-EYqjajTXTROUSSp-MADgGMZo,1417
+kognic_base_clients-1.2.0.dist-info/METADATA,sha256=oeqfNAha_-IOn0DUZ4PqPi_8UmTo1PBR9LR97H38CAc,1842
+kognic_base_clients-1.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+kognic_base_clients-1.2.0.dist-info/top_level.txt,sha256=Hs7z54Wbf9na7y9j19fqfwptMrhlcPLw-Ycen3nh3pU,7
+kognic_base_clients-1.2.0.dist-info/RECORD,,
