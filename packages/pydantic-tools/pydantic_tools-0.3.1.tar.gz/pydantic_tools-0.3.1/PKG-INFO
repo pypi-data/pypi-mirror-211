@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: pydantic-tools
+Version: 0.3.1
+Summary: Useful tools for pydantic
+Author-Email: icebear <iiiicebeaaaar@gmail.com>
+License: MIT
+Requires-Python: >=3.11
+Requires-Dist: pydantic>=1.10.7
+Requires-Dist: pytest>=7.3.1
+Requires-Dist: rich>=13.3.5
+Requires-Dist: bullet>=2.2.0
+Requires-Dist: click>=8.1.3
+Description-Content-Type: text/markdown
+
+# pydantic-tools
+
+[![pdm-managed](https://img.shields.io/badge/pdm-managed-blueviolet)](https://pdm.fming.dev)
+
+A set of tools for pydantic(i18n, alias, etc.)
+
+## Installation
+
+`pip install pydantic-tools`
+
+## i18n
+
+### A simple example
+
+```python
+from pydantic_tools import i18n
+class TestModel(i18n.BaseModel_i18n):
+    name: str
+    age: int
+
+    class Config:
+        locale = "zh_cn"
+
+test = TestModel()
+```
+
+```python
+pydantic.error_wrappers.ValidationError: 2 validation errors for TestModel
+name
+  确保该值不缺失 (type=value_error.missing)
+age
+  确保该值不缺失 (type=value_error.missing)
+```
+
+### Config available
+
+- `locale`: The locale of the model, default is `None`, which means no translation enabled, and the default error message will be used. Use `python -m pydantic_tools.i18n -l` to show all available locales.
+
+- `locale_strict`: Whether to raise an error when the locale is not found, default is `False`.
+
+- `translations`: If specified, the error messages will be translated according to the given dict instead of the locale config. The dict should be like `{"value_error.missing": "Missing"}`. One of `locale` and `translations` should be specified, do not set both of them.
+
+- `extra_translations`: If specified, an extra dict will be merged into the default translations. The dict should be like `{"value_error.missing": "some msg"}`.
