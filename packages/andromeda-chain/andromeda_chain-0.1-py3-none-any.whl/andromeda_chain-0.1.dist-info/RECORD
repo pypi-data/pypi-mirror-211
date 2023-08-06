@@ -1,0 +1,10 @@
+andromeda_chain/__init__.py,sha256=K4Hxmc1in_cBb9Zj646rtU-i8Ldm9j1K3ab8P2X3d4Q,156
+andromeda_chain/andromeda_chain.py,sha256=J4Ds0i7J_0LKmcNlPKvSZfQrVWXcLLLblkQxDT2H3HI,3369
+andromeda_chain/prompt.py,sha256=b79jn30DYR50q-bd0leohVERojTuy8mloEJXfbARKXg,329
+andromeda_chain/response.py,sha256=mVcyZTJVJmAmz6IKQfHX96bCXqLjVsyoZCOUiGO0KuM,157
+andromeda_chain/version.py,sha256=AJGTlw30F_QTE98SUeELCd9L_bnVmyQndgeNJetzANs,17
+andromeda_chain-0.1.dist-info/LICENSE,sha256=f4QkZ_9Sueol1ws41Evn0CaXhOLZM5tREa6VKaVoYNI,1064
+andromeda_chain-0.1.dist-info/METADATA,sha256=cqZAjJCqpijaCrQX-LnGRdkwf43OkKa74L3xUHV3Wpg,923
+andromeda_chain-0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+andromeda_chain-0.1.dist-info/top_level.txt,sha256=EX4S_y8GIZh8tVBuooacYke0f4jNz2gXsZVEXYFCbUE,16
+andromeda_chain-0.1.dist-info/RECORD,,
