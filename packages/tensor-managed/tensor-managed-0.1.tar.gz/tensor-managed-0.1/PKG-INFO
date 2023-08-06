@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: tensor-managed
+Version: 0.1
+Summary: Automated GPU Allocation for PyTorch
+Home-page: https://github.com/bridgesign/managed
+Author: Rohan Patil
+Author-email: eyeoeternity@gmail.com
+License: MIT
+License-File: LICENSE

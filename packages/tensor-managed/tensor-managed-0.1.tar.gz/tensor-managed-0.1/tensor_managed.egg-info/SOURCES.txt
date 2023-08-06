@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+managed/__init__.py
+managed/_tensor.py
+managed/_utils.py
+managed/device_manager.py
+managed/module.py
+managed/tensor.py
+tensor_managed.egg-info/PKG-INFO
+tensor_managed.egg-info/SOURCES.txt
+tensor_managed.egg-info/dependency_links.txt
+tensor_managed.egg-info/requires.txt
+tensor_managed.egg-info/top_level.txt
+tests/test_autograd.py
+tests/test_subclass.py
