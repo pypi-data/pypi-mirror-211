@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: whisper-clipboard
+Version: 0.1.0
+Summary: A basic TUI for transcribing audio to your clipboard using OpenAI's whisper models.
+Home-page: http://github.com/data-stepper/whisper-clipboard
+Author: Bent Mueller
+Author-email: bentmuller.ai@gmail.com
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
