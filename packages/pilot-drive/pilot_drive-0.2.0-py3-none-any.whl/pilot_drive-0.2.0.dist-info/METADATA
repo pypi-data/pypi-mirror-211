@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pilot-drive
+Version: 0.2.0
+Summary: PILOT Drive is a modular vehicle head unit built in Python
+Home-page: https://github.com/lamemakes/pilot-drive
+Author: lamemakes
+Author-email: wes@lamemakes.com
+License: GNU GPL v3
+Project-URL: Documentation, https://pilot-drive.readthedocs.org
+Project-URL: Bug Tracker, https://github.com/lamemakes/pilot-drive/issues
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: websockets
+Requires-Dist: requests
+Requires-Dist: dasbus
+Requires-Dist: PyGObject
+
+# The PILOT Drive Backend
+
+Built in Python 3.11, the backend utilizes a WebSocket to communicate with the UI along with multiple multiprocessing processes running simultaneously to allow for asynchrony.
