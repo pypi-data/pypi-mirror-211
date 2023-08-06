@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: beads-mc
+Version: 1.0.0
+Summary: Bead-like Metropolis-Hastings algorithm for genetic/trait simulation
+Home-page: UNKNOWN
+Author: Smiruthi Ramasubramanian
+Author-email: smir.bayer@gmai.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: Pillow
+Requires-Dist: seaborn
+
+UNKNOWN
+
+
