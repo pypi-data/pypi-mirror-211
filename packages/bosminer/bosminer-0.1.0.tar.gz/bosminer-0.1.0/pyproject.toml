@@ -1,0 +1,75 @@
+[tool.poetry]
+name = "bosminer"
+version = "0.1.0"
+description = ""
+authors = ["teosibileau <teo.sibileau@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry-dynamic-versioning]
+enable = false
+vcs = "git"
+style = "semver"
+
+[tool.poetry.dependencies]
+python = "^3.9, <4.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+pytest-mock = "^3.10.0"
+ipython = "^8.13.2"
+pre-commit = "^3.3.1"
+coverage = "^7.2.5"
+pytest-cov = "^4.0.0"
+twine = "^4.0.2"
+build = "^0.10.0"
+
+[tool.isort]
+profile = "black"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "./src"
+]
+
+[tool.towncrier]
+directory = "changelog.d"
+filename = "CHANGELOG.md"
+start_string = "<!-- towncrier release notes start -->\n"
+underlines = ["", "", ""]
+template = "changelog.d/changelog_template.jinja"
+title_format = "## [{version}](https://gitlab.com/slkmining/bosminer-py/tree/{version}) - {project_date}"
+issue_format = "[#{issue}](https://gitlab.com/slkmining/bosminer-py/issues/-/{issue})"
+
+[[tool.towncrier.type]]
+directory = "security"
+name = "Security"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "removed"
+name = "Removed"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "deprecated"
+name = "Deprecated"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "added"
+name = "Added"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "changed"
+name = "Changed"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "fixed"
+name = "Fixed"
+showcontent = true
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
+build-backend = "poetry_dynamic_versioning.backend"
