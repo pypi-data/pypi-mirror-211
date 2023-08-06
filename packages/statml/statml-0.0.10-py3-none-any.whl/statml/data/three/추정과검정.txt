@@ -1,0 +1,446 @@
+pip install; pip list; pip show statml
+ln -s target_path data
+from statml import playchat as p
+import instpect
+print(inspect.getsource(p))
+sys.executable
+sys.version_info
+os.getcwd()
+
+Heat Map 그리기
+import seaborn as sns 
+import matplotlib.pyplot as plt
+import numpy as np 
+
+# 그림 사이즈 지정
+fig, ax = plt.subplots( figsize=(20,15) )
+
+# 히트맵을 그린다
+sns.heatmap(df.corr(), 
+            cmap = 'RdYlBu_r', 
+            annot = False,   # 실제 값 표시 
+            linewidths=.5,  # 경계 구분
+           )  
+plt.show()
+
+EDA 
+EDA는 데이터 분석 전반적인 과정에서 중요한 역할을 합니다. 여기서 추천하는 EDA의 단계는 다음과 같습니다.
+
+1. 문제 정의 : 데이터 프로젝트에서 첫 번째 단계는 문제 정의입니다. 이 과정은 분석하려는 데이터와 관계되는 질문과 문제를 명확하게 이해하는 것입니다.
+2. 데이터 수집 : 데이터를 수집하여 작업 환경에 가져와야합니다.
+3. 데이터 탐색 : 각 변수 및 특성의 분포, 상관 관계 등과 같은 통계적 특성을 탐색해야합니다.
+4. 데이터 전처리 : 데이터를 전처리하여 누락 데이터, 이상치, 중복값 등을 처리하고 변수 형식을 변경하거나 결합해야합니다.
+5. 변수 선택 : 분석에 가장 유용한 변수를 선택합니다.
+
+6. 기초 통계 분석 : 중심 통계치 및 분포 플롯 등을 사용하여 데이터의 기본적인 특성을 파악합니다.
+7. 상관 관계 분석 : 서로 다른 변수 간의 관계를 파악하기 위해 상관 행렬 및 산점도 분석 등의 작업이 수반됩니다.
+8. 시각화 : 시각화를 통해 데이터 분포 및 패턴을 파악하고 데이터의 문제를 확인할 수 있으며, 모델링에 유용한 변수를 필터링 할 수 있습니다.
+9. 요약 및 결론 : EDA 단계의 마지막은, 분석 결과를 요약하고 가능한 시나리오를 결론을 얻는 것입니다. 
+
+이러한 과정을 통해 EDA를 수행하면, 데이터 분석의 정확성, 유용성 및 신뢰성을 높일 수 있습니다.
+
+
+1. 요인분석(FA , Factor Analysis)
+요인분석은 수집된 많은 변수들이 있을 때, 유사한 항목들(공통차원)들끼리 묵어서 처리하는 기법이다. 이 때에는 독립변수와 종속변수의 개념이 없으며, 모든 변수들간의 관계를 분석함으로써 공통요인을 분석가의 판단으로 묵어서 처리할 수 있다.
+2. PCA 주성분분석
+주성분분석이란 데이터에 여러 변수들이 있을 때, 서로 상관성이 높은 변수들의 선형결합으로 이루어진 "주성분"이라는 새로운 변수를 만들어 변수들을 요약하고 축소하는 기법
+
+
+
+1. 모평균의 평균 추정 ( 소규모, t-test )
+2. 모평균의 평균 추정 ( 대규모, z-test )
+3. 두집단의 평균 비교 ( 소규모, 합동표본분산)
+4. 두집단의 평균 비교 ( 대규모, 개별분산)
+5. 모비율의 평균 추정 ( 대규모, z-test)
+6. 두집단의 비율 추정 ( 대규모, 
+
+
+1. 모평균의 추정 검증 (소규모, t-test)
+import numpy as np
+import scipy.stats as stats
+
+data = np.array([175, 190, 215, 198, 184, 207, 210, 193, 196, 180])
+null_hypothesis = 186  # 귀무 가설: 모집단의 평균은 186이다
+confidence_level = 0.95  # 신뢰 수준: 95%
+
+# One-sample t-test 진행
+t_statistic, p_value = stats.ttest_1samp(data, null_hypothesis)
+
+# 신뢰구간 계산
+n = len(data)
+sample_mean = np.mean(data)  # 표본 평균
+sample_std = np.std(data, ddof=1)  # 표본 표준편차
+std_error = sample_std / np.sqrt(n)
+margin_of_error = stats.t.ppf(1 - (1 - confidence_level) / 2, df=n-1) * std_error
+confidence_interval = (sample_mean - margin_of_error, sample_mean + margin_of_error)
+
+# 기각역 계산
+t_critical = stats.t.ppf(1 - confidence_level, df=n-1)
+
+# 결과 출력
+print("귀무 가설:", null_hypothesis)
+print("신뢰 구간:", confidence_interval)
+print("t 통계량:", t_statistic)
+print("p-value:", p_value)
+print("기각역:", (-np.inf, -t_critical), "또는", (t_critical, np.inf))
+if p_value < (1 - confidence_level):
+    print("결론: 귀무 가설을 기각합니다.")
+else:
+    print("결론: 귀무 가설을 기각하지 않습니다.")
+
+귀무 가설: 186
+신뢰 구간: (185.40122775573454, 204.19877224426548)
+t 통계량: 2.1180407945587465
+p-value: 0.06323853790198443
+기각역: (-inf, 1.8331129326536335) 또는 (-1.8331129326536335, inf)
+결론: 귀무 가설을 기각하지 않습니다.
+
+
+1` 모평균의 추정 검증 (소규모, t-test). ttest-1sample 사용
+
+import numpy as np
+import scipy.stats as stats
+
+data = np.array([175, 190, 215, 198, 184, 207, 210, 193, 196, 180])
+null_hypothesis = 186  # 귀무 가설: 모집단의 평균은 186이다
+confidence_level = 0.95  # 신뢰 수준: 95%
+
+# One-sample t-test 진행
+t_statistic, p_value = stats.ttest_1samp(data, null_hypothesis)
+
+# 신뢰구간 계산
+n = len(data)
+sample_mean = np.mean(data)  # 표본 평균
+sample_std = np.std(data, ddof=1)  # 표본 표준편차
+std_error = sample_std / np.sqrt(n)
+margin_of_error = stats.t.ppf(1 - (1 - confidence_level) / 2, df=n-1) * std_error
+confidence_interval = (sample_mean - margin_of_error, sample_mean + margin_of_error)
+
+# 기각역 계산
+t_critical = stats.t.ppf(1 - confidence_level, df=n-1)
+
+# 결과 출력
+print("귀무 가설:", null_hypothesis)
+print("신뢰 구간:", confidence_interval)
+print("t 통계량:", t_statistic)
+print("p-value:", p_value)
+print("기각역:", (-np.inf, -t_critical), "또는", (t_critical, np.inf))
+if p_value < (1 - confidence_level):
+    print("결론: 귀무 가설을 기각합니다.")
+else:
+    print("결론: 귀무 가설을 기각하지 않습니다.")
+
+
+2. 모평균의 추정 ( 대규모, z-test )
+
+import numpy as np
+import scipy.stats as stats
+
+data = np.array([175, 190, 215, 198, 184, 207, 210, 193, 196, 180,
+                175, 190, 215, 198, 184, 207, 210, 193, 196, 180,
+                175, 190, 215, 198, 184, 207, 210, 193, 196, 180])
+
+confidence_level = 0.95  # 신뢰 수준: 95%
+null_hypothesis = 186  # 귀무 가설: 모평균 = 186
+
+n = len(data)
+sample_mean = np.mean(data)  # 표본 평균
+sample_std = np.std(data, ddof=1)  # 표본 표준편차
+std_error = sample_std / np.sqrt(n)
+
+# 신뢰구간 계산
+margin_of_error = stats.norm.ppf(1 - (1 - confidence_level) / 2) * std_error
+confidence_interval = (sample_mean - margin_of_error, sample_mean + margin_of_error)
+
+# z-test 계산
+z_statistic = (sample_mean - null_hypothesis) / std_error
+p_value = 2 * (1 - stats.norm.cdf(np.abs(z_statistic)))
+
+# 기각역 계산
+z_critical = stats.norm.ppf(1 - confidence_level)
+
+# 결론
+if p_value < (1 - confidence_level):
+    conclusion = "귀무 가설 기각"
+else:
+    conclusion = "귀무 가설 채택"
+
+# 결과 출력
+print("귀무 가설:", null_hypothesis)
+print("신뢰 구간:", confidence_interval)
+print("z 통계량:", z_statistic)
+print("p-value:", p_value)
+print("기각역:", (-np.inf, -z_critical), "또는", (z_critical, np.inf))
+print("결론:", conclusion)
+
+귀무 가설: 186
+신뢰 구간: (190.26352315655208, 199.33647684344794)
+z 통계량: 3.8019995823109887
+p-value: 0.00014353296933311555
+기각역: (-inf, 1.6448536269514722) 또는 (-1.6448536269514722, inf)
+결론: 귀무 가설 기각
+
+
+
+3. 두집단의 비교 ( 소규모, 합동표본분산)
+import numpy as np
+from scipy import stats
+
+# 남자 데이터
+n1 = 16
+mean1 = 3.2
+std1 = 1.0
+
+# 여자 데이터
+n2 = 9
+mean2 = 2.0
+std2 = np.sqrt(0.75)
+
+# 유의 수준
+alpha = 0.05
+
+# 합동표본분산 계산
+pooled_variance = (((n1 - 1) * std1**2) + ((n2 - 1) * std2**2)) / (n1 + n2 - 2)
+
+# 검정 통계량 계산
+std_error = np.sqrt((pooled_variance / n1) + (pooled_variance / n2))
+test_statistic = (mean1 - mean2) / std_error
+
+# 양측 검정 수행
+p_value = 2 * (1 - stats.t.cdf(np.abs(test_statistic), df=n1 + n2 - 2))
+
+# 기각역 계산
+critical_region = (-stats.t.ppf(1 - alpha/2, df=n1 + n2 - 2), stats.t.ppf(1 - alpha/2, df=n1 + n2 - 2))
+
+# 결과 출력
+print("남자 평균시간:", mean1)
+print("여자 평균시간:", mean2)
+print("표본 크기 (남자):", n1)
+print("표본 크기 (여자):", n2)
+print("합동표본분산:", pooled_variance)
+print("표준오차:", std_error)
+print("검정 통계량:", test_statistic)
+print("p-value:", p_value)
+print("기각역:", critical_region)
+
+if p_value < alpha:
+    print("귀무가설 기각. 남자와 여자 집단 간의 평균시간은 차이가 있다.")
+else:
+    print("귀무가설 채택. 남자와 여자 집단 간의 평균시간은 차이가 없다.")
+
+4. 두집단의 비교 ( 대규모, 개별 분산)
+
+import numpy as np
+from scipy import stats
+
+# x기업 데이터
+n1 = 50
+mean1 = 225200
+std1 = 9800
+# y기업 데이터
+n2 = 30
+mean2 = 218700
+std2 = 10800
+# 유의 수준
+alpha = 0.05
+# 표준 오차 계산
+std_error = np.sqrt((std1**2 / n1) + (std2**2 / n2))   
+# 검정 통계량 계산
+test_statistic = (mean1 - mean2) / std_error
+# 양측 검정 수행
+p_value = 2 * (1 - stats.t.cdf(np.abs(test_statistic), df=min(n1, n2) - 1))
+
+# 기각역 계산
+critical_region = (-stats.t.ppf(1 - alpha/2, df=min(n1, n2) - 1), stats.t.ppf(1 - alpha/2, df=min(n1, n2) - 1))
+
+# 결과 출력
+print("x기업 평균임금:", mean1)
+print("y기업 평균임금:", mean2)
+print("표본 크기 (x기업):", n1)
+print("표본 크기 (y기업):", n2)
+print("표준오차:", std_error)
+print("검정 통계량:", test_statistic)
+print("p-value:", p_value)
+print("기각역:", critical_region)
+
+if p_value < alpha:
+    print("귀무가설 기각. x기업의 평균임금은 y기업보다 높다.")
+else:
+    print("귀무가설 채택. x기업의 평균임금은 y기업과 차이가 없다.")
+
+x기업 평균임금: 225200
+y기업 평균임금: 218700
+표본 크기 (x기업): 50
+표본 크기 (y기업): 30
+표준오차: 2410.1452238402567
+검정 통계량: 2.6969329215951086
+p-value: 0.01153429464267175
+기각역: (-2.045229642132703, 2.045229642132703)
+귀무가설 기각. x기업의 평균임금은 y기업보다 높다.
+
+
+
+5. 모비율의 평균 추정 ( 대규모, z-test)
+
+import numpy as np
+import scipy.stats as stats
+
+n = 400  # 총 샘플 수
+x = 70  # 빈곤층으로 분류된 샘플 수
+p = 0.2  # 귀무 가설에 따른 빈곤층 비율
+
+# 표준 오차 계산
+se = np.sqrt(p * (1 - p) / n)
+
+# 검정 통계량 계산
+z = (x / n - p) / se
+
+# p-value 계산 (양측 검정)
+p_value = 2 * (1 - stats.norm.cdf(np.abs(z)))
+
+# 신뢰구간 계산
+confidence_level = 0.95
+margin_error = stats.norm.ppf(1 - (1 - confidence_level) / 2) * se
+confidence_interval = (x / n - margin_error, x / n + margin_error)
+
+# 기각역 계산
+alpha = 0.05
+critical_value = stats.norm.ppf(1 - alpha / 2)
+
+# 결론
+if p_value < alpha:
+    conclusion = "현재의 빈곤층 비율은 5년 전과 다르다. (귀무 가설 기각)"
+else:
+    conclusion = "현재의 빈곤층 비율은 5년 전과 같다. (귀무 가설 채택)"
+
+# 결과 출력
+print("귀무 가설: 현재의 빈곤층 비율은 5년 전과 같다. (p = 0.2)")
+print("검정 통계량 (z):", z)
+print("p-value:", p_value)
+print("신뢰구간:", confidence_interval)
+print("기각역:", (-critical_value, critical_value))
+print("결론:", conclusion)
+
+귀무 가설: 현재의 빈곤층 비율은 5년 전과 같다. (p = 0.2)
+검정 통계량 (z): -1.250000000000001
+p-value: 0.21129954733371026
+신뢰구간: (0.1358007203091989, 0.21419927969080108)
+기각역: (-1.959963984540054, 1.959963984540054)
+결론: 현재의 빈곤층 비율은 5년 전과 같다. (귀무 가설 채택)
+
+
+
+6. 두집단의 비율 추정 ( 대규모, z통계량)
+
+import numpy as np
+import scipy.stats as stats
+
+male_n = 113  # 남성 노인 수
+male_positive = 34  # 남성 노인 중 항체 생성 수
+female_n = 139  # 여성 노인 수
+female_positive = 54  # 여성 노인 중 항체 생성 수
+
+# 남성 노인의 항체 생성 비율
+male_ratio = male_positive / male_n
+
+# 여성 노인의 항체 생성 비율
+female_ratio = female_positive / female_n
+
+# 두 집단 간 비율 검정 (Z-테스트)
+pooled_ratio = (male_positive + female_positive) / (male_n + female_n)  # 두 집단의 통합 비율
+std_error = np.sqrt(pooled_ratio * (1 - pooled_ratio) * (1 / male_n + 1 / female_n))  # 표준 오차 계산
+
+z = (male_ratio - female_ratio) / std_error  # Z-통계량 계산
+
+# 유의수준 0.05 기준으로 검정 결과 비교
+alpha = 0.05
+
+critical_value = stats.norm.ppf(1 - alpha/2)  # 양측 검정일 때의 기각역 계산
+
+if np.abs(z) > critical_value:
+    conclusion = "남성 노인과 여성 노인의 항체 생성 비율은 유의미한 차이가 있습니다. (귀무 가설 기각)"
+else:
+    conclusion = "남성 노인과 여성 노인의 항체 생성 비율은 유의미한 차이가 없습니다. (귀무 가설 채택)"
+
+# 신뢰구간 계산
+margin_error = critical_value * std_error  # 오차 범위 계산
+confidence_interval = (male_ratio - female_ratio - margin_error, male_ratio - female_ratio + margin_error)  # 신뢰구간 계산
+
+# 결과 출력
+print("귀무 가설: 남성 노인과 여성 노인의 항체 생성 비율은 같다.")
+print("Z-통계량:", z)
+print("기각역:", critical_value)
+print("신뢰구간:", confidence_interval)
+print("결론:", conclusion)
+
+귀무 가설: 남성 노인과 여성 노인의 항체 생성 비율은 같다.
+Z-통계량: -1.45080426064268
+기각역: 1.959963984540054
+신뢰구간: (-0.20595321641577302, 0.03074471065401073)
+결론: 남성 노인과 여성 노인의 항체 생성 비율은 유의미한 차이가 없습니다. (귀무 가설 채택)
+
+
+다중 공선성은 선형 회귀 모델에서 독립 변수들 간에 높은 상관 관계가 있는 경우 발생하는 문제입니다. 즉, 하나의 독립 변수가 다른 독립 변수와 강한 선형 관계를 가지는 경우입니다. 다중 공선성이 존재할 경우, 회귀 모델의 계수 추정이 불안정해지고 모델의 해석력이 떨어지는 문제가 발생할 수 있습니다.
+
+반면에 교호작용은 독립 변수 간의 상호작용이 종속 변수에 미치는 영향을 고려하는 것입니다. 교호작용은 독립 변수들이 종속 변수에 대해 함께 작용하는 방식을 고려하여 모델을 구성하는 것입니다. 교호작용을 포함한 모델은 독립 변수들 간의 관계와 종속 변수에 대한 영향을 더 정확하게 파악할 수 있습니다.
+
+따라서, 다중 공선성은 독립 변수들 간의 상관 관계를 다루는 문제이고, 교호작용은 독립 변수들의 상호작용을 모델에 포함시키는 개념입니다. 두 개념은 서로 다른 개념이며, 다중 공선성이 발생해도 교호작용은 반드시 발생하는 것은 아닙니다.
+
+교호작용 샘플
+
+import numpy as np
+import pandas as pd
+import statsmodels.api as sm
+
+# 샘플 데이터 생성
+np.random.seed(1)
+
+n = 100  # 샘플 수
+X1 = np.random.normal(0, 1, n)  # 연속형 독립 변수
+X2 = np.random.choice([0, 1], n)  # 이진형 독립 변수
+Y = 2 * X1 + 3 * X2 + 0.5 * X1 * X2 + np.random.normal(0, 1, n)  # 종속 변수
+
+data = pd.DataFrame({'X1': X1, 'X2': X2, 'Y': Y})
+
+# 교호작용을 고려한 선형모델 적합
+data['X1:X2'] = data['X1'] * data['X2']  # 교호작용 항 추가
+model = sm.OLS(data['Y'], sm.add_constant(data[['X1', 'X2', 'X1:X2']]))
+results = model.fit()
+
+# 결과 출력
+print(results.summary())
+
+주어진 결과에서 교호작용을 확인하는 부분은 X1:X2 항목의 계수입니다. 교호작용이 존재한다면 X1:X2 항목의 계수가 0이 아니게 됩니다.
+
+위의 결과에서 X1:X2 항목의 계수는 0.3811로 나와 있습니다. 이 값이 0이 아니므로 교호작용이 존재한다고 할 수 있습니다. 또한, 계수의 p-value인 0.102도 확인할 수 있습니다. 이 값은 유의수준 0.05보다 크기 때문에 교호작용이 통계적으로 유의미하다고 할 수는 없지만, 계수가 0이 아니므로 교호작용이 존재한다는 가정을 할 수 있습니다.
+
+결론적으로, X1:X2 항목의 계수가 0.3811로 나타나고, 이는 교호작용이 존재한다는 것을 나타냅니다.
+
+OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      Y   R-squared:                       0.879
+Model:                            OLS   Adj. R-squared:                  0.876
+Method:                 Least Squares   F-statistic:                     233.2
+Date:                Fri, 02 Jun 2023   Prob (F-statistic):           6.06e-44
+Time:                        19:41:59   Log-Likelihood:                -140.41
+No. Observations:                 100   AIC:                             288.8
+Df Residuals:                      96   BIC:                             299.2
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          0.2153      0.133      1.616      0.109      -0.049       0.480
+X1             2.1627      0.152     14.195      0.000       1.860       2.465
+X2             2.8938      0.206     14.079      0.000       2.486       3.302
+X1:X2          0.3811      0.231      1.652      0.102      -0.077       0.839
+==============================================================================
+Omnibus:                        0.071   Durbin-Watson:                   2.032
+Prob(Omnibus):                  0.965   Jarque-Bera (JB):                0.062
+Skew:                           0.049   Prob(JB):                        0.969
+Kurtosis:                       2.928   Cond. No.                         2.91
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
