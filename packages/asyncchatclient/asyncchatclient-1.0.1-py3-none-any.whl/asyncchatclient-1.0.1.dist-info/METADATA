@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: asyncchatclient
+Version: 1.0.1
+Summary: chat_client
+Home-page: UNKNOWN
+Author: Ssergo99
+Author-email: ssergo99.git@google.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: PyQt5
+Requires-Dist: sqlalchemy
+Requires-Dist: pycryptodome
+Requires-Dist: pycryptodomex
+
+UNKNOWN
+
