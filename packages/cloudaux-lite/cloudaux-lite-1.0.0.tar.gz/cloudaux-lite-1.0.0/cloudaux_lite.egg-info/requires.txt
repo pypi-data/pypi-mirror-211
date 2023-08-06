@@ -1,0 +1,12 @@
+boto3
+botocore
+
+[dev]
+
+[docs]
+
+[tests]
+pytest
+pytest-cov
+moto
+tox
