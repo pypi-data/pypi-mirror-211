@@ -1,0 +1,8 @@
+setup.py
+randomnum/__init__.py
+randomnum/gentor.py
+randomqq.egg-info/PKG-INFO
+randomqq.egg-info/SOURCES.txt
+randomqq.egg-info/dependency_links.txt
+randomqq.egg-info/requires.txt
+randomqq.egg-info/top_level.txt
