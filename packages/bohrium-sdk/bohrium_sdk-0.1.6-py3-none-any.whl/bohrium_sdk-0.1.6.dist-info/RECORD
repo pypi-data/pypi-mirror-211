@@ -1,0 +1,17 @@
+bohriumsdk/__init__.py,sha256=utyN_l2SNZIxR_PzvYllxGb25sFM3sH_8iZ3ykKWfK8,123
+bohriumsdk/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bohriumsdk/client.py,sha256=mv1qDLTGETrqcmK4oOhz_rEsbt5-IWdd8Xmiv9ywEyw,6220
+bohriumsdk/image.py,sha256=ymcpcVx0xM__eMwY-q1ByBhwCaQt7JNAdUqyUQAiWho,1970
+bohriumsdk/job.py,sha256=jv4jFLvE8Jh6JfhjZIHEk5Yz5b17HQtYn6XONdWnOHQ,3766
+bohriumsdk/node.py,sha256=0I7kUMscHxI-Ah_BBc0AlgGobSsz7CdN8riE9wDd2v0,2159
+bohriumsdk/project.py,sha256=FpU5Vh87wgG1b2SWEfZIkZkZPG7r4wx6D-nwtNCJn60,2223
+bohriumsdk/storage.py,sha256=ajHl8ui_VO_KWONYZDXJnpZ8EpJ4wfBMbsnrJ5Qo4gw,2835
+bohriumsdk/test.py,sha256=P0M1mqIIZIYkS8eNePxrfXl69X54MHbx2qF481P5oAc,2369
+bohriumsdk/util.py,sha256=cpRFg4liGl4QDOQ-5GEhtXq5TXNfvUA7kvFxT8sVE04,4730
+bohriumsdk/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bohriumsdk/test/test_node.py,sha256=MhthKe5-WdMnN1KoCUvSiwopTs2zkIm4R3RTIv6iJqk,80
+bohrium_sdk-0.1.6.dist-info/METADATA,sha256=hzu0KXPwub8Y0iX_mmPBjlVcm4bDNOsHr_dDCo2b6KE,206
+bohrium_sdk-0.1.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+bohrium_sdk-0.1.6.dist-info/entry_points.txt,sha256=ty9KKtvhmkh7lntDECaOTwl6wtw-AMSYFmBkyEiHqo0,84
+bohrium_sdk-0.1.6.dist-info/top_level.txt,sha256=A8SalgGl3seUvhIhM6edEI_BoEMXI28OQlHZ1kOHV9U,11
+bohrium_sdk-0.1.6.dist-info/RECORD,,
