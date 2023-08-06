@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+automaxprocs.egg-info/PKG-INFO
+automaxprocs.egg-info/SOURCES.txt
+automaxprocs.egg-info/dependency_links.txt
+automaxprocs.egg-info/top_level.txt
