@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: jupyter2pytest
+Version: 0.3.2
+Summary: Converts Jupyter notebooks into pytest capable test files.
+Home-page: https://github.com/dsdiscovery/jupyter2pytest
+License: MIT
+Keywords: pytest,jupyter,autograding
+Author: Garrett Credi
+Author-email: garrettcredi@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Education
+Classifier: Topic :: Software Development :: Testing
+Classifier: Typing :: Typed
+Requires-Dist: nbformat (>=5.0.7,<6.0.0)
+Requires-Dist: tblib (>=1.7.0,<2.0.0)
+Project-URL: Repository, https://github.com/dsdiscovery/jupyter2pytest
+Description-Content-Type: text/markdown
+
+# Jupyter Notebook Grader
+
+This is a script that will compile a jupyter notebook with a specified structure into a python script that is pytest compatible.
+
+For use in code, `extractor` handles extracting cells from a notebook with a given prefix into a `TestcellBlock` object. `compiler` deals more with taking an assignment notebook and a notebook with testcases,
+which can be and often are the same notebook, and with specified prefixes and writing it into a python file capable of running against pytest. For example, the prefix for assignment code could be 
+`### ASSIGNMENT CODE for Puzzle (.*) ==` where the group in the regex determines what test the code applies to. Prefixes must have at least one group to match against, and that first group will be the
+identification used. To run as a CLI tool, use `python3 -m jupyter2pytest [code file] [code prefix] [test file] [test prefix] [pytest output file]`.
+
