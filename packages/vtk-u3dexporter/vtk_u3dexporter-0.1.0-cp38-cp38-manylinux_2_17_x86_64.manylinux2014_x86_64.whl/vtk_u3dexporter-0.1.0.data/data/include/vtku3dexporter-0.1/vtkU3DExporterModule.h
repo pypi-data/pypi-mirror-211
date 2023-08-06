@@ -1,0 +1,42 @@
+
+#ifndef VTKU3DEXPORTER_EXPORT_H
+#define VTKU3DEXPORTER_EXPORT_H
+
+#ifdef VTKU3DEXPORTER_STATIC_DEFINE
+#  define VTKU3DEXPORTER_EXPORT
+#  define VTKU3DEXPORTER_NO_EXPORT
+#else
+#  ifndef VTKU3DEXPORTER_EXPORT
+#    ifdef U3DExporter_EXPORTS
+        /* We are building this library */
+#      define VTKU3DEXPORTER_EXPORT __attribute__((visibility("default")))
+#    else
+        /* We are using this library */
+#      define VTKU3DEXPORTER_EXPORT __attribute__((visibility("default")))
+#    endif
+#  endif
+
+#  ifndef VTKU3DEXPORTER_NO_EXPORT
+#    define VTKU3DEXPORTER_NO_EXPORT __attribute__((visibility("hidden")))
+#  endif
+#endif
+
+#ifndef VTKU3DEXPORTER_DEPRECATED
+#  define VTKU3DEXPORTER_DEPRECATED __attribute__ ((__deprecated__))
+#endif
+
+#ifndef VTKU3DEXPORTER_DEPRECATED_EXPORT
+#  define VTKU3DEXPORTER_DEPRECATED_EXPORT VTKU3DEXPORTER_EXPORT VTKU3DEXPORTER_DEPRECATED
+#endif
+
+#ifndef VTKU3DEXPORTER_DEPRECATED_NO_EXPORT
+#  define VTKU3DEXPORTER_DEPRECATED_NO_EXPORT VTKU3DEXPORTER_NO_EXPORT VTKU3DEXPORTER_DEPRECATED
+#endif
+
+#if 0 /* DEFINE_NO_DEPRECATED */
+#  ifndef VTKU3DEXPORTER_NO_DEPRECATED
+#    define VTKU3DEXPORTER_NO_DEPRECATED
+#  endif
+#endif
+
+#endif /* VTKU3DEXPORTER_EXPORT_H */

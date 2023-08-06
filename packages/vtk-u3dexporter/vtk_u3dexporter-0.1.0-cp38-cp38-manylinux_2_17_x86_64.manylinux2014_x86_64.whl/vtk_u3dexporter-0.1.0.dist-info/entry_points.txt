@@ -1,0 +1,2 @@
+[pyinstaller40]
+hook-dirs = vtkmodules.__pyinstaller_vtkU3DExporter:get_hook_dirs
