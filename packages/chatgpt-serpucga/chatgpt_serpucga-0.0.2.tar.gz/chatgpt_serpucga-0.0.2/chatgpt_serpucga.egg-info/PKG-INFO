@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: chatgpt-serpucga
+Version: 0.0.2
+Summary: Client library to communicate with the ChatGPT API
+Home-page: https://gitlab.com/Serbaf/chatgpt_client
+Author: Sergio Puche García
+Author-email: spuche@upv.es
+License: GPL3
+Description-Content-Type: text/markdown
+
+# Documentación
+
+Librería para comunicación con ChatGPT. Proporciona dos modos de interacción básicos:
+
+- simple: envía cualquier texto a la API de ChatGPT y devuelve una respuesta
+- interactive: abre un diálogo interactivo en el que el historial se almacena y se
+  utiliza para proporcionar un contexto a la conversación.
