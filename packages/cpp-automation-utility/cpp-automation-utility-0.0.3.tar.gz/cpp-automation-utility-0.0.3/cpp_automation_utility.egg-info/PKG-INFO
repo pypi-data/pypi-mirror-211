@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: cpp-automation-utility
+Version: 0.0.3
+Summary: CLI utility to assist C++ in a devops environment
+Home-page: https://gitlab.com/aldridgesoftwaredesigns/cau
+Author: AldridgeSoftwareDesigns
+Author-email: aldridge.robert.james@gmail.com
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# CAU
+
+CAU stands for **C**++ **A**utomation **U**tility and is pronounced  like *cow* :cow2:. The purpose is to provide templates and CLI scripts to instantiate/manage/run C++ projects in a devops environment. CAU covers common functionality across projects like:
+
+* Running a static analyzer (`clang-tidy`)
+* Running a memory leak test (`valgrind`)
+* Running unit tests
+* Restore dependencies (`conan`)
+* Building the project (`conan` and `cmake`)
+* Providing CI/CD templates for `gitlab`
+
+The scope of CAU is really meant for how we do C++ projects at AldridgeSoftwareDesigns. As such, mileage may vary when applying to projects outside the "standard" configuration for an AldridgeSoftwareDesigns C++ project.
