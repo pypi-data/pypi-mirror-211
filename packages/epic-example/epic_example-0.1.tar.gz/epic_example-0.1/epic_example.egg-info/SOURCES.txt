@@ -1,0 +1,7 @@
+setup.py
+epic_example/__init__.py
+epic_example.egg-info/PKG-INFO
+epic_example.egg-info/SOURCES.txt
+epic_example.egg-info/dependency_links.txt
+epic_example.egg-info/not-zip-safe
+epic_example.egg-info/top_level.txt
