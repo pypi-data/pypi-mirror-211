@@ -1,0 +1,4 @@
+[console_scripts]
+multiple_no_corax=merqube_client_lib.templates.equity_baskets.multiple_no_corax.create:main
+single_stock_tr=merqube_client_lib.templates.equity_baskets.single_stock_total_return_corax.create:main
+
