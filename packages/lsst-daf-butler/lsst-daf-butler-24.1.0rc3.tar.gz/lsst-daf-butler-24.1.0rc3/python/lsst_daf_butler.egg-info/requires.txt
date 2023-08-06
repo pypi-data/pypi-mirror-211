@@ -1,0 +1,9 @@
+astropy>=4.0
+pyyaml>=5.1
+sqlalchemy<2.0,>=1.4
+click>=7.0
+lsst-sphgeom<24.100.0,>=24.0.0
+lsst-utils<24.100.0,>=24.0.0
+lsst-resources<24.100.0,>=24.0.0
+deprecated>=1.2
+pydantic
