@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: cloudservices_arg
+Version: 0.1.3
+Summary: A sample Python project for rach pack
+Home-page: https://github.com/r-mhjn/QuizCreator
+Author: Rac
+Author-email: rachitmahajan6399@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
