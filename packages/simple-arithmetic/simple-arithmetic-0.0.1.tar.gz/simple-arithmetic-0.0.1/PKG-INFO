@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: simple-arithmetic
+Version: 0.0.1
+Summary: Sample python package containing simple arithmetic functions
+Home-page: https://github.com/LunaticFrisbee/sample-py-package
+Author: LunaticFrisbee (Avnish Chauhan)
+Author-email: avnishchauhan065@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Sample Python Package
+
+## Installation
+
+Run the following to install :
+
+```bash
+pip install simple-arithmetic
+```
+
+## Usage
+
+```python
+from arithmetic import add,multiply,subtract
+# Perform arithmetic operations on 2 numbers:
+add(2,3)
+subtract(5,2)
+multiply(2.4,5)
+```
+
+

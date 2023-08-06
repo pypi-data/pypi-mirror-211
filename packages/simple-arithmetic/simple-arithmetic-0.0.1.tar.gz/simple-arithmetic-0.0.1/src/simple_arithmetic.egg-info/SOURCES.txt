@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+src/arithmetic.py
+src/simple_arithmetic.egg-info/PKG-INFO
+src/simple_arithmetic.egg-info/SOURCES.txt
+src/simple_arithmetic.egg-info/dependency_links.txt
+src/simple_arithmetic.egg-info/top_level.txt
