@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: temgymbasic
+Version: 0.5.9.4
+Summary: An educational TEM ray tracing matrix package
+Project-URL: Homepage, https://github.com/AMCLab/TemGymBasic
+Author-email: David Landers <davidlanders2009@hotmail.com>
+License-File: LICENSE.md
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: matplotlib==3.6.1
+Requires-Dist: numpy==1.23.3
+Requires-Dist: pyopengl==3.1.6
+Requires-Dist: pyqt5==5.15.2
+Requires-Dist: pyqtgraph==0.13.1
+Requires-Dist: triangle
+Description-Content-Type: text/markdown
+
+# Tem Gym Basic
+
+An interactive first order ray tracing software for electron microscopes written in python.
+See [documentation](https://temgymbasic.readthedocs.io/en/latest/) on readthedocs for more info. 
