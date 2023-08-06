@@ -1,0 +1,2 @@
+include naif_eop_predict/earth_200101_990628_predict.bpc
+include naif_eop_predict/earth_200101_990628_predict.md5
