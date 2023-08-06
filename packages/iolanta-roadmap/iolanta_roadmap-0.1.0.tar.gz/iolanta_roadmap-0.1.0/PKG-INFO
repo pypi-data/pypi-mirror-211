@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: iolanta-roadmap
+Version: 0.1.0
+Summary: Structured Roadmaps
+License: MIT
+Author: Anatoly Scherbakov
+Author-email: altaisoft@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: graphviz (>=0.20.1,<0.21.0)
+Requires-Dist: iolanta (>=1.0.7,<2.0.0)
+Description-Content-Type: text/markdown
+
+# iolanta-roadmap
+
+Roadmap plugin for [iolanta](https://iolanta.tech).
+
+Docs: https://iolanta.tech/roadmap/
+
