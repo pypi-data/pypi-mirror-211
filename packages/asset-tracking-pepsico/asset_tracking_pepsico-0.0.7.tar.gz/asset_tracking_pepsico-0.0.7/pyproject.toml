@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "asset_tracking_pepsico"
+version = "0.0.7"
+authors = [
+  { name="Jatin Talati", email="jatalati@in.ibm.com" },
+]
+description = "An asset tracking package where the device logs can be read and the location information can be extracted from the log file provided in the parameters."
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = ["asset", "tracking", "pepsico", "location", "latitude", "longitude", "store", "events"]
+dependencies = [
+  "azure-core",
+  "azure-storage-blob",
+  "requests",
+  "requests-oauthlib",
+  "toml",
+  "psycopg2"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Development Status :: 1 - Planning",
+    "Operating System :: OS Independent",
+]
+
