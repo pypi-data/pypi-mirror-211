@@ -1,0 +1,2 @@
+[console_scripts]
+serializer = Brigada.serializer:main
