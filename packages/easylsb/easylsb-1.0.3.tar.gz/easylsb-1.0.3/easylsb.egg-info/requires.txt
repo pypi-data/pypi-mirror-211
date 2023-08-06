@@ -1,0 +1,4 @@
+wave
+des
+numpy
+pillow
