@@ -1,0 +1,8 @@
+include LICENSE
+include *.md
+include package.json
+graft paper_jsoneditor
+prune paper_jsoneditor/static/paper_jsoneditor/src
+global-exclude .git*
+global-exclude __pycache__
+global-exclude *.py[co]

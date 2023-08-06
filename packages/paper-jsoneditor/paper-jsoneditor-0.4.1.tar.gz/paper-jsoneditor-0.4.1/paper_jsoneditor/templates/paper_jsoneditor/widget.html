@@ -1,0 +1,2 @@
+<div class="json-field" data-xclass="paper-jsonfield" style="height: {{ widget.height }}px"></div>
+<textarea hidden class="form-control" name="{{ widget.name }}" {% include "django/forms/widgets/attrs.html" %}>{{ widget.value|default:"" }}</textarea>
