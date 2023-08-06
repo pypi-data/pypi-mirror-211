@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: h5pulsar
+Version: 1.0.0
+Summary: Fork of Anne Archibald's code to add hdf5 to Pulsar objects
+Author-email: Aaron Johnson <aaron.johnson@nanograv.org>
+Project-URL: Homepage, https://github.com/AaronDJohnson/h5pulsar
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: astropy
+Requires-Dist: enterprise-pulsar
+Requires-Dist: h5py
+Requires-Dist: libstempo
+Requires-Dist: numpy
+Requires-Dist: packaging
+Requires-Dist: pint-pulsar
+Requires-Dist: pyephem
+Requires-Dist: setuptools
+
+# h5pulsar
+ Fork of Anne Archibald's PR to add hdf5 to Pulsar objects
