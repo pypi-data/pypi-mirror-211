@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: sqlilliput
+Version: 0.2
+Summary: Python abstraction layer for SQLite3
+Home-page: https://github.com/DinoSourceDK/sqlilliput
+Author: DinoSource ApS
+Author-email: info@dinosource.co
+License: Apache
+Description-Content-Type: text/plain
+License-File: LICENSE
+Requires-Dist: sqlite
+Requires-Dist: typing
+
