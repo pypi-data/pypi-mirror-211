@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: meta-matching-tool
+Version: 1.8.0
+Summary: An integrated deep learning framework for the interpretation of untargeted metabolomics data
+Home-page: https://github.com/tianlq-prog/SPARSENN
+Author: Leqi Tian
+Author-email: 220049029@link.cuhk.edu.cn
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+License-File: LICENSE.txt
+Requires-Dist: numpy (>=1.21.5)
+Requires-Dist: pandas (>=1.5.3)
+Requires-Dist: python-igraph (>=0.10.4)
+Requires-Dist: scikit-learn (>=1.0.2)
+Requires-Dist: torch (>=1.11.0)
+
