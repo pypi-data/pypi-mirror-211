@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: hotjar-data-wrapper
+Version: 0.1.3
+Summary: a wrapper for using Hotjar APIs
+Home-page: https://github.com/navikt/hotjar-data-wrapper
+Author: Tobias McVey
+Author-email: tobias.mcvey@nav.no
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE
+
