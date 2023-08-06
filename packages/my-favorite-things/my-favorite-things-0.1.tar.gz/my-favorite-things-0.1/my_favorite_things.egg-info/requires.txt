@@ -1,0 +1,7 @@
+numpy
+
+[dev]
+build
+twine
+black
+isort
