@@ -1,0 +1,15 @@
+requests
+lxml
+toml
+langchain==0.0.150
+openai
+tiktoken
+faiss-cpu==1.7.4
+bs4
+
+[dev]
+black
+bumpver
+isort
+pip-tools
+pytest
