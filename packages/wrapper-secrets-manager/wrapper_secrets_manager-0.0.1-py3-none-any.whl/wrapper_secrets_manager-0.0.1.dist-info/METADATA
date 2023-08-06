@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: wrapper-secrets-manager
+Version: 0.0.1
+Summary: This is a custom package to read secrets from GCP.
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: google-cloud-secret-manager (==2.16.1)
+
+UNKNOWN
+
+
