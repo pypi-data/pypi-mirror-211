@@ -1,0 +1,13 @@
+discordLevelingSystem/__init__.py,sha256=twHomHdHAIptFYMbrnwh9XOooq8x1eHlkU5OYOalfsY,575
+discordLevelingSystem/announcement.py,sha256=4wzmbrj-IBJnhHDDGnNom-b82MakOF4BknYQE3veFL0,11960
+discordLevelingSystem/decorators.py,sha256=5EmMKPMWdwZ2nhMsBFRa9Qr2e6ia2ky6GaudqPD2DN8,4754
+discordLevelingSystem/errors.py,sha256=5X99i8dZxYUPJyw7BzWQDKCj0x4FOn2Y5nqgrqdCfEA,3564
+discordLevelingSystem/leveling_system.py,sha256=Ha8jZjAh50VIGGK--QyXQHtoECMQJm16pWzKGJFWGIU,93498
+discordLevelingSystem/levels_xp_needed.py,sha256=Kt-qCImg0bxHgiG2Xma6W6y2V4JSSs9qbn8i-amaB_M,3735
+discordLevelingSystem/member_data.py,sha256=GcaTO6aLiafHH8Xmi9aqsM5wggNYiniN4lhTfzneUeI,2768
+discordLevelingSystem/role_awards.py,sha256=Ivd8QwGyFeU6M8WPblLC1GwvD7G00qaEmiOuvoPMf3U,6485
+discordLevelingSystem-1.2.1.dist-info/LICENSE,sha256=vZHHO_nUeMXcGmqy-xu4evXwBmsYCqdZ1dJlgP3QXpM,1079
+discordLevelingSystem-1.2.1.dist-info/METADATA,sha256=iVHfW1-FyHtCFGj0CsJN7ZCZNNsxbtWC0VQXbou3Opw,48767
+discordLevelingSystem-1.2.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+discordLevelingSystem-1.2.1.dist-info/top_level.txt,sha256=Fwps9vOpSfFJG4cNhpGYPDYSn6BdZemVHknIWwrXA90,22
+discordLevelingSystem-1.2.1.dist-info/RECORD,,
