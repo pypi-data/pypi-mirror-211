@@ -1,0 +1,14 @@
+health_calc_pack_py/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+health_calc_pack_py/app.py,sha256=ZGEoTdvLhcqWhwd_UzDeIK0A6eOVsOGfq4w3iQah9vU,2203
+health_calc_pack_py/estrategia.py,sha256=UBWusU_aPOXkEPGyy1Oo9Qr3XdJx5im0zwqLcGDtSrM,162
+health_calc_pack_py/ganho_massa_muscular.py,sha256=bDq0kA4TpV5R-6AA3aWLBiZ1aPgdgp92VLOtqiLYnkk,300
+health_calc_pack_py/imc.py,sha256=S9vVrXjvFaoHAFQM5kxIedEMruVY9oTokjRFX-hnBys,985
+health_calc_pack_py/macronutrientes.py,sha256=b-2JeeM6SrinRsLsqhhwvfCVJP_qdGt3CYSWjSSekCY,1116
+health_calc_pack_py/manutencao_peso.py,sha256=2NJpWt8ltnfIZf8HNvM85g2CwncKvfCjtbUThaeaLwI,295
+health_calc_pack_py/perda_gordura.py,sha256=7l5P76VHSmWuvrVNp7EyFW_kgnAiMH0ABdVLVFFbOp8,297
+health_calc_pack_py/perda_peso_ganho_massa_muscular.py,sha256=R6Mfu-SBF2EqvmM6TbhYo18CpsyHGBwDcDGO1GNBIT4,313
+health_calc_pack_py/static/swagger.json,sha256=4Nuv2zmt-gr1_W-_sJfTPAr_xSaWqjyXZ-4kP8eNl3A,2988
+health_calc_pack_py/test_imc.py,sha256=OSnnmPTrtmCfLlXeXIZxkE-vro6safzI4N3Rt5qKgCc,262
+health_calc_pack_py-0.4.1.dist-info/METADATA,sha256=C8pjOo8Hf4Y9TIyKMo6qXcPQ3JHJjBNtQccKmIh6qPY,2079
+health_calc_pack_py-0.4.1.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+health_calc_pack_py-0.4.1.dist-info/RECORD,,
