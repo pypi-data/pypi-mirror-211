@@ -1,0 +1,11 @@
+froeling/__init__.py,sha256=uCn9pOjWeCBCBPB1JBZeIRVvSpeEC0k6U-58t5wtXUc,478
+froeling/client.py,sha256=7hv-fhxqcXLm_4p_8d2EsL2b10PzUC4AYramlpkITfw,2905
+froeling/endpoints.py,sha256=2FIYYLr9kmLvey88eFNwEKX3t1s1VuGGWtzjIJbSp2g,960
+froeling/exceptions.py,sha256=PWwKzUv04dKyTIh-w5qjwVli35_wvaQf3ClDzxz2WpE,794
+froeling/objects.py,sha256=J4RIXTvG4sqAM2trWfKaLQtmj7v_QyeMDn9sDI1nFoM,3982
+froeling/session.py,sha256=rQEvAPdTlWuC5kdHb-NxspMmy11B2XEXjyVn6bbLPcc,3437
+froeling_connect-2023.0.1.dist-info/LICENSE.txt,sha256=QoHHaJkA6yWTwoa8M0L1-mQaSGq1TWYA6qFVj6Z7gfI,11511
+froeling_connect-2023.0.1.dist-info/METADATA,sha256=Z_4tKp7DOaLAihqz3FvGCh6yBBIJZ6FZOfClSTl5Ewc,14472
+froeling_connect-2023.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+froeling_connect-2023.0.1.dist-info/top_level.txt,sha256=YR1z2xSW6LDO4iq4k3zFlTbhhPfPmo_F8tfDZVTcHzk,9
+froeling_connect-2023.0.1.dist-info/RECORD,,
