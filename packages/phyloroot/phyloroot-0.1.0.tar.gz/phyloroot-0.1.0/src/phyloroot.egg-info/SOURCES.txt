@@ -1,0 +1,11 @@
+LICENCE
+README.md
+pyproject.toml
+src/phyloroot/__init__.py
+src/phyloroot/main_cli.py
+src/phyloroot/rooting.py
+src/phyloroot.egg-info/PKG-INFO
+src/phyloroot.egg-info/SOURCES.txt
+src/phyloroot.egg-info/dependency_links.txt
+src/phyloroot.egg-info/entry_points.txt
+src/phyloroot.egg-info/top_level.txt
