@@ -1,0 +1,8 @@
+colablib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+colablib/cprint.py,sha256=qo6N5eaJ_hQrW7y5ZDagZdRbD3eCPLBgQByL99G_xjw,1127
+colablib/git_utils.py,sha256=9KpTHvXNWg5qlNgMPGwOzD2-ZZ80cabOVDcxo_LaywE,2408
+colablib/py_utils.py,sha256=Wsr2VaWgdaHds6hpaBHWaxVa050gMx8NG8geeiZ5c6Q,1580
+colablib-0.1.3.dist-info/METADATA,sha256=4ChD_h9n4LpAsvpn6b4eE1B9iDNZ1_YIcVbIVqAq-Pw,215
+colablib-0.1.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+colablib-0.1.3.dist-info/top_level.txt,sha256=_2rdC6JsKFI84l_C-XiEqMjFbxK-GbQJFFJ1gtVXJUY,9
+colablib-0.1.3.dist-info/RECORD,,
