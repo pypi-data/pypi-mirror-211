@@ -1,0 +1,7 @@
+ox_script/__init__.py,sha256=M5E5Kd4izxiv5kNKr-AezomcoFXV3qXFwJ3aAiZhfqU,72
+ox_script/general_purpose_apis.py,sha256=HQXZ_YBYs2RYyOBVjd5Ujm_nZ0TGLdABVxqHKD-gHzM,10101
+ox_script/printer_specific_apis.py,sha256=sZ0UvW12nRvufcE092_iuMiDivQsNVwbNxOzfBX3t2E,44463
+ox_script-2.0.0.dist-info/METADATA,sha256=C5lCLAe9LvmxaCdz6tPwMtR5frOot1auKAMD6NujOsw,783
+ox_script-2.0.0.dist-info/WHEEL,sha256=1VPi6hfNQaRRNuEdK_3dv9o8COtLGnHWJghhj4CQ28k,92
+ox_script-2.0.0.dist-info/top_level.txt,sha256=NBwTvbacPI4XbhEixkKifJdq-8AdNotl9TPz0ZYutsQ,10
+ox_script-2.0.0.dist-info/RECORD,,
