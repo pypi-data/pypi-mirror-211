@@ -1,0 +1,14 @@
+aioslimproto/__init__.py,sha256=q4az80XS__XAsdxdDEDc8aJj7XrScesylXWDgB9JLNw,143
+aioslimproto/cli.py,sha256=uouUHK5Jh0jQX525VL6meGh2EimgbiIxc9_HoI7qiMo,22638
+aioslimproto/client.py,sha256=RF7-Uz5snqsiuvCVX-khapu5dGiLI_eZSBQOCabNmJw,30608
+aioslimproto/const.py,sha256=kwWhrHf9YFD7W0P5oQGl3_393rO6UhXwM5DSsqOZadU,842
+aioslimproto/discovery.py,sha256=60Xcxd1ciHUQa9hLqUda24e1RdDzq5gCvjAEwbT7iQk,7326
+aioslimproto/errors.py,sha256=GLbX3RCpgHOrgT5J1y1uydjxLnGFMrOsfDpRdRRUKE8,432
+aioslimproto/server.py,sha256=R1Q_xIs5V-6iwAHFmz5dX0wCzhAB5omFMJpXynL9bss,6000
+aioslimproto/util.py,sha256=WDeiK2OC9nEv_e7FG6AOmaXKJ2xiFVqKG1GLH1anG60,3326
+aioslimproto-2.2.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+aioslimproto-2.2.2.dist-info/METADATA,sha256=VHxgpDlC35ByS_lFNMq4hkjj2fY9POENik6FtyHM1pY,1068
+aioslimproto-2.2.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+aioslimproto-2.2.2.dist-info/top_level.txt,sha256=In4wvRJJUgq-rFsGflKDVlg_w4jQpgSWSbsx6yC0-Uc,13
+aioslimproto-2.2.2.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aioslimproto-2.2.2.dist-info/RECORD,,
