@@ -1,0 +1,10 @@
+getswish/__init__.py,sha256=t5zZNs_6zlY_m9zX5TK5apJ4LF9FvgKS-zu8XaovSiM,328
+getswish/client.py,sha256=i0jhHT3eRdIga_-h4s_MADcSh0pU7DlHhpLlqF69JK8,6910
+getswish/environments.py,sha256=n_1lw-pIEGXcWIZKCkKIkCjVdAomiio4yJXmbEqZoVQ,1367
+getswish/exceptions.py,sha256=KRLkN8EKDXPsGSdQyNbTwQoqqVNhOMzZteZZawCmiO0,249
+getswish/models.py,sha256=75iMayJIgymUhxE7fy4m-vLWySP3i9DwvyviSZy7xFI,2914
+getswish/utils.py,sha256=W_S9m6QBii266GIzWz1Nb9k7uY2fnj4GXav9qIGN2zU,1109
+getswish-0.2.3.dist-info/LICENSE,sha256=OiDgxv-BIWoiFVd8nd0le6Xo8LJDVrWfNRRT_0kntHQ,1069
+getswish-0.2.3.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+getswish-0.2.3.dist-info/METADATA,sha256=ug8vZL5_7TOcxLnCaBBIawIsjN6YVCIhq0dUjSn6vNw,6338
+getswish-0.2.3.dist-info/RECORD,,
