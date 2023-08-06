@@ -1,0 +1,9 @@
+start_ocr/__init__.py,sha256=RDDfYuBK5HbUGuK_2x9wNkJC9t0Ap4s93nd4jGNh0RU,435
+start_ocr/coordinates.py,sha256=XOBNK2RaVrE-BAOTg-QDj8mig7vDvXkoFsqdomVMw-c,2322
+start_ocr/fetch.py,sha256=L6UkF8Qge0rO2GwmMg021i5IATW8ZfT9Y2P_hBV6jXg,3452
+start_ocr/header.py,sha256=qUDPS56VqBi9yZmzsMP0-YFXeJ3UhmHbpbOocep1r84,3941
+start_ocr/lines.py,sha256=2FgTSUfK095C_PMeYVK0H51iMibjAAfFrJrrJLO2lQ4,4635
+start_ocr/slice.py,sha256=Nbs6qEyq9DUTedeFVN05tTOZnxCwq4ZW87lIHGVIcoQ,7279
+start_ocr-0.0.1.dist-info/METADATA,sha256=Jc8nwi1d3hq9xUSKhe2gygMtp9_Mw6Tc4OZwCpUEGcc,1058
+start_ocr-0.0.1.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+start_ocr-0.0.1.dist-info/RECORD,,
