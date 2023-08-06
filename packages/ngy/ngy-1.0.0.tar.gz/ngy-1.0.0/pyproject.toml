@@ -1,0 +1,39 @@
+[project]
+name = "ngy"
+version = "1.0.0"
+authors = [
+  { name="Sébastien LAUTIER", email="sebastien.lautier@gmail.com" },
+]
+description = "Create MBTiles from IGN maps"
+readme = "README.md"
+requires-python = ">=3.10.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "aiohttp>=3.8.4",
+    "lxml>=4.9.2",
+    "pyproj>=3.5.0",
+    "tqdm>=4.65.0",
+    "fire>=0.5.0"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/sebastien17/ngy"
+"Bug Tracker" = "https://github.com/sebastien17/ngy/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+locus = "ngy.Tools:__execute_locus"
+
+[tool.hatch.build]
+include = [
+]
+exclude = [
+  "requirements.txt"
+]
