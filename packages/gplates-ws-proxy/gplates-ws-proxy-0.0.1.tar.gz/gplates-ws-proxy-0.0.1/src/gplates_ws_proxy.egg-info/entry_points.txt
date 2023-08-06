@@ -1,0 +1,2 @@
+[console_scripts]
+gplates-proxy = gplates_proxy.__main__:main
