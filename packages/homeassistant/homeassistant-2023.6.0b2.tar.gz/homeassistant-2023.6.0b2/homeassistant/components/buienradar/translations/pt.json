@@ -1,0 +1,265 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "A localiza\u00e7\u00e3o j\u00e1 est\u00e1 configurada"
+        },
+        "error": {
+            "already_configured": "A localiza\u00e7\u00e3o j\u00e1 est\u00e1 configurada"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "latitude": "Latitude",
+                    "longitude": "Longitude"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "barometerfcname": {
+                "name": "Bar\u00f3metro"
+            },
+            "barometerfcnamenl": {
+                "name": "Bar\u00f3metro"
+            },
+            "condition": {
+                "name": "Condi\u00e7\u00e3o",
+                "state": {
+                    "clear": "Clear",
+                    "cloudy": "Nublado",
+                    "fog": "Enevoado",
+                    "lightning": "Trovoada",
+                    "rainy": "Chuvoso",
+                    "snowy": "Nevoso"
+                }
+            },
+            "condition_1d": {
+                "name": "Condi\u00e7\u00e3o 1d",
+                "state": {
+                    "clear": "Clear",
+                    "cloudy": "Nublado",
+                    "fog": "Enevoado",
+                    "lightning": "Trovoada",
+                    "rainy": "Chuvoso",
+                    "snowy": "Nevoso"
+                }
+            },
+            "condition_2d": {
+                "name": "Condi\u00e7\u00e3o 2d",
+                "state": {
+                    "clear": "Clear",
+                    "cloudy": "Nublado",
+                    "fog": "Enevoado",
+                    "lightning": "Trovoada",
+                    "rainy": "Chuvoso",
+                    "snowy": "Nevoso"
+                }
+            },
+            "condition_3d": {
+                "name": "Condi\u00e7\u00e3o 3d",
+                "state": {
+                    "clear": "Clear",
+                    "cloudy": "Nublado",
+                    "fog": "Enevoado",
+                    "lightning": "Trovoada",
+                    "rainy": "Chuvoso",
+                    "snowy": "Nevoso"
+                }
+            },
+            "condition_4d": {
+                "name": "Condi\u00e7\u00e3o 4d",
+                "state": {
+                    "clear": "Clear",
+                    "cloudy": "Nublado",
+                    "fog": "Enevoado",
+                    "lightning": "Trovoada",
+                    "rainy": "Chuvoso",
+                    "snowy": "Nevoso"
+                }
+            },
+            "condition_5d": {
+                "name": "Condi\u00e7\u00e3o 5d",
+                "state": {
+                    "clear": "Clear",
+                    "cloudy": "Nublado",
+                    "fog": "Enevoado",
+                    "lightning": "Trovoada",
+                    "rainy": "Chuvoso",
+                    "snowy": "Nevoso"
+                }
+            },
+            "conditioncode": {
+                "name": "C\u00f3digo de condi\u00e7\u00e3o"
+            },
+            "conditioncode_1d": {
+                "name": "C\u00f3digo de condi\u00e7\u00e3o 1d"
+            },
+            "conditioncode_2d": {
+                "name": "C\u00f3digo de condi\u00e7\u00e3o 2d"
+            },
+            "conditioncode_3d": {
+                "name": "C\u00f3digo de condi\u00e7\u00e3o 3d"
+            },
+            "conditioncode_4d": {
+                "name": "C\u00f3digo de condi\u00e7\u00e3o 4d"
+            },
+            "conditioncode_5d": {
+                "name": "C\u00f3digo de condi\u00e7\u00e3o 5d"
+            },
+            "conditiondetailed": {
+                "name": "Condi\u00e7\u00e3o detalhada",
+                "state": {
+                    "clear": "Limpo",
+                    "cloudy": "Nublado",
+                    "fog": "Enevoado",
+                    "light-rain": "Chuva ligeira",
+                    "light-snow": "Neve ligeira",
+                    "lightning": "Trovoada",
+                    "partlycloudy": "Parcialmente nublado",
+                    "partlycloudy-fog": "Parcialmente nublado, nevoeiro",
+                    "partlycloudy-light-rain": "Parcialmente nublado, chuva fraca",
+                    "partlycloudy-light-snow": "Parcialmente nublado, neve ligeira",
+                    "partlycloudy-lightning": "Parcialmente nublado, rel\u00e2mpagos",
+                    "partlycloudy-rain": "Parcialmente nublado, chuva",
+                    "partlycloudy-snow": "Parcialmente nublado, neve",
+                    "rainy": "Chuvoso",
+                    "snowy": "Nevoso",
+                    "snowy-rainy": "Nevoso, chuvoso"
+                }
+            },
+            "conditiondetailed_1d": {
+                "name": "Condi\u00e7\u00e3o pormenorizada 1d",
+                "state": {
+                    "clear": "Limpo",
+                    "cloudy": "Nublado",
+                    "fog": "Nevoeiro",
+                    "light-rain": "Chuva ligeira",
+                    "light-snow": "Neve ligeira",
+                    "lightning": "Rel\u00e2mpagos",
+                    "partlycloudy": "Parcialmente nublado",
+                    "partlycloudy-fog": "Parcialmente nublado, nevoeiro",
+                    "partlycloudy-light-rain": "Parcialmente nublado, chuva fraca",
+                    "partlycloudy-light-snow": "Parcialmente nublado, neve ligeira",
+                    "partlycloudy-lightning": "Parcialmente nublado, rel\u00e2mpagos",
+                    "partlycloudy-rain": "Parcialmente nublado, chuva",
+                    "partlycloudy-snow": "Parcialmente nublado, neve",
+                    "rainy": "Chuvoso",
+                    "snowy": "Nevoso",
+                    "snowy-rainy": "Nevoso, chuvoso"
+                }
+            },
+            "conditiondetailed_2d": {
+                "name": "Condi\u00e7\u00e3o pormenorizada 2d",
+                "state": {
+                    "clear": "Limpo",
+                    "cloudy": "Nublado",
+                    "fog": "Nevoeiro",
+                    "light-rain": "Chuva ligeira",
+                    "light-snow": "Neve ligeira",
+                    "lightning": "Rel\u00e2mpagos",
+                    "partlycloudy": "Parcialmente nublado",
+                    "partlycloudy-fog": "Parcialmente nublado, nevoeiro",
+                    "partlycloudy-light-rain": "Parcialmente nublado, chuva fraca",
+                    "partlycloudy-light-snow": "Parcialmente nublado, neve ligeira",
+                    "partlycloudy-lightning": "Parcialmente nublado, rel\u00e2mpagos",
+                    "partlycloudy-rain": "Parcialmente nublado, chuva",
+                    "partlycloudy-snow": "Parcialmente nublado, neve",
+                    "rainy": "Chuvoso",
+                    "snowy": "Nevoso",
+                    "snowy-rainy": "Nevoso, chuvoso"
+                }
+            },
+            "conditiondetailed_3d": {
+                "name": "Condi\u00e7\u00e3o pormenorizada 3d",
+                "state": {
+                    "clear": "Limpo",
+                    "cloudy": "Nublado",
+                    "fog": "Nevoeiro",
+                    "light-rain": "Chuva ligeira",
+                    "light-snow": "Neve ligeira",
+                    "lightning": "Rel\u00e2mpagos",
+                    "partlycloudy": "Parcialmente nublado",
+                    "partlycloudy-fog": "Parcialmente nublado, nevoeiro",
+                    "partlycloudy-light-rain": "Parcialmente nublado, chuva fraca",
+                    "partlycloudy-light-snow": "Parcialmente nublado, neve ligeira",
+                    "partlycloudy-lightning": "Parcialmente nublado, rel\u00e2mpagos",
+                    "partlycloudy-rain": "Parcialmente nublado, chuva",
+                    "partlycloudy-snow": "Parcialmente nublado, neve",
+                    "rainy": "Chuvoso",
+                    "snowy": "Nevoso",
+                    "snowy-rainy": "Nevoso, chuvoso"
+                }
+            },
+            "conditiondetailed_4d": {
+                "name": "Condi\u00e7\u00e3o pormenorizada 4d",
+                "state": {
+                    "clear": "Limpo",
+                    "cloudy": "Nublado",
+                    "fog": "Enevoado",
+                    "light-rain": "Chuva ligeira",
+                    "light-snow": "Neve ligeira",
+                    "lightning": "Trovoada",
+                    "partlycloudy": "Parcialmente nublado",
+                    "partlycloudy-fog": "Parcialmente nublado, nevoeiro",
+                    "partlycloudy-light-rain": "Parcialmente nublado, chuva fraca",
+                    "partlycloudy-light-snow": "Parcialmente nublado, neve ligeira",
+                    "partlycloudy-lightning": "Parcialmente nublado, rel\u00e2mpagos",
+                    "partlycloudy-rain": "Parcialmente nublado, chuva",
+                    "partlycloudy-snow": "Parcialmente nublado, neve",
+                    "rainy": "Chuvoso",
+                    "snowy": "Nevoso",
+                    "snowy-rainy": "Nevoso, chuvoso"
+                }
+            },
+            "conditiondetailed_5d": {
+                "name": "Condi\u00e7\u00e3o pormenorizada 5d",
+                "state": {
+                    "clear": "Limpo",
+                    "cloudy": "Nublado",
+                    "fog": "Enevoado",
+                    "light-rain": "Chuva ligeira",
+                    "light-snow": "Neve ligeira",
+                    "lightning": "Trovoada",
+                    "partlycloudy": "Parcialmente nublado",
+                    "partlycloudy-fog": "Parcialmente nublado, nevoeiro",
+                    "partlycloudy-light-rain": "Parcialmente nublado, chuva fraca",
+                    "partlycloudy-light-snow": "Parcialmente nublado, neve ligeira",
+                    "partlycloudy-lightning": "Parcialmente nublado, rel\u00e2mpagos",
+                    "partlycloudy-rain": "Parcialmente nublado, chuva",
+                    "partlycloudy-snow": "Parcialmente nublado, neve",
+                    "rainy": "Chuvoso",
+                    "snowy": "Nevoso",
+                    "snowy-rainy": "Nevoso, chuvoso"
+                }
+            },
+            "conditionexact": {
+                "name": "Estado completo"
+            },
+            "conditionexact_1d": {
+                "name": "Estado completo 1d"
+            },
+            "conditionexact_2d": {
+                "name": "Estado completo 2d"
+            },
+            "conditionexact_3d": {
+                "name": "Estado completo 3d"
+            },
+            "conditionexact_4d": {
+                "name": "Estado completo 4d"
+            },
+            "conditionexact_5d": {
+                "name": "Estado completo 5d"
+            },
+            "humidity": {
+                "name": "Humidade"
+            },
+            "irradiance": {
+                "name": "Irradi\u00e2ncia"
+            },
+            "precipitation": {
+                "name": "Precipita\u00e7\u00e3o"
+            }
+        }
+    }
+}
