@@ -1,0 +1,8 @@
+restrictedsessions/__init__.py,sha256=42STGor_9nKYXumfeV5tiyD_M8VdcddX7CEexmibPBk,22
+restrictedsessions/middleware.py,sha256=kLQaaGn9ccbP4FzmpK2-T3-gNVftVdh-ZwzWZjjh-E4,4434
+django_restricted_sessions-0.4.0.dist-info/AUTHORS.rst,sha256=XFmyLreVMLlxTRsuB3wXBTY84CVcNWWxaYH0settIwQ,254
+django_restricted_sessions-0.4.0.dist-info/LICENSE,sha256=ArUpHsVOz4rdeMs5bCrZjrbCSW1OayXb8Ko-g7FKC_o,1499
+django_restricted_sessions-0.4.0.dist-info/METADATA,sha256=Yg7nkZkx689oRRfeLyYcrDQYoDqmfnM6YWUyktM5seo,4125
+django_restricted_sessions-0.4.0.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+django_restricted_sessions-0.4.0.dist-info/top_level.txt,sha256=aiW00qNffOBC51RQeC61vb-0d2hlClwvdlGrp8--DHg,19
+django_restricted_sessions-0.4.0.dist-info/RECORD,,
