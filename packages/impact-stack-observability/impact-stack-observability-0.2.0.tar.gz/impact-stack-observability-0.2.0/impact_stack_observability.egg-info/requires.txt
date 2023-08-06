@@ -1,0 +1,14 @@
+flask
+requests
+
+[dev]
+black
+flask-sqlalchemy
+isort
+pip-tools
+pre-commit
+pydocstyle[toml]>=6
+pylint
+pytest
+pytest-cov
+pytest-flask
