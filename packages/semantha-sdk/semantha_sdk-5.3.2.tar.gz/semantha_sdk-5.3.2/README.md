@@ -1,0 +1,197 @@
+![](https://www.semantha.de/wp-content/uploads/semantha-inverted.svg)
+
+# semantha® SDK
+
+The semantha SDK is a high-level REST client to access the [semantha](http://semantha.ai) API.
+The SDK is still under development.
+An overview of the current progress (i.e. implemented and tested resources and endpoints) may be found at the end of
+this document (State of Development).
+The semantha SDK is compatible with python >= 3.8.
+
+## Design guideline/idea
+Every api call can easily be translated into a python sdk call:
+`GET /api/info -> api.info.get()`
+The SDK offers type hints and doc strings for services, parameters, input types and return types within your IDE.
+
+### Disclaimer
+
+**IMPORTANT:** The SDK is still under development and interfaces may change at any time without notice.
+Use with caution and on own risk.
+
+## Update Notes
+
+### Version 5.3.0
+
+Added new service: /api/domains/{domainid}/answers with retrieval augemented answer generation based on your library entries.
+Added new parameter on /modelinstances
+
+### Version 5.2.0
+
+The SDK is now automatically generated from our openapi.json specification. It covers 71/169 (=42%) of all available services. Many class names and package names have been changed.
+
+### Version 4.5.0
+Major restructuring of the SDK.
+All sub-resources are directly accessible (instead of invoking getters).
+That also means that (except for a few) all functions are plain get/post/delete/put/patch.
+For example, in Versions < 4.5.0 a domain resource was fetched using `semantha_sdk.domains.get_one("domain_name")`.
+Starting with 4.5.0 it is `semantha_sdk.domains("domain_name")`.
+That also means that get/post/put/patch functions return semantha model objects (and never resources), which makes usage more consistent.
+
+### Access
+
+To access semantha's API you will need an API and a server url.
+Both can be requested via [this contact form](https://www.semantha.de/request/).
+
+## Example Usage
+
+### Authentication with key
+
+```
+import semantha_sdk
+api = semantha_sdk.login(server_url="<semantha server URL>", key="<your key>")
+print("Talking to semantha server: " + api.info.get().version)
+```
+
+### Authentication with key file
+
+```
+import semantha_sdk
+api = semantha_sdk.login(server_url="<semantha server URL>", key_file="<path to your key file (json format)>")
+# end-points (resp. resources) can be used like objects
+my_domain = api.domains("my_domain")
+# they may have sub-resources, which can be retrieved as objects as well
+reference_documents = my_domain.referencedocuments
+# GET all reference documents
+print("Library contains "+ len(reference_documents.get()) + " entries")
+```
+
+Example key file in json format:
+
+```
+{ "API_Key" : "<your key>" }
+```
+
+### CRUD on End-points
+
+```
+# CRUD operations are functions
+domain_settings = my_domain.settings.get()
+#Warning: this deletes ALL reference documents/library entries
+my_domain.referencedocuments.delete() 
+```
+
+### Function Return Types & semantha Data Model
+
+```
+# some functions only return None, e.g.
+my_domain.referencedocuments.delete() # returns NoneType
+
+# others return built in types, e.g
+roles_list = currentuser.roles.get() # returns List[str]
+
+# but most return objects of the semantha Data Model
+# (all returned objects are instances of frozen dataclasses)
+settings = my_domain.settings.get() # returns instance of Settings
+# attributes can be accessed as properties, e.g.
+settings.enable_tagging # returns true or false
+# Data Model objects may be complex
+document = my_domain.references.post(file=a, referencedocument=b) # returns instance of Document
+# the following returns the similarity value of the first references of the first sentence of the
+# the first paragraph on the first page of the document (if a reference was found for this sentence)
+similarity = pages[0].contents[0].paragraphs[0].references[0].similarity # returns float
+```
+
+## State of Development
+
+The following resources and end-points are fully functional and (partially) tested:
+
+- [X] login -> API
+    - [X] .currentuser -> CurrentUser
+        - [X] get -> CurrentUser
+        - [X] roles -> RolesEndpoint
+          - [x] get -> List[str]
+    - [X] .diff -> Diff
+        - [X] post -> List[Difference]
+    - [X] .info -> InfoEndpoint
+        - [X] get -> Info
+    - [x] .languages -> List[str]
+    - [X] .domains -> Domains
+        - [X] get -> List[Domain]
+    - [X] .domains("domain_name") -> Domain
+        - [X] .documentannotations -> DocumentAnnotationsEndpoint
+            - [X] post -> IOBase
+        - [X] .documentclasses -> DocumentclassesEndpoint
+            - [X] get -> List[DocumentClass]
+            - [X] post -> DocumentClass
+            - [X] delete -> None
+        - [X] .documentclasses("id") -> DocumentclassEndpoint
+            - [X] get -> DocumentClass(
+            - [X] delete -> None
+            - [X] put -> DocumentClass
+            - [ ] documentclasses -> 
+                - [ ] get -> List[DocumentClass]
+                - [ ] post -> DocumentClass
+            - [x] referencedocuments -> ReferencedocumentsEndpoint
+                - [x] get -> List[Document]
+                - [x] patch -> None
+                - [x] delete -> None
+        - [X] .documentcomparisons -> DocumentcomparisonsEndpoint
+            - [ ] post ->
+          - [X] .documents -> DocumentsEndpoint
+              - [X] post -> List[Document]
+        - [x] .modelinstances -> ModelInstance
+        - [x] .modelclasses -> ModelClass
+        - [X] .referencedocuments -> ReferenceDocuments
+            - [X] get -> ReferenceDocuments
+            - [X] delete -> None
+            - [X] post -> list[DocumentInformation]
+            - [x] .clusters -> DocumentCluster
+              - [x] get -> DocumentCluster
+            - [x] .statistic -> Statistics
+              - [x] get -> Statistic
+            - [x] .namedentities -> NamedEntities
+              - [x] get -> Optional[NamedEntities]
+        - [x] .referencedocuments("id") -> ReferenceDocument
+            - [X] get -> Document
+            - [X] delete -> None
+            - [X] patch -> DocumentInformation
+            - [X] .paragraphs("id") -> ReferenceDocumentParagraph
+                - [X] get -> Paragraph
+                - [X] patch -> Paragraph
+                - [X] delete -> None
+            - [X] .sentences("id") -> ReferenceDocumentSentence
+                - [x] get -> Sentence
+        - [X] .references -> References
+            - [X] post -> Document
+        - [x] .settings -> DomainSettings
+            - [X] get -> DomainSettings
+            - [X] patch -> DomainSettings
+        - [x] .similaritymatrix -> List[MatrixRow]
+            - [x] .clusters -> List[MatrixRow]
+        - [ ] .tags -> DomainTags
+            - [X] get -> list[str]
+            - .("tag").referencedocuments
+              - [x] get
+              - [x] delete
+        - [x] .validation -> SemanticModel
+    - [ ] .model
+      - [x] .domains("domain_name")
+        - [x] .boostwords -> Boostwords
+            - [x] get -> list[Boostword]
+            - [X] delete -> None
+            - [X] post -> Boostword
+        - [x] .boostwords("id") -> Boostword
+            - [X] get -> Boostword
+            - [X] delete -> None
+            - [X] put -> Boostword
+        - [x] .synonyms -> Synonyms
+            - [X] get -> list[Synonym]
+            - [X] delete -> None
+            - [X] post -> Synonym
+        - [x] .synonyms("id") -> Synonym
+            - [X] get -> Synonym
+            - [X] delete -> None
+            - [X] put -> Synonym
+        - [x] .datatypes -> list[str]
+        - [x] .extractortypes -> list[str]
+        - [x] .metadatatypes -> list[str]
