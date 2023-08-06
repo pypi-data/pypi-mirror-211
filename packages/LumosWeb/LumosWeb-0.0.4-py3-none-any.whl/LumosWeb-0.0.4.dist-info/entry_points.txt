@@ -1,0 +1,2 @@
+[console_scripts]
+LumosWeb = lumosweb_entry:main
