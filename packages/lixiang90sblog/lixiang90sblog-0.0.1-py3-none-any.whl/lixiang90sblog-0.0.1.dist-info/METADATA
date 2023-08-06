@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: lixiang90sblog
+Version: 0.0.1
+Summary: Lixiang90's personal blog
+Home-page: https://github.com/lixiang90/lixiang90sblog.git
+Author: lixiang90
+Author-email: lixiang90@github.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# lixiang90sblog
+
+lixiang90的个人博客
+
+## list_articles()
+
+返回文章列表
+
+## display_titles()
+
+列出标题
+
+## print_article(title)
+
+输入标题title，在控制台上打印文章
+
+## print_article_by_id(id)
+
+输入文章序号id，在控制台上打印文章
