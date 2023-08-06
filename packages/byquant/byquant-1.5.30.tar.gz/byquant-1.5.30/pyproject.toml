@@ -1,0 +1,7 @@
+[project]
+name = "byquant"
+version = "1.5.30"
+dependencies = [
+  "requests",
+  "pandas"
+]
