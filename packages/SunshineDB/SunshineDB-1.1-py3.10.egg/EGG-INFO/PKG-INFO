@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: SunshineDB
+Version: 1.1
+Summary: Lightweight json-database library for Python
+Home-page: https://github.com/Sunshine-Database/Sunshine
+Author: de4oult
+Author-email: kayra.dist@email.com
+License: MIT License
+Keywords: sunshine,database,json,json-database,db
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+# Sunshine
+
+Lightweight json-database library for Python
