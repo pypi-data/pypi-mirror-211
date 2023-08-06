@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "poetry-plugin-ignore-build-script"
+version = "0.1.0"
+description = "Poetry plugin that adds support for building non platform wheels by ignoring build scripts."
+authors = ["Blair Azzopardi <blairuk@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "poetry_plugin_ignore_build_script"}]
+repository = "https://github.com/bsdz/poetry-plugin-ignore-build-script"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+poetry = "^1.2"
+
+[tool.poetry.plugins."poetry.plugin"]
+ignore-build-script-plugin = "poetry_plugin_ignore_build_script.plugin:IgnoreBuildScriptPlugin"
+
+[tool.poetry.plugins."poetry.application.plugin"]
+ignore-build-script-app-plugin = "poetry_plugin_ignore_build_script.plugin:IgnoreBuildScriptApplicationPlugin"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
