@@ -1,0 +1,8 @@
+airscript/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airscript/action/__init__.py,sha256=yWoWuwcgKQ6Z6DoJ1iHR2R2IacNzCL9QQZ7tN9TAXhY,405
+airscript/action/touch.py,sha256=0gkGJ6_cTmq_KYPpcPheNoF17q-kwW6Ra9x0b5PPtj4,165
+airscript/graphics/__init__.py,sha256=f2yzxipQvY-ZH5RwkVsM_KtxKMxTB9jwrueharP_-tM,85
+airscript-0.0.3.dist-info/METADATA,sha256=L0rxHW-DA9MhlqBpKyRveHsdn69aOBphhCJqskfq4Ps,433
+airscript-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+airscript-0.0.3.dist-info/top_level.txt,sha256=gPGqd_c_B6HaWF3VtDHJRBEZ4b-FekbIgxi0LAMYOLw,10
+airscript-0.0.3.dist-info/RECORD,,
