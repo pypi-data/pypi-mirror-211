@@ -1,0 +1,11 @@
+fbilr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fbilr/find.py,sha256=0xMU6AQVA9uweOqBKS0MC8WolV5AO5UOZ6RYxA8ioYE,1016
+fbilr/finders.py,sha256=E0B3kBeZ8s45JOtrdBi7KtY7FpMJ2FzeFDJPq98Pa08,13243
+fbilr/utils.py,sha256=kIhzudEk5tlPJLC792-H0-SaFQ_X3Evily942a8fW_s,1547
+fbilr-1.0.3.data/scripts/find_barcode.py,sha256=P46t6GuO2QoEX9AHZZ9vc-UFvXdJRv0NSynRUuqOuzE,2356
+fbilr-1.0.3.data/scripts/plot_barcode_detail.py,sha256=h73vaqyHtdjjrfAtnVNqqGtn9dhr-tfFSWB8kPUcndw,6967
+fbilr-1.0.3.dist-info/LICENSE,sha256=aRRqIvVvnWC83OV1h9mHkiSJIWVU7syfI3fAPOWQiDs,1068
+fbilr-1.0.3.dist-info/METADATA,sha256=WG9J_MvNtAyrlSMOb_erlzd0C2_3o440-8Ve4SbqnNk,3966
+fbilr-1.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fbilr-1.0.3.dist-info/top_level.txt,sha256=oinZAI1Df-NiyQaMLeFZ6qrSpKNgS_znAjncCaA20jo,6
+fbilr-1.0.3.dist-info/RECORD,,
