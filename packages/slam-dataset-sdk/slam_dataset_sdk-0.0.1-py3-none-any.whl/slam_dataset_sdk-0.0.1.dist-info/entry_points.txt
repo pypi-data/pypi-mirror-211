@@ -1,0 +1,2 @@
+[console_scripts]
+slam_dataset_sdk = slam_dataset_sdk.tools.cmd:run
