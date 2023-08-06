@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+locate_pixelcolor_cpppragma/README.md
+locate_pixelcolor_cpppragma/__init__.py
+locate_pixelcolor_cpppragma/clooppra.dll
+locate_pixelcolor_cpppragma/requirements.txt
+locate_pixelcolor_cpppragma/thirdparty.json
+locate_pixelcolor_cpppragma.egg-info/PKG-INFO
+locate_pixelcolor_cpppragma.egg-info/SOURCES.txt
+locate_pixelcolor_cpppragma.egg-info/dependency_links.txt
+locate_pixelcolor_cpppragma.egg-info/requires.txt
+locate_pixelcolor_cpppragma.egg-info/top_level.txt
