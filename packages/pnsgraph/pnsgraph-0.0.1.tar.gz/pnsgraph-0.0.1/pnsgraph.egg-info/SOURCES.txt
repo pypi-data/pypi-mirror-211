@@ -1,0 +1,5 @@
+setup.py
+pnsgraph.egg-info/PKG-INFO
+pnsgraph.egg-info/SOURCES.txt
+pnsgraph.egg-info/dependency_links.txt
+pnsgraph.egg-info/top_level.txt
