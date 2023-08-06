@@ -1,0 +1,4 @@
+bcrypt
+pynecone>=0.1.30
+pynecone-debounce-input>=0.3
+passlib>=1.7.4
