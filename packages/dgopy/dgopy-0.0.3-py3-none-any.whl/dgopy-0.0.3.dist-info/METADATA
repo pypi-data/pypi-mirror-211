@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: dgopy
+Version: 0.0.3
+Summary: DGo Python
+Author: Dinh Van Luan
+Author-email: dluanvn@gmail.com
+License: MIT
+Keywords: dgo
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+
+DGo pilot framework data input
