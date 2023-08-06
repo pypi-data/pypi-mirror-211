@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: TAFPD
+Version: 0.0.2
+Summary: command analythor
+Author: TAFPD team
+Author-email: <giokhvichia69@gmail.com>
+Keywords: python,data,analyse,information
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/plain
+
