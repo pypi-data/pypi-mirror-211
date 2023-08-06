@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: simplicial-kuramoto
+Version: 0.0.2
+Author: Alexis Arnaudon
+Author-email: alexis.arnaudon@epfl.ch
+Requires-Dist: numpy (>=1.15.0)
+Requires-Dist: scipy (>=0.13.3)
+Requires-Dist: matplotlib (>=2.2.0)
+Requires-Dist: networkx (>=2.5)
+Requires-Dist: pandas (>=1.0.2)
+Requires-Dist: tqdm
+Requires-Dist: nolds
+Provides-Extra: all
+Requires-Dist: xgi ; extra == 'all'
+
