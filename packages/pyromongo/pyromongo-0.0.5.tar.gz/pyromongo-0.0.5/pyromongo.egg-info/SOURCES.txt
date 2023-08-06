@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+pyromongo/__init__.py
+pyromongo.egg-info/PKG-INFO
+pyromongo.egg-info/SOURCES.txt
+pyromongo.egg-info/dependency_links.txt
+pyromongo.egg-info/requires.txt
+pyromongo.egg-info/top_level.txt
