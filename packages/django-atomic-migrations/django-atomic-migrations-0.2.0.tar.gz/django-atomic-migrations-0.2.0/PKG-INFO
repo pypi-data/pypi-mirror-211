@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: django-atomic-migrations
+Version: 0.2.0
+Summary: Adds unique constraint on Django's migration tracking model
+Home-page: https://github.com/rkojedzinszky/django-atomic-migrations
+Author: Richard Kojedzinszky
+Author-email: richard@kojedz.in
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Django Atomic Migrations
+
+[![Build Status](https://drone.srv.kojedz.in/api/badges/krichy/django-atomic-migrations/status.svg)](https://drone.srv.kojedz.in/krichy/django-atomic-migrations)
+
+This small package ensures that Django's migration tracking model has an
+unique index for applied migrations.
+
+[Django ticket](https://code.djangoproject.com/ticket/34610)
+
+## Usage
+
+Install the package:
+```bash
+$ pip install django-atomic-migrations
+```
+Then, add the application to `INSTALLED_APPS` in your Django project:
+```
+INSTALLED_APPS = [
+	...
+	'django_atomic_migrations.AtomicMigrations',
+	...
+]
+```
+
+If your project's database already exists, you should run
+```bash
+$ python manage.py add-migrations-constraint
+```
+to create the missing unique constraint.
