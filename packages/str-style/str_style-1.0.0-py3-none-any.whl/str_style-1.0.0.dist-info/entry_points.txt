@@ -1,0 +1,3 @@
+[console_scripts]
+str-style=strstyle.__main__:main
+
