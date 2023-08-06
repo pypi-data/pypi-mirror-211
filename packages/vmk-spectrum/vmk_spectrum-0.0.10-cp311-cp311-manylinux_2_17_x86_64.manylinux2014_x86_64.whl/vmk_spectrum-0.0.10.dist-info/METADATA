@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: vmk-spectrum
+Version: 0.0.10
+Author: leadpogrommer
+Requires-Python: >=3.10
+Description-Content-Type: text/plain
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Provides-Extra: test
+Requires-Dist: pytest (>=6.0) ; extra == 'test'
+
+Library for communication with VMK spectrometers
