@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+falgo.egg-info/PKG-INFO
+falgo.egg-info/SOURCES.txt
+falgo.egg-info/dependency_links.txt
+falgo.egg-info/top_level.txt
