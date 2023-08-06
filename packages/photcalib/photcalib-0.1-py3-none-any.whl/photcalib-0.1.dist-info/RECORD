@@ -1,0 +1,13 @@
+photcalib/__init__.py,sha256=7f4gtPMUdOP-zNGyFqx-SrhfZf5v3PzwVaxwl4YC2SY,493
+photcalib/apply_calib.py,sha256=0ZYotXnzvrj0dIyKTQfYUpIyKbyqbHOzrY2GaijgfRE,1878
+photcalib/deform_norm.py,sha256=wvihXQMjKuHpQFoOJ9qhEU2cddLK6mX-G7Y4EZtCDdc,1900
+photcalib/make_plots.py,sha256=4O36LKoZzipiad3wykskOJocl_JgeQbf5OGltvlcPY8,28842
+photcalib/model_nn.py,sha256=4OvIBXXsl3H7NIlHYJ74wOZ41F4-PMsFqLvrFok1XMA,1900
+photcalib/model_old.py,sha256=BGkefmR6cJTsnihwddrvtU9yPYzbUpb9g4A1WVRFrdw,1277
+photcalib/set_argparse.py,sha256=WX2CnNCCV6LFjlxRvu14-6GuQ_PntxhlRKsi7hgoL_M,3456
+photcalib/training.py,sha256=zhHBbZBr4heOP9Rq4AleZJPw5jyKhH4TWsBpZdeVsIs,6281
+photcalib-0.1.dist-info/LICENSE,sha256=3Cfp4d_sN8rnBU7Qv10IgnJOBEenO6ICfU9-50QL6OA,1089
+photcalib-0.1.dist-info/METADATA,sha256=SLxEIK8dcXrKOYXEXFH_2qrXUz6ryUc0Beb6yspit34,2463
+photcalib-0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+photcalib-0.1.dist-info/top_level.txt,sha256=I79huYtRLS_ZrybWkYu63oqRWu9Xq7d-qY9JiSEyKr4,10
+photcalib-0.1.dist-info/RECORD,,
