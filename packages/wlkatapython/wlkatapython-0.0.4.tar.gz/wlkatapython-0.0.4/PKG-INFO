@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: wlkatapython
+Version: 0.0.4
+Summary: WLKATA-Mirobot Multiple robotic arm control
+Home-page: UNKNOWN
+Author: dong shuo
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: This SDK is suitable for controlling single or multiple Mirabot robotic arms, which must be controlled through a multi-functional controller
+Platform: UNKNOWN
