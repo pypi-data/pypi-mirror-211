@@ -1,0 +1,2 @@
+[console_scripts]
+awc = awc_cli.__main__:main
