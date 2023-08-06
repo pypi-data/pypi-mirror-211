@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/calculate/__init__.py
+src/calculate/fps.py
+src/calfps.egg-info/PKG-INFO
+src/calfps.egg-info/SOURCES.txt
+src/calfps.egg-info/dependency_links.txt
+src/calfps.egg-info/top_level.txt
