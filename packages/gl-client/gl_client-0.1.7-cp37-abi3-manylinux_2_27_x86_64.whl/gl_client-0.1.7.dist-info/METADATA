@@ -1,0 +1,4 @@
+Metadata-Version: 2.1
+Name: gl-client
+Version: 0.1.7
+Requires-Dist: protobuf>=3
