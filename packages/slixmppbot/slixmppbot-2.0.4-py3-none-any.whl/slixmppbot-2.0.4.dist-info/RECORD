@@ -1,0 +1,13 @@
+LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+xmppbot/__init__.py,sha256=BIJA_vvYGxTu2BA5WgWnNYeRCFkZqrbTPYtSMRCzozE,159
+xmppbot/basebot.py,sha256=mGg0QaJaVlyGhXHgEQ7JwpXn5WMZ_GLTEXXpD8mr1Bw,2205
+xmppbot/cmdbot.py,sha256=0yiv-nSESNRm31tkGWB7mes1kq8LbM8I0OwTPDqUB_Q,4673
+xmppbot/common.py,sha256=ujF3kr4TWtDsB9NI1_VvMpdWkSQQEU6RUTPG2HESZmI,294
+xmppbot/configbot.py,sha256=cgMYuAQ3gMWkBAvRFymS0gaWtTrWrVvHMdUekTPWXzA,3920
+xmppbot/timeout.py,sha256=UqzzL_tij9A8IZgHU18w-uiU1WMPomHbxqnK5nJDGaI,475
+xmppbot/xmppbot.py,sha256=3IwJTa3GukLuYPY20ziJa9DZqQSgz2vC48P5hZtAj80,7691
+xmppbot/xmppmsg.py,sha256=Mbvxavi0L5PSct1rK9AR2UBOd7rfd4ThqG6Oyz8Zg_4,2784
+slixmppbot-2.0.4.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+slixmppbot-2.0.4.dist-info/METADATA,sha256=ftD61VnMRv2Hz0adztDAUnSVloAHIgSCViVTfv2JS2k,1302
+slixmppbot-2.0.4.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+slixmppbot-2.0.4.dist-info/RECORD,,

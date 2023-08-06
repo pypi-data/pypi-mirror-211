@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: slixmppbot
+Version: 2.0.4
+Summary: A framework for writing Jabber/XMPP bots
+Home-page: https://github.com/s-nt-s/XmppBot
+License: GPLv3
+Keywords: xmpp,bot
+Author: s-nt-s
+Author-email: santos82h@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: slixmpp (>=1.8.3,<2.0.0)
+Description-Content-Type: text/markdown
+
+The XmppBot framework is powered by [Slixmpp](https://slixmpp.readthedocs.io/)
+and allows you to easily write bots that use the XMPP protocol.
+You can create commands by decorating functions in your subclass
+or customize the bot’s operation completely. MUCs are also supported.
+
+You can see some examples in [`examples` folder](https://github.com/s-nt-s/XmppBot/tree/master/examples).
+
+You can install and unsintall with:
+
+```
+# install
+pip3 install slixmppbot
+# uninstall
+pip3 uninstall slixmppbot
+```
