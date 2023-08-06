@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: mach2viz
+Version: 0.0.3
+Summary: Online interactive visualizer for Migration Analysis of Clonal History 2 (MACH2)
+Keywords: Computational biology Bioinformatics Cancer Metastasis Phylogeny
+Author-Email: Vikram Ramavarapu <vikramr2@illinois.edu>
+License: MIT License
+        
+        Copyright (c) 2023 University of Illinois at Urbana-Champaign
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Project-URL: Homepage, https://github.com/elkebir-group/mach2-viz
+Project-URL: Bug tracker, https://github.com/elkebir-group/mach2-viz/issues
+Requires-Python: >=3.9
+Requires-Dist: typer
+Requires-Dist: selenium
+Description-Content-Type: text/markdown
+
+# MACHINA-Viz
+Visualizing the solution space for the parsimonious migration history problem with polytomy resolution. Solutions are generated via the MACHINA algorithm ([El-Kebir et. al.](https://www.nature.com/articles/s41588-018-0106-z)).
+
+## File Inputs
+MACHINA-Viz takes file inputs in a json file format. The json is in the following format:
+```
+{
+  "name": <patient name>,
+  "solutions": [
+    {
+      "name": <solution name>,
+      "tree": [
+        [u, v],
+        ...
+      ],
+      "labeling": [
+        [n, label],
+        ...
+      ],
+      "migration": [
+        [label_u, label_v, # occurences],
+        ...
+      ]
+    },
+    ...
+  ],
+  "summary": {
+    "migration": [
+      [label_u, label_v, # occurences],
+      ...
+    ]
+  }
+}
+```
+In a given solution, $u$ and $v$ are node IDs in a solution's clonal tree, $n$ is a clonal tree node ID, and $label$ is the anatomical labeling for $n$. The migration graph is stored as a weighted edge list between anatomical locations $label_u$ and $label_v$. The edges are weighted by the number of metastases between those two anatomical locations as inferred from the clonal tree. The summary is a migration graph where the number of metastases are counted across the entire solution space.
+### JSON Compression
+If you have outputs from MACHINA that need to be compressed, use [json_compression](https://github.com/vikramr2/json_compression).

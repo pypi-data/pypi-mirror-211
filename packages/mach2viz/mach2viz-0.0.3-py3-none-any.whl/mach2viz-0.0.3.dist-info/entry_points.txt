@@ -1,0 +1,3 @@
+[console_scripts]
+mach2viz = mach2viz.run:main
+
