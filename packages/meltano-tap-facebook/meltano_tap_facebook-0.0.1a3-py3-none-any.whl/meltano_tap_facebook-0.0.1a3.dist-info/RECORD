@@ -1,0 +1,9 @@
+tap_facebook/__init__.py,sha256=6eHD1uM5K7xqOhdrYE4H8aMVIUFHyblZu9t-8VsFMiw,24
+tap_facebook/client.py,sha256=JVaN79GZL4IbbIApqjClIL2VbGbqi3NhXqJ8KjmdonU,5402
+tap_facebook/streams.py,sha256=TDM15-JAkXa4ElKLdYySNuVbdctqhUm_iRuugJPwc7E,69730
+tap_facebook/tap.py,sha256=no2-uU8ALxOktYcE5n4uAAVfFSisIF06Z-kn-Vz-ugQ,2077
+meltano_tap_facebook-0.0.1a3.dist-info/LICENSE,sha256=SCVQGLQfwOllsRFa9-Z3m8IYu4pnR9Vh2oANUCJiKqI,3860
+meltano_tap_facebook-0.0.1a3.dist-info/METADATA,sha256=whQsHz09AfTylgxbT5Oym-eyHbOwMz0kg5v03K8sBJs,5533
+meltano_tap_facebook-0.0.1a3.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+meltano_tap_facebook-0.0.1a3.dist-info/entry_points.txt,sha256=K1q89nz9WmYXzrBCkFpilMB1bTwVmOR0iSuG24LLdCM,65
+meltano_tap_facebook-0.0.1a3.dist-info/RECORD,,
