@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: zhonghong-climate
+Version: 1.0.5
+Summary: Python library for interfacing with ZhongHong HVAC controller
+Home-page: https://github.com/heculess/zhonghong_hvac
+Author: heculess lau
+Author-email: heculess@hotmail.com
+License: Apache
+Keywords: zhonghong climate hvac
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.5
+
+Python library for interfacing with ZhongHong HVAC controller
