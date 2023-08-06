@@ -1,0 +1,12 @@
+attrbox/__init__.py,sha256=O0AjWuQkhb6mfa3Qi9WiOTZXt7cL5JCJx-TsgokVFF8,604
+attrbox/attrdict.py,sha256=YOLBxP2VCCvbWvGbHk2zh607mr-opX1xkUaLmWfyFQw,9762
+attrbox/attrlist.py,sha256=EbRgjJPwsmTvrenzaR7YZR-F8Sb1SEyFjT-jNlLrdaE,9805
+attrbox/config.py,sha256=x6wCpawkJ0EQr73bcMuzxiNYyIioJBBdZE4CRefl3Zs,7880
+attrbox/env.py,sha256=HO8m2R8GKvJtyYFSJg7NfD6Urv_Q9LiD_u-3CJ1IEAU,8689
+attrbox/fn.py,sha256=cDoI8Fr2fXV8xqZxYuuN5NC1gwTu0x1z0xZRv2oMoD8,5856
+attrbox/jsend.py,sha256=gBF6WTrUUc8cdRACUMz-5aU3VdB1gsvSTL-2IJXN4BM,3014
+attrbox-0.1.2.dist-info/LICENSE.md,sha256=jr_nQEBBnHwlLXYzVm9Lj1rmYKIWrENFUzSPB0ydNAI,1052
+attrbox-0.1.2.dist-info/METADATA,sha256=4qCjDN7hYojN5iCcO-tMThaknt-I-ugOH0WOv5qZcpY,7529
+attrbox-0.1.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+attrbox-0.1.2.dist-info/top_level.txt,sha256=j7kOlh_TNoJRnNbxXEE7Ky3wEyeEezCUKkSAuWIXB-M,8
+attrbox-0.1.2.dist-info/RECORD,,
