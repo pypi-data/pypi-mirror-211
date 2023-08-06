@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "bottomofthesea"
+version = "0.1.1"
+description = "Decodes hidden materials in the video from the Land At The Bottom Of The Sea project"
+authors = ["doublescoop <backslash.share@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+keywords = ["decode", "decoding", "steganography", "steg", "thelandatthebottomofthesea"]
+
+
+[tool.poetry.dependencies]
+python = "^3.9"
+opencv-python = "^4.7.0.72"
+Pillow = "^9.5.0"
+numpy = "^1.24.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+bottomofthesea = "bottomofthesea.bottomofthesea:main"
