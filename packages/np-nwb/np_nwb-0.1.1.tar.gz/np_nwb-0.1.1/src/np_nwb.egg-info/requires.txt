@@ -1,0 +1,4 @@
+np-session
+allensdk
+pynwb
+np-eyetracking>=0.1.1

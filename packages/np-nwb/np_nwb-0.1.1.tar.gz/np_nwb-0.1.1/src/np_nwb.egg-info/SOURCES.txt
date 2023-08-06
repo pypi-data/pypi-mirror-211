@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+src/np_nwb/__init__.py
+src/np_nwb/dynamic_routing_dev.py
+src/np_nwb/utils.py
+src/np_nwb.egg-info/PKG-INFO
+src/np_nwb.egg-info/SOURCES.txt
+src/np_nwb.egg-info/dependency_links.txt
+src/np_nwb.egg-info/requires.txt
+src/np_nwb.egg-info/top_level.txt
+src/np_nwb/init_with_metadata/__init__.py
+src/np_nwb/init_with_metadata/__main__.py
+src/np_nwb/init_with_metadata/from_np_session.py
