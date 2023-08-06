@@ -1,0 +1,5 @@
+flask
+flask_openid
+python-openid-cla
+python-openid-teams
+authlib
