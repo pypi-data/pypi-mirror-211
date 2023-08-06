@@ -1,0 +1,63 @@
+#!/usr/bin/env python3
+
+
+from optparse import OptionParser
+import json
+import numpy as np
+from cosmology_utils import get_cosmo_params, surveyed_spacetime_volume
+
+def parse_command_line():
+  parser = OptionParser()
+  parser.add_option("-v", "--verbose", action = "store_true", help = "Be verbose.",default=False)
+  parser.add_option("--rates-astro", help="string of dictionary containg astrophysical rates")
+  parser.add_option("--dbns-old",help="string of dictionary containg BNS ranges of older runs in Mpc")
+  parser.add_option("--runtime-old",help="string of dictionary containg run time of older runs in months")
+  parser.add_option("--threshold-old",help="far threshold used in older runs in months^-1")
+  parser.add_option("--N-inj",help="string of dictionary containing number of triggers injected in each category")
+  parser.add_option("--z-max",help="string of dictionary containing maximum redshift of triggers injected in each category")
+  parser.add_option("--terrestrial-old",help="Terrestrial count of older runs")
+  parser.add_option("--VT-old",help="string of dictionary containing recovered VT of older runs")
+  parser.add_option("--dbns-new",help="BNS range of new run")
+  parser.add_option("--T-inj-start",help="start time of injections")
+  parser.add_option("--T-inj-stop",help="stop time of injections")
+  parser.add_option("--output",help="path to output json file")
+  (options,arg) = parser.parse_args()
+
+  process_params = dict(options.__dict__)
+
+  return options,process_params
+  
+options,process_params = parse_command_line()
+
+rates_astro=json.loads(options.rates_astro)
+categories=list(rates_astro.keys())
+N_inj=json.loads(options.N_inj)
+z_max=json.loads(options.z_max)
+T_start=float(options.T_inj_start)
+T_stop=float(options.T_inj_stop)
+dbns_old=json.loads(options.dbns_old)
+dbns_new=float(options.dbns_new)
+T=json.loads(options.runtime_old)
+far_th_old=float(options.threshold_old)
+T_live_old=float(options.terrestrial_old)/far_th_old
+VT_old=json.loads(options.VT_old)
+
+
+#calculate scaled V_new
+
+T_eff={c:T[c]*T_live_old/np.sum(list(T.values())) for c in list(T.keys())}
+Scaling=dbns_new**3/np.sum(list({c:dbns_old[c]**3*T_eff[c] for c in list(T.keys())}.values()))
+
+V_new={c:VT_old[c]*Scaling for c in list(VT_old.keys())}
+
+
+#calculate Injected Rates
+
+omega=get_cosmo_params()
+VT_inj={k:surveyed_spacetime_volume(T_start,T_stop,z_max[k],omega) for k in list(z_max.keys())}
+R_inj={k:N_inj[k]/VT_inj[k] for k in list(VT_inj.keys())}
+
+print(json.dumps({"rates_astrophysical":rates_astro,"rates_injections":R_inj,"V":V_new}))
+with open(options.output ,'w') as f:
+    json.dump({"rates_astrophysical":rates_astro,"rates_injections":R_inj,"V":V_new},f)
+

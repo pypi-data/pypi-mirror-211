@@ -1,0 +1,27 @@
+#!/usr/bin/env python3
+
+import sqlite3
+from optparse import OptionParser
+from pastro import pastro
+
+def parse_command_line():
+  parser = OptionParser()
+  parser.add_option("-v", "--verbose", action = "store_true", help = "Be verbose.")
+  parser.add_option("--category-name", help = "the category name, e.g., BNS, NSBH, BBH, TERRESTRIAL")
+  parser.add_option("--output", metavar = "filename", help = "Write merged raw likelihood data to this file.")
+  options, filenames = parser.parse_args()
+  process_params = dict(options.__dict__)
+
+  return options, process_params, filenames
+
+options, process_params, filenames = parse_command_line()
+
+model = pastro.pastro_model()
+
+for fn in filenames:
+  print(fn)
+  connection = sqlite3.connect(fn)
+  for mc,lr, in connection.cursor().execute("SELECT mchirp, likelihood FROM coinc_inspiral JOIN coinc_event on coinc_event.coinc_event_id == coinc_inspiral.coinc_event_id;"):
+    model.increment(options.category_name, mc, lr)
+
+model.to_h5(options.output)

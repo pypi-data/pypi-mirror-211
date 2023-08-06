@@ -1,0 +1,70 @@
+#!/usr/bin/env python3
+
+
+from optparse import OptionParser
+import json
+from gwpy.table import EventTable
+import numpy as np
+from ligo.gracedb.rest import GraceDb
+from pastro import pastro
+
+def parse_command_line():
+  parser = OptionParser()
+  parser.add_option("-v", "--verbose", action = "store_true", help = "Be verbose.",default=False)
+  parser.add_option("--fgmc-model", help="fgmc pastro model .h5 file")
+  parser.add_option("--output-file", help=".txt file to store pastros")
+  parser.add_option("--injection-file",help="xml.gz file containing sim inspiral table")
+  (options,arg) = parser.parse_args()
+
+  process_params = dict(options.__dict__)
+
+  return options,process_params
+
+def category_from_mass(mass1,mass2):
+    m1,m2=max(mass1,mass2), min(mass1,mass2)
+    if(m1<=3.0):
+        return 'BNS'
+    elif(m2>3.0):
+        return 'BBH'
+    else:
+        return 'NSBH'
+
+options,process_params = parse_command_line()
+
+p_astro_model=pastro.p_astro_fgmc.from_h5(options.fgmc_model)
+
+sim_inspiral=EventTable.read(options.injection_file,u'sim_inspiral')
+
+
+gtcs=np.array(sim_inspiral['geocent_end_time'])+np.array(sim_inspiral['geocent_end_time_ns'])*1e-9 + 81024000
+mass1=np.array(sim_inspiral['mass1'])
+mass2=np.array(sim_inspiral['mass2'])
+
+client = GraceDb(service_url='https://gracedb-playground.ligo.org/api/',cred='x509_proxy')
+
+events_inj=client.events(query='si.channel = "GDS-CALIB_STRAIN_INJ1_O3Replay" | si.channel = "Hrec_hoft_16384Hz_INJ1_O3Replay" pipeline: gstlal far<2.78e-4 created: 2022-07-31 18:39:42 .. 2022-09-09 23:59:59')
+
+with open(options.output_file,'w') as f:
+    f.write('column     grace_id      coinc_time      combined_far    mass1       mass2       category       pBBH          pBNS         pNSBH          pTerr')
+    f.write("\n")
+    for i,event in enumerate(events):
+        trigger={'snr':event['extra_attributes']['CoincInspiral']['snr'],'likelihood':event['likelihood'],'template_id':event['extra_attributes']['SingleInspiral'][0]['Gamma0']}
+        gt=event['extra_attributes']['CoincInspiral']['end_time']+1e-9*event['extra_attributes']['CoincInspiral']['end_time_ns']
+        try:
+            idx=np.intersect1d(np.where(gt+1>=gtcs)[0],np.where(gt-1<=gtcs)[0])[0]
+        except IndexError:
+            continue
+        m1,m2=mass1[idx],mass2[idx]
+        cat=category_from_mass(m1,m2)
+        far=event['extra_attributes']['CoincInspiral']['combined_far']
+        pastro=json.loads(p_astro_model(trigger,inj=True))
+        f.write(str(i)+"\t"+event['graceid']+"\t"+str(gt)+"\t"+str(far)+"\t"+str(m1)+"\t"+str(m2)+
+        "\t"+cat+"\t"+str(pastro['BBH'])+"\t"+str(pastro['BNS'])+"\t"+str(pastro['NSBH'])+"\t"+str(pastro['Terr']))
+        f.write("\n")
+        
+        
+
+
+
+    
+  

@@ -1,0 +1,208 @@
+# Pastro
+
+Pastro is a package to estimate the probabilities of astrophysical origins of the gravitational wave candidates detected by the GstLAL pipeline, for the purpose of assisting in real-time multi-messenger follow-up observations. This repository develops and operates our p_astro model for the evaluation of p(category|data) with BNS, BBH, NSBH, and Terrestial (noise) events. 
+
+For more detailed information on the operation manual of pastro, please find the information on **gwsci.org**: https://gwsci.org/ops/pastro 
+
+
+## Install & Setup (on ICDS, similar on CIT)
+
+We want to execute our package in singularity. Start by making a directory to try this out in e.g.:
+
+```
+$ mkdir /ligo/home/ligo.org/user.name/pastro_test
+$ cd /ligo/home/ligo.org/user.name/pastro_test
+```
+wherever you want to install the p-astro package at. For using the fgmc model, preferebly use CIT. 
+
+We will install everything in a writable gstlal container. Start by 
+
+```
+$ singularity build --sandbox --fix-perms gstlal-dev docker://containers.ligo.org/lscsoft/gstlal:master
+```
+
+Get directory mounts ready (ICDS)
+
+```
+$ mkdir gstlal-dev/ligo gstlal-dev/cvmfs
+```
+
+Enter the container and clone this repo
+
+```
+$ singularity run --writable -B /ligo -B /cvmfs gstlal-dev
+Singularity> cd gstlal-dev
+Singularity> mkdir src
+Singularity> cd src
+Singularity> git clone https://git.ligo.org/gstlal/pastro.git
+Singularity> cd pastro
+```
+
+After going into the repo directory, you can setup the environment
+
+
+```
+Singularity> python3 setup.py install --old-and-unmanageable
+```
+
+**Notice**: You need to repeat the `python3 setup.py` step each time you `git pull` the p-astro repo. 
+
+Now you should have a working container with this repo installed. To test it, exit the contaier (e.g., ctrl+D) and try it out
+
+```
+[chad.hanna@comp-hd-002 pastro_test]$ singularity exec gstlal-dev python3 
+Python 3.6.8 (default, Nov 10 2020, 07:30:01) 
+[GCC 4.8.5 20150623 (Red Hat 4.8.5-44)] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import pastro
+>>>
+```
+
+It works! the pastro package is installed.
+
+## FGMC method (O4 low-latency)
+
+**Ray, Anarya. et. al. (2023)**, dcc-link: https://dcc.ligo.org/P2300141
+
+After installing a writable GstLAL container with pastro package complied, you can generate the pastro model of fgmc method following the example code below (on CIT). If you want to run the code on the ICDS, simply change the environment variable from `$TMPDIR` to `/ligo`. The `Makefile` in `examples/fgmc/` of the pastro repo provides an example of creating the pastro model, which contains the estimated rate of O4 observation, and template-weights of O4 mass model. If you don't want to estimate the O4 rates and template weights, please skip to the example section below. 
+
+README.md for rate estimation and template weights: 
+
+- **Rate Estimation (O4)**: https://git.ligo.org/gstlal/pastro/-/blob/main/Rates_for_O4.md 
+
+- **Template Weights (O4)**: https://git.ligo.org/gstlal/pastro/-/blob/main/template-weights-fgmc-using-manifold.md 
+
+To generate the pastro model, one needs to prepare a mass model with mass cuts implemented for the NS boundaries. In O4, GstLAL uses manifold to generate the mass models and mass models with mass cuts. The README.md above shows how to create this template-weights file from manifold. 
+
+After you have the estimated rates, template-weight files, a ranking-statistic file, and a picked FAR threshold, you can **create the pastro-model file** for the final posterior probability: 
+
+```
+singularity exec -B $TMPDIR /path/to/gstlal-dev/ initialize_pastro_fgmc_model --rankstat-filename <your-rank-stat-pdf-file> --weights-dir <path-to-your-template-weights> --V-new <your-sensitive-volume V> --far-threshold <far-threshold> --output <output-model-h5file-name> --rates <rates> --rates-inj <injection-rate>
+```
+
+Once you have the pastro model generated, you can **estimate the events** by:
+
+```
+singularity exec -B $TMPDIR /path/to/gstlal-dev/ calculate_pastro_fgmc --fgmc-model pastro_model_fgmc.h5 --templateid {template_id} --snr {snr-thresh}  --lnlr {likelihood-thresh} {"BBH": <estimated-BBH-rate>, "BNS": <estimated-BNS-rate>, "NSBH": <estimated-NSBH-rate>, "Terr": <noise-rate>}
+```
+
+For example, you can **estimate the p-astro of injection events**:
+
+```
+singularity exec -B  /path/to/gstlal-dev/ calculate_pastro_fgmc_test --output-file pastro_inj.txt --fgmc-model pastro_model_fgmc.h5 --injection-file ${injdb}
+
+```
+
+
+#### (a) Example: Makefile
+
+or, alternatively, using the example in `Makefile`: 
+
+```
+$ cp gstlal-dev/src/pastro/example/fgmc/Makefile .
+$ make
+$singularity exec -B $TMPDIR gstlal-dev ./calculate_pastro_fgmc --fgmc-model fgmc_model.h5 --templateid 7012.0 --snr  14.48703297189981  --lnlr 52.61944811540472
+{"BBH": 0., "BNS": 0.9999929320428521, "NSBH": 4.1997623780371124e-16, "Terr": 0.}
+```
+To calculate pastros of all injection triggers in mdc and save it on a text file,
+```
+$ cp gstlal-dev/src/pastro/example/fgmc/test_model/Makefile .
+$ X509_USER_PROXY=x509_proxy liho-proxy-init user.name
+$ make
+```
+If different Rate and VT numbers from older runs were to be used, run the following script with the different numbers than whats currently in the argument.
+```
+$ signularity exec -B $TMPDIR gstlal-dev/ ./calculate_rates --runtime-old '{"O2":0.75,"O1":0.333333333333}' --dbns-old '{"O1":0.08,"O2":0.1}' --threshold-old 8760.12 --dbns-new 0.13 --T-inj 0.109589 --rates-astro '{"BBH": 18.0730098234, "NSBH":52.9087878433,"BNS":662.448825556 }' --VT-old '{"BBH":0.644707742859,"NSBH":0.0225894859494,"BNS":0.00250795809983}' --z-max '{"BBH":1.9, "BNS":0.15, "NSBH":0.25}' --N-inj '{"BBH":118036.67,"BNS":118036.67, "NSBH":118036.67}' --output rates_V.json --terrestrial-old 3924
+```
+Then copy the Rates and V's from the output of this to the make files and run them again.
+
+
+## Mchirp Method (O3 offline)
+
+### 1. Executing the Jobs
+
+Makefile in `/ligo/home/ligo.org/user.name/pastro_test/gstlal-dev/src/examples/Makefile` provides a good example of running the p-astro jobs.
+
+
+If you want to use the Makefile, follow the instructions below:
+
+make sure you are in your original directory, e.g., `/ligo/home/ligo.org/user.name/pastro_test` then do
+
+```
+$ cp -r gstlal-dev/src/pastro/examples .
+$ cd examples
+```
+
+open the Makefile and change the `UNAME` (second line) to your LIGO username.  
+
+To load the injection and noise database from ICDS and UWM-submit, do
+
+```
+$ make bns
+$ make bbh
+$ make nsbh
+$ make zl
+```
+If you get an error with `Permission Denied`, you need to fix your `scp/shh keys` at LIGO Data Grid https://ldg.ligo.org/ldg/manage_ssh/ 
+
+To load the original trunk files, do
+
+```
+$ make bbh-inj-files
+$ make bns-inj-files
+$ make nsbh-inj-files
+```
+
+Next, p-astro can build model for injection events:
+
+```
+$ make H1L1V1-BNS_LR_DIST-1238166018-15813982.h5
+$ make H1L1V1-NSBH_LR_DIST-1238166018-15813982.h5
+$ make H1L1V1-BBH_LR_DIST-1238166018-15813982.h5
+```
+
+For model of noise event:
+
+```
+$ make H1L1V1-TERRESTRIAL_LR_DIST-1238166018-15813982.h5
+```
+The outputs are saved into .h5 files. 
+
+To combine all models and setup expected count number, try:
+
+```
+$ make H1L1V1-PASTRO_MODEL-1238166018-15813982.h5
+
+```
+
+You can change the merge-rate and VT-parameter to the values that you are looking for.
+
+To (end-to-end) test the p-astro model, try:
+
+```
+make bns-test bbh-test nsbh-test noise-test
+```
+
+### 2. Optional
+
+1. If you want to calculate the likelihood threshold L* for expected count of noise event N = 1, do
+
+```
+$ make l-thresh
+```
+
+2. If you want want to find out vt-parameters for O3a analysis, do
+
+```
+$ make bns-vt bbh-vt nsbh-vt
+$ make bns-count-coinc bbh-count-coinc nsbh-count-coinc
+```
+
+3. If you want to calculate the expected count number for O3a analysis, do
+
+```
+$ make bns-expected-O3a-count bbh-expected-O3a-count nsbh-expected-O3a-count
+```
+
+
+

@@ -1,0 +1,68 @@
+#!/usr/bin/env python3
+
+
+# need to read xml files from https://git.ligo.org/RatesAndPopulations/lvc-rates-and-pop/-/tree/master/share/O3/injection_files
+# need to do `ligolw_no_ilwdchar <filename>` (e.g. `ligolw_no_ilwdchar bns-xmldoc/*xml.gz`) in the command before reading xmldoc.
+
+from optparse import OptionParser
+import sqlite3
+import numpy
+import yaml
+
+from ligo.lw import param as ligolw_param
+from ligo.lw import ligolw
+from ligo.lw import lsctables
+from ligo.lw import utils as ligolw_utils
+
+@ligolw_param.use_in
+@lsctables.use_in
+class LIGOLWContentHandler(ligolw.LIGOLWContentHandler):
+  pass
+# lsctables.use_in(LIGOLWContentHandler)
+
+def parse_command_line():
+  parser = OptionParser()
+  parser.add_option("-v", "--verbose", action = "store_true", help = "Be verbose.")
+  parser.add_option("--category", help = "The category of p-astro, BNS, BBH, NSBH")
+  parser.add_option("-c", "--config-file", help = "config file that stores coinc event count")
+  parser.add_option("--output", help = "output calculated VT to a yml file")
+  options, filenames = parser.parse_args()
+  process_params = dict(options.__dict__)
+
+  return options, process_params, filenames
+
+options, process_params, filenames = parse_command_line()
+
+with open(options.config_file) as file:
+  values = yaml.safe_load(file)
+  coinc_count = float(values[options.category+"_coinc_count"])
+
+vt = []
+accept_rate = []
+total_sim = 0
+for fn in filenames:
+  #  print(fn)
+  xmldoc = ligolw_utils.load_filename(fn, contenthandler = LIGOLWContentHandler, verbose = True)
+  process_params_table = lsctables.ProcessParamsTable.get_table(xmldoc)
+  sim_inspiral_table = lsctables.SimInspiralTable.get_table(xmldoc)
+ 
+  sim_event = 0
+  for row in sim_inspiral_table:
+    sim_event += 1 
+  total_sim += sim_event
+
+  for row in process_params_table:
+    if row.param == "--VT":
+      vt.append(float(row.value))
+    if row.param == "--acceptance-rate":
+      accept_rate.append(float(row.value))
+ 
+vt = numpy.array(vt)
+accept_rate = numpy.array(accept_rate)
+VT = numpy.sum(vt*accept_rate)/total_sim * coinc_count
+
+with open(options.output, 'w') as out:
+  VT_out = {}
+  VT_out[options.category+'_VT'] = float(VT)
+  yaml.safe_dump(VT_out, out)
+

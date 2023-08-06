@@ -1,0 +1,48 @@
+#!/usr/bin/env python3
+
+import sys
+from gstlal import rio;
+import numpy
+from ligo.lw import ligolw
+from ligo.lw import utils as ligolw_utils
+from ligo.lw.utils import process as ligolw_process
+from lal import rate
+from optparse import OptionParser
+from gstlal import far
+from pastro import pastro
+import sqlite3
+import yaml
+
+def parse_command_line():
+  parser = OptionParser()
+  parser.add_option("-v", "--verbose", action = "store_true", help = "Be verbose.")
+  parser.add_option("--n-noise", type="float", help = "expected number of noise event at lr-thresh")
+  parser.add_option("--category", action="append", help = "the category name, e.g., BNS, NSBH, BBH. must be given same number of times as merge-rate/VT.")
+  parser.add_option("-c", "--config-file", help = "config file")
+  parser.add_option("--output", metavar = "filename", help = "Write merged raw likelihood data to this file.")
+
+  options, filenames = parser.parse_args()
+  process_params = dict(options.__dict__)
+
+  return options, process_params, filenames
+
+# read in DAGs
+options, process_params, filenames = parse_command_line()
+model = pastro.pastro_model()
+
+with open(options.config_file) as file:
+  values = yaml.safe_load(file)
+  lr_thresh = float(values['lr-thresh'])
+
+for fn in filenames:
+  print(fn)
+  model += pastro.pastro_model.from_h5(fn)
+
+count_above_thresh = {}
+for cate in options.category:
+  count_above_thresh[cate] = values[cate+'_merge_rate'] * values[cate+'_VT']
+count_above_thresh['Terrestrial'] = options.n_noise
+print("Expected count number above threshold: ", count_above_thresh)
+
+model.add_expected_counts_above_thresh(count_above_thresh, lr_thresh)
+model.to_h5(options.output)

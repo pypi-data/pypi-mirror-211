@@ -1,0 +1,36 @@
+#!/usr/bin/env python3
+
+from optparse import OptionParser
+#from pastro import pastro
+import sqlite3
+import numpy
+import yaml
+
+def parse_command_line():
+  parser = OptionParser()
+  parser.add_option("-v", "--verbose", action = "store_true", help = "Be verbose.")
+  parser.add_option("--category", help = "The category of p-astro, BNS, BBH, NSBH")
+  parser.add_option("--config-file", help = "The yml file that stores likelihood threshold")
+  parser.add_option("--output", help = "output the number of coinc event above lr-threshold to yml file")
+  options, filenames = parser.parse_args()
+  process_params = dict(options.__dict__)
+
+  return options, process_params, filenames
+
+options, process_params, filenames = parse_command_line()
+
+with open(options.config_file) as file:
+  values = yaml.safe_load(file)
+  lr_thresh = str(values['lr-thresh'])
+
+count = 0
+for fn in filenames:
+  connection = sqlite3.connect(fn)
+  count += connection.cursor().execute("SELECT count(*) FROM coinc_event WHERE likelihood > "+lr_thresh).fetchone()[0]
+# num = connection.cursor().execute("SELECT count(*) FROM coinc_event WHERE likelihood > "+lr_thresh).fetchone()[0]
+# print(num)
+
+with open(options.output, 'w') as out:
+  coinc_count = {}
+  coinc_count[options.category+"_coinc_count"] = count
+  yaml.safe_dump(coinc_count, out)

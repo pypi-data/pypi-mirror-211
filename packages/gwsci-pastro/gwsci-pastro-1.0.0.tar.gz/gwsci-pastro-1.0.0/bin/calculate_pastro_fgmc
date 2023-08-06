@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+
+
+from optparse import OptionParser
+from pastro import pastro
+import json
+
+def parse_command_line():
+  parser = OptionParser()
+  parser.add_option("-v", "--verbose", action = "store_true", help = "Be verbose.",default=False)
+  parser.add_option("--fgmc-model", help="fgmc pastro model .h5 file")
+  parser.add_option("--templateid", help="recovered template ID of trigger")
+  parser.add_option("--lnlr", help="loglikelihood ratio of trigger")
+  parser.add_option("--snr", help="recovered snr of trigger")
+  
+  (options,arg) = parser.parse_args()
+
+  process_params = dict(options.__dict__)
+
+  return options,process_params
+  
+options,process_params = parse_command_line()
+
+p_astro_model=pastro.p_astro_fgmc.from_h5(options.fgmc_model)
+
+trigger={'template_id':float(options.templateid),'likelihood':float(options.lnlr),'snr':float(options.snr)}
+
+pastro=p_astro_model(trigger)
+
+print(pastro)
+    
+  

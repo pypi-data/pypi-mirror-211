@@ -1,0 +1,53 @@
+#!/usr/bin/env python3
+
+import sqlite3
+from lal import rate
+from optparse import OptionParser
+from gstlal import far
+from pastro import pastro
+
+def parse_command_line():
+  parser = OptionParser()
+  parser.add_option("-v", "--verbose", action = "store_true", help = "Be verbose.")
+  parser.add_option("--category-name", help = "the category name, e.g., BNS, NSBH, BBH, TERRESTRIAL")
+  parser.add_option("--output", metavar = "filename", help = "Write merged raw likelihood data to this file.")
+  parser.add_option("--post-marg-file", help = "the post marginalized p(lr | n) file")
+  options, filenames = parser.parse_args()
+  process_params = dict(options.__dict__)
+
+  return options, process_params, filenames
+
+options, process_params, filenames = parse_command_line()
+
+_, rspdf = far.parse_likelihood_control_doc(far.ligolw_utils.load_filename(options.post_marg_file, verbose = options.verbose, contenthandler = far.RankingStat.LIGOLWContentHandler))
+
+fapfar = far.FAPFAR(rspdf.new_with_extinction())
+model = pastro.pastro_model()
+
+mcLnPDF = rate.BinnedLnPDF(rate.NDBins((model.mcbins,)))
+lrLnPDF = rate.BinnedLnPDF(rate.NDBins((model.lrbins,)))
+
+for fn in filenames:
+  print (fn)
+  connection = sqlite3.connect(fn)
+  for mc, in connection.cursor().execute("SELECT mchirp FROM coinc_inspiral;"):
+    mcLnPDF.count[(float(mc),)] += 1
+  connection.close()
+
+for ll, lc, lu in zip(model.lrbins.lower(), model.lrbins.centres(), model.lrbins.upper()):
+  """
+  I multiply by a year in seconds. It doesn't matter because it will be
+  normed, but at least the units work out for counts now and someone that
+  checks this array will thing it is reasonable
+  """
+  
+  lrLnPDF.count[(lc,)] = 365*86400 * (fapfar.far_from_rank(ll) - fapfar.far_from_rank(lu))
+lrLnPDF.count.array /= lrLnPDF.count.array.sum()
+
+for mc in model.mcbins.centres():
+  for lr in model.lrbins.centres():
+    model.increment(options.category_name, mc, lr, mcLnPDF.count[(mc,)] * lrLnPDF.count[(lr,)])
+
+model.to_h5(options.output)
+
+

@@ -1,0 +1,50 @@
+#!/usr/bin/env python3
+
+from optparse import OptionParser
+from pastro import pastro
+import sqlite3
+import numpy
+import yaml
+import json
+
+def parse_command_line():
+  parser = OptionParser()
+  parser.add_option("-v", "--verbose", action = "store_true", help = "Be verbose.")
+  parser.add_option("-c", "--config-file", help = "config file")
+  parser.add_option("--model-file", help = "provide the model h5 file")
+  options, filenames = parser.parse_args()
+  process_params = dict(options.__dict__)
+
+  return options, process_params, filenames
+
+options, process_params, filenames = parse_command_line()
+
+with open(options.config_file) as file:
+  values = yaml.safe_load(file)
+  lr_thresh = values['lr-thresh']
+
+# model = pastro.pastro_model.from_h5(options.model_file)
+model = pastro.load(options.model_file)
+model.finalize(model.prior())
+
+counts = {cat:0. for cat in model.categories}
+tot_counts = 0
+for fn in filenames:
+  connection = sqlite3.connect(fn)
+  ts_id, = connection.cursor().execute("SELECT DISTINCT time_slide_id FROM time_slide where time_slide_id NOT IN (SELECT DISTINCT time_slide_id FROM time_slide where offset !=0);").fetchone()
+  for mc,lr, in connection.cursor().execute("SELECT mchirp, likelihood FROM coinc_inspiral JOIN coinc_event on coinc_event.coinc_event_id == coinc_inspiral.coinc_event_id WHERE coinc_event.time_slide_id == :tsid;", {"tsid": int(ts_id)}):
+     # if lr > options.lr_thresh:
+     if lr > lr_thresh:
+       data = {"mchirp": mc,
+	       "likelihood": lr}
+       pa = json.loads(model(data))
+       counts = {cat:counts[cat] + pa[cat] for cat in pa}
+       tot_counts += 1
+
+print('Total number of samples above the threshold: ', tot_counts)
+print('p-astro counts: ', counts)
+
+percent = counts.copy()
+for cate in counts.keys():
+  percent[cate] = counts[cate]/tot_counts
+print('p-astro percentage: ', percent)

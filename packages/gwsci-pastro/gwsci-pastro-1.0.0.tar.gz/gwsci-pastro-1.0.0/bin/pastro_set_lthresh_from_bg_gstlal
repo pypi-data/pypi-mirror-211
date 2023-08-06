@@ -1,0 +1,31 @@
+#!/usr/bin/env python3
+
+import sqlite3
+import yaml
+from lal import rate
+from optparse import OptionParser
+from gstlal import far
+
+def parse_command_line():
+  parser = OptionParser()
+  parser.add_option("-v", "--verbose", action = "store_true", help = "Be verbose.")
+  parser.add_option("--n-noise", help = "The expected count of noise events.")
+  parser.add_option("--post-marg-file", help = "post-marginalized file used for the noise.")
+  parser.add_option("--output", help = "yaml file to store likelihood threshold")
+  options, filenames = parser.parse_args()
+  process_params = dict(options.__dict__)
+
+  return options, process_params, filenames
+
+options, process_params, filenames = parse_command_line()
+
+# read in ranking statistic pdf from post-marg file
+_, rspdf = far.parse_likelihood_control_doc(far.ligolw_utils.load_filename(options.post_marg_file, verbose = options.verbose, contenthandler = far.RankingStat.LIGOLWContentHandler))
+# get FAP from FAR
+fapfar = far.FAPFAR(rspdf.new_with_extinction())
+lr_thresh = fapfar.rank_from_far(float(options.n_noise)/fapfar.livetime)
+
+with open(options.output, 'w') as out:
+  values = {}
+  values['lr-thresh'] = float(lr_thresh)
+  yaml.safe_dump(values, out)
