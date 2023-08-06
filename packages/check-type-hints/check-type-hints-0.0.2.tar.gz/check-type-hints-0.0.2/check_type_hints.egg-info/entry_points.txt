@@ -1,0 +1,2 @@
+[console_scripts]
+check_type_hints = main:app
