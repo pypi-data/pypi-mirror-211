@@ -1,0 +1,8 @@
+setup.py
+wafpd/__init__.py
+wafpd/wafpd.py
+wafpd.egg-info/PKG-INFO
+wafpd.egg-info/SOURCES.txt
+wafpd.egg-info/dependency_links.txt
+wafpd.egg-info/requires.txt
+wafpd.egg-info/top_level.txt
