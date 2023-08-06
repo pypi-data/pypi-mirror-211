@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: np-vba
+Version: 0.13.2
+Summary: Python package for analyzing behavioral data for Brain Observatory: Visual Behavior. Forked to specify dependencies in pyproject.toml and support Python >3.7.
+Author-Email: Marina Garrett <marinag@alleninstitute.org>, Doug Ollerenshaw <dougo@alleninstitute.org>
+Maintainer-Email: Ben Hardcastle <ben.hardcastle@alleninstitute.org>
+License: Allen Institute Software License – This software license is the 2-clause BSD 
+        license plus a third clause that prohibits redistribution and use for 
+        commercial purposes without further permission. 
+        
+        Copyright © 2020. Allen Institute.  All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without 
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this 
+        list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice, 
+        this list of conditions and the following disclaimer in the documentation 
+        and/or other materials provided with the distribution.
+        
+        3. Redistributions and use for commercial purposes are not permitted without 
+        the Allen Institute’s written permission. For purposes of this license, 
+        commercial purposes are the incorporation of the Allen Institute's software 
+        into anything for which you will charge fees or other compensation or use of 
+        the software to perform a commercial service for a third party. Contact 
+        terms@alleninstitute.org for commercial licensing opportunities.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
+        ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED 
+        WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE 
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE 
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL 
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR 
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER 
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, 
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE 
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Requires-Dist: allensdk>=2.15.0
+Requires-Dist: scikit-learn>=1.2.2
+Requires-Dist: python-dateutil>=2.8.2
+Requires-Dist: zipfile36>=0.1.3
+Requires-Dist: pymongo>=4.3.3
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: dash>=2.9.2
+Requires-Dist: plotly>=5.14.1
+Requires-Dist: hdmf>=3.4.7
+Requires-Dist: h5py>=3.8.0
+Requires-Dist: umap>=0.1.1
+Requires-Dist: opencv-python-headless>=4.7.0.72
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: coverage[toml]>=7.2.2; extra == "dev"
+Requires-Dist: pdm>=2.4.9; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: pytest-html; extra == "dev"
+Requires-Dist: markupsafe==2.0.1; extra == "dev"
+Provides-Extra: dev
+Description-Content-Type: text/markdown
+
+Allen Institute Visual Behavior Analysis package
+==============================
+
+[![Python
+Versions](https://img.shields.io/pypi/pyversions/np_vba.svg)](https://pypi.python.org/pypi/np-vba/)
+
+***
+*This is a re-packaging of
+https://github.com/AllenInstitute/visual_behavior_analysis with
+scripts/notebooks/dev resources removed and minor updates to code/dependencies
+to provide compatibility with Python >3.7*
+
+See the link above for the original readme.
+
+Quickstart for this re-packaged version:
+```
+python -m pip install --extra-index-url https://pypi.org/simple np_vba
+```
+
+***
+
+## Original contributors:
+
+- Nicholas Cain - @nicain
+- Marina Garrett - marinag@alleninstitute.org, @matchings
+- Nile Graddis - nileg@alleninstitute.org, @nilegraddis
+- Justin Kiggins - @neuromusic
+- Jerome Lecoq - jeromel@alleninstitute.org, @jeromelecoq
+- Sahar Manavi - saharm@alleninstitute.org, @saharmanavi
+- Nicholas Mei - nicholas.mei@alleninstitute.org, @njmei
+- Christopher Mochizuki - chrism@alleninstitute.org, @mochic
+- Doug Ollerenshaw - dougo@alleninstitute.org, @dougollerenshaw
+- Natalia Orlova - nataliao@alleninstitute.org, @nataliaorlova
+- Jed Perkins - @jfperkins
+- Alex Piet - alex.piet@alleninstitute.org, @alexpiet
+- Nick Ponvert - @nickponvert
+- Kate Roll - kater@alleninstitute.org, @downtoncrabby
+- Ryan Valenza - @ryval
+- Farzaneh Najafi - farzaneh.najafi@alleninstitute.org
+- Iryna Yavorska - iryna.yavorska@alleninstitute.org
+
+
