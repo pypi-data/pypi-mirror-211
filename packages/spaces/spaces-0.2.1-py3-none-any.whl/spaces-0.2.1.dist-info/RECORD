@@ -1,0 +1,12 @@
+spaces/__init__.py,sha256=c5J_cLp3kpg3azndB5lRbZKnvZHfMWixAIMxzJvd8xo,168
+spaces/config.py,sha256=6LXGc9RqpFpvzg7fHhz4fdNpwsqAuaoELTsAUKJ1erw,61
+spaces/gpu/__init__.py,sha256=EUZAomhAZBgEjJ52kYgLBFpVdXeVQ3KarQkLFDf4iIE,259
+spaces/gpu/client.py,sha256=sWgudldSWcZqW7ZOBVbddYEY_-MigstLRRG4C92IwRE,1577
+spaces/gpu/decorator.py,sha256=25bCUNaKIernagwTOAaMrnM4VSt9tT1rmf3qzKsKjoA,1142
+spaces/gpu/torch.py,sha256=kYh1IDO2S0VHNntjJD2jUd1pOiq8hfTvDPA3BWbQu68,3579
+spaces/gpu/wrappers.py,sha256=Vv4e_fuLjJF_WEvmpM28w8S-g7BPIDLt8UvtmImNB3M,6528
+spaces/gradio.py,sha256=MQYvCDp6MWxbn7xDndpnX_4dnG_Ir0KXrPPiUTJ3aFI,1147
+spaces/utils.py,sha256=XJfz5SyWjRpuVyv41rSyq37x76a_HWlo-mEnEIJN_zY,1386
+spaces-0.2.1.dist-info/METADATA,sha256=Y8HScH5wrcyIWA9dnl1rQWzhwOgMxh1pHw1mI5GY9wE,848
+spaces-0.2.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+spaces-0.2.1.dist-info/RECORD,,
