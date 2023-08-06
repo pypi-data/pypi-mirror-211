@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+spytter.egg-info/PKG-INFO
+spytter.egg-info/SOURCES.txt
+spytter.egg-info/dependency_links.txt
+spytter.egg-info/requires.txt
+spytter.egg-info/top_level.txt
