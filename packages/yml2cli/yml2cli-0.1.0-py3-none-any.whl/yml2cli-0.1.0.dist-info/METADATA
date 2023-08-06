@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: yml2cli
+Version: 0.1.0
+Summary: Yaml to cli params converter
+Home-page: https://github.com/krishnamiriyala/yml2cli
+Author: Krishna Miriyala
+Author-email: krishnambm@gmail.com
+License: AS IS
+License-File: LICENSE
+Requires-Dist: pyyaml
+
+# yml2cli
+Converts yaml configuration files to cli params

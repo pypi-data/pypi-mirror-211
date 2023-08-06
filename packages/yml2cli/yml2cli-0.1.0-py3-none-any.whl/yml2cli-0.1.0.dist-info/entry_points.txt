@@ -1,0 +1,2 @@
+[console_scripts]
+yml2cli = yml2cli:yml2cli.main
