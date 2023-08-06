@@ -1,0 +1,7 @@
+jsonner.py
+setup.py
+jsonner.egg-info/PKG-INFO
+jsonner.egg-info/SOURCES.txt
+jsonner.egg-info/dependency_links.txt
+jsonner.egg-info/requires.txt
+jsonner.egg-info/top_level.txt
