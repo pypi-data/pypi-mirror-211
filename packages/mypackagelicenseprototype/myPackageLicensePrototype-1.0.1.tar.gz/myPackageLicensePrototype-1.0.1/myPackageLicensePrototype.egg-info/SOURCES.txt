@@ -1,0 +1,10 @@
+Implementation.py
+LICENSE
+README.md
+local_environment_installation_guide.txt
+requirements.txt
+setup.py
+myPackageLicensePrototype.egg-info/PKG-INFO
+myPackageLicensePrototype.egg-info/SOURCES.txt
+myPackageLicensePrototype.egg-info/dependency_links.txt
+myPackageLicensePrototype.egg-info/top_level.txt
