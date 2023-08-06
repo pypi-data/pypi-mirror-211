@@ -1,0 +1,17 @@
+matplotlib>=3.1.2
+networkx>=2.4
+numpy>=1.18.1
+pillow>=6.2.1
+
+[test]
+jax
+jaxlib
+pennylane-honeywell
+pennylane-qiskit
+pennylane>=0.29.1
+pytket==1.1.0
+pyzx>=0.7.0
+sympy==1.9
+tensorflow
+tensornetwork
+torch
