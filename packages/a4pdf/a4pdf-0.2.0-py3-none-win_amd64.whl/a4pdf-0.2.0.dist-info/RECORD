@@ -1,0 +1,16 @@
+a4pdf-0.2.0.dist-info/METADATA,sha256=fSgH0Sth7u48nI0bMg4_CE9qkbRowbe5GmGF8XhsdIU,14795
+a4pdf-0.2.0.dist-info/WHEEL,sha256=sPc5-ehI3Ng-s2tXPs2yEpWadxNWxEEdtcyBJjATYb0,82
+a4pdf-0.2.0.dist-info/COPYING,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+.a4pdf.mesonpy.libs/fmt.dll,sha256=ZbRgoONgNQXbgGZizSylhGz6H3ArXBKWJtkjacRxWlo,135680
+.a4pdf.mesonpy.libs/z.dll,sha256=IwW9k1kqPvVuhHwwbY5lhieapzDpaWW4ZDrciIPCdjA,84480
+.a4pdf.mesonpy.libs/png16-16.dll,sha256=OYoR8OxWJAlwvnWsewMzQba3WC8xg0ha9_bRHDlfNBE,198656
+.a4pdf.mesonpy.libs/lcms2-2.dll,sha256=XZl5ln4CLuNZq23cmTz0zVqLs-WypJpurv16XPSmCNI,356352
+.a4pdf.mesonpy.libs/jpeg-8.2.2.dll,sha256=b5_3DNr_Z6HO3-UI4RtoNppZekCeKF05IsE3tGLCIYU,420352
+.a4pdf.mesonpy.libs/freetype-6.dll,sha256=0TYcJ-2UeNtIkLp7MnJhCf-rukSD0PcaA2vcp0Jvimg,672768
+.a4pdf.mesonpy.libs/tiff4.dll,sha256=LHcS5CfJnZ8WLX94Q_lvjgdNR8I9r7NcxeRcOZOsk7A,431616
+.a4pdf.mesonpy.libs/a4pdf.dll,sha256=vXgJ9jUpGb9Y9BJ2GYCNcvj-nAoL0ngfeYCbcEgVFss,214016
+a4pdf-0.2.0.data/scripts/linkicc.exe,sha256=28uO-hdVdyfXpgED6QNRtcHNtZI4sSiitaP3XxtYqg4,21504
+a4pdf-0.2.0.data/scripts/psicc.exe,sha256=wYV4xP8Qdq92YnREa2PAcGMECgP8z0vJsw1iotrMjoQ,16384
+a4pdf-0.2.0.data/scripts/transicc.exe,sha256=jKwXSlK1j9eZaYgdA4jFlPmYy6WNnEe5vslImcT37uE,31744
+a4pdf-0.2.0.data/purelib/a4pdf.py,sha256=4IhjIavXC48MQ8VdItORiyJrUE9MaDchGSYrz6XMwDY,15933
+a4pdf-0.2.0.dist-info/RECORD,,
