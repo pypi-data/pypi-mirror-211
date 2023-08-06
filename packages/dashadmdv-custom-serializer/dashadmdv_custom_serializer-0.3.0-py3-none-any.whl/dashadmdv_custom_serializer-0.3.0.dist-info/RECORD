@@ -1,0 +1,13 @@
+custom_serializer/__init__.py,sha256=iV76i5M09nesQ39ejJHKT6uUNXGvGaBdGB7bLZBBK-k,51
+custom_serializer/custom_serializer.py,sha256=sTjKrvEmu-UlopOFVVPOFrKqLgPrKREcMBhYSoPcIEo,732
+custom_serializer/serializer_factory.py,sha256=Y2ewEnrw0pIolwfVKMroWUprIFZ-LhT2v43D-BOXQy4,418
+custom_serializer/encoder/__init__.py,sha256=Ecv-TPyDtW60ibZxh2oqkocXuhJKcBGxsPxaQaqvpRg,65
+custom_serializer/encoder/constants.py,sha256=Gw9uCM29ort8nAhrE_5smi0-0hF4NnnsoKok1EDorB4,525
+custom_serializer/encoder/encoder.py,sha256=nB8EtkXbrianTMnXgigdISNlPx-oDGJCLDxi3DfPGjw,8938
+custom_serializer/serializers/__init__.py,sha256=ktBU4PxA1iVzkrubcP1iMEd7rbVRtAMcf2-kcTlsz2U,63
+custom_serializer/serializers/json_serializer.py,sha256=6oJvmmYTASAV9XKNQh2b0JjtUVw31IOoXBTANUajpO0,3230
+custom_serializer/serializers/xml_serializer.py,sha256=dzFcoYeaoypN48ZxzoCOdqnzNCHsiJ6661A9Qzh-kKM,3226
+dashadmdv_custom_serializer-0.3.0.dist-info/METADATA,sha256=d0FIIKMicr_O6Bs0hGZwaxBp94sAhFIo3zGv_wl2NO4,182
+dashadmdv_custom_serializer-0.3.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+dashadmdv_custom_serializer-0.3.0.dist-info/top_level.txt,sha256=pbrg8vn97d9lgrZCw4qRYARocrHnEiQIRyzebmRBPGY,18
+dashadmdv_custom_serializer-0.3.0.dist-info/RECORD,,
