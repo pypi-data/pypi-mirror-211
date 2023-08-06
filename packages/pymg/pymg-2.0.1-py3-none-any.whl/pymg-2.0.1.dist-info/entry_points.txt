@@ -1,0 +1,2 @@
+[console_scripts]
+pymg = pymg.pymg:main
