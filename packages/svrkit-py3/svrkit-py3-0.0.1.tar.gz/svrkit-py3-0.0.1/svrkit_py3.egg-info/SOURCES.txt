@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+svrkit_py3.egg-info/PKG-INFO
+svrkit_py3.egg-info/SOURCES.txt
+svrkit_py3.egg-info/dependency_links.txt
+svrkit_py3.egg-info/top_level.txt
