@@ -1,0 +1,11 @@
+pathlib
+GitPython
+
+[:python_version < "3.8"]
+typing-extensions
+
+[cli]
+argparse
+
+[dev]
+setuptools>=61.0.0
