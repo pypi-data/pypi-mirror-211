@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+gitio_app.egg-info/PKG-INFO
+gitio_app.egg-info/SOURCES.txt
+gitio_app.egg-info/dependency_links.txt
+gitio_app.egg-info/entry_points.txt
+gitio_app.egg-info/requires.txt
+gitio_app.egg-info/top_level.txt
+liteobj/__init__.py
+liteobj/lite.py
+liteobj/requirements.txt
