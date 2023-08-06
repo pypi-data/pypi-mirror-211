@@ -1,0 +1,3 @@
+[console_scripts]
+taxOrder = taxOrder.cmdline_taxOrder:main
+
