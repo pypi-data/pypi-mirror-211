@@ -1,0 +1,2 @@
+[console_scripts]
+flux-metrics-api = flux_metrics_api.server:main

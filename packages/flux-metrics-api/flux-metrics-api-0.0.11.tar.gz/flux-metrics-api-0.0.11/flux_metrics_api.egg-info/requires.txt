@@ -1,0 +1,8 @@
+uvicorn
+starlette
+starlette-apispec
+
+[all]
+uvicorn
+starlette
+starlette-apispec
