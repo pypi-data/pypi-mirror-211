@@ -1,0 +1,15 @@
+cellxgene_census/__init__.py,sha256=gdlYXvUIahscccOwx8UcGP-r2OgcO-Eieqz9kq9syUI,1681
+cellxgene_census/_experiment.py,sha256=3g6rkIDWuCW-xW369w03E4is3mFDnTd7PfTkaVgj0Rs,1468
+cellxgene_census/_get_anndata.py,sha256=QowlJeNUUKc40uMbtHcpFTyzLgT5BhHcMJL_qY_Ks7M,3230
+cellxgene_census/_open.py,sha256=R8cbLQAKpdaCyR2puWQp3u6Bt7KZENl5BpuWr8JJz6A,8388
+cellxgene_census/_presence_matrix.py,sha256=lF8GAsiN2cwGWdEReoBkSTxx_NcoG2bEQHn-cnZZL4Q,1576
+cellxgene_census/_release_directory.py,sha256=mlvyWtwkCjtjIAIIdctCo-Gbj12ji2M_UTp0GAge2uA,5040
+cellxgene_census/_util.py,sha256=z7G_Z_JmLoALH6wj3gpU_0IHf7MKUj1vYQrGbdq-vSA,458
+cellxgene_census/experimental/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cellxgene_census/experimental/ml/__init__.py,sha256=PE5PJ1S7W0aklRgo3IAjAm6UBE4bF2Lrj9BQDIt1YUM,244
+cellxgene_census/experimental/ml/pytorch.py,sha256=Jimj_H_IfXQwzKICLfkVFvpKUo6tnkO8o5kDUw2LmaY,18065
+cellxgene_census-1.1.0.dist-info/LICENSE,sha256=q_3bbWp5dY0uzKCiqqr1VpXSe1DMAhF4Smb4XS4PyQk,1083
+cellxgene_census-1.1.0.dist-info/METADATA,sha256=9sUP9GVao_u-yj0ItSW-QX2ELJ0uS4orJq_6xk4MvaQ,2183
+cellxgene_census-1.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+cellxgene_census-1.1.0.dist-info/top_level.txt,sha256=ovYcJe7Jt7dqtev_-b6gVTyW4X9vwTu0VcsURxRwtZ8,17
+cellxgene_census-1.1.0.dist-info/RECORD,,
