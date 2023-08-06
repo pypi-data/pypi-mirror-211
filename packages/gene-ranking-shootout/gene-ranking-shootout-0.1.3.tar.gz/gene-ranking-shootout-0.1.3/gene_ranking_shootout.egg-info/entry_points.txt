@@ -1,0 +1,2 @@
+[console_scripts]
+gene-ranking-shootout = gene_ranking_shootout.cli:main

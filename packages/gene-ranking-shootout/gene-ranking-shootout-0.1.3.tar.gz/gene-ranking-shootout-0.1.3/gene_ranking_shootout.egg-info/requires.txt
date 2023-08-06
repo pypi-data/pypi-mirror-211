@@ -1,0 +1,7 @@
+attrs
+cattrs
+click
+loguru
+numpy
+requests
+tqdm
