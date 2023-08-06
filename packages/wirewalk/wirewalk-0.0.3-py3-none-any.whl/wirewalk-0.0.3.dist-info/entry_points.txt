@@ -1,0 +1,2 @@
+[nbdev]
+wirewalk = wirewalk._modidx:d
