@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: conecore
+Version: 0.0.1
+Summary: It is a code which is completely looks like tkinter but with little differences
+Home-page: 
+Author: Ahmed Baligh
+Author-email: ahmedgamejd1992@gmail.com
+License: MIT
+Keywords: Tkinter
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENCE.txt
+
+It is a code which is completely looks like tkinter but with little differences such as :
+we use run instead of mainloop.G
+
+it is easier than tkinter and it is only version 1.
+
+good luck!
+
+
+change log
+==============
+
+0.0.1(5/31/2023)
+---------------------
+
+-First Release

@@ -1,0 +1,8 @@
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+conecore.egg-info/PKG-INFO
+conecore.egg-info/SOURCES.txt
+conecore.egg-info/dependency_links.txt
+conecore.egg-info/top_level.txt
