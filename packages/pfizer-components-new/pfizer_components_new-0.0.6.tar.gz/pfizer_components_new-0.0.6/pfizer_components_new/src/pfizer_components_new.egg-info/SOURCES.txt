@@ -1,0 +1,10 @@
+README.md
+setup.py
+pfizer_components_new/src/pfizer_components_new.egg-info/PKG-INFO
+pfizer_components_new/src/pfizer_components_new.egg-info/SOURCES.txt
+pfizer_components_new/src/pfizer_components_new.egg-info/dependency_links.txt
+pfizer_components_new/src/pfizer_components_new.egg-info/top_level.txt
+pfizer_components_new/src/pfizer_components_new.egg-info/PKG-INFO
+pfizer_components_new/src/pfizer_components_new.egg-info/SOURCES.txt
+pfizer_components_new/src/pfizer_components_new.egg-info/dependency_links.txt
+pfizer_components_new/src/pfizer_components_new.egg-info/top_level.txt
