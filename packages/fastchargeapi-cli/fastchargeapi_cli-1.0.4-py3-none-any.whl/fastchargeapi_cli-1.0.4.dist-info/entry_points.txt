@@ -1,0 +1,4 @@
+[console_scripts]
+fastapi=fastchargeapi_cli.main:fastapi
+fastcharge=fastchargeapi_cli.main:fastcharge
+
