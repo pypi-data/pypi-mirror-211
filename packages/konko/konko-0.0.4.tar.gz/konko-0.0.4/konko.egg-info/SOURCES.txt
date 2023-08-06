@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.py
+konko.egg-info/PKG-INFO
+konko.egg-info/SOURCES.txt
+konko.egg-info/dependency_links.txt
+konko.egg-info/top_level.txt
