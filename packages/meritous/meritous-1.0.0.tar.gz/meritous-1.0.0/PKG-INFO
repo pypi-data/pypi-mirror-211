@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: meritous
+Version: 1.0.0
+Summary: Simple Python Models
+Author-email: Tom Morton <tom@errant.me.uk>
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: sphinx ; extra == "doc"
+Requires-Dist: pytest >=5.3.2 ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Project-URL: Home, https://meritous.readthedocs.io/en/latest/
+Provides-Extra: doc
+Provides-Extra: test

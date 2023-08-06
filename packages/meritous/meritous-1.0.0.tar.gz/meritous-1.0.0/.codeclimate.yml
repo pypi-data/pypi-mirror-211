@@ -1,0 +1,9 @@
+exclude_patterns:
+  - "tests/"
+  - "samples/"
+  - ".nox"
+  - "*.py"
+
+plugins:
+  pep8:
+    enabled: true
