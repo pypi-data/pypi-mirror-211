@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+src/__init__.py
+src/simplerabbit/__init__.py
+src/simplerabbit/rabbit_base.py
+src/simplerabbit/receiver.py
+src/simplerabbit/sender.py
+src/simplerabbit/test_receiver.py
+src/simplerabbit/test_receiver_ssl.py
+src/simplerabbit/test_sender.py
+src/simplerabbit/test_sender_ssl.py
+src/simplerabbit.egg-info/PKG-INFO
+src/simplerabbit.egg-info/SOURCES.txt
+src/simplerabbit.egg-info/dependency_links.txt
+src/simplerabbit.egg-info/top_level.txt
+tests/test.py
