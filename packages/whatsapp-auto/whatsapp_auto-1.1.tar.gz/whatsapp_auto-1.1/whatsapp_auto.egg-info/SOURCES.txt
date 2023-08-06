@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+.github/workflows/python-publish.yml
+whatsapp_auto/__init__.py
+whatsapp_auto/exception.py
+whatsapp_auto/main.py
+whatsapp_auto.egg-info/PKG-INFO
+whatsapp_auto.egg-info/SOURCES.txt
+whatsapp_auto.egg-info/dependency_links.txt
+whatsapp_auto.egg-info/requires.txt
+whatsapp_auto.egg-info/top_level.txt

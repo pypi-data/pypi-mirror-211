@@ -1,0 +1,31 @@
+[project]
+name = "whatsapp_auto"
+authors = [
+  { name="Anish", email="anishshakthivelnadar@gmail.com" },
+]
+description = "WhatsApp Web Automation Library using selenium"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "selenium",
+    "undetected-chromedriver",
+]
+
+dynamic = ["version"]
+
+[tool.setuptools_scm]
+
+[project.urls]
+"Homepage" = "https://github.com/Anish0612/whatsapp-auto"
+"Bug Tracker" = "https://github.com/Anish0612/whatsapp-auto/issues"
+
+
+[build-system]
+requires = ["setuptools","setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
