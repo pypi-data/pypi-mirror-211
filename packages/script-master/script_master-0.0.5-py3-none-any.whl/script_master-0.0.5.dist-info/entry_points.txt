@@ -1,0 +1,3 @@
+[console_scripts]
+script-master=script_master.cli:cli
+
