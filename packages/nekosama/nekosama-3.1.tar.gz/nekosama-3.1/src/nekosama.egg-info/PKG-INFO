@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: nekosama
+Version: 3.1
+Summary: A neko sama API
+Home-page: https://github.com/Egsagon/neko-sama-api/
+Author: Egsagon
+Author-email: egsagon12@gmail.com
+License: MIT
+Platform: unix
+Platform: linux
+Platform: win32
+Platform: cygwin
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# NEKO SAMA API
+
+An API that scraps the `neko-sama.fr` website.
+Is able to search, fetch and download animes.
+
+Supports different video qualities and providers.
+
+License: MIT - See the `LICENSE` file.
+
+# Usage
+
+Simple script to download all the episodes of an anime.
+```python
+import nekosama as ns
+
+anime = ns.Anime('https://neko-sama.fr/anime/info/9520-tensei-shitara-slime-datta-ken_vostfr')
+
+anime.download('slime/', quality = ns.quality.HALF)
+```
+
+It can also be used to search for animes on the website.
+```python
+import nekosama as ns
+
+client = ns.Client()
+slimes = client.search('slime datta ken',
+                       lang = 'VOSTFR')
+```
+
+An example can be found in the `main.py` file.
+
+# Setup
+
+- Use python `3.11` or higher
+- Install using pip: `pip install nekosama`
+- Optionally, install FFMPEG to your system.
+
+# Docs
+
+A simple documentation is available [here](https://github.com/Egsagon/neko-sama-api/blob/master/doc.md).
+For more information, see docstrings and source code.
