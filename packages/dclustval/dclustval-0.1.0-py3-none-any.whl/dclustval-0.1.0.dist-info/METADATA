@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: dclustval
+Version: 0.1.0
+Summary: A package for performing dense cluster validation
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: statsmodels
+Requires-Dist: networkx
+Requires-Dist: count-split
+Requires-Dist: scikit-learn
+Provides-Extra: docs
+Requires-Dist: m2r2 ; extra == 'docs'
+
+UNKNOWN
+
+
