@@ -1,0 +1,14 @@
+transformers
+torch
+numpy
+pandas
+tqdm
+scikit-learn
+jieba
+tensorboard==2.9.0
+icetk
+yacs
+rouge
+openpyxl
+tensorboardX
+nltk
