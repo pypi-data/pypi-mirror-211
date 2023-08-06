@@ -1,0 +1,80 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "buildgrid-metering-client"
+version = "0.0.1-alpha.3"
+requires-python = ">=3.8"
+description = "Client library of buildgrid-metering service"
+readme = "README.md"
+license = { file = "LICENSE" }
+keywords = ["buildgrid"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "pydantic >= 1.10",
+    "aiohttp >= 3.8",
+    "aiofiles >= 23.1",
+    "async_lru >= 2.0",
+    "tenacity >= 8.2"
+]
+
+[project.optional-dependencies]
+dev = [
+    # Testing
+    "pytest",
+    "pytest-cov",
+    "pytest-asyncio",
+    "httpx",
+    # Typing
+    "mypy",
+    "types-aiofiles",
+    # Formating / linting
+    "isort",
+    "black",
+    "pylint"
+]
+
+[project.urls]
+homepage = "https://gitlab.com/BuildGrid/buildgrid-metering-client"
+repository = "https://gitlab.com/BuildGrid/buildgrid-metering-client.git"
+
+[tool.setuptools.packages.find]
+include = ["buildgrid_metering*"]
+
+[tool.setuptools.package-data]
+"*" = ["py.typed"]
+
+[tool.mypy]
+strict = true
+plugins = ["pydantic.mypy"]
+
+[tool.pydantic-mypy]
+init_forbid_extra = true
+init_typed = true
+warn_required_dynamic_aliases = true
+warn_untyped_fields = true
+
+[tool.pylint.basic]
+good-names = '''e'''
+
+[tool.pylint.messages_control]
+extension-pkg-whitelist = "pydantic"
+disable = [
+    "fixme",
+    "too-few-public-methods",
+    "broad-exception-caught",
+    "too-many-arguments",
+    "too-many-instance-attributes",
+    # Documentation
+    "missing-module-docstring",
+    "missing-class-docstring",
+    "missing-function-docstring",
+]
+
+[tool.isort]
+profile = "black"
