@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/nscmd.egg-info/PKG-INFO
+src/nscmd.egg-info/SOURCES.txt
+src/nscmd.egg-info/dependency_links.txt
+src/nscmd.egg-info/top_level.txt
