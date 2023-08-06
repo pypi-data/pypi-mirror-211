@@ -1,0 +1,5 @@
+include locate_pixelcolor_c/requirements.txt
+include locate_pixelcolor_c/thirdparty.json
+include locate_pixelcolor_c/README.md
+include locate_pixelcolor_c/cloop.so
+include locate_pixelcolor_c/LICENSE
