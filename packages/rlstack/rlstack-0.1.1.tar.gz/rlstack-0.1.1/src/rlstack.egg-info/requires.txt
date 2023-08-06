@@ -1,0 +1,16 @@
+mlflow-skinny
+tensordict
+torch
+typing-extensions
+
+[dev]
+build[virtualenv]
+mypy
+pre-commit
+pytest
+pytest-cov
+pytest-xdist
+pytest-randomly
+sphinx
+tox
+virtualenv
