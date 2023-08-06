@@ -1,0 +1,12 @@
+LICENSE.rst
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+libcove2/__init__.py
+libcove2/common.py
+libcove2.egg-info/PKG-INFO
+libcove2.egg-info/SOURCES.txt
+libcove2.egg-info/dependency_links.txt
+libcove2.egg-info/requires.txt
+libcove2.egg-info/top_level.txt

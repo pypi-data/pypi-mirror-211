@@ -1,0 +1,7 @@
+requests
+
+[dev]
+black
+flake8
+isort
+mypy
