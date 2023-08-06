@@ -1,0 +1,39 @@
+bdb:
+  short-help: '&Bash &De&Bugger'
+  type: 'integrated'
+bulk-dload-sf:
+  short-help: 'bulk sourceforge project download using RSS parsing'
+  type: 'integrated'
+describe:
+  short-help: 'identify the command/alias/function and show the summary'
+  type: 'integrated'
+dss:
+  short-help: 'make a &Delayed &Screen&Shot'
+  type: 'external'
+kamon:
+  short-help: '&K&Afka queue &M&O&Nitor by container'
+  type: 'integrated'
+kolombos:
+  short-help: 'control characters and escape sequences viewer/visualizer'
+  type: 'external'
+l4:
+  short-help: 'max-speed prototype implementation of G3 ls'
+  type: 'external'
+macedon:
+  short-help: 'web service availability verifier'
+  type: 'external'
+nalog:
+  short-help:  '&N&Ano-&L&O&Gger'  # todo wrap
+  type: 'external'
+namon:
+  short-help: '&N&Ano-&M&O&Nitor (CPU and memory)'
+  type: 'external'
+pgrek:
+  short-help: '&Process-&G&R&Ep-and-&Kill'
+  type: 'integrated'
+shocks:
+  short-help: 's&S&H s&O&C&K&S proxy, usually running as service in a background'
+  type: 'integrated'
+watson:
+  short-help: 'unicode codepoint table viewer'
+  type: 'external'
