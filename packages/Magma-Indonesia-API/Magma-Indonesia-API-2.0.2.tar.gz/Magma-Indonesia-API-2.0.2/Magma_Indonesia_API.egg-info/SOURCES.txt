@@ -1,0 +1,9 @@
+LICENSE.txt
+README.txt
+setup.cfg
+setup.py
+Magma/__init__.py
+Magma_Indonesia_API.egg-info/PKG-INFO
+Magma_Indonesia_API.egg-info/SOURCES.txt
+Magma_Indonesia_API.egg-info/dependency_links.txt
+Magma_Indonesia_API.egg-info/top_level.txt
