@@ -1,0 +1,24 @@
+prune *
+exclude *
+
+# Core Package and Basic User Documentation
+graft effmass
+graft assets
+include README.md 
+include LICENSE
+include CITATION.cff
+include CODE_OF_CONDUCT.md
+
+# JOSS and PRB Paper (to cite effmass)
+graft paper
+graft joss
+
+# Development Files and Full Documentation
+graft .github
+graft docs
+graft tests
+graft tutorials
+include .coveragerc .readthedocs.yaml .travis.yml
+
+# Project Metadata
+include pyproject.toml setup.cfg MANIFEST.in requirements.txt
