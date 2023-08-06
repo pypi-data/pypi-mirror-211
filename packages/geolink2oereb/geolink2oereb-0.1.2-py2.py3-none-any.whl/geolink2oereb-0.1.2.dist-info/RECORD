@@ -1,0 +1,16 @@
+geolink2oereb/__init__.py,sha256=mdp2CftfqYbdKtP-eWv1z7rAUycYv6X1ntXSMUf8Kss,22
+geolink2oereb/cli.py,sha256=mJ9mC-9utnBvOfeedyL_mphwiFLGiBEPSd4X6aZUVa4,2538
+geolink2oereb/transform.py,sha256=P7u9oz0_HrZ_xHwdn08pPrrIPPfmMW9qO69v7W5u1aQ,3054
+geolink2oereb/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geolink2oereb/lib/interfaces/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geolink2oereb/lib/interfaces/oerebkrmtrsfr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geolink2oereb/lib/interfaces/oerebkrmtrsfr/v2_0/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geolink2oereb/lib/interfaces/oerebkrmtrsfr/v2_0/classes.py,sha256=k3gmhtQpxNQBZ-zf1gmm4xcdN4_5ZthY7z68IvFSons,2034125
+geolink2oereb/lib/interfaces/oerebkrmtrsfr/v2_0/generators.py,sha256=x_kt4Y7kEbn9Z16DMu8Ves_vzKhQGWrlEJGdC1jEeds,2403
+geolink2oereb/lib/interfaces/pyramid_oereb/__init__.py,sha256=NiWpM-D0TDvrRmJgvV5edHFP84nPL9vzy1UWhn0F880,8329
+geolink2oereb-0.1.2.dist-info/LICENSE,sha256=j9F0dqdyh70eTP2nhi7PzVQSvmJmy17KbikubMxszRM,1325
+geolink2oereb-0.1.2.dist-info/METADATA,sha256=61ehm2UAxOBMEd34EQBI6e3BMa-QlkgMINhuBxUn-RA,3488
+geolink2oereb-0.1.2.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+geolink2oereb-0.1.2.dist-info/entry_points.txt,sha256=ZByjDjDgSAbedLQaRN1JwX3xvx_dqMaTdWUAe0fCUlU,68
+geolink2oereb-0.1.2.dist-info/top_level.txt,sha256=mLj7iV6lWxe3Q6xNKy9hYAjliaFFxbfFh3DtQ4JUnj8,14
+geolink2oereb-0.1.2.dist-info/RECORD,,
