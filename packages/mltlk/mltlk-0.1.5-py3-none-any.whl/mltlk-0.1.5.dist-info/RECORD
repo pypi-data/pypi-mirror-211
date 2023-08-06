@@ -1,0 +1,11 @@
+mltlk/__init__.py,sha256=IUL0wCSfVY7VmBIBWbNNRoq2eKOp292veA5PEgcWPKE,109
+mltlk/exploration_textdata.py,sha256=x_k69sGTVHcgF-emyG__MpP7rlORi4twdRXu_HYGkRY,8137
+mltlk/ml.py,sha256=ZhTSpamrJCD9ChJf19ahZ3Br1n6irB362wWYVcbg4Yw,32219
+mltlk/resampling.py,sha256=5d_mQ3n8F2C-9GCbiN872EU0cnZfzaRXYhJL0kyp2Ao,3324
+mltlk/utils.py,sha256=nd4Zx-kGm6bSSfyTOdkGKZq9UNU7qQ6vCb5uVmmOjSI,2606
+mltlk/word2vec.py,sha256=7bsvRKK4nfvW25Be2NTvCXvEBqjr1TRhQyOSKOD7Ij4,4854
+mltlk-0.1.5.dist-info/LICENSE,sha256=MGDwu1lzXEHAgzV52E_uYomHu6TzW6ZmyujSdDyK20I,1073
+mltlk-0.1.5.dist-info/METADATA,sha256=oWUV0HrrTLZOjEh8KT8OC7gDvnMeqWSr67fDo1ge1OU,427
+mltlk-0.1.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mltlk-0.1.5.dist-info/top_level.txt,sha256=3AU75Z89WjiyAyakSLkPClR3rhAlWCBd8FTfUSA4j9s,6
+mltlk-0.1.5.dist-info/RECORD,,
