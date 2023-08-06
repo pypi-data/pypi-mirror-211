@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+cmem.egg-info/PKG-INFO
+cmem.egg-info/SOURCES.txt
+cmem.egg-info/dependency_links.txt
+cmem.egg-info/top_level.txt
