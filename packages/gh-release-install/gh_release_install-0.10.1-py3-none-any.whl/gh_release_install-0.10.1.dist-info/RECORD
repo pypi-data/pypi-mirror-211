@@ -1,0 +1,10 @@
+gh_release_install/__init__.py,sha256=jZdzD0HWRjgRY6eMFhIsVhmHeEjCGQjEYR4NevYZ2dc,71
+gh_release_install/checksum.py,sha256=gz2-N9Ew3DruQITHGCeqCMBt4iMbO0ULErfykuWnMlQ,1784
+gh_release_install/cli.py,sha256=ouK9YbawPlkncRARYerU02qxHGHMCyVimY-vq_uCje8,3923
+gh_release_install/main.py,sha256=AQapAgjt5R4YDhG9Ch9RQsaB6H1aOFfXC7ZYuN1RNQw,7578
+gh_release_install/unpack.py,sha256=X163WhbzVjMSIM1kGf12hyawknG-I_O4zx6YAbKdBms,863
+gh_release_install-0.10.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+gh_release_install-0.10.1.dist-info/METADATA,sha256=AQ_5LdP7oaEIwJLL9_mrGpAZdT_eHegWK3kcAJZApUk,5617
+gh_release_install-0.10.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+gh_release_install-0.10.1.dist-info/entry_points.txt,sha256=FPHG1FSnNag70451ijZuu1okKJ9ZGESazRdA-rCUA54,65
+gh_release_install-0.10.1.dist-info/RECORD,,
