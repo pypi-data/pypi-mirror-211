@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: imageswift
+Version: 0.6
+Summary: Easily train an image recognition model on your own images.
+Home-page: https://github.com/Suchisrit/ImageSwift
+Author: Suchisrit Gangopadhyay
+Author-email: suchisrit@gmail.com
+License: MIT
+Download-URL: https://github.com/Suchisrit/ImageSwift/archive/refs/tags/v0.6.tar.gz
+Description: UNKNOWN
+Keywords: CV,Image Recognition,AI,ML
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
