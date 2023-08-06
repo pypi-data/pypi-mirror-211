@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+sobolsampling/__init__.py
+sobolsampling/sobol_new.py
+sobolsampling/sobolcoeff.csv
+sobolsampling.egg-info/PKG-INFO
+sobolsampling.egg-info/SOURCES.txt
+sobolsampling.egg-info/dependency_links.txt
+sobolsampling.egg-info/not-zip-safe
+sobolsampling.egg-info/requires.txt
+sobolsampling.egg-info/top_level.txt
