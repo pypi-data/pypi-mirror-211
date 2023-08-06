@@ -1,0 +1,2 @@
+[nbdev]
+bvslusa = bvslusa._modidx:d

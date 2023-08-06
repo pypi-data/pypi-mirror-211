@@ -1,0 +1,6 @@
+fastcore
+pandas
+numpy
+scikit-learn
+
+[dev]
