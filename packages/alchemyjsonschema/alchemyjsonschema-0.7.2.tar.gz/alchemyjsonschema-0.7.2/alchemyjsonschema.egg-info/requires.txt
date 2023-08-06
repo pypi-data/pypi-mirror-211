@@ -1,0 +1,13 @@
+dictknife>=0.7.2
+isodate
+jsonschema
+magicalimport
+pytz
+sqlalchemy<2
+strict-rfc3339
+
+[docs]
+
+[testing]
+pytest
+webob
