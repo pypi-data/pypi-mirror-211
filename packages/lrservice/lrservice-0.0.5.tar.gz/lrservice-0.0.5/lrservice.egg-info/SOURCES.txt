@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+lrservice/__init__.py
+lrservice/benchmark.py
+lrservice/main.py
+lrservice/simple_linear_regr.py
+lrservice/simple_linear_regr_utils.py
+lrservice.egg-info/PKG-INFO
+lrservice.egg-info/SOURCES.txt
+lrservice.egg-info/dependency_links.txt
+lrservice.egg-info/requires.txt
+lrservice.egg-info/top_level.txt
+lrservice/tests/__init__.py
+lrservice/tests/test_simple_linear_regr.py
