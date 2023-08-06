@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: ttwizz
+Version: 2.0.0
+Summary: Registers an always-on web server.
+Home-page: https://github.com/ttwizz
+Author: ttwiz_z
+Author-email: moderkascriptsltd@gmail.com
+Project-URL: Organization, https://github.com/ModerkaScripts
+Keywords: ttwizz
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Flask (>=1.1.2)
+
+# ttwizz
+Registers an always-on web server. This tool will be very useful to you if you are going to host your project.
+
+## Usage
+```py
+# Put this at the beginning of the code.
+from ttwizz import start_server
+# Put this at the end of the code.
+start_server()
+```
