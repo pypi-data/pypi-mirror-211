@@ -1,0 +1,4 @@
+[console_scripts]
+dev=app.dev:start
+shell=app.cli:shell
+

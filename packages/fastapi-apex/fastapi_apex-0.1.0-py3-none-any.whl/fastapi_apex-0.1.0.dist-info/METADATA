@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: fastapi-apex
+Version: 0.1.0
+Summary: Apex: A robust FastAPI framework and scaffolding tool for rapid application development. Apex provides out-of-the-box setup for databases and implements best practices to get your FastAPI applications up and running quickly and efficiently. Start building powerful, modern web applications with Apex today.
+Author: Ezio Ruan
+Author-email: ezioruan@example.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: fastapi (>=0.95.1,<0.96.0)
+Requires-Dist: flake8 (>=6.0.0,<7.0.0)
+Requires-Dist: flake8-bugbear (>=23.3.23,<24.0.0)
+Requires-Dist: mkdocs (>=1.4.3,<2.0.0)
+Requires-Dist: orjson (>=3.8.11,<4.0.0)
+Requires-Dist: pre-commit (>=3.2.2,<4.0.0)
+Requires-Dist: pydantic[dotenv,email] (>=1.10.7,<2.0.0)
+Requires-Dist: pytest (>=7.3.1,<8.0.0)
+Requires-Dist: python-jose (>=3.3.0,<4.0.0)
+Requires-Dist: python-multipart (>=0.0.6,<0.0.7)
+Requires-Dist: tortoise-orm[asyncmy] (>=0.19.3,<0.20.0)
+Requires-Dist: uvicorn (>=0.22.0,<0.23.0)
+Description-Content-Type: text/markdown
+
+## apex_fastapi Framework
+
+This repo contains some extra steup for an FastAPI project
+- fastapi_plus : create fast app with some default settings and handlers
+- logger_plus : logger setup for fastapi, tortoise , aws and etc.
+- schema_plus : Base module for schema
+- settings : Env base settings
+
+
+### Test
+1. Run `docker-compose up -d` in the test folder.
+2. Copy the `test.env` file to `.env` and fill in or change the values.
+3. Run `export $(cat .env | xargs)` to set the environment variables.
+4. Run `pytest` in the root folder.
+
+
+### Shell
+1. Instantiate class object `ShellCommand`
+2. Run the instance
+```
+# utils/cli.py
+shell = ShellCommand(
+    db_url=settings.DATABASE_URL,
+    models=settings.APPLICATION_MODELS,
+    )
+# run shell()
+```
+
