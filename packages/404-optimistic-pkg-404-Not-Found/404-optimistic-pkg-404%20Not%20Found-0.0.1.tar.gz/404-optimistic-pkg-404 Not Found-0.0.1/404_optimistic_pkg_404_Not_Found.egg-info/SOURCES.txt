@@ -1,0 +1,6 @@
+README.md
+setup.py
+404_optimistic_pkg_404_Not_Found.egg-info/PKG-INFO
+404_optimistic_pkg_404_Not_Found.egg-info/SOURCES.txt
+404_optimistic_pkg_404_Not_Found.egg-info/dependency_links.txt
+404_optimistic_pkg_404_Not_Found.egg-info/top_level.txt

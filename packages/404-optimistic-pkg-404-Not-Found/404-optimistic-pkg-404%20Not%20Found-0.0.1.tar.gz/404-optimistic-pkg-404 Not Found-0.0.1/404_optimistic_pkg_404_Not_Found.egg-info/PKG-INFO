@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: 404-optimistic-pkg-404-Not-Found
+Version: 0.0.1
+Summary: We must live optimistically.
+Home-page: https://github.com/pypa/sampleproject
+Author: 404 Not Found
+Author-email: siaka1316@gmail.com
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
