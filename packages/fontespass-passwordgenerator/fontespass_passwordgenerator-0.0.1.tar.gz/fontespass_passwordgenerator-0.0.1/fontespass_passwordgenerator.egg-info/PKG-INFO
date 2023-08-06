@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: fontespass-passwordgenerator
+Version: 0.0.1
+Summary: The fontespass_passwordgenerator package is designed to provide functionality for generating secure passwords.
+Home-page: https://github.com/dev-marciofontes
+Author: Marcio Fontes
+Author-email: devfontesmarcio@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Package Name
+
+## Description
+
+The `fontespass_passwordgenerator` package is designed to provide functionality for generating secure passwords.
+
+## Installation
+
+You can install the `fontespass_passwordgenerator` package using the Python package manager [pip](https://pip.pypa.io/en/stable/). Open
+your terminal or command prompt and run the following command:
+
+```bash
+pip install fontespass_passwordgenerator
+```
+
+## Usage
+
+```python
+from fontespass_passwordgenerator import generate_password
+
+generate_password.execute_fontespass()
+```
+
+## Author
+
+MÃ¡rcio Fontes
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+

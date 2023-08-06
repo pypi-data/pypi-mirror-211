@@ -1,0 +1,8 @@
+README.md
+setup.py
+fontespass_passwordgenerator/__init__.py
+fontespass_passwordgenerator/generate_password.py
+fontespass_passwordgenerator.egg-info/PKG-INFO
+fontespass_passwordgenerator.egg-info/SOURCES.txt
+fontespass_passwordgenerator.egg-info/dependency_links.txt
+fontespass_passwordgenerator.egg-info/top_level.txt
