@@ -1,0 +1,3 @@
+[console_scripts]
+kultimate=kultimate.app:main
+
