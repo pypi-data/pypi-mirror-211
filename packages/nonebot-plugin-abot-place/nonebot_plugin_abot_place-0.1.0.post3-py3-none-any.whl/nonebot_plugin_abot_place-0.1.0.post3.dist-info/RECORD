@@ -1,0 +1,11 @@
+nonebot_plugin_abot_place-0.1.0.post3.dist-info/METADATA,sha256=JNP_I5UmrqwHy6pNlXgFC72hnIn0nO5TP6lJvssPqS0,6011
+nonebot_plugin_abot_place-0.1.0.post3.dist-info/WHEEL,sha256=m6kf1fJuo48rT4uxh0SeA_FsGq51BpCh_8VNBKVwYQA,90
+nonebot_plugin_abot_place-0.1.0.post3.dist-info/licenses/LICENSE,sha256=_qDdHHMpOBzgFjydXCb-OReROnQ_r_gXfAL-zpH9xwk,1062
+nonebot_plugin_abot_place/__init__.py,sha256=n_hbz11BUo8wNtZWq5FO0Fodi_AADrD4YOvOP35TVdM,6198
+nonebot_plugin_abot_place/color.py,sha256=j4Iky9BCzblW8f0Yj-aeHimewWD6xwSWPfthZLZVKKI,6899
+nonebot_plugin_abot_place/config.py,sha256=e5utivWyVIjIuLTinvkuP6hzeib5vVBlUBlUXHae6XM,651
+nonebot_plugin_abot_place/database.py,sha256=pRXmwuBzflnTE3kk0qaKpjHjIDmKs3frIuuPCYH0jNY,3281
+nonebot_plugin_abot_place/draw.py,sha256=tug6rzhb9rIWKFPU-JvMoQ3A4HkkeoTP3PB9ZiRz0tU,5536
+nonebot_plugin_abot_place/static/sarasa-mono-sc-semibold.ttf,sha256=YsfJopOlTpshDDGSYq1yRX1lzopTUzIw2WggeO2ScjE,23738596
+nonebot_plugin_abot_place/utils.py,sha256=qs8ZT8b0mPwGTghv8xq5Tgt-pspqlzorGuzOtmCJvPI,1431
+nonebot_plugin_abot_place-0.1.0.post3.dist-info/RECORD,,
