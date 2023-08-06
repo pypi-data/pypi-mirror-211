@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: fnv-c
+Version: 0.1.0
+Summary: FIXME
+Home-page: https://github.com/botify-labs/fnv-c
+Author: Fabien MARTY
+Author-email: fabien.marty@botify.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE
+
+FIXME
