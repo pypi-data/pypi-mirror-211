@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: neuroviews
+Version: 0.1.0a1
+Summary: Neuroscience visualizations built on HoloViews
+Author-email: Demetris Roumis <8qdo8efl3@mozmail.com>
+Requires-Python: >=3.8
+
