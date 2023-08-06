@@ -1,0 +1,8 @@
+README.md
+setup.py
+chatgpt/__init__.py
+chatgpt/consts.py
+chatgpt_serpucga.egg-info/PKG-INFO
+chatgpt_serpucga.egg-info/SOURCES.txt
+chatgpt_serpucga.egg-info/dependency_links.txt
+chatgpt_serpucga.egg-info/top_level.txt
