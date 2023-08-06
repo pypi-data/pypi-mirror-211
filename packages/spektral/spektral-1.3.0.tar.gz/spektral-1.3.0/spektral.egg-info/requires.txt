@@ -1,0 +1,15 @@
+joblib
+lxml
+networkx
+numpy
+pandas
+requests
+scikit-learn
+scipy
+tqdm
+
+[:platform_machine != "arm64" or platform_system != "Darwin"]
+tensorflow>=2.2.0
+
+[:platform_machine == "arm64" and platform_system == "Darwin"]
+tensorflow-macos>=2.5.0
