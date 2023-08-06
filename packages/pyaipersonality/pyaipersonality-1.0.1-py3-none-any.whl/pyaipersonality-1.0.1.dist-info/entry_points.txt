@@ -1,0 +1,2 @@
+[console_scripts]
+pyaipersonality-server = pyaipersonality.lllm_server:main
