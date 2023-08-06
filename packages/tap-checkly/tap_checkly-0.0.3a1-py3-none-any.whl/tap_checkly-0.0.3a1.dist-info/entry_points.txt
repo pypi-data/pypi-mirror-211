@@ -1,0 +1,3 @@
+[console_scripts]
+tap-checkly=tap_checkly.tap:TapCheckly.cli
+
