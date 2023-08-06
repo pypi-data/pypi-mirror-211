@@ -1,0 +1,21 @@
+attrs>=22.1.0
+fonttools[ufo]>=4.0.0
+
+[:python_version < "3.8"]
+typing_extensions
+
+[converters]
+cattrs>=22.2.0
+
+[json]
+cattrs>=22.2.0
+
+[json:platform_python_implementation != "PyPy"]
+orjson
+
+[lxml]
+lxml
+
+[msgpack]
+cattrs>=22.2.0
+msgpack
