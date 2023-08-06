@@ -1,0 +1,5 @@
+# online compile dockerfile
+FROM br-harbor01.birentech.com/ci/ubuntu-18.04/ubuntu-18.04-fullstack:3487
+WORKDIR /app
+COPY ./ /app
+CMD bash build.sh --internal -p /usr/local/supa
