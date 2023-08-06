@@ -1,0 +1,8 @@
+{
+  "jupyter.lab.shortcuts": [],
+  "title": "@datalayer/jupyter-education",
+  "description": "@datalayer/jupyter-education settings.",
+  "type": "object",
+  "properties": {},
+  "additionalProperties": false
+}
