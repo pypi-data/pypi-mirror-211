@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+logten.egg-info/PKG-INFO
+logten.egg-info/SOURCES.txt
+logten.egg-info/dependency_links.txt
+logten.egg-info/top_level.txt
