@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: asyncpeegee
+Version: 0.1.0
+Home-page: https://github.com/viomck/peegee
+Author: Violet McKinney
+Author-email: opensource@viomck.com
+License: GPL 3
+Keywords: postgres
+License-File: LICENSE
