@@ -1,0 +1,24 @@
+numpy
+sympy
+
+[:python_version < "3.8"]
+typing_extensions
+
+[all]
+cplot
+matplotlib
+matplotx
+meshio
+meshzoo
+
+[disk-plot]
+meshzoo
+
+[plot]
+matplotlib
+matplotx
+
+[sphere-plot]
+cplot
+meshio
+meshzoo
