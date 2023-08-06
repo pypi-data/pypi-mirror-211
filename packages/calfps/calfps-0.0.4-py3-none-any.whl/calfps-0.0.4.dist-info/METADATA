@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: calfps
+Version: 0.0.4
+Summary: calculating fps as simple
+Home-page: https://github.com/Junhojuno/test-fps
+Author: Junhojuno
+Author-email: rlawnsgh2245@gmail.com
+Project-URL: Bug Tracker, https://github.com/Junhojuno/test-fps/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Module for calculating FPS as simple
+
+- this is a simple FPS calculator
