@@ -1,0 +1,9 @@
+autora/experiment_runner/synthetic/utilities.py,sha256=OO_LHMT7qYpIVwA1Q6HitMOtAlaPqC6OawMf1pU2owg,7378
+autora/experiment_runner/synthetic/abstract/template_experiment.py,sha256=HzbcTNE58WiMhrW1lgkzxGosJmPMf3riQU5IQaLtBgo,4239
+autora/experiment_runner/synthetic/economics/expected_value_theory.py,sha256=iLUdIcTKuP-NFlfnpEYjo-NQWQT6WbaV_MJfvhqV46w,5455
+autora/experiment_runner/synthetic/economics/prospect_theory.py,sha256=PUhpvqM7-f8c37bs73fp3t3GwlWQWUg7Uail8ZxKZDw,6743
+autora/experiment_runner/synthetic/psychophysics/weber_fechner_law.py,sha256=v0yJmkayc6LpXxt9cwHsMGW54fKTdtqikCRfhzEn-Kk,4724
+autora_synthetic-1.0.1a1.dist-info/METADATA,sha256=EauEcWL74Ci-vbSW_SPKExFypuPeqzMkvbw9PzzJl0k,1504
+autora_synthetic-1.0.1a1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+autora_synthetic-1.0.1a1.dist-info/top_level.txt,sha256=DgyJw5DFSvqCdMtEL5Zz0NDVldu1NgUVqP_wDPc2Jmk,7
+autora_synthetic-1.0.1a1.dist-info/RECORD,,
