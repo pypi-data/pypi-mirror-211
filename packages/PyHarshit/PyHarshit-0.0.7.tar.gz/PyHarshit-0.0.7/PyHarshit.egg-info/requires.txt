@@ -1,0 +1,11 @@
+pytz
+python-decouple
+telethon
+aiofiles
+aiohttp
+opencv-python-headless
+yt_dlp
+requests
+pyrogram
+aiohttp
+selenium==4.9.0
