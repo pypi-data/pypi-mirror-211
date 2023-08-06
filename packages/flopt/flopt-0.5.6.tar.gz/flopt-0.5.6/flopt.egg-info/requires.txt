@@ -1,0 +1,15 @@
+numpy
+sympy
+matplotlib
+pulp
+optuna
+hyperopt
+cvxopt
+amplify
+pytest
+scipy
+scikit-learn
+dill
+pooch
+timeout_decorator
+colorlog
