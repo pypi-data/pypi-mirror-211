@@ -1,0 +1,5 @@
+setup.py
+src/yeah_websocket.egg-info/PKG-INFO
+src/yeah_websocket.egg-info/SOURCES.txt
+src/yeah_websocket.egg-info/dependency_links.txt
+src/yeah_websocket.egg-info/top_level.txt
