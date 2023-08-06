@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: yt_dlp_progress
+Version: 0.0.4
+Summary: Runner for yt-dlp with progress reporting
+Author-email: Max Kuznetsov <maks.kuznetsov@gmail.com>
+License-File: LICENSE
+Requires-Python: >=3.7
+Requires-Dist: yt-dlp
+Description-Content-Type: text/markdown
+
+# yt_dlp_progress
