@@ -1,0 +1,17 @@
+cerc_geometry-2.1.3.data/data/geometry/requirements.txt,sha256=nREH1pLaiz7u9CqoXKb-WG-OvXTq7t0_-ylvGyDm5D8,45
+cerc_geometry-2.1.3.data/data/geometry/data/geolocation/cities15000.txt,sha256=bggOieFliJoxx5hOhgRiS6wy68cKDQIrkh8841Sq8sw,6284352
+geometry/__init__.py,sha256=V57ZOXK9xyCpS-KOhXzZ45pvTvUBaX3wKMWNJ7x3nzg,237
+geometry/helper.py,sha256=FjRkJg8aI6siFGTJmxy91ZNnmLXLqOkcPVTcEPrIIl4,5690
+geometry/library.py,sha256=gC9Mg8FgX3N5xVGLtb-fOCfVJeT3hHOL-ubo1AhpIQU,14161
+geometry/location.py,sha256=21QafgrT46QEFvoHZcOCZg40QozFatFr9KnMlOpdKTs,631
+geometry/map_point.py,sha256=JzAFk33ELqZMP3hcxzTupGpt1-Ifc3tDzVtz_ZJ1FZ8,778
+geometry/plane.py,sha256=0DVuG3ONiu8aHVBsp_hcXY4xqEd1VYTkoMsSfhnoOIo,2550
+geometry/point.py,sha256=W9h6Vm9wjeAf7laMx7FsUCeEzY_EInm-2ppqv0gya0c,1148
+geometry/polygon.py,sha256=l9HkGFW4yx7AI2MW8J-cE7eeMOUqi1tx2gHxOggrbiA,17151
+geometry/polyhedron.py,sha256=otoxWzPIUONC7yA_YOzUz-Yrp4pVe79T8DJrAvf6LCM,8059
+geometry/data/geolocation/cities15000.txt,sha256=bggOieFliJoxx5hOhgRiS6wy68cKDQIrkh8841Sq8sw,6284352
+cerc_geometry-2.1.3.dist-info/LICENSE.md,sha256=R2sDgphiq34-2SD4f60948mV992TwmR260DwEX3kP9w,7431
+cerc_geometry-2.1.3.dist-info/METADATA,sha256=dFAPhBULUMF58sc6DL_0kYjNzFSUMGxeMmPi398r5EA,1417
+cerc_geometry-2.1.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+cerc_geometry-2.1.3.dist-info/top_level.txt,sha256=RWbWhWYclEM-OFtXLCB4eLv-jxNnlJB-NPC2YM587Fo,9
+cerc_geometry-2.1.3.dist-info/RECORD,,
