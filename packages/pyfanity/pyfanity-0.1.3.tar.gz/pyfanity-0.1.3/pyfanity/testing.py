@@ -1,0 +1,3 @@
+from replacements import default_character_replacements
+
+print(default_character_replacements)
