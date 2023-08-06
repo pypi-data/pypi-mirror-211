@@ -1,0 +1,13 @@
+LICENSE
+README.md
+__init__.py
+constants.py
+setup.py
+stardate.py
+version.py
+skill_easter_eggs.egg-info/PKG-INFO
+skill_easter_eggs.egg-info/SOURCES.txt
+skill_easter_eggs.egg-info/dependency_links.txt
+skill_easter_eggs.egg-info/entry_points.txt
+skill_easter_eggs.egg-info/requires.txt
+skill_easter_eggs.egg-info/top_level.txt
