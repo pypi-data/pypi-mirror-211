@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+src/HaplyHAPI.py
+src/__init__.py
+src/HaplyHAPI.egg-info/PKG-INFO
+src/HaplyHAPI.egg-info/SOURCES.txt
+src/HaplyHAPI.egg-info/dependency_links.txt
+src/HaplyHAPI.egg-info/requires.txt
+src/HaplyHAPI.egg-info/top_level.txt
