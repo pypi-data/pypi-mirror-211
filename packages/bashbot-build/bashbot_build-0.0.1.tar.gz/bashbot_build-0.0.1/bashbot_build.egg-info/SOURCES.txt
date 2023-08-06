@@ -1,0 +1,10 @@
+pyproject.toml
+setup.cfg
+setup.py
+bashbot_build.egg-info/PKG-INFO
+bashbot_build.egg-info/SOURCES.txt
+bashbot_build.egg-info/dependency_links.txt
+bashbot_build.egg-info/entry_points.txt
+bashbot_build.egg-info/requires.txt
+bashbot_build.egg-info/top_level.txt
+bashbot_package/bashbot_index.py

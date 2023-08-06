@@ -1,0 +1,2 @@
+[console_scripts]
+bashbot = bashbot_package.bashbot_index:start
