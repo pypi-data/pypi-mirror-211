@@ -1,0 +1,10 @@
+logedit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logedit/logedit.py,sha256=G2Xi0KgdFvBPGbijH4uwgxe7zHfpuB0xl73jf3MhC4I,8032
+logedit/messages.json,sha256=TJjSkLhS3ZX_eC9fXzDhhdGCFI08yv3NMYvdY1FzKgo,1050
+logedit/system/changelog_writer.txt,sha256=bJGd903ZQyO0DtO9hFn4pEl8aGAnK_KDv7NYKXrqAtE,703
+logedit/system/commit_summarizer.txt,sha256=3BRMznYMtFneGteYg2jJ_F9J4sAGqPo14wR10DHByIg,312
+logedit-0.1.1.dist-info/METADATA,sha256=HHjr6S38jEFj5-YeIvp055RTxb9fb3lSuDl7fqfAV3Y,3372
+logedit-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+logedit-0.1.1.dist-info/entry_points.txt,sha256=76zMM1QjTtJCRLSo-v6Bnyas2QTxhkpHlbicL-9Umc0,55
+logedit-0.1.1.dist-info/top_level.txt,sha256=wp8EY5Dlm_Hx0GNI4YBeSrM6VecFkGe7vPc6NSk7cSs,8
+logedit-0.1.1.dist-info/RECORD,,
