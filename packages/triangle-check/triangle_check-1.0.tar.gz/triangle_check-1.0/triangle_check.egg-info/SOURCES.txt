@@ -1,0 +1,13 @@
+CLA.md
+License.txt
+README.md
+legal_notices.txt
+pyproject.toml
+setup.cfg
+./triangle_check/__init__.py
+./triangle_check/__main__.py
+triangle_check.egg-info/PKG-INFO
+triangle_check.egg-info/SOURCES.txt
+triangle_check.egg-info/dependency_links.txt
+triangle_check.egg-info/entry_points.txt
+triangle_check.egg-info/top_level.txt
