@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/sysml2py/grammar/KerML.tx
+src/sysml2py/grammar/KerMLExpressions.tx
+src/sysml2py/grammar/SysML.tx
+src/sysml2py/sysml2py.egg-info/PKG-INFO
+src/sysml2py/sysml2py.egg-info/SOURCES.txt
+src/sysml2py/sysml2py.egg-info/dependency_links.txt
+src/sysml2py/sysml2py.egg-info/top_level.txt
+src/sysml2py/textx/xtext_to_textx.py
