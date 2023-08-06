@@ -1,0 +1,2 @@
+[console_scripts]
+envreqs = envreqs.envreqs:main

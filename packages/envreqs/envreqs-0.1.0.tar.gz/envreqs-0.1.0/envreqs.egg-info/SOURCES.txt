@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+setup.py
+envreqs/__init__.py
+envreqs/envreqs.py
+envreqs.egg-info/PKG-INFO
+envreqs.egg-info/SOURCES.txt
+envreqs.egg-info/dependency_links.txt
+envreqs.egg-info/entry_points.txt
+envreqs.egg-info/requires.txt
+envreqs.egg-info/top_level.txt
