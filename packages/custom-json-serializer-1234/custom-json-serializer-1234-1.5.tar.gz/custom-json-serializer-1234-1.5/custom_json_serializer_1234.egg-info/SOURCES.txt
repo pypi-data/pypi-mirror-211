@@ -1,0 +1,14 @@
+setup.py
+core/__init__.py
+core/factory.py
+core/helpers/__init__.py
+core/helpers/constants.py
+core/helpers/functions.py
+core/serializers/__init__.py
+core/serializers/jsonserializer.py
+core/serializers/xmlserializer.py
+custom_json_serializer_1234.egg-info/PKG-INFO
+custom_json_serializer_1234.egg-info/SOURCES.txt
+custom_json_serializer_1234.egg-info/dependency_links.txt
+custom_json_serializer_1234.egg-info/requires.txt
+custom_json_serializer_1234.egg-info/top_level.txt
