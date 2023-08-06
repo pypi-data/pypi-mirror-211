@@ -1,0 +1,11 @@
+wtpsplit/__init__.py,sha256=trqiOUBaH3RF3gjAZrbBxlviKwX85gelGWR459IEatc,13429
+wtpsplit/extract.py,sha256=iNpAqXTSgcMRGguIfx5dtGpyBB_jRzWvV6XJq27DAec,7560
+wtpsplit/models.py,sha256=6JUFYusTizwdHTOxAk7vw0MD00XufkiiANxJq9pGJ4A,40289
+wtpsplit/utils.py,sha256=BF5d_dmPZPShNPhcJ5K0sLeDOgwQtsazxaKeksgw1VI,5814
+wtpsplit/data/language_info.csv,sha256=2tm7pUzb91yrlf1j9PQZx3zFpNhikO7MXeFUiQPzcck,3434
+wtpsplit/data/punctuation.json,sha256=XFcw8ATsR_70YGpXas4LmLeFV6haVmVBCL800tXaE7M,38208
+wtpsplit/data/punctuation.txt,sha256=bTJvs46ATy2SfRv9KsINj44gph3i987hzD1qCQLLTXE,408
+wtpsplit-1.0.0.dist-info/METADATA,sha256=fjtv8Z9nhNmghysiwBqkrbZsTXTby3_rKkqlaNxFHUc,386
+wtpsplit-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+wtpsplit-1.0.0.dist-info/top_level.txt,sha256=R0vXoJVWNZdOdsTs_qZaRevixA53n3cJwpuy_4GQHIU,9
+wtpsplit-1.0.0.dist-info/RECORD,,

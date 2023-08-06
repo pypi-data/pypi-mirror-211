@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: wtpsplit
+Version: 1.0.0
+Summary: Robust, adaptible sentence segmentation for 85 languages
+Home-page: https://github.com/bminixhofer/wtpsplit
+Author: Benjamin Minixhofer
+Author-email: bminixhofer@gmail.com
+License: MIT
+Requires-Dist: torch
+Requires-Dist: transformers
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: tqdm
+Requires-Dist: skops
+
