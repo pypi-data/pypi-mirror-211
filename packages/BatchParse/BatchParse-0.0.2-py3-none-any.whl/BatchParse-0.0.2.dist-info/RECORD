@@ -1,0 +1,11 @@
+BatchParse/__init__.py,sha256=TwSHe39tUaQDq_ifUSzshxEKwvdmf68sX8LNtW0cbSs,86
+BatchParse/main.py,sha256=usQ_7xvEAahq8m9V3XXfyr0ReHBoQzsIdFka9Aedof4,2809
+BatchParse/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+BatchParse/util/info.py,sha256=p6Gu5AI8v-DAJ16Xvrt7oK_uECVKFPY0RTj_lr02aeo,2166
+BatchParse/util/settings.py,sha256=DfpmHZTh86DGuon9eVJDYvcVj3Dmx0XfUXeyM8sGOmg,277
+BatchParse/util/splitting.py,sha256=vLqW4iurbjM1idlZ8fgU7OpJqts4WsI9RtHEBRuAo6Q,1120
+BatchParse-0.0.2.dist-info/LICENSE,sha256=loSsKneaW1q_2KKduPDwqnuUFrz8VY5yKn05SKGcVQY,1062
+BatchParse-0.0.2.dist-info/METADATA,sha256=tsnUe-j7YB04D0jPtE6mmNrw_KBXVv70_-q_Oquw8c8,353
+BatchParse-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+BatchParse-0.0.2.dist-info/top_level.txt,sha256=kIlj4Ge-RC8zr37ITcGPhhFI0vLVJm-iqhybR4Eq8E8,11
+BatchParse-0.0.2.dist-info/RECORD,,
