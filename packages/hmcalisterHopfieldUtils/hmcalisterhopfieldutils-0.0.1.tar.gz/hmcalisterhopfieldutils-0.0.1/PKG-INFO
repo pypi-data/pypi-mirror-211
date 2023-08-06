@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: hmcalisterHopfieldUtils
+Version: 0.0.1
+Summary: A collection of useful utilities and functions related to the Hopfield Network research I am performing
+Author-email: Hayden McAlister <haydenmcalister49@gmail.com>
+License-File: LICENSE
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# hmcalister Hopfield Utils
+
+A collection of useful utilities and functions related to the Hopfield Network research I am performing

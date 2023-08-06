@@ -1,0 +1,13 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name="hmcalisterHopfieldUtils"
+version="0.0.1"
+authors=[
+    { name="Hayden McAlister", email="haydenmcalister49@gmail.com"},
+]
+description="A collection of useful utilities and functions related to the Hopfield Network research I am performing"
+readme="README.md"
+requires-python=">=3.7"
