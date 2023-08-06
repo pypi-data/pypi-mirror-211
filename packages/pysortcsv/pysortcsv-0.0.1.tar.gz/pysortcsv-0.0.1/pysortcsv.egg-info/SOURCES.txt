@@ -1,0 +1,11 @@
+LICENSE
+LICENSE.txt
+README.rst
+setup.cfg
+setup.py
+pysortcsv/__init__.py
+pysortcsv/pysortcsv.py
+pysortcsv.egg-info/PKG-INFO
+pysortcsv.egg-info/SOURCES.txt
+pysortcsv.egg-info/dependency_links.txt
+pysortcsv.egg-info/top_level.txt
