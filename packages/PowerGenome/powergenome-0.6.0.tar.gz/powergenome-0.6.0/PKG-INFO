@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: powergenome
+Version: 0.6.0
+Summary: Construct input data for use in capacity expansion models
+Author: Greg Schivley
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.9,<3.12
+Provides-Extra: dev
+Provides-Extra: tests
+License-File: LICENSE.md
