@@ -1,0 +1,3 @@
+osqp
+osqp_mkl
+osqppurepy
