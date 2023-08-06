@@ -1,0 +1,7 @@
+SendTeams.py
+setup.py
+CP_MSTeams_webhook.egg-info/PKG-INFO
+CP_MSTeams_webhook.egg-info/SOURCES.txt
+CP_MSTeams_webhook.egg-info/dependency_links.txt
+CP_MSTeams_webhook.egg-info/requires.txt
+CP_MSTeams_webhook.egg-info/top_level.txt
