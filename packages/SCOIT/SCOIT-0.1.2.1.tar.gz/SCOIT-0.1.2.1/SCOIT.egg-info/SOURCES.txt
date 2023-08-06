@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+SCOIT.egg-info/PKG-INFO
+SCOIT.egg-info/SOURCES.txt
+SCOIT.egg-info/dependency_links.txt
+SCOIT.egg-info/requires.txt
+SCOIT.egg-info/top_level.txt
+scoit/__init__.py
+scoit/cell_analysis.py
+scoit/gene_analysis.py
+scoit/multi_omics_model.py
+scoit/tensorsc_model.py
+scoit/unionCom_alignment.py
