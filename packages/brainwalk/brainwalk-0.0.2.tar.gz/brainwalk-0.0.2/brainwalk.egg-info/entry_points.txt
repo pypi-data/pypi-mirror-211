@@ -1,0 +1,2 @@
+[nbdev]
+brainwalk = brainwalk._modidx:d
