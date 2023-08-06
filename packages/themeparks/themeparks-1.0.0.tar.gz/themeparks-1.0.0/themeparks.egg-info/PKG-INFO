@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: themeparks
+Version: 1.0.0
+Summary: Theme Parks Wiki V1 API
+Home-page: 
+Author: OpenAPI Generator community
+Author-email: team@openapitools.org
+Keywords: OpenAPI,OpenAPI-Generator,Theme Parks Wiki V1 API
+Requires-Python: >=3.6
+
+    api.themeparks.wiki  # noqa: E501
+    
