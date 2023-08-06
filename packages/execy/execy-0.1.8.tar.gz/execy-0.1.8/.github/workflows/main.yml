@@ -1,0 +1,31 @@
+name: Python Rye Workflow
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  rye-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Rye Installer for Python
+        uses: sbarrios93/rye-rust-action@v0.1.0
+
+      - name: Sync dependencies
+        run: |
+          rye sync
+
+      - name: Linting
+        run: |
+          rye run lint
+
+      - name: Testing
+        run: |
+          rye run pytest
