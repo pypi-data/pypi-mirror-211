@@ -1,0 +1,8 @@
+__author__="Pierre"
+__author_email__="pierre@exemple.com"
+__copyright__="2023, Pierre"
+__description__="coucou"
+__license__="AGPL 3"
+__title__="toolkit"
+__url__="A AJOUTER"
+__version__="1.0.1a0"

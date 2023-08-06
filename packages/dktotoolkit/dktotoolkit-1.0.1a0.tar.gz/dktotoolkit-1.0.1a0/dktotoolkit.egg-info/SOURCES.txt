@@ -1,0 +1,17 @@
+LICENCE.txt
+README.md
+setup.cfg
+setup.py
+dktotoolkit/__init__.py
+dktotoolkit/__version__.py
+dktotoolkit/datestr.py
+dktotoolkit/dict.py
+dktotoolkit/dotenv2clock.py
+dktotoolkit/envvar.py
+dktotoolkit/functions.py
+dktotoolkit/list.py
+dktotoolkit.egg-info/PKG-INFO
+dktotoolkit.egg-info/SOURCES.txt
+dktotoolkit.egg-info/dependency_links.txt
+dktotoolkit.egg-info/requires.txt
+dktotoolkit.egg-info/top_level.txt
