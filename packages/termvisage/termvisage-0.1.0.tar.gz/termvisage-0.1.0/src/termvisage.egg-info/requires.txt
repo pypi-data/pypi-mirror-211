@@ -1,0 +1,3 @@
+argcomplete<4,>=2
+term-image<0.7,>=0.6
+urwid<3.0,>=2.1

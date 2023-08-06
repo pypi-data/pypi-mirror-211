@@ -1,0 +1,2 @@
+[console_scripts]
+termvisage = termvisage.__main__:main
