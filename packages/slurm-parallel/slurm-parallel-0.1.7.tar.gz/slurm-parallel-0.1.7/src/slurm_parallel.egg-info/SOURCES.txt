@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/slurm_parallel/__init__.py
+src/slurm_parallel/config.toml
+src/slurm_parallel/run.py
+src/slurm_parallel/run.sh
+src/slurm_parallel/slurm.py
+src/slurm_parallel/summarize.sh
+src/slurm_parallel/utils.py
+src/slurm_parallel.egg-info/PKG-INFO
+src/slurm_parallel.egg-info/SOURCES.txt
+src/slurm_parallel.egg-info/dependency_links.txt
+src/slurm_parallel.egg-info/requires.txt
+src/slurm_parallel.egg-info/top_level.txt
+test/test.py
