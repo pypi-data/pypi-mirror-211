@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: d-popcorn
+Version: 1.1.0
+Summary: A command line tool to push data to the Polarplot dedicated AWS S3 bucket for D-ICE Engineering needs.
+Author: Omar El Bakouchi
+Author-email: omar.elbakouchi@dice-engineering.com
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Natural Language :: English
+License-File: LICENSE

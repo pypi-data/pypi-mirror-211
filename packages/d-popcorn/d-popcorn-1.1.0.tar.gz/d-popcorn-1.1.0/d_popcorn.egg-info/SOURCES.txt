@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+d_popcorn.egg-info/PKG-INFO
+d_popcorn.egg-info/SOURCES.txt
+d_popcorn.egg-info/dependency_links.txt
+d_popcorn.egg-info/entry_points.txt
+d_popcorn.egg-info/requires.txt
+d_popcorn.egg-info/top_level.txt
+popcorn/__init__.py
+popcorn/dump.py
+popcorn/popcornS3.py
+popcorn/popcorn_cli.py
