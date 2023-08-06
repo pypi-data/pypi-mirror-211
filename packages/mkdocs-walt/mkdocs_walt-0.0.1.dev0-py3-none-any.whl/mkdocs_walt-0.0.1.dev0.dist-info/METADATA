@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: mkdocs-walt
+Version: 0.0.1.dev0
+Summary: A minimal theme for MkDocs
+Home-page: https://github.com/codesue/walt
+Author: Suzen Fylke
+Author-email: codesue@users.noreply.github.com
+License: GPLv3
+Description-Content-Type: text/markdown
+Requires-Dist: mkdocs
+
+
+# mkdocs-walt: a mininal documentation theme for MkDocs
+
+## Installation
+
+```sh
+pip install mkdocs-walt
+```
+
+## Usage
+
+Create a new MkDocs project with the `mkdocs` CLI and add the following your
+project's `mkdocs.yml`:
+
+```yaml
+theme:
+  name: walt
+```
+
+See the [full usage example](https://github.com/codesue/walt/examples/mkdocs-walt).
