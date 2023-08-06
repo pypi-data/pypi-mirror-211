@@ -1,0 +1,49 @@
+from . import ygg, ygg_async
+
+
+class YggApiBase(object):
+    api_root: str | None = None
+
+    def __init__(self, api_root: str | None = None) -> None:
+        self.api_root = api_root
+
+
+class YggPlayerUuid(YggApiBase):
+    getMojang = ygg.YggdrasilPlayerUuidApi.getMojangServer
+    getMojangAsync = ygg_async.YggdrasilPlayerUuidApi.getMojangServer
+
+    def get3rd(self, player_name: str):
+        return ygg.YggdrasilPlayerUuidApi.getYggdrasilServer(
+            api_root=self.api_root, player_name=player_name
+        )
+
+    async def get3rdAsync(self, player_name: str):
+        return await ygg_async.YggdrasilPlayerUuidApi.getYggdrasilServer(
+            api_root=self.api_root, player_name=player_name
+        )
+
+
+class YggPlayerProfile(YggApiBase):
+    getMojang = ygg.YggdrasilGameProfileApi.getMojangServer
+    getMojangAsync = ygg_async.YggdrasilGameProfileApi.getMojangServer
+
+    def get3rd(self, player_uuid: str):
+        return ygg.YggdrasilGameProfileApi.getYggdrasilServer(
+            api_root=self.api_root, player_uuid=player_uuid
+        )
+
+    async def get3rdAsync(self, player_uuid: str):
+        return await ygg_async.YggdrasilGameProfileApi.getYggdrasilServer(
+            api_root=self.api_root, player_uuid=player_uuid
+        )
+
+
+class YggdrasilPlayer(YggApiBase):
+    Uuid: YggPlayerUuid
+    Profile: YggPlayerProfile
+
+    def __init__(self, api_root: str | None = None):
+        super().__init__(api_root)
+        self.Uuid = YggPlayerUuid(api_root)
+        self.Profile = YggPlayerProfile(api_root)
+
