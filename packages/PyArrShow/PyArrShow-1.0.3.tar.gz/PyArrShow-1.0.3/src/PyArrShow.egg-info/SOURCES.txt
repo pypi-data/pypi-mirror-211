@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/DataCursorFrame.py
+src/ImgDisplayFrame.py
+src/PilotFrame.py
+src/pyArrShow.py
+src/qrc_resources.py
+src/PyArrShow.egg-info/PKG-INFO
+src/PyArrShow.egg-info/SOURCES.txt
+src/PyArrShow.egg-info/dependency_links.txt
+src/PyArrShow.egg-info/requires.txt
+src/PyArrShow.egg-info/top_level.txt
