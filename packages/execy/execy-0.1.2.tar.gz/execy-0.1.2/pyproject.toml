@@ -1,0 +1,24 @@
+[project]
+name = "execy"
+version = "0.1.2"
+description = "The ececy exec_time decorator is a utility that measures the execution time of a function. It can be used to easily track and log the time taken by a function to execute, both for synchronous and asynchronous functions."
+authors = [
+    { name = "hglong16", email = "intihad.vuong@gmail.com" }
+]
+dependencies = ["pytest-asyncio~=0.21.0", "setuptools~=67.8.0", "wheel~=0.40.0", "twine~=4.0.2"]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye.scripts]
+build = "python setup.py sdist bdist_wheel"
+upload = "twine upload dist/*"
+
+[tool.rye]
+managed = true
+dev-dependencies = ["pytest~=7.3.1", "black~=23.3.0", "isort~=5.12.0"]
+[tool.hatch.metadata]
+allow-direct-references = true
