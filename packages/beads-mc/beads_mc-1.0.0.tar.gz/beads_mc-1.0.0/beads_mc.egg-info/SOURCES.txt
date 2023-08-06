@@ -1,0 +1,12 @@
+setup.py
+beads_mc/__init__.py
+beads_mc/config.py
+beads_mc/metropolis_hastings.py
+beads_mc/trait.py
+beads_mc/utils.py
+beads_mc/visualize.py
+beads_mc.egg-info/PKG-INFO
+beads_mc.egg-info/SOURCES.txt
+beads_mc.egg-info/dependency_links.txt
+beads_mc.egg-info/requires.txt
+beads_mc.egg-info/top_level.txt
