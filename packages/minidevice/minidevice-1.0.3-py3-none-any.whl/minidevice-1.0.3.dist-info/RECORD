@@ -1,0 +1,14 @@
+minidevice/__init__.py,sha256=rMgudZXfbr8E_tK8MhFupV7ZicBxoYNeDUWifP3m688,30
+minidevice/adb.py,sha256=FqbcuxLIz3nhmpc2nY3rbh84aCSD3L5nHIMaBqAXpi8,2040
+minidevice/config.py,sha256=ciooDQzegitq_VdURlqtGz2MCU2MV6Ku9OcjwA6uPCs,285
+minidevice/device.py,sha256=J290iijX28ft3-t3oXJUUYy3eR-dH21INZ1DKpiDdQw,2742
+minidevice/minicap.py,sha256=Ay0vbiHPbO332I1O381RBhaRSgqYdT_ww7IaWdKIQUk,2267
+minidevice/minitouch.py,sha256=9KolLq_0BsM4TxC0oL4Q-hOTI1BoICzqDOHuGEHTq5w,483
+minidevice/utils.py,sha256=I7-lPAIQusUNFkoopEDpd8CUT7-X_fgEhUscZjtGnbI,261
+minidevice/bin/AdbWinApi.dll,sha256=1gEDpembyYiPeG7pFvXW5FSTwyR5cssFODOAPefpXPk,97792
+minidevice/bin/AdbWinUsbApi.dll,sha256=JSB8UG0pxOjc62G0vVDoZpuiYBKYikP78mqJCx5g_Jc,62976
+minidevice/bin/adb.exe,sha256=EmVirH-LyoemigiMhMrf_1h0XwDvGqFlXNYrAmbBfVg,6021632
+minidevice-1.0.3.dist-info/METADATA,sha256=f0N5qPqjEXgf6LOrcUqecuGpnPPMdi4Vool9u-BUc7E,1481
+minidevice-1.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+minidevice-1.0.3.dist-info/top_level.txt,sha256=h26EuQA4jlBfwD82Mk6ZYFbk6RQhHIIwBllS2PoWiv0,11
+minidevice-1.0.3.dist-info/RECORD,,
