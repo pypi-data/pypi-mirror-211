@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: logtrapz
+Version: 0.0.1
+Summary: logtrapz
+Home-page: https://github.com/mdmould/logtrapz
+Author: Matthew Mould
+Author-email: mattdmould@gmail.com
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+# pythonpackage
+
+Trapezoidal integration in log space.
