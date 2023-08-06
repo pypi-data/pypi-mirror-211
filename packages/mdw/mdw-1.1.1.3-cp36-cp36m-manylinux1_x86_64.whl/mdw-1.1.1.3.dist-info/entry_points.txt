@@ -1,0 +1,4 @@
+[console_scripts]
+detectorWorker = mdw.node.detector.detectorWorker:main
+storageWorker = mdw.node.storage.storageWorker:main
+
