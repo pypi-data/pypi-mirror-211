@@ -1,0 +1,27 @@
+typing-extensions!=4.6.0,>=3.10
+
+[dev]
+black
+build
+coverage
+docformatter
+flake8
+flake8-black
+flake8-bugbear
+flake8-isort
+invoke
+isort
+mypy
+pylint
+pytest
+pytest-mypy-testing
+pytest-cov
+Sphinx
+sphinx-rtd-theme
+tox
+twine
+wheel
+sphinx-autodoc-typehints
+
+[dev:python_version == "3.7"]
+importlib_metadata<5
