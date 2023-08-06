@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2021 Martijn Braam -->
+<component type="desktop-application">
+  <id>nl.brixit.Switcher</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0</project_license>
+  <name>Switcher control</name>
+  <summary>Control application for Blackmagic Design ATEM video switchers</summary>
+  <description>
+    <p>
+      Switcher is a re-implementation of the Switcher Control application
+      from Blackmagic Design for controlling the ATEM video mixers/switchers
+      like the popular Atem Mini.
+    </p>
+  </description>
+  <launchable type="desktop-id">nl.brixit.Switcher.desktop</launchable>
+  <provides>
+    <binary>switcher-control</binary>
+  </provides>
+  <screenshots>
+    <screenshot type="default">
+      <caption>OpenSwitcher connected to the Atem Mini Pro</caption>
+      <image>https://brixitcdn.net/metainfo/openswitcher.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>OpenSwitcher audio page on a fairlight mixer</caption>
+      <image>https://brixitcdn.net/metainfo/openswitcher-audio.png</image>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">https://sr.ht/~martijnbraam/pyatem</url>
+  <url type="bugtracker">https://todo.sr.ht/~martijnbraam/OpenAtem</url>
+  <content_rating type="oars-1.1"/>
+  <releases>
+
+    <release version="0.9.0" date="2023-06-01">
+      <description>
+        <ul>
+          <li>Don't crash on python installations without locale support</li>
+          <li>Convert alpha to premultiplied when uploading .png stills</li>
+          <li>Support changing the audio bitrate for ATEMs with streaming support</li>
+          <li>Disable opening the hardware settings panel when not connected</li>
+          <li>Fixed consistency issues on the palette headings</li>
+          <li>Add units to the streaming bitrate settings</li>
+          <li>Make the connection window side-by-side</li>
+          <li>Add support for the new constellation hardware</li>
+          <li>Add the supersource and M/E source buttons for the hardware that supports it</li>
+          <li>Fix performance issue on connecting to hardware with many inputs</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="0.8.2" date="2022-10-18">
+      <description>
+        <ul>
+          <li>Fix deprecated spdx identifiers</li>
+          <li>Fix paths for generated manpages</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="0.8.1" date="2022-10-15">
+      <description>
+        <ul>
+          <li>Update desktop file metadata</li>
+          <li>Update license metadata</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="0.8.0" date="2022-09-16">
+      <description>
+        <ul>
+          <li>Implement the advanced chroma keyer</li>
+          <li>Add a setup utility for BMD converters</li>
+          <li>Improve error messages for connectivity issues</li>
+          <li>Rework logging output</li>
+        </ul>
+      </description>
+    </release>
+
+
+    <release version="0.7.0" date="2022-06-12">
+      <description>
+        <ul>
+          <li>Implement stills upload and download</li>
+          <li>Add support for changing the still in mediaplayers</li>
+          <li>Make UDP backend threaded for ack reliability</li>
+          <li>New translations for Danish, German, Norwegian Bokmål, and Swedish</li>
+        </ul>
+      </description>
+    </release>
+
+
+    <release version="0.6.1" date="2022-05-19">
+      <description>
+        <ul>
+          <li>Fix crash when an videohub is disconnected</li>
+          <li>Add protocol debugger window when pressing F12</li>
+          <li>Updated translations for the new features</li>
+        </ul>
+      </description>
+    </release>
+
+
+    <release version="0.6.0" date="2022-05-13">
+      <description>
+        <ul>
+          <li>Initial EQ curve support for the fairlight mixer</li>
+          <li>Added support for the VideoHub protocol</li>
+          <li>Support linking an input to a VideoHub output for on-the-fly routing changes</li>
+          <li>Support displaying a VideoHub output as a bus</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="0.5.2" date="2022-03-25">
+      <description>
+        <ul>
+          <li>Implemented internationalisation</li>
+          <li>Added initial Dutch translation</li>
+          <li>Added initial Turkish translation by tvgozde</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="0.5.1" date="2022-03-17">
+      <description>
+        <ul>
+          <li>Implemented the live stream start/stop buttons</li>
+          <li>Added option to save images from the media window</li>
+          <li>Fix crash when opening the preferences before the initial sync is finished</li>
+          <li>Fix the AFV setting for fade-to-black</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="0.5.0" date="2022-03-08">
+      <description>
+        <ul>
+          <li>Locate ATEM hardware in the local network automatically</li>
+          <li>Fixed volume names in the recorder</li>
+          <li>Make the headerbar red while recording or transmitting</li>
+          <li>Show the bitrate in the header</li>
+          <li>Inplement more live streaming controls</li>
+          <li>Fix TCP fragmentation bug for the proxy protocol</li>
+          <li>Add aux bus configuration on the output tab</li>
+          <li>Implement aux-follow-monitor to make an aux output act like an audio
+            monitor output for the audio tab
+          </li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.4.1" date="2021-11-26">
+      <description>
+        <p>
+          Drop the external hexdump dependency and move hexdump.py into pyatem since this library is unmaintained
+          and the source repository is gone.
+        </p>
+      </description>
+    </release>
+    <release version="0.4.0" date="2021-11-14">
+      <description>
+        <p>
+          This release has support for the audio mixer in the atem and fairlight audio mixers. The connection
+          system has also been reworked to be able to connect to USB devices in an easier way and support
+          connecting to an openswitcher proxy daemon.
+        </p>
+        <ul>
+          <li>Add openswitcher-proxy component</li>
+          <li>Add level metering in the fairlight mixer</li>
+          <li>Implement the atem audio mixer</li>
+          <li>Remove the broken midi support in the gtk application</li>
+          <li>Add first support for fetching the media files from the hardware</li>
+          <li>Add the option to add a mini M/E for an AUX output</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.3.0" date="2021-06-27">
+      <description>
+        <p>
+          This is the first release that has support for USB access to the new ATEM mini line of switchers.
+          It's tested on the Atem Mini and Atem Mini Pro, for other devices the usb pid/vid pair needs to be
+          added.
+        </p>
+      </description>
+    </release>
+    <release version="0.2.0" date="2021-03-11">
+      <description>
+        <p>
+          This release adds support for multiple M/E blocks. Some basic upstream keyer config
+          and a visual layout editor to move DVE keys around. The plan is to also control the other
+          positionable elements using the same layout editor.
+        </p>
+      </description>
+    </release>
+    <release version="0.1.0" date="2021-02-09">
+      <description>
+        <p>
+          First release
+        </p>
+        <ul>
+          <li>Basic video switching and configuration implemented</li>
+          <li>Volume and mute/afv control for switchers with fairlight audio</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+</component>

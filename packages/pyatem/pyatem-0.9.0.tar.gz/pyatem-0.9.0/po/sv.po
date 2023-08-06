@@ -1,0 +1,920 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the openswitcher package.
+# Martijn Braam <martijn@brixit.nl>, 2022.
+# Filip Bengtsson <me@autom.zone>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: openswitcher\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-14 21:06+0200\n"
+"PO-Revision-Date: 2022-06-09 17:36+0000\n"
+"Last-Translator: Filip Bengtsson <me@autom.zone>\n"
+"Language-Team: Swedish <https://hosted.weblate.org/projects/openswitcher/"
+"openswitcher/sv/>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.13-dev\n"
+
+#. Window title
+#: gtk_switcher/ui/mixer.glade:176 gtk_switcher/ui/mixer.glade:189
+#: gtk_switcher/ui/mixer.glade:197
+msgid "Switcher control"
+msgstr "Mixerstyrning"
+
+#: gtk_switcher/ui/mixer.glade:395
+msgid "Color 1"
+msgstr "Färg 1"
+
+#: gtk_switcher/ui/mixer.glade:410
+msgid "Color 2"
+msgstr "Färg 2"
+
+#: gtk_switcher/ui/mixer.glade:437
+msgid "Color Generators"
+msgstr "Färgkällor"
+
+#: gtk_switcher/ui/mixer.glade:526 gtk_switcher/ui/mixer.glade:566
+#: gtk_switcher/ui/mixer.glade:642 gtk_switcher/ui/mixer.glade:1274
+msgid "Rate"
+msgstr ""
+
+#: gtk_switcher/ui/mixer.glade:551
+msgid "Mix"
+msgstr ""
+
+#: gtk_switcher/ui/mixer.glade:581
+msgid "Dip source"
+msgstr ""
+
+#: gtk_switcher/ui/mixer.glade:626
+msgid "Dip"
+msgstr ""
+
+#: gtk_switcher/ui/mixer.glade:953
+msgctxt "wipe_transition"
+msgid "Symmetry"
+msgstr "Symmetri"
+
+#: gtk_switcher/ui/mixer.glade:983
+msgctxt "wipe_transition"
+msgid "X"
+msgstr "X"
+
+#: gtk_switcher/ui/mixer.glade:998
+msgctxt "wipe_transition"
+msgid "Y"
+msgstr "Y"
+
+#: gtk_switcher/ui/mixer.glade:1054
+msgctxt "wipe_transition"
+msgid "Softness"
+msgstr "Mjukhet"
+
+#: gtk_switcher/ui/mixer.glade:1069
+msgid "Width"
+msgstr "Bredd"
+
+#. Fill video source
+#: gtk_switcher/ui/mixer.glade:1114
+msgid "Fill"
+msgstr "Fyllning"
+
+#: gtk_switcher/ui/mixer.glade:1163
+msgid "Reverse"
+msgstr ""
+
+#: gtk_switcher/ui/mixer.glade:1183
+msgid "Flip flop"
+msgstr ""
+
+#: gtk_switcher/ui/mixer.glade:1219
+msgid "Wipe"
+msgstr "Svepning"
+
+#: gtk_switcher/ui/mixer.glade:1258
+msgid "Sting"
+msgstr ""
+
+#: gtk_switcher/ui/mixer.glade:1309 gtk_switcher/ui/mixeffect.glade:585
+#: gtk_switcher/ui/upstream-keyer.glade:1531
+msgid "DVE"
+msgstr ""
+
+#: gtk_switcher/ui/mixer.glade:1337
+msgid "Transitions"
+msgstr "Övergångar"
+
+#: gtk_switcher/ui/mixer.glade:1400
+msgid "Audio follow video"
+msgstr "Ljud följer bild"
+
+#: gtk_switcher/ui/mixer.glade:1412
+msgid "AFV"
+msgstr "LFB"
+
+#: gtk_switcher/ui/mixer.glade:1452
+msgid "Fade to black"
+msgstr "Tona till svart"
+
+#: gtk_switcher/ui/mixer.glade:1524
+msgid "Macros"
+msgstr "Makron"
+
+#: gtk_switcher/ui/mixer.glade:1547
+msgid "Palettes"
+msgstr "Paletter"
+
+#: gtk_switcher/ui/mixer.glade:1579
+msgid "Media Player"
+msgstr "Mediaspelare"
+
+#. Hardware model
+#: gtk_switcher/ui/mixer.glade:1635
+msgid "Model"
+msgstr "Modell"
+
+#: gtk_switcher/ui/mixer.glade:1650
+msgid "Video mode"
+msgstr ""
+
+#: gtk_switcher/ui/mixer.glade:1665 gtk_switcher/ui/mixer.glade:3029
+msgid "Not connected"
+msgstr "Ej ansluten"
+
+#: gtk_switcher/ui/mixer.glade:1700
+msgid "Hardware status"
+msgstr "Hårdvarustatus"
+
+#: gtk_switcher/ui/mixer.glade:1774
+msgid "AUX Outputs"
+msgstr "AUX-utgångar"
+
+#: gtk_switcher/ui/mixer.glade:1823
+msgid "Preset"
+msgstr "Förinställning"
+
+#: gtk_switcher/ui/mixer.glade:1838
+msgid "Audio bitrate"
+msgstr "Bithastighet för ljud"
+
+#: gtk_switcher/ui/mixer.glade:1885
+msgid "Video bitrate"
+msgstr "Bithastighet för bild"
+
+#: gtk_switcher/ui/mixer.glade:1950
+msgid "Encoder output"
+msgstr ""
+
+#. Stream recorder filename
+#: gtk_switcher/ui/mixer.glade:1999
+msgctxt "streamrecorder"
+msgid "Filename"
+msgstr "Filnamn"
+
+#: gtk_switcher/ui/mixer.glade:2049
+msgid "STOP"
+msgstr "STOPP"
+
+#: gtk_switcher/ui/mixer.glade:2097
+msgctxt "streamrecorder"
+msgid "Disk 1"
+msgstr "Disk 1"
+
+#: gtk_switcher/ui/mixer.glade:2112
+msgctxt "streamrecorder"
+msgid "Disk 2"
+msgstr "Disk 2"
+
+#: gtk_switcher/ui/mixer.glade:2124
+msgid "Record in all cameras"
+msgstr "Spela in alla kameror"
+
+#. Switch disk button
+#: gtk_switcher/ui/mixer.glade:2154
+msgctxt "streamrecorder"
+msgid "Switch"
+msgstr "Växla"
+
+#. button
+#: gtk_switcher/ui/mixer.glade:2168
+msgctxt "streamrecorder"
+msgid "Stop"
+msgstr "Stopp"
+
+#. Button
+#: gtk_switcher/ui/mixer.glade:2183
+msgctxt "streamrecorder"
+msgid "Record"
+msgstr "Spela in"
+
+#: gtk_switcher/ui/mixer.glade:2280
+msgid "Stream recorder"
+msgstr ""
+
+#: gtk_switcher/ui/mixer.glade:2366
+msgid "OFF"
+msgstr "AV"
+
+#. Stop livestream button
+#: gtk_switcher/ui/mixer.glade:2417
+msgctxt "livestream"
+msgid "Off"
+msgstr "Av"
+
+#. Start livestream button
+#: gtk_switcher/ui/mixer.glade:2432
+msgctxt "livestream"
+msgid "On air"
+msgstr "Direkt"
+
+#: gtk_switcher/ui/mixer.glade:2456
+msgid "Platform"
+msgstr "Plattform"
+
+#: gtk_switcher/ui/mixer.glade:2471
+msgid "Server"
+msgstr "Server"
+
+#: gtk_switcher/ui/mixer.glade:2486 gtk_switcher/ui/downstream-keyer.glade:116
+#: gtk_switcher/ui/upstream-keyer.glade:312
+msgid "Key"
+msgstr "Nyckel"
+
+#: gtk_switcher/ui/mixer.glade:2643
+msgid "Live stream"
+msgstr "Direktströmning"
+
+#: gtk_switcher/ui/mixer.glade:2669
+msgid "Output"
+msgstr "Utgång"
+
+#: gtk_switcher/ui/mixer.glade:2701 gtk_switcher/ui/preferences.glade:984
+msgid "Switcher"
+msgstr "Mixer"
+
+#: gtk_switcher/ui/mixer.glade:2781
+msgid "Media"
+msgstr "Media"
+
+#: gtk_switcher/ui/mixer.glade:2816
+msgctxt "audio_mixer"
+msgid "Input"
+msgstr "Ingång"
+
+#: gtk_switcher/ui/mixer.glade:2832
+msgctxt "audio_mixer"
+msgid "Equalizer"
+msgstr "Tonkontroll"
+
+#: gtk_switcher/ui/mixer.glade:2848
+msgctxt "audio_mixer"
+msgid "Dynamics"
+msgstr "Dynamik"
+
+#: gtk_switcher/ui/mixer.glade:2864
+msgctxt "audio_mixer"
+msgid "dB"
+msgstr "dB"
+
+#: gtk_switcher/ui/mixer.glade:2880
+msgctxt "audio_mixer"
+msgid "Pan"
+msgstr "Pan."
+
+#: gtk_switcher/ui/mixer.glade:2976 gtk_switcher/ui/preferences.glade:525
+msgid "Audio"
+msgstr "Ljud"
+
+#: gtk_switcher/ui/mixer.glade:3014
+msgid "Camera"
+msgstr "Kamera"
+
+#: gtk_switcher/ui/mixer.glade:3030
+msgid ""
+"There is no connection to the hardware. The connection might be interrupted "
+"or a new connection needs to be made in the Preferences window"
+msgstr ""
+
+#: gtk_switcher/ui/mixer.glade:3039 gtk_switcher/ui/mixer.glade:3115
+msgid "Open preferences"
+msgstr ""
+
+#: gtk_switcher/ui/mixer.glade:3057
+#, fuzzy
+msgid "Reconnect"
+msgstr "Anslut"
+
+#: gtk_switcher/ui/mixer.glade:3084
+msgid "Firmware outdated"
+msgstr "Föråldrad firmware"
+
+#: gtk_switcher/ui/mixer.glade:3085
+msgid ""
+"The firmware on the connected device is not new enough for this "
+"application.\n"
+"OpenSwitcher requires at least firmware 8.0+ to correctly function with most "
+"hardware."
+msgstr ""
+
+#: gtk_switcher/ui/mixer.glade:3089
+msgid "Continue anyway"
+msgstr ""
+
+#: gtk_switcher/ui/mixer.glade:3109
+msgid "Permission denied"
+msgstr ""
+
+#: gtk_switcher/ui/mixer.glade:3110
+msgid ""
+"Could not connect to the selected USB device. The udev rules might be "
+"missing on your installation or the current device is not supported yet.\n"
+"\n"
+"A different connection can be made in the preferences window"
+msgstr ""
+
+#: gtk_switcher/ui/mixeffect.glade:34
+msgid "Program"
+msgstr "Program"
+
+#: gtk_switcher/ui/mixeffect.glade:132 gtk_switcher/ui/upstream-keyer.glade:886
+msgid "Preview"
+msgstr "Förhandsvisning"
+
+#: gtk_switcher/ui/mixeffect.glade:230
+msgid "Next transition"
+msgstr "Nästa övergång"
+
+#: gtk_switcher/ui/mixeffect.glade:264
+msgid "BKGD"
+msgstr "BKGD"
+
+#: gtk_switcher/ui/mixeffect.glade:283
+msgid "KEY 1"
+msgstr "KEY 1"
+
+#: gtk_switcher/ui/mixeffect.glade:302
+msgid "KEY 2"
+msgstr "KEY 2"
+
+#: gtk_switcher/ui/mixeffect.glade:321
+msgid "KEY 3"
+msgstr "KEY 3"
+
+#: gtk_switcher/ui/mixeffect.glade:340
+msgid "KEY 4"
+msgstr "KEY 4"
+
+#: gtk_switcher/ui/mixeffect.glade:359 gtk_switcher/ui/mixeffect.glade:379
+#: gtk_switcher/ui/mixeffect.glade:399 gtk_switcher/ui/mixeffect.glade:419
+#: gtk_switcher/mixeffect.py:595
+msgid ""
+"ON\n"
+"AIR"
+msgstr "DIREKT"
+
+#: gtk_switcher/ui/mixeffect.glade:474
+msgid "Transition style"
+msgstr "Övergångsstil"
+
+#: gtk_switcher/ui/mixeffect.glade:508
+msgid "MIX"
+msgstr "MIX"
+
+#: gtk_switcher/ui/mixeffect.glade:528
+msgid "DIP"
+msgstr "DIPP"
+
+#: gtk_switcher/ui/mixeffect.glade:547
+msgid "WIPE"
+msgstr "SVEP"
+
+#: gtk_switcher/ui/mixeffect.glade:566
+msgid "STING"
+msgstr "STING"
+
+#: gtk_switcher/ui/mixeffect.glade:604
+msgid ""
+"PREV\n"
+"TRANS"
+msgstr "FÖREG."
+
+#: gtk_switcher/ui/mixeffect.glade:624
+msgid "CUT"
+msgstr "TAG"
+
+#: gtk_switcher/ui/mixeffect.glade:643 gtk_switcher/mixeffect.py:604
+msgid "AUTO"
+msgstr "AUTO"
+
+#: gtk_switcher/ui/mixeffect.glade:669 gtk_switcher/ui/mixeffect.glade:985
+#: gtk_switcher/mixeffect.py:576
+msgid "rate"
+msgstr "hast."
+
+#: gtk_switcher/ui/mixeffect.glade:746
+msgid "Transition"
+msgstr "Övergång"
+
+#: gtk_switcher/ui/mixeffect.glade:846
+msgid "Downstream key"
+msgstr "Nerströms key"
+
+#: gtk_switcher/ui/mixeffect.glade:925
+msgid "Fade to Black"
+msgstr "Tona till svart"
+
+#: gtk_switcher/ui/mixeffect.glade:959
+msgid "FTB"
+msgstr "SVART"
+
+#: gtk_switcher/ui/connection.glade:21
+msgid "Connection settings"
+msgstr "Inställningar för anslutning"
+
+#: gtk_switcher/ui/connection.glade:58
+msgid "Switcher connection"
+msgstr "Mixeranslutning"
+
+#: gtk_switcher/ui/connection.glade:91 gtk_switcher/ui/videohub.glade:22
+msgid "IP Address"
+msgstr "IP-adress"
+
+#: gtk_switcher/ui/connection.glade:116
+msgid "Connection type"
+msgstr "Anslutningstyp"
+
+#: gtk_switcher/ui/connection.glade:133
+msgid "ATEM network connection"
+msgstr "ATEM nätverksanslutning"
+
+#: gtk_switcher/ui/connection.glade:149
+msgid "ATEM usb connection"
+msgstr "ATEM USB-anslutning"
+
+#: gtk_switcher/ui/connection.glade:166
+msgid "OpenSwitcher proxy"
+msgstr "OpenSwitcher proxy"
+
+#: gtk_switcher/ui/connection.glade:192
+msgid "Username"
+msgstr "Användarnamn"
+
+#: gtk_switcher/ui/connection.glade:207
+msgid "Password"
+msgstr "Lösenord"
+
+#: gtk_switcher/ui/connection.glade:244
+msgid "Device"
+msgstr "Enhet"
+
+#: gtk_switcher/ui/connection.glade:295
+msgid "No atem hardware detected"
+msgstr "Ingen ATEM-hårdvara hittades"
+
+#: gtk_switcher/ui/connection.glade:323 gtk_switcher/ui/videohub.glade:105
+msgid "Connect"
+msgstr "Anslut"
+
+#: gtk_switcher/ui/connection.glade:342
+msgid "Hardware settings"
+msgstr "Hårdvaruinställningar"
+
+#: gtk_switcher/ui/downstream-keyer.glade:37
+#: gtk_switcher/ui/upstream-keyer.glade:232
+#: gtk_switcher/ui/upstream-keyer.glade:449
+#: gtk_switcher/ui/upstream-keyer.glade:965
+msgid "Fill source"
+msgstr "Fyllningskälla"
+
+#: gtk_switcher/ui/downstream-keyer.glade:71
+#: gtk_switcher/ui/upstream-keyer.glade:266
+msgid "Key source"
+msgstr "Key-källa"
+
+#: gtk_switcher/ui/downstream-keyer.glade:128
+#: gtk_switcher/ui/upstream-keyer.glade:324
+msgid "Pre multiplied"
+msgstr ""
+
+#: gtk_switcher/ui/downstream-keyer.glade:149
+#: gtk_switcher/ui/upstream-keyer.glade:345
+msgid "Clip"
+msgstr ""
+
+#: gtk_switcher/ui/downstream-keyer.glade:164
+#: gtk_switcher/ui/upstream-keyer.glade:360
+msgid "Gain"
+msgstr ""
+
+#: gtk_switcher/ui/downstream-keyer.glade:207
+#: gtk_switcher/ui/downstream-keyer.glade:219
+#: gtk_switcher/ui/upstream-keyer.glade:403
+#: gtk_switcher/ui/upstream-keyer.glade:415
+msgid "Invert"
+msgstr ""
+
+#: gtk_switcher/ui/downstream-keyer.glade:268
+#: gtk_switcher/ui/upstream-keyer.glade:1565
+msgid "Use mask"
+msgstr ""
+
+#: gtk_switcher/ui/downstream-keyer.glade:280
+#: gtk_switcher/ui/upstream-keyer.glade:1577
+msgid "Mask"
+msgstr "Mask"
+
+#: gtk_switcher/ui/downstream-keyer.glade:300
+#: gtk_switcher/ui/upstream-keyer.glade:1597
+msgid "Top"
+msgstr "Upp"
+
+#: gtk_switcher/ui/downstream-keyer.glade:315
+#: gtk_switcher/ui/upstream-keyer.glade:1612
+msgid "Bottom"
+msgstr "Ner"
+
+#: gtk_switcher/ui/downstream-keyer.glade:330
+#: gtk_switcher/ui/upstream-keyer.glade:1627
+msgid "Left"
+msgstr "Vänster"
+
+#: gtk_switcher/ui/downstream-keyer.glade:345
+#: gtk_switcher/ui/upstream-keyer.glade:1642
+msgid "Right"
+msgstr "Höger"
+
+#: gtk_switcher/ui/upstream-keyer.glade:434
+msgid "Luma"
+msgstr "Luminans"
+
+#: gtk_switcher/ui/upstream-keyer.glade:494
+msgid "Foreground"
+msgstr ""
+
+#: gtk_switcher/ui/upstream-keyer.glade:509
+msgid "Background"
+msgstr ""
+
+#. Chroma keyer
+#: gtk_switcher/ui/upstream-keyer.glade:524
+msgid "Key edge"
+msgstr ""
+
+#. Chroma key
+#: gtk_switcher/ui/upstream-keyer.glade:550
+msgid "Spill"
+msgstr ""
+
+#. Chromakey
+#: gtk_switcher/ui/upstream-keyer.glade:565
+msgid "Flare supression"
+msgstr ""
+
+#: gtk_switcher/ui/upstream-keyer.glade:591
+msgctxt "colorcorrector"
+msgid "Brightness"
+msgstr ""
+
+#: gtk_switcher/ui/upstream-keyer.glade:606
+msgctxt "colorcorrector"
+msgid "Contrast"
+msgstr ""
+
+#: gtk_switcher/ui/upstream-keyer.glade:621
+#, fuzzy
+msgctxt "colorcorrector"
+msgid "Saturation"
+msgstr "Övergång"
+
+#: gtk_switcher/ui/upstream-keyer.glade:636
+#, fuzzy
+msgctxt "colorcorrector"
+msgid "Red"
+msgstr "Spela in"
+
+#: gtk_switcher/ui/upstream-keyer.glade:651
+msgctxt "colorcorrector"
+msgid "Green"
+msgstr ""
+
+#: gtk_switcher/ui/upstream-keyer.glade:666
+msgctxt "colorcorrector"
+msgid "Blue"
+msgstr ""
+
+#: gtk_switcher/ui/upstream-keyer.glade:681
+#, fuzzy
+msgid "Chroma sample"
+msgstr "Krominans"
+
+#: gtk_switcher/ui/upstream-keyer.glade:869
+msgid "Pick"
+msgstr ""
+
+#: gtk_switcher/ui/upstream-keyer.glade:910
+msgid "Chroma"
+msgstr "Krominans"
+
+#: gtk_switcher/ui/upstream-keyer.glade:926
+msgid "Keyer mode"
+msgstr ""
+
+#: gtk_switcher/ui/upstream-keyer.glade:948
+msgid "Pattern"
+msgstr ""
+
+#: gtk_switcher/ui/upstream-keyer.glade:999
+msgid "Position"
+msgstr ""
+
+#: gtk_switcher/ui/upstream-keyer.glade:1014
+msgid "Size"
+msgstr ""
+
+#: gtk_switcher/ui/upstream-keyer.glade:1122
+#: gtk_switcher/ui/upstream-keyer.glade:1134
+msgid "Shadow"
+msgstr ""
+
+#: gtk_switcher/ui/upstream-keyer.glade:1155
+msgid "Angle"
+msgstr "Vinkel"
+
+#: gtk_switcher/ui/upstream-keyer.glade:1170
+msgid "Altitude"
+msgstr ""
+
+#: gtk_switcher/ui/upstream-keyer.glade:1225
+#: gtk_switcher/ui/upstream-keyer.glade:1237
+msgid "Border"
+msgstr "Inramning"
+
+#: gtk_switcher/ui/upstream-keyer.glade:1258
+msgid "Color"
+msgstr "Färg"
+
+#: gtk_switcher/ui/upstream-keyer.glade:1277
+msgid "Pick a border color"
+msgstr "Välj en kantfärg"
+
+#: gtk_switcher/ui/upstream-keyer.glade:1318
+msgid "Bevel soften"
+msgstr ""
+
+#: gtk_switcher/ui/upstream-keyer.glade:1333
+msgid "Bevel position"
+msgstr ""
+
+#: gtk_switcher/ui/upstream-keyer.glade:1348
+msgid "Inner soften"
+msgstr ""
+
+#: gtk_switcher/ui/upstream-keyer.glade:1363
+msgid "Outer soften"
+msgstr ""
+
+#: gtk_switcher/ui/upstream-keyer.glade:1378
+msgid "Inner width"
+msgstr ""
+
+#: gtk_switcher/ui/upstream-keyer.glade:1393
+msgid "Outer width"
+msgstr ""
+
+#: gtk_switcher/ui/upstream-keyer.glade:1492
+msgid "Border opacity"
+msgstr ""
+
+#: gtk_switcher/ui/upstream-keyer.glade:1721
+msgid "Lock keyframes"
+msgstr ""
+
+#: gtk_switcher/ui/upstream-keyer.glade:1738
+msgid "Set A"
+msgstr ""
+
+#: gtk_switcher/ui/upstream-keyer.glade:1757
+msgid "Set B"
+msgstr ""
+
+#: gtk_switcher/ui/upstream-keyer.glade:1776
+msgid "Run full"
+msgstr ""
+
+#: gtk_switcher/ui/upstream-keyer.glade:1794
+msgid "Run A"
+msgstr ""
+
+#: gtk_switcher/ui/upstream-keyer.glade:1812
+msgid "Run B"
+msgstr ""
+
+#: gtk_switcher/ui/mixeffect-aux.glade:28 gtk_switcher/ui/videohub-bus.glade:28
+msgid "AUX"
+msgstr ""
+
+#: gtk_switcher/ui/preferences.glade:48 gtk_switcher/ui/preferences.glade:59
+msgid "Preferences"
+msgstr ""
+
+#: gtk_switcher/ui/preferences.glade:131
+msgid "Video"
+msgstr "Video"
+
+#: gtk_switcher/ui/preferences.glade:165
+msgid "Video standard"
+msgstr "Videostandard"
+
+#: gtk_switcher/ui/preferences.glade:180
+msgid "Multiview video standard"
+msgstr ""
+
+#: gtk_switcher/ui/preferences.glade:195
+msgid "Down convert as"
+msgstr ""
+
+#: gtk_switcher/ui/preferences.glade:210
+msgid "SDI output standard"
+msgstr ""
+
+#: gtk_switcher/ui/preferences.glade:280
+msgid "Set modes"
+msgstr ""
+
+#: gtk_switcher/ui/preferences.glade:354
+msgid "Media pool"
+msgstr ""
+
+#: gtk_switcher/ui/preferences.glade:388
+msgid "Clip 1 length"
+msgstr ""
+
+#: gtk_switcher/ui/preferences.glade:403
+msgid "Clip 2 length"
+msgstr ""
+
+#: gtk_switcher/ui/preferences.glade:440
+msgid "Camera Control"
+msgstr ""
+
+#: gtk_switcher/ui/preferences.glade:474
+msgid "Camera control monitoring output"
+msgstr ""
+
+#: gtk_switcher/ui/preferences.glade:505
+msgid "General"
+msgstr ""
+
+#: gtk_switcher/ui/preferences.glade:547
+msgid "Multiview layout"
+msgstr ""
+
+#: gtk_switcher/ui/preferences.glade:563
+msgid "Audio meters"
+msgstr ""
+
+#: gtk_switcher/ui/preferences.glade:752
+msgid "Multiview"
+msgstr ""
+
+#: gtk_switcher/ui/preferences.glade:773
+msgid "Labels"
+msgstr ""
+
+#: gtk_switcher/ui/preferences.glade:794
+msgid "HyperDeck"
+msgstr ""
+
+#: gtk_switcher/ui/preferences.glade:811
+msgid "Add videohub"
+msgstr ""
+
+#: gtk_switcher/ui/preferences.glade:866
+msgid "Routing"
+msgstr ""
+
+#: gtk_switcher/ui/preferences.glade:881 gtk_switcher/ui/preferences.glade:964
+msgid "Remote"
+msgstr ""
+
+#: gtk_switcher/ui/preferences.glade:915
+msgid "Use RS-422 port for"
+msgstr ""
+
+#: gtk_switcher/ui/preferences.glade:1004
+msgid "Control app"
+msgstr ""
+
+#: gtk_switcher/ui/videohub.glade:48
+msgid "Status"
+msgstr ""
+
+#: gtk_switcher/ui/videohub.glade:63
+msgid "Disconnected"
+msgstr "Ej ansluten"
+
+#: gtk_switcher/ui/videohub.glade:119
+msgid "Delete"
+msgstr ""
+
+#: gtk_switcher/ui/shortcuts.ui:7
+#, fuzzy
+msgid "Switcher shortcuts"
+msgstr "Mixeranslutning"
+
+#: gtk_switcher/ui/shortcuts.ui:12
+msgid "M/E Control"
+msgstr ""
+
+#: gtk_switcher/ui/shortcuts.ui:18
+#, fuzzy
+msgid "Auto transition"
+msgstr "Nästa övergång"
+
+#: gtk_switcher/ui/shortcuts.ui:25
+#, fuzzy
+msgid "Cut transition"
+msgstr "Nästa övergång"
+
+#: gtk_switcher/ui/shortcuts.ui:33
+msgid "Source selection"
+msgstr ""
+
+#: gtk_switcher/ui/shortcuts.ui:39
+#, fuzzy
+msgid "Preview input 1"
+msgstr "Förhandsvisning"
+
+#: gtk_switcher/ui/shortcuts.ui:46
+msgid "Cut input 1 to program"
+msgstr ""
+
+#: gtk_switcher/ui/shortcuts.ui:53
+msgid "Auto transition input 1 to program"
+msgstr ""
+
+#: gtk_switcher/mixeffect.py:567
+msgid "TIE"
+msgstr ""
+
+#: gtk_switcher/switcher.py:181
+msgid "Layout editor M/E {}"
+msgstr ""
+
+#: gtk_switcher/switcher.py:503 gtk_switcher/layout.py:116
+msgid "Downstream keyer {}"
+msgstr ""
+
+#: gtk_switcher/switcher.py:525
+#, fuzzy
+msgid "Media Player {}"
+msgstr "Mediaspelare"
+
+#: gtk_switcher/switcher.py:623
+msgid "Upstream keyer {}"
+msgstr ""
+
+#. Show the videohub output as bus, checkbox
+#: gtk_switcher/switcher.py:930 gtk_switcher/videohub.py:110
+msgid "Show as bus"
+msgstr ""
+
+#: gtk_switcher/switcher.py:934
+msgid "Follow audio monitor bus"
+msgstr ""
+
+#: gtk_switcher/switcher.py:1076
+msgid "Run macro"
+msgstr ""
+
+#: gtk_switcher/switcher.py:1078
+msgid "Edit macro"
+msgstr ""
+
+#: gtk_switcher/layout.py:81
+msgid "Upstream key {}"
+msgstr ""
+
+#: gtk_switcher/layout.py:135
+msgid "Chroma picker {}"
+msgstr ""
+
+#: gtk_switcher/videohub.py:82
+msgid "Connecting..."
+msgstr "Ansluter …"
+
+#: gtk_switcher/videohub.py:95
+msgid "Connected"
+msgstr "Ansluten"
+
+#. Source label checkbox
+#: gtk_switcher/videohub.py:119
+msgid "Rename on change"
+msgstr "Byt namn vid byte"
+
+#~ msgid "firmware"
+#~ msgstr "firmware"

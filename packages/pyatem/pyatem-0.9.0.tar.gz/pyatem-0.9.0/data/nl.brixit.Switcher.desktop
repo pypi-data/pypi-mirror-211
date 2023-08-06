@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Switcher control
+Version=1.0
+Type=Application
+Terminal=false
+Exec=switcher-control
+GenericName=Video switcher
+Icon=nl.brixit.Switcher
+Categories=GTK;GNOME;Utility
+Keywords=atem;blackmagic design;bmd;openswitcher;openatem
+X-DBUS-ServiceName=nl.brixit.Switcher

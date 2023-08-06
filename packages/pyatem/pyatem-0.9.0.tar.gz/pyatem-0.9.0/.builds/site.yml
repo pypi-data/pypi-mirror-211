@@ -1,0 +1,21 @@
+image: alpine/edge
+oauth: pages.sr.ht/PAGES:RW
+environment:
+  site: docs.openswitcher.org
+packages:
+  - sphinx
+  - py3-sphinx
+  - py3-sphinx_rtd_theme
+  - py3-pip
+tasks:
+  - deps: |
+      pip3 install sphinxcontrib.jquery
+  - build: |
+      cd pyatem/docs
+      make html
+  - deploy: |
+      cd pyatem/docs/_build
+      tar -C html -cvz . > site.tar.gz
+      acurl -f https://pages.sr.ht/publish/$site -Fcontent=@site.tar.gz
+sources:
+  - https://git.sr.ht/~martijnbraam/pyatem

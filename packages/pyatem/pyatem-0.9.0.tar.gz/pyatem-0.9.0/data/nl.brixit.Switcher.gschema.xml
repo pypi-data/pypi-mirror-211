@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schemalist>
+    <schema id="nl.brixit.Switcher" path="/nl/brixit/Switcher/">
+        <key type="s" name="switcher-ip">
+            <default>"0.0.0.0"</default>
+            <summary>Switcher ip address</summary>
+            <description>Ip address of the BMD switcher</description>
+        </key>
+        <key type="s" name="midi-map">
+            <default>"[]"</default>
+            <summary>Midi mapping</summary>
+            <description>Mapping between midi messages and gtk controls, as json (deprecated)</description>
+        </key>
+        <key type="s" name="connections">
+            <default>"{}"</default>
+            <summary>Connection data</summary>
+            <description>Connection specific stored config</description>
+        </key>
+    </schema>
+</schemalist>

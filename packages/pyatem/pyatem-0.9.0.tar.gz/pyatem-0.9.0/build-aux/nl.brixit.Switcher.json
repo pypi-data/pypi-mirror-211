@@ -1,0 +1,72 @@
+{
+  "app-id": "nl.brixit.Switcher",
+  "name": "Switcher control",
+  "runtime": "org.gnome.Platform",
+  "runtime-version": "42",
+  "sdk": "org.gnome.Sdk",
+  "command": "switcher-control",
+  "finish-args": [
+    "--share=ipc",
+    "--share=network",
+    "--socket=fallback-x11",
+    "--socket=wayland",
+    "--device=dri",
+    "--device=all"
+  ],
+  "modules": [
+    {
+      "name": "hexdump",
+      "buildsystem": "simple",
+      "build-commands": [
+        "pip3 install --prefix=/app hexdump pyusb paho-mqtt zeroconf"
+      ],
+      "build-options": {
+        "build-args": [
+          "--share=network"
+        ]
+      }
+    },
+    {
+      "name": "pyatem",
+      "buildsystem": "simple",
+      "build-commands": [
+        "pip3 install --prefix=/app --no-deps ."
+      ],
+      "sources": [
+        {
+          "type": "dir",
+          "path": "../"
+        }
+      ]
+    },
+    {
+        "name": "libusb",
+        "config-opts": [ "--disable-static", "--disable-udev" ],
+        "cleanup": [
+            "/lib/*.la",
+            "/lib/pkgconfig",
+            "/include"
+        ],
+        "sources": [
+            {
+                "type": "archive",
+                "url": "https://github.com/libusb/libusb/archive/v1.0.25.tar.gz",
+                "sha256": "f9c4b7dad27a6196ca9ec3c6ec7fa446194342de326c71e030eb2c480895e169"
+            }
+        ],
+        "post-install": [
+            "install -Dm644 COPYING /app/share/licenses/libusb/COPYING"
+        ]
+    },
+    {
+      "name": "nl.brixit.Switcher",
+      "buildsystem": "meson",
+      "sources": [
+        {
+          "type": "dir",
+          "path": "../"
+        }
+      ]
+    }
+  ]
+}
