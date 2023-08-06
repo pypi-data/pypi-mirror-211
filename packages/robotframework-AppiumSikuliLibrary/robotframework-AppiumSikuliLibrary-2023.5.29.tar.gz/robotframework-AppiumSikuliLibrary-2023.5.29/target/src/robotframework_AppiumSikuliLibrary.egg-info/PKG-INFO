@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: robotframework-AppiumSikuliLibrary
+Version: 2023.5.29
+Summary: Appium - Sikuli library for Robot Framework
+Home-page: https://github.com/thinhntt/robotframework-AppiumSikuliLibrary
+Author: Thinh Nguyen
+Author-email: nguyenvanthinh.dnn@gmail.com
+License: Apache License 2.0
+Keywords: robotframework testing testautomation sikuli UI
+Platform: any
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Java
+Classifier: Topic :: Software Development :: Testing
+License-File: LICENSE.txt
+
+Appium - Sikuli Robot Framework Library provide keywords for Robot Framework to test UI through Sikuli.
+
+Notes: AppiumSikuliLibrary.jar file is OS dependent.
+Suggestion: https://adoptium.net/temurin/releases/?version=11
