@@ -1,0 +1,62 @@
+name: Docs CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  docs:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.repository
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Avoid git conflicts when tag and branch pushed at same time
+        if: startsWith(github.ref, 'refs/tags')
+        run: sleep 60
+
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          # Need this to get version number from last tag
+          fetch-depth: 0
+          submodules: recursive
+
+      - name: Install system packages
+        # Can delete this if you don't use graphviz in your docs
+        run: sudo apt-get install graphviz
+
+      - name: Install python packages
+        uses: ./.github/actions/install_requirements
+        with:
+          requirements_file: requirements-dev-3.x.txt
+          install_options: -e .[dev]
+
+      - name: Build docs
+        run: tox -e docs
+
+      - name: Sanitize ref name for docs version
+        run: echo "DOCS_VERSION=${GITHUB_REF_NAME//[^A-Za-z0-9._-]/_}" >> $GITHUB_ENV
+
+      - name: Move to versioned directory
+        run: mv build/html .github/pages/$DOCS_VERSION
+
+      - name: Write switcher.json
+        run: python .github/pages/make_switcher.py --add $DOCS_VERSION ${{ github.repository }} .github/pages/switcher.json
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v1.0.8
+        with:
+          path: .github/pages
+
+      - name: Publish docs to GitHub Pages
+        if: github.event_name == 'push' && github.actor != 'dependabot[bot]'
+        id: deployment
+        uses: actions/deploy-pages@v2.0.1
