@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: pyclpu
+Version: 0.0.3
+Summary: CLPU Utilities
+Home-page: https://git.clpu.es/mehret/pyclpu
+Author: Michael Ehret
+Author-email: mehret@clpu.es
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.5
