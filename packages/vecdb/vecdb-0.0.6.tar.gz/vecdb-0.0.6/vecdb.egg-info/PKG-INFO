@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: vecdb
+Version: 0.0.6
+Home-page: https://relevanceai.com/
+Author: Relevance AI
+Author-email: jacky@relevanceai.com
+Provides-Extra: tests
+Provides-Extra: chunk
+License-File: LICENSE
