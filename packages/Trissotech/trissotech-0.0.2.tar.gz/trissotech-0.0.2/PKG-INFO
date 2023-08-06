@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Trissotech
+Version: 0.0.2
+Summary: Trissotech library
+Project-URL: Homepage, https://www.trissotech.com/
+Project-URL: Bug Tracker, https://www.facundonieto.com/Contact
+Author-email: Facu <facundonieto@mi.unc.edu.ar>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: pillow
+Description-Content-Type: text/markdown
+
+Librería de la empresa Trissotech
+
