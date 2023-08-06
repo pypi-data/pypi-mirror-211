@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "laproxy"
+version = "1.0.1"
+description = "An easy proxy to setup"
+authors = ["Riccardo Isola <riky.isola@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+aiotools = "^1.6.1"
+
+[tool.poetry.group.dev.dependencies]
+httpx = "^0.24.1"
+pytest = "^7.1.2"
+pytest-asyncio = "^0.18.3"
+pytest-timeout = "^2.1.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+timeout = 5
