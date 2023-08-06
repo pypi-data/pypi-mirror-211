@@ -1,0 +1,7 @@
+ngdataforecast/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ngdataforecast/forecast_model.py,sha256=65wDRfEhzOiLbRLTRWOKEXzXbQENKMrnEw3qThfv89E,6180
+ngdataforecast/local_level/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ngdataforecast/local_level/model.py,sha256=HA-J7WMN9xWxIvojcnZ-4XhadYHOucYZwo4w2r-9jos,3544
+ngdataforecast-0.0.2.dist-info/METADATA,sha256=1K-pwv1GDBKnhhWU02w-FTwXWWZuH1LIMEPuHbOw_fg,6834
+ngdataforecast-0.0.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+ngdataforecast-0.0.2.dist-info/RECORD,,
