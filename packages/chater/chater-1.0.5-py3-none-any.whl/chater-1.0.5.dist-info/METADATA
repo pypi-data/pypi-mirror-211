@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: chater
+Version: 1.0.5
+Summary: Using ChatGPT in Python
+Author: Sricor
+Author-email: josricor@outlook.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: pydantic
+
+# Chatbot
+
+Using ChatGPT in Python.
+
+Use the same format for the messages as you would for the [official OpenAI API](https://platform.openai.com/docs/api-reference/chat).
+
+## Installation
+
+Download or clone this GitHub repo  
+install requirements with:
+
+```bash
+pip install chater
+```
+
+## A Simple Example
+### 1. Accessing GPT through an API KEY (This will consume API quota).
+```python
+import chatbot
+
+chatbot.api_key = ''
+chatbot.StreamCompletion.create('Hello world!')
+
+```
+### 2. Accessing GPT through an Access Token (Free 3.5).
+```python
+import chatbot
+
+auth = chatbot.Auth('email', 'password')
+chatbot.api_key = auth.get_access_token()
+chatbot.StreamCompletion.create('Hello world!')
+```
