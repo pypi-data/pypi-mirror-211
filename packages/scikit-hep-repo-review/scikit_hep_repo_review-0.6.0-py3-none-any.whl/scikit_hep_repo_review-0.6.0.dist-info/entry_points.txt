@@ -1,0 +1,20 @@
+[console_scripts]
+scikit-hep-repo-review = scikit_hep_repo_review.__main__:main
+
+[scikit_hep_repo_review.checks]
+general = scikit_hep_repo_review.checks.general:repo_review_checks
+github = scikit_hep_repo_review.checks.github:repo_review_checks
+mypy = scikit_hep_repo_review.checks.mypy:repo_review_checks
+precommit = scikit_hep_repo_review.checks.precommit:repo_review_checks
+pyproject = scikit_hep_repo_review.checks.pyproject:repo_review_checks
+ruff = scikit_hep_repo_review.checks.ruff:repo_review_checks
+
+[scikit_hep_repo_review.families]
+scikit-hep = scikit_hep_repo_review.families:get_familes
+
+[scikit_hep_repo_review.fixtures]
+dependabot = scikit_hep_repo_review.checks.github:dependabot
+package = scikit_hep_repo_review.fixtures:package
+precommit = scikit_hep_repo_review.checks.precommit:precommit
+pyproject = scikit_hep_repo_review.fixtures:pyproject
+workflows = scikit_hep_repo_review.checks.github:workflows
