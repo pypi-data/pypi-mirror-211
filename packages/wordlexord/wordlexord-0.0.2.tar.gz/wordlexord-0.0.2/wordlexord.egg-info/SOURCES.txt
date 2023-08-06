@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+word_lexord/__init__.py
+word_lexord/__main__.py
+word_lexord/base.py
+word_lexord/lang.py
+wordlexord.egg-info/PKG-INFO
+wordlexord.egg-info/SOURCES.txt
+wordlexord.egg-info/dependency_links.txt
+wordlexord.egg-info/top_level.txt
