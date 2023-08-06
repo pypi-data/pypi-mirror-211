@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: celoMine
+Version: 0.0.2
+Summary: Predictive machine learning for Celonis
+Author: Jean BERTIN
+Author-email: <jeanbertin.ensam@gmail.com>
+Keywords: python,celonis,process mining
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pycelonis
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: sklearn
+Requires-Dist: matplotlib
+
+# celoMine
+
+celoMine brings predictive machine learning to your Celonis analyses to enable deep process insights and data-driven decision-making.
+This powerful python framework leverage machine learning algorithms and visualization techniques within your Celonis analyses to drive process optimization.
+
+
+<div align="center">
+  <img src="./celoMine_logo.png" alt="Logo celoMine" width="50%">
+</div>
+
+## Requirements
+
+- Python 3.x
+- pandas
+- scikit-learn
+- matplotlib
+
+## Installation
+
+You can install the `celoMine` package using `pip`. Here's the installation command from your terminal:
+
+```shell
+pip install celoMine
+```
+Make sure you have Python and pip installed on your system before running this command.
+After the installation, you can import the package in your Python code using the following line:
+```python
+import celoMine
+```
+That's all it takes to install the package and import it into your project.
+
+## Usage
+
+### Analyzing Event Logs
+
+The `AnalyseEventLog` class allows you to preprocess and analyze event log data. Here is an example of how to use it:
+
+```python
+from analyse_event_log import AnalyseEventLog
+
+# Create an instance of AnalyseEventLog
+log_analyzer = AnalyseEventLog()
+
+# Load event log data from a CSV file
+log_analyzer.load_data('event_log.csv')
+
+# Preprocess the data
+log_analyzer.preprocess_data()
+
+# Train a machine learning model
+log_analyzer.train_model()
+
+# Get the accuracy of the model
+accuracy = log_analyzer.get_model_accuracy()
+
+# Visualize the event log data
+log_analyzer.visualize_data()
+```
+
+### Visualizing Event Logs
+The `VisualizeEventLog` class allows you to visualize event log data. Here is an example of how to use it:
+
+```python
+from visualize_event_log import VisualizeEventLog
+
+# Create an instance of VisualizeEventLog
+log_visualizer = VisualizeEventLog()
+
+# Load event log data from a CSV file
+log_visualizer.load_data('event_log.csv')
+
+# Plot the frequency of events over time
+log_visualizer.plot_event_frequency()
+
+# Plot the distribution of events by category
+log_visualizer.plot_event_category_distribution()
+```
+
+### Contributing
+Contributions are welcome! If you have any suggestions or find any issues, please open an issue or submit a pull request.
+
+### License
+This project is licensed under the GPL v3 License.
