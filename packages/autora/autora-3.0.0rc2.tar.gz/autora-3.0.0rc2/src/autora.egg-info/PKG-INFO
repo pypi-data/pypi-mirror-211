@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: autora
+Version: 3.0.0rc2
+Summary: Autonomous Research Assistant (AutoRA) is a framework for automating steps of the empirical research process.
+Author-email: Sebastian Musslick <sebastian@musslick.de>
+Maintainer-email: Ben Andrew <benwallaceandrew@gmail.com>, George Dang <george_dang@brown.edu>, John Gerrard Holland <john_holland1@brown.edu>, Younes Strittmatter <younes_strittmatter@brown.edu>
+License: Copyright 2021, Brown University, Providence, RI.
+        
+                                All Rights Reserved
+        
+        Permission to use, copy, modify, and distribute this software and
+        its documentation for any purpose other than its incorporation into a
+        commercial product or service is hereby granted without fee, provided
+        that the above copyright notice appear in all copies and that both
+        that copyright notice and this permission notice appear in supporting
+        documentation, and that the name of Brown University not be used in
+        advertising or publicity pertaining to distribution of the software
+        without specific, written prior permission.
+        
+        BROWN UNIVERSITY DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,
+        INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR ANY
+        PARTICULAR PURPOSE.  IN NO EVENT SHALL BROWN UNIVERSITY BE LIABLE FOR
+        ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+        WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+        ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+        OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+Project-URL: homepage, http://www.empiricalresearch.ai/
+Project-URL: repository, https://github.com/AutoResearch/autora
+Project-URL: documentation, https://autoresearch.github.io/autora/
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: all
+Provides-Extra: all-theorists
+Provides-Extra: theorist-darts
+Provides-Extra: theorist-bms
+Provides-Extra: theorist-bsr
+Provides-Extra: all-experimentalists
+Provides-Extra: experimentalist-sampler-inequality
+Provides-Extra: experimentalist-sampler-novelty
+Provides-Extra: experimentalist-sampler-nearest-value
+Provides-Extra: experimentalist-sampler-model-disagreement
+Provides-Extra: experimentalist-sampler-uncertainty
+Provides-Extra: experimentalist-falsification
+Provides-Extra: all-experiment-runners
+Provides-Extra: experiment-runner-firebase-prolific
+Provides-Extra: all-experiment-runner-experimentation-managers
+Provides-Extra: experiment-runner-experimentation-manager-firebase
+Provides-Extra: all-experiment-runner-recruitment-managers
+Provides-Extra: experiment-runner-recruitment-manager-prolific
+Provides-Extra: docs
+Provides-Extra: test
+License-File: LICENSE.md
+
+# Automated Research Assistant
+
+![PyPI](https://img.shields.io/pypi/v/autora)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/autoresearch/autora/test-pytest.yml)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/autora)
+
+<b>[AutoRA](https://pypi.org/project/autora/)</b> (<b>Auto</b>mated <b>R</b>esearch <b>A</b>ssistant) is an open-source framework for 
+automating multiple stages of the empirical research process, including model discovery, experimental design, data collection, and documentation for open science.
+
+![Autonomous Empirical Research Paradigm](https://github.com/AutoResearch/autora/raw/restructure/autora/docs/img/overview.png)
+
+## Getting Started
+
+Check out the tutorials at 
+[https://autoresearch.github.io/autora/tutorials](https://autoresearch.github.io/autora/tutorials).
+
+## About
+
+This project is in active development by 
+the [Autonomous Empirical Research Group](http://empiricalresearch.ai), 
+led by [Sebastian Musslick](https://smusslick.com), 
+in collaboration with the [Center for Computation and Visualization at Brown University](https://ccv.brown.edu).
+
+The development of this package is supported by Schmidt Science Fellows, in partnership with the Rhodes Trust, as well as the Carney BRAINSTORM program at Brown University.
+
+## Read More
+
+- [Package Documentation](https://autoresearch.github.io/autora/)
+- [AutoRA Pip Package](https://pypi.org/project/autora/)
+- [Autonomous Empirical Research Group](http://www.empiricalresearch.ai)
+
