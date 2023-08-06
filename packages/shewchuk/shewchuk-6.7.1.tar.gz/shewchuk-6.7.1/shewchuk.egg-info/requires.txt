@@ -1,0 +1,4 @@
+
+[tests]
+hypothesis<7.0,>=6.75.2
+pytest<8.0,>=7.3.1
