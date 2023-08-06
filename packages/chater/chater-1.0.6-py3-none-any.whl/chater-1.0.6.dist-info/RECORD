@@ -1,0 +1,15 @@
+chater/__init__.py,sha256=Jy5KV1eyYPI278Bgt8a5_Tk7wg3mbuUWp6bTrYHELbI,389
+chater/api/__init__.py,sha256=ojzH42VoG9PP9Rxbi1MuuizBxqbjfrwdaczDn56ZupI,167
+chater/api/auth.py,sha256=yhBsCzXM4SuXf7h26-c44sfv3tUXKDLNczqMpypd8os,3714
+chater/api/billing.py,sha256=3ZfA7CgIAKnH3cTtLFMhv5Viqc-2R1wvdLiN_puRDL8,1725
+chater/api/models.py,sha256=vVbnuL6AayuhN_FnNzXx9h9upMtDNopbP6lJo_WuHLw,551
+chater/api/stream_completion.py,sha256=nW-8HN7bVD6TvSsQ4kk2vMaTvo2q_jKeEb-HgXbTUzo,2151
+chater/api/utils.py,sha256=H1wr7jbwzc1c7AcLDZfQLRgiaSPO4N2R5OTvP6K7dB8,488
+chater/api/abstract/__init__.py,sha256=GfCpPxKDr4_QQb8u03piiAGRb4U-SVyoNqSEAr-Incc,79
+chater/api/abstract/client.py,sha256=hWoX_XC5sSbu0SyBylb48KRBAvZbtcsBzXBJsoMSctY,540
+chater/api/abstract/typings.py,sha256=MjJkMPZJ8Uc32OffWjSfnc0qd3c8xvRwExdqxPFvhHA,807
+chater-1.0.6.dist-info/LICENSE,sha256=iG8yK1ztLV3fKFuwtl_OnF4CKR4Rq1seiFyXIkFgO-0,1063
+chater-1.0.6.dist-info/METADATA,sha256=A0KO2iLVvrdmqhhmGNuYGkX4HJKEI_r5Al9YysdDca8,1463
+chater-1.0.6.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+chater-1.0.6.dist-info/top_level.txt,sha256=JG4TVcCFpja4B2FPc6aLXG8J2kKJzSMI4WwQKv8Mrtg,7
+chater-1.0.6.dist-info/RECORD,,
