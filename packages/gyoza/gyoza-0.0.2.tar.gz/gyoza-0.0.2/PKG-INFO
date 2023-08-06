@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: gyoza
+Version: 0.0.2
+Summary: A package to study the latent representations of auditory events processing in the human brain.
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Author-email: Tim Dick <timdi@icloud.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: librosa>=0.10.0.post2
+Description-Content-Type: text/markdown
+
+# Gyoza 
+## A library for explaining latent representations during auditory event recognition in the human brain.
+### Master thesis project of Tim Dick
+https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
