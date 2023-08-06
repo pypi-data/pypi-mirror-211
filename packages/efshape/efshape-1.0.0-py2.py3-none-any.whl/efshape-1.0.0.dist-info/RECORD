@@ -1,0 +1,9 @@
+efshape/__init__.py,sha256=n7twlCVmyhoJxwPp7uCRtT2ztdT4S0jbF3LVjKhmMUc,31
+efshape/efa.py,sha256=S3FFhRoknCExReuOoJjoQiO2ficDRRtZBXrrCYVimm0,34405
+efshape/efgui.py,sha256=4EC_ZXCClSlGpyfqJTDDiYApCGib-4QNI9vKe4ImjaM,88180
+efshape/fgui.py,sha256=GWm-vrphnJuNZ0QBlw91dCBTGyTAixYWAtw1KBVh1no,85967
+efshape-1.0.0.dist-info/METADATA,sha256=YCjL_vDrSqxWq2v40-9c9eBPDwvPKMqM4b9CeEU0Tko,1947
+efshape-1.0.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+efshape-1.0.0.dist-info/entry_points.txt,sha256=TroKXlxV4VCJWoDby7DsuFL0UoMXicz6b7IKI9-AG1w,107
+efshape-1.0.0.dist-info/top_level.txt,sha256=e-gYtSI2T-HiEG-sfxyI0ozLNdeEAUWjpiSBcXCdB4c,8
+efshape-1.0.0.dist-info/RECORD,,
