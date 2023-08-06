@@ -1,0 +1,16 @@
+pip
+packaging
+fastai>=2.1.7
+zarr>=2.0
+tifffile==2022.4.8
+scikit-image
+imageio
+ipywidgets
+openpyxl
+imagecodecs
+albumentations>=1.0.0
+natsort>=7.1.1
+numba>=0.52.0
+opencv-python-headless<4.5.5,>=4.1.1
+timm==0.6.7
+segmentation-models-pytorch-deepflash2
