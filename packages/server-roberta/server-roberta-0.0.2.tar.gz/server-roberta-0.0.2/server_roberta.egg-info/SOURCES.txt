@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+py/serverRoberta/__init__.py
+py/serverRoberta/datos.py
+py/serverRoberta/encrypt.py
+py/serverRoberta/robertaModel.py
+py/serverRoberta/server.py
+server_roberta.egg-info/PKG-INFO
+server_roberta.egg-info/SOURCES.txt
+server_roberta.egg-info/dependency_links.txt
+server_roberta.egg-info/requires.txt
+server_roberta.egg-info/top_level.txt
