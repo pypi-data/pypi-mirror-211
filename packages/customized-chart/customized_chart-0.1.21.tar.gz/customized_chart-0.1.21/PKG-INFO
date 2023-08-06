@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: customized_chart
+Version: 0.1.21
+Summary: Simplifies creation of matplotlib charts
+Home-page: https://github.com/jhagelback/customized_chart
+Author: Johan Hagelbäck
+Author-email: johan.hagelback@gmail.com
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+
+Simplifies creation of matplotlib charts.
+
