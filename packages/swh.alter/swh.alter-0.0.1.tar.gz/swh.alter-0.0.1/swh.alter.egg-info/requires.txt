@@ -1,0 +1,11 @@
+click
+igraph
+swh.core[http]>=0.3
+swh.graph>=3.0
+swh.model
+swh.storage>=1.13
+
+[testing]
+pytest
+swh.graph[testing]
+swh.storage[testing]
