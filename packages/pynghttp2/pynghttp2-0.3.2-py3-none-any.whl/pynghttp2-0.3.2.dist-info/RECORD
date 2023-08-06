@@ -1,0 +1,13 @@
+pynghttp2/__init__.py,sha256=AJYJQpGuBeWsL9ZCT4CaxvSJglUjxb_9xsz9a5bK6Fc,124
+pynghttp2/bindings.py,sha256=H0yo-e3QwNcAvKfG09usWQ2nxvzjBiDRpi4tVqN4qPc,7624
+pynghttp2/http2.py,sha256=hwoQ5v7sqMXXhDrMLfm8osx4xOVSRj8D0cWESR-fVSw,1181
+pynghttp2/messages.py,sha256=TyDC8LM2dNejNXiZ8XpVI6E7CcRCcIv0Qq1t_Vy81V8,7772
+pynghttp2/nghttp2.py,sha256=tFfxvrWDqJ15a6oXeOnFb0wwr1XEPP6ZiFd8xYFtzF4,25053
+pynghttp2/sessions.py,sha256=T-cwatGd9flIn56SDHNVKSl9SbOFZ3kpmLS6hfx30Ds,20983
+pynghttp2/streams.py,sha256=GmsEgudAPhqDuL-_evTqsrFbeVrDD10UJBKvaIZP1Ng,7096
+pynghttp2/typedefs.py,sha256=PoHoV6IUWAoeRiwSrL-_NWHNm42mg0z0oe0UKRM-jN0,23494
+pynghttp2-0.3.2.dist-info/LICENSE.txt,sha256=RUvw038dWDwZ7Iq70sHbo-vg9iXokM5qfZgTSoJTRJY,1069
+pynghttp2-0.3.2.dist-info/METADATA,sha256=EeTTD1AOLUjM2QMWcSJzNyrWzjLWY5xT3m3umTeHufk,3790
+pynghttp2-0.3.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pynghttp2-0.3.2.dist-info/top_level.txt,sha256=XSkKTsiPNEvX6vH39w58M2EAMy9l9FiCIBi6kvazJg0,10
+pynghttp2-0.3.2.dist-info/RECORD,,
