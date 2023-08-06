@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: packaging-demo-eric
+Version: 0.0.5
+Summary: My package description
+Author-email: Eric Riddoch <some-email@gmail.com>
+License: MIT
+Keywords: one,two
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: release
+Provides-Extra: static-code-qa
+Provides-Extra: dev
+
+Packaging terms:
+
+- module
+- package
+- sub-package
+- distribution package
