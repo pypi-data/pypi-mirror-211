@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+OpencvPyqt6/__init__.py
+OpencvPyqt6/additional_function_controller.py
+OpencvPyqt6/additional_function_model.py
+OpencvPyqt6.egg-info/PKG-INFO
+OpencvPyqt6.egg-info/SOURCES.txt
+OpencvPyqt6.egg-info/dependency_links.txt
+OpencvPyqt6.egg-info/top_level.txt
