@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: aws-parquet
+Version: 0.2.0
+Summary: An object-oriented interface for defining parquet datasets for AWS built on top of awswrangler and pandera
+Requires-Python: >=3.8,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: awswrangler (>=3.1.1,<4.0.0)
+Requires-Dist: pandera (>=0.15.1,<0.16.0)
+Requires-Dist: pydantic (>=1.10.8,<2.0.0)
