@@ -1,0 +1,11 @@
+hydro_deploy-0.1.0.dist-info/METADATA,sha256=oqn77wbkR3N_bkQHsI41xqNBUDNTXYdU7WROg-MdvUs,1277
+hydro_deploy-0.1.0.dist-info/WHEEL,sha256=f2EAgBvYBWJabhY8X9xYvJN6W0Rk2s3Fi3f6impPmj8,106
+hydro_deploy-0.1.0.dist-info/entry_points.txt,sha256=xVj-SFmJmLyW23SCPeacNnDu3RpWcRg7PRDhMdFrlcE,38
+hydro.libs/libgcc_s-d7088d38.so.1,sha256=eruenD4WU9j8z1O_nkRT5IW55VHdj1SnpqEnqwzjVx0,724137
+hydro/async_wrapper.py,sha256=Gx7NC-g7Kb_o9iEZn9xZGCjlS8ZDI0VehFss6iANhMI,1541
+hydro/_core.pyi,sha256=yiu_gFir5si5ywgSfu6GGasXv2sAGngortjjdIyRLtY,2477
+hydro/cli.py,sha256=x7FrfWqC20ugb5UW_2CTjTCE2FGoxzezyHdaDh36kV4,171
+hydro/__init__.py,sha256=8PtXpt5JdZ5ILFBdqALsRwrto3emjEGVdZ2zeQ-XH_s,26
+hydro/.gitignore,sha256=13-OcYo5Cgjk2myiu3rO5chOW2Yp_llltkYhbnmbvzs,14
+hydro/_core.abi3.so,sha256=ZkuEKO5FKUz1i1iYjGWSkv5rixYo_V_4CcS5zY-ww5U,4854289
+hydro_deploy-0.1.0.dist-info/RECORD,,
