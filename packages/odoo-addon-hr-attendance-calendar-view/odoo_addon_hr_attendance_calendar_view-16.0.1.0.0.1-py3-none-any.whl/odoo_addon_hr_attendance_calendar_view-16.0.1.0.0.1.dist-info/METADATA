@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: odoo-addon-hr-attendance-calendar-view
+Version: 16.0.1.0.0.1
+Summary: This module adds the calendar view as an option to display attendance
+Home-page: https://github.com/OCA/hr-attendance
+Author: Odoo Community Association (OCA)
+Author-email: support@odoo-community.org
+License: AGPL-3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 16.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Requires-Python: >=3.10
+Requires-Dist: odoo (<16.1dev,>=16.0a)
+
+UNKNOWN
+
