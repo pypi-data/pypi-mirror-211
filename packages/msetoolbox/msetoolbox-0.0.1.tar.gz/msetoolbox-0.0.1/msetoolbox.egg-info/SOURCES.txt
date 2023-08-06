@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+msetoolbox/__init__.py
+msetoolbox.egg-info/PKG-INFO
+msetoolbox.egg-info/SOURCES.txt
+msetoolbox.egg-info/dependency_links.txt
+msetoolbox.egg-info/not-zip-safe
+msetoolbox.egg-info/top_level.txt

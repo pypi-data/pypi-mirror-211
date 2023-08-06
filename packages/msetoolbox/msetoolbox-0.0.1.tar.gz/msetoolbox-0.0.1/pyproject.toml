@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "msetoolbox"
+version = "0.0.1"
+authors = [
+{ name = "Ashley Ellenson", email = "aellenson@integral-corp.com" }
+]
+description = "MSE Toolbox"
+readme = "README.md"
+requires-python = ">=3.0"
+classifiers = [
+	"Programming Language :: Python",
+	"License :: OSI Approved :: MIT License",
+	"Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/IntegralEnvision/MSE_Toolbox.git"
+
+
