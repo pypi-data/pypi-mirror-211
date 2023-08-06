@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+v0.20230531.0
+-------------
+
+* Add vault password unset command (#454)
