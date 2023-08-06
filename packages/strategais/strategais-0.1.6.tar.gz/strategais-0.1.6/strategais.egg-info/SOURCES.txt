@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+strategais/__init__.py
+strategais/__main__.py
+strategais/llm_tools.py
+strategais/save_tools.py
+strategais.egg-info/PKG-INFO
+strategais.egg-info/SOURCES.txt
+strategais.egg-info/dependency_links.txt
+strategais.egg-info/requires.txt
+strategais.egg-info/top_level.txt
