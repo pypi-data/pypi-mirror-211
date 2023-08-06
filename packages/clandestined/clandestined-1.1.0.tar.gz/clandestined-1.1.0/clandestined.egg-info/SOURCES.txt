@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+clandestined/__init__.py
+clandestined/clandestined.py
+clandestined/murmur3.py
+clandestined.egg-info/PKG-INFO
+clandestined.egg-info/SOURCES.txt
+clandestined.egg-info/dependency_links.txt
+clandestined.egg-info/top_level.txt
+ext/_murmur3.c
