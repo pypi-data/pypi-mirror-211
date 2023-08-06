@@ -1,0 +1,11 @@
+LICENSE
+README.md
+gitignoreformatter.py
+pyproject.toml
+gitignoreformatter.egg-info/PKG-INFO
+gitignoreformatter.egg-info/SOURCES.txt
+gitignoreformatter.egg-info/dependency_links.txt
+gitignoreformatter.egg-info/entry_points.txt
+gitignoreformatter.egg-info/requires.txt
+gitignoreformatter.egg-info/top_level.txt
+gitignoreformatter.egg-info/zip-safe

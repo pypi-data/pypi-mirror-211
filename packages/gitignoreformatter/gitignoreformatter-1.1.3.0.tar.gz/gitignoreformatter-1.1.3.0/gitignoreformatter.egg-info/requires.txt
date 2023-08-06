@@ -1,0 +1,11 @@
+argparse
+
+[cli]
+pathlib
+
+[dev]
+setuptools>=64.0.0
+pip-tools
+validate-pyproject[all]
+build
+twine

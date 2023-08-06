@@ -1,0 +1,3 @@
+[console_scripts]
+gitignoreformat = gitignoreformatter:__main__
+gitignoreformatter = gitignoreformatter:__main__
