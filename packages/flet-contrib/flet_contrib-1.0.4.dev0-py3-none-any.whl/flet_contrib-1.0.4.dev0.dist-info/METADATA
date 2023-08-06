@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: flet-contrib
+Version: 1.0.4.dev0
+Summary: Flet controls by the community
+License: Apache-2.0
+Author: Appveyor Systems Inc.
+Author-email: hello@flet.dev
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: flet (>=0.7.4,<0.8.0)
+Description-Content-Type: text/markdown
+
+# `flet-contrib` - Flet controls in Python by the community
+
+`flet-contrib` package includes reusable Flet controls written in Python only and using existing Flet primitives.
+
+## Usage
+
+To install `flet-contrib` package:
+
+```
+pip install flet-contrib
+```
+
+To use in your app:
+
+```python
+from flet_contrib.color_picker import ColorPicker
+
+picker = ColorPicker(...)
+```
+
+## How to contribute
+
+TBD
+
+
