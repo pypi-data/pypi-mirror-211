@@ -1,0 +1,13 @@
+dfcon/__init__.py,sha256=OIcjP4Y7jKUfdTdxGaDgvstVWUfBYvtsgkdM5_qlH4c,421
+dfcon/directory.py,sha256=tov7yKRwGLwmLIuAHPYP2aTZaRlDW9BiWXjiFjJ5gkc,17566
+dfcon/filters.py,sha256=M-8-fpdlk5qNd5D_7qMXfHATtX2Ywplr4vtSNUtvX0E,3152
+dfcon/path_filter.py,sha256=2pJdPvK96ZjDzj5-9nhZqTMFC5atRrvdxUbJdj6ybtg,13368
+dfcon/src/__init__.py,sha256=F5__Ky_B9tw1M4qIX15ZkXp-cb3rGWkbOsh6MUP_Tig,170
+dfcon/src/dfcon_filter.py,sha256=TqYM3Q9f8g1XTr40hZg3KpEMnOyIVipGxBT1inRLrn8,13314
+dfcon/src/directory.py,sha256=sNSmI_-qWxJuDuyDryN1W_fC7DGSXLFjaInQZlceRAw,14147
+dfcon/src/filters.py,sha256=JK_JgEiZ4bbWnOsAHBu8lc4vXtm6lAPwXmP7GTC5QS4,3150
+dfcon-0.0.15.dist-info/LICENSE,sha256=LCTHqzoz8X_OeAbjzOvk1tPMEWIm9UTZlEuDiuneCAU,1082
+dfcon-0.0.15.dist-info/METADATA,sha256=kj1uNGjvwI7Z2jbEKxGoiOexcq8XuGwlbWNqLLroZ_w,2915
+dfcon-0.0.15.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dfcon-0.0.15.dist-info/top_level.txt,sha256=6PmxrkMIMBZe2i9XNigC0m4SGsc5PXxMq4xH90UiEKA,6
+dfcon-0.0.15.dist-info/RECORD,,
