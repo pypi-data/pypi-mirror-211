@@ -1,0 +1,13 @@
+setup.cfg
+setup.py
+Lab_3/__init__.py
+Lab_3/main.py
+Lab_3/helpers/constants.py
+Lab_3/helpers/functions.py
+Lab_3/serializers/jsonserializer.py
+Lab_3/serializers/xmlserializer.py
+serjx.egg-info/PKG-INFO
+serjx.egg-info/SOURCES.txt
+serjx.egg-info/dependency_links.txt
+serjx.egg-info/not-zip-safe
+serjx.egg-info/top_level.txt
