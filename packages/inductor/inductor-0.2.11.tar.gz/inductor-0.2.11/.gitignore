@@ -1,0 +1,10 @@
+# Python
+__pycache__/
+/*.egg-info/
+/dist/
+
+# Documentation
+/docs/_build/
+
+# Misc
+.DS_Store
