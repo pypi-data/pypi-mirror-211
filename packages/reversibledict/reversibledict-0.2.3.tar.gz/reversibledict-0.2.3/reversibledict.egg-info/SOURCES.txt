@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+Readme.md
+pyproject.toml
+setup.py
+reversibledict.egg-info/PKG-INFO
+reversibledict.egg-info/SOURCES.txt
+reversibledict.egg-info/dependency_links.txt
+reversibledict.egg-info/entry_points.txt
+reversibledict.egg-info/requires.txt
+reversibledict.egg-info/top_level.txt
