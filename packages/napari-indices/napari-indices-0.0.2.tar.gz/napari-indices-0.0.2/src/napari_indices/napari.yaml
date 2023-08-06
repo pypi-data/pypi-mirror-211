@@ -1,0 +1,49 @@
+name: napari-indices
+display_name: indices
+contributions:
+  commands:
+    - id: napari-indices.get_reader
+      python_name: napari_indices._reader:napari_get_reader
+      title: Open data with indices
+    - id: napari-indices.write_multiple
+      python_name: napari_indices._writer:write_multiple
+      title: Save multi-layer data with indices
+    - id: napari-indices.write_single_image
+      python_name: napari_indices._writer:write_single_image
+      title: Save image data with indices
+    - id: napari-indices.make_sample_data
+      python_name: napari_indices._sample_data:make_sample_data
+      title: Load sample data from indices
+    - id: napari-indices.make_qwidget
+      python_name: napari_indices._widget:ExampleQWidget
+      title: Make example QWidget
+    - id: napari-indices.make_magic_widget
+      python_name: napari_indices._widget:calculate_indice
+      title: Calculate indice
+    #- id: napari-indices.magic_widget
+    #  python_name: napari_indices._widget:ratio_fischer
+    #  title: Ratio de Fischer
+    
+  readers:
+    - command: napari-indices.get_reader
+      accepts_directories: false
+      filename_patterns: ['*.npy']
+  writers:
+    - command: napari-indices.write_multiple
+      layer_types: ['image*','labels*']
+      filename_extensions: []
+    - command: napari-indices.write_single_image
+      layer_types: ['image']
+      filename_extensions: ['.npy']
+  sample_data:
+    - command: napari-indices.make_sample_data
+      display_name: indices
+      key: unique_id.1
+  widgets:
+    - command: napari-indices.make_qwidget
+      display_name: Example QWidget
+    - command: napari-indices.make_magic_widget
+      display_name: Vegetation indices
+    #- command: napari-indices.magic_widget
+    #  display_name: Ratio de Fischer
+     
