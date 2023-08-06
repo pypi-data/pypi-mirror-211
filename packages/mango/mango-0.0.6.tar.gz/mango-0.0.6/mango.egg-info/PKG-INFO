@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: mango
+Version: 0.0.6
+Summary: Library with a collection of useful classes and methods to DRY
+Home-page: https://github.com/baobabsoluciones/mango
+Author: baobab soluciones
+Author-email: sistemas@baobabsoluciones.es
+License: UNKNOWN
+Description: MANGO
+        -----
+        
+        This a library containing several modules developed by the team at baobab soluciones. These functions, classes and methods are based on their experience, understanding and knowledge of the Python language and its ecosystem.
+        
+        The functions are divided in different modules so even though everything is imported the dependecies can be installed only for the modules that are needed.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.8
+Provides-Extra: arcgis
+Provides-Extra: email
+Provides-Extra: gcloud
+Provides-Extra: config
+Provides-Extra: data
+Provides-Extra: images
+Provides-Extra: logging
+Provides-Extra: model
+Provides-Extra: plot
+Provides-Extra: processing
+Provides-Extra: shared
+Provides-Extra: table
