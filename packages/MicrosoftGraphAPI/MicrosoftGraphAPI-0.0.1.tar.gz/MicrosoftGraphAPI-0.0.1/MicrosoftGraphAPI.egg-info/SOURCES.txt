@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+MicrosoftGraphAPI.egg-info/PKG-INFO
+MicrosoftGraphAPI.egg-info/SOURCES.txt
+MicrosoftGraphAPI.egg-info/dependency_links.txt
+MicrosoftGraphAPI.egg-info/requires.txt
+MicrosoftGraphAPI.egg-info/top_level.txt
+graphapi/__init__.py
+graphapi/auth.py
