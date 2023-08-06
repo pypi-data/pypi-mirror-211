@@ -1,0 +1,10 @@
+cartoonart/__init__.py,sha256=lEIGSAgD9rMYCyjGqpwHoCC7Dp4qQ1tZLILuhhYrGsI,627
+cartoonart/cli.py,sha256=372uIXY5L2Uu2AKRPidV1PLrIUVxGNNEtSHtrpThJq4,3611
+cartoonart/image_processor.py,sha256=J_yXc9eANhBTvB3kANtLp5m6cbp15uxeB4-wDFHzeCs,4842
+cartoonart/video_processor.py,sha256=hV-ZLeqXKdodmcM3ETd1f9EDGcDvCqybNhisG0VsB5g,1576
+cartoonart-1.0.5.dist-info/LICENSE.txt,sha256=jH8qIDndSfFy2noEnJ6jX911OQXDptfdX1fCZ4sp8B8,1076
+cartoonart-1.0.5.dist-info/METADATA,sha256=oOhWFN5vd2SGW-qLhHz71eVqgiVj31qgQstMW0NHM5g,7113
+cartoonart-1.0.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+cartoonart-1.0.5.dist-info/entry_points.txt,sha256=9P8hzivnqOaGQYwUWEQew8F1WEWvanV9Q5F8AI_M9cw,50
+cartoonart-1.0.5.dist-info/top_level.txt,sha256=cvEI02c2Mpb_9gBOai1MKoSpg73Bat_xZHxK9mMT_lU,11
+cartoonart-1.0.5.dist-info/RECORD,,
