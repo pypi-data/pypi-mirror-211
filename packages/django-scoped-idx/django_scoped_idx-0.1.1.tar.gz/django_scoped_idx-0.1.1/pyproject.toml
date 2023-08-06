@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "django-scoped-idx"
+version = "0.1.1"
+description = ""
+authors = ["Anjal Bam <anjalbam81@gmail.com>"]
+readme = "README.md"
+packages = [{include = "django_scoped_idx"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+shortuuid = "^1.0.11"
+django = "^4.2.1"
+six = "^1.16.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
