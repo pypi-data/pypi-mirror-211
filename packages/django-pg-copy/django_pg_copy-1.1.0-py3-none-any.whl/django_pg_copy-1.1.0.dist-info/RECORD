@@ -1,0 +1,14 @@
+pg_copy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pg_copy/_version.py,sha256=eN4XHm6SxF8r-Rq1FxYi3sUjU-hsaVzCjqjRUmosPC8,160
+pg_copy/apps.py,sha256=PdRYmFGSe4d7Xo_O8yVk-wNFf1ept7LdXzqVdiss2ZQ,88
+pg_copy/settings.py,sha256=yb-NY2g78pQ7AropuFhq-HTdmPqR8DdLXwBexZ5M-cc,235
+pg_copy/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pg_copy/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pg_copy/management/commands/pg_backup.py,sha256=VPM9s-4qXREY6f7n3eQF8cbSAwN4TtbsUo8qBA1W_iw,4072
+pg_copy/management/commands/pg_restore.py,sha256=S-_ytnefePxFm42q32XVHQbl80QcBEiVcQRtP1rqvuI,5557
+pg_copy/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_pg_copy-1.1.0.dist-info/LICENSE,sha256=XIT9paUoQoD7ObBEYLJGEuE8T8NzcwfBQ2TjfUy_5cU,1539
+django_pg_copy-1.1.0.dist-info/METADATA,sha256=d_0zqT48bpMMJBr8aqCtU2DX6D0IOFzIhf9C4ucDibI,8383
+django_pg_copy-1.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+django_pg_copy-1.1.0.dist-info/top_level.txt,sha256=ADx2vroeOOzXbfxd-vUtUjcA3uvzQAfc8IGDQakKi5k,8
+django_pg_copy-1.1.0.dist-info/RECORD,,
