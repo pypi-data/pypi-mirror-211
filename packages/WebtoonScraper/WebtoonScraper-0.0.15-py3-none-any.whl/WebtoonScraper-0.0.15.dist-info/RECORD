@@ -1,0 +1,16 @@
+WebtoonScraper/BestChallengeScraper.py,sha256=PtR8oY-b4SqAjFisn9yFYEgfi1otnIWw61vvYvtNQ0I,5630
+WebtoonScraper/CanvasScraper.py,sha256=sVkF1viTr0RQnQ2gj-Ks7HTkDxjc6QEVpLrGu3ht2PE,298
+WebtoonScraper/NaverWebtoonScraper.py,sha256=jZXkq2UOAYHZFLDzPC7Rvzyk0ysHGy2tetjeDIhV5l8,10896
+WebtoonScraper/Webtoon.py,sha256=2Y9iMlHdKsTXu7055hWYlZ1xIryig3xQ-iou8abzRfA,1155
+WebtoonScraper/WebtoonsScraper.py,sha256=9_ETLnLlRmy0rKWG7c3JKmLyEWBMzwk70dWhWWrAH5U,10101
+WebtoonScraper/__init__.py,sha256=j1VhlVhsCxAm8W_tjaCsj0v8qBFmGftyz_603MU7xpA,620
+WebtoonScraper/foldermanagement.py,sha256=4n_km0E_QnuLI68cw_fc_aZgFo6YdCVs11J9rQ9v5VQ,9473
+WebtoonScraper/getsoup.py,sha256=6nEJk_JzIiCpSNYYq28-97pUY1F2uZmk5GuFFNJDShI,779
+WebtoonScraper/scraper.py,sha256=Bm79BnYr4DmRQ0oTnoMCnKnSKM43vOzuO8jrhRm3da8,20913
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/tests.py,sha256=TogVXD2oBgXhnOHAYrxESre8tQWzGNUxCKS2LqCl_4c,209
+WebtoonScraper-0.0.15.dist-info/LICENSE,sha256=llBZRTFBDANt5PTy9IS8G1KDxriZxRlijoncfkVKQQ8,1089
+WebtoonScraper-0.0.15.dist-info/METADATA,sha256=uwDXVzSVJspPu-JFPxROlgaz2hGmt9s21GLrMSqVMMA,6736
+WebtoonScraper-0.0.15.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+WebtoonScraper-0.0.15.dist-info/top_level.txt,sha256=mkXuSL8vzOkV57dyxEHP6FmZkCLQ91lVWbVBTA4PDmc,15
+WebtoonScraper-0.0.15.dist-info/RECORD,,
