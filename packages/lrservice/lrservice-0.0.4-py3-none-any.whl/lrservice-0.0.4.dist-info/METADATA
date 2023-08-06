@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: lrservice
+Version: 0.0.4
+Summary: A python package for demonstrating how to make REST API service for linear regression
+Home-page: https://github.com/CyberPlayerOne/lrservice
+Author: Tyler Tang
+Author-email: tyler.x.tang@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+A python package for demonstrating how to make REST API service for linear regression
