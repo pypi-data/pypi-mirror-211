@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: myloginpath
+Version: 0.0.4
+Summary: MySQL login path file reader
+Author-email: Inada Naoki <songofacandy@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2019 Inada Naoki
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Project, https://github.com/PyMySQL/myloginpath/
+Keywords: MySQL
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Other Environment
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Database
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+License-File: AUTHORS
+
+# MySQL's login path file reader
+
+Decrypt and parse MySQL's login path file.
+
+See also: https://dev.mysql.com/doc/refman/8.0/en/mysql-config-editor.html
+
+
+## Install
+
+```
+$ pip install myloginpath
+```
+
+## Example
+
+Create login path file with `mysql_config_editor` command:
+
+```console
+$ mysql_config_editor set --login-path=client --host=localhost --user=localuser --password
+Enter password: <Type password here>
+```
+
+Use it from Python:
+
+```python
+import myloginpath, MySQLdb
+conf = myloginpath.parse('client')
+print(conf)  # {'host': 'localhost', 'user': 'localuser', 'password': 'secretstring'}
+conn = MySQLdb.connect(**conf, database="myapp")
+```
