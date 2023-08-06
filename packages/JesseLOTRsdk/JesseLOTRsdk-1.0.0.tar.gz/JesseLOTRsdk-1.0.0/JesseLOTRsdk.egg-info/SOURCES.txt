@@ -1,0 +1,15 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.cfg
+JesseLOTRsdk/__init__.py
+JesseLOTRsdk/sdk.py
+JesseLOTRsdk/tests.py
+JesseLOTRsdk.egg-info/PKG-INFO
+JesseLOTRsdk.egg-info/SOURCES.txt
+JesseLOTRsdk.egg-info/dependency_links.txt
+JesseLOTRsdk.egg-info/requires.txt
+JesseLOTRsdk.egg-info/top_level.txt
+JesseLOTRsdk/models/__init__.py
+JesseLOTRsdk/models/movie.py
+JesseLOTRsdk/models/quote.py

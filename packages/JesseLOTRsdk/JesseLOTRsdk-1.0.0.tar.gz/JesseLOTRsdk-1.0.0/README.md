@@ -1,0 +1,129 @@
+# Lord of the Rings SDK
+
+## Installation
+
+You can install the SDK using pip:
+
+```pip install JesseLOTRsdk```
+
+## Import and Initialize LOTR class
+
+To get started, import the sdk and initialize the LOTR class.
+You will need an access token. You can get one by creating an account at https://the-one-api.dev/
+
+```
+from JesseLOTRsdk import sdk
+
+lotr = sdk.LOTR(token=ACCESS_TOKEN)
+```
+
+## Get Movie List
+
+To get a list of movies, use the get_movies() method.
+
+```movies = lotr.get_movies()```
+
+This will return a list of Movie objects. Each movie has several objects you can get:
+
+* Movie._id: str - A unique identifier for each movie.
+* Movie.name: str - The name of the movie.
+* Movie.runtimeInMinutes: int - The number of minutes for the movie.
+* Movie.budgetInMillions: int - The number of millions used for the budget of the movie.
+* Movie.boxOfficeRevenueInMillions: int - The number of millions in box office revenue for the movie.
+* Movie.academyAwardNominations: int - The number of academy award nominations the movie received.
+* Movie.academyAwardWins: int - The number of academy awards the movie received.
+* Movie.rottenTomatoesScore: int - The score for the movie from Rotten Tomatoes.
+
+## Get Movie By ID
+If you have a specific movie id, then you can use the get_movie_by_id() method.
+
+```movie = lotr.get_movie_by_id('5cd95395de30eff6ebccde56')```
+
+## Get Quote List
+
+To get a list of the quotes from the movies, use the get_quotes() method.
+
+```quotes = lotr.get_quotes()```
+
+This will return a list of Quote objects. Each quote has several objects you can get:
+
+* Quote._id: str - A unique identifier for each quote.
+* Quote.dialog: str - The text of the quote.
+* Quote.movie: str - The unique movie identifier for each movie. Note: This is not the string of the movie name.
+* Quote.character: str - The name of the character that said the quote.
+
+## Get Quote List by Movie ID
+
+If you have a specific movie id, then you can use the movie id to get the quotes for a specific movie.
+
+```quotes = lotr.get_quotes_by_movie_id('5cd95395de30eff6ebccde5b')```
+
+## Get Quote By Quote ID
+
+If you have a specific quote id, then you can use it to get the specific quote.
+
+```quote = lotr.get_quote_by_id('5cd96e05de30eff6ebccecd8')```
+
+## Pagination for Movies and Quotes
+
+The get_movies(), get_quotes(), and get_quotes_by_movie_id() methods accept keyword arguments for pagination. Below shows how to set limits, pages, and offsets:
+
+```
+# Get 5 movies from page 2 with an offset of 2.
+movies = lotr.get_movies(
+    limit=5,
+    page=2,
+    offset=2
+)
+
+# Get 10 quotes from page 1 with an offset of 5.
+quotes = lotr.get_quotes(
+    limit=10,
+    page=1,
+    offset=5
+)
+```
+
+## Sorting for Movies and Quotes
+
+The get_movies() and  get_quotes() methods also accept keyword arguments for sorting. The objects can be sorted by any of the values within the Movie or Quote objects (described above). Below shows how to sort in both ascending and descending order. These can also be combined with any of the previous keyword arguments.
+
+```
+# Get the first 10 quotes, sorted in ascending order (A-Z).
+quotes = lotr.get_quotes(limit=10, sort_by='dialog')
+
+# Get the first 10 quotes, sorted in descending order (Z-A).
+quotes = lotr.get_quotes(limit=10, sort_by='dialog', reverse_sort=True)
+```
+
+## Filtering for Movies and Quotes
+
+The get_movies() and get_quotes() methods also have several ways to be filtered.
+
+1. Include a value(s) within an object. Use a string for one value or a list for multiple values.
+
+```movies = lotr.get_movies(filters={'match': ('name', 'The Two Towers')})```
+
+2. Exclude a value(s) within an object. Use a string for one value or a list for multiple values.
+
+```movies = lotr.get_movies(filters={'not_match': ('name', 'The Two Towers')})```
+
+3. Include a value within an object using a regex. Use only strings.
+
+```movies = lotr.get_movies(filters={'re_match': ('name', '[aeiou]{2}')})```
+    
+4. Exclude a value within an object using a regex. Use only strings.
+
+```movies = lotr.get_movies(filters={'re_not_match': ('name', '[aeiou]{2}')})```
+
+5. Use >, >=,  <, or <= to compare a value within an object. Use only strings.
+
+```movies = lotr.get_movies(filters={'compare': ('runtimeInMinutes', '>240')})```
+
+6. Include a value as long as it exists within the object.
+
+```movies = lotr.get_movies(filters={'exist': 'rottenTomatoesScore'})```
+    
+7. Include a value as long as it does not exist within the object.
+
+```movies = lotr.get_movies(filters={'not_exist': 'rottenTomatoesScore'})```
