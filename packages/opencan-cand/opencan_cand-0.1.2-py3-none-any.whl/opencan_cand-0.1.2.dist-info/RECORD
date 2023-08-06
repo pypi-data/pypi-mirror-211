@@ -1,0 +1,14 @@
+cand/__init__.py,sha256=KLlgWy-gjf-h2pq64CM1-cwg4Tkk_btm4cBVM7Iua8Q,133
+cand/cand,sha256=vfVVG-vRsFWzsaH3jlCxL2v-2Qr6Agor2fky-0iMRQ4,3618
+cand/client.py,sha256=3hmP6YXsiwRhVD_VBiguKVHjEVPYjELSh6I9sWee3jU,2178
+cand/config.py,sha256=rU-nLTzXSMhyEjW6W4wudA5CZF1Q5nfxYPX-_xWD_gU,209
+cand/listener.py,sha256=wTKty_nfz4zHPtwKoYiLv0csjmM9g23-b2Q3MBBVd0I,1889
+cand/serialization.py,sha256=ew5spC1HDxs99fqsjboK1EbvsXY5Fe2XqdBnPWW0rJs,751
+cand/talker.py,sha256=s4i4uxqFoTOEWoV97-9GDzZL3F_wqsB_IWz0M5kVzjk,2403
+cand/util.py,sha256=7UqgJkJciOh3_tbgARWZ5XpIThoCkxiDfeeyE2QoRn8,387
+opencan_cand-0.1.2.data/scripts/cand,sha256=T2gJ_MQcHhB6xjzL76tJAgDInfOC0ABMaPAyaXGeXEE,3604
+opencan_cand-0.1.2.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+opencan_cand-0.1.2.dist-info/METADATA,sha256=mTjCT2V-gyao6hHxjyBZyIvCIKVxg0OznbpUV2KaxYs,1758
+opencan_cand-0.1.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+opencan_cand-0.1.2.dist-info/top_level.txt,sha256=UYj77tAlUm4FrObLhb0iwjZBXozUd0EuqglwqhsOXow,5
+opencan_cand-0.1.2.dist-info/RECORD,,
