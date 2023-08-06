@@ -1,0 +1,56 @@
+[project]
+name = "pypixelai"
+version = "0.2.1"
+authors = [
+  { name="Navneet Desai", email="navneetdesai44@gmail.com" },
+]
+description = "Image processing made easy."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/navneetdesai/pypixel"
+
+[tool.poetry]
+name = "pypixelai"
+version = "0.2.1"
+description = "Image processing made easy"
+authors = ["Navneet Desai <navneetdesai44@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pre-commit = "^3.3.2"
+black = "^23.3.0"
+isort = "^5.12.0"
+pylint = "^2.17.4"
+cohere = "^4.6.0"
+mahotas = "^1.4.13"
+openai = "^0.27.7"
+numpy = "^1.24.3"
+matplotlib = "^3.7.1"
+opencv-python = "^4.7.0.72"
+pyflakes = "^3.0.1"
+requests = "^2.31.0"
+pytest = "^7.3.1"
+pytest-mock = "^3.10.0"
+logging = "^0.4.9.6"
+python-dotenv = "^1.0.0"
+pytest-cov = "^4.1.0"
+
+[tool.poetry.group.dev.dependencies]
+sphinx = "^7.0.1"
+sphinx-autobuild = "^2021.3.14"
+
+[scripts]
+pre-install = "touch pypixel/models/secrets.json"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
