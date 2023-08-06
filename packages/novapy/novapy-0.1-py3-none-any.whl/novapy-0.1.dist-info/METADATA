@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: novapy
+Version: 0.1
+Requires-Dist: functools
+Requires-Dist: rich
+Requires-Dist: typing
+Requires-Dist: time
+
