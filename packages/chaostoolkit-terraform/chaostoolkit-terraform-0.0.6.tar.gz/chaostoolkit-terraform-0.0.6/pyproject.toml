@@ -1,0 +1,34 @@
+[project]
+name = "chaostoolkit-terraform"
+description = "A Chaos Toolkit module to deploy terraform stacks"
+readme = "README.md"
+version = "0.0.6"
+authors = [ { name = "Manuel Castellin" } ]
+dependencies = [
+    'chaostoolkit',
+    'chaostoolkit-lib',
+]
+
+[project.urls]
+homepage = "https://github.com/mcastellin/chaostoolkit-terraform"
+
+[build-system]
+requires = [ "setuptools", "wheel" ]
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+where = [ "." ]
+include = ["chaosterraform*"]
+exclude = ["tests*"]
+
+[tool.black]
+line-length = 120
+
+[tool.pylint]
+max-line-length = 120
+disable = """
+   invalid-name,
+   too-many-arguments,
+""" 
