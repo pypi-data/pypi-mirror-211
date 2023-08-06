@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+
+INHERIT: mkdocs/base.yml  # use the shared AutoRA configuration by default
+
+site_name: AutoRA Core
+repo_url: 'https://github.com/autoresearch/autora-core'
+
+nav:
+- Introduction: 'index.md'
+- Experimentalist Pipeline: 'pipeline/Experimentalist Pipeline Examples.ipynb'
