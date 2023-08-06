@@ -1,0 +1,10 @@
+aws_cdk/aws_lightsail/__init__.py,sha256=Ldy3f9NznHYzkgLWEqVQFdiRFdPca0jEnIksqWZZz3M,545773
+aws_cdk/aws_lightsail/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_lightsail/_jsii/__init__.py,sha256=H5EwIJyHEtZCeIhUL638KErVb2coAr5LVo6xvdHr_1M,400
+aws_cdk/aws_lightsail/_jsii/aws-lightsail@1.203.0.jsii.tgz,sha256=89-sXCzmUgdAt_gPPi97d_hnycEk-F7mY1jIyBv8Ds4,188191
+aws_cdk.aws_lightsail-1.203.0.dist-info/LICENSE,sha256=YA6CL2YE08NgoURWXRTrec3mNy-KAR-_UNdiMqgNVMI,11391
+aws_cdk.aws_lightsail-1.203.0.dist-info/METADATA,sha256=YFhUsefav1hJ8c_6KaVBxhfY3TdPht1gaU-_Jt2NHDA,3142
+aws_cdk.aws_lightsail-1.203.0.dist-info/NOTICE,sha256=XtGET2JQh3C41orQUenLTefWItOqLmu2N-mGwW7t3Fo,113
+aws_cdk.aws_lightsail-1.203.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aws_cdk.aws_lightsail-1.203.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_lightsail-1.203.0.dist-info/RECORD,,
