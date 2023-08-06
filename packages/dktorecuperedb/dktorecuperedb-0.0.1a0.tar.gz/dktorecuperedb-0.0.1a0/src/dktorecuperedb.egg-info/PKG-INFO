@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: dktorecuperedb
+Version: 0.0.1a0
+Summary: RECUPERE dabatases
+Home-page: https://discord-catho.frama.io/recupere_db
+Author: Pierre
+License: APGL
+Project-URL: Source Code, https://framagit.org/discord-catho/recupere_db
+Description: # Installer ce module en local (après `$ git clone ...`):
+        ```
+        $ cd /path/module_recupere_db
+        $ pip install -e .[doc]
+        ```
+        
+        # Variables d'environnement :
+        ## Offices
+        
+        * RECUPEREDB_OFFICE_PATH : (default: ./datas/office.db)
+        * RECUPEREDB_OFFICE_JSONPATH : (default:  {RECUPEREDB_OFFICE_PATH}/../office/{self.office}.json)
+        * RECUPEREDB_OFFICE_INFO_NAME :  (default: office_info)
+        * RECUPEREDB_OFFICE_ELEMENT_NAME : (default: office_element)
+        * RECUPEREDB_OFFICE_HUNFOLDING_NAME : (default: office_deroule)
+        * RECUPEREDB_OFFICE_ADDITIONNAL_NAME : (default : office_addition)
+        
+        ## Compendium
+        * RECUPEREDB_COMPENDIUM_PATH : (default:./datas/compendium.db)
+        * RECUPEREDB_COMPENDIUM_CONTENT_NAME : (default: content)
+        * RECUPEREDB_COMPENDIUM_SEQUENCE_NAME : (default: sequence)
+        * RECUPEREDB_COMPENDIUM_COLLECTION_NAME : (default: content_collection)
+        
+        ## Bible
+        
+        * RECUPEREDB_BIBLE_PATH : (default: ./datas/bible.db)
+        * RECUPEREDB_BIBLE_NAME : (default: verses)
+        
+        ### 1 an
+        * RECUPEREDB_BIBLE1YEAR_PATH : (default: ./datas/bible1year.db)
+        * RECUPEREDB_BIBLE1YEAR_NAME : (default: bible_references)
+        
+        # TODO :
+        * Unifier les bases de données avec différentes tables
+        
+        ## Remarques :
+        * Je mets à jour pip23.1.2
+        
+        * N'ont pas fonctionnés dans le fichier setup.cfg
+        ```
+        parserhtml==1.0.0 @ git+ssh://git@framagit.org:discord-catho/module_html_parser.git@v1.0.0#egg=parserhtml
+        parserhtml @ git+ssh://git@framagit.org:discord-catho/module_html_parser.git@v1.0.0#egg=parserhtml
+        easysqlite3 @ git+ssh://git@framagit.org:discord-catho/easy_sqlite3.git#egg=easysqlite3
+        parserhtml @ git+ssh://git@framagit.org:discord-catho/module_html_parser.git
+        easysqlite3 @ git+ssh://git@framagit.org:discord-catho/easy_sqlite3.git
+        parserhtml @ file:///home/pierre/Documents/Projets/catho/module_html_parser
+        easysqlite3 @ file:///home/pierre/Documents/Projets/catho/easy_sqlite3
+        parserhtml @ git+https://framagit.org/discord-catho/module_html_parser.git@v1.0.0#egg=parserhtml
+        parserhtml @ git+https://framagit.org/discord-catho/module_html_parser.git@v1.0.0#egg=parserhtml
+        easysqlite3 @ git+https://framagit.org/discord-catho/easy_sqlite3.git#egg=easysqlite3
+        ```
+Keywords: catho
+Platform: UNKNOWN
+Requires-Python: <4,>=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: doc
+Provides-Extra: test

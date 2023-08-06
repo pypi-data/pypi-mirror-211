@@ -1,0 +1,12 @@
+dktoeasysqlite3>=1.0.0
+dktoparserhtml>=1.0.1
+dktotoolkit>=0.0.1a
+requests==2.28.2
+
+[doc]
+myst-parser==1.0.0
+sphinx-rtd-theme==1.2.1
+sphinx==6.2.1
+
+[test]
+dktoloaddotenv==1.0.0

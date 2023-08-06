@@ -1,0 +1,10 @@
+dktorecuperedb
+dktorecuperedb/bible
+dktorecuperedb/bible/db
+dktorecuperedb/bible/verse
+dktorecuperedb/compendium
+dktorecuperedb/compendium/content_compendium
+dktorecuperedb/compendium/content_sequence
+dktorecuperedb/compendium/db
+dktorecuperedb/office
+dktorecuperedb/office/db
