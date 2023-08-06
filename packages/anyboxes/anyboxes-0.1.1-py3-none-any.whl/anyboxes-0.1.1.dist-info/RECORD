@@ -1,0 +1,15 @@
+anyboxes/__init__.py,sha256=aXatSol1CFJPikZbMNkCpxeTywwCIeboYt2LhaP8Hfc,165
+anyboxes/_errors.py,sha256=M7nW-pAQRCypj8b5aapViKPLpmeIwiWfOLDzjNhcQIU,1167
+anyboxes/_version.py,sha256=aDfNBQh0vsVL7CSgYEMdMUbrxVw92raLxMivH20w2A4,160
+anyboxes/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+anyboxes/implementations/__init__.py,sha256=8c-yCgpuEm7isPozxZ4VUCBSLGQXZkE-oiM5Z5EAjuU,49
+anyboxes/implementations/origin.py,sha256=UUME0nJ4NQhPfxzterzUzBMzRf_QLcjtRNEYccOm3rs,151
+anyboxes/implementations/torch/__init__.py,sha256=KdCFmu6CWe_s3rLI7srYKi-SLoR1I7YWryzPwDXBjVA,21
+anyboxes/implementations/torch/_typing.py,sha256=4nIrSwDcVRCghULesoEjtOT2N2AjPUlzRfrMN7DfPVc,525
+anyboxes/implementations/torch/boxes.py,sha256=JMUjsDOYj_QXuDQIEueY2-ZKfo0y1ytM70Hrq-XqKPI,21706
+anyboxes/implementations/torch/coordinates.py,sha256=9L4N-0FA_TrErSjjEJZIO89ITKXzmgXsWWCoH3Fzap0,1669
+anyboxes-0.1.1.dist-info/LICENSE,sha256=FJj98YAsY-Mr_EHhRrMpe6I9Ppvl9Uf089-B0tESyZg,1076
+anyboxes-0.1.1.dist-info/METADATA,sha256=O9JkJqTj4q34MccE-myIxCp1JT2AT87yGSf87_FTSi8,9636
+anyboxes-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+anyboxes-0.1.1.dist-info/top_level.txt,sha256=ygIF7dLL5rUiqhnIwNBjR_m4w17WOzXq5cb-m1wTp78,9
+anyboxes-0.1.1.dist-info/RECORD,,
