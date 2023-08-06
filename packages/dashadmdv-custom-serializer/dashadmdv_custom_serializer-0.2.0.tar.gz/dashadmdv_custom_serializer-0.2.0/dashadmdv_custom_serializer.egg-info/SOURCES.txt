@@ -1,0 +1,6 @@
+README.md
+setup.py
+dashadmdv_custom_serializer.egg-info/PKG-INFO
+dashadmdv_custom_serializer.egg-info/SOURCES.txt
+dashadmdv_custom_serializer.egg-info/dependency_links.txt
+dashadmdv_custom_serializer.egg-info/top_level.txt
