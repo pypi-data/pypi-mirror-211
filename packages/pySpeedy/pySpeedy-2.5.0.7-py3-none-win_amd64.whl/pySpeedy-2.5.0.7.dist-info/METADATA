@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pySpeedy
+Version: 2.5.0.7
+Summary: Speedy Python API
+Author: MDBS
+Author-email: simon@mdbs.com.tw
+Keywords: Speedy StarWave
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+Speedy Python API.
+使用Speedy交易系統跟StarWave行情系統 C++原生的API
