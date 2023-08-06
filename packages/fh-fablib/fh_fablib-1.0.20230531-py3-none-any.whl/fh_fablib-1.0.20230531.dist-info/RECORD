@@ -1,0 +1,12 @@
+fh_fablib/__init__.py,sha256=N9nRjppuNEvf2AhWE1cAE8cuo2fkbkmAyA0MWYupbHk,26558
+fh_fablib/extract_js_gettext_strings.py,sha256=NN0z26BttSgTkQdEDlgPc96OsG60R4MyIccDdYk-nr4,2091
+fh_fablib/dotfiles/.editorconfig,sha256=Ex1ryEIdPN0FnFUm2kyc5tTq9BKbanq8lKr5jESbThA,200
+fh_fablib/dotfiles/.eslintrc.js,sha256=hD74bCA43nZnHkQUgbCDVStrnb379Eg7Uq0R32y-DMM,201
+fh_fablib/dotfiles/.pre-commit-config.yaml,sha256=1xrnGvJzxl11q83szYjgQRcrAQZGm4-bYHAOuJJffXI,2332
+fh_fablib/dotfiles/pyproject.toml,sha256=2PVvIz8dO1Zepq2xDY7loMIvowRmfV7nFD5C5IM47eg,1126
+fh_fablib/dotfiles/webpack.library.js,sha256=b8aTiuA8hNygqylWRGDZyuKUMAEqMyUAhf5GuF6bex8,5820
+fh_fablib-1.0.20230531.dist-info/METADATA,sha256=1dAhLmPrMmWnGQ2uL9N1BvRxEVKo7To197ieOA1LRhI,7724
+fh_fablib-1.0.20230531.dist-info/WHEEL,sha256=y1bSCq4r5i4nMmpXeUJMqs3ipKvkZObrIXSvJHm1qCI,87
+fh_fablib-1.0.20230531.dist-info/entry_points.txt,sha256=Wr08DgNEr5NUz_HtK02dd-gGf9PXZiB7mnlUcTP0xhM,47
+fh_fablib-1.0.20230531.dist-info/licenses/LICENSE,sha256=aAHxY-zofhSv50CFWiAtuRjIzMT7CMhiL3gXXn_DG4E,1548
+fh_fablib-1.0.20230531.dist-info/RECORD,,
