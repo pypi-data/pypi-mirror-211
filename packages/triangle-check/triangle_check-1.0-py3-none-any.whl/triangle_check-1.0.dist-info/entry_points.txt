@@ -1,0 +1,2 @@
+[console_scripts]
+triangle_check = triangle_check:__main__.main
