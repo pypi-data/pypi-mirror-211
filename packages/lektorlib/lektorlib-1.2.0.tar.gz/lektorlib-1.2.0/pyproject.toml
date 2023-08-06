@@ -1,0 +1,105 @@
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[project]
+name = "lektorlib"
+dynamic = []
+description = "A few bits which are potentially useful to developers of Lektor plugins"
+keywords = [
+    "Lektor",
+    "utilities",
+]
+authors = [
+    { name = "Jeff Dairiki", email = "dairiki@dairiki.org" },
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Framework :: Lektor",
+    "Environment :: Plugins",
+    "Topic :: Software Development :: Libraries",
+]
+requires-python = ">=3.7"
+version = "1.2.0"
+
+[project.urls]
+Home = "https://github.com/dairiki/lektorlib"
+
+[project.license]
+file = "LICENSE"
+
+[project.readme]
+text = "# Lektorlib\n\n[![PyPI version](https://img.shields.io/pypi/v/lektorlib.svg)](https://pypi.org/project/lektorlib/)\n[![PyPI Supported Python Versions](https://img.shields.io/pypi/pyversions/lektorlib.svg)](https://pypi.python.org/pypi/lektorlib/)\n[![GitHub license](https://img.shields.io/github/license/dairiki/lektorlib)](https://github.com/dairiki/lektorlib/blob/master/LICENSE)\n[![GitHub Actions (Tests)](https://github.com/dairiki/lektorlib/workflows/Tests/badge.svg)](https://github.com/dairiki/lektorlib)\n[![Trackgit Views](https://us-central1-trackgit-analytics.cloudfunctions.net/token/ping/lhaqecdxux7krt01vbsl)](https://trackgit.com)\n\nA few bits which may possibly be useful to developers of [Lektor][] plugins.\n\n## Bits Included\n\n### `lektorlib.query.PrecomputedQuery`\n\nA subclass of `lektor.db.Query` which yields a pre-computed\nsequence of children.\n\nThis is useful in (at least) two circumstances:\n\nFirst, when the children to be queried are virtual source objects,\nthe standard `lektor.db.Query` will not work.  This version will.\n\nSecond, when we would like to generate a query of a pre-computed\nsubset of a resource's children, this prevents intruducing\nunnecessary build dependencies.  If we used a standard query with\na filter applied, it still iterates over all of the parent node’s\nchildren, registering dependencies on all of them.\n\n### `lektorlib.context.disable_dependency_recording`\n\nA python context manager which (temporarily) disables lektor’s\ndependency recording system.\n\n### `lektorlib.recordcache.get_or_create_virtual`\n\nThis function is a helper to streamline the caching of virtual\nsource objects in the lektor record cache.\n\n`Lektor.db.Pad.get()` handles caching for regular records.\nAt present, however, it does not appear that it ever caches\nvirtual source objects, even though its record cache is perfectly\ncapable of doing so.\n\n### `lektorlib.testing.assert_no_dependencies(match=None)`\n\nThis context manager is a testing helper which can be used to\ncheck that no dependencies are recorded with lektor’s dependency\ntracking system.\n\n## Author\n\nJeff Dairiki <dairiki@dairiki.org>\n\n[Lektor]: <https://www.getlektor.com/> \"Lektor Static Content Management System\"\n\n## Changelog\n\n### Release 1.2.0 (2023-06-02)\n\n- Added type annotations\n- Use PDM instead of setuptools to build distribution\n- Configured pre-commit\n- Run black and reorder-python-imports on the code\n\n### Release 1.1.0 (2023-04-20)\n\nFixes for Lektor 3.4 (in pre-release).\n\nWe now test under Lektor 3.3 and Lektor 3.4 (pre-release).\n\n### Release 1.0 (2022-01-28)\n\nDrop support for python < 3.7. Test under python 3.10.\n\n### Release 0.1 (2021-02-05)\n\nNo code changes.\n\nRelease is now classified as \"production/stable\".\n\n### Release 0.1a1 (2020-05-05)\n\nInitial release.\n"
+content-type = "text/markdown"
+
+[tool.pdm.version]
+source = "scm"
+
+[tool.pdm.build]
+excludes = [
+    "**/*~",
+    ".*",
+]
+source-includes = [
+    "CHANGES.md",
+    "README.md",
+    "tox.ini",
+    "tests/*.py",
+    "tests/test-site/*.lektorproject",
+    "tests/test-site/**/*.css",
+    "tests/test-site/**/*.html",
+    "tests/test-site/**/*.ini",
+    "tests/test-site/content/**/*.lr",
+]
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "flake8>=5.0.4",
+    "flake8-bugbear>=23.3.12",
+    "mypy~=1.3",
+    "lektor",
+]
+test = [
+    "pytest>=7.3.1",
+    "pytest-cov",
+]
+
+[tool.pdm.scripts]
+tests = "pytest --cov=lektorlib --cov-fail-under=100 tests"
+
+[tool.coverage.run]
+source_pkgs = [
+    "lektorlib",
+]
+parallel = true
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "^\\s*\\.\\.\\.\\s*$",
+    "^\\s*raise\\s+NotImplementedError\\(\\)\\s*$",
+    "^(el)?if TYPE_CHECKING:\\s*",
+]
+
+[tool.mypy]
+packages = [
+    "lektorlib",
+]
+strict = true
+
+[[tool.mypy.overrides]]
+module = [
+    "lektor.*",
+]
+ignore_missing_imports = true
