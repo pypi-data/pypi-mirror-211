@@ -1,0 +1,10 @@
+toolz
+numpy
+xarray
+xarray-datatree
+lxml
+xmlschema
+rioxarray
+
+[:python_version < "3.11"]
+exceptiongroup
