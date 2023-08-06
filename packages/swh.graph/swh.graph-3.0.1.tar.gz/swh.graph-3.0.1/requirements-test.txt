@@ -1,0 +1,9 @@
+pytest
+pytest-asyncio
+pytest-mock
+
+types-click
+types-pyyaml
+types-requests
+types-protobuf
+grpc-stubs
