@@ -1,0 +1,14 @@
+[project]
+name = "Cooky"
+version = "1.0.0"
+authors = [{name = "ArchmagePsy", email = "SeaOfCodeSi@gmail.com"}]
+description = "a simple extensible fuzzing tool with a friendly cli"
+readme = "README.md"
+keywords = ["simple", "extensible", "fuzzing", "http"]
+dependencies = ["requests", "pony", "tabulate", "httpretty"]
+
+[project.urls]
+Repository = "https://github.com/ArchmagePsy/Cooky.git"
+
+[project.scripts]
+cooky = "cooky.main:exe"
