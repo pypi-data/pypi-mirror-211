@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: vcbblueprint
+Version: 0.1.0
+Summary: A library for decoding Virtual Circuit Board blueprint strings
+Project-URL: Homepage, https://github.com/bmander/vcbblueprint/
+Project-URL: Repository, https://github.com/bmander/vcbblueprint.git
+Author-email: Brandon Martin-Anderson <badhill@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 Brandon Martin-Anderson
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Keywords: blueprint,vcb,virtual circuit board
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# Visual Circuit Board (VCB) Python Library
+
+## Description
+
+This Python library provides a way to read Visual Circuit Board (VCB) blueprint strings and convert them into a convenient data structure.
+
+## Installation
+
+    pip install vcbblueprint
+
+## Usage
+
+Here is a simple usage example:
+
+```python
+import vcbblueprint
+
+blueprint_string = "VCB+..." # a VCB blueprint string
+
+# read the blueprint string and get the version and layers
+version, layers = vcbblueprint.read_blueprint(blueprint_string)
+
+# use the filter function to get a boolean matrix of pixels of a
+# specific component type
+and_pixels = vcbblueprint.filter(layers[0], vcbblueprint.ComponentType.AND)
+```
+
+## Contributions
+
+Contributions are welcome. Feel free to open an issue or submit a pull request.
