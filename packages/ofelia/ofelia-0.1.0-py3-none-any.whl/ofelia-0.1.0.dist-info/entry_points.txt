@@ -1,0 +1,3 @@
+[console_scripts]
+mm=ofelia.ofe:main
+
