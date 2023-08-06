@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: uh_custom_logger
+Version: 0.0.1
+Summary: A custom logging utility for uh projects.
+Author: Necip Asik
+Author-email: data@universityhousing.nl
