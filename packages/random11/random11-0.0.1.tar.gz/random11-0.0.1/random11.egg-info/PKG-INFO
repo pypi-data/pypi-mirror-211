@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: random11
+Version: 0.0.1
+Summary: str int
+Home-page: UNKNOWN
+Author: haofan
+Author-email: 2290906844@qq.com
+License: apache 3.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires: numpy
+Requires: matplotlib
