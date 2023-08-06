@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: rs2py
+Version: 0.1.4
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Summary: Rust Extention for Python
+Keywords: rust,python,utils
+Author: YVictor
+Author-email: yvictor3141@gmail.com
+Maintainer-email: YVictor <yvictor3141@gmail.com>
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# rpy
+
+### Rust Extention for Python
