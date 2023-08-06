@@ -1,0 +1,170 @@
+en:
+  client: Client
+  server: Server
+  ap: AP
+  connect: Connected
+  disconnect: Disconnected
+  enable: Enable
+  disable: Disable
+  not_enable: Not Enabled
+  not_register: Not Register
+  registering: Registering
+  registered: Registered
+  day: Day
+  active_sim: Active SIM
+  imei_code: IMEI Code
+  imsi_code: IMSI Code
+  iccid_code: ICCID Code
+  register_status: Register Status
+  operator: Operator
+  network_type: Network Type
+  lac: LAC
+  cell_id: Cell ID
+  status: Status
+  ip_address: IP Address
+  netmask: Netmask
+  gateway: Gateway
+  dns: DNS
+  mtu: MTU
+  connection_time: Connection Time
+  auto: Auto
+  random: Random
+  sequence: Sequence
+  icmp_probes: ICMP Probes
+  advanced_settings: Advanced Settings
+  submit: Submit
+  cellular_configuration_changed_successful: Cellular configuration changed successful
+  description: Description
+  static_ip: Static IP
+  dynamic_address_dhcp: Dynamic Address (DHCP)
+  submit_success: Submit Success
+  auto_negotiation: Auto Negotiation
+  full: Full
+  half: Half
+  duplex: Duplex
+  ip_address_conflict: IP address conflict
+  station_role: Station Role
+  wlan_status: Wlan Status
+  mac_address: MAC Address
+  auth_method: Auth Method
+  encrypt_mode: Encrypt Mode
+  wireless_connection_status: Wireless Connection Status
+  open: Open
+  shared: Shared
+  channel: Channel
+  scan: Scan
+  gps_status: GPS Status
+  time: Time
+  location: Location
+  speed: Speed
+  long_lived: Long-Lived
+  short_lived: Short-Lived
+  none: None
+  odd: Odd
+  even: Even
+  all: All
+  connected_routing: Connected Routing
+  static_routing: Static Routing
+  permit: Permit
+  deny: Deny
+  standard: Standard
+  extended: Extended
+  used_describe: Used Describe
+  use_type_code: Use Type & Code
+  inside: Inside
+  outside: Outside
+  'yes': Yes
+  'no': No
+  sdk_version: SDK Version
+  python_version: Python Version
+  username: Username
+  user_name: User Name
+  used_user_storage: Used User Storage
+  password: Password
+  install_success: Install success
+  docker_version: Docker Version
+cn:
+  client: 客户端
+  server: 服务器
+  ap: 接入端
+  connect: 已连接
+  disconnect: 未连接
+  enable: 启用
+  disable: 已关闭
+  not_enable: 未启用
+  not_register: 未注册
+  registering: 正在注册到网络
+  registered: 注册成功
+  day: 天
+  active_sim: 当前SIM卡
+  imei_code: IMEI号码
+  imsi_code: IMSI号码
+  iccid_code: ICCID号码
+  register_status: 注册状态
+  operator: 运营商
+  network_type: 网络类型
+  lac: 位置区码
+  cell_id: 小区ID
+  status: 状态
+  ip_address: IP地址
+  netmask: 子网掩码
+  gateway: 网关
+  dns: DNS
+  mtu: MTU
+  connection_time: 连接时间
+  auto: 自动
+  random: 随机
+  sequence: 顺序
+  icmp_probes: ICMP探测
+  advanced_settings: 高级设置
+  submit: 提交
+  cellular_configuration_changed_successful: 拨号配置修改成功
+  description: 描述
+  static_ip: 静态IP
+  dynamic_address_dhcp: 动态地址(DHCP)
+  submit_success: 提交成功
+  auto_negotiation: 自动协商
+  full: 全
+  half: 半
+  duplex: 双工
+  ip_address_conflict: IP 地址冲突
+  station_role: 接口类型
+  wlan_status: WLAN状态
+  mac_address: MAC地址
+  auth_method: 认证方式
+  encrypt_mode: 加密方式
+  wireless_connection_status: 无线连接状态
+  open: 开放式
+  shared: 共享式
+  channel: 信道
+  scan: 扫描
+  gps_status: GPS状态
+  time: 时间
+  location: 位置
+  speed: 速度
+  long_lived: 长连接
+  short_lived: 短连接
+  none: 无校验
+  odd: 奇校验
+  even: 偶校验
+  all: 所有
+  connected_routing: 直连路由
+  static_routing: 静态路由
+  permit: 放行
+  deny: 阻止
+  standard: 标准
+  extended: 扩展
+  used_describe: 使用描述
+  use_type_code: 使用类型&代码
+  inside: 内部
+  outside: 外部
+  'yes': 是
+  'no': 否
+  sdk_version: SDK版本
+  python_version: Python解释器
+  username: 用户名
+  user_name: 用户名
+  used_user_storage: 用户存储空间
+  password: 密码
+  install_success: 安装成功
+  docker_version: Docker版本
