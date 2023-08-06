@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: py-mysql-distill
+Version: 0.1.2
+Summary: 
+Author: Benjamin J Doherty
+Author-email: bjd@pobox.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+
