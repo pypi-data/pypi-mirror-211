@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+pyproject.toml
+src/exclusive/__init__.py
+src/exclusive/exclusive.py
+src/exclusive.egg-info/PKG-INFO
+src/exclusive.egg-info/SOURCES.txt
+src/exclusive.egg-info/dependency_links.txt
+src/exclusive.egg-info/requires.txt
+src/exclusive.egg-info/top_level.txt
