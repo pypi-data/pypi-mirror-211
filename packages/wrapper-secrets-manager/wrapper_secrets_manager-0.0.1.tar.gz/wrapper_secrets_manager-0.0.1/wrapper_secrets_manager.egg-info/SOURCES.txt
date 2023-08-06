@@ -1,0 +1,8 @@
+setup.py
+wrapper_secrets_manager/__init__.py
+wrapper_secrets_manager/wrapper_secrets_manager.py
+wrapper_secrets_manager.egg-info/PKG-INFO
+wrapper_secrets_manager.egg-info/SOURCES.txt
+wrapper_secrets_manager.egg-info/dependency_links.txt
+wrapper_secrets_manager.egg-info/requires.txt
+wrapper_secrets_manager.egg-info/top_level.txt
