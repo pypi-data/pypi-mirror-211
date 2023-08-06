@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+sh_expand/__init__.py
+sh_expand/expand.py
+sh_expand.egg-info/PKG-INFO
+sh_expand.egg-info/SOURCES.txt
+sh_expand.egg-info/dependency_links.txt
+sh_expand.egg-info/requires.txt
+sh_expand.egg-info/top_level.txt
