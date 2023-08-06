@@ -1,0 +1,10 @@
+pylibrb/__init__.py,sha256=9jQkszkPftfY0kKD_2gmMauRb47cer1GBnaYXW-IT68,1758
+pylibrb/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pylibrb/pylibrb_ext.cp311-win_amd64.pyd,sha256=5HDIsuTFcGs_9YyJH_AnyND312ETA-ojoBNB_FJcoqw,443904
+pylibrb/pylibrb_ext.pyi,sha256=8rUtspAnDahS0Nqg4FQmIOwwoTz89NTjmWW5JeVzAH0,37407
+pylibrb-0.0.7.data/data/VERSION,sha256=f1ZJodDSBedllUd695XkMIHn4PVZakWooPoRv_ogNDk,5
+pylibrb-0.0.7.dist-info/LICENSE,sha256=EcSotBSlNDZfAtp9rZ3D5HHTWxXtMd-dQAb7KhRMREM,18429
+pylibrb-0.0.7.dist-info/METADATA,sha256=arjtO8r6dCbG8mAOHIfi_w6X5-7tEgiXQgo9sUXSJ00,2926
+pylibrb-0.0.7.dist-info/WHEEL,sha256=W3fWxA0vKoXCDSTv9G0Wl9cdT0Ev8WY9q_YR8SDFMkk,96
+pylibrb-0.0.7.dist-info/top_level.txt,sha256=4zlIxFBgsYuCHYfYxcZUMHOKA8CLUw4-C8DV8OTDP78,8
+pylibrb-0.0.7.dist-info/RECORD,,
