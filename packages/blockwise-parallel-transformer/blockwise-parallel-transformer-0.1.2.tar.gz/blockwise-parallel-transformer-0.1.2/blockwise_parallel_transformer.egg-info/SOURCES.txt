@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+blockwise_parallel/__init__.py
+blockwise_parallel/blockwise_paralle.py
+blockwise_parallel/jax_v1.py
+blockwise_parallel/test1.py
+blockwise_parallel_transformer.egg-info/PKG-INFO
+blockwise_parallel_transformer.egg-info/SOURCES.txt
+blockwise_parallel_transformer.egg-info/dependency_links.txt
+blockwise_parallel_transformer.egg-info/requires.txt
+blockwise_parallel_transformer.egg-info/top_level.txt
