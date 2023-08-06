@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+ogilo/cli.py
+ogilo/illumina-pcr-handles.csv
+ogilo/sanson2018-pcr-handles.csv
+ogilo/utils.py
+ogilo_array.egg-info/PKG-INFO
+ogilo_array.egg-info/SOURCES.txt
+ogilo_array.egg-info/dependency_links.txt
+ogilo_array.egg-info/entry_points.txt
+ogilo_array.egg-info/requires.txt
+ogilo_array.egg-info/top_level.txt
