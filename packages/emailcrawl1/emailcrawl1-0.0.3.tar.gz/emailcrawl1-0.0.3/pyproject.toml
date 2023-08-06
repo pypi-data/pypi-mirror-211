@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling","requests_html","bs4","pandas"]
+build-backend = "hatchling.build"
+[project]
+name = "emailcrawl1"
+version = "0.0.3"
+authors = [
+  { name="Raghav", email="raghavgarg121212@gmail.com" },
+]
+description = "Scrap emails from website"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Raghavgarg12/Python-Projects/tree/main/Web%20Crawling"
