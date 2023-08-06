@@ -1,0 +1,2 @@
+[console_scripts]
+pycarot = pycarot.__main__:main
