@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: cherryblossom
+Version: 0.1.5
+Summary: CherryBlossom: an API for Nosedive AI
+Author-email: Arjun Naik <arjunsatishnaik@gmail.com>
+Project-URL: Homepage, https://github.com/Aleph-Null-123/nosedive
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# See website

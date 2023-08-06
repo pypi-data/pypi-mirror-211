@@ -1,0 +1,12 @@
+setuptools
+pandas
+matplotlib
+numpy
+datetime
+pytz
+tzlocal
+emoji
+openai
+paramiko
+scp
+uuid
