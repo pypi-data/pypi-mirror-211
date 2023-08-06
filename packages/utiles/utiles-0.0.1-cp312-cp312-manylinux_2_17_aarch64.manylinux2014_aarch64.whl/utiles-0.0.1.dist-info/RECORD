@@ -1,0 +1,11 @@
+utiles-0.0.1.dist-info/METADATA,sha256=PJlOCqCwp4mAqO7MQC4fhIwMj04nJtRh0BPdxL_yLMc,21878
+utiles-0.0.1.dist-info/WHEEL,sha256=_QtxoP9D772USLcb64TnAfT22LQ_jIQ90FIrxZisaUM,133
+utiles-0.0.1.dist-info/entry_points.txt,sha256=zFAU7e7WiJfjdhDAw6tdeAl3cyt7jTBpMw3X30ZLmDc,40
+utiles/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utiles/libutiles.pyi,sha256=5CMN9wtQnxRqAkHcrKam2osPAZtbRYrQiyiT5RHVJy0,7137
+utiles/__main__.py,sha256=3KOQU0XV8ngaaPzDUL-23zF1x0HdrVvckV7mMK7bXLk,817
+utiles/cli.py,sha256=ml3ENxLNbYROvUGcnAEV-l5VKhw6L-44MNMxZGScNZo,16691
+utiles/__init__.py,sha256=dx45WiGdtODIGXLsxdJPIR91ktwDUh_vNWWIiJOwkVM,2876
+utiles/__about__.py,sha256=B_aK6Pnz5W8Wj0pK1AKGwv7WIh-IMI77PbPMVH6DWNI,260
+utiles/libutiles.cpython-312-aarch64-linux-gnu.so,sha256=JV9Vj4_t00t0LYujzQcTYQskGDhKmi6DTs7sz6ZeVQU,711384
+utiles-0.0.1.dist-info/RECORD,,
