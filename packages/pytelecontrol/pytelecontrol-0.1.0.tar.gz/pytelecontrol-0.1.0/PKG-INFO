@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: pytelecontrol
+Version: 0.1.0
+Summary: Remotely access to your PLC, with auto discover feature
+Home-page: https://gitlab.com/xyzsoft/pytelecontrol
+License: GPL-3.0-or-later
+Keywords: Automation,PLC,Remote Control
+Author: Cesar Freire
+Author-email: cfreire@cfreire.com.pt
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Project-URL: Repository, https://gitlab.com/xyzsoft/pytelecontrol
+Description-Content-Type: text/markdown
+
+# pytelecontrol
+Remotely access to your PLC, with auto discover feature
+
+Key Features
+* Auto discover PLC
+* Auto VPN
+
+
+## Maintainers
+
+  * César Freire <cfreire70@gmail.com>
+  * Ricardo oliveira <ricardo.oliveira.pt@gmail.com>
+
+

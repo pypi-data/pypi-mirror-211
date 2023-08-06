@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "pytelecontrol"
+version = "0.1.0"
+description = "Remotely access to your PLC, with auto discover feature"
+authors = ["Cesar Freire <cfreire@cfreire.com.pt>", "Ricardo oliveira <ricardo.oliveira.pt@gmail.com>"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+repository = "https://gitlab.com/xyzsoft/pytelecontrol"
+keywords = [
+	"Automation",
+	"PLC",
+	"Remote Control",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+toml = "^0.10.2"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+
+[tool.poetry-dynamic-versioning]
+enable = false
+vcs = "git"
+style = "semver"
