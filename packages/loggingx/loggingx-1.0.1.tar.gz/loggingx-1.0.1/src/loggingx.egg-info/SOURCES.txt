@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/loggingx/__init__.py
+src/loggingx/handlers.py
+src/loggingx.egg-info/PKG-INFO
+src/loggingx.egg-info/SOURCES.txt
+src/loggingx.egg-info/dependency_links.txt
+src/loggingx.egg-info/requires.txt
+src/loggingx.egg-info/top_level.txt
