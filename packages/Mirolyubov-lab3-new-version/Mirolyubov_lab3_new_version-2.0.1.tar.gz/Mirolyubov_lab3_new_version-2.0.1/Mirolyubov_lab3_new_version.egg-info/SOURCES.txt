@@ -1,0 +1,5 @@
+setup.py
+Mirolyubov_lab3_new_version.egg-info/PKG-INFO
+Mirolyubov_lab3_new_version.egg-info/SOURCES.txt
+Mirolyubov_lab3_new_version.egg-info/dependency_links.txt
+Mirolyubov_lab3_new_version.egg-info/top_level.txt
