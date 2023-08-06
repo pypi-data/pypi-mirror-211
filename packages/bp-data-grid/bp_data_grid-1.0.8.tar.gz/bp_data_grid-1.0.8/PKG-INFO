@@ -1,0 +1,114 @@
+Metadata-Version: 2.1
+Name: bp_data_grid
+Version: 1.0.8
+Summary: Show data in data grid
+Home-page: UNKNOWN
+Author: Bluepineapple
+Author-email: avinash@bluepineapple.io
+License: UNKNOWN
+Description: # Data Grid
+        
+        **Data Grid** is a Python package that allows you to effortlessly present tabular data in a visually appealing format. With built-in features such as client-side filtering, pagination, and export options, it provides a comprehensive solution for displaying and manipulating data.
+        
+        ## Features
+        
+        - **Tabular Data Display**: Easily present data in a grid-like structure for clear and organized visualization.
+        - **Client-Side Filtering**: Enable users to quickly search and filter data within the grid, improving data exploration and analysis.
+        - **Pagination:** Divide large datasets into manageable chunks, enabling smooth navigation and enhanced performance.
+        - **Export Options**: Provide users with the ability to export grid data to various formats such as CSV or Excel, facilitating data sharing and external analysis.
+        - **Data Masking**: Ensure data security by incorporating data masking capabilities during export, safeguarding sensitive information from unauthorized access.
+        
+        ## Installation
+        
+        You can install the **Data Grid** package from PyPI using pip:
+        
+        ```shell
+        pip install bp-data-grid
+        ```
+        
+        ## Usage
+        
+        To use the Data Grid component in your Streamlit application, follow these steps:
+        
+        1. Import the necessary modules:
+        
+        ```shell
+        import data_grid as dg
+        ```
+        
+        1. Add the **Data Grid** component to your application:
+        
+        ```shell
+        dg.data_grid(
+            title="Results",
+            rows=rows,
+            columns=columns,
+        )
+        ```
+        
+        1. Run your Streamlit application:
+        
+        ```shell
+        streamlit run your_app.py
+        ```
+        
+        ### Example
+        
+        ```shell
+        import data_grid as dg
+        
+        columns = [
+          {
+            "field": "id",
+            "headerName": "ID",
+            "width": 90
+          },
+          {
+            "field": "firstName",
+            "headerName": "First Name",
+            "width": 150,
+            "editable": True
+          },
+          {
+            "field": "lastName",
+            "headerName": "Last Name",
+            "width": 150,
+            "editable": True
+          },
+          {
+            "field": "age",
+            "headerName": "Age",
+            "type": "number",
+            "width": 110,
+            "editable": True
+          }
+        ]
+        
+        rows = [
+            {"id": 1, "lastName": "Snow", "firstName": "Jon", "age": 35},
+            {"id": 2, "lastName": "Lannister", "firstName": "Cersei", "age": 42},
+            {"id": 3, "lastName": "Lannister", "firstName": "Jaime", "age": 45},
+            {"id": 4, "lastName": "Stark", "firstName": "Arya", "age": 16},
+            {"id": 5, "lastName": "Targaryen", "firstName": "Daenerys", "age": 90},
+            {"id": 6, "lastName": "Melisandre", "firstName": "Tom", "age": 150},
+            {"id": 7, "lastName": "Clifford", "firstName": "Ferrara", "age": 44},
+            {"id": 8, "lastName": "Frances", "firstName": "Rossini", "age": 36},
+            {"id": 9, "lastName": "Roxie", "firstName": "Harvey", "age": 65},
+        ]
+        
+        dg.data_grid(
+             title="Results",
+             rows=rows,
+             columns=columns,
+             key="data_grid",
+        )
+        
+        ```
+        
+        ## Screenshot
+        
+        ![Screenshot](https://i.ibb.co/NsfwfY6/eintrag-Streamlit.png "Screen Shot")
+        
+Platform: UNKNOWN
+Requires-Python: >=3.8.10
+Description-Content-Type: text/markdown
