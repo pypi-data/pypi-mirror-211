@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: thipster
+Version: 0.13.1
+Provides-Extra: test
+Provides-Extra: dev
+Provides-Extra: doc
