@@ -1,0 +1,239 @@
+stages:
+  - quality
+  - requirements
+  - test
+
+variables:
+  PACKAGE_NAME: "model_dml"
+
+.install_test: &install_test
+  - python --version  # Debug
+  - python -m venv venv --upgrade-deps || python -m venv venv
+  - source venv/bin/activate
+  - pip install .[TEST]
+
+.install_quality: &install_quality
+  - python --version  # Debug
+  - python -m venv venv --upgrade-deps || python -m venv venv
+  - source venv/bin/activate
+  - pip install .[QUALITY]
+
+.requirements_script: &requirements_script
+    - python --version  # Debug
+    - python -m venv venv --upgrade-deps || python -m venv venv
+    - source venv/bin/activate
+    - git config --global user.email "${GITLAB_USER_EMAIL}"
+    - git config --global user.name "${GITLAB_USER_NAME}"
+    - pip install .
+    - pip freeze > ${CI_JOB_NAME}.txt --exclude ${PACKAGE_NAME}
+    - git add ${CI_JOB_NAME}.txt
+    - git commit -m "Update ${CI_JOB_NAME}.txt" || true
+    - git fetch origin
+    - git rebase origin/${CI_COMMIT_BRANCH}
+    - git push https://:${PROJECT_ACCESS_TOKEN}@${CI_REPOSITORY_URL#*@} HEAD:"${CI_COMMIT_BRANCH}"
+
+flake8:
+  image: python:latest
+  stage: quality
+  before_script:
+    - *install_quality
+  script:
+    - flake8
+  only:
+    changes:
+      - src/**/*.py
+      - tests/**/*.py
+      - .gitlab-ci.yml
+      - pyproject.toml
+
+black:
+  image: python:latest
+  stage: quality
+  before_script:
+    - *install_quality
+  script:
+    - black . --check --diff --quiet
+  only:
+    changes:
+      - src/**/*.py
+      - tests/**/*.py
+      - .gitlab-ci.yml
+      - pyproject.toml
+
+mypy:
+  image: python:latest
+  stage: quality
+  before_script:
+    - *install_quality
+  script:
+    - mypy
+  only:
+    changes:
+      - src/**/*.py
+      - .gitlab-ci.yml
+      - pyproject.toml
+
+requirements_py37:
+  image: python:3.7
+  stage: requirements
+  script:
+    - *requirements_script
+  only:
+    changes:
+      - src/**/*.py
+      - tests/**/*.py
+      - .gitlab-ci.yml
+      - pyproject.toml
+
+requirements_py38:
+  image: python:3.8
+  stage: requirements
+  script:
+    - *requirements_script
+  only:
+    changes:
+      - src/**/*.py
+      - tests/**/*.py
+      - .gitlab-ci.yml
+      - pyproject.toml
+
+
+requirements_py39:
+  image: python:3.9
+  stage: requirements
+  script:
+    - *requirements_script
+  only:
+    changes:
+      - src/**/*.py
+      - tests/**/*.py
+      - .gitlab-ci.yml
+      - pyproject.toml
+
+
+requirements_py310:
+  image: python:3.10
+  stage: requirements
+  script:
+    - *requirements_script
+  only:
+    changes:
+      - src/**/*.py
+      - tests/**/*.py
+      - .gitlab-ci.yml
+      - pyproject.toml
+
+
+requirements_py311:
+  image: python:3.11
+  stage: requirements
+  script:
+    - *requirements_script
+  only:
+    changes:
+      - src/**/*.py
+      - tests/**/*.py
+      - .gitlab-ci.yml
+      - pyproject.toml
+
+requirements_py312:
+  image: python:3.12-rc
+  stage: requirements
+  script:
+    - *requirements_script
+  only:
+    changes:
+      - src/**/*.py
+      - tests/**/*.py
+      - .gitlab-ci.yml
+      - pyproject.toml
+
+py37:
+  image: python:3.7
+  stage: test
+  before_script:
+    - *install_test
+  script:
+    - pytest
+  only:
+    changes:
+      - src/**/*.py
+      - tests/**/*.py
+      - .gitlab-ci.yml
+      - pyproject.toml
+
+
+py38:
+  image: python:3.8
+  stage: test
+  before_script:
+    - *install_test
+  script:
+    - pytest
+  only:
+    changes:
+      - src/**/*.py
+      - tests/**/*.py
+      - .gitlab-ci.yml
+      - pyproject.toml
+
+
+py39:
+  image: python:3.9
+  stage: test
+  before_script:
+    - *install_test
+  script:
+    - pytest
+  only:
+    changes:
+      - src/**/*.py
+      - tests/**/*.py
+      - .gitlab-ci.yml
+      - pyproject.toml
+
+
+py310:
+  image: python:3.10
+  stage: test
+  before_script:
+    - *install_test
+  script:
+    - pytest
+  only:
+    changes:
+      - src/**/*.py
+      - tests/**/*.py
+      - .gitlab-ci.yml
+      - pyproject.toml
+
+
+py311:
+  image: python:3.11
+  stage: test
+  before_script:
+    - *install_test
+  script:
+    - pytest
+  only:
+    changes:
+      - src/**/*.py
+      - tests/**/*.py
+      - .gitlab-ci.yml
+      - pyproject.toml
+
+
+py312:
+  image: python:3.12-rc
+  stage: test
+  before_script:
+    - *install_test
+  script:
+    - pytest
+  only:
+    changes:
+      - src/**/*.py
+      - tests/**/*.py
+      - .gitlab-ci.yml
+      - pyproject.toml
+
