@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+pycociC/__init__.py
+pycociC/__main__.py
+pycociC.egg-info/PKG-INFO
+pycociC.egg-info/SOURCES.txt
+pycociC.egg-info/dependency_links.txt
+pycociC.egg-info/requires.txt
+pycociC.egg-info/top_level.txt
