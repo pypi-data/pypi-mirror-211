@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: nqgreenapi
+Version: 1.0.0a2
+Summary: NqGreenApi
+Author: Inqana Ltd.
+Author-email: develop@inqana.com
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: nqsdk (==1.0.0a16)
+Requires-Dist: pydantic (>=1.10,<2.0)
+Requires-Dist: whatsapp-api-client-python
+Description-Content-Type: text/markdown
+
+# NqGreenApi
+
+Part of NQ suite by [Inqana](https://inqana.com). Built with [NQ SDK](https://pypi.org/project/nqsdk/).
+
+## Tests
+
+Run tests locally:
+
+```bash
+$ ./scripts/tests
+```
+
+## License
+
+Licensed under the terms of the [Apache License, version 2.0](https://apache.org/licenses/LICENSE-2.0). See `LICENSE` file.
+
+Copyright (c) 2023 Inqana Ltd.
+
