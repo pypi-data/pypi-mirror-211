@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyrc-python-utils
+Version: 0.0.4
+Summary: Generic set of helper functions
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: O365 (>=2.0.26)
+Requires-Dist: paramiko (>=3.1.0)
+Requires-Dist: pymsteams (>=0.2.2)
+Requires-Dist: boto3 (>=1.26.141)
+
+Convienence functions wrapping a variety of Phython libraries

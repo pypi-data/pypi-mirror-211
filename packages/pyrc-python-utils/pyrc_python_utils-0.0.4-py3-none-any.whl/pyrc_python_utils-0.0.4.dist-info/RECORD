@@ -1,0 +1,15 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyrc_python_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyrc_python_utils/util_datetime.py,sha256=D_s41LDRfQtOlUKmy4TuBptjojaVzz2CenSrDoBChZo,1199
+pyrc_python_utils/util_exchange.py,sha256=ElwfAcP8sAtmNc7PSd15XJrCU0doiIMmVlxZt5jfJTc,5776
+pyrc_python_utils/util_file.py,sha256=27rGuHBzFoB8aUZ30YYHj9RVGqjwy25WefM2KCCeY3I,3438
+pyrc_python_utils/util_ms_teams.py,sha256=pAOG5vTpEedIsDEc5Indjgqu86G1Cy__aOF5FHaOPts,1382
+pyrc_python_utils/util_s3.py,sha256=adiQSu993xWTB1OChdO62iG9lJCFcObHr1X80sxMaHA,19013
+pyrc_python_utils/util_sftp.py,sha256=sJ0-bZhwHLnGxpWkebDCtMHNfJA9zoM3YNFbcdX2WSc,30466
+pyrc_python_utils/util_sharepoint.py,sha256=z79HW2UVoKvJJvWCPSUwhdGOVi4Gm_C0fWP73seOZyk,6440
+pyrc_python_utils/util_string.py,sha256=GQSXhr_8n2GOVUUs7jq_7e6uABR8cPF5Vxo0SXdVeP8,77
+pyrc_python_utils-0.0.4.dist-info/LICENSE,sha256=ZYTtXpwq7ZpdRqK2ZcJ6C0zUW-C3fkgMbTy33PHx5KA,1085
+pyrc_python_utils-0.0.4.dist-info/METADATA,sha256=N3cc6OpDmWQF-ECwKzSM49RYw19qfMK2LxYfyeXAW4E,546
+pyrc_python_utils-0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pyrc_python_utils-0.0.4.dist-info/top_level.txt,sha256=P3wUCB_vwM69ynfy79-yHWBHWVUokyflVasyJLpD6CA,27
+pyrc_python_utils-0.0.4.dist-info/RECORD,,
