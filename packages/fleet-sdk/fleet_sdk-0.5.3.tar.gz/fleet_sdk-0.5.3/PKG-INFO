@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: fleet-sdk
+Version: 0.5.3
+Summary: Fleet SDK for building and managing chatGPT plugins
+Author: fleet_team
+Author-email: fleet.ai.team@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: fastapi (>=0.95.0,<0.96.0)
+Description-Content-Type: text/markdown
+
+# About
+---
+
+Learn more at usefleet.ai
+
