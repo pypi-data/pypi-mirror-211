@@ -1,0 +1,10 @@
+strategais/__init__.py,sha256=NtEYBaqAHnaqTCHyc1l2XfjeU8Dl0ZVIfsgGmv2P0lU,78
+strategais/__main__.py,sha256=rnr2CsmNREtXneqWmXCw6y0YC6mUKbA5KVJe6giSS3Y,4331
+strategais/llm_tools.py,sha256=KlTaI4EUuMhVFRcRr9_BvsSsRtbk-Wh4CmrCa88r44E,368
+strategais/save_tools.py,sha256=CJOGJ1e2wAOhViji2Odaj0FGFmTlK00ed4EJ7hfTqq8,2280
+strategais/templates/index.html,sha256=IbCJubrVME5YhEh-fy4nwJ7seLcPQJLQH9eeZhBvaSY,18358
+strategais-0.2.1.dist-info/LICENSE,sha256=ka5DiiRupPh7ufUbvnj4RsWiiELRIWh5ch4blPP7RpI,1066
+strategais-0.2.1.dist-info/METADATA,sha256=Bkjhs6qSInfruE2V4-9uk3_eeNR9lj8lq3P_4DFhZl8,2459
+strategais-0.2.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+strategais-0.2.1.dist-info/top_level.txt,sha256=0x9QAa17veEO_Y1rwcrL4-eqrYTUD_93XKp0ARED57Y,11
+strategais-0.2.1.dist-info/RECORD,,
