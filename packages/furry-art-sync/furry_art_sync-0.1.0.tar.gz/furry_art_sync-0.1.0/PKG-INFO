@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: furry-art-sync
+Version: 0.1.0
+Summary: A tool to synchronise art galleries across furry art websites
+License: MIT
+Author: Deer-Spangle
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: gallery-dl (>=1.25.4,<2.0.0)
+Requires-Dist: imagehash (>=4.3.1,<5.0.0)
+Requires-Dist: pillow (>=9.5.0,<10.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# FurryArtSync
+A tool to sync your gallery across furry art sites
+
