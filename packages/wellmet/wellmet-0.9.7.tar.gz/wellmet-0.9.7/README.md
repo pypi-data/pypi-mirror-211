@@ -1,0 +1,170 @@
+WellMet is pure Python framework for spatial structural reliability analysis. Or, more specifically, for "failure probability estimation and detection of failure surfaces by adaptive sequential decomposition of the design domain".
+
+# Installation
+## For users of conda-based distributions
+Anaconda users are encouraged to manually install WellMet's dependencies:
+```
+conda install -c anaconda scipy
+conda install -c anaconda matplotlib
+conda install -c anaconda pandas
+conda install -c anaconda mpmath
+conda install -c anaconda pyqtgraph
+
+conda install -c conda-forge quadpy
+```
+pyopengl for 3D view (optionally):
+```
+conda install -c anaconda pyopengl
+```
+
+Finally, install WellMet from PyPI:
+```
+pip install wellmet
+```
+
+## For other users
+Install WellMet from PyPI:
+```
+pip install wellmet
+```
+
+WellMet relies on ```quadpy``` for simplex integration. However, quadpy became a closed source software and requires licence fee now.
+One probably could install official quadpy package and obtain a licence in order to support Nico Schloemer.
+However, WellMet has never been tested with commertial quadpy versions.
+So, we separately share the last GPL version:
+```
+pip install quadpy-gpl
+```
+
+
+# How to use:
+## A. To run GUI with predefined benchmark problems:
+1. Type in shell: ```python -m wellmet```
+2. Choose problem to solve, choose (optionally) filename to store samples and estimations, set up the algorithm.
+3. Press "Batch run..." button and type desired number of LSF calls.
+
+## B. To test the algorithm on your own problem use the following code:
+```
+import numpy as np
+import scipy.stats as stats
+
+from wellmet.qt_gui import qt_box_functions as gui
+from wellmet import whitebox
+from wellmet.samplebox import SampleBox
+from wellmet import f_models
+
+
+# 1. Set up probability distribution
+# Standard Gaussian variables, 2D
+#f = f_models.SNorm(2)
+# Just normal variables
+f = f_models.Norm(mean=[-1, 0], std=[2, 1])
+# Independent non-Gaussian variables
+#f = f_models.UnCorD((stats.gumbel_r, stats.uniform))
+# Correlated non-Gaussian marginals
+#f = f_models.Nataf((stats.gumbel_r, stats.weibull_min(c=1.5)), [[1,0.8], [0.8,1]])
+
+# 2. Define LSF function
+def my_problem(input_sample):
+    # get real (physical) space coordinates
+    # X is a numpy array with shape (nsim, ndim)
+    # the algorithm normally sends (1, ndim) sample
+    X = input_sample.R
+    # LSF
+    g = X[:, 0] - X[:, 1] + 3
+    # we should return an instance of SampleBox class
+    # this instance stores coordinates along with LSF calculation result
+    return SampleBox(input_sample, g, "my_problem")
+
+# 3. Put them together
+wt = whitebox.WhiteBox(f, my_problem)
+
+# choose filename to store samples and estimations
+gui.read_box(wt)
+# setup algorithm
+gui.setup_dicebox(wt)
+
+# start GUI
+gui.show_box(wt)
+```
+
+## C. The same without GUI:
+```
+import numpy as np
+import scipy.stats as stats
+
+from wellmet.samplebox import SampleBox
+from wellmet import f_models
+
+
+# 1. Set up probability distribution
+# Standard Gaussian variables, 2D
+#f = f_models.SNorm(2)
+# Just normal variables
+f = f_models.Norm(mean=[-1, 0], std=[2, 1])
+# Independent non-Gaussian variables
+#f = f_models.UnCorD((stats.gumbel_r, stats.uniform))
+# Correlated:
+# Nataf model with correlations of the respective _Gaussian_ marginals
+#f = f_models.Nataf((stats.gumbel_r, stats.weibull_min(c=1.5)), [[1,0.8], [0.8,1]])
+
+# 2. Define LSF function
+def my_problem(input_sample):
+    # get real (physical) space coordinates
+    # X is a numpy array with shape (nsim, ndim)
+    # the algorithm normally sends (1, ndim) sample
+    X = input_sample.R
+    # LSF
+    g = X[:, 0] - X[:, 1] + 3
+    # we should return an instance of SampleBox class
+    # it stores coordinates along with LSF calculation result
+    # with kind of signature
+    return SampleBox(input_sample, g, "my_problem")
+
+
+
+
+
+
+# 3. Prepare storage
+# no need to store anything
+#sample_box = SampleBox(f)
+
+# keep samples and estimations continiously stored 
+from wellmet import reader
+sample_box = reader.Reader("meow_problem", f)
+
+# 4. Setup the algorithm
+from wellmet.dicebox.circumtri import CirQTri
+import quadpy
+
+scheme = quadpy.tn.stroud_tn_3_6b(sample_box.nvar)
+convex_hull_degree = 5 # degreee of Grundmann-Moeller cubature scheme
+q = 1 # should be > 0. Greater values slightly enforces exploration
+screening_rate = 0 # 10 means to sacrifice every tenth sample for screening
+box = CirQTri(sample_box, scheme, convex_hull_degree, q, screening_rate)
+
+
+# 5. Here we go!
+for i in range(20):
+    # ask where to sample the next point
+    # next_node is an f_model instance
+    next_node = box()
+    # call LSF
+    new_sample = my_problem(next_node)
+    # put calculation result to the box
+    box.add_sample(new_sample)
+    
+print(box.get_pf_estimation())
+sensitivities_results = box.Tri.perform_sensitivity_analysis()
+print(sensitivities_results.sensitivities)
+```
+
+
+
+
+
+
+
+
+This software has been developed under internal academic project no. FAST-K-21-6943  "Quality Internal Grants of BUT (KInG BUT)'' supported by  the Czech Operational Programme ``Research, Development and Education''  (CZ.02.2.69/0.0/0.0/19\_073/0016948, managed by the Czech Ministry of Education.
