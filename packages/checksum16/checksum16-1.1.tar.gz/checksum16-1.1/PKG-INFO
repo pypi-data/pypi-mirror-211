@@ -1,0 +1,26 @@
+Metadata-Version: 1.0
+Name: checksum16
+Version: 1.1
+Summary: Native checksum implementation for python
+Home-page: https://github.com/Valmarelox/checksum
+Author: Efi Weiss
+Author-email: valmarelox@gmail.com
+License: UNKNOWN
+Description: # Checksum only python native module
+        I tried to find a quick python native implemenation of ip checksum to achieve a
+        better performance. Didn't find it, so I created my own module.
+        Calculate IP checksum-16 (Host endianess for compatability with other pure
+        python implementations:
+        How to use
+        ```python
+        from checksum import checksum
+        res = checksum(b'BEST DATA')
+        ```
+        The module also supports partial checksums:
+        ```python
+        from checksum import checksum
+        res = checksum(b'BEST DATA')
+        res = checksum(b'ANOTHER BULK OF GREAT DATA', res)
+        ```
+        
+Platform: UNKNOWN
