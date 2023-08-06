@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: airscript
+Version: 0.0.3
+Summary: airscript Type derivation package
+Home-page: https://github.com/itisl2220/airscript
+Author: ITisl
+Author-email: 1831207432@qq.com
+License: MIT
+Keywords: python,airscript
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
