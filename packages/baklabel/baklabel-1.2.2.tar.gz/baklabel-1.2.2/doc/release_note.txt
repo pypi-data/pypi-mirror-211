@@ -1,0 +1,158 @@
+baklabel - see Description below
+========
+
+Version    Who  When/What
+=========================
+
+ver 1.2.2   md  1 Jun 2023 - Further clean up documentation
+
+ver 1.2.1   md  30 May 2023 - Clean up documentation
+
+ver 1.2.0   md  29 May 2023 - Improve guessdate() to resolve ambiguous dates
+
+ver 1.1.0   md  23 May 2023 - Change from GPL3 to MIT license, change to pyproject.toml
+                and clean up strings using f-strings
+
+
+ver 1.0.3   md  24 Aug 2012 - Code review and tweaks to test importing to cater for
+                in-house python path adjustments
+
+ver 1.0.2   md  8 Mar 2011 - Refactored guessdate() out of __main__ to permit string
+                dates as a calling convenience
+
+ver 1.0.1   md  4 Nov 2010 - Minor refactoring and tidying comments
+
+ver 1.0.0   md  3 Nov 2010 - New option to append current year to any month-end label,
+                not just end-of-year.
+
+ver 0.2.0   md  27 Oct 2010 - Help now respects defaults which have been adjusted in
+                the source code. A new default now permits adjustment of new_year_month
+                which sets the end-of-year label to any desired month.
+
+ver 0.1.0b   md 8 Oct 2010 - Added -d numeric option for setting the label to x days
+                ago. Eg., -1 = yesterday. Also added a time trigger option in the -d
+                switch such that, for example, -d 3am will produce yesterday's label
+                if baklabel is called prior to 3am
+
+ver 0.0.0a   md 1 Jul 2010 - first written
+
+
+Description
+===========
+Baklabel is intended for use in automated scripts to deliver a sensible directory path
+fragment (or label) each day to construct a grandfathered local backup.
+
+Import baklabel.Grandad to produce today's label fragment.
+
+See test_baklabel.py for examples of how to call Grandad
+
+It is also a stand-alone utility to find the backup label produced for any given date
+and set of options.
+
+python3 baklabel.py -h  to see command line usage and options.
+
+Python 3.x (Python 2.7 should also work but is no longer tested)
+
+In the doc directory of the baklabel repo, see release_note.txt for more detail on the
+package, examples.txt for baklabel output examples and backup_howto.txt for a sample
+backup script for Windows.
+
+
+Grandfathered Backups
+=====================
+Properly grandfathered, there needs to be a daily backup to one of 23 separate tapes,
+sets of media or local directories on a storage device. This complement is made up of
+6 weekday backups, 5 week-end backups, 11 month-end backups plus one for year-end.
+
+23 backups is quite economical for 12 months coverage.
+
+This represents real comfort when retrieving data which has been compromised at some
+unknown point in the past.
+
+Each of the regular weekday Sat to Thu backups will be overwritten seven days later.
+However, if an end-of-month occurs on that weekday the month-end backup will happen
+instead and that weekday backup will survive for an extra seven days.
+
+Four of the week-end (default is Friday) backups get overwritten four weeks later. The
+fifth Friday backup gets overwritten whenever there are five Fridays in a month.
+
+If end-of-month occurs on a Friday then the month-end backup occurs and that Friday
+backup survives for an extra month or so before being overwritten again.
+
+Each month-end backup gets overwritten in the following year unless archived.
+
+Here are all the default labels produced by baklabel for on-site backups:
+
+dec_2023  = 31 Dec 2023
+nov       = 30 Nov
+oct       = 31 Oct
+sep       = 30 Sep
+aug       = 31 Aug
+jul       = 31 Jul
+jun       = 30 Jun
+may       = 31 May
+apr       = 30 Apr
+mar       = 31 Mar
+feb       = 28 or 29 Feb
+jan       = 31 Jan
+mon       = day 0 of the week
+tue       = day 1 of the week
+wed       = day 2 of the week
+thu       = day 3 of the week
+fri_1,    = day 4 of the week
+ fri_2,   = day 4 of the week
+  fri_3,  = day 4 of the week
+   fri_4, = day 4 of the week
+    fri_5 = day 4 of the week
+sat       = day 5 of the week
+sun       = day 6 of the week
+
+If a backup name is higher in this list than another then it will be produced instead
+of the one below it.
+
+End-of-year is usually special for archiving reasons. Otherwise it is just another
+month-end. baklabel defaults to appending the year to the December backup label. This
+can be defeated with the '-y False' option.
+
+If the new year begins in July rather than January, for example, use the '-n 7' option.
+This makes June 30 the end-of-year backup rather than December 31. The June label would
+then be 'jun_2023'.
+
+If you prefer a different day than Friday for these week-end backups there is no
+command line option. You need to edit the baklabel code and change WEEKLY_DAY to
+represent a different day of the week. Use the Python number of the day-of-week.
+
+To defeat week-end backups altogether and make Friday just another day, make WEEKLY_DAY
+greater than or equal to 7. Skipping week-end backups would not be recommended by most
+grandfathers!
+
+
+Source:  https://github.com/mdewhirst/baklabel
+
+Mike Dewhirst
+miked@dewhirst.com.au
+
+
+
+MIT License
+===========
+Copyright (c) 2010-2023 Climate Pty Ltd
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
