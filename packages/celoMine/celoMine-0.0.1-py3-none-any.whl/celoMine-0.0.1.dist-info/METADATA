@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: celoMine
+Version: 0.0.1
+Summary: Predictive machine learning for Celonis
+Author: Jean BERTIN
+Author-email: <jeanbertin.ensam@gmail.com>
+Keywords: python,celonis,process mining
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE
+Requires-Dist: pycelonis
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: sklearn
+Requires-Dist: matplotlib
+
