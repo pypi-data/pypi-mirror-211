@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: continuedev
+Version: 0.1.1
+Summary: 
+Author: Nate Sesti
+Author-email: sestinj@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: boltons (>=23.0.0,<24.0.0)
+Requires-Dist: fastapi (>=0.95.1,<0.96.0)
+Requires-Dist: gpt-index (>=0.6.8,<0.7.0)
+Requires-Dist: nest-asyncio (>=1.5.6,<2.0.0)
+Requires-Dist: openai (>=0.27.5,<0.28.0)
+Requires-Dist: posthog (>=3.0.1,<4.0.0)
+Requires-Dist: pydantic (>=1.10.7,<2.0.0)
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Requires-Dist: setuptools (>=67.7.2,<68.0.0)
+Requires-Dist: typer (>=0.7.0,<0.8.0)
+Requires-Dist: urllib3 (==1.26.15)
+Requires-Dist: uvicorn (>=0.21.1,<0.22.0)
+Requires-Dist: websockets (>=11.0.2,<12.0.0)
+Description-Content-Type: text/markdown
+
+# Continue PyPI Package
+
+Continue is a Python library for automating repetitive sequences of software development tasks using language models. Using our VS Code extension, you can build, run, and refine these recipes as they natively interact with your codebase. Download on [our GitHub](https://github.com/continuedev/continue).
+
+## Continue Server
+
+The Continue server acts as a bridge between the Continue React app and your IDE, running your recipes and acting on the codebase. Start it by running the following commands:
+
+- `cd continuedev`
+- Make sure packages are installed with `poetry install`
+- `poetry shell`
+- `cd ..`
+- `python3 -m continuedev.src.continuedev.server.main`
+
+## Scripts
+
+`poetry run typegen` to generate JSONSchema .json files from the Pydantic types defined in the `models` directory.
+
+`poetry build` will output wheel and tarball files in `./dist`.
+
+## Writing Steps
+
+See the `src/continuedev/libs/steps` folder for examples of writing a Continue step. See our documentation for tutorials.
+
