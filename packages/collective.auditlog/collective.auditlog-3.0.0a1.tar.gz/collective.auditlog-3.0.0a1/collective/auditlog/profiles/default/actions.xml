@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+        meta_type="Plone Actions Tool"
+        name="portal_actions"
+>
+  <object meta_type="CMF Action Category"
+          name="user"
+  >
+    <object meta_type="CMF Action"
+            name="auditlog"
+    >
+      <property name="title">Audit Log</property>
+      <property name="description" />
+      <property name="url_expr">string:${globals_view/navigationRootUrl}/@@auditlog-view?order=performed_ondirection=desc</property>
+      <property name="icon_expr" />
+      <property name="available_expr">python:member is not None</property>
+      <property name="permissions">
+        <element value="collective.auditlog: View Auditlog" />
+      </property>
+      <property name="visible">True</property>
+    </object>
+  </object>
+</object>

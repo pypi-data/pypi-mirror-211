@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tool-setup>
+
+  <required class="collective.auditlog.catalog.AuditCatalog"
+            tool_id="audit_catalog"
+  />
+
+</tool-setup>

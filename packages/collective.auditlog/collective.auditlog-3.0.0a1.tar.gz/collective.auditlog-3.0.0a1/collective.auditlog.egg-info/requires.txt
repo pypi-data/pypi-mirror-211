@@ -1,0 +1,13 @@
+setuptools
+sqlalchemy<2,>=1.4
+plone.app.contentrules
+
+[celery]
+collective.celery
+
+[test]
+plone.app.testing
+plone.app.contenttypes
+
+[test:python_version < "3"]
+pysqlite
