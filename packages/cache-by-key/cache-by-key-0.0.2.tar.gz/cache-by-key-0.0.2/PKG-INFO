@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: cache-by-key
+Version: 0.0.2
+Summary: cache-by-key is a lru based cache that allows you to cache by specific keyword argument from a decorated function.
+Home-page: https://github.com/Rashik-raj/cache-by-key
+Author: Rashikraj Shrestha
+Author-email: rashik123.rs@gmail.com
+Project-URL: Bug Tracker, https://github.com/Rashik-raj/cache-by-key/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# cache-by-key
+
+cache-by-key is a lru based cache that allows you to cache by specific keyword argument from a decorated function.
+On top of it, each keyword argument's cache can have at most 10 different LRU caches.
+
+Installation
+------------
+You can install via pip using command shown below.
+
+`pip install cache-by-key`
+
+Documentation
+-------------
+
+For full documentation, visit [cache-by-key.readthedocs.io](https://cache-by-key.readthedocs.io/en/latest/).
