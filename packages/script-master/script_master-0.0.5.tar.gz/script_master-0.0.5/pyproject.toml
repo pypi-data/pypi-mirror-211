@@ -1,0 +1,50 @@
+[tool.poetry]
+name = "script-master"
+version = "0.0.5"
+description = ""
+authors = ["Pavel Maksimov <vur21@ya.ru>"]
+license = "Apache-2.0"
+homepage = "https://github.com/pavelmaksimov/script-master"
+packages = [{include = "script_master"}]
+readme = "README.md"
+include = [
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md",
+]
+keywords = []
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pendulum = "^2.1.2"
+PyYAML = "^6.0"
+pydantic = "^1.9.0"
+fastapi = "^0.95.2"
+uvicorn = {extras = ["standart"], version = "^0.20.0"}
+aiopath = "^0.6.11"
+asyncio = "^3.4.3"
+better-exceptions = "^0.3.3"
+confz = "1.8.1"
+orjson = "^3.8.4"
+typer = "^0.7.0"
+loguru = "^0.6.0"
+jinja2 = "^3.1.2"
+script-master-helper = "^0.0.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.2.0"
+pytest-asyncio = "*"
+pydantic-factories = "*"
+pylint = "^2.15.9"
+black = "22.12.0"
+coverage = "^7.0.3"
+flake8 = "^6.0.0"
+mccabe = "^0.7.0"
+mypy = "^0.991"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+script-master = 'script_master.cli:cli'
