@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: ngy
+Version: 1.0.0
+Summary: Create MBTiles from IGN maps
+Project-URL: Homepage, https://github.com/sebastien17/ngy
+Project-URL: Bug Tracker, https://github.com/sebastien17/ngy/issues
+Author-email: Sébastien LAUTIER <sebastien.lautier@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10.11
+Requires-Dist: aiohttp>=3.8.4
+Requires-Dist: fire>=0.5.0
+Requires-Dist: lxml>=4.9.2
+Requires-Dist: pyproj>=3.5.0
+Requires-Dist: tqdm>=4.65.0
+Description-Content-Type: text/markdown
+
+# ngy
+Create MBTiles from IGN maps
+
+## Installation
+
+pip install ngy
+
+## Usage
+
+Script:
+
+    SYNOPSIS
+        locus LAT1 LONG1 LAT2 LONG2 POSITION_NAME
+
+    POSITIONAL ARGUMENTS
+        LAT1
+            Type: float
+        LONG1
+            Type: float
+        LAT2
+            Type: float
+        LONG2
+            Type: float
+        POSITION_NAME
+            Type: str

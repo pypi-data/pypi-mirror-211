@@ -1,0 +1,2 @@
+[console_scripts]
+locus = ngy.Tools:__execute_locus
