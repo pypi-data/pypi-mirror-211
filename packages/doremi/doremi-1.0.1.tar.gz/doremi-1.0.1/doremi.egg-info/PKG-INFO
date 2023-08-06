@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: doremi
+Version: 1.0.1
+Summary: A minimalist vocal autotuner for Python.
+Home-page: http://github.com/jpmchargue/doremi
+Author: James McHargue
+Author-email: jpmchargue@gmail.com
+License: MIT
+Keywords: voice autotune easy
+License-File: LICENSE.txt
+
+See the README for more information.
