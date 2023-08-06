@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "edxbackup"
+authors = [
+    {name = "Illia Shestakov", email = "i.shestakov@abstract-technology.de"},
+]
+description = "My package description"
+requires-python = ">=3.11"
+license = {text = "Apache-2.0"}
+dependencies = [
+    "click",
+    "minio",
+    "pydantic",
+	"s3ball",
+]
+dynamic = ["version", "readme"]
+
+[tool.setuptools.packages]
+find = {}
+
+[tool.setuptools.dynamic]
+version = {attr = "edxbackup.VERSION"}
+readme = {file = ["README.rst"]}
+
+[project.scripts]
+edxbackup = "edxbackup.cli:main"

@@ -1,0 +1,4 @@
+click
+minio
+pydantic
+s3ball
