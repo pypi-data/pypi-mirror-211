@@ -1,0 +1,9 @@
+pyaipersonality/__init__.py,sha256=r7guhQhpc39fGnV6auj1uNzl3ikyD1H736q2py6liv0,31620
+pyaipersonality/binding.py,sha256=T7Gil4ccdlPiXiGZ49bXti2FFs1ZZtu6UyJSnSc_C9E,6626
+pyaipersonality/langchain_integration.py,sha256=gqAy1lnynuUyEGlxHPKoWma3Uw1HsAFV2e4XoWkVGnM,9357
+pyaipersonality/server.py,sha256=0Bd3ho7Z4rwUWYohmUFnxuzZYj9KcagAZcv7TPiFlEU,3852
+pyaipersonality-1.0.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+pyaipersonality-1.0.0.dist-info/METADATA,sha256=4TaGHRVbOUmDm2UBrL5LQG0Gx1KFs-XxEK1RN7_k7IA,14738
+pyaipersonality-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pyaipersonality-1.0.0.dist-info/top_level.txt,sha256=qkvxNwIBwGgWGhtEeLfMehUhZABFxojDYM3WEtzYkKU,16
+pyaipersonality-1.0.0.dist-info/RECORD,,
