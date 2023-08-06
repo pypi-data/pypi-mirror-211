@@ -1,0 +1,10 @@
+README.md
+setup.py
+license_authorize/__init__.py
+license_authorize/_core.py
+license_authorize/decode.py
+license_authorize.egg-info/PKG-INFO
+license_authorize.egg-info/SOURCES.txt
+license_authorize.egg-info/dependency_links.txt
+license_authorize.egg-info/requires.txt
+license_authorize.egg-info/top_level.txt
