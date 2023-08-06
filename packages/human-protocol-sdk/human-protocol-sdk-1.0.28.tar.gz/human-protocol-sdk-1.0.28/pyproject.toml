@@ -1,0 +1,12 @@
+[project]
+name = "human-protocol-sdk"
+dynamic = ["version"]
+
+[build-system]
+requires = ["setuptools", "wheel", "setuptools-pipfile"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+version = {attr = "human_protocol_sdk.__version__"}
+
+[tool.setuptools-pipfile]
