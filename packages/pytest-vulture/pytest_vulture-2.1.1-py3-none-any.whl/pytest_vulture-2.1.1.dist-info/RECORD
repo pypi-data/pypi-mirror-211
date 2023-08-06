@@ -1,0 +1,17 @@
+pytest_vulture/__init__.py,sha256=XFe7qMLKvjEmGa9g5-NbdiWOeBiJ1JLHNyyYjpUbQvY,557
+pytest_vulture/plugin.py,sha256=hiteSNM32_dofIn4-edMoc8BIlIcfr_nqn-jjwhr5W8,2509
+pytest_vulture/setup_manager.py,sha256=zB4hOItKnU33A1-uWFWi3qrBPNpO59zpYX1aJgHMNqI,6833
+pytest_vulture/conf/__init__.py,sha256=PVzn2xqC1UcvuHzJcjOL6_R8ufEOYEITiNNnOi23Xrk,66
+pytest_vulture/conf/base.py,sha256=SpmvYUXTHPPCEAyac0r5BHlZPWau1EqYxUNjZLSWUn0,951
+pytest_vulture/conf/package.py,sha256=_4odBn3yMDiXnV3FMLmPb_34psSR-Zb0bdWFy-3Vq78,1626
+pytest_vulture/conf/reader.py,sha256=jKxm6MjraYp7Hxhulss3K9xEUYsiPUYedsgml3WyrUk,1608
+pytest_vulture/conf/vulture.py,sha256=P9WUurY1F6clnzjyAzKShkX-vQPZMQplsLCS2LGTI7w,2657
+pytest_vulture/vulture/__init__.py,sha256=xiIo5msV1zVP--ywn7UNs27JfdNhfZuaODgiAlGsXVk,22
+pytest_vulture/vulture/comment.py,sha256=UBbja3YcKZhy43I6UqvXl0U8KM1keXmGf2MsMNoBTRU,3471
+pytest_vulture/vulture/manager.py,sha256=rihXPJAutIVp7IGXCA4ddtNlSCczhkHTYsw-oDE63TE,4101
+pytest_vulture-2.1.1.dist-info/LICENSE,sha256=HvYgeAD-UvBGhH8pzJKa6exfHcb9OVBnzarhNic9KVM,1068
+pytest_vulture-2.1.1.dist-info/METADATA,sha256=Br_4NEEksnq-RNbCZI3DjCoy9ulaOW8RXQUV2UbH4aE,3554
+pytest_vulture-2.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pytest_vulture-2.1.1.dist-info/entry_points.txt,sha256=oYr5nu4NtRFVAc8fHIguiIOQTV_y_s4pC1RxgPWhwdY,43
+pytest_vulture-2.1.1.dist-info/top_level.txt,sha256=AD4SemsvXx4A3lpCzixydcUT4B-HKZpkO2ME0MKm1rQ,15
+pytest_vulture-2.1.1.dist-info/RECORD,,

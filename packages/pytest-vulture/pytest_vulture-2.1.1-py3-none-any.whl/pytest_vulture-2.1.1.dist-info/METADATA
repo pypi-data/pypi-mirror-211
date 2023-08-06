@@ -1,0 +1,145 @@
+Metadata-Version: 2.1
+Name: pytest-vulture
+Version: 2.1.1
+Summary: A pytest plugin to checks dead code with vulture
+Home-page: https://github.com/Gatewatcher/pytest-vulture
+Author: Abadie Moran
+Author-email: moran.abadie@gatewatcher.com
+Maintainer: Abadie Moran
+Maintainer-email: moran.abadie@gatewatcher.com
+License: MIT
+Classifier: Framework :: Pytest
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: vulture (<3.0,>2.0)
+Requires-Dist: pytest (>=7.0.0)
+Provides-Extra: dev
+Requires-Dist: pylint (==2.14.5) ; extra == 'dev'
+Requires-Dist: pytest (==7.1.2) ; extra == 'dev'
+Requires-Dist: pytest-runner (==5.2) ; extra == 'dev'
+Requires-Dist: pytest-cov (==2.10.1) ; extra == 'dev'
+Requires-Dist: pytest-pycodestyle (==2.3.0) ; extra == 'dev'
+Requires-Dist: pytest-pylint (==0.18.0) ; extra == 'dev'
+Requires-Dist: pytest-isort (==3.0.0) ; extra == 'dev'
+Requires-Dist: pytest-mccabe (==2.0) ; extra == 'dev'
+Requires-Dist: pytest-mypy (==0.9.1) ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pylint (==2.14.5) ; extra == 'test'
+Requires-Dist: pytest (==7.1.2) ; extra == 'test'
+Requires-Dist: pytest-runner (==5.2) ; extra == 'test'
+Requires-Dist: pytest-cov (==2.10.1) ; extra == 'test'
+Requires-Dist: pytest-pycodestyle (==2.3.0) ; extra == 'test'
+Requires-Dist: pytest-pylint (==0.18.0) ; extra == 'test'
+Requires-Dist: pytest-isort (==3.0.0) ; extra == 'test'
+Requires-Dist: pytest-mccabe (==2.0) ; extra == 'test'
+Requires-Dist: pytest-mypy (==0.9.1) ; extra == 'test'
+
+pytest vulture
+--------------
+
+Run vulture (https://pypi.org/project/vulture/) with pytest to find dead code.
+
+Sample Usage
+============
+.. code-block:: shell
+
+   py.test --vulture
+
+would be the most simple usage and would run vulture for all error messages.
+
+.. code-block:: shell
+
+   py.test --vulture --vulture-cfg-file=/test/vulture.ini
+
+This would use the vulture with the /test/vulture.ini config path
+
+Ignoring vulture messages in source code
+========================================
+
+- ignoring lines :
+
+.. code-block:: python
+
+    def test():
+        a = 2    # vulture: ignore
+
+- ignoring methods :
+
+.. code-block:: python
+
+    def test():  # vulture: ignore
+        pass
+
+- ignoring classes :
+
+.. code-block:: python
+
+    class Test:  # vulture: ignore
+        pass
+
+
+Config file
+============
+
+The config file (the path can be defined by the --vulture-cfg-file option) can look like this ::
+
+    [vulture]
+    # completely exclude files for vulture
+    exclude =
+        */test/* # We usualy exclude tests because tests can cover dead code
+
+    # those file are ignored by pytest, but still computed by vulture
+    ignore =
+        src/toto.py
+
+    # ignoring names in code
+    ignore-names =
+        delimiter
+
+    # ignoring decorators
+    ignore-decorators =
+      @application.errorhandler
+      @application.route
+      @celery_app.task
+      @application.app.errorhandler
+
+    # ignore vulture type of messages
+    ignore-types =
+        attribute
+        variable
+
+
+
+Acknowledgements
+================
+
+This code depends on
+`vulture <https://pypi.org/project/vulture>`__
+
+Development
+===========
+
+If you want to help development, there is overview documentation in DEVELOPMENT.rst.
+
+Issues
+===========
+
+If you encounter any problems, please file an issue along with a detailed description.
+
+Releases
+========
+
+2.0.2
+~~~~~~
+
+- Uses vulture with pytest (tested with python 3.7 3.8 and 3.9, with vulture==2.3 and pytest 7.x)
+
+1.0.0
+~~~~~~
+
+- stable Gatewatcher internal use only
+
+0.x
+~~~~~~
+
+- unstable Gatewatcher internal use only
