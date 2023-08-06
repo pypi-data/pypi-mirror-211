@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: thipster
+Version: 0.13.1
+Requires-Dist: cdktf (==0.16.1)
+Requires-Dist: PyYAML (==6.0)
+Requires-Dist: requests (==2.31.0)
+Requires-Dist: cdktf-cdktf-provider-google (==7.0.7)
+Requires-Dist: Jinja2 (==3.1.2)
+Requires-Dist: python-terraform (==0.10.1)
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-mock ; extra == 'dev'
+Requires-Dist: dagger.io ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: sphinx ; extra == 'doc'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-mock ; extra == 'test'
+
