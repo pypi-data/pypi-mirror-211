@@ -1,0 +1,8 @@
+pyyaml
+mixin-python
+tiktoken
+openai>=0.27.0
+
+[browser]
+playwright
+cf_clearance
