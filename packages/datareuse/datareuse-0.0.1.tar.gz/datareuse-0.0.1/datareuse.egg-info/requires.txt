@@ -1,0 +1,15 @@
+pandas>=1.0.2
+
+[all]
+pyyaml
+dictdiffer
+pytest
+pytest-cov
+pytest-html
+
+[test]
+pyyaml
+dictdiffer
+pytest
+pytest-cov
+pytest-html
