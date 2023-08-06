@@ -1,0 +1,9 @@
+[
+  "test_calculator.py::test_addition",
+  "test_calculator.py::test_division",
+  "test_calculator.py::test_invalid_input",
+  "test_calculator.py::test_multiplication",
+  "test_calculator.py::test_reset_memory",
+  "test_calculator.py::test_root",
+  "test_calculator.py::test_subtraction"
+]
