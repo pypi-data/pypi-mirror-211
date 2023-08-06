@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: lewd-dl
+Version: 0.1.0
+Summary: Download videos from lewd websites
+Home-page: https://github.com/b3yc0d3/lewd-dl
+Author: b3yc0d3
+Author-email: b3yc0d3@gmail.com
+License: UNKNOWN
+Project-URL: Issue tracker, https://github.com/b3yc0d3/lewd-dl/issues
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Natural Language :: English
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Other Audience
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Internet
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# lewd-dl
+Command-line tool to download videos from lewd websites
+
+## INSTALLATION
+To install lewd-dl via pip, run:<br>
+```
+python -m pip install lewd-dl
+```
+
+To install lewd-dl from source, run:<br>
+```
+git clone https://github.com/b3yc0d3/lewd-dl.git
+cd lewd-dl
+make install
+```
+
+## DEVELOPMENT
+If you want to contribute to this project, please send a pull-request to the `dev` branch.
+
+To setup lewd-dl for development, run:<br>
+```
+git clone https://github.com/b3yc0d3/lewd-dl.git
+cd lewd-dl
+```
+To build it run:<br>
+```
+make build
+```
+After the first build, you need to install it localy. This step only needs to be done once OR when you changed something in the `setup.py`. Simply run:<br>
+```
+make install
+```
+
+
+## WEBSITE SUPPORT
+| Websites          | Status       | Version |
+| :---------------- | :----------- | ------: |
+| xvideos.com       | Full Support |   0.1.0 |
+| xhamster.vom      | Full Support |   0.1.0 |
+| xnxx.vom          | Full Support |   0.1.0 |
+| pornhub.com       | Full Support |   0.1.0 |
+| ~~youporn.com~~   | Planed       |   ?.?.? |
+| ~~xhamster.desi~~ | Planed       |   ?.?.? |
+| ~~hanimetv.tv~~   | Planed       |   ?.?.? |
+
+## USAGE
+```
+usage: lewd-dl [-h] [--user-agent UA] [-r RES] [--rate-limit SEC] [-f FORMAT] [-o OUTPUT] [--cache-dir DIR] [-R]
+               [--dump-user-agent]
+               [url]
+
+positional arguments:
+  url                Video urls to download
+
+options:
+  -h, --help         show this help message and exit
+  --user-agent UA    Set user agent
+  -r RES             Select resolution to download (By deafult "best" is chossen)
+  --rate-limit SEC   Time to wait between download requests (default 0.5s)
+  -f FORMAT          Select format to download (default mp4)
+  -o OUTPUT          Output filename
+  --cache-dir DIR    Set custom cache folder
+  -R                 Prints available resolutions and exits
+  --dump-user-agent  Prints current user-agent then exits
+```
+

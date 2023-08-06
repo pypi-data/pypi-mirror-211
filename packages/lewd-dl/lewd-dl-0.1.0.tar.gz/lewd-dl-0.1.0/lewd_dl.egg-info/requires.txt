@@ -1,0 +1,5 @@
+m3u8==3.5.0
+rich==13.3.5
+requests==2.30.0
+validators==0.20.0
+beautifulsoup4==4.12.2
