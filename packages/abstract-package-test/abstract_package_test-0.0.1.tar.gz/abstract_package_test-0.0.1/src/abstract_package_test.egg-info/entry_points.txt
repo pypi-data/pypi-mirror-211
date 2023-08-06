@@ -1,0 +1,16 @@
+[console_scripts]
+abstract_ai_test = abstract_ai_test.main:main
+abstract_api_test = abstract_api_test.main:main
+abstract_audio_test = abstract_audio_test.main:main
+abstract_authority_replica_test = abstract_authority_replica_test.main:main
+abstract_authority_test = abstract_authority_test.main:main
+abstract_crypto_test = abstract_crypto_test.main:main
+abstract_gui_test = abstract_gui_test.main:main
+abstract_images_test = abstract_images_test.main:main
+abstract_modules_test = abstract_modules_test.main:main
+abstract_paths_test = abstract_paths_test.main:main
+abstract_security_test = abstract_security_test.main:main
+abstract_threading_test = abstract_threading_test.main:main
+abstract_utilities_test = abstract_utilities_test.main:main
+abstract_web_aggregation_test = abstract_web_aggregation_test.main:main
+abstract_workstation_test = abstract_workstation_test.main:main
