@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+sailboat_gym/__init__.py
+sailboat_gym/interfaces.py
+sailboat_gym/types.py
+sailboat_gym/utils.py
+sailboat_gym.egg-info/PKG-INFO
+sailboat_gym.egg-info/SOURCES.txt
+sailboat_gym.egg-info/dependency_links.txt
+sailboat_gym.egg-info/requires.txt
+sailboat_gym.egg-info/top_level.txt
