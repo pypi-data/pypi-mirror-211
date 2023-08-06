@@ -1,0 +1,14 @@
+.gitignore
+README.md
+demo.ipynb
+pyproject.toml
+requirement.txt
+src/pop_llm/__init__.py
+src/pop_llm/chat_agent.py
+src/pop_llm/pop.py
+src/pop_llm/prompts.py
+src/pop_llm.egg-info/PKG-INFO
+src/pop_llm.egg-info/SOURCES.txt
+src/pop_llm.egg-info/dependency_links.txt
+src/pop_llm.egg-info/requires.txt
+src/pop_llm.egg-info/top_level.txt
