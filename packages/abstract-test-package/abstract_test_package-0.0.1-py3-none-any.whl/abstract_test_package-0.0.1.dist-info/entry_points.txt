@@ -1,0 +1,2 @@
+[console_scripts]
+abstract_test_package = abstract_test_package.main:main
