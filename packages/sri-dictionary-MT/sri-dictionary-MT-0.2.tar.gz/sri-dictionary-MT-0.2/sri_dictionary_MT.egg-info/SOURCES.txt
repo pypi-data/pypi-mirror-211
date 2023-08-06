@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+sri_dictionary_MT.egg-info/PKG-INFO
+sri_dictionary_MT.egg-info/SOURCES.txt
+sri_dictionary_MT.egg-info/dependency_links.txt
+sri_dictionary_MT.egg-info/top_level.txt
