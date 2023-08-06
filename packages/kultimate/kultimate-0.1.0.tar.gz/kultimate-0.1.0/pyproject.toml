@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "kultimate"
+version = "0.1.0"
+description = ""
+authors = ["Felipe <104157442+justafewwords4@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+textual = {extras = ["dev"], version = "^0.27.0"}
+
+[tool.poetry.scripts]
+kultimate="kultimate.app:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
