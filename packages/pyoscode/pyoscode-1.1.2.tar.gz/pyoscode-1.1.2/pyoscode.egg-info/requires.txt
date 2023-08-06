@@ -1,0 +1,14 @@
+numpy
+
+[docs]
+sphinx
+sphinx-rtd-theme
+numpydoc
+
+[examples:]
+matplotlib
+scipy
+jupyter
+
+[testing]
+pytest
