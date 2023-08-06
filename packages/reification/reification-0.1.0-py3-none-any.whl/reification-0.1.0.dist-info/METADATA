@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: reification
+Version: 0.1.0
+Summary: Reified generics to get type parameters at runtime in Python
+Maintainer-email: curegit <contact@curegit.jp>
+License: DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+                            Version 2, December 2004
+        
+         Copyright (C) 2023 curegit
+        
+         Everyone is permitted to copy and distribute verbatim or modified
+         copies of this license document, and changing it is allowed as long
+         as the name is changed.
+        
+                    DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+           TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+        
+          0. You just DO WHAT THE FUCK YOU WANT TO.
+        
+Project-URL: homepage, https://github.com/curegit/reification
+Project-URL: repository, https://github.com/curegit/reification.git
+Keywords: typing,generics,parametric polymorphism,reification,type parameter,reflection
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: Freeware
+Classifier: Typing :: Typed
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Reification (Python package)
+
+## License
+
+[WTFPL](LICENSE)
