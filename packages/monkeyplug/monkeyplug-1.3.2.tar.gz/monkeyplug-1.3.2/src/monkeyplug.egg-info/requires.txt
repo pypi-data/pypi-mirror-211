@@ -1,0 +1,4 @@
+mmguero
+mutagen
+requests
+vosk
