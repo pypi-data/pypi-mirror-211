@@ -1,0 +1,4 @@
+config_yml>=0.3.1
+log_mgr>=0.0.2
+influxdb>=5.3.1
+numpy>=1.21.5
