@@ -1,0 +1,10 @@
+lmclient/__init__.py,sha256=hdt7D6V8O7WkdS3PKT1MCFPO1GxXiJqC105OPWWDbuQ,187
+lmclient/client.py,sha256=vG0reQdqtzXSaJaLjVv0SI4qXc8vep0VlKThDax6cWs,4504
+lmclient/completions/__init__.py,sha256=csNQdbjkgm03t8VdRi17GIZ9HkoT0uB8FaMc9jw7cp8,151
+lmclient/completions/azure.py,sha256=M3s2VwsVNebTPlIuHUGrJr7ep2C6VYNfNj3ZHYknODk,1320
+lmclient/completions/openai.py,sha256=a8VvW9Xd1dNz4T32sAXPeQG2PT9uHdRG9ja28CPUouw,1117
+lmclient/protocols.py,sha256=oOuHXVAez89KmJFmZvvFxT3NGw5ANfA8hwbZ7pQW74U,246
+lmclient_core-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+lmclient_core-0.1.0.dist-info/WHEEL,sha256=Jaj29f-PvHzZb5kImTcJS9QszpaO6CVzAqOolIz_WEw,90
+lmclient_core-0.1.0.dist-info/METADATA,sha256=ybjUzU-vP-KS2vcnWwmy3_FJAQ6VkXEhpjc2BX8MDh8,1136
+lmclient_core-0.1.0.dist-info/RECORD,,
