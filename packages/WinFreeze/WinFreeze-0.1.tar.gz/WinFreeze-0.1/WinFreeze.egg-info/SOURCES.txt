@@ -1,0 +1,7 @@
+setup.py
+WinFreeze/__init__.py
+WinFreeze.egg-info/PKG-INFO
+WinFreeze.egg-info/SOURCES.txt
+WinFreeze.egg-info/dependency_links.txt
+WinFreeze.egg-info/requires.txt
+WinFreeze.egg-info/top_level.txt
