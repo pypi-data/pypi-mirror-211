@@ -1,0 +1,9 @@
+pyreuse/__init__.py,sha256=XYy63kwJz93PzFA3JA-GLT3sZpvw9vGFL_i1Nuon74M,61
+pyreuse/reuse.py,sha256=GuatugfLJ6dCIiRUX_XW0Dv7ObJ59a4PVG4XqhpZ4NQ,1663
+tests/__init__.py,sha256=q92DjQiYNdf-Ht5uO_5qZ082qWAvJWae0iLvZK1y9fE,12
+tests/test_reuse.py,sha256=grZmnCJIyrxLa5OT9l0Xfh_f34l3Fz6hWMXUPouNu8U,1255
+datareuse-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+datareuse-0.0.1.dist-info/METADATA,sha256=9feGNwTOcY_rC_xdIXG1jASHX2FwYhvU-3Kk7NkeagA,998
+datareuse-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+datareuse-0.0.1.dist-info/top_level.txt,sha256=V8Njt4S8TL9RjIk5C-nZ7wjZPR5qByAW47_ORAE0fFI,14
+datareuse-0.0.1.dist-info/RECORD,,

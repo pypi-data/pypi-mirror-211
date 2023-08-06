@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: datareuse
+Version: 0.0.1
+Summary: Reuse computed datasets
+Author: Alexis Arnaudon
+Author-email: alexis.arnaudon@epfl.ch
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas (>=1.0.2)
+Provides-Extra: all
+Requires-Dist: pyyaml ; extra == 'all'
+Requires-Dist: dictdiffer ; extra == 'all'
+Requires-Dist: pytest ; extra == 'all'
+Requires-Dist: pytest-cov ; extra == 'all'
+Requires-Dist: pytest-html ; extra == 'all'
+Provides-Extra: test
+Requires-Dist: pyyaml ; extra == 'test'
+Requires-Dist: dictdiffer ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: pytest-html ; extra == 'test'
+
+# PyReuse
+Tool to reuse saved computations with various file formats.
+
+
+It can be used as follows:
+
+```
+    with Reuse("data.csv", index=False, index_col=1) as reuse:
+        df = reuse(computation, *args, **kwargs)
+```
+
+At the moment, the following file formats are available:
+- csv (pandas)
