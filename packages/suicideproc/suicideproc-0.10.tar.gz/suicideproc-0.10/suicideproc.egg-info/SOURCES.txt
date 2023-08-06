@@ -1,0 +1,13 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+suicideproc/README.MD
+suicideproc/__init__.py
+suicideproc/requirements.txt
+suicideproc/thirdparty.json
+suicideproc.egg-info/PKG-INFO
+suicideproc.egg-info/SOURCES.txt
+suicideproc.egg-info/dependency_links.txt
+suicideproc.egg-info/top_level.txt

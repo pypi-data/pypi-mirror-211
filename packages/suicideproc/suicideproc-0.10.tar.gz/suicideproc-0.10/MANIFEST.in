@@ -1,0 +1,3 @@
+include suicideproc/requirements.txt
+include suicideproc/thirdparty.json
+include suicideproc/README.MD
