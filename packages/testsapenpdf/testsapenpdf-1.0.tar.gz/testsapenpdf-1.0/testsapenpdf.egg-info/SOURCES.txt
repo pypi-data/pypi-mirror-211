@@ -1,0 +1,8 @@
+README.md
+setup.py
+testsapenpdf/__init__.py
+testsapenpdf/pdf2text.py
+testsapenpdf.egg-info/PKG-INFO
+testsapenpdf.egg-info/SOURCES.txt
+testsapenpdf.egg-info/dependency_links.txt
+testsapenpdf.egg-info/top_level.txt
