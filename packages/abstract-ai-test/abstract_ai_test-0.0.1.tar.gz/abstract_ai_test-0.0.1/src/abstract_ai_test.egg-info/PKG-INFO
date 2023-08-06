@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: abstract-ai-test
+Version: 0.0.1
+Summary: abstract_ai_test is a Python package.
+Home-page: https://github.com/AbstractEndeavors/abstract_package_test/abstract_ai_test
+Author: putkoff
+Author-email: partners@abstractendeavors.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# This is the README for module abstract_ai_test
