@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=61.0", "setuptools_scm[toml]>=6.3.1", "wheel", "Cython", "numpy"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "edsger"
+dynamic = ["version"]
+description = "Graph algorithms in Python."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT License"}
+authors = [
+    { name = "François Pacull", email = "francois.pacull@architecture-performance.fr" },
+]
+maintainers = [
+    { name = "François Pacull", email = "francois.pacull@architecture-performance.fr" },
+]
+keywords = ["python", "graph", "shortest path", "Dijkstra"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering"
+]
+dependencies = [
+  "setuptools",
+  "setuptools_scm",
+  "numpy",
+  "Cython",
+  "pandas",
+]
+
+[project.optional-dependencies]
+# Dev dependencies.
+dev = [
+    "black"
+]
+# Test dependencies.
+test = [
+    "pytest",
+    "scipy"
+]
+# Doc dependencies.
+doc = [
+    "sphinx"
+]
+
+[project.urls]
+Repository = "https://github.com/aetperf/Edsger"
+
+[tool.setuptools_scm]
+version_scheme = "no-guess-dev"
+write_to = "src/edsger/_version.py"
+write_to_template = '__version__ = "{version}"'
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests"
+]
