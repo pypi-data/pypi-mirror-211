@@ -1,0 +1,12 @@
+lrservice/__init__.py,sha256=0DS3usQ94ET1ImonCT7BQnN-82WeTCrd8oKDttSCBkU,221
+lrservice/benchmark.py,sha256=EKe2wo8NRSB_5ESG09TKMbbvcza0L6gfHu5VFNU0jy0,1363
+lrservice/main.py,sha256=8AjD2oog-Mk6L6iwqZGZBEQbUmb_o5yMwHir2epwed4,1986
+lrservice/simple_linear_regr.py,sha256=8ReMnLHHx25NZzPXRvR-bjhVtHOK6VJY8j00XKs-yJY,3426
+lrservice/simple_linear_regr_utils.py,sha256=VsSNa27db__FOuhJ481Sg7Bk3vsJ4CvkgMzEHfGBE3Y,1840
+lrservice/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lrservice/tests/test_simple_linear_regr.py,sha256=gXph6eHrde_T1EPy1-oB2f-cZHvOeTKPkDT0ajhAXOU,585
+lrservice-0.0.5.dist-info/LICENSE,sha256=J7FOJIKjzgNu3TpmBnOKHhUucgEREHCYzDETx4qBjCA,1054
+lrservice-0.0.5.dist-info/METADATA,sha256=Rw31PbEISxlhzpAE5m6yXjgXsaI8Hsb8Hl3ZmyV9nGk,758
+lrservice-0.0.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+lrservice-0.0.5.dist-info/top_level.txt,sha256=RaVklVvVddjpVuY9QdsoZC6MT0A9sH_zNugiRXW-_1k,10
+lrservice-0.0.5.dist-info/RECORD,,
