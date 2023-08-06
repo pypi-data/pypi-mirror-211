@@ -1,0 +1,15 @@
+ftsf/__init__.py,sha256=Nl3kTKwUHCf0Xs79fXx1S9QzkD8xuaYDE5prgwDnCtI,568
+ftsf/backtest.py,sha256=AJI_BKgceSbVfnnyC_4W6xGpBJ9vPOrzOSKK7kk_RC8,3434
+ftsf/evaluation.py,sha256=ZmJxLeURh4zIHg_CEF2gpFWcLMK7mTS4RbHv8NsNwww,7183
+ftsf/model.py,sha256=ZF7vyGOLGLkZY0vKel8ee7wZeGvhRaTWQAPx7gOcCf4,8442
+ftsf/preprocessing.py,sha256=ezHIQo1ov543JJFXRQ6nylUOSnnM0GpXr8QEGbkQBtI,4490
+ftsf/scaler.py,sha256=tZObGIFv5cwfP2zdvur6aG1KQZaY1JXl4CInStYs3d8,2076
+ftsf/utils.py,sha256=_jdr42K1iI6DI5oXqw30Nm3USIJ13HUbeRbRuaeY6oc,6055
+ftsf/tests/test_evaluation.py,sha256=SnTMCWrGMDFhSCy8B0eJM-eNOZwYPz9wJlMTvcdlmlI,4927
+ftsf/tests/test_preprocessing.py,sha256=M-zoHcZD8C8PsUV94fyybgNrJhZ9kuSFGcwbnms51Ds,617
+ftsf/tests/test_scaler.py,sha256=UAwXgbo65B8AtCASB6AUF2P2SEBPk01I-DvuhdI95yU,423
+ftsf-0.0.2.2.dist-info/LICENSE,sha256=Oz-KQF01VY3zYgDHo97silGtJiM4VzgmhyXi1pflo6o,1080
+ftsf-0.0.2.2.dist-info/METADATA,sha256=cfCDKg7OigVk-HqSarAxcJTeuzpx0cuDsT_4KEvGK-A,1328
+ftsf-0.0.2.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ftsf-0.0.2.2.dist-info/top_level.txt,sha256=JCc85wPNaSFw8HtnCHDhwRvg9hxASG55qKZHfphNFlU,5
+ftsf-0.0.2.2.dist-info/RECORD,,
