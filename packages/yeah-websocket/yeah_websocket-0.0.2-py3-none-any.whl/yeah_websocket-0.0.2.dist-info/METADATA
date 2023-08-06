@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: yeah-websocket
+Version: 0.0.2
+Summary: Finnally the easiest a functionally websocket library
+Author: ElayPY
+Requires-Python: >=3.11
+
