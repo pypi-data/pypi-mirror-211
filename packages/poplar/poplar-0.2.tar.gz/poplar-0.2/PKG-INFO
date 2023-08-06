@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: poplar
+Version: 0.2
+Summary: A python package for modelling selection effects with machine learning
+Author-email: Christian Chapman-Bird <c.chapman-bird.1@research.gla.ac.uk>
+License: GPL-3.0-or-later
+Project-URL: Bug Tracker, https://github.com/CChapmanbird/poplar/issues
+Project-URL: Source Code, https://github.com/CChapmanbird/poplar
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![Documentation Status](https://readthedocs.org/projects/poplar/badge/?version=latest)](https://poplar.readthedocs.io/en/latest/)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![DOI](https://zenodo.org/badge/586973569.svg)](https://zenodo.org/badge/latestdoi/586973569)
+# poplar
+Augmenting selection bias modelling with machine learning for big speedups.
+
+The methodology behind this package is introduced in [Chapman-Bird et al. (2023)](https://doi.org/10.1093/mnras/stad1397) for the specific case of modelling selection biases in extreme mass ratio inspiral (EMRI) populations. If you use this package in your work, please cite this paper **and** the [code package doi](https://doi.org/10.5281/zenodo.7573034).
+
+Authors:
+- **Christian Chapman-Bird**
+
+Contributors:
+- Maybe you!
