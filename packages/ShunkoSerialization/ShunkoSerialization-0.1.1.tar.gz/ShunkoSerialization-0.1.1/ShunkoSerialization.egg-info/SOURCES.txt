@@ -1,0 +1,14 @@
+README.md
+setup.py
+Serialization/__init__.py
+Serialization/base_serializer.py
+Serialization/dict_serializer.py
+Serialization/json_serializer.py
+Serialization/serializers_factory.py
+Serialization/type_constants.py
+Serialization/xml_serializer.py
+ShunkoSerialization.egg-info/PKG-INFO
+ShunkoSerialization.egg-info/SOURCES.txt
+ShunkoSerialization.egg-info/dependency_links.txt
+ShunkoSerialization.egg-info/requires.txt
+ShunkoSerialization.egg-info/top_level.txt
