@@ -1,0 +1,2 @@
+[pytest11]
+console-scripts = pytest_console_scripts
