@@ -1,0 +1,12 @@
+pycocos/__init__.py,sha256=gyt_6gPCMI0tmS9qXEyIqXew3Wvt-ROCmSMR2-G6edo,47
+pycocos/main.py,sha256=72XSNeoqAeONXVOB1UA0a3VDeHsXsQrndt7oCs5BdIo,46762
+pycocos/components/__init__.py,sha256=mtlKodTwxYyyx3M0UOuT2ehk59yQswckyUH_Ni1NmIE,252
+pycocos/components/client.py,sha256=ektiT73PsdvWAzAZ7SU5sijwN2bvzqcdb2ssZCThxUI,15371
+pycocos/components/enums.py,sha256=cgaEMi8J-umEnwOpVmcVCAP7byRTmMxAthqFxvVtH-o,1917
+pycocos/components/exceptions.py,sha256=DfIyKR2wU-5D8_9QooJ8zANocxad2jPoCROlexk4AMk,297
+pycocos/components/urls.py,sha256=sZ6VBjbgCZzItNeq0fI3E-SxD02T70EHTv_WIsIX-QU,1960
+pyCocos-0.2.1.dist-info/LICENSE,sha256=gULDVf29R14kRNZBnHHB62YCOFpAgxfNUq1cowLu3KU,1070
+pyCocos-0.2.1.dist-info/METADATA,sha256=J8lexlXjFxfjj8AUuSIThrB2D92iF8CUtUOQKWyttZc,6929
+pyCocos-0.2.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pyCocos-0.2.1.dist-info/top_level.txt,sha256=2LT1bw6xzne491xeTYJCnLfD-R8_II-aAnnHlwDdmpE,8
+pyCocos-0.2.1.dist-info/RECORD,,
