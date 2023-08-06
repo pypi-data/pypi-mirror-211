@@ -1,0 +1,12 @@
+quant23rg/__init__.py,sha256=4hEqvbKSWyiAvAYcrd6Hiz7jGDWCRxz5fhL7qAJqwig,368
+quant23rg/implied_volatility.py,sha256=5mecoi52U8kExu02z5MF56AMMokBjaQwYWwfWHB_iI8,7661
+quant23rg/pricingBS.py,sha256=mHTATEwNj7b5EFQjxKDa9e_fEeGkLGI1DaP0ukPY3Cc,921
+quant23rg/pricingCallEuropBS.py,sha256=TdPtLAaKws_WEJHNk9enH46TKvbCki9QupHJB91g5wM,7748
+quant23rg/pricingGBM.py,sha256=iRAqitBC9_XlQ6xHRf9YDysNkPi1woBchMncmLDB-mo,12438
+quant23rg/pricingPutEuropBS.py,sha256=D_0lNbCA3aUb-TQ3Vf7ZjBOcUYC7MuaH_Rdy4JeuyPM,5243
+quant23rg/riskManagement.py,sha256=ogYa8xp6BFWM5PtbNMUqHEIt32IQ-eGFuUWG3VCmlQE,21919
+quant23rg-0.0.5.dist-info/LICENSE,sha256=MXqk7iqLxMkTrCrB_Qa4SYb-fyQLJUOVh5xyqEpRico,1064
+quant23rg-0.0.5.dist-info/METADATA,sha256=kGKaPxc2QnnIHYeqDCiDI4rRKf89kOKjkLMK4Fot-fc,7132
+quant23rg-0.0.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+quant23rg-0.0.5.dist-info/top_level.txt,sha256=mdWbt08z4eD14m9yVETwmduuJruIC3XevuogiS6_vYE,10
+quant23rg-0.0.5.dist-info/RECORD,,
