@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: libcove2
+Version: 0.1.0
+Summary: A data review library
+Home-page: https://github.com/OpenDataServices/lib-cove-2
+Author: Open Data Services
+Author-email: code@opendataservices.coop
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Requires-Dist: requests
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+
+A data review library
+
+
