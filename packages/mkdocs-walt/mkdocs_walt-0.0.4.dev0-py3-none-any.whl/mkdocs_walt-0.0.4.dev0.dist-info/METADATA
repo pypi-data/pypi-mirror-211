@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: mkdocs-walt
+Version: 0.0.4.dev0
+Summary: A minimal theme for MkDocs
+Home-page: https://github.com/codesue/walt
+Author: Suzen Fylke
+Author-email: codesue@users.noreply.github.com
+License: GPLv3
+Description-Content-Type: text/markdown
+Requires-Dist: mkdocs
+
+
+# mkdocs-walt: a minimal documentation theme for MkDocs
+
+Walt is a minimal documentation theme that is best suited for single page websites.
+
+## Installation
+
+```sh
+pip install mkdocs-walt
+```
+
+## Usage
+
+Create a new MkDocs project with the `mkdocs` CLI and add the following your
+project's `mkdocs.yml`:
+
+```yaml
+theme:
+  name: walt
+```
+
+See the [full usage example](https://github.com/codesue/walt/examples/mkdocs).
+
+## Acknowledgements
+
+Walt uses [writ.css](https://github.com/programble/writ/tree/master) for styles
+and [Catppuccin](https://github.com/catppuccin/catppuccin) for dark mode
+color palettes.

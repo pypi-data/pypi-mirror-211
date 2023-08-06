@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{%- block header %}
+<header>
+  <h1>{{ config.site_name }}</h1>
+  {% if config.site_description %}<p>{{ config.site_description }}</p>{% endif %}
+  <nav>
+    <h2 class="visually-hidden">Top level navigation menu</h2>
+    <ul>
+      {%- for nav_item in nav %}
+      <li><a href="{{ nav_item.url|url }}">{{ nav_item.title }}</a></li>
+      {%- endfor %}
+    </ul>
+  </nav>
+</header>
+{%- endblock %}
