@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+src/regolith_json_template/__init__.py
+src/regolith_json_template.egg-info/PKG-INFO
+src/regolith_json_template.egg-info/SOURCES.txt
+src/regolith_json_template.egg-info/dependency_links.txt
+src/regolith_json_template.egg-info/top_level.txt
