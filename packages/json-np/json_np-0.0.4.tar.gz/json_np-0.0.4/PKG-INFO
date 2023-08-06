@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: json_np
+Version: 0.0.4
+Summary: Json serialization extended to dates, numpy arrays, and more
+Home-page: https://github.com/lucadealfaro/json_np
+Author: Luca de Alfaro and Massimo Di Pierro
+Author-email: Luca de Alfaro <luca@dealfaro.com>, Massimo Di Pierro <massimo.dipierro@gmail.com>
+Maintainer: Luca de Alfaro
+Maintainer-email: luca@dealfaro.com
+License: MIT License
+        
+        Copyright (c) 2017 Camio and 2023 Luca de Alfaro
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/lucadealfaro/json_np
+Project-URL: Bug Tracker, https://github.com/lucadealfaro/json_np/issues
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# json_np
+
+Json for numpy, or if you prefer, json no problems! 
+
+**Authors:** Luca de Alfaro (luca@dealfaro.com) and Massimo Di Pierro 
+(mdipierro@gmail.com)
+
+This is a version of Json that can handle also: 
+* Dates
+* Sets
+* numpy array
+* bytes
+
+There are two ways to use it. 
+
+## Basic Usage
+
+```
+import json_np
+import numpy as np
+
+a = np.array([3, 4, 5])
+s = json_np.dumps(a)
+aa = json_np.loads(s)
+
+```
+
+Here, we have applied `json_np.dumps` to a numpy array, but we could equally 
+well have used a datetime, a dictionary, a list, etc (nesting of such types is 
+allowed).
+
+## Class-Based Usage
+
+In class-based usage, you can declare a class to be a subclass of `json_np.
+Serializable`.  Then, calling the `to_json` method of an object causes the 
+complete object to be serialized, including recursively all object 
+attributes, except for the attributes that start with underscore (`_`). 
+
+```
+from json_np import Serializable
+
+class C(Serializable):
+
+    def __init__(self, a):
+        super().__init__()
+        self.a = a # Serialized
+        self._b = 32 # Not serialized
+
+c = C("hello")
+s = c.to_json()
+cc = C.from_json(s)
+```
+
+Obviously, you should ensure that C contains compatible fields when it is 
+deserialized, in case the code changed in the meantime. 
+
+## History
+
+This package was originally developed by Luca and Massimo at Camio, for 
+Python2.  The work was open sourced.  The package was later ported to Python 3. 
+The authors thank Camio for allowing the open-sourcing of the code. 
