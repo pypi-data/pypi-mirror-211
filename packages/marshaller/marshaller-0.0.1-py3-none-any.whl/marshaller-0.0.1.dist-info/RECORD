@@ -1,0 +1,8 @@
+marshaller/Makefile,sha256=alrUTHuO33Qbh5Gt_-ENrJ_VICoaQe4qDnXaZVZ4bKU,129
+marshaller/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+marshaller/cli.py,sha256=LzT7L3ygQPivO86hNo1ppTwERYvRZetPOqLkeWH31AA,167
+marshaller/tests/test_marshaller.py,sha256=qlZbn6l1EQHu7n7IpxdiYJjUZRO0GiWTwxufFvS9C-8,157
+marshaller-0.0.1.dist-info/METADATA,sha256=H0Y7mI0gi6xncHo6RLxig64oUKQvtwVYOSqVmmxPAG4,851
+marshaller-0.0.1.dist-info/WHEEL,sha256=y1bSCq4r5i4nMmpXeUJMqs3ipKvkZObrIXSvJHm1qCI,87
+marshaller-0.0.1.dist-info/entry_points.txt,sha256=m1Q4gIn4BK6ETepXCq1TtYVBNaw7CuLFGrl19GZ-A2U,48
+marshaller-0.0.1.dist-info/RECORD,,
