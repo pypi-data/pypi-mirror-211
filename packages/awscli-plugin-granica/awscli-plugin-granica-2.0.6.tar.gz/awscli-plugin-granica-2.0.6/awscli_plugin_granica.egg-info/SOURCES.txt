@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+awscli-plugin-granica/__init__.py
+awscli-plugin-granica/bolt_cli_hooks.py
+awscli-plugin-granica/bolt_router.py
+awscli_plugin_granica.egg-info/PKG-INFO
+awscli_plugin_granica.egg-info/SOURCES.txt
+awscli_plugin_granica.egg-info/dependency_links.txt
+awscli_plugin_granica.egg-info/requires.txt
+awscli_plugin_granica.egg-info/top_level.txt
