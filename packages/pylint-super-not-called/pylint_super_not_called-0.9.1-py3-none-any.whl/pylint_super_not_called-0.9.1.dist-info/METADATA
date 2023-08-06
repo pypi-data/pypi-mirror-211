@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: pylint_super_not_called
+Version: 0.9.1
+Summary: A Pylint plugin to ensure overloaded methods are calling the parent method with super
+Project-URL: Homepage, https://github.com/prosehair/pylint_super_not_called_plugin
+Project-URL: Bug Tracker, https://github.com/prosehair/pylint_super_not_called_plugin/issues
+Author-email: Nicolas Mussat <nicolas@prose.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Pylint super-not-called plugin
+
+A Pylint plugin that enforces methods to call the parent method with super.
+
+## Installation
+
+```bash
+# Install the package into your virtual environment:
+pip install pylint_super_not_called
+
+# Launch Pylint with the load-plugin option
+pylint --load-plugin pylint_super_not_called .
+```
+
+Use pylintrc to automatically load the plugin if needed
+
+
+## Configuration
+
+- `super-enforced-methods`: a list of methods to check (default: 'setUp')
