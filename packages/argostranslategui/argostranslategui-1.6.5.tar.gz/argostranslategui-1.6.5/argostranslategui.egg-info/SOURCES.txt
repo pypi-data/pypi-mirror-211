@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+argostranslategui/__init__.py
+argostranslategui/gui.py
+argostranslategui.egg-info/PKG-INFO
+argostranslategui.egg-info/SOURCES.txt
+argostranslategui.egg-info/dependency_links.txt
+argostranslategui.egg-info/requires.txt
+argostranslategui.egg-info/top_level.txt
+bin/argos-translate-gui
