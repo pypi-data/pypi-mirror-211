@@ -1,0 +1,4 @@
+supy==2023.5.26.dev0
+numba
+jaydebeapi==1.2.3
+netCDF4
