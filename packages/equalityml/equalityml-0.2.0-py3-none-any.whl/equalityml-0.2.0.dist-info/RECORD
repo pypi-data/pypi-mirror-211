@@ -1,0 +1,9 @@
+equalityml/__init__.py,sha256=H7-0yUz5Zt592DAdvIQoFxhM5Dj2rn5lsTQR-HxQRFc,292
+equalityml/check_equalityml.py,sha256=-XG2Eh64FGr4YWDPOuNhz2PEl3BfnMaqAN8WReD4fxA,7866
+equalityml/fair.py,sha256=Q_irmLDtDyfA8gWAg7rqJdXDmZZ6WWUo7h0NcoX63Ag,40336
+equalityml/stats.py,sha256=k1Hkj-MZY1uqBNUbgu9Llw1UKnzdxFSCcYlnX48EFTI,19133
+equalityml/threshold.py,sha256=wd2wb20iRxAfrB8Pm140p3PklZtBIThMcFj8kPpoLZE,28255
+equalityml-0.2.0.dist-info/LICENSE,sha256=MHEJl0ikHAfojraUWhuSC_hGxa3pY4HkVlxBScZ1kXo,11360
+equalityml-0.2.0.dist-info/METADATA,sha256=FcIvmc0z5GsIZS-Pf6ClPhwHVYuz1Fr4Bpo3bxSsavI,17765
+equalityml-0.2.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+equalityml-0.2.0.dist-info/RECORD,,
