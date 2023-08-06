@@ -1,0 +1,12 @@
+inputty/__init__.py,sha256=TUXWgSUzouPURKHBsDKg6jii269NBfoc9-ok3K4oR58,124
+inputty/_version.py,sha256=3KXfAcA5rzzQXMtfwpHphgbJNZdA0XWaW96kdWVSZJw,22
+inputty/xxx.py,sha256=2VrNMtd80iM6MIjyR-O_-fPh7WFHFXTcK8q08C--lgE,339
+inputty/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+inputty/src/input.py,sha256=klIEvkqXP1RfTrYoxsPY4MI5LWrmNE1zvUCwlJpp-us,7787
+inputty/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+inputty/tests/test_input.py,sha256=9fc_Nl4ji_QKSqzkzr6AGz8JZbmfFssIU70DxSgppHk,3230
+inputty-1.0.1.dist-info/LICENSE.txt,sha256=4h0e1iLfuruOGdqDfs8-aua1e_Ma97UnS8ZfwAau8aE,33889
+inputty-1.0.1.dist-info/METADATA,sha256=otPHUuikxYsmXaHia9LTGa9Z9Z8staGcy5y11NlU7VM,977
+inputty-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+inputty-1.0.1.dist-info/top_level.txt,sha256=ZLIWGJ0FhcGX2hAgfnQiByAfN7UnsbTd4BAlgd2yFgI,8
+inputty-1.0.1.dist-info/RECORD,,
