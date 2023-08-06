@@ -1,0 +1,11 @@
+bin/__init__.py,sha256=wcYfZhHS4PVf68RBMvv8C_uJtf_v74BTn27h0ghqKjM,22
+bin/pycyphorm.py,sha256=K6cYfK3nNP_A03Uuil1JZ1AFHJE3jEAA4PCpUr52uzM,1390
+bin/pyorm.py,sha256=hJwx_Ma09pBkqlaazSJBNhFbnxIEgvX140_XwpPbCoY,1326
+lib/__init__.py,sha256=2Br4Dx6sMIJLEHVL3P02LUoCcUnZbgZMlgGLxuglzaU,53
+lib/adapter.py,sha256=qLeiraGsm9OSzhie6j6XbGRmCknylBU5J7EsOtBLatU,1836
+lib/orm.py,sha256=9KOWv5yQngoN5M3ky_W9KEkMOfGCUXVF6Vl1Xt-9GlA,5212
+PyCyphORM-0.1.1.dist-info/METADATA,sha256=EIF96o7Avv9fUPISNCH6a5wYzH6dG23wvNoxcJPrchU,1031
+PyCyphORM-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+PyCyphORM-0.1.1.dist-info/entry_points.txt,sha256=YsYK1WAPTSZxoMPsvjv8JXUlFkrYakbpDTlD5qZ2adA,48
+PyCyphORM-0.1.1.dist-info/top_level.txt,sha256=y7arQyijXIirAcGHCSod0aZ4kuI0WBbNhq-98lwEtKo,8
+PyCyphORM-0.1.1.dist-info/RECORD,,

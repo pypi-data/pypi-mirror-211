@@ -1,0 +1,2 @@
+[console_scripts]
+pycyphorm = bin.pycyohorm:cli
