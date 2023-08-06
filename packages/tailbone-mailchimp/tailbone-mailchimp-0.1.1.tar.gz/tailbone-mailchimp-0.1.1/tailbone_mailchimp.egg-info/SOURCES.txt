@@ -1,0 +1,17 @@
+CHANGELOG.md
+COPYING.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+tailbone_mailchimp/__init__.py
+tailbone_mailchimp/_version.py
+tailbone_mailchimp.egg-info/PKG-INFO
+tailbone_mailchimp.egg-info/SOURCES.txt
+tailbone_mailchimp.egg-info/dependency_links.txt
+tailbone_mailchimp.egg-info/not-zip-safe
+tailbone_mailchimp.egg-info/requires.txt
+tailbone_mailchimp.egg-info/top_level.txt
+tailbone_mailchimp/views/__init__.py
+tailbone_mailchimp/views/mailchimp/__init__.py
+tailbone_mailchimp/views/mailchimp/lists.py
