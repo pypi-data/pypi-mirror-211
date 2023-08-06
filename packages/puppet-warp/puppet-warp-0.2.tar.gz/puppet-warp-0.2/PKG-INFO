@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: puppet-warp
+Version: 0.2
+Summary: Puppet Warp
+Home-page: https://github.com/mikecokina/puppet-warp
+Author: Michal Cokina
+Author-email: mikecokina@gmail.com
+License: GPLv3
+Description: For more information visit https://github.com/mikecokina/puppet-warp/blob/master/README.rst
+Keywords: image
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: dev
+Provides-Extra: test
