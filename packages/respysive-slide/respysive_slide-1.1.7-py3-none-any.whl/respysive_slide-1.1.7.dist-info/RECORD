@@ -1,0 +1,10 @@
+respysive/__init__.py,sha256=9zz-zYJN02CLEczk0m6DEZQ9hrSfyQjL0UjuGJTiAqk,209
+respysive/container.py,sha256=LbGMCibMXeA3FAkCrhhJ6qVWC9yJdzuw6G7zemi2SBw,9245
+respysive/content.py,sha256=jWR03vHvmlmaMd2Q3h-UFkrf6tr5LRYaC-vK2XZvUwM,8820
+respysive/presentation.py,sha256=kw-Z5gL1LJGt9pZWS6vtELvooReq7b6kTPVwI7ZpGrs,8067
+respysive/utils.py,sha256=IIN6xGpNZSsSq5U-8AlcsrPB3u4tz0G1-I5Lb7HLyRo,871
+respysive/version.py,sha256=0HDZtD-8GaVPqIpUy6r98wEX5qCR_aEaNY9bkuTL1Mw,21
+respysive_slide-1.1.7.dist-info/LICENSE,sha256=qUwjW5MythQW14BNTLd4EPXV_ukMEQLAEmkB9sGcldg,1072
+respysive_slide-1.1.7.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+respysive_slide-1.1.7.dist-info/METADATA,sha256=mv4sxi6sr6d4mHAAkjKc5Ftbcva8ot3nlkGin8BLlbE,11218
+respysive_slide-1.1.7.dist-info/RECORD,,
