@@ -1,0 +1,10 @@
+sosecrets_core/py.typed,sha256=E84IaZyFwfLqvXjOVW4LS6WH7QOaKEFpNh9TFyzHNQc,6
+sosecrets_core/secrets.c,sha256=P7r3YyXv28vZiIEBQkZLTHJrSwoIAB7e5r5TdhVSRzI,244666
+sosecrets_core/secrets.cp310-win_amd64.pyd,sha256=0-yeiYU8j-_Mpk3BCthMeKMfW1utpSZZz8WFSmUwJZs,40448
+sosecrets_core/secrets.pyi,sha256=xKi1FH2re1OL7SxLgoRd01blYE54M8bwxgKXEUAKSVM,3174
+sosecrets_core/secrets.pyx,sha256=Ix2l5UFzCc87T7W3nJCoyrJba19eiMou2QoAwk_RGK8,1906
+sosecrets_core-1.0.20.dist-info/LICENSE,sha256=LiZ6Wwtr4C6Id5WcI0S7R_c8r8F_LL-YdewAnqEg29s,1061
+sosecrets_core-1.0.20.dist-info/METADATA,sha256=xURjPtQu6BIP0BXDUSjWq9VI7rcR8FE-cmjkRlQ34Xc,4011
+sosecrets_core-1.0.20.dist-info/WHEEL,sha256=jrOhEbqKwvzRFSJcbYXlJCyVkgVdHg4_7__YHrdTUfw,102
+sosecrets_core-1.0.20.dist-info/top_level.txt,sha256=NmTyB5KhIXnO8k06HqQdru1N1Ln_AZh_How6f59cHBE,15
+sosecrets_core-1.0.20.dist-info/RECORD,,
