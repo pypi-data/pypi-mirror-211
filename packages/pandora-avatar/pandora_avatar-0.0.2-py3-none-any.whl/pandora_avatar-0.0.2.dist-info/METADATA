@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: pandora-avatar
+Version: 0.0.2
+Summary: Avatar is a scalable multi-platform Bluetooth testing tool capable of running
+Author-email: Pandora <pandora-core@google.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Dist: bt-test-interfaces
+Requires-Dist: bumble==0.0.153
+Requires-Dist: grpcio>=1.51.1
+Requires-Dist: mobly>=1.12
+Requires-Dist: bitstruct>=8.12
+Requires-Dist: grpcio-tools>=1.51.1 ; extra == "dev"
+Requires-Dist: black==22.10.0 ; extra == "dev"
+Requires-Dist: pyright==1.1.298 ; extra == "dev"
+Requires-Dist: mypy==1.0 ; extra == "dev"
+Requires-Dist: isort==5.12.0 ; extra == "dev"
+Requires-Dist: types-psutil>=5.9.5.6 ; extra == "dev"
+Requires-Dist: types-setuptools>=65.7.0.3 ; extra == "dev"
+Requires-Dist: types-protobuf>=4.21.0.3 ; extra == "dev"
+Project-URL: Source, https://github.com/google/avatar
+Provides-Extra: dev
+
+# Avatar
+
+Avatar aims to provide a scalable multi-platform Bluetooth testing tool capable
+of running any Bluetooth test cases virtually and physically. It aims to
+complete PTS-bot in the Pandora testing suite.
+
+## Install
+
+```bash
+python -m venv venv
+source venv/bin/activate.fish # or any other shell
+pip install [-e] .
+```
+
+## Usage
+
+```bash
+python cases/host_test.py -c cases/config.yml --verbose
+```
+
+## Development
+
+1. Make sure to have a `root-canal` instance running somewhere.
+```bash
+root-canal
+```
+
+1. Run the example using Bumble vs Bumble config file. The default `6402` HCI port of `root-canal` may be changed in this config file.
+```
+python cases/host_test.py -c cases/config.yml --verbose
+```
+
+3. Lint with `pyright` and `mypy`
+```
+pyright
+mypy
+```
+
+3. Format & imports style
+```
+black avatar/ cases/
+isort avatar/ cases/
+```
+
