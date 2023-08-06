@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "init-thumbnail"
+version = "0.1.1"
+description = "Package for creating youtube thumbnail"
+authors = ["vaibhavblayer <vaibhavblayer@gmail.com>"]
+readme = "README.md"
+packages = [{include = "init_thumbnail"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.scripts]
+init-thumbnail = "init_problem.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
