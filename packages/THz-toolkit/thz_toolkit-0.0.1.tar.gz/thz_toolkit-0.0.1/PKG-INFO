@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: THz-toolkit
+Version: 0.0.1
+Project-URL: Documentation, https://github.com/unknown/thz-toolkit#readme
+Project-URL: Issues, https://github.com/unknown/thz-toolkit/issues
+Project-URL: Source, https://github.com/unknown/thz-toolkit
+Author-email: jsdodge <jsdodge@sfu.ca>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# THz Toolkit
+
+[![PyPI - Version](https://img.shields.io/pypi/v/thz-toolkit.svg)](https://pypi.org/project/thz-toolkit)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/thz-toolkit.svg)](https://pypi.org/project/thz-toolkit)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install thz-toolkit
+```
+
+## License
+
+`thz-toolkit` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
