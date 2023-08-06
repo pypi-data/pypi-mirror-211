@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pymanga/__init__.py
+pymanga/pymanga.py
+pymanga/test.py
+pymangaj.egg-info/PKG-INFO
+pymangaj.egg-info/SOURCES.txt
+pymangaj.egg-info/dependency_links.txt
+pymangaj.egg-info/top_level.txt
