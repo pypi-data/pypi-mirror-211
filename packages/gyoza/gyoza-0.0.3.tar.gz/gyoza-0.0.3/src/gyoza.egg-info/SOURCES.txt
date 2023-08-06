@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/gyoza/__init__.py
+src/gyoza/example.py
+src/gyoza.egg-info/PKG-INFO
+src/gyoza.egg-info/SOURCES.txt
+src/gyoza.egg-info/dependency_links.txt
+src/gyoza.egg-info/requires.txt
+src/gyoza.egg-info/top_level.txt
+src/gyoza/sub_package_A/__init__.py
+src/gyoza/sub_package_A/module_A.py
+src/gyoza/sub_package_B/__init__.py
+src/gyoza/sub_package_B/module_B.py
