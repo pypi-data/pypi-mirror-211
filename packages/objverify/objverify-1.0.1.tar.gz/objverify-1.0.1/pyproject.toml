@@ -1,0 +1,22 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "objverify"
+authors = [{name = "Carl Furtado", email = "carlzfurtado@gmail.com"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = [
+	"License :: OSI Approved :: MIT License",
+	"Programming Language :: Python",
+	"Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Typing :: Typed"
+]
+keywords = ["object", "validation", "complex", "schema", "typechecking"]
+dynamic = ["version", "description"]
+
+[project.urls]
+Home = "https://github.com/User0332/objverify"
