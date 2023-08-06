@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: emailcrawl1
+Version: 0.0.3
+Summary: Scrap emails from website
+Project-URL: Homepage, https://github.com/Raghavgarg12/Python-Projects/tree/main/Web%20Crawling
+Author-email: Raghav <raghavgarg121212@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+This is a simple package.
+Use the function email(link,numb) to extract emails where link is the sitemap.xml of a website and numb is the number of emails you want to scrap.
