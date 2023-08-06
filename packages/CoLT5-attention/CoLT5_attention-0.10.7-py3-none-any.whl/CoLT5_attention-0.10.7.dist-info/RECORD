@@ -1,0 +1,12 @@
+colt5_attention/__init__.py,sha256=uTYA83TJQn0S3wuDew7jvykwC61rjpl3C9JkqWYsVEk,450
+colt5_attention/attend.py,sha256=AfdSz_rHhn9ipZy4vWHVRnyGPuPCPzBo_dp6X7iwoGk,4181
+colt5_attention/coor_descent.py,sha256=qDAzkfaymPHRjJ754dB7Lsc0sH2vjhFOcrnbVzrQH9g,1637
+colt5_attention/topk.py,sha256=pEOj26tgcozEZe2J955UfAs18ZNqmYwxAovn9KqY-l4,1371
+colt5_attention/transformer_block.py,sha256=jBTATtVl4FvDkJaUflaXoETQRBSv1JQrrDCysc7T-ww,36937
+colt5_attention/triton_coor_descent.py,sha256=gF2c5_FvHEaAHlwujxgqZe3AS2tAOu5wmyIwI5tDf0Y,11844
+colt5_attention/vit.py,sha256=QDAtXTBxpibkShcNkCBH-m9MTTMr5snMcdCY62Cd4-8,5781
+CoLT5_attention-0.10.7.dist-info/LICENSE,sha256=JCo3d2HvOFPGYvaXfnYX4-qjRyQvVElop5ZRITXMg-U,1066
+CoLT5_attention-0.10.7.dist-info/METADATA,sha256=vNIJcF1lm-Zwm_yFxAkmgU5iYOQrCAT0JCMQh0CqnxM,743
+CoLT5_attention-0.10.7.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+CoLT5_attention-0.10.7.dist-info/top_level.txt,sha256=D37SxCdHoBgbdBUNwUG0XEpzHZQJTUE6SahYVVXRk3I,16
+CoLT5_attention-0.10.7.dist-info/RECORD,,
