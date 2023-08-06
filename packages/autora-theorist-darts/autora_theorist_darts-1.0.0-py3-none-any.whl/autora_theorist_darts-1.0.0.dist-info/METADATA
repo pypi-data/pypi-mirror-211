@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: autora-theorist-darts
+Version: 1.0.0
+Summary: Differentiable Architecture Search theorist for AutoRA
+Author-email: Sebastian Musslick <sebastian_musslick@brown.edu>, John Gerrard Holland <john_holland1@brown.edu>
+License: MIT License
+Project-URL: homepage, http://www.empiricalresearch.ai
+Project-URL: repository, https://github.com/AutoResearch/autora-theorist-darts
+Project-URL: documentation, https://autoresearch.github.io/autora/
+Description-Content-Type: text/markdown
+Requires-Dist: autora-core
+Requires-Dist: scikit-learn
+Requires-Dist: torch
+Requires-Dist: matplotlib
+Requires-Dist: graphviz
+Requires-Dist: tqdm
+Provides-Extra: dev
+Requires-Dist: autora-core[dev] ; extra == 'dev'
+Requires-Dist: autora-synthetic-data ; extra == 'dev'
+
+# AutoRA Differentiable Architecture Search
+
+`autora-theorist-darts` is a Python module for fitting data using differentiable architecture 
+search, built on AutoRA.
+
+Website: [https://autoresearch.github.io/autora/](https://autoresearch.github.io/autora/)
+
+## User Guide
+
+You will need:
+
+- `python` 3.8 or greater: [https://www.python.org/downloads/](https://www.python.org/downloads/)
+- `graphviz` (optional, required for computation graph visualizations): 
+  [https://graphviz.org/download/](https://graphviz.org/download/)
+
+Install DARTS as part of the `autora` package:
+
+```shell
+pip install -U "autora[theorist-darts]" --pre
+```
+
+> It is recommended to use a `python` environment manager like `virtualenv`.
+
+Check your installation by running:
+```shell
+python -c "from autora.theorist.darts import DARTSRegressor; DARTSRegressor()"
+```
