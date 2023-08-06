@@ -1,0 +1,2 @@
+[pytest11]
+vulture = pytest_vulture.plugin
