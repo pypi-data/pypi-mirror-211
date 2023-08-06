@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: modal
+Version: 0.49.2343
+Summary: Dummy alias that requires modal-client
+Author: Modal Labs
+Author-email: erik@modal.com
+Project-URL: Homepage, https://modal.com
+Requires-Dist: modal-client (==0.49.2343)
+
+This package is a dummy package that just requires the modal-client package.
