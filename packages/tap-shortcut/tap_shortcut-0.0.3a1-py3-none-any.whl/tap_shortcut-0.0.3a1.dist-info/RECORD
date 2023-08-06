@@ -1,0 +1,9 @@
+tap_shortcut/__init__.py,sha256=kkp3rG8qspBJuTvqXG6YJBIcNAt5QMXuhcxU-LWFWxw,47
+tap_shortcut/client.py,sha256=6xdFVVGyoA08nmpmlNXTHIz9hNtB0jQdbX1M-ygiLxo,1039
+tap_shortcut/streams.py,sha256=1VsvEnRizBYCROFNIdG4sTUblZp-3B_9VKj07zww5To,2559
+tap_shortcut/tap.py,sha256=85kXTXRqtkss1KZnaEGTCnEDnixaA3-IdrRTX4cxRPU,3634
+tap_shortcut-0.0.3a1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tap_shortcut-0.0.3a1.dist-info/METADATA,sha256=scq7o5ycQ3wDIVbPrYIpqtu-zqGW3RqDgaFKVrO--A4,3519
+tap_shortcut-0.0.3a1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+tap_shortcut-0.0.3a1.dist-info/entry_points.txt,sha256=meuPLIcAjPLCWWGEmrpC5WvRJhYP9XZsEuh0APBTmEs,65
+tap_shortcut-0.0.3a1.dist-info/RECORD,,
