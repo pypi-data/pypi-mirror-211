@@ -1,0 +1,10 @@
+@prefix ns1: <https://www.ica.org/standards/RiC/ontology#> .
+
+<http://testing.fr/cubicweb/2056#agent> ns1:personHasFamilyRelation <http://testing.fr/cubicweb/2062#family_to_B234> .
+
+<http://testing.fr/cubicweb/2062#agent> ns1:personHasFamilyRelation <http://testing.fr/cubicweb/2062#family_to_B234> .
+
+<http://testing.fr/cubicweb/2062#family_to_B234> a ns1:FamilyRelation ;
+    ns1:familyRelationConnects <http://testing.fr/cubicweb/2056#agent>,
+        <http://testing.fr/cubicweb/2062#agent> .
+
