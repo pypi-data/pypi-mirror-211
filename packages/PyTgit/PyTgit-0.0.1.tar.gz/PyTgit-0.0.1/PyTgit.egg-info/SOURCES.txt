@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+PyTgit.egg-info/PKG-INFO
+PyTgit.egg-info/SOURCES.txt
+PyTgit.egg-info/dependency_links.txt
+PyTgit.egg-info/top_level.txt
