@@ -1,0 +1,11 @@
+wagtail_secret_sharing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wagtail_secret_sharing/models.py,sha256=stMN6N2zv51lQT5VEG27DVJ67egygk1nOLWSOtDSVak,3515
+wagtail_secret_sharing/settings.py,sha256=OI2cYKQBxxEhlDEBxzsHRTNWbt6tAXo1zmtHYCjU860,152
+wagtail_secret_sharing/templates/wagtail_secret_sharing/create.html,sha256=VlgSKucg5lkPvZJKW4Jtfr6gPIJhBWfakQ6-8DXj7Uo,686
+wagtail_secret_sharing/templates/wagtail_secret_sharing/retrieve.html,sha256=AwlYg6b4gscCt8FTJV8HZnKwcu11mINy8uMt94J20iE,98
+wagtail_secret_sharing/templates/wagtail_secret_sharing/view.html,sha256=nR72VUQHkHuyrIhNjJilGno4UYCUQD-l46uoWurwjwk,367
+wagtail_secret_sharing-0.5.0.dist-info/LICENSE,sha256=RyRWEPyjQv_2dg4DCy0tcnHfd5E29cP6DCkgEXioKbY,1064
+wagtail_secret_sharing-0.5.0.dist-info/METADATA,sha256=FOwrqSbyVbBCc9MT_pdQl-e0XM6KDymNeYphIKI3faA,1122
+wagtail_secret_sharing-0.5.0.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+wagtail_secret_sharing-0.5.0.dist-info/top_level.txt,sha256=wvbUo4arv_s4DThNPtrYnB7ddO0ztgkiiM84pGqtfog,23
+wagtail_secret_sharing-0.5.0.dist-info/RECORD,,
