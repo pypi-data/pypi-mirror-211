@@ -1,0 +1,13 @@
+lightning
+torch
+numpy
+pandas
+matplotlib
+KDEpy
+
+[test]
+pytest>=6.1.2
+pytest-runner
+pytest-cov
+codecov
+nbmake
