@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pymg/__init__.py
+pymg/pymg.py
+pymg.egg-info/PKG-INFO
+pymg.egg-info/SOURCES.txt
+pymg.egg-info/dependency_links.txt
+pymg.egg-info/entry_points.txt
+pymg.egg-info/requires.txt
+pymg.egg-info/top_level.txt
