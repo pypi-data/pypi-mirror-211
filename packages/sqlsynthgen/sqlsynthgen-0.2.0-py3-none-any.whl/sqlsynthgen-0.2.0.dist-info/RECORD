@@ -1,0 +1,15 @@
+sqlsynthgen/__init__.py,sha256=e0CFFGHpVE3fwB_xI9jFQlqPInexVYcGBVXEaajy_U0,70
+sqlsynthgen/base.py,sha256=P0fvkURB6A-2yRZbaoE5SY5NagYwBnWBW79f2kAvpyQ,637
+sqlsynthgen/create.py,sha256=HdFNRvLWICm4VwCSbKLwTH-0wQhT3DdZMUihVlwW9Uc,5411
+sqlsynthgen/json_schemas/config_schema.json,sha256=LS7KcyikQE4uEEr8D_zxhYYC4jiWz1TkQrI1O8I8QsI,2946
+sqlsynthgen/main.py,sha256=PSBBJ1LWG8fLteApBo9v3arB80vY0yrdWNycSh_wIQU,7012
+sqlsynthgen/make.py,sha256=II2s8PlC-YYlQCjuv7LQkcDy0tET_A_5YaLd_rS9OPE,14869
+sqlsynthgen/providers.py,sha256=6bQRSkWmPLvCycYRl84Fv9NKaU6wdpRAFy_qI0EO_to,3107
+sqlsynthgen/settings.py,sha256=40KTFtplh69LAz7fJ-tyH4IN3_fo5jkCpLKxIrYWtwo,4632
+sqlsynthgen/templates/ssg.py.j2,sha256=3JZu5983TyTcupNuqMf0eFlvxKwVQre9M_2J4gRT68o,2122
+sqlsynthgen/utils.py,sha256=efq7BLqzsadg0bKE-_yRJCY8fpZyI2GGeJXmcbEdTB4,2149
+sqlsynthgen-0.2.0.dist-info/LICENSE,sha256=N5wxxMXxM255pWZN-XNDRJY0hsx0uQ0bx5iWI8zb2fs,1082
+sqlsynthgen-0.2.0.dist-info/METADATA,sha256=8iumYeZTA8fz8E8U0jU9TX_3nCMmStiMWrwHtWKovr8,1333
+sqlsynthgen-0.2.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+sqlsynthgen-0.2.0.dist-info/entry_points.txt,sha256=JDOF2l4PzWsLpd-P_bb6pObNNRst3UvFxOs-IpR8zr8,52
+sqlsynthgen-0.2.0.dist-info/RECORD,,
