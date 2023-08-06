@@ -1,0 +1,15 @@
+README.md
+setup.py
+custom_serializer/__init__.py
+custom_serializer/custom_serializer.py
+custom_serializer/serializer_factory.py
+custom_serializer/encoder/__init__.py
+custom_serializer/encoder/constants.py
+custom_serializer/encoder/encoder.py
+custom_serializer/serializers/__init__.py
+custom_serializer/serializers/json_serializer.py
+custom_serializer/serializers/xml_serializer.py
+dashadmdv_custom_serializer.egg-info/PKG-INFO
+dashadmdv_custom_serializer.egg-info/SOURCES.txt
+dashadmdv_custom_serializer.egg-info/dependency_links.txt
+dashadmdv_custom_serializer.egg-info/top_level.txt
