@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NqGreenApi",
+  "description": "NqGreenApi schema",
+  "type": "object",
+  "properties": {
+    "id_instance": {
+      "type": "string"
+    },
+    "api_token_instance": {
+      "type": "string"
+    }
+  },
+  "required": ["id_instance", "api_token_instance"]
+}
