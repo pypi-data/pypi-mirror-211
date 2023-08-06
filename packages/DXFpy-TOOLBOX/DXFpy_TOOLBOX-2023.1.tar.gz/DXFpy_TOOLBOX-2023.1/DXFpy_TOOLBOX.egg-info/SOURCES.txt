@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+DXFpy_TOOLBOX/DXFpy.py
+DXFpy_TOOLBOX/__init__.py
+DXFpy_TOOLBOX.egg-info/PKG-INFO
+DXFpy_TOOLBOX.egg-info/SOURCES.txt
+DXFpy_TOOLBOX.egg-info/dependency_links.txt
+DXFpy_TOOLBOX.egg-info/top_level.txt
