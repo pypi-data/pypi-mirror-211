@@ -1,0 +1,34 @@
+awesome_progress_bar<2,>=1.7
+docstring_parser<0.16,>=0.14
+editdistance<0.7,>=0.6
+Jinja2<4,>=3
+Sphinx<8,>=5
+talonfmt<2,>=1.7.4
+tree_sitter_talon<3!2,>=3!1.0
+colorlog<7,>=6.7
+packaging<24,>=23.1
+
+[:platform_system == "Windows"]
+pywin32
+
+[:python_version < "3.8"]
+singledispatchmethod<2,>=1.0
+
+[docs]
+myst_parser<2,>=1
+sphinx_rtd_theme<2,>=1.2
+sphinx_tabs<5,>=3.4
+
+[mypy]
+types_click
+types_docutils
+types_editdistance
+types_jinja2
+types_pytz
+types_setuptools
+
+[test]
+bumpver
+myst_parser<2,>=1
+sphinx_rtd_theme<2,>=1.2
+sphinx_tabs<5,>=3.4
