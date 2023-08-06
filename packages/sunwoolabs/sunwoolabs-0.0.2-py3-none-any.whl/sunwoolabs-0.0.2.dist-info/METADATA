@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: sunwoolabs
+Version: 0.0.2
+Summary: preprocessing module for time series
+Home-page: http://github.com/Ssunder4s/
+Author: Heo, Sun-Woo
+Author-email: tjsdn447@hanyang.ac.kr
+License: MIT
+Keywords: dfmodule_sw,time series,sequentila
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Requires-Dist: pandas
+Requires-Dist: numpy
+
