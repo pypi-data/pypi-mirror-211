@@ -1,0 +1,9 @@
+dsw/database/__init__.py,sha256=58ZXZ8i4xzAvvjUdqt8lvdv28hD0yzY_xxI6n9deynw,55
+dsw/database/build_info.py,sha256=6aZntF1Vnn-SpiM04VlDbc7EppE96qD4dFOFRzbaVsw,381
+dsw/database/database.py,sha256=pqJP6ty-ml1ZMZSt66PhQEEMH--BtNAQpetDp3fPOgs,20894
+dsw/database/model.py,sha256=ECqrw0NmhCM45cRPL0uvp3B3eqPMkXSInHcAfnJdVIs,12500
+dsw_database-3.24.0.dist-info/LICENSE,sha256=rDtJ4LdsXvf_euOpGD0Q86P78K4JyM5m4yfYz9wZ750,11346
+dsw_database-3.24.0.dist-info/METADATA,sha256=lzDnWMSXAAurEBTneNvtIsbLks6TfmDBfIOBKui8e0k,1824
+dsw_database-3.24.0.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+dsw_database-3.24.0.dist-info/top_level.txt,sha256=7SfbsHFoJ_vlAgG6C-xzETETwYO71dBrGnod8uMFnjw,4
+dsw_database-3.24.0.dist-info/RECORD,,
