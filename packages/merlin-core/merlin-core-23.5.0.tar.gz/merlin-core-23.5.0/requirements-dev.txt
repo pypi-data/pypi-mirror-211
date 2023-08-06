@@ -1,0 +1,6 @@
+# packages necessary to run tests and push PRs
+# assumes requirements for merlin-core are already installed
+
+pytest>=5
+pytest-cov>=2
+pytest-xdist
