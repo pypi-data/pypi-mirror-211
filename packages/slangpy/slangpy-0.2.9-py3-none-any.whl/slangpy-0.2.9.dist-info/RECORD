@@ -1,0 +1,10 @@
+__init__.py,sha256=51Iodw93xFymRcdNqVpe3v2x5INWq2fLYAbob4rjnAc,34
+slangpy.py,sha256=pu2uoQSZJypda0mqPq9Qu6R3GBvohuibw6Bg6VV7bbc,5021
+bin/libslang.so,sha256=n2W51WhvX9YBmDGnxmNwO41pDefJI-3gw9N1kM6Ay9E,12972056
+bin/slang.dll,sha256=L23jhiEK9Xu6cWtB87PBG9yl9U4PyNgozmWz1SDaBwc,11590144
+bin/slangc,sha256=nIMqkch825Q5MFShkLSccbJWP9ncVHuMarKascH_MUo,125272
+bin/slangc.exe,sha256=wlfiqhhxgMPC9lrnVr5rSl6l8UZyxANCtLhPny2d88w,190464
+slangpy-0.2.9.dist-info/METADATA,sha256=2Zyfs3BR87xAqRFxdw8zRKAjOOo5kTpQw34RF0E4i4Y,855
+slangpy-0.2.9.dist-info/WHEEL,sha256=y1bSCq4r5i4nMmpXeUJMqs3ipKvkZObrIXSvJHm1qCI,87
+slangpy-0.2.9.dist-info/licenses/LICENSE,sha256=oyl5MNuiXmz3H7XDCDA25SOiSrCg5-J0Eg1KqxnmrwM,1069
+slangpy-0.2.9.dist-info/RECORD,,
