@@ -1,0 +1,2 @@
+[console_scripts]
+scanimage-tiff-reader = scanimage_tiff_reader:main
