@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+quao.egg-info/PKG-INFO
+quao.egg-info/SOURCES.txt
+quao.egg-info/dependency_links.txt
+quao.egg-info/requires.txt
+quao.egg-info/top_level.txt
