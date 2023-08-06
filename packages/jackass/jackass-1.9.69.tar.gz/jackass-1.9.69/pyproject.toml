@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "jackass"
+version = "1.9.69"
+description = "best shit i ever listened to ngl"
+authors = ["Predeactor <pro.julien.mauroy@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
