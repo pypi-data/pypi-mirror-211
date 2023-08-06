@@ -1,0 +1,13 @@
+adafruit_wiznet5k/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+adafruit_wiznet5k/adafruit_wiznet5k.py,sha256=1gsx7WEYn3YL35EyHHPrC-8CGH0HGTjQM35V0ERpT8Q,50486
+adafruit_wiznet5k/adafruit_wiznet5k_debug.py,sha256=nULrkdlYiR0Le6j2-5tGD0lf9aFo3sveM3JMtupunss,1360
+adafruit_wiznet5k/adafruit_wiznet5k_dhcp.py,sha256=bWCqTGFj_9CO9m0XtpvjwUmkgNyCqZDbhChBeCb-O8g,27777
+adafruit_wiznet5k/adafruit_wiznet5k_dns.py,sha256=1wrIWFj2wmvfw92XiV7frHJtgvdzri2TjVm5jwTzhAc,11347
+adafruit_wiznet5k/adafruit_wiznet5k_ntp.py,sha256=fJwWDGtnxDcdZeV7QTS9eJw0cpXZbS9FsXJSxeWHP9w,2630
+adafruit_wiznet5k/adafruit_wiznet5k_socket.py,sha256=cLknasXIzDI3JBsdH-a-PMaIGeKQu2kuiafh4uWPWro,27027
+adafruit_wiznet5k/adafruit_wiznet5k_wsgiserver.py,sha256=D9191RvcymWsEzQZy33TqPFM5viugvQ1TiGY2pRRUA0,9005
+adafruit_circuitpython_wiznet5k-2.5.3.dist-info/LICENSE,sha256=JN1qiyYF6rJS1bOEACOyZ9kCA-IWrFwRqyqPqh1BnSA,750
+adafruit_circuitpython_wiznet5k-2.5.3.dist-info/METADATA,sha256=RjPeH3xd3Tl9Z7e67scl_cjmyVTGmvHK6dubhOEyRqM,7410
+adafruit_circuitpython_wiznet5k-2.5.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+adafruit_circuitpython_wiznet5k-2.5.3.dist-info/top_level.txt,sha256=aFKApX0VNAugbvkJd1BjgmnmuV7-BzTQ3GGrGM9RZOI,18
+adafruit_circuitpython_wiznet5k-2.5.3.dist-info/RECORD,,
