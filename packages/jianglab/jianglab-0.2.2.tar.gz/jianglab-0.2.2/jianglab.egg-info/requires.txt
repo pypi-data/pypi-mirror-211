@@ -1,0 +1,11 @@
+numpy
+pandas
+matplotlib
+treelib
+McsPyDataTools
+tqdm
+scipy
+gspread
+oauth2client
+parmas
+pickle
