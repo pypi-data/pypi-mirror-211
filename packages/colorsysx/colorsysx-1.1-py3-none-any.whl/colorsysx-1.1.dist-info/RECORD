@@ -1,0 +1,12 @@
+colorsysx/__init__.py,sha256=D_XiCd9PefXLXIuxKsTmJPU_XwvA4n8cd8UDIYlpyKg,1471
+colorsysx/_glhs.py,sha256=IzwcymKN8KSVyDBu_uPbyGa5pWEeN7cVjF7hzJlb4Ko,6421
+colorsysx/_hcy.py,sha256=SF1UtKzVbK1CBuDYh88YPjIo_MieeEA8Ivwu1hZ_gLA,4717
+colorsysx/_helpers.py,sha256=lWV8pDVLBEPjcTfF7daCfK8wXYMhKGNarmZyAhKwtyQ,379
+colorsysx/_swizzle.py,sha256=gojdrM5shp4vQNUy5VYhHBoD7ijY_meYpKw8HEHUHmY,1246
+colorsysx/_yiq.py,sha256=I8VXf_9FpdFaFXr-A8t3Lhiav1EQJuk_r6GVIhrFK74,2051
+colorsysx/_yuv.py,sha256=gyRrJpEI8FLw9i67LQBAlo6qx3BKhlN1maCPj3XisW4,3506
+colorsysx/weights.py,sha256=1TmFh24JQo6qPLoAo0kb01LP3gzR6juHA2i_FfpMOUI,2929
+colorsysx-1.1.dist-info/LICENSE,sha256=zdPO3YLZM2ZhAWegpYZS_dBMm2x5xZ1hh6ddLLY_A6A,1082
+colorsysx-1.1.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+colorsysx-1.1.dist-info/METADATA,sha256=T3juSCrQId0bXA2xOqj4RdbFnguEKqa3o1eARnkbSDY,3973
+colorsysx-1.1.dist-info/RECORD,,
