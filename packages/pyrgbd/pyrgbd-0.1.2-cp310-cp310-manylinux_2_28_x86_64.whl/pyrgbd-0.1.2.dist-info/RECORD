@@ -1,0 +1,7 @@
+librgbd.so,sha256=Zd68iwlDNaoFOxqBeBP8I_bJrjzbR7Heo7v4PW2hK30,20689328
+pyrgbd.cpython-310-x86_64-linux-gnu.so,sha256=sP7hpqPIZArPz2vTKDO1lTG-rBMp9batsil26ocR-lM,19214768
+pyrgbd-0.1.2.dist-info/METADATA,sha256=OIU4dfBNqaVqRNy1iWEyKU-LofS13Yxb9NC9tK0GjjA,216
+pyrgbd-0.1.2.dist-info/LICENSE,sha256=S8KZXarVI9o4ehvppZkDwJfEUAV5E0XeONKxE0S6eZg,1084
+pyrgbd-0.1.2.dist-info/RECORD,,
+pyrgbd-0.1.2.dist-info/top_level.txt,sha256=_LqwlCoLWF5j3pARKxEFHTPpaP7YFQfYjERdG3R6plw,7
+pyrgbd-0.1.2.dist-info/WHEEL,sha256=9rnmjtxhPKPVe0Tp4jfKCIcCRc7MAyKmWpLWATLJWWk,114
