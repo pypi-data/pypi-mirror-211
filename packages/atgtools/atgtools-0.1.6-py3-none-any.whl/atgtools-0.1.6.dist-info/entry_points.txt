@@ -1,0 +1,3 @@
+[console_scripts]
+atg=atg:atg
+
