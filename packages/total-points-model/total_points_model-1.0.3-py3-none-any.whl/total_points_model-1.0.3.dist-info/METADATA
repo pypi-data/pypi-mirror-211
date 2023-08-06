@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: total-points-model
+Version: 1.0.3
+Summary: Train an AFL Total Points model
+Author-email: Ciaran Grant <ciaran.grant@hotmail.co.uk>
+License: MIT License
+        
+        Copyright (c) [year] [fullname]
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://github.com/ciaran-grant/afl-total-points-model
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas (==1.5.3)
+Requires-Dist: numpy (==1.23.5)
+Requires-Dist: optuna (==3.1.1)
+Requires-Dist: xgboost (==1.7.3)
+Requires-Dist: scikit-learn (==1.2.2)
+Requires-Dist: seaborn (==0.12.2)
+Requires-Dist: matplotlib (==3.7.1)
+Requires-Dist: shap (==0.41.0)
+Requires-Dist: joblib (==1.1.1)
+Requires-Dist: plotly (==5.14.1)
+Requires-Dist: notebook (==6.5.3)
+Requires-Dist: jupyter (==1.0.0)
+Requires-Dist: jupyter-server (==1.23.4)
+Requires-Dist: nbclient (==0.5.13)
+Requires-Dist: matplotlib-inline (==0.1.6)
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+
+# Total Points Model
+
+total-points-model is a Python library with useful functions and notebooks for tuning, training and evaluating an XGBoost model.
+
+The target of this model is the Total Points Scored in an AFL match.
+
+## Installation
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install total-points-model.
+
+```python
+pip install total-points-model
+```
+
+## Usage
+### Data Processing
+```python
+
+```
+### Hyperparameter Tuning
+```python
+
+```
+### Model Building
+```python
+
+```
+### Model Evaluation
+```python
+
+```
+
+## Credits
+Data sourced using a private R package. Credits to dgt23.
+
+## CONTRIBUTING
+I am no longer updating this package as I am exploring other AFL related analysis and packages.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
