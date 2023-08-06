@@ -1,0 +1,36 @@
+{% if dependency.enum[0].__class__.__name__ == 'int' %}
+    {% set example_value = '42' %}
+    {% set return_type = 'int' %}
+    {% set prefix = 'VALUE_' %}
+{% elif dependency.enum[0].__class__.__name__ == 'float' %}
+    {% set example_value = '3_14' %}
+    {% set return_type = 'float' %}
+    {% set prefix = 'VALUE_' %}
+{% else %}
+    {% set example_value = 'HELLO_WORLD' %}
+    {% set return_type = 'str' %}
+    {% set prefix = '' %}
+{% endif %}
+"""Generated from manifest by `benchling-cli`. Do not edit manually.
+
+The generated enum holds all valid values for the scalar config.
+
+The generated enum can be used as follows:
+```
+if self.dependencies.{{ dependency_to_snake_case(dependency) }}.value == {{ dependency_to_pascal_case(dependency) }}.{{ example_value }}:
+    pass
+```
+"""
+from __future__ import annotations
+
+from enum import Enum
+
+
+class {{ dependency_to_pascal_case(dependency) }}({{ return_type }}, Enum):
+{% for option in dependency.enum %}
+    {% if return_type == 'str' %}
+        {{ prefix }}{{ to_enum_option(option) }} = '{{ option }}'
+    {% else %}
+        {{ prefix }}{{ to_enum_option(option) }} = {{ option }}
+    {% endif %}
+{% endfor %}
