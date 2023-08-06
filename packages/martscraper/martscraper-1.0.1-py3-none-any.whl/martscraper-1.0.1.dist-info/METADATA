@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: martscraper
+Version: 1.0.1
+Summary: With just one click "martscraper" felicitates product query based scrapping of listed products on Amazon and Flipkart. 
+Author: Shreyansh Padarha
+Author-email: <shreyansh.padarha@hotmail.com>
+Keywords: python,machine learning,webscrapping,Amazon,Flipkart,ecommerce,products,nlp,sentiment analysis
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Requires-Dist: beautifulsoup4
+Requires-Dist: Flask
+Requires-Dist: ipython
+Requires-Dist: matplotlib
+Requires-Dist: nltk
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: plotly
+Requires-Dist: regex
+Requires-Dist: Requests
+Requires-Dist: scipy
+Requires-Dist: seaborn
+Requires-Dist: tabulate
+Requires-Dist: tqdm
+Requires-Dist: transformers
+Requires-Dist: wordcloud
+
