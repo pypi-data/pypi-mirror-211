@@ -1,0 +1,2 @@
+[console_scripts]
+pipeline-name = pipeline_name.cli:pipeline_name

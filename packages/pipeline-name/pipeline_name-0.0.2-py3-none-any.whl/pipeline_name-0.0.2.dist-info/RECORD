@@ -1,0 +1,11 @@
+pipeline_name/__about__.py,sha256=aWiiNZssJ2OAXLpsUAzuh_K6r5bsN81coT2be5GZUr0,131
+pipeline_name/__init__.py,sha256=XmbHljtHFmjv7DjAFSqOtT-cHMcoFYHWmWWupIW31i4,109
+pipeline_name/__main__.py,sha256=SmuQkMp7qsEJi3yyITo6kmNJuQ1QqLIFhXhsfM7MKvc,227
+pipeline_name/config.yaml,sha256=qII6G7SKHr2XrOg8-EZPMRiVVn2NrlZJAc0LhY3fz3c,42
+pipeline_name/cli/__init__.py,sha256=MJE50KM9apSN5jpoHxF2LHte7-UvXNIMBQrsPT8VAXc,121
+pipeline_name/workflow/Snakefile,sha256=4jy4LyCW0BlLO4bhcP7uNlIaWsm46PmdUHRpiTfecwc,156
+pipeline_name-0.0.2.dist-info/METADATA,sha256=XeilpSmMWWnXTZjf7fzBJh5cONDl0fzQppoqAIvobDg,1644
+pipeline_name-0.0.2.dist-info/WHEEL,sha256=y1bSCq4r5i4nMmpXeUJMqs3ipKvkZObrIXSvJHm1qCI,87
+pipeline_name-0.0.2.dist-info/entry_points.txt,sha256=OYVsqVZEGlVkV4eF99UEDkIjmrQGG-MY1Uvr9QhPiy0,66
+pipeline_name-0.0.2.dist-info/licenses/LICENSE.txt,sha256=G0-XdRDvjMQkq2F5T_FMPPWWqullmv-goXrqtDK13Rs,1101
+pipeline_name-0.0.2.dist-info/RECORD,,
