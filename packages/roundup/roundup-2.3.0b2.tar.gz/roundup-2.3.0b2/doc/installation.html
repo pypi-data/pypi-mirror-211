@@ -1,0 +1,2524 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<title>Installing Roundup</title>
+<meta content="Everything about installing the Roundup issue tracker web and mail interfaces and configuring a tracker. How to download and demonstrate Roundup using using command line or Docker. Optional software that adds functionality to Roundup." name="description" />
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 7952 2016-07-26 18:15:59Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+.subscript {
+  vertical-align: sub;
+  font-size: smaller }
+
+.superscript {
+  vertical-align: super;
+  font-size: smaller }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title, .code .error {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left, table.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right, table.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.align-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+.align-top    {
+  vertical-align: top }
+
+.align-middle {
+  vertical-align: middle }
+
+.align-bottom {
+  vertical-align: bottom }
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+pre.code .ln { color: grey; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+/* "booktabs" style (no vertical lines) */
+table.docutils.booktabs {
+  border: 0px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-collapse: collapse;
+}
+table.docutils.booktabs * {
+  border: 0px;
+}
+table.docutils.booktabs th {
+  border-bottom: thin solid;
+  text-align: left;
+}
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+</head>
+<body>
+<div class="document" id="installing-roundup">
+<h1 class="title">Installing Roundup</h1>
+
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">installation.txt</tt>, line 8)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: Installation
+
+</pre>
+</div>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#overview" id="id13">Overview</a></li>
+<li><a class="reference internal" href="#for-the-really-impatient" id="id14">For The Really Impatient</a><ul>
+<li><a class="reference internal" href="#running-in-demo-mode-with-docker" id="id15">Running in Demo Mode with Docker</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#prerequisites" id="id16">Prerequisites</a></li>
+<li><a class="reference internal" href="#optional-components" id="id17">Optional Components</a></li>
+<li><a class="reference internal" href="#id6" id="id18">Installing Roundup</a><ul>
+<li><a class="reference internal" href="#standard-installation" id="id19">Standard Installation</a></li>
+<li><a class="reference internal" href="#installing-from-downloaded-source" id="id20">Installing from downloaded source</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#configuring-your-first-tracker" id="id21">Configuring your first tracker</a><ul>
+<li><a class="reference internal" href="#choosing-your-template" id="id22">Choosing Your Template</a><ul>
+<li><a class="reference internal" href="#classic-template" id="id23">Classic Template</a></li>
+<li><a class="reference internal" href="#minimal-template" id="id24">Minimal Template</a></li>
+<li><a class="reference internal" href="#other-templates" id="id25">Other Templates</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#choosing-your-backend" id="id26">Choosing Your Backend</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#configure-a-web-interface" id="id27">Configure a Web Interface</a><ul>
+<li><a class="reference internal" href="#web-server-cgi-bin" id="id28">Web Server cgi-bin</a></li>
+<li><a class="reference internal" href="#cgi-bin-for-limited-access-hosting" id="id29">CGI-bin for Limited-Access Hosting</a></li>
+<li><a class="reference internal" href="#stand-alone-web-server" id="id30">Stand-alone Web Server</a></li>
+<li><a class="reference internal" href="#zope-product-zroundup" id="id31">Zope Product - ZRoundup</a></li>
+<li><a class="reference internal" href="#apache-http-server-with-mod-wsgi" id="id32">Apache HTTP Server with mod_wsgi</a><ul>
+<li><a class="reference internal" href="#background" id="id33">Background</a></li>
+<li><a class="reference internal" href="#install-mod-wsgi" id="id34">Install mod-wsgi</a></li>
+<li><a class="reference internal" href="#configure-web-interface-via-wsgi-handler" id="id35">Configure web interface via wsgi_handler</a></li>
+<li><a class="reference internal" href="#apache-http-server-with-mod-python" id="id36">Apache HTTP Server with mod_python</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#nginx-http-server" id="id37">Nginx HTTP Server</a></li>
+<li><a class="reference internal" href="#fastcgi-cherokee-hiawatha-lighttpd" id="id38">FastCGI (Cherokee, Hiawatha, lighttpd)</a></li>
+<li><a class="reference internal" href="#wsgi-variations" id="id39">WSGI Variations</a><ul>
+<li><a class="reference internal" href="#apache-alternate" id="id40">Apache Alternate</a></li>
+<li><a class="reference internal" href="#gunicorn-installation" id="id41">Gunicorn Installation</a></li>
+<li><a class="reference internal" href="#uwsgi-installation" id="id42">uWSGI Installation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#configure-an-email-interface" id="id43">Configure an Email Interface</a><ul>
+<li><a class="reference internal" href="#as-a-mail-alias-pipe-process" id="id44">As a mail alias pipe process</a></li>
+<li><a class="reference internal" href="#as-a-custom-router-transport-using-a-pipe-process-exim4-specific" id="id45">As a custom router/transport using a pipe process (Exim4 specific)</a></li>
+<li><a class="reference internal" href="#as-a-regular-job-using-a-mailbox-source" id="id46">As a regular job using a mailbox source</a></li>
+<li><a class="reference internal" href="#as-a-regular-job-using-a-pop-source" id="id47">As a regular job using a POP source</a></li>
+<li><a class="reference internal" href="#as-a-regular-job-using-an-imap-source" id="id48">As a regular job using an IMAP source</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#unix-environment-steps" id="id49">UNIX Environment Steps</a></li>
+<li><a class="reference internal" href="#public-tracker-considerations" id="id50">Public Tracker Considerations</a></li>
+<li><a class="reference internal" href="#docker-support" id="id51">Docker Support</a><ul>
+<li><a class="reference internal" href="#building-a-docker-container" id="id52">Building a Docker Container</a></li>
+<li><a class="reference internal" href="#configuring-roundup-in-the-container" id="id53">Configuring Roundup in the Container</a></li>
+<li><a class="reference internal" href="#running-your-container" id="id54">Running Your Container</a><ul>
+<li><a class="reference internal" href="#guided-install" id="id55">Guided install</a></li>
+<li><a class="reference internal" href="#arguments-for-roundup-server" id="id56">Arguments for roundup-server</a></li>
+<li><a class="reference internal" href="#invoking-a-shell" id="id57">Invoking a Shell</a></li>
+<li><a class="reference internal" href="#invoke-roundup-admin" id="id58">Invoke roundup-admin</a></li>
+<li><a class="reference internal" href="#invoke-roundup-demo" id="id59">Invoke roundup-demo</a></li>
+<li><a class="reference internal" href="#debugging" id="id60">Debugging</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#running-multiple-trackers" id="id61">Running Multiple Trackers</a></li>
+<li><a class="reference internal" href="#docker-compose-deployment" id="id62">Docker-compose Deployment</a></li>
+<li><a class="reference internal" href="#tags-for-dockerhub-docker-images" id="id63">Tags for Dockerhub Docker Images</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#maintenance" id="id64">Maintenance</a></li>
+<li><a class="reference internal" href="#upgrading" id="id65">Upgrading</a></li>
+<li><a class="reference internal" href="#further-reading" id="id66">Further Reading</a></li>
+<li><a class="reference internal" href="#id10" id="id67">Running Multiple Trackers</a></li>
+<li><a class="reference internal" href="#platform-specific-notes" id="id68">Platform-Specific Notes</a><ul>
+<li><a class="reference internal" href="#windows-command-line-tools" id="id69">Windows command-line tools</a></li>
+<li><a class="reference internal" href="#windows-server" id="id70">Windows Server</a><ul>
+<li><a class="reference internal" href="#id11" id="id71">1. Using the Windows scheduler</a></li>
+<li><a class="reference internal" href="#installing-the-roundup-server-as-a-windows-service" id="id72">2. Installing the roundup server as a Windows service</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sendmail-smrsh" id="id73">Sendmail smrsh</a></li>
+<li><a class="reference internal" href="#linux" id="id74">Linux</a></li>
+<li><a class="reference internal" href="#solaris" id="id75">Solaris</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#problems-testing-your-python" id="id76">Problems? Testing your Python...</a></li>
+</ul>
+</div>
+<div class="section" id="overview">
+<h1><a class="toc-backref" href="#id13">Overview</a></h1>
+<p>A Roundup installation is made up of several pieces.</p>
+<dl class="docutils">
+<dt>Roundup scripts</dt>
+<dd>These include the Roundup HTTP server, email gateway, administration
+command-line interface, demo installer etc. These are usually placed
+in a directory that is on your path.</dd>
+<dt>Roundup core code</dt>
+<dd>Is installed into your Python's lib directory. We recommend
+using a virtual environment for your Roundup installation.</dd>
+<dt>Roundup trackers</dt>
+<dd><p class="first">Trackers consist of issues (be they bug reports or otherwise). Each tracker
+is put in its own directory (called a tracker home) and has its own:</p>
+<ul class="simple">
+<li>configuration files,</li>
+<li>HTML (web) files,</li>
+<li>database,</li>
+<li>logic files (detectors, schema, ...)</li>
+</ul>
+<p class="last">Roundup trackers are initialised with a &quot;template&quot; which defines the
+fields usable/assignable on a per-issue basis.  Descriptions of the
+provided templates are given in <a class="reference internal" href="#choosing-your-template">choosing your template</a>. Usually
+you start with a template then modify the tracker to implement your
+desired workflow. One Roundup instalation can support multiple
+trackers with different look/feel and workflow.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="for-the-really-impatient">
+<h1><a class="toc-backref" href="#id14">For The Really Impatient</a></h1>
+<p>If you just want to give Roundup a whirl <strong>Right Now</strong>, follow these
+directions to run <tt class="docutils literal">demo.py</tt>. Demo mode starts the <a class="reference internal" href="#classic-tracker">classic tracker</a>
+without installing Roundup on your system.  If you have Docker
+installed, you can run <a class="reference internal" href="#demo-mode-using-docker">demo mode using docker</a> instead.</p>
+<p>This is also a way to spin up a development environment or even
+deploy a tracker for a handful of users.</p>
+<p>You can choose different templates and backend databases using demo
+mode. For example replacing <tt class="docutils literal">demo.py</tt> (or <tt class="docutils literal">demo</tt> if you are using
+docker) with:</p>
+<pre class="literal-block">
+demo jinja2 anydbm
+</pre>
+<p>will start the tracker using the jinja2 template with the dbm database
+backend (rather then the default sqlite). See <a class="reference internal" href="#choosing-your-template">Choosing Your
+Template</a> for a description of available templates.</p>
+<p>(In the directions below, replace <tt class="docutils literal"><span class="pre">-2.2.0</span></tt> with the version number
+of the file you downloaded. On systems that don't have a <tt class="docutils literal">python3</tt>
+program you can run <tt class="docutils literal">python demo.py</tt> instead.)</p>
+<ol class="arabic simple" id="install-the-source">
+<li><tt class="docutils literal">python3 <span class="pre">-m</span> pip download roundup</tt></li>
+<li><tt class="docutils literal">tar <span class="pre">-xzvf</span> <span class="pre">roundup-2.2.0.tar.gz</span></tt><ul>
+<li>if you don't have a tar command, <tt class="docutils literal">python3 <span class="pre">-c</span> 'import tarfile, sys; <span class="pre">tarfile.open(sys.argv[1]).extractall();'</span> <span class="pre">roundup-2.2.0.tar.gz</span></tt> can be used.</li>
+</ul>
+</li>
+<li><tt class="docutils literal">cd <span class="pre">roundup-2.2.0</span></tt></li>
+<li><tt class="docutils literal">python3 demo.py</tt></li>
+</ol>
+<p>This will set up a classic demo tracker on your machine without
+installing Roundup. <a class="footnote-reference" href="#id2" id="id1">[1]</a> When it's done, it'll print out a URL for
+your web browser at so you can explore a Roundup tracker. Three users
+are set up:</p>
+<ol class="arabic simple">
+<li>anonymous - the &quot;default&quot; user with permission to do very little</li>
+<li>demo (password &quot;demo&quot;) - a normal user who may create issues</li>
+<li>admin (password &quot;admin&quot;) - an administrative user who has complete
+access to the tracker</li>
+</ol>
+<p>Note the demo tracker removes the detector (nosyreaction.py) that
+sends email notifications. If you later convert your demo tracker to
+production you will need to replace the detector to send notification
+emails.</p>
+<p>Once you install Roundup, you can use the <tt class="docutils literal"><span class="pre">roundup-demo</span></tt> command to
+install new demo trackers.</p>
+<table class="docutils footnote" frame="void" id="id2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[1]</td><td><em>(<a class="fn-backref" href="#id1">1</a>, <a class="fn-backref" href="#id5">2</a>)</em> Demo tracker is set up to be accessed by localhost browser.
+If you run demo on a server host, please stop the demo (using
+Control-C) after it has shown the startup notice, open file
+<tt class="docutils literal">demo/config.ini</tt> with your editor, change host name in
+the <tt class="docutils literal">web</tt> option in section <tt class="docutils literal">[tracker]</tt>, save the file,
+then re-run the demo.py program.</td></tr>
+</tbody>
+</table>
+<div class="section" id="running-in-demo-mode-with-docker">
+<span id="demo-mode-using-docker"></span><h2><a class="toc-backref" href="#id15">Running in Demo Mode with Docker</a></h2>
+<p>You can either:</p>
+<ul class="simple">
+<li>use a published container from hub.docker.com with
+<tt class="docutils literal">rounduptracker/roundup:latest</tt></li>
+</ul>
+<p>or</p>
+<ul>
+<li><p class="first">Use steps 1-3 to <a class="reference internal" href="#install-the-source">install the source</a> then</p>
+</li>
+<li><p class="first">build a local docker container using:</p>
+<pre class="literal-block">
+docker build -t roundup-app -f scripts/Docker/Dockerfile .
+</pre>
+<p>(see <a class="reference internal" href="#docker-support">Docker Support</a> and <a class="reference internal" href="#building-a-docker-container">Building a Docker Container</a> for more
+details)</p>
+</li>
+</ul>
+<p>Start demo mode with <a class="footnote-reference" href="#id4" id="id3">[2]</a>:</p>
+<pre class="literal-block">
+docker run --rm -p 127.0.0.1:8917:8080 --name roundup_demo -v \
+   $PWD:/usr/src/app/tracker rounduptracker/roundup:latest demo
+</pre>
+<table class="docutils footnote" frame="void" id="id4" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id3">[2]</a></td><td>Replace <tt class="docutils literal">rounduptracker/roundup:latest</tt> with
+<tt class="docutils literal"><span class="pre">roundup-app:latest</span></tt> if you built your own docker image.</td></tr>
+</tbody>
+</table>
+<p>This will create a <tt class="docutils literal">demo</tt> subdirectory which is your tracker's
+home. It will also print the URL for exploring your new tracker.</p>
+<div class="admonition caution">
+<p class="first admonition-title">Caution!</p>
+<p class="last">Removing <tt class="docutils literal">127.0.0.1:</tt> will make the tracker accessible from any
+host with network access to your system. However the URL's created by
+Roundup will still reference <tt class="docutils literal">localhost</tt> unless you modify the
+<tt class="docutils literal">web</tt> url in the <tt class="docutils literal">tracker</tt> section of <tt class="docutils literal">config.ini</tt> and restart
+the container <a class="footnote-reference" href="#id2" id="id5">[1]</a>.</p>
+</div>
+<p>In the docker run command we used port 8917 for Roundup. When starting
+Roundup, Docker may report a long error ending with: <cite>bind: address
+already in use.</cite> This means that port 8917 is in use.  When running
+inside a Docker container, demo mode is unable to automatically find a
+free port. You have to provide an unused port to <tt class="docutils literal"><span class="pre">-p</span></tt>.</p>
+<p>To fix this, you can change the change the port mapping provided
+with <tt class="docutils literal"><span class="pre">-p</span></tt>. If you do this you <strong>must</strong> set the docker PORT_8080
+environment variable on the command line to match. (If Docker
+ever fixes <a class="reference external" href="https://github.com/moby/moby/issues/3778">https://github.com/moby/moby/issues/3778</a> we won't need
+to worry about this.)</p>
+<p>For example:</p>
+<pre class="literal-block">
+docker run --rm -e PORT_8080=9090 -p 127.0.0.1:9090:8080 -v \
+   --name roundup_demo $PWD:/usr/src/app/tracker \
+   rounduptracker/roundup:latest demo
+</pre>
+<p>will run Roundup on port 9090 and Roundup will generate the correct
+URL.</p>
+<p>To shut down the tracker and get your shell back, use control-c. You
+can remove the tracker using <tt class="docutils literal">rm <span class="pre">-f</span></tt> on the <tt class="docutils literal">demo</tt> directory.</p>
+</div>
+</div>
+<div class="section" id="prerequisites">
+<h1><a class="toc-backref" href="#id16">Prerequisites</a></h1>
+<p>Roundup requires Python 2.7 or 3.6 or newer with a functioning anydbm
+or sqlite module. The version installed by most vendors should work if
+it meets the version requirements. If necessary, you can download the
+latest version from <a class="reference external" href="https://www.python.org/">https://www.python.org/</a>. It is highly recommended
+that users install the latest patch version of Python as these contain
+many fixes to serious bugs.</p>
+<p>Some variants of Linux will need an additional &quot;python dev&quot; package
+installed for Roundup installation to work. Debian and derivatives, are
+known to require this.</p>
+</div>
+<div class="section" id="optional-components">
+<h1><a class="toc-backref" href="#id17">Optional Components</a></h1>
+<p>You may optionally install and use:</p>
+<dl class="docutils">
+<dt>An RDBMS</dt>
+<dd>Sqlite, MySQL and Postgresql are all supported by Roundup and will be
+used if available. One of these is recommended if you are anticipating a
+large user base (see <a class="reference internal" href="#choosing-your-backend">choosing your backend</a> below). Sqlite should
+always be available.</dd>
+<dt>Timezone Definitions</dt>
+<dd>Full timezone support requires <a class="reference external" href="https://pypi.org/project/pytz/">pytz</a> module (version 2005i or later)
+which brings the <a class="reference external" href="https://www.iana.org/time-zones">Olson tz database</a> into Python.  If <a class="reference external" href="https://pypi.org/project/pytz/">pytz</a> is not
+installed, timezones may be specified as numeric hour offsets only.
+This is optional but strongly suggested.</dd>
+<dt>Xapian full-text indexer</dt>
+<dd><p class="first">The <a class="reference external" href="https://xapian.org/">Xapian</a> full-text indexer is also supported and will be used by
+default if it is available. This is strongly recommended if you are
+anticipating a large number of issues (&gt; 5000).</p>
+<p>You may install Xapian at any time, even after a tracker has been
+installed and used. You will need to run the &quot;roundup-admin reindex&quot;
+command if the tracker has existing data.</p>
+<p>Roundup requires Xapian 1.0.0 or newer.</p>
+<p class="last">Note that capitalization is not preserved by the Xapian search.
+This is required to make the porter stemmer work so that searching
+for <tt class="docutils literal">silent</tt> also returns documents with the word <tt class="docutils literal">silently</tt>.
+Note that the current stemming implementation is designed for English.</p>
+</dd>
+<dt>Whoosh full-text indexer</dt>
+<dd><p class="first">The <a class="reference external" href="https://whoosh.readthedocs.org/en/latest/">Whoosh</a> full-text indexer is also supported and will be used by
+default if it is available (and Xapian is not installed). This is
+recommended if you are anticipating a large number of issues (&gt; 5000).
+It is also the only search backend that implements fuzzy search. It
+matches any word that has a 1 character difference from the search term.</p>
+<p>You may install Whoosh at any time, even after a tracker has been
+installed and used. You will need to run the &quot;roundup-admin reindex&quot;
+command if the tracker has existing data.</p>
+<p class="last">Roundup was tested with Whoosh 2.5.7, but earlier versions in the
+2.0 series may work. Whoosh is a pure Python indexer so it is slower
+than Xapian, but should be useful for moderately sized trackers.
+It uses the StandardAnalyzer which is suited for Western languages.</p>
+</dd>
+<dt>pyopenssl</dt>
+<dd>If <a class="reference external" href="https://pypi.org/project/pyOpenSSL/">pyopenssl</a> is installed the roundup-server can be configured
+to serve trackers over SSL. If you are going to serve roundup via
+proxy through a server with SSL support (e.g. apache) then this is
+unnecessary.</dd>
+<dt>gpg</dt>
+<dd>If <a class="reference external" href="https://www.gnupg.org/software/gpgme/index.html">gpg</a> is installed you can configure the mail gateway to perform
+verification or decryption of incoming OpenPGP MIME messages. When
+configured, you can require email to be cryptographically signed
+before roundup will allow it to make modifications to issues.</dd>
+<dt>jinja2</dt>
+<dd>To use the jinja2 template (may still be experimental, check out
+its TEMPLATE-INFO.txt file) you need
+to have the <a class="reference external" href="https://palletsprojects.com/p/jinja/">jinja2</a> template engine installed.</dd>
+<dt>docutils</dt>
+<dd>To use ReStructuredText rendering you need to have the <a class="reference external" href="https://pypi.org/project/docutils/">docutils</a>
+package installed.</dd>
+<dt>markdown, markdown2 or mistune</dt>
+<dd>To use markdown rendering you need to have the <a class="reference external" href="https://python-markdown.github.io/">markdown</a>, <a class="reference external" href="https://github.com/trentm/python-markdown2">markdown2</a>
+or <a class="reference external" href="https://pypi.org/project/mistune/">mistune</a> (v0.8.4 tested) package installed.</dd>
+<dt>zstd, brotli</dt>
+<dd>To have roundup compress the returned data using one of these
+algorithms, you can install one or more of <a class="reference external" href="https://pypi.org/project/zstd/">zstd</a> or <a class="reference external" href="https://pypi.org/project/Brotli/">brotli</a>.
+Roundup's responses can always be compressed with gzip from the
+Python standard library. Also nginx and various wsgi server can
+compress the response from roundup as they transmit/proxy it to the
+client.</dd>
+<dt>redis</dt>
+<dd>Storing ephemeral data: session keys, CSRF tokens etc. can be
+performance bottleneck. You can choose to deploy a <a class="reference external" href="https://redis.io">Redis</a> database
+using the <a class="reference external" href="https://pypi.org/project/redis/">redis-py</a> pypi package. See the section on
+<a class="reference external" href="admin_guide.html#using-redis-for-session-databases">Using Redis for Session Databases</a> in the <a class="reference external" href="admin_guide.html">administration
+guide</a> for details.</dd>
+<dt>pyjwt</dt>
+<dd>To use JWT (JSON web tokens) for login (experimental), install <a class="reference external" href="https://pypi.org/project/PyJWT/">pyjwt</a>
+(v1.7.1, v2.0.1 tested). If you don't have it installed, JWT's
+are not supported.</dd>
+<dt>Windows Service</dt>
+<dd>You can run Roundup as a Windows service if <a class="reference external" href="https://pypi.org/project/pywin32/">pywin32</a> is installed.
+Otherwise it must be started manually.</dd>
+<dt>requests</dt>
+<dd>If you are using OAuth authentication with the roundup-mailgw
+mail gateway you must install the <a class="reference external" href="https://requests.readthedocs.io/en/latest/">requests</a> library.</dd>
+</dl>
+</div>
+<div class="section" id="id6">
+<h1><a class="toc-backref" href="#id18">Installing Roundup</a></h1>
+<p>To get a production installation running will take 15-30 minutes.  If
+you want to spend less than 5 minutes to test Roundup without
+installing it, see <a class="reference internal" href="#for-the-really-impatient">For The Really Impatient</a>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Some systems, such as Gentoo and NetBSD, already have
+Roundup installed. Try running the command &quot;roundup-admin
+-v&quot;.  If it runs and reports the current version, you may
+skip the <a class="reference internal" href="#standard-installation">Standard installation</a> below and go straight to
+<a class="reference internal" href="#configuring-your-first-tracker">configuring your first tracker</a>. However it may be an old
+version. If so you should probably install it in a virtual
+environment from the Roundup web site or pypi.</p>
+</div>
+<p>If Roundup is not installed on your system, or needs to be updated,
+there are multiple ways to install Roundup.</p>
+<ul class="simple">
+<li><a class="reference internal" href="#standard-installation">Standard installation</a> using pip in a Virtual Environment is the
+recommended standard.</li>
+<li><a class="reference internal" href="#installing-from-downloaded-source">Installing from downloaded source</a> allows more control over how
+things are installed (including overwriting a vendor install). But
+it also increases complexity as well.</li>
+<li>Use a prebuilt docker container from
+<tt class="docutils literal">rounduptracker/roundup:latest</tt>  and follow the steps in
+<a class="reference internal" href="#running-your-container">Running Your Container</a>.</li>
+<li>Install in a docker container by downloading the source
+and following the steps in <a class="reference internal" href="#docker-support">Docker Support</a>.</li>
+</ul>
+<p>There are several steps to get Roundup serving a tracker:</p>
+<ol class="arabic simple">
+<li>Install using one of the methods listed above.</li>
+<li>Configure your tracker following <a class="reference internal" href="#configuring-your-first-tracker">configuring your first tracker</a>
+for all install methods.</li>
+<li>Optionally <a class="reference internal" href="#configure-a-web-interface">configure a web interface</a>.</li>
+<li>Optionally <a class="reference internal" href="#configure-an-email-interface">configure an email interface</a>.</li>
+<li>Follow <a class="reference internal" href="#unix-environment-steps">UNIX environment steps</a> to restrict local access to
+Roundup if you're installing on a shared UNIX system.</li>
+</ol>
+<p>For information about what Roundup installs, see the
+<a class="reference external" href="admin_guide.html#what-does-roundup-install">What does Roundup install</a> section in the <a class="reference external" href="admin_guide.html">administration guide</a>.</p>
+<div class="section" id="standard-installation">
+<h2><a class="toc-backref" href="#id19">Standard Installation</a></h2>
+<p>Installation of Roundup using Python3 in a virtual environment is
+recommended. Use:</p>
+<pre class="literal-block">
+python3 -m venv /path/to/environment/roundup
+</pre>
+<p>Activate the Python environment (assuming a Bourne like shell)
+using:</p>
+<pre class="literal-block">
+. /path/to/environment/roundup/bin/activate
+</pre>
+<p>To install the released Roundup core code into your Python tree and
+Roundup scripts into <tt class="docutils literal">/path/to/environment/roundup/usr/bin</tt> run:</p>
+<pre class="literal-block">
+python3 -m pip install roundup
+</pre>
+<p>If everything went well, you should now be able to run:</p>
+<pre class="literal-block">
+roundup-admin help
+</pre>
+<p>and see the help text.</p>
+<p>If you want to run Roundup commands in the future without
+activating the virtual environment, just call the commands using the
+full path. For example:</p>
+<pre class="literal-block">
+/path/to/environment/roundup/usr/bin/roundup-admin
+</pre>
+<p>You can use the command <tt class="docutils literal">deactivate</tt> to return to the normal
+Python environment. However, for now continue with
+<a class="reference internal" href="#configuring-your-first-tracker">configuring your first tracker</a>.</p>
+</div>
+<div class="section" id="installing-from-downloaded-source">
+<h2><a class="toc-backref" href="#id20">Installing from downloaded source</a></h2>
+<p>In general you should be installing from a released Roundup version
+into a virtual environment.</p>
+<p>If you are installing a <a class="reference external" href="../code.html">current development version</a> or are a
+developer or are an expert you can use the manual installation method
+from a source install. From the unpacked source distribution, run:</p>
+<pre class="literal-block">
+sudo python3 setup.py install
+</pre>
+<p>which will put the Roundup core code into your systems Python tree and
+the command scripts into <tt class="docutils literal">/usr/bin</tt></p>
+<p>If you would like to place the Roundup scripts in a directory other
+than <tt class="docutils literal">/usr/bin</tt>, then specify the preferred location with
+<tt class="docutils literal"><span class="pre">--install-scripts</span></tt>. For example, to install them in
+<tt class="docutils literal">/opt/roundup/bin</tt>:</p>
+<pre class="literal-block">
+sudo python setup.py install --install-scripts=/opt/roundup/bin
+</pre>
+<p>You can also use the <tt class="docutils literal"><span class="pre">--prefix</span></tt> option to install roundup into a
+completely different base directory.  If you choose to do this, you
+will have to change Python's search path (sys.path) yourself.</p>
+</div>
+</div>
+<div class="section" id="configuring-your-first-tracker">
+<h1><a class="toc-backref" href="#id21">Configuring your first tracker</a></h1>
+<p>Make sure the <tt class="docutils literal"><span class="pre">roundup-admin</span></tt> script location is on your <tt class="docutils literal">PATH</tt>
+evironment variable. This is done automatically when you activate a
+virtual environment. You can also specify the full path to the command
+in the following steps.</p>
+<ol class="arabic">
+<li><p class="first">To create a Roundup tracker (necessary to do before you can
+use the software in any real fashion), you need to set up a &quot;tracker
+home&quot;:</p>
+<ol class="loweralpha">
+<li><p class="first">(Optional) If you intend to keep your roundup trackers
+under one top level directory which does not exist yet,
+you should create that directory now.  Example:</p>
+<pre class="literal-block">
+mkdir /opt/roundup/trackers
+</pre>
+</li>
+</ol>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">installation.txt</tt>, line 414)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: roundup-admin; install subcommand
+
+</pre>
+</div>
+<ol class="loweralpha" start="2">
+<li><p class="first">Install a new tracker with the command <tt class="docutils literal"><span class="pre">roundup-admin</span> install</tt>.
+You will be asked a series of questions.  Descriptions of the provided
+templates can be found in <a class="reference internal" href="#choosing-your-template">choosing your template</a> below.  Descriptions
+of the available backends can be found in <a class="reference internal" href="#choosing-your-backend">choosing your backend</a>
+below.  The questions will be something like (you may have more
+templates or backends available):</p>
+<pre class="literal-block">
+Enter tracker home: /opt/roundup/trackers/support
+Templates: minimal, jinja2, classic, responsive, devel
+Select template [classic]: classic
+Back ends: anydbm, sqlite
+Select backend [anydbm]: anydbm
+</pre>
+<p>Note: &quot;Back ends&quot; selection list depends on availability of
+third-party database modules.  Standard python distribution
+includes anydbm and sqlite module only.</p>
+<p>The &quot;support&quot; part of the tracker home can be anything you want - it
+is the directory where the tracker information will be stored.</p>
+<p>You will now be directed to edit the tracker configuration and
+initial schema.  At a minimum, you must set &quot;tracker :: web&quot;
+(that's the &quot;web&quot; option in the &quot;tracker&quot; section),
+&quot;mail :: host&quot;, and &quot;mail :: domain&quot;. You should also
+set &quot;main :: admin_email&quot; to your local admin address to get email
+on unusual occurances. If you get stuck,
+and get configuration file errors, then see the <a class="reference external" href="customizing.html#tracker-configuration">tracker
+configuration</a> section of the <a class="reference external" href="customizing.html">customisation documentation</a>.</p>
+<p>If you just want to get set up to test things quickly (and follow
+the instructions in step 3 below), you can even just set the
+&quot;tracker :: web&quot; variable to:</p>
+<pre class="literal-block">
+web = http://localhost:8080/support/
+</pre>
+<p>The URL <em>must</em> end in a '/', or your web interface <em>will not work</em>.
+See <a class="reference external" href="customizing.html">Customising Roundup</a> for details on configuration and schema
+changes. You may change any of the configuration after
+you've initialised the tracker - it's just better to have valid values
+for this stuff now.</p>
+</li>
+</ol>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">installation.txt</tt>, line 457)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: roundup-admin; initialise subcommand
+
+</pre>
+</div>
+<ol class="loweralpha" start="3">
+<li><p class="first">Initialise the tracker database with <tt class="docutils literal"><span class="pre">roundup-admin</span> initialise</tt>.
+You will need to supply an admin password at this step. You will be
+prompted:</p>
+<pre class="literal-block">
+Admin Password:
+       Confirm:
+</pre>
+<p>Note: running this command will <em>destroy any existing data in the
+database</em>. In the case of MySQL and PostgreSQL, any existing database
+will be dropped and re-created.</p>
+<p>Once this is done, the tracker has been created. See the note in
+the user_guide on how to initialise a tracker without being
+prompted for the password or exposing the password on the command
+line.</p>
+</li>
+</ol>
+</li>
+<li><p class="first">At this point, your tracker is set up, but doesn't have a nice user
+interface. To set that up, we need to <a class="reference internal" href="#configure-a-web-interface">configure a web interface</a> and
+optionally <a class="reference internal" href="#configure-an-email-interface">configure an email interface</a>. If you want to try your
+new tracker out, assuming the <tt class="docutils literal">web</tt> setting in the
+<tt class="docutils literal">[tracker]</tt> <a class="footnote-reference" href="#id8" id="id7">[3]</a>  section of config.ini is set to
+<tt class="docutils literal"><span class="pre">'http://localhost:8080/support/'</span></tt>, run:</p>
+<pre class="literal-block">
+roundup-server support=/opt/roundup/trackers/support
+</pre>
+<p>then direct your web browser at:</p>
+<blockquote>
+<p><a class="reference external" href="http://localhost:8080/support/">http://localhost:8080/support/</a></p>
+</blockquote>
+<p>and you should see the tracker interface.</p>
+<p>To run your tracker on some interface other than 127.0.0.1 and port
+8080 (make sure you change the &quot;tracker :: web&quot; option to match) use:</p>
+<pre class="literal-block">
+roundup-server -p 1080 -n 0.0.0.0 support=/opt/roundup/trackers/support
+</pre>
+<p>to run the server at port 1080 and bind to all ip addresses on your system.
+Then direct your web browser to <tt class="docutils literal"><span class="pre">http://your_host_name:1080/support/</span></tt>.</p>
+</li>
+</ol>
+<table class="docutils footnote" frame="void" id="id8" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id7">[3]</a></td><td>The rest of the documentation uses the abbreviated form &quot;tracker ::
+web&quot; for specifying a section and setting.</td></tr>
+</tbody>
+</table>
+<div class="section" id="choosing-your-template">
+<h2><a class="toc-backref" href="#id22">Choosing Your Template</a></h2>
+<p>Roundup ships with 5 templates. A description of each follows. When
+Roundup is installed, you can also get a description of available
+templates using <tt class="docutils literal"><span class="pre">roundup-admin</span> templates</tt>. You can use this to view
+additional templates that you create or download.</p>
+<div class="section" id="classic-template">
+<span id="classic-tracker"></span><h3><a class="toc-backref" href="#id23">Classic Template</a></h3>
+<p>The classic template is the one defined in the <a class="reference external" href="spec.html">Roundup
+Specification</a>. It holds issues which have priorities and
+statuses. Each issue may also have a set of messages which are
+disseminated to the issue's list of nosy users.</p>
+</div>
+<div class="section" id="minimal-template">
+<h3><a class="toc-backref" href="#id24">Minimal Template</a></h3>
+<p>The minimal template has the minimum setup required for a tracker
+installation. That is, it has the configuration files, defines a user
+database and the basic HTML interface to that. It's a completely clean
+slate for you to create your tracker on.</p>
+</div>
+<div class="section" id="other-templates">
+<h3><a class="toc-backref" href="#id25">Other Templates</a></h3>
+<p>There are three other templates distributed with Roundup:</p>
+<dl class="docutils">
+<dt>devel</dt>
+<dd>This is a generic issue tracker that may be used to track bugs,
+feature requests, project issues or any number of other types of
+issues. Most users of Roundup will find that this template suits
+them, with perhaps a few customisations.</dd>
+<dt>responsive</dt>
+<dd>This issue tracker uses the same schema as devel.  The difference
+between devel and responsive templates is the use of Twitter
+bootstrap (<a class="reference external" href="https://github.com/twbs/bootstrap">https://github.com/twbs/bootstrap</a>) in templates and
+HTML5 markup.  Make sure the &quot;static_files&quot; setting in your
+config.ini of your instance is set to the directory where the
+static files live (the subdirectory &quot;static&quot; in the default of the
+template).</dd>
+<dt>jinja2</dt>
+<dd>This is a generic issue tracker based on classic schema.  It uses
+Jinja2 for templating and Twitter bootstrap for responsive markup.
+You will need jinja and gettext for this to work.  See the wiki
+page <a class="reference external" href="https://wiki.roundup-tracker.org/Jinja2">https://wiki.roundup-tracker.org/Jinja2</a> for updates
+between releases.</dd>
+</dl>
+<p>Also other people have listed their trackers for different needs at:
+<a class="reference external" href="https://wiki.roundup-tracker.org/TrackerTemplates">https://wiki.roundup-tracker.org/TrackerTemplates</a>.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">installation.txt</tt>, line 557)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: database; choosing your backend
+
+</pre>
+</div>
+</div>
+</div>
+<div class="section" id="choosing-your-backend">
+<h2><a class="toc-backref" href="#id26">Choosing Your Backend</a></h2>
+<p>The actual storage of Roundup tracker information is handled by backends.
+There's several to choose from, each with benefits and limitations:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="18%" />
+<col width="19%" />
+<col width="9%" />
+<col width="54%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Name</th>
+<th class="head">Speed</th>
+<th class="head">Users</th>
+<th class="head">Support</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>anydbm</td>
+<td>Slowest</td>
+<td>Few</td>
+<td>Always available</td>
+</tr>
+<tr><td>sqlite</td>
+<td>Fastest</td>
+<td>Few</td>
+<td>Always available</td>
+</tr>
+<tr><td>postgresql</td>
+<td>Fast</td>
+<td>Many</td>
+<td>Needs install/admin (<a class="reference external" href="https://www.psycopg.org/">psycopg2</a>)</td>
+</tr>
+<tr><td>mysql</td>
+<td>Fast</td>
+<td>Many</td>
+<td>Needs install/admin (<a class="reference external" href="https://pypi.org/project/mysqlclient/">MySQLdb</a>)</td>
+</tr>
+</tbody>
+</table>
+<dl class="docutils">
+<dt><strong>sqlite</strong></dt>
+<dd><p class="first">This uses the embedded database engine <a class="reference external" href="https://pysqlite.org/">PySQLite</a> to provide a very fast
+backend. This is not suitable for trackers which will have many
+simultaneous users, but requires much less installation and maintenance
+effort than more scalable postgresql and mysql backends.</p>
+<p>SQLite is supported via PySQLite versions 1.1.7, 2.1.0 and sqlite3 (the last
+being bundled with Python 2.5+)</p>
+<p>Installed SQLite should be the latest version available (3.3.8 is known
+to work, 3.1.3 is known to have problems).</p>
+<p class="last">Roundup supports using sqlite's full text search capability. This
+can improve searching if you are not installing another indexer like
+xapian or whoosh. It works best with English text.</p>
+</dd>
+<dt><strong>postgresql</strong></dt>
+<dd>Backend for popular RDBMS PostgreSQL. You must read
+<a class="reference external" href="postgresql.html">doc/postgresql.txt</a> for additional installation steps and
+requirements. You must also configure
+the <tt class="docutils literal">rdbms</tt> section of your tracker's <tt class="docutils literal">config.ini</tt>.  It is recommended
+that you use at least version 2.8 of psycopg2.</dd>
+<dt><strong>mysql</strong></dt>
+<dd>Backend for popular RDBMS MySQL. You must read <a class="reference external" href="mysql.html">doc/mysql.txt</a> for
+additional installation steps and requirements. You must also
+configure the <tt class="docutils literal">rdbms</tt> section of your tracker's <tt class="docutils literal">config.ini</tt></dd>
+</dl>
+<p>You may defer your decision by setting your tracker up with the anydbm
+backend (which is guaranteed to be available) and switching to one of the
+other backends at any time using the instructions in the <a class="reference external" href="admin_guide.html">administration
+guide</a>.</p>
+<p>Regardless of which backend you choose, Roundup will attempt to initialise
+a new database for you when you run the &quot;<tt class="docutils literal"><span class="pre">roundup-admin</span> initialise</tt>&quot; command.
+In the case of MySQL and PostgreSQL you will need to have the appropriate
+privileges to create databases.</p>
+</div>
+</div>
+<div class="section" id="configure-a-web-interface">
+<h1><a class="toc-backref" href="#id27">Configure a Web Interface</a></h1>
+<p>There are multiple ways to deploy the web interface. If your
+tracker will be heavily used and accessible from the internet, we
+suggest using Apache or Nginx in WSGI mode or as a reverse proxy
+to the stand alone web server or WSGI server like Gunicorn.</p>
+<p>A FastCGI deployment with an alternate web server is suitable for
+lower traffic sites.</p>
+<p>If you already run Zope, Roundup should deploy nicely in that
+framework.</p>
+<p>If you are internet accessible, but expect a few users, or are on
+a hosted web server, using cgi-bin is a reasonable deployment.</p>
+<p>Using a true HTTP server provide tools including: DOS prevention,
+throttling, web application firewalls etc. that are worth having
+in an internet facing application.</p>
+<p>If you are running on an internal intranet, you can use the
+stand alone server: roundup-server, but even in this environment,
+using a real web server to serve static files and other resources
+will perform better.</p>
+<div class="contents local topic" id="id9">
+<ul class="simple">
+<li><a class="reference internal" href="#web-server-cgi-bin" id="id77">Web Server cgi-bin</a></li>
+<li><a class="reference internal" href="#cgi-bin-for-limited-access-hosting" id="id78">CGI-bin for Limited-Access Hosting</a></li>
+<li><a class="reference internal" href="#stand-alone-web-server" id="id79">Stand-alone Web Server</a></li>
+<li><a class="reference internal" href="#zope-product-zroundup" id="id80">Zope Product - ZRoundup</a></li>
+<li><a class="reference internal" href="#apache-http-server-with-mod-wsgi" id="id81">Apache HTTP Server with mod_wsgi</a></li>
+<li><a class="reference internal" href="#nginx-http-server" id="id82">Nginx HTTP Server</a></li>
+<li><a class="reference internal" href="#fastcgi-cherokee-hiawatha-lighttpd" id="id83">FastCGI (Cherokee, Hiawatha, lighttpd)</a></li>
+<li><a class="reference internal" href="#wsgi-variations" id="id84">WSGI Variations</a></li>
+</ul>
+</div>
+<p>You may need to give the web server user permission to access the tracker home
+- see the <a class="reference internal" href="#unix-environment-steps">UNIX environment steps</a> for information. You may also need to
+configure your system in some way - see <a class="reference internal" href="#platform-specific-notes">platform-specific notes</a>.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">installation.txt</tt>, line 645)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: pair: web interface; cgi
+
+</pre>
+</div>
+<div class="section" id="web-server-cgi-bin">
+<h2><a class="toc-backref" href="#id77">Web Server cgi-bin</a></h2>
+<p>A benefit of using the cgi-bin approach is that it's the easiest way to
+restrict access to your tracker to only use HTTPS. Access will be slower
+than through the <a class="reference internal" href="#stand-alone-web-server">stand-alone web server</a> though.</p>
+<p>If your Python isn't installed as &quot;python&quot; then you'll need to edit
+the <tt class="docutils literal">roundup.cgi</tt> script to fix the first line.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">installation.txt</tt>, line 657)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: windows; IIS cgi installation
+
+</pre>
+</div>
+<p>If you're using IIS on a Windows platform, you'll need to run this command
+for the cgi to work (it turns on the PATH_INFO cgi variable):</p>
+<pre class="literal-block">
+adsutil.vbs set w3svc/AllowPathInfoForScriptMappings TRUE
+</pre>
+<p>The <tt class="docutils literal">adsutil.vbs</tt> file can be found in either <tt class="docutils literal"><span class="pre">c:\inetpub\adminscripts</span></tt>
+or <tt class="docutils literal"><span class="pre">c:\winnt\system32\inetsrv\adminsamples\</span></tt> or
+<tt class="docutils literal"><span class="pre">c:\winnt\system32\inetsrv\adminscripts\</span></tt> depending on your installation.</p>
+<p>See:</p>
+<blockquote>
+<a class="reference external" href="https://learn.microsoft.com/en-us/iis/web-dev-reference/server-variables">https://learn.microsoft.com/en-us/iis/web-dev-reference/server-variables</a></blockquote>
+<p>More information about ISS setup may be found at:</p>
+<blockquote>
+<a class="reference external" href="https://docs.microsoft.com/en-us/iis/">https://docs.microsoft.com/en-us/iis/</a></blockquote>
+<p>Copy the <tt class="docutils literal"><span class="pre">share/roundup/cgi-bin/roundup-cgi</span></tt>
+(<tt class="docutils literal">frontends/roundup.cgi</tt> in source tree) file to your web
+server's <tt class="docutils literal"><span class="pre">cgi-bin</span></tt> directory. You will need to configure it to
+tell it where your tracker home is. You can do this either:</p>
+<dl class="docutils">
+<dt>Through an environment variable</dt>
+<dd>Set the variable TRACKER_HOMES to be a colon (&quot;:&quot;) separated list of
+name=home pairs (if you're using apache, the SetEnv directive can do this)</dd>
+<dt>Directly in the <tt class="docutils literal">roundup.cgi</tt> file itself</dt>
+<dd>Add your instance to the TRACKER_HOMES variable as <tt class="docutils literal">'name': 'home'</tt></dd>
+</dl>
+<p>The &quot;name&quot; part of the configuration will appear in the URL and identifies the
+tracker (so you may have more than one tracker per cgi-bin script). Make sure
+there are no spaces or other illegal characters in it (to be safe, stick to
+letters and numbers). The &quot;name&quot; forms part of the URL that appears in the
+tracker config &quot;tracker :: web&quot; variable, so make sure they match. The &quot;home&quot;
+part of the configuration is the tracker home directory.</p>
+<p>If you're using Apache, you can use an additional trick to hide the
+<tt class="docutils literal">.cgi</tt> extension of the cgi script. Place the <tt class="docutils literal">roundup.cgi</tt> script
+wherever you want it to be, rename it to just <tt class="docutils literal">roundup</tt>, and add a
+couple lines to your Apache configuration:</p>
+<pre class="literal-block">
+&lt;Location /path/to/roundup&gt;
+  SetHandler cgi-script
+&lt;/Location&gt;
+</pre>
+</div>
+<div class="section" id="cgi-bin-for-limited-access-hosting">
+<h2><a class="toc-backref" href="#id78">CGI-bin for Limited-Access Hosting</a></h2>
+<p>If you are running in a shared-hosting environment or otherwise don't have
+permission to edit the system web server's configuration, but can create a
+<tt class="docutils literal">.htaccess</tt> file then you may be able to use this approach.</p>
+<ol class="arabic">
+<li><p class="first">Install <a class="reference external" href="https://pypi.org/project/flup/">flup</a></p>
+</li>
+<li><p class="first">Create a script <tt class="docutils literal">roundup_stub</tt> in your server's <tt class="docutils literal"><span class="pre">cgi-bin</span></tt> directory
+containing:</p>
+<pre class="literal-block">
+#!/usr/bin/env python
+
+# if necessary modify the Python path to include the place you
+# installed Roundup
+#import sys
+#sys.path.append('...')
+
+# cgitb is needed for debugging in browser only
+#import cgitb
+#cgitb.enable()
+
+# obtain the WSGI request dispatcher
+from roundup.cgi.wsgi_handler import RequestDispatcher
+tracker_home = '/path/to/tracker/home'
+app = RequestDispatcher(tracker_home)
+
+from flup.server.cgi import WSGIServer
+WSGIServer(app).run()
+</pre>
+</li>
+<li><p class="first">Modify or created the <tt class="docutils literal">.htaccess</tt> file in the desired (sub-)domain
+directory to contain:</p>
+<pre class="literal-block">
+RewriteEngine On
+RewriteBase /
+RewriteRule ^(.*)$      /cgi-bin/roundup_stub/$1 [L]
+</pre>
+</li>
+</ol>
+<p>Now loading the (sub-)domain in a browser should load the tracker web
+interface. If you get a &quot;500&quot; error then enable the &quot;cgitb&quot; lines in the
+stub to get some debugging information.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">installation.txt</tt>, line 746)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: pair: web interface; stand alone server
+
+</pre>
+</div>
+</div>
+<div class="section" id="stand-alone-web-server">
+<h2><a class="toc-backref" href="#id79">Stand-alone Web Server</a></h2>
+<p>This approach will give you faster response than cgi-bin. You may
+investigate using ProxyPass or similar configuration in apache to have your
+tracker accessed through the same URL as other systems.</p>
+<p>The stand alone serveris used by the Docker image.</p>
+<p>The stand-alone web server is started with the command <tt class="docutils literal"><span class="pre">roundup-server</span></tt>. It
+has several options - display them with <tt class="docutils literal"><span class="pre">roundup-server</span> <span class="pre">-h</span></tt>.</p>
+<p>The tracker home configuration is similar to the cgi-bin - you may either edit
+the script to change the TRACKER_HOMES variable or you may supply the
+name=home values on the command-line after all the other options.</p>
+<p>To make the server run in the background, use the &quot;-d&quot; option, specifying the
+name of a file to write the server process id (pid) to.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">installation.txt</tt>, line 768)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: pair: web interface; Zope
+
+</pre>
+</div>
+</div>
+<div class="section" id="zope-product-zroundup">
+<h2><a class="toc-backref" href="#id80">Zope Product - ZRoundup</a></h2>
+<p>ZRoundup installs as a regular Zope product. Copy the
+<tt class="docutils literal">share/roundup/frontends/ZRoundup</tt> (frontends/ZRoundup in the
+source tree) directory to your Products directory either in
+INSTANCE_HOME/Products or the Zope code tree lib/python/Products.</p>
+<p>When you next (re)start up Zope, you will be able to add a ZRoundup object
+that interfaces to your new tracker.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">installation.txt</tt>, line 781)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: ! triple: web interface; apache; mod_wsgi
+   ! single:  wsgi; apache
+
+</pre>
+</div>
+</div>
+<div class="section" id="apache-http-server-with-mod-wsgi">
+<h2><a class="toc-backref" href="#id81">Apache HTTP Server with mod_wsgi</a></h2>
+<p>This is a work in progress thanks to Garth Jensen.</p>
+<p>See the main web site for <a class="reference external" href="https://pypi.org/project/mod-wsgi/">mod_wsgi</a> which include directions for
+using mod_wsgi-express which is easier if you are not used to apache
+configuration. Also there is the
+<a class="reference external" href="https://modwsgi.readthedocs.io/en/develop/">main mod_wsgi</a> for more
+detailed directions.</p>
+<div class="section" id="background">
+<h3><a class="toc-backref" href="#id33">Background</a></h3>
+<p>These notes were developed on a Microsoft Azure VM running Ubuntu
+18.04 LTS.  The instructions below assume:</p>
+<ul class="simple">
+<li>python and roundup are already installed</li>
+<li>roundup is running in the system python instance (e.g. no virtual
+environment)</li>
+<li>the tracker <tt class="docutils literal">mytracker</tt> is installed in the <tt class="docutils literal">trackers</tt> folder of
+home directory of a user called <tt class="docutils literal">admin</tt>. Thus, the absolute path to
+the tracker home directory is <tt class="docutils literal">/home/admin/trackers/mytracker</tt>.</li>
+<li>the server has a static public IP address of 11.11.11.101</li>
+</ul>
+</div>
+<div class="section" id="install-mod-wsgi">
+<h3><a class="toc-backref" href="#id34">Install mod-wsgi</a></h3>
+<p>You can install/build it using the python package manager pip, or
+install using the OS package manager (apt).</p>
+<div class="section" id="pip-install-of-mod-wsgi">
+<h4>Pip install of mod_wsgi</h4>
+<p>This is the tested method, and offers an easier path to get started,
+but it does mean that you will need to keep up to date with any
+security or other issues. If you use the packages supplied by your OS
+vendor, you may get more timely updates and notifications.</p>
+<p>The mod_wsgi docs talk about two installation methods: (1) the
+so-called CMMI method or (2) with pip. The pip method also provides an
+admin script called <tt class="docutils literal"><span class="pre">mod_wsgi-express</span></tt> that can start up a
+standalone instance of Apache directly from the command line with an
+auto generated configuration. These instructions follow the pip
+method.</p>
+<ol class="arabic">
+<li><p class="first">The <a class="reference external" href="https://pypi.org/project/mod-wsgi/">mod_wsgi</a> PyPi page lists prerequisites for various types of
+systems. For Ubuntu, they are apache2 and apache2-dev. To see
+installed apache packages, you can use <tt class="docutils literal">dpkg <span class="pre">-l</span> | grep apache</tt>.
+If apache2 or apache2-dev are not installed, they install them
+with:</p>
+<ul class="simple">
+<li><tt class="docutils literal">sudo apt update</tt></li>
+<li><tt class="docutils literal">sudo apt install apache2 <span class="pre">apache2-dev</span></tt></li>
+</ul>
+</li>
+<li><p class="first">If <tt class="docutils literal">pip</tt> is not already installed, install it with
+<tt class="docutils literal">sudo apt install <span class="pre">python-pip</span></tt></p>
+<p>If you are using python 3, use <tt class="docutils literal">sudo <span class="pre">apt-install</span> <span class="pre">python3-pip</span></tt> and
+change references to pip in the directions to pip3.</p>
+</li>
+<li><p class="first"><tt class="docutils literal">sudo pip install mod_wsgi</tt>. In my case, I got warnings about
+the user not owning directories, but it said it completed
+&quot;successfully.&quot;</p>
+</li>
+<li><p class="first">For testing, open port 8000 for TCP on the server. For an Azure VM,
+this is done with Azure Portal under <tt class="docutils literal">Networking</tt> &gt; <tt class="docutils literal">Add inbound port</tt>
+rule.</p>
+</li>
+<li><p class="first">Test with <tt class="docutils literal"><span class="pre">mod_wsgi-express</span> <span class="pre">start-server</span></tt>. This should serve
+up content on localhost port 8000. You can then direct a browser on
+the server itself to <a class="reference external" href="http://localhost:8000/">http://localhost:8000/</a> or on another machine at
+the server's domain name or ip address followed by colon then 8000
+(e.g. http://11.11.11.101:8000/). If successful, you should see a
+Malt Whiskey image.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="package-manager-install-of-mod-wsgi">
+<h4>Package manager install of mod_wsgi</h4>
+<p>On debian (which should work for Ubuntu), install apache2 with
+libapache2-mod-wsgi:</p>
+<blockquote>
+<ul class="simple">
+<li><tt class="docutils literal">sudo apt update</tt></li>
+<li><tt class="docutils literal">sudo apt install apache2 <span class="pre">libapache2-mod-wsgi</span></tt></li>
+</ul>
+</blockquote>
+<p>this is the less tested method for installing mod_wsgi and may not
+install mod_wsgi-express, which is used below. However there is an
+example apache config included as part of <a class="reference internal" href="#wsgi-variations">WSGI Variations</a> that can
+be used to hand craft an apache config.</p>
+<p>You should make sure that the version you install is 3.5 or newer due
+to security issues in older releases.</p>
+</div>
+</div>
+<div class="section" id="configure-web-interface-via-wsgi-handler">
+<h3><a class="toc-backref" href="#id35">Configure web interface via wsgi_handler</a></h3>
+<ol class="arabic">
+<li><p class="first">In the tracker's home directory create a <tt class="docutils literal">wsgi.py</tt> file with the
+following content (substituting <tt class="docutils literal">/home/admin/trackers/mytracker</tt>
+with the absolute path for your tracker's home directory):</p>
+<pre class="code python literal-block">
+<span class="keyword namespace">from</span> <span class="name namespace">roundup.cgi.wsgi_handler</span> <span class="keyword namespace">import</span> <span class="name">RequestDispatcher</span>
+<span class="name">tracker_home</span> <span class="operator">=</span> <span class="literal string single">'/home/admin/trackers/mytracker'</span>
+<span class="name">application</span> <span class="operator">=</span> <span class="name">RequestDispatcher</span><span class="punctuation">(</span><span class="name">tracker_home</span><span class="punctuation">)</span>
+</pre>
+</li>
+</ol>
+<div class="section" id="to-run-the-tracker-on-port-8000-as-a-foreground-process">
+<h4>To run the tracker on Port 8000 as a foreground process</h4>
+<ol class="arabic simple">
+<li>Change the <tt class="docutils literal">tracker.web</tt> url in <tt class="docutils literal">config.ini</tt> to port 8000 at the
+server domain name or ip address (e.g. <a class="reference external" href="http://11.11.11.101:8000/">http://11.11.11.101:8000/</a>).</li>
+<li>Open port 8000 for TCP on the server if you didn't already do so.</li>
+<li><tt class="docutils literal">cd</tt> to your tracker home directory, then run
+<tt class="docutils literal"><span class="pre">mod_wsgi-express</span> <span class="pre">start-server</span> wsgi.py</tt>.</li>
+<li>Test by directing a browser on another machine to the url you set
+<tt class="docutils literal">tracker.web</tt> to in <tt class="docutils literal">config.ini</tt>.</li>
+</ol>
+</div>
+<div class="section" id="run-tracker-as-background-daemon">
+<h4>Run tracker as background daemon</h4>
+<p>To run the tracker on Port 80 or as a background process, you'll need
+to configure a UNIX group with appropriate privileges as described in
+<a class="reference internal" href="#unix-environment-steps">UNIX environment steps</a>. These steps are summarized here:</p>
+<ol class="arabic simple">
+<li>To add a group named &quot;mytrackergrp&quot; run: <tt class="docutils literal">sudo groupadd mytrackergrp</tt>.</li>
+<li>Add the owner of the tracker home (admin in this example) run:
+<tt class="docutils literal">sudo usermod <span class="pre">-a</span> <span class="pre">-G</span> mytrackergrp admin</tt></li>
+<li>Add user that runs Apache (the default on Ubuntu is www-data) run:
+<tt class="docutils literal">sudo usermod <span class="pre">-a</span> <span class="pre">-G</span> mytrackergrp <span class="pre">www-data</span></tt></li>
+<li>Add user mail service runs as (e.g. daemon) run:
+<tt class="docutils literal">sudo usermod <span class="pre">-a</span> <span class="pre">-G</span> mytrackergrp daemon</tt></li>
+<li>Change group of the database in the tracker folder run:
+<tt class="docutils literal">sudo chgrp <span class="pre">-R</span> mytrackergrp ~/trackers/mytracker</tt>.</li>
+<li>Make sure group can write to the database, and any new files created
+in the database will be owned by the group run:
+<tt class="docutils literal">sudo chmod <span class="pre">-R</span> g+sw ~/trackers/mytracker/db</tt></li>
+</ol>
+</div>
+<div class="section" id="to-run-mod-wsgi-on-port-80">
+<h4>To run mod_wsgi on PORT 80</h4>
+<ol class="arabic simple">
+<li>Change the <tt class="docutils literal">tracker.web</tt> url in <tt class="docutils literal">config.ini</tt> to the server url
+with no port designator. E.g. <a class="reference external" href="http://11.11.11.101">http://11.11.11.101</a>.</li>
+<li>Open port 80 on the server for TCP traffic if it isn't open already.</li>
+<li>Stop the system instance of Apache to make sure it isn't holding on
+to port 80 run: <tt class="docutils literal">sudo service apache2 stop</tt>.</li>
+</ol>
+<div class="section" id="to-run-as-a-foreground-process">
+<h5>To run as a foreground process</h5>
+<ol class="arabic simple">
+<li>From the tracker home directory, run
+<tt class="docutils literal">sudo <span class="pre">mod_wsgi-express</span> <span class="pre">start-server</span> wsgi.py <span class="pre">--port</span> 80 <span class="pre">--user</span> admin <span class="pre">--group</span> mytrackergrp</tt></li>
+</ol>
+</div>
+<div class="section" id="to-run-as-a-background-process">
+<h5>To run as a background process</h5>
+<ol class="arabic simple">
+<li>From the tracker home directory, bash
+<tt class="docutils literal">sudo <span class="pre">mod_wsgi-express</span> <span class="pre">setup-server</span> wsgi.py <span class="pre">--port=80</span> <span class="pre">--user</span> admin <span class="pre">--group</span> mytrackergrp <span class="pre">--server-root=/etc/mod_wsgi-express-80</span></tt></li>
+<li>Then, run <tt class="docutils literal">sudo <span class="pre">/etc/mod_wsgi-express-80/apachectl</span> start</tt></li>
+<li>To stop, run <tt class="docutils literal">sudo <span class="pre">/etc/mod_wsgi-express-80/apachectl</span> stop</tt></li>
+</ol>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">installation.txt</tt>, line 942)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: triple: web interface; apache; mod_python (depricated)
+
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="apache-http-server-with-mod-python">
+<h3><a class="toc-backref" href="#id36">Apache HTTP Server with mod_python</a></h3>
+<p>As of roundup 2.0, mod_python support is deprecated. The apache.py
+file is still available, but may be limited to working for Python 2
+only. Using mod_wsgi with Apache is the recommended way to deploy
+roundup under apache.</p>
+<p><a class="reference external" href="https://github.com/grisha/mod_python">Mod_python</a> is an <a class="reference external" href="https://httpd.apache.org/">Apache</a> module that embeds the Python interpreter
+within the server.  Running Roundup this way is much faster than all
+above options and, like <a class="reference internal" href="#web-server-cgi-bin">web server cgi-bin</a>, allows you to use HTTPS
+protocol.  The drawback is that this setup is more complicated.</p>
+<p>The following instructions were tested on apache 2.0 with mod_python 3.1.
+If you are using older versions, your mileage may vary.</p>
+<p>Mod_python uses OS threads.  If your apache was built without threads
+(quite commonly), you must load the threading library to run mod_python.
+This is done by setting <tt class="docutils literal">LD_PRELOAD</tt> to your threading library path
+in apache <tt class="docutils literal">envvars</tt> file.  Example for gentoo linux (<tt class="docutils literal">envvars</tt> file
+is located in <tt class="docutils literal">/usr/lib/apache2/build/</tt>):</p>
+<pre class="literal-block">
+LD_PRELOAD=/lib/libpthread.so.0
+export LD_PRELOAD
+</pre>
+<p>Example for FreeBSD (<tt class="docutils literal">envvars</tt> is in <tt class="docutils literal">/usr/local/sbin/</tt>):</p>
+<pre class="literal-block">
+LD_PRELOAD=/usr/lib/libc_r.so
+export LD_PRELOAD
+</pre>
+<p>Next, you have to add Roundup trackers configuration to apache config.
+Roundup apache interface uses the following options specified with
+<tt class="docutils literal">PythonOption</tt> directives:</p>
+<dl class="docutils">
+<dt>TrackerHome:</dt>
+<dd>defines the tracker home directory - the directory that was specified
+when you did <tt class="docutils literal"><span class="pre">roundup-admin</span> init</tt>.  This option is required.</dd>
+<dt>TrackerLanguage:</dt>
+<dd>defines web user interface language.  mod_python applications do not
+receive OS environment variables in the same way as command-line
+programs, so the language cannot be selected by setting commonly
+used variables like <tt class="docutils literal">LANG</tt> or <tt class="docutils literal">LC_ALL</tt>.  <tt class="docutils literal">TrackerLanguage</tt>
+value has the same syntax as values of these environment variables.
+This option may be omitted.</dd>
+<dt>TrackerDebug:</dt>
+<dd>run the tracker in debug mode.  Setting this option to <tt class="docutils literal">yes</tt> or
+<tt class="docutils literal">true</tt> has the same effect as running <tt class="docutils literal"><span class="pre">roundup-server</span> <span class="pre">-t</span> debug</tt>:
+the database schema and used html templates are rebuilt for each
+HTTP request.  Values <tt class="docutils literal">no</tt> or <tt class="docutils literal">false</tt> mean that all html
+templates for the tracker are compiled and the database schema is
+checked once at startup.  This is the default behaviour.</dd>
+<dt>TrackerTiming:</dt>
+<dd>has nearly the same effect as environment variable <tt class="docutils literal">CGI_SHOW_TIMING</tt>
+for standalone roundup server.  The difference is that setting this
+option to <tt class="docutils literal">no</tt> or <tt class="docutils literal">false</tt> disables timings display.  Value
+<tt class="docutils literal">comment</tt> writes request handling times in html comment, and
+any other non-empty value makes timing report visible.  By default,
+timing display is disabled.</dd>
+</dl>
+<p>In the following example we have two trackers set up in
+<tt class="docutils literal">/var/db/roundup/support</tt> and <tt class="docutils literal">/var/db/roundup/devel</tt> and accessed
+as <tt class="docutils literal"><span class="pre">https://my.host/roundup/support/</span></tt> and <tt class="docutils literal"><span class="pre">https://my.host/roundup/devel/</span></tt>
+respectively (provided Apache has been set up for SSL of course).
+Having them share same parent directory allows us to
+reduce the number of configuration directives.  Support tracker has
+russian user interface.  The other tracker (devel) has english user
+interface (default).</p>
+<p>Static files from <tt class="docutils literal">html</tt> directory are served by apache itself - this
+is quicker and generally more robust than doing that from python.
+Everything else is aliased to dummy (non-existing) <tt class="docutils literal">py</tt> file,
+which is handled by mod_python and our roundup module.</p>
+<p>Example mod_python configuration:</p>
+<pre class="literal-block">
+#################################################
+# Roundup Issue tracker
+#################################################
+# enable Python optimizations (like 'python -O')
+PythonOptimize On
+# let apache handle static files from 'html' directories
+AliasMatch /roundup/(.+)/&#64;&#64;file/(.*) /var/db/roundup/$1/html/$2
+# everything else is handled by roundup web UI
+AliasMatch /roundup/([^/]+)/(?!&#64;&#64;file/)(.*) /var/db/roundup/$1/dummy.py/$2
+# roundup requires a slash after tracker name - add it if missing
+RedirectMatch permanent ^/roundup/([^/]+)$ /roundup/$1/
+# common settings for all roundup trackers
+&lt;Directory /var/db/roundup/*&gt;
+  Order allow,deny
+  Allow from all
+  AllowOverride None
+  Options None
+  AddHandler python-program .py
+  PythonHandler roundup.cgi.apache
+  # uncomment the following line to see tracebacks in the browser
+  # (note that *some* tracebacks will be displayed anyway)
+  #PythonDebug On
+&lt;/Directory&gt;
+# roundup tracker homes
+&lt;Directory /var/db/roundup/support&gt;
+  PythonOption TrackerHome /var/db/roundup/support
+  PythonOption TrackerLanguage ru
+&lt;/Directory&gt;
+&lt;Directory /var/db/roundup/devel&gt;
+  PythonOption TrackerHome /var/db/roundup/devel
+&lt;/Directory&gt;
+</pre>
+<p>Notice that the <tt class="docutils literal">/var/db/roundup</tt> path shown above refers to the directory
+in which the tracker homes are stored. The actual value will thus depend on
+your system.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">installation.txt</tt>, line 1058)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: windows; apache config
+
+</pre>
+</div>
+<p>On Windows the corresponding lines will look similar to these:</p>
+<pre class="literal-block">
+AliasMatch /roundup/(.+)/&#64;&#64;file/(.*) C:/DATA/roundup/$1/html/$2
+AliasMatch /roundup/([^/]+)/(?!&#64;&#64;file/)(.*) C:/DATA/roundup/$1/dummy.py/$2
+&lt;Directory C:/DATA/roundup/*&gt;
+&lt;Directory C:/DATA/roundup/support&gt;
+&lt;Directory C:/DATA/roundup/devel&gt;
+</pre>
+<p>In this example the directory hosting all of the tracker homes is
+<tt class="docutils literal"><span class="pre">C:\DATA\roundup</span></tt>. (Notice that you must use forward slashes in paths
+inside the httpd.conf file!)</p>
+<p>The URL for accessing these trackers then become:
+<cite>http://&lt;roundupserver&gt;/roundup/support/`</cite> and
+<tt class="docutils literal"><span class="pre">http://&lt;roundupserver&gt;/roundup/devel/</span></tt></p>
+<p>Note that in order to use https connections you must set up Apache for secure
+serving with SSL.</p>
+</div>
+</div>
+<div class="section" id="nginx-http-server">
+<h2><a class="toc-backref" href="#id82">Nginx HTTP Server</a></h2>
+<p>This configuration uses Gunicorn to run Roundup behind an Nginx proxy.
+The proxy also compresses the data using gzip. The url for the tracker
+in config.ini should be <tt class="docutils literal"><span class="pre">https://tracker.example.org</span></tt>.</p>
+<pre class="code literal-block">
+user nginx;
+worker_processes auto;
+worker_rlimit_nofile 10000;
+
+error_log /var/log/nginx/global-error.log;
+pid /var/run/nginx.pid;
+
+events {
+    worker_connections 1024;
+}
+
+upstream tracker-tracker {
+  # Gunicorn uses this socket for communication
+  server unix:/var/run/roundup/tracker.sock fail_timeout=0;
+}
+
+http {
+  include /etc/nginx/mime.types;
+  default_type application/octet-stream;
+
+  log_format main '$remote_addr - $remote_user [$time_local] &quot;$request&quot; '
+                  '$status $body_bytes_sent &quot;$http_referer&quot; '
+                  '&quot;$http_user_agent&quot; &quot;$http_x_forwarded_for&quot;';
+
+  access_log /var/log/nginx/global-access.log main;
+  sendfile on;
+  tcp_nopush on;
+  tcp_nodelay on;
+  server_tokens off;
+
+  gzip_http_version 1.1;
+  gzip_proxied      any;
+  gzip_min_length   500;
+  # default comp_level is 1
+  gzip_comp_level   6;
+  gzip_disable      msie6
+  gzip_types        text/plain text/css
+                    text/xml application/xml
+                    text/javascript application/javascript
+                    text/json application/json;
+  # upstream proxies need to match Accept-Encoding as
+  # part of their cache check
+  gzip_vary         on
+
+  server {
+    listen 80;
+    server_name tracker.example.org;
+
+    location /.well-known/acme-challenge/ {
+        alias /etc/lego/.well-known/acme-challenge/;
+        try_files $uri =404;
+    }
+
+    location / {
+      return 301 https://$http_host$request_uri;
+    }
+  }
+
+  server {
+    listen 443 ssl;
+    server_name tracker.example.org;
+    include mime.types;
+
+    # By default use the snakeoil certificate...
+    # change this if you are using a real SSL cert
+    ssl_certificate /etc/ssl/certs/ssl-cert-snakeoil.pem;
+    ssl_certificate_key /etc/ssl/private/ssl-cert-snakeoil.key;
+
+    # These are useful for &#64;&#64;files where roundup is bypassed.
+    # but can be set by roundup as well. See:
+    #    https://wiki.roundup-tracker.org/AddingContentSecurityPolicy
+    # which also sets other security headers.
+    add_header Strict-Transport-Security &quot;max-age=63072000; includeSubdomains; preload&quot;;
+    add_header X-Frame-Options &quot;sameorigin&quot;;
+    add_header X-Xss-Protection &quot;1; mode=block&quot;;
+    add_header X-Content-Type-Options &quot;nosniff&quot;;
+    add_header X-Permitted-Cross-Domain-Policies &quot;none&quot;;
+
+    error_log /var/log/nginx/roundup-tracker.error.log;
+    access_log /var/log/nginx/roundup-tracker.access.log
+
+    root /home/roundup/trackers/tracker/;
+
+    # have nginx return files from &#64;&#64;file directly rather than
+    # going though roundup
+    location /&#64;&#64;file/ {
+      rewrite ^/&#64;&#64;file/(.*) /html/$1 break;
+      # note that you can not use cache control (see customizing doc)
+      # in roundup to set the expires headers since we are
+      # bypassing roundup. Consider using a map or different
+      # location stanzas to vary the expiration times.
+      expires 1h;
+    }
+
+    location / {
+      # must define tracker-tracker in upstream stanza
+      proxy_pass http://tracker-tracker/;
+      proxy_set_header Host $host;
+      proxy_set_header X-Real-IP $remote_addr;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    }
+  }
+}
+</pre>
+</div>
+<div class="section" id="fastcgi-cherokee-hiawatha-lighttpd">
+<h2><a class="toc-backref" href="#id83">FastCGI (Cherokee, Hiawatha, lighttpd)</a></h2>
+<p>The Hiawatha and lighttpd web servers can run Roundup using FastCGI.
+Cherokee can run FastCGI but it also supports wsgi directly using a
+uWSGI, Gnuicorn etc.</p>
+<p>To run Roundup using FastCGI, the <a class="reference external" href="https://pypi.org/project/flup/">flup</a> package can be used under
+Python 2 and Python 3. We don't have a detailed config for this, but
+the basic idea can be found at:
+<a class="reference external" href="https://flask.palletsprojects.com/en/2.0.x/deploying/fastcgi/">https://flask.palletsprojects.com/en/2.0.x/deploying/fastcgi/</a></p>
+<p>If you have deployed Roundup using FastCGI and flup we welcome example
+configuration files and instructions.</p>
+</div>
+<div class="section" id="wsgi-variations">
+<h2><a class="toc-backref" href="#id84">WSGI Variations</a></h2>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">installation.txt</tt>, line 1213)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: triple: web interface; apache; mod_wsgi
+   single: wsgi; apache
+
+</pre>
+</div>
+<div class="section" id="apache-alternate">
+<h3><a class="toc-backref" href="#id40">Apache Alternate</a></h3>
+<p>This method from Thomas Arendsen Hein goes into a bit more detail and
+is designed to allow you to run multiple roundup trackers each under
+their own user.</p>
+<p>The tracker instances are read-only to the tracker user and located
+under /srv/roundup/.  The (writable) data files are stored in the home
+directory of the user running the tracker.</p>
+<p>To install roundup, download and unpack a distribution tarball and run
+the following as user &quot;roundup&quot;:</p>
+<pre class="literal-block">
+python setup.py build_doc
+python setup.py sdist --manifest-only
+python setup.py install --home=&quot;/home/roundup/install&quot; --force
+</pre>
+<p>Create a user roundup-foo, group roundup-foo to run the tracker.  Add
+the following apache config to
+/etc/apache2/sites-available/roundup-foo (under debian/Ubunutu, modify
+as needed):</p>
+<pre class="code ApacheConf literal-block">
+<span class="name builtin">ServerAdmin</span> webmaster&#64;example.com
+<span class="name builtin">ErrorLog</span> <span class="literal string other">/var/log/apache2/error.log</span>
+
+<span class="name builtin">LogLevel</span> <span class="keyword">notice</span>
+
+<span class="name builtin">DocumentRoot</span> <span class="literal string other">/var/www/</span>
+
+<span class="name tag">&lt;VirtualHost</span> <span class="literal string">*:80</span><span class="name tag">&gt;</span>
+        <span class="name builtin">CustomLog</span> <span class="literal string other">/var/log/apache2/access.log</span> vhost_combined
+
+        <span class="comment"># allow access to roundup docs</span>
+        <span class="name builtin">Alias</span> <span class="literal string other">/doc/</span> <span class="literal string other">/home/roundup/install/share/doc/roundup/html/</span>
+
+        <span class="comment"># make apache serve static assets like css rather than</span>
+        <span class="comment"># having roundup serve the files</span>
+        <span class="name builtin">Alias</span> <span class="literal string other">/foo/</span>&#64;&#64;file/ <span class="literal string other">/srv/roundup/foo/html/</span>
+
+        <span class="comment"># make /foo into /foo/</span>
+        <span class="name builtin">RedirectMatch</span> permanent ^/(foo)$ /$1/
+
+        <span class="comment"># start a wsgi daemon process running as user roundup-foo</span>
+        <span class="comment"># in group roundup-foo. This also changes directory to</span>
+        <span class="comment"># ~roundup-foo before it starts roundup.wsgi.</span>
+        <span class="name builtin">WSGIDaemonProcess</span> roundup-foo display-name=roundup-foo <span class="keyword">user</span>=roundup-foo <span class="keyword">group</span>=roundup-foo threads=25
+
+        <span class="comment"># make tracker available at /foo and tie it into the</span>
+        <span class="comment"># wsgi script below.</span>
+        <span class="name builtin">WSGIScriptAlias</span> <span class="literal string other">/foo</span> <span class="literal string other">/srv/roundup/foo/roundup.wsgi</span>
+        <span class="name tag">&lt;Location</span> <span class="literal string">/foo</span><span class="name tag">&gt;</span>
+                <span class="name builtin">WSGIProcessGroup</span> roundup-foo
+        <span class="name tag">&lt;/Location&gt;</span>
+<span class="name tag">&lt;/VirtualHost&gt;</span>
+</pre>
+<p>The directory ~roundup-foo should have:</p>
+<blockquote>
+<ul class="simple">
+<li>a <tt class="docutils literal">db</tt> subdirectory where messages and files will be stored</li>
+<li>a symbolic link called <tt class="docutils literal">instance</tt> to /srv/roundup/foo which has
+been initialised using <tt class="docutils literal"><span class="pre">roundup-admin</span></tt>.</li>
+</ul>
+</blockquote>
+<p>The <a class="reference internal" href="#apache-http-server-with-mod-wsgi">Apache HTTP Server with mod_wsgi</a> section above has a simple
+WSGI handler.  This is an enhanced version to be put into
+<tt class="docutils literal">/srv/roundup/foo/roundup.wsgi</tt>.</p>
+<pre class="code python literal-block">
+<span class="keyword namespace">import</span> <span class="name namespace">sys</span><span class="operator">,</span> <span class="name namespace">os</span>
+<span class="name">sys</span><span class="operator">.</span><span class="name">stdout</span> <span class="operator">=</span> <span class="name">sys</span><span class="operator">.</span><span class="name">stderr</span>
+
+<span class="name">enabled</span> <span class="operator">=</span> <span class="keyword constant">True</span>
+
+<span class="keyword">if</span> <span class="name">enabled</span><span class="punctuation">:</span>
+    <span class="comment single"># Add the directory with the roundup installation</span>
+    <span class="comment single"># subdirectory to the python path.</span>
+    <span class="name">sys</span><span class="operator">.</span><span class="name">path</span><span class="operator">.</span><span class="name">insert</span><span class="punctuation">(</span><span class="literal number integer">0</span><span class="punctuation">,</span> <span class="literal string single">'/home/roundup/install/lib/python'</span><span class="punctuation">)</span>
+
+    <span class="comment single"># obtain the WSGI request dispatcher</span>
+    <span class="keyword namespace">from</span> <span class="name namespace">roundup.cgi.wsgi_handler</span> <span class="keyword namespace">import</span> <span class="name">RequestDispatcher</span>
+
+    <span class="name">tracker_home</span> <span class="operator">=</span> <span class="name">os</span><span class="operator">.</span><span class="name">path</span><span class="operator">.</span><span class="name">join</span><span class="punctuation">(</span><span class="name">os</span><span class="operator">.</span><span class="name">getcwd</span><span class="punctuation">(),</span> <span class="literal string single">'instance'</span><span class="punctuation">)</span>
+    <span class="name">application</span> <span class="operator">=</span> <span class="name">RequestDispatcher</span><span class="punctuation">(</span><span class="name">tracker_home</span><span class="punctuation">)</span>
+<span class="keyword">else</span><span class="punctuation">:</span>
+    <span class="keyword">def</span> <span class="name function">application</span><span class="punctuation">(</span><span class="name">environ</span><span class="punctuation">,</span> <span class="name">start_response</span><span class="punctuation">):</span>
+        <span class="name">status</span> <span class="operator">=</span> <span class="literal string single">'503 Service Unavailable'</span>
+        <span class="name">output</span> <span class="operator">=</span> <span class="literal string single">'service is down for maintenance'</span>
+        <span class="name">response_headers</span> <span class="operator">=</span> <span class="punctuation">[(</span><span class="literal string single">'Content-type'</span><span class="punctuation">,</span> <span class="literal string single">'text/plain'</span><span class="punctuation">),</span>
+                            <span class="punctuation">(</span><span class="literal string single">'Content-Length'</span><span class="punctuation">,</span> <span class="name builtin">str</span><span class="punctuation">(</span><span class="name builtin">len</span><span class="punctuation">(</span><span class="name">output</span><span class="punctuation">)))]</span>
+        <span class="name">start_response</span><span class="punctuation">(</span><span class="name">status</span><span class="punctuation">,</span> <span class="name">response_headers</span><span class="punctuation">)</span>
+        <span class="keyword">return</span> <span class="punctuation">[</span><span class="name">output</span><span class="punctuation">]</span>
+</pre>
+<p>This handler allows you to temporarily disable the tracker by setting
+&quot;enabled = False&quot;, apache will automatically detect the changed
+roundup.wsgi file and reload it.</p>
+<p>One last change is needed. In the tracker's config.ini change the db
+parameter in the [main] section to be /home/roundup-foo/db. This will
+put the files and messages in the db directory for the user.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">installation.txt</tt>, line 1318)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: pair: web interface; Gunicorn
+   single: wsgi; Gunicorn
+
+</pre>
+</div>
+</div>
+<div class="section" id="gunicorn-installation">
+<h3><a class="toc-backref" href="#id41">Gunicorn Installation</a></h3>
+<p>To run with Gunicorn use <tt class="docutils literal">pip install gunicorn</tt>. This configuration
+uses a front end web server like nginx, hiawatha, or apache configured as
+a reverse proxy. See your web server's documentation on how to set it
+up as a reverse proxy.</p>
+<p>The file wsgi.py (obtained from <tt class="docutils literal">frontends/wsgi.py</tt>) should be in
+the current directory with the contents:</p>
+<pre class="literal-block">
+# if roundup is not installed on the default PYTHONPATH
+# set it here with:
+import sys
+sys.path.append('/path/to/roundup/install/directory')
+
+# obtain the WSGI request dispatcher
+from roundup.cgi.wsgi_handler import RequestDispatcher
+tracker_home = '/path/to/tracker/install/directory'
+
+app =  RequestDispatcher(tracker_home)
+</pre>
+<p>Assuming the proxy forwards /tracker, run Gunicorn as:</p>
+<pre class="literal-block">
+SCRIPT_NAME=/tracker gunicorn --bind 127.0.0.1:8917 --timeout=10 wsgi:app
+</pre>
+<p>this runs roundup at port 8917 on the loopback interface. You should
+configure the reverse proxy to talk to 127.0.0.1 at port 8917.
+If you want you can use a unix domain socket instead. Example:
+<tt class="docutils literal"><span class="pre">--bind</span> <span class="pre">unix:///var/run/roundup/tracker.sock</span></tt> would be used for the
+nginx configuration below.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">installation.txt</tt>, line 1353)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: pair: web interface; uWSGI
+   single: wsgi; uWSGI
+
+</pre>
+</div>
+</div>
+<div class="section" id="uwsgi-installation">
+<h3><a class="toc-backref" href="#id42">uWSGI Installation</a></h3>
+<p>For a basic roundup install using uWSGI behind a front end server,
+install uwsgi and the python3 (or python) plugin. Then run:</p>
+<pre class="literal-block">
+uwsgi --http-socket 127.0.0.1:8917 \
+    --plugin python3 --mount=/tracker=wsgi.py \
+    --manage-script-name --callable app
+</pre>
+<p>using the same wsgi.py as was used for Gunicorn. If you get path not
+found errors, check the mount option. The /tracker entry must match
+the path used for the [tracker] web value in the tracker's config.ini.</p>
+</div>
+</div>
+</div>
+<div class="section" id="configure-an-email-interface">
+<h1><a class="toc-backref" href="#id43">Configure an Email Interface</a></h1>
+<p>If you don't want to use the email component of Roundup, then remove the
+&quot;<tt class="docutils literal">nosyreaction.py</tt>&quot; module from your tracker &quot;<tt class="docutils literal">detectors</tt>&quot; directory.</p>
+<p>See <a class="reference internal" href="#platform-specific-notes">platform-specific notes</a> for steps that may be needed on your system.</p>
+<p>There are five supported ways to get emailed issues into the
+Roundup tracker.  You should pick ONE of the following, all
+of which will continue my example setup from above:</p>
+<div class="section" id="as-a-mail-alias-pipe-process">
+<h2><a class="toc-backref" href="#id44">As a mail alias pipe process</a></h2>
+<p>Set up a mail alias called &quot;issue_tracker&quot; as (include the quote marks):
+&quot;<tt class="docutils literal">|/usr/bin/python <span class="pre">/usr/bin/roundup-mailgw</span> &lt;tracker_home&gt;</tt>&quot;
+(substitute <tt class="docutils literal">/usr/bin</tt> for wherever roundup-mailgw is installed).</p>
+<p>In some installations (e.g. RedHat Linux and Fedora Core) you'll need to
+set up smrsh so sendmail will accept the pipe command. In that case,
+symlink <tt class="docutils literal"><span class="pre">/etc/smrsh/roundup-mailgw</span></tt> to &quot;<tt class="docutils literal"><span class="pre">/usr/bin/roundup-mailgw</span></tt>&quot;
+and change the command to:</p>
+<pre class="literal-block">
+|roundup-mailgw /opt/roundup/trackers/support
+</pre>
+<p>To test the mail gateway on unix systems, try:</p>
+<pre class="literal-block">
+echo test |mail -s '[issue] test' support&#64;YOUR_DOMAIN_HERE
+</pre>
+<p>Be careful that some mail systems (postfix for example) will impose
+limits on processes they spawn. In particular postfix can set a file
+size limit that is inherited by the mailgw. If the database files
+(anydbm, sqlite) exceed this limit, <em>this can cause your Roundup
+database to become corrupted.</em></p>
+</div>
+<div class="section" id="as-a-custom-router-transport-using-a-pipe-process-exim4-specific">
+<h2><a class="toc-backref" href="#id45">As a custom router/transport using a pipe process (Exim4 specific)</a></h2>
+<p>The following configuration snippets for <a class="reference external" href="https://www.exim.org/">Exim 4</a> configuration
+implement a custom router &amp; transport to accomplish mail delivery to
+roundup-mailgw. A configuration for Exim3 is similar but not
+included, since Exim3 is considered obsolete.</p>
+<p>This configuration is similar to the previous section, in that it uses
+a pipe process. However, there are advantages to using a custom
+router/transport process, if you are using Exim.</p>
+<ul class="simple">
+<li>This avoids privilege escalation, since otherwise the pipe process
+will run as the mail user, typically mail. The transport can be
+configured to run as the user appropriate for the task at hand. In the
+transport described in this section, Exim4 runs as the unprivileged
+user <tt class="docutils literal">roundup</tt>.</li>
+<li>Separate configuration is not required for each tracker
+instance. When a email arrives at the server, Exim passes it through
+the defined routers. The roundup_router looks for a match with one of
+the roundup directories, and if there is one it is passed to the
+roundup_transport, which uses the pipe process described in the
+previous section (<a class="reference internal" href="#as-a-mail-alias-pipe-process">As a mail alias pipe process</a>).</li>
+</ul>
+<p>The matching is done in the line:</p>
+<pre class="literal-block">
+require_files = /usr/bin/roundup-mailgw:ROUNDUP_HOME/$local_part/schema.py
+</pre>
+<p>The following configuration has been tested on Debian Sarge with
+Exim4.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>The Debian Exim4 packages don't allow pipes in alias files
+by default, so the method described in the section <a class="reference internal" href="#as-a-mail-alias-pipe-process">As a mail alias
+pipe process</a> will not work with the default configuration. However,
+the method described in this section does. See the discussion in
+<tt class="docutils literal"><span class="pre">/usr/share/doc/exim4-config/README.system_aliases</span></tt> on any Debian
+system with Exim4 installed.</p>
+<p class="last">For more Debian-specific information, see suggested addition to
+README.Debian in
+<a class="reference external" href="https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=343283">https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=343283</a>, which will
+hopefully be merged into the Debian package eventually.</p>
+</div>
+<p>This config makes a few assumptions:</p>
+<ul class="simple">
+<li>That the mail address corresponding to the tracker instance has the
+same name as the directory of the tracker instance, i.e. the mail
+interface address corresponding to a Roundup instance called
+<tt class="docutils literal">/var/lib/roundup/trackers/mytracker</tt> is <tt class="docutils literal">mytracker&#64;your.host</tt>.</li>
+<li>That (at least) all the db subdirectories of all the tracker
+instances (ie. <tt class="docutils literal"><span class="pre">/var/lib/roundup/trackers/*/db</span></tt>) are owned by the same
+user, in this case, 'roundup'.</li>
+<li>That if the <tt class="docutils literal">schema.py</tt> file exists, then the tracker is ready for
+use. Another option is to use the <tt class="docutils literal">config.ini</tt> file (this changed
+in 0.8 from <tt class="docutils literal">config.py</tt>).</li>
+</ul>
+<p>Macros for Roundup router/transport. Should be placed in the macros
+section of the Exim4 config:</p>
+<pre class="literal-block">
+# Home dir for your Roundup installation
+ROUNDUP_HOME=/var/lib/roundup/trackers
+
+# User and group for Roundup.
+ROUNDUP_USER=roundup
+ROUNDUP_GROUP=roundup
+</pre>
+<p>Custom router for Roundup. This will (probably) work if placed at the
+beginning of the router section of the Exim4 config:</p>
+<pre class="literal-block">
+roundup_router:
+    driver = accept
+    # The config file config.ini seems like a more natural choice, but the
+    # file config.py was replaced by config.ini in 0.8, and schema.py needs
+    # to be present too.
+    require_files = /usr/bin/roundup-mailgw:ROUNDUP_HOME/$local_part/schema.py
+    transport = roundup_transport
+</pre>
+<p>Custom transport for Roundup. This will (probably) work if placed at
+the beginning of the router section of the Exim4 config:</p>
+<pre class="literal-block">
+roundup_transport:
+    driver = pipe
+    command = /usr/bin/python /usr/bin/roundup-mailgw ROUNDUP_HOME/$local_part/
+    current_directory = ROUNDUP_HOME
+    home_directory = ROUNDUP_HOME
+    user = ROUNDUP_USER
+    group = ROUNDUP_GROUP
+</pre>
+</div>
+<div class="section" id="as-a-regular-job-using-a-mailbox-source">
+<h2><a class="toc-backref" href="#id46">As a regular job using a mailbox source</a></h2>
+<p>Set <tt class="docutils literal"><span class="pre">roundup-mailgw</span></tt> up to run every 10 minutes or so. For example
+(substitute <tt class="docutils literal">/usr/bin</tt> for wherever roundup-mailgw is installed):</p>
+<pre class="literal-block">
+0,10,20,30,40,50 * * * * /usr/bin/roundup-mailgw /opt/roundup/trackers/support mailbox &lt;mail_spool_file&gt;
+</pre>
+<p>Where the <tt class="docutils literal">mail_spool_file</tt> argument is the location of the roundup submission
+user's mail spool. On most systems, the spool for a user &quot;issue_tracker&quot;
+will be &quot;<tt class="docutils literal">/var/mail/issue_tracker</tt>&quot;.</p>
+</div>
+<div class="section" id="as-a-regular-job-using-a-pop-source">
+<h2><a class="toc-backref" href="#id47">As a regular job using a POP source</a></h2>
+<p>To retrieve from a POP mailbox, use a <em>cron</em> entry similar to the mailbox
+one (substitute <tt class="docutils literal">/usr/bin</tt> for wherever roundup-mailgw is
+installed):</p>
+<pre class="literal-block">
+0,10,20,30,40,50 * * * * /usr/bin/roundup-mailgw /opt/roundup/trackers/support pop &lt;pop_spec&gt;
+</pre>
+<p>where pop_spec is &quot;<tt class="docutils literal">username:password&#64;server</tt>&quot; that specifies the roundup
+submission user's POP account name, password and server.</p>
+<p>On windows, you would set up the command <a class="reference internal" href="#using-the-windows-scheduler">using the windows scheduler</a>.</p>
+</div>
+<div class="section" id="as-a-regular-job-using-an-imap-source">
+<h2><a class="toc-backref" href="#id48">As a regular job using an IMAP source</a></h2>
+<p>To retrieve from an IMAP mailbox, use a <em>cron</em> entry similar to the
+POP one (substitute <tt class="docutils literal">/usr/bin</tt> for wherever roundup-mailgw is
+installed):</p>
+<pre class="literal-block">
+0,10,20,30,40,50 * * * * /usr/bin/roundup-mailgw /opt/roundup/trackers/support imap &lt;imap_spec&gt;
+</pre>
+<p>where imap_spec is &quot;<tt class="docutils literal">username:password&#64;server</tt>&quot; that specifies the roundup
+submission user's IMAP account name, password and server. You may
+optionally include a mailbox to use other than the default <tt class="docutils literal">INBOX</tt> with
+&quot;<tt class="docutils literal">imap username:password&#64;server mailbox</tt>&quot;.</p>
+<p>If you have a secure (ie. HTTPS) IMAP server then you may use <tt class="docutils literal">imaps</tt>
+in place of <tt class="docutils literal">imap</tt> in the command to use a secure connection.</p>
+<p>As with the POP job, on windows, you would set up the command
+<a class="reference internal" href="#using-the-windows-scheduler">using the windows scheduler</a>.</p>
+</div>
+</div>
+<div class="section" id="unix-environment-steps">
+<h1><a class="toc-backref" href="#id49">UNIX Environment Steps</a></h1>
+<p>Each tracker ideally should have its own UNIX group, so create
+a UNIX group (edit <tt class="docutils literal">/etc/group</tt> or your appropriate NIS map if
+you're using NIS).  To continue with my examples so far, I would
+create the UNIX group 'support', although the name of the UNIX
+group does not have to be the same as the tracker name.  To this
+'support' group I then add all of the UNIX usernames who will be
+working with this Roundup tracker.  In addition to 'real' users,
+the Roundup email gateway will need to have permissions to this
+area as well, so add the user your mail service runs as to the
+group (typically &quot;mail&quot; or &quot;daemon&quot;).  The UNIX group might then
+look like:</p>
+<pre class="literal-block">
+support:*:1002:jblaine,samh,geezer,mail
+</pre>
+<p>If you intend to use the web interface (as most people do), you
+should also add the username your web server runs as to the group.
+My group now looks like this:</p>
+<pre class="literal-block">
+support:*:1002:jblaine,samh,geezer,mail,apache
+</pre>
+<p>The tracker &quot;db&quot; directory should be chmod'ed g+sw so that the group can
+write to the database, and any new files created in the database will be owned
+by the group.</p>
+<p>If you're using the mysql or postgresql backend then you'll need to ensure
+that the tracker user has appropriate permissions to create/modify the
+database. If you're using roundup.cgi, the apache user needs permissions
+to modify the database.  Alternatively, explicitly specify a database login
+in <tt class="docutils literal">rdbms</tt> -&gt; <tt class="docutils literal">user</tt> and <tt class="docutils literal">password</tt> in <tt class="docutils literal">config.ini</tt>.</p>
+<p>An alternative to the above is to create a new user who has the sole
+responsibility of running roundup. This user:</p>
+<ol class="arabic simple">
+<li>runs the CGI interface daemon</li>
+<li>runs regular polls for email</li>
+<li>runs regular checks (using cron) to ensure the daemon is up</li>
+<li>optionally has no login password so that nobody but the &quot;root&quot; user
+may actually login and play with the roundup setup.</li>
+</ol>
+<p>If you're using a Linux system (e.g. Fedora Core) with SELinux enabled,
+you will need to ensure that the db directory has a context that
+permits the web server to modify and create files. If you're using the
+mysql or postgresql backend you may also need to update your policy to
+allow the web server to access the database socket.</p>
+</div>
+<div class="section" id="public-tracker-considerations">
+<h1><a class="toc-backref" href="#id50">Public Tracker Considerations</a></h1>
+<p>If you run a public tracker, you will eventually have to think about
+dealing with spam entered through both the web and mail interfaces.</p>
+<p>See the section on <a class="reference external" href="customizing.html#preventing-spam">Preventing SPAM</a> in the
+<a class="reference external" href="customizing.html">customisation documentation</a> that has a simple detector
+that will block lot of spam attempts.</p>
+</div>
+<div class="section" id="docker-support">
+<h1><a class="toc-backref" href="#id51">Docker Support</a></h1>
+<p>If you don't want to install Roundup on a host, you can create a
+Docker container. This installs Roundup using the <a class="reference internal" href="#stand-alone-web-server">stand-alone web
+server</a> method. This image only supports http. We suggest putting an
+https terminating proxy in front of it.</p>
+<p>This is a work in progress and patches to improve it are welcome. You
+can find the docker config files under the <cite>scripts/Docker</cite> directory
+of the source tree.</p>
+<p>The dockerized Roundup is based on a 64 bit Alpine distribution.  It
+includes database drivers for anydbm, sqlite, MySQL and Postgresql
+(Postgresl is untested). It also includes additional libraries that
+are listed in <cite>scripts/Docker/requirements.txt</cite> (including redis).</p>
+<p>Email support is a work in progress. Outgoing email to an external
+SMTP server should work. Receiving email should work by using a
+scheduled (cron) job to access email:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#as-a-regular-job-using-a-mailbox-source">As a regular job using a mailbox source</a></li>
+<li><a class="reference internal" href="#as-a-regular-job-using-a-pop-source">As a regular job using a POP source</a></li>
+<li><a class="reference internal" href="#as-a-regular-job-using-an-imap-source">As a regular job using an IMAP source</a></li>
+</ul>
+<p>However running cron in a container is problematic (running
+busybox crond as root vs. non-root, requiring setgrp privs
+etc). Patches for implementing email support are welcome.</p>
+<p>If you want to use a MySQL backend, the <cite>docker-compose.yml</cite> file will
+deploy a Roundup container and a MySQL container backend for use with
+Roundup.</p>
+<p>We recommend you follow the <a class="reference external" href="https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html">OSWAP Docker Security practices</a> for your
+production Roundup instance.</p>
+<div class="section" id="building-a-docker-container">
+<h2><a class="toc-backref" href="#id52">Building a Docker Container</a></h2>
+<p>To build a docker container using the code in the current directory,
+run this build command from the top of the source tree:</p>
+<pre class="literal-block">
+docker build -t roundup-app -f scripts/Docker/Dockerfile .
+</pre>
+<p>You can also build a container using the newest Roundup release on
+PyPI, by running:</p>
+<pre class="literal-block">
+docker build -t roundup-app --build-arg=&quot;source=pypi&quot; \
+     -f scripts/Docker/Dockerfile .
+</pre>
+<p>The docker declares a single volume mounted at
+<tt class="docutils literal">/usr/src/app/tracker</tt> inside the container. You will mount your
+tracker home directory at this location. The <tt class="docutils literal">/usr/src/app</tt> path can
+be changed by using <tt class="docutils literal"><span class="pre">--build-arg=&quot;appdir=/new/path&quot;</span></tt>.</p>
+<p>You can also add additional modules to the docker container by using
+<cite>--build-arg=&quot;pip_mod=requests setproctitle&quot;</cite>.</p>
+<p>Because of deficiencies in the docker program (see:
+<a class="reference external" href="https://github.com/moby/moby/issues/29110#issuecomment-1100676306">https://github.com/moby/moby/issues/29110#issuecomment-1100676306</a>),
+there is no way to determine the version of Python inside the
+container and make that available as part of the build process. If
+your build fails because the <tt class="docutils literal">pythonversion does not match</tt>, add the
+suggested <tt class="docutils literal"><span class="pre">--build-arg</span></tt> to the <tt class="docutils literal">docker build</tt> command line.</p>
+<p id="uid-at-image-build-time">By default the container runs Roundup using UID 1000. By setting
+<cite>--build-arg=&quot;roundup_uid=2000&quot;</cite> you can change the UID.</p>
+</div>
+<div class="section" id="configuring-roundup-in-the-container">
+<h2><a class="toc-backref" href="#id53">Configuring Roundup in the Container</a></h2>
+<div class="admonition caution">
+<p class="first admonition-title">Caution!</p>
+<p class="last">Docker modifies iptables firewall rules. This allows access to the
+container from your local network. <a class="reference external" href="https://docs.docker.com/engine/reference/commandline/run/#publish">See the official documentation
+for details</a>.
+UFW rules are known to be be ignored (see:
+<a class="reference external" href="https://github.com/moby/moby/issues/4737">https://github.com/moby/moby/issues/4737</a>).  Use <tt class="docutils literal"><span class="pre">-p</span>
+127.0.0.1:ext_port:container_port</tt> in your docker run commands or
+implement suggestions like: <a class="reference external" href="https://github.com/chaifeng/ufw-docker">https://github.com/chaifeng/ufw-docker</a>.</p>
+</div>
+<p>Once the docker image is created using one of the build commands
+above, run an interactive session with:</p>
+<pre class="literal-block">
+docker run -it --rm -p 127.0.0.1:9017:8080 \
+   -v $PWD/tracker:/usr/src/app/tracker roundup-app:latest
+</pre>
+<p>The <tt class="docutils literal"><span class="pre">-v</span></tt> option maps a directory from the host into the docker
+container. Note that uid 1000 is used by roundup by default. The uid
+of the directory (and all files under it) must match the uid. You can
+set the <a class="reference internal" href="#uid-at-image-build-time">UID at image build time</a>. This
+example assumes your tracker configs are in the tracker
+subdirectory. Replace <tt class="docutils literal">$PWD/tracker</tt> with the full path name to the
+directory where the tracker home(s) are to be stored.</p>
+<p>The <tt class="docutils literal"><span class="pre">-p</span></tt> option maps an external port (9017) to proxy the roundup
+server running at port 8080 to the outside. Note if you remove
+<tt class="docutils literal">127.0.0.1:</tt> from the -p argument, <em>any host</em> on the network will be
+able to access the tracker at port 9017.</p>
+<p>If the tracker directory is empty, the docker container will prompt
+you to <a class="reference external" href="#configuring-your-first-tracker">install a tracker template</a> (step 3) and prompt you for the
+database type.</p>
+<p>Then you need to configure the tracker by editing
+<tt class="docutils literal">template/config.ini</tt>.  Make sure that the tracker web setting ends
+in <tt class="docutils literal">/issues/</tt> See <a class="reference internal" href="#configuring-your-first-tracker">Configuring your first tracker</a> and the top of
+<tt class="docutils literal">config.ini</tt> for other settings.</p>
+<p>Once you have configured the tracker, run another interactive session
+to <a class="reference external" href="#configuring-your-first-tracker">initialise the tracker</a> (step 4) with:</p>
+<pre class="literal-block">
+docker run -it --rm -p 127.0.0.1:9017:8080 \
+     -v $PWD/tracker:/usr/src/app/tracker roundup-app:latest
+</pre>
+<p>this will initialise the database and attempt to start the server.  If
+that is successful, use control-c to exit the server.</p>
+<p>Now start the server non-interactively (note no <cite>-it</cite> option) with:</p>
+<pre class="literal-block">
+docker run -p 9017:8080 -d \
+   -v $PWD/tracker:/usr/src/app/tracker roundup-app:latest
+</pre>
+<p>Your tracker will be available at: <tt class="docutils literal"><span class="pre">http://yourhost:9017/issues/</span></tt>.</p>
+<p>If you need to access your container while the server is running you
+can use:</p>
+<pre class="literal-block">
+docker exec -it c0d5 sh
+</pre>
+<p>where <tt class="docutils literal">c0d5</tt> is the id prefix for the running container obtained
+from <tt class="docutils literal">docker container ls</tt>.</p>
+<p>You should place a web server in front of Roundup (in reverse proxy
+mode) for production use. See the proxy_pass example below:</p>
+<blockquote>
+<ul class="simple">
+<li><a class="reference internal" href="#nginx-http-server">Nginx HTTP Server</a></li>
+</ul>
+</blockquote>
+<p>You can expose the port directly to your intranet by removing <tt class="docutils literal">127.0.0.1</tt>
+from the <tt class="docutils literal"><span class="pre">-p</span></tt> option. See <a class="reference internal" href="#stand-alone-web-server">Stand-alone Web Server</a> for more details.</p>
+</div>
+<div class="section" id="running-your-container">
+<h2><a class="toc-backref" href="#id54">Running Your Container</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The examples below use the locally built docker container
+specification: <tt class="docutils literal"><span class="pre">roundup-app</span></tt>. You can replace it with the
+docker hub specification <tt class="docutils literal">rounduptracker/roundup:latest</tt>
+(provided latest is newer than 2.3.0).</p>
+</div>
+<p>As of version 2.3.0 the Docker container has multiple entry points.</p>
+<div class="section" id="guided-install">
+<h3><a class="toc-backref" href="#id55">Guided install</a></h3>
+<p>By default, running:</p>
+<pre class="literal-block">
+docker run -it --rm -p 127.0.0.1:9017:8080 \
+   -v $PWD/tracker:/usr/src/app/tracker roundup-app:latest
+</pre>
+<p>3 times will install, initialize and serve a Roundup tracker at
+<tt class="docutils literal"><span class="pre">..../issues/</span></tt> using <tt class="docutils literal">$PWD/tracker</tt> as the tracker home. This is the
+&quot;guided install&quot; method described in <a class="reference internal" href="#configuring-roundup-in-the-container">Configuring Roundup in the
+Container</a>.</p>
+</div>
+<div class="section" id="arguments-for-roundup-server">
+<h3><a class="toc-backref" href="#id56">Arguments for roundup-server</a></h3>
+<p>Once you have initialized your tracker, any arguments placed at the
+end of the <tt class="docutils literal">docker run</tt> command are passed to the <tt class="docutils literal"><span class="pre">roundup-server</span></tt>.
+These arguments <strong>replace</strong> the default arguments of <tt class="docutils literal">issues=tracker</tt>.</p>
+</div>
+<div class="section" id="invoking-a-shell">
+<h3><a class="toc-backref" href="#id57">Invoking a Shell</a></h3>
+<p>You can invoke a shell inside the container without exec'ing into the
+container using:</p>
+<pre class="literal-block">
+docker run -it \
+    -v $PWD/tracker:/usr/src/app/tracker \
+    roundup-app:latest shell
+</pre>
+<p>Then you can manually configure your tracker using <tt class="docutils literal"><span class="pre">roundup-admin</span> <span class="pre">-i</span>
+tracker</tt> using the directions for <a class="reference internal" href="#configuring-your-first-tracker">Configuring your first tracker</a>.
+This is also how you would access tools like <tt class="docutils literal"><span class="pre">roundup-gettext</span></tt> which
+do not have direct entry points like <tt class="docutils literal">admin</tt> for <tt class="docutils literal"><span class="pre">roundup-admin</span></tt>
+and <tt class="docutils literal">demo</tt> for <tt class="docutils literal"><span class="pre">roundup-demo</span></tt>.</p>
+</div>
+<div class="section" id="invoke-roundup-admin">
+<h3><a class="toc-backref" href="#id58">Invoke roundup-admin</a></h3>
+<p>You can run <tt class="docutils literal"><span class="pre">roundup-admin</span></tt> directly by using:</p>
+<pre class="literal-block">
+docker run -it \
+    -v $PWD/tracker:/usr/src/app/tracker \
+    roundup-app:latest admin -i tracker/tracker1
+</pre>
+<p>to start <tt class="docutils literal"><span class="pre">roundup-admin</span></tt> using the directory
+<tt class="docutils literal">$PWD/tracker/tracker1</tt>. This is one way to create multiple trackers
+in subdirectories. It is no different from starting a shell and
+invoking <tt class="docutils literal"><span class="pre">roundup-admin</span></tt> manually.</p>
+<p>One possibly useful command is:</p>
+<pre class="literal-block">
+docker run -it \
+    -v $PWD/tracker:/usr/src/app/tracker \
+    roundup-app:latest admin templates
+</pre>
+<p>to list description of all the installed templates.</p>
+</div>
+<div class="section" id="invoke-roundup-demo">
+<h3><a class="toc-backref" href="#id59">Invoke roundup-demo</a></h3>
+<p>Lastly you can:</p>
+<pre class="literal-block">
+docker run -it -p 127.0.0.1:8917:8080 \
+    -v $PWD/tracker:/usr/src/app/tracker \
+    roundup-app:latest demo anydbm responsive
+</pre>
+<p>to create a directory <tt class="docutils literal">$PWD/tracker/demo</tt> and autoconfigure a server
+using the anydbm backend based on the responsive tracker template.
+See <a class="reference internal" href="#demo-mode-using-docker">demo mode using docker</a> for steps to change the server port.</p>
+</div>
+<div class="section" id="debugging">
+<h3><a class="toc-backref" href="#id60">Debugging</a></h3>
+<p>If you add <tt class="docutils literal"><span class="pre">-e</span> SHELL_DEBUG=1</tt> to the docker command, it sets the
+<tt class="docutils literal">SHELL_DEBUG</tt> environment variable which will enable debugging
+output from the startup script.</p>
+</div>
+</div>
+<div class="section" id="running-multiple-trackers">
+<h2><a class="toc-backref" href="#id61">Running Multiple Trackers</a></h2>
+<p>If you want to run multiple trackers, create a subdirectory for each
+tracker home under the volume mount point (<tt class="docutils literal">$PWD/tracker</tt>). Then
+invoke <tt class="docutils literal">docker run</tt> passing the roundup-server tracker
+specifications like:</p>
+<pre class="literal-block">
+docker run --rm -p 9017:8080 \
+    -v /.../issue.tracker:/usr/src/app/tracker \
+    roundup-app:latest tracker1=tracker/tracker1_home \
+      tracker2=tracker/tracker2_home
+</pre>
+<p>This will set up two trackers that can be reached at
+<tt class="docutils literal"><span class="pre">http://yourhost:9017/tracker1/</span></tt> and
+<tt class="docutils literal"><span class="pre">http://yourhost:9017/tracker2/</span></tt>.  The arguments after
+<tt class="docutils literal"><span class="pre">roundup-app:latest</span></tt> are arguments including tracker paths that are
+passed to <tt class="docutils literal"><span class="pre">roundup-server</span></tt>.</p>
+</div>
+<div class="section" id="docker-compose-deployment">
+<h2><a class="toc-backref" href="#id62">Docker-compose Deployment</a></h2>
+<p>If you want to run using the mysql backend, you can use docker-compose
+with <tt class="docutils literal"><span class="pre">scripts/Docker/docker-compose.yml</span></tt>. This will run Roundup and
+MySQL in containers. Directions for building using docker-compose are
+at the top of the yml file.</p>
+</div>
+<div class="section" id="tags-for-dockerhub-docker-images">
+<h2><a class="toc-backref" href="#id63">Tags for Dockerhub Docker Images</a></h2>
+<p>The docker images available from
+<a class="reference external" href="https://hub.docker.com/r/rounduptracker/roundup">https://hub.docker.com/r/rounduptracker/roundup</a>
+are tagged with: version-build, version, and <tt class="docutils literal">latest</tt> tags.
+For example, the tags when 2.3.0 is released will be:</p>
+<dl class="docutils">
+<dt><tt class="docutils literal">rounduptracker/roundup:latest</tt></dt>
+<dd>is a moving tag that tracks the latest build
+with the newest version of Roundup.</dd>
+<dt><tt class="docutils literal">rounduptracker/roundup:2.3.0</tt></dt>
+<dd>is a moving tag that tracks the latest build
+of version 2.3.0 of Roundup. The Roundup software in this
+build will match the 2.3.0 version released on PyPi, but the
+underlying Alpine image or versions of the supporting Python
+libraries (redis, xapian, psycopg2, ...) will change.</dd>
+<dt><tt class="docutils literal"><span class="pre">rounduptracker/roundup:2.3.0-1</span></tt></dt>
+<dd>is a static tag and marks the first build of the version
+2.3.0 docker image. When a new release of the image is done,
+it will get the tag <tt class="docutils literal"><span class="pre">2.3.0-2</span></tt> etc. This is an alternative to
+pulling using a sha256 sum. However it is possible to
+overwrite this image/tag. So it <strong>does not</strong> provide the same
+security guarantees that using a sha256 sum does.</dd>
+</dl>
+<p>In addition to the release tags, there may be one or more
+development tags available. All tags will start with <cite>devel</cite>. For
+example: <tt class="docutils literal">rounduptracker/roundup:devel</tt>.</p>
+<p>You should not assume that any <tt class="docutils literal">devel</tt> tag is static. They ae
+mainly for use by Roundup developer/maintainer for testing. There
+may be alternate tags starting with <tt class="docutils literal">devel-</tt> to indicate builds
+from specific Mercurial versions/hashes. Also the tag may be
+overwritten to change the underlying Python libraries or
+images. Unless you like the bleeding edge, these should not be
+used in production.</p>
+</div>
+</div>
+<div class="section" id="maintenance">
+<h1><a class="toc-backref" href="#id64">Maintenance</a></h1>
+<p>Read the <a class="reference external" href="admin_guide.html#tasks">Tasks section of the administration guide</a> for information about how to perform
+common maintenance tasks on Roundup.</p>
+</div>
+<div class="section" id="upgrading">
+<h1><a class="toc-backref" href="#id65">Upgrading</a></h1>
+<p>Read the separate <a class="reference external" href="upgrading.html">upgrading document</a>, which describes the steps needed to
+upgrade existing tracker trackers for each version of Roundup that is
+released.</p>
+</div>
+<div class="section" id="further-reading">
+<h1><a class="toc-backref" href="#id66">Further Reading</a></h1>
+<p>If you intend to use Roundup with anything other than the default
+templates, if you would like to hack on Roundup, or if you would
+like implementation details, you should read <a class="reference external" href="customizing.html">Customising Roundup</a>.</p>
+</div>
+<div class="section" id="id10">
+<h1><a class="toc-backref" href="#id67">Running Multiple Trackers</a></h1>
+<p>Things to think about before you jump off the deep end and install
+multiple trackers, which involve additional URLs, user databases, email
+addresses, databases to back up, etc.</p>
+<ol class="arabic simple">
+<li>Do you want a tracker per product you sell/support? You can just add
+a new property to your issues called Product, and filter by that. See
+the customisation example <a class="reference external" href="customizing.html#adding-a-new-field-to-the-classic-schema">adding a new field to the classic schema</a>.</li>
+<li>Do you want to track internal software development issues and customer
+support issues separately? You can just set up an additional &quot;issue&quot;
+class called &quot;cust_issues&quot; in the same tracker, mimicing the normal
+&quot;issue&quot; class, but with different properties. See the customisation
+example <a class="reference external" href="customizing.html#tracking-different-types-of-issues">tracking different types of issues</a>.</li>
+</ol>
+</div>
+<div class="section" id="platform-specific-notes">
+<h1><a class="toc-backref" href="#id68">Platform-Specific Notes</a></h1>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">installation.txt</tt>, line 1959)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: windows; add Roundup to path
+
+</pre>
+</div>
+<div class="section" id="windows-command-line-tools">
+<h2><a class="toc-backref" href="#id69">Windows command-line tools</a></h2>
+<p>To make the command-line tools accessible in Windows, you need to update
+the &quot;Path&quot; environment variable in the Registry via a dialog box.</p>
+<p>On Windows 2000 and later:</p>
+<ol class="arabic simple">
+<li>Press the &quot;Start&quot; button.</li>
+<li>Choose &quot;Settings&quot;</li>
+<li>Choose &quot;Control Panel&quot;</li>
+<li>Choose &quot;System&quot;</li>
+<li>Choose &quot;Advanced&quot;</li>
+<li>Choose &quot;Environmental Variables&quot;</li>
+<li>Add: &quot;&lt;dir&gt;Scripts&quot; to the &quot;Path&quot; environmental variable.</li>
+</ol>
+<p>Where &lt;dir&gt; in 7) is the root directory (e.g., <tt class="docutils literal"><span class="pre">C:\Python27\Scripts</span></tt>)
+of your Python installation.</p>
+<p>I understand that in XP, 2) above is not needed as &quot;Control
+Panel&quot; is directly accessible from &quot;Start&quot;.</p>
+<p>I do not believe this is possible to do in previous versions of Windows.</p>
+</div>
+<div class="section" id="windows-server">
+<h2><a class="toc-backref" href="#id70">Windows Server</a></h2>
+<p>To have the Roundup web server start up when your machine boots up, there
+are two different methods, the scheduler and installing the service.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">installation.txt</tt>, line 1992)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: windows; use scheduler for email integration
+
+</pre>
+</div>
+<div class="section" id="id11">
+<span id="using-the-windows-scheduler"></span><h3><a class="toc-backref" href="#id71">1. Using the Windows scheduler</a></h3>
+<p>Set up the following in Scheduled Tasks (note, the following is for a
+cygwin setup):</p>
+<dl class="docutils">
+<dt>Run</dt>
+<dd><tt class="docutils literal"><span class="pre">c:\cygwin\bin\bash.exe</span> <span class="pre">-c</span> <span class="pre">&quot;roundup-server</span> <span class="pre">TheProject=/opt/roundup/trackers/support&quot;</span></tt></dd>
+<dt>Start In</dt>
+<dd><tt class="docutils literal"><span class="pre">C:\cygwin\opt\roundup\bin</span></tt></dd>
+<dt>Schedule</dt>
+<dd>At System Startup</dd>
+</dl>
+<p>To have the Roundup mail gateway run periodically to poll a POP email address,
+set up the following in Scheduled Tasks:</p>
+<dl class="docutils">
+<dt>Run</dt>
+<dd><tt class="docutils literal"><span class="pre">c:\cygwin\bin\bash.exe</span> <span class="pre">-c</span> <span class="pre">&quot;roundup-mailgw</span> /opt/roundup/trackers/support pop <span class="pre">roundup:roundup&#64;mail-server&quot;</span></tt></dd>
+<dt>Start In</dt>
+<dd><tt class="docutils literal"><span class="pre">C:\cygwin\opt\roundup\bin</span></tt></dd>
+<dt>Schedule</dt>
+<dd><p class="first">Every 10 minutes from 5:00AM for 24 hours every day</p>
+<p class="last">Stop the task if it runs for 8 minutes</p>
+</dd>
+</dl>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">installation.txt</tt>, line 2026)</p>
+<p>Unknown directive type &quot;index&quot;.</p>
+<pre class="literal-block">
+.. index:: windows; setup Roundup a service
+
+</pre>
+</div>
+</div>
+<div class="section" id="installing-the-roundup-server-as-a-windows-service">
+<h3><a class="toc-backref" href="#id72">2. Installing the roundup server as a Windows service</a></h3>
+<p>This is more Windows oriented and will make the Roundup server run as
+soon as the PC starts up without any need for a login or such. It will
+also be available in the normal Windows Administrative Tools.</p>
+<p>For this you need first to create a service ini file containing the
+relevant settings.</p>
+<ol class="arabic">
+<li><p class="first">It is created if you execute the following command from within the
+scripts directory (notice the use of backslashes):</p>
+<pre class="literal-block">
+roundup-server -S -C &lt;trackersdir&gt;\server.ini -n &lt;servername&gt; -p 8080 -l &lt;trackersdir&gt;\trackerlog.log software=&lt;trackersdir&gt;\Software
+</pre>
+<p>where the item <tt class="docutils literal">&lt;trackersdir&gt;</tt> is replaced with the physical directory
+that hosts all of your trackers. The <tt class="docutils literal">&lt;servername&gt;</tt> item is the name
+of your roundup server PC, such as w2003srv or similar.</p>
+</li>
+<li><p class="first">Next open the now created file <tt class="docutils literal"><span class="pre">C:\DATA\roundup\server.ini</span></tt> file
+(if your <tt class="docutils literal">&lt;trackersdir&gt;</tt> is <tt class="docutils literal"><span class="pre">C:\DATA\roundup</span></tt>).
+Check the entries for correctness, especially this one:</p>
+<pre class="literal-block">
+[trackers]
+software = C:\DATA\Roundup\Software
+</pre>
+<p>(this is an example where the tracker is named software and its home is
+<tt class="docutils literal"><span class="pre">C:\DATA\Roundup\Software</span></tt>)</p>
+</li>
+<li><p class="first">Next give the commands that actually installs and starts the service:</p>
+<pre class="literal-block">
+roundup-server -C C:\DATA\Roundup\server.ini -c install
+roundup-server -c start
+</pre>
+</li>
+<li><p class="first">Finally open the AdministrativeTools/Services applet and locate the
+Roundup service entry. Open its properties and change it to start
+automatically instead of manually.</p>
+</li>
+</ol>
+<p>If you are using Apache as the webserver you might want to use it with
+mod_python instead to serve out Roundup. In that case see the mod_python
+instructions above for details.</p>
+</div>
+</div>
+<div class="section" id="sendmail-smrsh">
+<h2><a class="toc-backref" href="#id73">Sendmail smrsh</a></h2>
+<p>If you use Sendmail's <tt class="docutils literal">smrsh</tt> mechanism, you will need to tell
+smrsh that roundup-mailgw is a valid/trusted mail handler
+before it will work.</p>
+<p>This is usually done via the following 2 steps:</p>
+<ol class="arabic simple">
+<li>make a symlink in <tt class="docutils literal">/etc/smrsh</tt> called <tt class="docutils literal"><span class="pre">roundup-mailgw</span></tt>
+which points to the full path of your actual <tt class="docutils literal"><span class="pre">roundup-mailgw</span></tt>
+script.</li>
+<li>change your alias to <tt class="docutils literal"><span class="pre">&quot;|roundup-mailgw</span> &lt;tracker_home&gt;&quot;</tt></li>
+</ol>
+</div>
+<div class="section" id="linux">
+<h2><a class="toc-backref" href="#id74">Linux</a></h2>
+<p>Make sure you read the instructions under <a class="reference internal" href="#unix-environment-steps">UNIX environment steps</a>.</p>
+</div>
+<div class="section" id="solaris">
+<h2><a class="toc-backref" href="#id75">Solaris</a></h2>
+<p>You'll need to build Python.</p>
+<p>Make sure you read the instructions under <a class="reference internal" href="#unix-environment-steps">UNIX environment steps</a>.</p>
+</div>
+</div>
+<div class="section" id="problems-testing-your-python">
+<h1><a class="toc-backref" href="#id76">Problems? Testing your Python...</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>The <tt class="docutils literal">run_tests.py</tt> script is not packaged in Roundup's source
+distribution anymore. You should install pytest using your
+distributions package manger or using pip/pip2/pip3 to install
+pytest for your python version. See the <a class="reference external" href="admin_guide.html">administration guide</a>
+for details.</p>
+<p class="last">Remember to have a database user 'rounduptest' prepared (with
+password 'rounduptest'). This user
+must have at least the rights to create and drop databases.
+Documentation: details on <a class="reference external" href="https://dev.mysql.com/doc/refman/8.0/en/creating-accounts.html">adding MySQL users</a>,
+for PostgreSQL you want to call the <tt class="docutils literal">createuser</tt> command with the
+<tt class="docutils literal"><span class="pre">-d</span></tt> option to allow database creation.</p>
+</div>
+<p>This can only be done if you downloaded and unpacked the source
+distrbution. It will not work if you used <cite>pip install</cite> as the test
+suite is not installed. Once you've unpacked roundup's source, if you
+have pytest installed, run <tt class="docutils literal">python <span class="pre">-m</span> pytest test</tt> in the source
+directory and make sure there are no errors. If there are errors,
+please let us know!</p>
+</div>
+</div>
+</body>
+</html>

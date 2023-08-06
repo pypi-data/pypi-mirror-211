@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description"
+        content="Page tracker_config in documentation on the Roundup issue tracker, version 2.3.0b1.">
+    
+    <title><no title> &mdash; Roundup 2.3.0b1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/style.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+          URL_ROOT:    './',
+          VERSION:     '2.3.0b1',
+          COLLAPSE_MODINDEX: false,
+          FILE_SUFFIX: '.html'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="Roundup 2.3.0b1 documentation" href="index.html" /> 
+  </head>
+  <body>
+    <div class="header"><div class="label">Roundup</div>
+        <div id="searchbox" style="display: none">
+          <form class="search" action="search.html" method="get">
+            <input type="text" name="q" size="18" />
+            <input type="submit" value="Search" />
+            <input type="hidden" name="check_keywords" value="yes" />
+            <input type="hidden" name="area" value="default" />
+          </form>
+        </div>
+        <script type="text/javascript">$('#searchbox').show(0);</script>
+    </div>
+    <div class="navigation">
+      <div class="menu">
+       
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/tracker_config.txt"
+             rel="nofollow">Show Source</a></li>
+    </ul>
+  <div id="searchbox" style="display: none">
+    <h3>Quick search</h3>
+      <form class="search" action="search.html" method="get">
+        <input type="text" name="q" size="18" />
+        <input type="submit" value="Go" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+      <p style="font-size: 90%">Enter search terms or a module, class or function name.</p>
+  </div>
+  <script type="text/javascript">$('#searchbox').show(0);</script>
+      </div>
+    </div>
+    <div class="content">
+       
+    <div class="related related-top">
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="index.html">Roundup 2.3.0b1 documentation</a></li> 
+      </ul>
+    </div>
+       
+  <div class="code ini highlight-default notranslate" id="index-0"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">main</span><span class="p">]</span>
+
+<span class="c1"># Database directory path.</span>
+<span class="c1"># The path may be either absolute or relative</span>
+<span class="c1"># to the directory containing this config file.</span>
+<span class="c1"># Default: db</span>
+<span class="n">database</span> <span class="o">=</span> <span class="n">db</span>
+
+<span class="c1"># Templating engine to use.</span>
+<span class="c1"># Possible values are:</span>
+<span class="c1">#    &#39;zopetal&#39; for the old TAL engine ported from Zope,</span>
+<span class="c1">#    &#39;chameleon&#39; for Chameleon,</span>
+<span class="c1">#    &#39;jinja2&#39; for jinja2 templating.</span>
+<span class="c1">#       Available found jinja2 module.</span>
+<span class="c1"># Default: zopetal</span>
+<span class="n">template_engine</span> <span class="o">=</span> <span class="n">zopetal</span>
+
+<span class="c1"># Path to the HTML templates directory.</span>
+<span class="c1"># The path may be either absolute or relative</span>
+<span class="c1"># to the directory containing this config file.</span>
+<span class="c1"># Default: html</span>
+<span class="n">templates</span> <span class="o">=</span> <span class="n">html</span>
+
+<span class="c1"># A list of space separated directory paths (or a single</span>
+<span class="c1"># directory).  These directories hold additional public</span>
+<span class="c1"># static files available via Web UI.  These directories</span>
+<span class="c1"># may contain sitewide images, CSS stylesheets etc. If a</span>
+<span class="c1"># &#39;-&#39; is included, the list processing ends and the</span>
+<span class="c1"># TEMPLATES directory is not searched after the specified</span>
+<span class="c1"># directories.  If this option is not set, all static</span>
+<span class="c1"># files are taken from the TEMPLATES directory. Access to</span>
+<span class="c1"># these files is public, it is not checked against</span>
+<span class="c1"># registered users. So do not put any sensitive data in</span>
+<span class="c1"># the files in these directories.</span>
+<span class="c1"># The space separated paths may be either absolute</span>
+<span class="c1"># or relative to the directory containing this config file.</span>
+<span class="c1"># Default:</span>
+<span class="n">static_files</span> <span class="o">=</span>
+
+<span class="c1"># Email address that roundup will complain to if it runs</span>
+<span class="c1"># into trouble.</span>
+<span class="c1"># If no domain is specified then the config item</span>
+<span class="c1"># mail -&gt; domain is added.</span>
+<span class="c1"># Default: roundup-admin</span>
+<span class="n">admin_email</span> <span class="o">=</span> <span class="n">roundup</span><span class="o">-</span><span class="n">admin</span>
+
+<span class="c1"># The &#39;dispatcher&#39; is a role that can get notified</span>
+<span class="c1"># of new items to the database.</span>
+<span class="c1"># It is used by the ERROR_MESSAGES_TO config setting.</span>
+<span class="c1"># If no domain is specified then the config item</span>
+<span class="c1"># mail -&gt; domain is added.</span>
+<span class="c1"># Default: roundup-admin</span>
+<span class="n">dispatcher_email</span> <span class="o">=</span> <span class="n">roundup</span><span class="o">-</span><span class="n">admin</span>
+
+<span class="c1"># Additional text to include in the &quot;name&quot; part</span>
+<span class="c1"># of the From: address used in nosy messages.</span>
+<span class="c1"># If the sending user is &quot;Foo Bar&quot;, the From: line</span>
+<span class="c1"># is usually: &quot;Foo Bar&quot; &lt;issue_tracker@tracker.example&gt;</span>
+<span class="c1"># the EMAIL_FROM_TAG goes inside the &quot;Foo Bar&quot; quotes like so:</span>
+<span class="c1"># &quot;Foo Bar EMAIL_FROM_TAG&quot; &lt;issue_tracker@tracker.example&gt;</span>
+<span class="c1"># Default:</span>
+<span class="n">email_from_tag</span> <span class="o">=</span>
+
+<span class="c1"># Roles that a user gets when they register</span>
+<span class="c1"># with Web User Interface.</span>
+<span class="c1"># This is a comma-separated string of role names</span>
+<span class="c1">#  (e.g. &#39;Admin,User&#39;).</span>
+<span class="c1"># Default: User</span>
+<span class="n">new_web_user_roles</span> <span class="o">=</span> <span class="n">User</span>
+
+<span class="c1"># Roles that a user gets when they register</span>
+<span class="c1"># with Email Gateway.</span>
+<span class="c1"># This is a comma-separated string of role names</span>
+<span class="c1">#  (e.g. &#39;Admin,User&#39;).</span>
+<span class="c1"># Default: User</span>
+<span class="n">new_email_user_roles</span> <span class="o">=</span> <span class="n">User</span>
+
+<span class="c1"># On schema changes, properties or classes in the history may</span>
+<span class="c1"># become obsolete.  Since normal access permissions do not apply</span>
+<span class="c1"># (we don&#39;t know if a user should see such a property or class)</span>
+<span class="c1"># a list of roles is specified here that are allowed to see</span>
+<span class="c1"># these obsolete properties in the history. By default only the</span>
+<span class="c1"># admin role may see these history entries, you can make them</span>
+<span class="c1"># visible to all users by adding, e.g., the &#39;User&#39; role here.</span>
+<span class="c1"># Default: Admin</span>
+<span class="n">obsolete_history_roles</span> <span class="o">=</span> <span class="n">Admin</span>
+
+<span class="c1"># Send error message emails to the &quot;dispatcher&quot;, &quot;user&quot;,</span>
+<span class="c1"># or &quot;both&quot; (these are the three allowed values).</span>
+<span class="c1"># The dispatcher is configured using the DISPATCHER_EMAIL</span>
+<span class="c1">#  setting.</span>
+<span class="c1"># Default: user</span>
+<span class="n">error_messages_to</span> <span class="o">=</span> <span class="n">user</span>
+
+<span class="c1"># HTML version to generate. The templates are html4 by default.</span>
+<span class="c1"># If you wish to make them xhtml, then you&#39;ll need to change</span>
+<span class="c1"># this setting to &#39;xhtml&#39; too so all auto-generated HTML</span>
+<span class="c1"># is compliant.</span>
+<span class="c1"># Allowed values: html4, xhtml</span>
+<span class="c1"># Default: html4</span>
+<span class="n">html_version</span> <span class="o">=</span> <span class="n">html4</span>
+
+<span class="c1"># Default timezone offset,</span>
+<span class="c1"># applied when user&#39;s timezone is not set.</span>
+<span class="c1"># If pytz module is installed, value may be any valid</span>
+<span class="c1"># timezone specification (e.g. EET or Europe/Warsaw).</span>
+<span class="c1"># If pytz is not installed, value must be integer number</span>
+<span class="c1"># giving local timezone offset from UTC in hours.</span>
+<span class="c1"># Default: UTC</span>
+<span class="n">timezone</span> <span class="o">=</span> <span class="n">UTC</span>
+
+<span class="c1"># Register new users instantly, or require confirmation via</span>
+<span class="c1"># email?</span>
+<span class="c1"># Allowed values: yes, no</span>
+<span class="c1"># Default: no</span>
+<span class="n">instant_registration</span> <span class="o">=</span> <span class="n">no</span>
+
+<span class="c1"># Offer registration confirmation by email or only</span>
+<span class="c1"># through the web?</span>
+<span class="c1"># Allowed values: yes, no</span>
+<span class="c1"># Default: yes</span>
+<span class="n">email_registration_confirmation</span> <span class="o">=</span> <span class="n">yes</span>
+
+<span class="c1"># Force Roundup to use a particular text indexer.</span>
+<span class="c1"># If no indexer is supplied, the first available indexer</span>
+<span class="c1"># will be used in the following order:</span>
+<span class="c1"># Possible values: xapian, whoosh, native (internal), native-fts.</span>
+<span class="c1"># Note &#39;native-fts&#39; will only be used if set.</span>
+<span class="c1"># Allowed values: &#39;&#39;, &#39;xapian&#39;, &#39;whoosh&#39;, &#39;native&#39;, &#39;native-fts&#39;</span>
+<span class="c1"># Default:</span>
+<span class="n">indexer</span> <span class="o">=</span>
+
+<span class="c1"># Used to determine what language should be used by the</span>
+<span class="c1"># indexer above. Applies to Xapian and PostgreSQL native-fts</span>
+<span class="c1"># indexer. It sets the language for the stemmer, and PostgreSQL</span>
+<span class="c1"># native-fts stopwords and other dictionaries.</span>
+<span class="c1"># Possible values: must be a valid language for the indexer,</span>
+<span class="c1"># see indexer documentation for details.</span>
+<span class="c1"># Default: english</span>
+<span class="n">indexer_language</span> <span class="o">=</span> <span class="n">english</span>
+
+<span class="c1"># Additional stop-words for the full-text indexer specific to</span>
+<span class="c1"># your tracker. See the indexer source for the default list of</span>
+<span class="c1"># stop-words (eg. A,AND,ARE,AS,AT,BE,BUT,BY, ...). This is</span>
+<span class="c1"># not used by the postgres native-fts indexer. But is used to</span>
+<span class="c1"># filter search terms with the sqlite native-fts indexer.</span>
+<span class="c1"># Allowed values: comma-separated list of words</span>
+<span class="c1"># Default:</span>
+<span class="n">indexer_stopwords</span> <span class="o">=</span>
+
+<span class="c1"># Defines the file creation mode mask.</span>
+<span class="c1"># Default: 0o2</span>
+<span class="n">umask</span> <span class="o">=</span> <span class="mo">0o2</span>
+
+<span class="c1"># Maximum size of a csv-field during import. Roundups export</span>
+<span class="c1"># format is a csv (comma separated values) variant. The csv</span>
+<span class="c1"># reader has a limit on the size of individual fields</span>
+<span class="c1"># starting with python 2.5. Set this to a higher value if you</span>
+<span class="c1"># get the error &#39;Error: field larger than field limit&#39; during</span>
+<span class="c1"># import.</span>
+<span class="c1"># Default: 131072</span>
+<span class="n">csv_field_size</span> <span class="o">=</span> <span class="mi">131072</span>
+
+<span class="c1"># Sets the default number of rounds used when encoding passwords</span>
+<span class="c1"># using the PBKDF2 scheme. Set this to a higher value on faster</span>
+<span class="c1"># systems which want more security.</span>
+<span class="c1"># PBKDF2 (Password-Based Key Derivation Function) is a</span>
+<span class="c1"># password hashing mechanism that derives hash from the</span>
+<span class="c1"># password and a random salt. For authentication this process</span>
+<span class="c1"># is repeated with the same salt as in the stored hash.</span>
+<span class="c1"># If both hashes match, the authentication succeeds.</span>
+<span class="c1"># PBKDF2 supports a variable &#39;rounds&#39; parameter which varies</span>
+<span class="c1"># the time-cost of calculating the hash - doubling the number</span>
+<span class="c1"># of rounds doubles the cpu time required to calculate it. The</span>
+<span class="c1"># purpose of this is to periodically adjust the rounds as CPUs</span>
+<span class="c1"># become faster. The currently enforced minimum number of</span>
+<span class="c1"># rounds is 1000.</span>
+<span class="c1"># See: http://en.wikipedia.org/wiki/PBKDF2 and RFC2898</span>
+<span class="c1"># Default: 2000000</span>
+<span class="n">password_pbkdf2_default_rounds</span> <span class="o">=</span> <span class="mi">2000000</span>
+</pre></div>
+</div>
+<div class="code ini highlight-default notranslate" id="index-1"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">tracker</span><span class="p">]</span>
+
+<span class="c1"># A descriptive name for your roundup instance.</span>
+<span class="c1"># Default: Roundup issue tracker</span>
+<span class="n">name</span> <span class="o">=</span> <span class="n">Roundup</span> <span class="n">issue</span> <span class="n">tracker</span>
+
+<span class="c1"># The web address that the tracker is viewable at.</span>
+<span class="c1"># This will be included in information</span>
+<span class="c1"># sent to users of the tracker.</span>
+<span class="c1"># The URL MUST include the cgi-bin part or anything else</span>
+<span class="c1"># that is required to get to the home page of the tracker.</span>
+<span class="c1"># URL MUST start with http/https scheme and end with &#39;/&#39;</span>
+<span class="c1"># Default: NO DEFAULT</span>
+<span class="c1">#web = NO DEFAULT</span>
+
+<span class="c1"># Email address that mail to roundup should go to.</span>
+<span class="c1"># If no domain is specified then mail_domain is added.</span>
+<span class="c1"># Default: issue_tracker</span>
+<span class="n">email</span> <span class="o">=</span> <span class="n">issue_tracker</span>
+
+<span class="c1"># Controls the reply-to header address used when sending</span>
+<span class="c1"># nosy messages.</span>
+<span class="c1"># If the value is unset (default) the roundup tracker&#39;s</span>
+<span class="c1"># email address (above) is used.</span>
+<span class="c1"># If set to &quot;AUTHOR&quot; then the primary email address of the</span>
+<span class="c1"># author of the change will be used as the reply-to</span>
+<span class="c1"># address. This allows email exchanges to occur outside of</span>
+<span class="c1"># the view of roundup and exposes the address of the person</span>
+<span class="c1"># who updated the issue, but it could be useful in some</span>
+<span class="c1"># unusual circumstances.</span>
+<span class="c1"># If set to some other value, the value is used as the reply-to</span>
+<span class="c1"># address. It must be a valid RFC2822 address or people will not</span>
+<span class="c1"># be able to reply.</span>
+<span class="c1"># Default:</span>
+<span class="n">replyto_address</span> <span class="o">=</span>
+
+<span class="c1"># Default locale name for this tracker.</span>
+<span class="c1"># If this option is not set, the language is determined</span>
+<span class="c1"># by OS environment variable LANGUAGE, LC_ALL, LC_MESSAGES,</span>
+<span class="c1"># or LANG, in that order of preference.</span>
+<span class="c1"># Default:</span>
+<span class="n">language</span> <span class="o">=</span>
+</pre></div>
+</div>
+<div class="code ini highlight-default notranslate" id="index-2"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">web</span><span class="p">]</span>
+
+<span class="c1"># Setting this option enables Roundup to serve uploaded HTML</span>
+<span class="c1"># file content *as HTML*. This is a potential security risk</span>
+<span class="c1"># and is therefore disabled by default. Set to &#39;yes&#39; if you</span>
+<span class="c1"># trust *all* users uploading content to your tracker.</span>
+<span class="c1"># Allowed values: yes, no</span>
+<span class="c1"># Default: no</span>
+<span class="n">allow_html_file</span> <span class="o">=</span> <span class="n">no</span>
+
+<span class="c1"># Whether to use HTTP Basic Authentication, if present.</span>
+<span class="c1"># Roundup will use either the REMOTE_USER (the value set</span>
+<span class="c1"># by http_auth_header) or HTTP_AUTHORIZATION</span>
+<span class="c1"># variables supplied by your web server (in that order).</span>
+<span class="c1"># Set this option to &#39;no&#39; if you do not wish to use HTTP Basic</span>
+<span class="c1"># Authentication in your web interface.</span>
+<span class="c1"># Allowed values: yes, no</span>
+<span class="c1"># Default: yes</span>
+<span class="n">http_auth</span> <span class="o">=</span> <span class="n">yes</span>
+
+<span class="c1"># The HTTP header that holds the user authentication information.</span>
+<span class="c1"># If empty (default) the REMOTE_USER header is used.</span>
+<span class="c1"># This is used when the upstream HTTP server authenticates</span>
+<span class="c1"># the user and passes the username using this HTTP header.</span>
+<span class="c1"># Default:</span>
+<span class="n">http_auth_header</span> <span class="o">=</span>
+
+<span class="c1"># Setting this option makes roundup look at the Accept-Encoding</span>
+<span class="c1"># header supplied by the client. It will compress the response</span>
+<span class="c1"># on the fly using a common encoding. Disable it if your</span>
+<span class="c1"># upstream server does compression of dynamic data.</span>
+<span class="c1"># Allowed values: yes, no</span>
+<span class="c1"># Default: yes</span>
+<span class="n">dynamic_compression</span> <span class="o">=</span> <span class="n">yes</span>
+
+<span class="c1"># Setting this option enables Roundup to serve precompressed</span>
+<span class="c1"># static files. The admin must create the compressed files with</span>
+<span class="c1"># proper extension (.gzip, .br, .zstd) in the same directory as</span>
+<span class="c1"># the uncompressed file. If a precompressed file doesn&#39;t</span>
+<span class="c1"># exist, the uncompressed file will be served possibly with</span>
+<span class="c1"># dynamic compression.</span>
+<span class="c1"># Allowed values: yes, no</span>
+<span class="c1"># Default: no</span>
+<span class="n">use_precompressed_files</span> <span class="o">=</span> <span class="n">no</span>
+
+<span class="c1"># If usernames consist of a name and a domain/realm part of</span>
+<span class="c1"># the form user@realm and we&#39;re using REMOTE_USER for</span>
+<span class="c1"># authentication (e.g. via Kerberos), convert the realm part</span>
+<span class="c1"># of the incoming REMOTE_USER to lowercase before matching</span>
+<span class="c1"># against the roundup username. This allows roundup usernames</span>
+<span class="c1"># to be lowercase (including the realm) and still follow the</span>
+<span class="c1"># Kerberos convention of using an uppercase realm. In</span>
+<span class="c1"># addition this is compatible with Active Directory which</span>
+<span class="c1"># stores the username with realm as UserPrincipalName in</span>
+<span class="c1"># lowercase.</span>
+<span class="c1"># Allowed values: yes, no</span>
+<span class="c1"># Default: no</span>
+<span class="n">http_auth_convert_realm_to_lowercase</span> <span class="o">=</span> <span class="n">no</span>
+
+<span class="c1"># If the http_auth option is in effect (see above)</span>
+<span class="c1"># we&#39;re accepting a REMOTE_USER variable resulting from</span>
+<span class="c1"># an authentication mechanism implemented in the web-server,</span>
+<span class="c1"># e.g., Kerberos login or similar. To override the mechanism</span>
+<span class="c1"># provided by the web-server (e.g. for enabling sub-login as</span>
+<span class="c1"># another user) we tell roundup that the cookie takes</span>
+<span class="c1"># precedence over a REMOTE_USER or HTTP_AUTHORIZATION</span>
+<span class="c1"># variable. So if both, a cookie and a REMOTE_USER is</span>
+<span class="c1"># present, the cookie wins.</span>
+<span class="c1">#</span>
+<span class="c1"># Allowed values: yes, no</span>
+<span class="c1"># Default: no</span>
+<span class="n">cookie_takes_precedence</span> <span class="o">=</span> <span class="n">no</span>
+
+<span class="c1"># Limit login attempts per user per minute to this number.</span>
+<span class="c1"># By default the 4th login attempt in a minute will notify</span>
+<span class="c1"># the user that they need to wait 20 seconds before trying to</span>
+<span class="c1"># log in again. This limits password guessing attacks and</span>
+<span class="c1"># shouldn&#39;t need to be changed. Rate limiting on login can</span>
+<span class="c1"># be disabled by setting the value to 0.</span>
+<span class="c1"># Default: 3</span>
+<span class="n">login_attempts_min</span> <span class="o">=</span> <span class="mi">3</span>
+
+<span class="c1"># The number of seconds needed to complete the new user</span>
+<span class="c1"># registration form. This limits the rate at which bots</span>
+<span class="c1"># can attempt to sign up. Limit can be disabled by setting</span>
+<span class="c1"># the value to 0.</span>
+<span class="c1"># Default: 4</span>
+<span class="n">registration_delay</span> <span class="o">=</span> <span class="mi">4</span>
+
+<span class="c1"># When registering a user, check that the username</span>
+<span class="c1"># is available before sending confirmation email.</span>
+<span class="c1"># Usually a username conflict is detected when</span>
+<span class="c1"># confirming the registration. Disabled by default as</span>
+<span class="c1"># it can be used for guessing existing usernames.</span>
+<span class="c1">#</span>
+<span class="c1"># Allowed values: yes, no</span>
+<span class="c1"># Default: no</span>
+<span class="n">registration_prevalidate_username</span> <span class="o">=</span> <span class="n">no</span>
+
+<span class="c1"># Set the mode of the SameSite cookie option for</span>
+<span class="c1"># the session cookie. Choices are &#39;Lax&#39; or</span>
+<span class="c1"># &#39;Strict&#39;. &#39;None&#39; can be used to suppress the</span>
+<span class="c1"># option. Strict mode provides additional security</span>
+<span class="c1"># against CSRF attacks, but may confuse users who</span>
+<span class="c1"># are logged into roundup and open a roundup link</span>
+<span class="c1"># from a source other than roundup (e.g. link in</span>
+<span class="c1"># email).</span>
+<span class="c1"># Allowed values: Strict, Lax, None</span>
+<span class="c1"># Default: Lax</span>
+<span class="n">samesite_cookie_setting</span> <span class="o">=</span> <span class="n">Lax</span>
+
+<span class="c1"># Whether to enable the XMLRPC API in the roundup web</span>
+<span class="c1"># interface. By default the XMLRPC endpoint is the string</span>
+<span class="c1"># &#39;xmlrpc&#39; after the roundup web url configured in the</span>
+<span class="c1"># &#39;tracker&#39; section. If this variable is set to &#39;no&#39;, the</span>
+<span class="c1"># xmlrpc path has no special meaning and will yield an</span>
+<span class="c1"># error message.</span>
+<span class="c1"># Allowed values: yes, no</span>
+<span class="c1"># Default: yes</span>
+<span class="n">enable_xmlrpc</span> <span class="o">=</span> <span class="n">yes</span>
+
+<span class="c1"># Whether to enable i18n for the xmlrpc endpoint. Enable it if</span>
+<span class="c1"># you want to enable translation based on browsers lang</span>
+<span class="c1"># (if enabled), trackers lang (if set) or environment.</span>
+<span class="c1"># Allowed values: yes, no</span>
+<span class="c1"># Default: no</span>
+<span class="n">translate_xmlrpc</span> <span class="o">=</span> <span class="n">no</span>
+
+<span class="c1"># Whether to enable the REST API in the roundup web</span>
+<span class="c1"># interface. By default the REST endpoint is the string</span>
+<span class="c1"># &#39;rest&#39; plus any additional REST-API parameters after the</span>
+<span class="c1"># roundup web url configured in the tracker section. If this</span>
+<span class="c1"># variable is set to &#39;no&#39;, the rest path has no special meaning</span>
+<span class="c1"># and will yield an error message.</span>
+<span class="c1"># Allowed values: yes, no</span>
+<span class="c1"># Default: yes</span>
+<span class="n">enable_rest</span> <span class="o">=</span> <span class="n">yes</span>
+
+<span class="c1"># Whether to enable i18n for the rest endpoint. Enable it if</span>
+<span class="c1"># you want to enable translation based on browsers lang</span>
+<span class="c1"># (if enabled), trackers lang (if set) or environment.</span>
+<span class="c1"># Allowed values: yes, no</span>
+<span class="c1"># Default: no</span>
+<span class="n">translate_rest</span> <span class="o">=</span> <span class="n">no</span>
+
+<span class="c1"># Limit API calls per api_interval_in_sec seconds to</span>
+<span class="c1"># this number.</span>
+<span class="c1"># Determines the burst rate and the rate that new api</span>
+<span class="c1"># calls will be made available. If set to 360 and</span>
+<span class="c1"># api_intervals_in_sec is set to 3600, the 361st call in</span>
+<span class="c1"># 10 seconds results in a 429 error to the caller. It</span>
+<span class="c1"># tells them to wait 10 seconds (360/3600) before making</span>
+<span class="c1"># another api request. A value of 0 turns off rate</span>
+<span class="c1"># limiting in the API. Tune this as needed. See rest</span>
+<span class="c1"># documentation for more info.</span>
+<span class="c1">#</span>
+<span class="c1"># Default: 0</span>
+<span class="n">api_calls_per_interval</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="c1"># Defines the interval in seconds over which an api client can</span>
+<span class="c1"># make api_calls_per_interval api calls. Tune this as needed.</span>
+<span class="c1">#</span>
+<span class="c1"># Default: 3600</span>
+<span class="n">api_interval_in_sec</span> <span class="o">=</span> <span class="mi">3600</span>
+
+<span class="c1"># How do we deal with @csrf fields in posted forms.</span>
+<span class="c1"># Set this to &#39;required&#39; to block the post and notify</span>
+<span class="c1">#     the user if the field is missing or invalid.</span>
+<span class="c1"># Set this to &#39;yes&#39; to block the post and notify the user</span>
+<span class="c1">#     if the token is invalid, but accept the form if</span>
+<span class="c1">#     the field is missing.</span>
+<span class="c1"># Set this to &#39;logfailure&#39; to log a notice to the roundup</span>
+<span class="c1">#     log if the field is invalid or missing, but accept</span>
+<span class="c1">#     the post.</span>
+<span class="c1"># Set this to &#39;no&#39; to ignore the field and accept the post.</span>
+<span class="c1">#</span>
+<span class="c1"># Allowed values: required, yes, logfailure, no</span>
+<span class="c1"># Default: yes</span>
+<span class="n">csrf_enforce_token</span> <span class="o">=</span> <span class="n">yes</span>
+
+<span class="c1"># csrf_tokens have a limited lifetime. If they are not</span>
+<span class="c1"># used they are purged from the database after this</span>
+<span class="c1"># number of minutes. Default (20160) is 2 weeks.</span>
+<span class="c1"># Default: 20160</span>
+<span class="n">csrf_token_lifetime</span> <span class="o">=</span> <span class="mi">20160</span>
+
+<span class="c1"># This is only used for xmlrpc and rest requests. This test is</span>
+<span class="c1"># done after Origin and Referer headers are checked. It only</span>
+<span class="c1"># verifies that the X-Requested-With header exists. The value</span>
+<span class="c1"># is ignored.</span>
+<span class="c1"># Set this to &#39;required&#39; to block the post and notify</span>
+<span class="c1">#     the user if the header is missing or invalid.</span>
+<span class="c1"># Set this to &#39;yes&#39; is the same as required.</span>
+<span class="c1"># Set this to &#39;logfailure&#39; is the same as &#39;no&#39;.</span>
+<span class="c1"># Set this to &#39;no&#39; to ignore the header and accept the post.</span>
+<span class="c1"># Allowed values: required, yes, logfailure, no</span>
+<span class="c1"># Default: yes</span>
+<span class="n">csrf_enforce_header_x</span><span class="o">-</span><span class="n">requested</span><span class="o">-</span><span class="k">with</span> <span class="o">=</span> <span class="n">yes</span>
+
+<span class="c1"># Verify that the Referer http header matches the</span>
+<span class="c1"># tracker.web setting in config.ini.</span>
+<span class="c1"># Set this to &#39;required&#39; to block the post and notify</span>
+<span class="c1">#     the user if the header is missing or invalid.</span>
+<span class="c1"># Set this to &#39;yes&#39; to block the post and notify the user</span>
+<span class="c1">#     if the header is invalid, but accept the form if</span>
+<span class="c1">#     the field is missing.</span>
+<span class="c1"># Set this to &#39;logfailure&#39; to log a notice to the roundup</span>
+<span class="c1">#     log if the header is invalid or missing, but accept</span>
+<span class="c1">#     the post.</span>
+<span class="c1"># Set this to &#39;no&#39; to ignore the header and accept the post.</span>
+<span class="c1"># Allowed values: required, yes, logfailure, no</span>
+<span class="c1"># Default: yes</span>
+<span class="n">csrf_enforce_header_referer</span> <span class="o">=</span> <span class="n">yes</span>
+
+<span class="c1"># Verify that the Origin http header matches the</span>
+<span class="c1"># tracker.web setting in config.ini.</span>
+<span class="c1"># Set this to &#39;required&#39; to block the post and notify</span>
+<span class="c1">#     the user if the header is missing or invalid.</span>
+<span class="c1"># Set this to &#39;yes&#39; to block the post and notify the user</span>
+<span class="c1">#     if the header is invalid, but accept the form if</span>
+<span class="c1">#     the field is missing.</span>
+<span class="c1"># Set this to &#39;logfailure&#39; to log a notice to the roundup</span>
+<span class="c1">#     log if the header is invalid or missing, but accept</span>
+<span class="c1">#     the post.</span>
+<span class="c1"># Set this to &#39;no&#39; to ignore the header and accept the post.</span>
+<span class="c1"># Allowed values: required, yes, logfailure, no</span>
+<span class="c1"># Default: yes</span>
+<span class="n">csrf_enforce_header_origin</span> <span class="o">=</span> <span class="n">yes</span>
+
+<span class="c1"># A comma separated list of additonal valid Origin header</span>
+<span class="c1"># values used when enforcing the header origin. They are used</span>
+<span class="c1"># only for the api URL&#39;s (/rest and /xmlrpc). They are not</span>
+<span class="c1"># used for the usual html URL&#39;s. These strings must match the</span>
+<span class="c1"># value of the Origin header exactly. So &#39;https://bar.edu&#39; and</span>
+<span class="c1"># &#39;https://Bar.edu&#39; are two different Origin values. Note that</span>
+<span class="c1"># the origin value is scheme://host. There is no path</span>
+<span class="c1"># component. So &#39;https://bar.edu/&#39; would never be valid.</span>
+<span class="c1"># The value &#39;*&#39; can be used to match any origin. It must be</span>
+<span class="c1"># first in the list if used. Note that this value allows</span>
+<span class="c1"># any web page on the internet to make anonymous requests</span>
+<span class="c1"># against your Roundup tracker.</span>
+<span class="c1">#</span>
+<span class="c1"># You need to set these if you have a web application on a</span>
+<span class="c1"># different origin accessing your Roundup instance.</span>
+<span class="c1">#</span>
+<span class="c1"># (The origin from the tracker.web setting in config.ini is</span>
+<span class="c1"># always valid and does not need to be specified.)</span>
+<span class="c1"># A list of space separated case sensitive</span>
+<span class="c1"># origin headers &#39;scheme://host&#39;.</span>
+<span class="c1"># Default:</span>
+<span class="n">allowed_api_origins</span> <span class="o">=</span>
+
+<span class="c1"># Verify that the X-Forwarded-Host http header matches</span>
+<span class="c1"># the host part of the tracker.web setting in config.ini.</span>
+<span class="c1"># Set this to &#39;required&#39; to block the post and notify</span>
+<span class="c1">#     the user if the header is missing or invalid.</span>
+<span class="c1"># Set this to &#39;yes&#39; to block the post and notify the user</span>
+<span class="c1">#     if the header is invalid, but accept the form if</span>
+<span class="c1">#     the field is missing.</span>
+<span class="c1"># Set this to &#39;logfailure&#39; to log a notice to the roundup</span>
+<span class="c1">#     log if the header is invalid or missing, but accept</span>
+<span class="c1">#     the post.</span>
+<span class="c1"># Set this to &#39;no&#39; to ignore the header and accept the post.</span>
+<span class="c1"># Allowed values: required, yes, logfailure, no</span>
+<span class="c1"># Default: yes</span>
+<span class="n">csrf_enforce_header_x</span><span class="o">-</span><span class="n">forwarded</span><span class="o">-</span><span class="n">host</span> <span class="o">=</span> <span class="n">yes</span>
+
+<span class="c1"># &quot;If there is no X-Forward-Host header, verify that</span>
+<span class="c1"># the Host http header matches the host part of the</span>
+<span class="c1"># tracker.web setting in config.ini.</span>
+<span class="c1"># Set this to &#39;required&#39; to block the post and notify</span>
+<span class="c1">#     the user if the header is missing or invalid.</span>
+<span class="c1"># Set this to &#39;yes&#39; to block the post and notify the user</span>
+<span class="c1">#     if the header is invalid, but accept the form if</span>
+<span class="c1">#     the field is missing.</span>
+<span class="c1"># Set this to &#39;logfailure&#39; to log a notice to the roundup</span>
+<span class="c1">#     log if the header is invalid or missing, but accept</span>
+<span class="c1">#     the post.</span>
+<span class="c1"># Set this to &#39;no&#39; to ignore the header and accept the post.</span>
+<span class="c1"># Allowed values: required, yes, logfailure, no</span>
+<span class="c1"># Default: yes</span>
+<span class="n">csrf_enforce_header_host</span> <span class="o">=</span> <span class="n">yes</span>
+
+<span class="c1"># Minimum number of header checks that must pass</span>
+<span class="c1"># to accept the request. Set to 0 to accept post</span>
+<span class="c1"># even if no header checks pass. Usually the Host header check</span>
+<span class="c1"># always passes, so setting it less than 1 is not recommended.</span>
+<span class="c1"># Default: 1</span>
+<span class="n">csrf_header_min_count</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="c1"># Whether to use HTTP Accept-Language, if present.</span>
+<span class="c1"># Browsers send a language-region preference list.</span>
+<span class="c1"># It&#39;s usually set in the client&#39;s browser or in their</span>
+<span class="c1"># Operating System.</span>
+<span class="c1"># Set this option to &#39;no&#39; if you want to ignore it.</span>
+<span class="c1"># Allowed values: yes, no</span>
+<span class="c1"># Default: yes</span>
+<span class="n">use_browser_language</span> <span class="o">=</span> <span class="n">yes</span>
+
+<span class="c1"># Setting this option makes Roundup display error tracebacks</span>
+<span class="c1"># in the user&#39;s browser rather than emailing them to the</span>
+<span class="c1"># tracker admin.</span>
+<span class="c1"># Allowed values: yes, no</span>
+<span class="c1"># Default: no</span>
+<span class="n">debug</span> <span class="o">=</span> <span class="n">no</span>
+
+<span class="c1"># Setting this option to yes/true allows users with</span>
+<span class="c1"># an empty/blank password to login to the</span>
+<span class="c1"># web/http interfaces.</span>
+<span class="c1"># Allowed values: yes, no</span>
+<span class="c1"># Default: no</span>
+<span class="n">login_empty_passwords</span> <span class="o">=</span> <span class="n">no</span>
+
+<span class="c1"># Setting this option makes Roundup migrate passwords with</span>
+<span class="c1"># an insecure password-scheme to a more secure scheme</span>
+<span class="c1"># when the user logs in via the web-interface.</span>
+<span class="c1"># Allowed values: yes, no</span>
+<span class="c1"># Default: yes</span>
+<span class="n">migrate_passwords</span> <span class="o">=</span> <span class="n">yes</span>
+
+<span class="c1"># A per tracker secret used in etag calculations for</span>
+<span class="c1"># an object. It must not be empty.</span>
+<span class="c1"># It prevents reverse engineering hidden data in an object</span>
+<span class="c1"># by calculating the etag for a sample object. Then modifying</span>
+<span class="c1"># hidden properties until the sample object&#39;s etag matches</span>
+<span class="c1"># the one returned by roundup.</span>
+<span class="c1"># Changing this changes the etag and invalidates updates by</span>
+<span class="c1"># clients. It must be persistent across application restarts.</span>
+<span class="c1"># (Note the default value changes every time</span>
+<span class="c1">#      roundup-admin updateconfig</span>
+<span class="c1"># is run, so it must be explicitly set to a non-empty string.</span>
+<span class="c1">#</span>
+<span class="c1"># A string that starts with &#39;file://&#39; is interpreted</span>
+<span class="c1"># as a file path relative to the tracker home. Using</span>
+<span class="c1"># &#39;file:///&#39; defines an absolute path. The first</span>
+<span class="c1"># line of the file will be used as the value. Any</span>
+<span class="c1"># string that does not start with &#39;file://&#39; is used</span>
+<span class="c1"># as is. It removes any whitespace at the end of the</span>
+<span class="c1"># line, so a newline can be put in the file.</span>
+<span class="c1">#</span>
+<span class="c1"># Default: KRh8wLo0s3Mxu3xU42Q/Mw3CzpdJ5KZFNarDqVAO/L0=</span>
+<span class="n">secret_key</span> <span class="o">=</span> <span class="n">KRh8wLo0s3Mxu3xU42Q</span><span class="o">/</span><span class="n">Mw3CzpdJ5KZFNarDqVAO</span><span class="o">/</span><span class="n">L0</span><span class="o">=</span>
+
+<span class="c1"># This is used to generate/validate json web tokens (jwt).</span>
+<span class="c1"># Even if you don&#39;t use jwts it must not be empty.</span>
+<span class="c1"># If less than 256 bits (32 characters) in length it will</span>
+<span class="c1"># disable use of jwt. Changing this invalidates all jwts</span>
+<span class="c1"># issued by the roundup instance requiring *all* users to</span>
+<span class="c1"># generate new jwts. This is experimental and disabled by</span>
+<span class="c1"># default. It must be persistent across application restarts.</span>
+<span class="c1">#</span>
+<span class="c1"># A string that starts with &#39;file://&#39; is interpreted</span>
+<span class="c1"># as a file path relative to the tracker home. Using</span>
+<span class="c1"># &#39;file:///&#39; defines an absolute path. The first</span>
+<span class="c1"># line of the file will be used as the value. Any</span>
+<span class="c1"># string that does not start with &#39;file://&#39; is used</span>
+<span class="c1"># as is. It removes any whitespace at the end of the</span>
+<span class="c1"># line, so a newline can be put in the file.</span>
+<span class="c1">#</span>
+<span class="c1"># Default: disabled</span>
+<span class="n">jwt_secret</span> <span class="o">=</span> <span class="n">disabled</span>
+
+<span class="c1"># Settings in this section (except for backend) are used</span>
+<span class="c1">#  by RDBMS backends only.</span>
+</pre></div>
+</div>
+<div class="code ini highlight-default notranslate" id="index-3"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">rdbms</span><span class="p">]</span>
+
+<span class="c1"># Database backend.</span>
+<span class="c1"># Available backends: anydbm, mysql, sqlite, postgresql</span>
+<span class="c1"># Default: NO DEFAULT</span>
+<span class="c1">#backend = NO DEFAULT</span>
+
+<span class="c1"># Name of the database to use.</span>
+<span class="c1"># Default: roundup</span>
+<span class="n">name</span> <span class="o">=</span> <span class="n">roundup</span>
+
+<span class="c1"># Database server host.</span>
+<span class="c1"># Default: localhost</span>
+<span class="n">host</span> <span class="o">=</span> <span class="n">localhost</span>
+
+<span class="c1"># TCP port number of the database server.</span>
+<span class="c1"># Postgresql usually resides on port 5432 (if any),</span>
+<span class="c1"># for MySQL default port number is 3306.</span>
+<span class="c1"># Leave this option empty to use backend default</span>
+<span class="c1"># Default:</span>
+<span class="n">port</span> <span class="o">=</span>
+
+<span class="c1"># Database user name that Roundup should use.</span>
+<span class="c1"># Default: roundup</span>
+<span class="n">user</span> <span class="o">=</span> <span class="n">roundup</span>
+
+<span class="c1"># Database user password.</span>
+<span class="c1"># A string that starts with &#39;file://&#39; is interpreted</span>
+<span class="c1"># as a file path relative to the tracker home. Using</span>
+<span class="c1"># &#39;file:///&#39; defines an absolute path. The first</span>
+<span class="c1"># line of the file will be used as the value. Any</span>
+<span class="c1"># string that does not start with &#39;file://&#39; is used</span>
+<span class="c1"># as is. It removes any whitespace at the end of the</span>
+<span class="c1"># line, so a newline can be put in the file.</span>
+<span class="c1">#</span>
+<span class="c1"># Default: roundup</span>
+<span class="n">password</span> <span class="o">=</span> <span class="n">roundup</span>
+
+<span class="c1"># Name of the MySQL defaults file.</span>
+<span class="c1"># Only used in MySQL connections.</span>
+<span class="c1"># Default: ~/.my.cnf</span>
+<span class="n">read_default_file</span> <span class="o">=</span> <span class="o">~/.</span><span class="n">my</span><span class="o">.</span><span class="n">cnf</span>
+
+<span class="c1"># Name of the group to use in the MySQL defaults file (.my.cnf).</span>
+<span class="c1"># Only used in MySQL connections.</span>
+<span class="c1"># Default: roundup</span>
+<span class="n">read_default_group</span> <span class="o">=</span> <span class="n">roundup</span>
+
+<span class="c1"># Charset to use for mysql connection,</span>
+<span class="c1"># use &#39;default&#39; for the mysql default, no charset option</span>
+<span class="c1"># is used when creating the connection in that case.</span>
+<span class="c1"># Otherwise any permissible mysql charset is allowed here.</span>
+<span class="c1"># Only used in MySQL connections.</span>
+<span class="c1"># Default: utf8mb4</span>
+<span class="n">mysql_charset</span> <span class="o">=</span> <span class="n">utf8mb4</span>
+
+<span class="c1"># Number of seconds to wait when the SQLite database is locked</span>
+<span class="c1"># Default: use a 30 second timeout (extraordinarily generous)</span>
+<span class="c1"># Only used in SQLite connections.</span>
+<span class="c1"># Default: 30</span>
+<span class="n">sqlite_timeout</span> <span class="o">=</span> <span class="mi">30</span>
+
+<span class="c1"># Size of the node cache (in elements)</span>
+<span class="c1"># Default: 100</span>
+<span class="n">cache_size</span> <span class="o">=</span> <span class="mi">100</span>
+
+<span class="c1"># Setting this option to &#39;no&#39; protects the database against</span>
+<span class="c1"># table creations.</span>
+<span class="c1"># Allowed values: yes, no</span>
+<span class="c1"># Default: yes</span>
+<span class="n">allow_create</span> <span class="o">=</span> <span class="n">yes</span>
+
+<span class="c1"># Setting this option to &#39;no&#39; protects the database against</span>
+<span class="c1"># table alterations.</span>
+<span class="c1"># Allowed values: yes, no</span>
+<span class="c1"># Default: yes</span>
+<span class="n">allow_alter</span> <span class="o">=</span> <span class="n">yes</span>
+
+<span class="c1"># Setting this option to &#39;no&#39; protects the database against</span>
+<span class="c1"># table drops.</span>
+<span class="c1"># Allowed values: yes, no</span>
+<span class="c1"># Default: yes</span>
+<span class="n">allow_drop</span> <span class="o">=</span> <span class="n">yes</span>
+
+<span class="c1"># Name of the PostgreSQL template for database creation.</span>
+<span class="c1"># For database creation the template used has to match</span>
+<span class="c1"># the character encoding used (UTF8), there are different</span>
+<span class="c1"># PostgreSQL installations using different templates with</span>
+<span class="c1"># different encodings. If you get an error:</span>
+<span class="c1">#   new encoding (UTF8) is incompatible with the encoding of</span>
+<span class="c1">#   the template database (SQL_ASCII)</span>
+<span class="c1">#   HINT:  Use the same encoding as in the template database,</span>
+<span class="c1">#   or use template0 as template.</span>
+<span class="c1"># then set this option to the template name given in the</span>
+<span class="c1"># error message.</span>
+<span class="c1"># Default:</span>
+<span class="n">template</span> <span class="o">=</span>
+
+<span class="c1"># Database isolation level, currently supported for</span>
+<span class="c1"># PostgreSQL and mysql. See, e.g.,</span>
+<span class="c1"># http://www.postgresql.org/docs/9.1/static/transaction-iso.html</span>
+<span class="c1"># Allowed values: &#39;read uncommitted&#39;, &#39;read committed&#39;, &#39;repeatable read&#39;, &#39;serializable&#39;</span>
+<span class="c1"># Default: read committed</span>
+<span class="n">isolation_level</span> <span class="o">=</span> <span class="n">read</span> <span class="n">committed</span>
+
+<span class="c1"># Set the database cursor for filter queries to serverside</span>
+<span class="c1"># cursor, this avoids caching large amounts of data in the</span>
+<span class="c1"># client. This option only applies for the postgresql backend.</span>
+<span class="c1"># Allowed values: yes, no</span>
+<span class="c1"># Default: yes</span>
+<span class="n">serverside_cursor</span> <span class="o">=</span> <span class="n">yes</span>
+
+<span class="c1"># Choose configuration for session and one time key storage.</span>
+</pre></div>
+</div>
+<div class="code ini highlight-default notranslate" id="index-4"><div class="highlight"><pre><span></span>[sessiondb]
+
+# Set backend for storing one time key (otk) and session data.
+# Values have to be compatible with main backend.
+# main\/ session&gt;| anydbm | sqlite | redis | mysql | postgresql |
+#  anydbm        |    D   |        |   X   |       |            |
+#  sqlite        |    X   |    D   |   X   |       |            |
+#  mysql         |        |        |       |   D   |            |
+#  postgresql    |        |        |       |       |      D     |
+#  -------------------------------------------------------------+
+#           D - default if unset,   X - compatible choice
+# Default:
+backend =
+
+# URL used to connect to redis. Default uses unauthenticated
+# redis database 0 running on localhost with default port.
+#
+# A string that starts with &#39;file://&#39; is interpreted
+# as a file path relative to the tracker home. Using
+# &#39;file:///&#39; defines an absolute path. The first
+# line of the file will be used as the value. Any
+# string that does not start with &#39;file://&#39; is used
+# as is. It removes any whitespace at the end of the
+# line, so a newline can be put in the file.
+#
+# Default: redis://localhost:6379/0?health_check_interval=2
+redis_url = redis://localhost:6379/0?health_check_interval=2
+</pre></div>
+</div>
+<div class="code ini highlight-default notranslate" id="index-5"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">logging</span><span class="p">]</span>
+
+<span class="c1"># Path to configuration file for standard Python logging module.</span>
+<span class="c1"># If this option is set, logging configuration is loaded</span>
+<span class="c1"># from specified file; options &#39;filename&#39; and &#39;level&#39;</span>
+<span class="c1"># in this section are ignored.</span>
+<span class="c1"># The path may be either absolute or relative</span>
+<span class="c1"># to the directory containing this config file.</span>
+<span class="c1"># Default:</span>
+<span class="n">config</span> <span class="o">=</span>
+
+<span class="c1"># Log file name for minimal logging facility built into Roundup.</span>
+<span class="c1"># If no file name specified, log messages are written on stderr.</span>
+<span class="c1"># If above &#39;config&#39; option is set, this option has no effect.</span>
+<span class="c1"># The path may be either absolute or relative</span>
+<span class="c1"># to the directory containing this config file.</span>
+<span class="c1"># Default:</span>
+<span class="n">filename</span> <span class="o">=</span>
+
+<span class="c1"># Minimal severity level of messages written to log file.</span>
+<span class="c1"># If above &#39;config&#39; option is set, this option has no effect.</span>
+<span class="c1"># Allowed values: DEBUG, INFO, WARNING, ERROR</span>
+<span class="c1"># Default: ERROR</span>
+<span class="n">level</span> <span class="o">=</span> <span class="n">ERROR</span>
+
+<span class="c1"># If set to yes, only the loggers configured in this section will</span>
+<span class="c1"># be used. Yes will disable gunicorn&#39;s --access-logfile.</span>
+<span class="c1">#</span>
+<span class="c1"># Allowed values: yes, no</span>
+<span class="c1"># Default: no</span>
+<span class="n">disable_loggers</span> <span class="o">=</span> <span class="n">no</span>
+
+<span class="c1"># Outgoing email options.</span>
+<span class="c1"># Used for nosy messages and approval requests</span>
+</pre></div>
+</div>
+<div class="code ini highlight-default notranslate" id="index-6"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">mail</span><span class="p">]</span>
+
+<span class="c1"># The email domain that admin_email, issue_tracker and</span>
+<span class="c1"># dispatcher_email belong to.</span>
+<span class="c1"># This domain is added to those config items if they don&#39;t</span>
+<span class="c1"># explicitly include a domain.</span>
+<span class="c1"># Do not include the &#39;@&#39; symbol.</span>
+<span class="c1"># Default: NO DEFAULT</span>
+<span class="c1">#domain = NO DEFAULT</span>
+
+<span class="c1"># SMTP mail host that roundup will use to send mail</span>
+<span class="c1"># Default: NO DEFAULT</span>
+<span class="c1">#host = NO DEFAULT</span>
+
+<span class="c1"># SMTP login name.</span>
+<span class="c1"># Set this if your mail host requires authenticated access.</span>
+<span class="c1"># If username is not empty, password (below) MUST be set!</span>
+<span class="c1"># Default:</span>
+<span class="n">username</span> <span class="o">=</span>
+
+<span class="c1"># SMTP login password.</span>
+<span class="c1"># Set this if your mail host requires authenticated access.</span>
+<span class="c1"># A string that starts with &#39;file://&#39; is interpreted</span>
+<span class="c1"># as a file path relative to the tracker home. Using</span>
+<span class="c1"># &#39;file:///&#39; defines an absolute path. The first</span>
+<span class="c1"># line of the file will be used as the value. Any</span>
+<span class="c1"># string that does not start with &#39;file://&#39; is used</span>
+<span class="c1"># as is. It removes any whitespace at the end of the</span>
+<span class="c1"># line, so a newline can be put in the file.</span>
+<span class="c1">#</span>
+<span class="c1"># Default: NO DEFAULT</span>
+<span class="c1">#password = NO DEFAULT</span>
+
+<span class="c1"># Default port to send SMTP on.</span>
+<span class="c1"># Set this if your mail server runs on a different port.</span>
+<span class="c1"># Default: 25</span>
+<span class="n">port</span> <span class="o">=</span> <span class="mi">25</span>
+
+<span class="c1"># The local hostname to use during SMTP transmission.</span>
+<span class="c1"># Set this if your mail server requires something specific.</span>
+<span class="c1"># Default:</span>
+<span class="n">local_hostname</span> <span class="o">=</span>
+
+<span class="c1"># If your SMTP mail host provides or requires TLS</span>
+<span class="c1"># (Transport Layer Security) then set this option to &#39;yes&#39;.</span>
+<span class="c1"># Allowed values: yes, no</span>
+<span class="c1"># Default: no</span>
+<span class="n">tls</span> <span class="o">=</span> <span class="n">no</span>
+
+<span class="c1"># If TLS is used, you may set this option to the name</span>
+<span class="c1"># of a PEM formatted file that contains your private key.</span>
+<span class="c1"># The path may be either absolute or relative</span>
+<span class="c1"># to the directory containing this config file.</span>
+<span class="c1"># Default:</span>
+<span class="n">tls_keyfile</span> <span class="o">=</span>
+
+<span class="c1"># If TLS is used, you may set this option to the name</span>
+<span class="c1"># of a PEM formatted certificate chain file.</span>
+<span class="c1"># The path may be either absolute or relative</span>
+<span class="c1"># to the directory containing this config file.</span>
+<span class="c1"># Default:</span>
+<span class="n">tls_certfile</span> <span class="o">=</span>
+
+<span class="c1"># Character set to encode email headers with.</span>
+<span class="c1"># We use utf-8 by default, as it&#39;s the most flexible.</span>
+<span class="c1"># Some mail readers (eg. Eudora) can&#39;t cope with that,</span>
+<span class="c1"># so you might need to specify a more limited character set</span>
+<span class="c1"># (eg. iso-8859-1).</span>
+<span class="c1"># Default: utf-8</span>
+<span class="n">charset</span> <span class="o">=</span> <span class="n">utf</span><span class="o">-</span><span class="mi">8</span>
+
+<span class="c1"># Setting this option makes Roundup write all outgoing email</span>
+<span class="c1"># messages to this file *instead* of sending them.</span>
+<span class="c1"># This option has the same effect as the environment variable</span>
+<span class="c1"># SENDMAILDEBUG.</span>
+<span class="c1"># Environment variable takes precedence.</span>
+<span class="c1"># The path may be either absolute or relative</span>
+<span class="c1"># to the directory containing this config file.</span>
+<span class="c1"># Default:</span>
+<span class="n">debug</span> <span class="o">=</span>
+
+<span class="c1"># Add a line with author information at top of all messages</span>
+<span class="c1"># sent by roundup</span>
+<span class="c1"># Allowed values: yes, no</span>
+<span class="c1"># Default: yes</span>
+<span class="n">add_authorinfo</span> <span class="o">=</span> <span class="n">yes</span>
+
+<span class="c1"># Add the mail address of the author to the author information</span>
+<span class="c1"># at the top of all messages.</span>
+<span class="c1"># If this is false but add_authorinfo is true, only the name</span>
+<span class="c1"># of the actor is added which protects the mail address of the</span>
+<span class="c1"># actor from being exposed at mail archives, etc.</span>
+<span class="c1"># Allowed values: yes, no</span>
+<span class="c1"># Default: yes</span>
+<span class="n">add_authoremail</span> <span class="o">=</span> <span class="n">yes</span>
+
+<span class="c1"># Roundup Mail Gateway options</span>
+</pre></div>
+</div>
+<div class="code ini highlight-default notranslate" id="index-7"><div class="highlight"><pre><span></span>[mailgw]
+
+# Keep email citations when accepting messages.
+# Setting this to &quot;no&quot; strips out &quot;quoted&quot; text
+# from the message. Setting this to &quot;new&quot; keeps quoted
+# text only if a new issue is being created.
+# Signatures are also stripped.
+# Allowed values: yes, no, new
+# Default: yes
+keep_quoted_text = yes
+
+# Setting this to &quot;yes&quot; preserves the email body
+# as is - that is, keep the citations _and_ signatures.
+# Setting this to &quot;new&quot; keeps the body only if we are
+# creating a new issue.
+# Allowed values: yes, no, new
+# Default: no
+leave_body_unchanged = no
+
+# Default class to use in the mailgw
+# if one isn&#39;t supplied in email subjects.
+# To disable, leave the value blank.
+# Default: issue
+default_class = issue
+
+# Default locale name for the tracker mail gateway.
+# If this option is not set, mail gateway will use
+# the language of the tracker instance.
+# Default:
+language =
+
+# Controls the parsing of the [prefix] on subject
+# lines in incoming emails. &quot;strict&quot; will return an
+# error to the sender if the [prefix] is not recognised.
+# &quot;loose&quot; will attempt to parse the [prefix] but just
+# pass it through as part of the issue title if not
+# recognised. &quot;none&quot; will always pass any [prefix]
+# through as part of the issue title.
+# Default: strict
+subject_prefix_parsing = strict
+
+# Controls the parsing of the [suffix] on subject
+# lines in incoming emails. &quot;strict&quot; will return an
+# error to the sender if the [suffix] is not recognised.
+# &quot;loose&quot; will attempt to parse the [suffix] but just
+# pass it through as part of the issue title if not
+# recognised. &quot;none&quot; will always pass any [suffix]
+# through as part of the issue title.
+# Default: strict
+subject_suffix_parsing = strict
+
+# Defines the brackets used for delimiting the prefix and
+# suffix in a subject line. The presence of &quot;suffix&quot; in
+# the config option name is a historical artifact and may
+# be ignored.
+# Default: []
+subject_suffix_delimiters = []
+
+# Controls matching of the incoming email subject line
+# against issue titles in the case where there is no
+# designator [prefix]. &quot;never&quot; turns off matching.
+# &quot;creation + interval&quot; or &quot;activity + interval&quot;
+# will match an issue for the interval after the issue&#39;s
+# creation or last activity. The interval is a standard
+# Roundup interval.
+# Default: always
+subject_content_match = always
+
+# Update issue title if incoming subject of email is different.
+# Setting this to &quot;no&quot; will ignore the title part of the subject
+# of incoming email messages.
+#
+# Allowed values: yes, no
+# Default: yes
+subject_updates_title = yes
+
+# Regular expression matching a single reply or forward
+# prefix prepended by the mailer. This is explicitly
+# stripped from the subject during parsing.
+# Value is Python Regular Expression (UTF8-encoded).
+# Default: (\s*\W?\s*(fw|fwd|re|aw|sv|ang)\W)+
+refwd_re = (\s*\W?\s*(fw|fwd|re|aw|sv|ang)\W)+
+
+# Regular expression matching start of an original message
+# if quoted the in body.
+# Value is Python Regular Expression (UTF8-encoded).
+# Default: ^[&gt;|\s]*-----\s?Original Message\s?-----$
+origmsg_re = ^[&gt;|\s]*-----\s?Original Message\s?-----$
+
+# Regular expression matching the start of a signature
+# in the message body.
+# Value is Python Regular Expression (UTF8-encoded).
+# Default: ^[&gt;|\s]*-- ?$
+sign_re = ^[&gt;|\s]*-- ?$
+
+# Regular expression matching end of line.
+# Value is Python Regular Expression (UTF8-encoded).
+# Default: [\r\n]+
+eol_re = [\r\n]+
+
+# Regular expression matching a blank line.
+# Value is Python Regular Expression (UTF8-encoded).
+# Default: [\r\n]+\s*[\r\n]+
+blankline_re = [\r\n]+\s*[\r\n]+
+
+# Unpack attached messages (encoded as message/rfc822 in MIME)
+# as multiple parts attached as files to the issue, if not
+# set we handle message/rfc822 attachments as a single file.
+# Allowed values: yes, no
+# Default: no
+unpack_rfc822 = no
+
+# When parsing incoming mails, roundup uses the first
+# text/plain part it finds. If this part is inside a
+# multipart/alternative, and this option is set, all other
+# parts of the multipart/alternative are ignored. The default
+# is to keep all parts and attach them to the issue.
+# Allowed values: yes, no
+# Default: no
+ignore_alternatives = no
+
+# If an email has only text/html parts, use this module
+# to convert the html to text. Choose from beautifulsoup 4,
+# dehtml - (internal code), or none to disable conversion.
+# If &#39;none&#39; is selected, email without a text/plain part
+# will be returned to the user with a message. If
+# beautifulsoup is selected but not installed dehtml will
+# be used instead.
+# Allowed values: beautifulsoup, dehtml, none
+# Default: none
+convert_htmltotext = none
+
+# When handling emails ignore the Resent-From:-header
+# and use the original senders From:-header instead.
+# (This might be desirable in some situations where a moderator
+# reads incoming messages first before bouncing them to Roundup)
+# Allowed values: yes, no
+# Default: no
+keep_real_from = no
+
+# OpenPGP mail processing options
+</pre></div>
+</div>
+<div class="code ini highlight-default notranslate" id="index-8"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">pgp</span><span class="p">]</span>
+
+<span class="c1"># Enable PGP processing. Requires gpg. If you&#39;re planning</span>
+<span class="c1"># to send encrypted PGP mail to the tracker, you should also</span>
+<span class="c1"># enable the encrypt-option below, otherwise mail received</span>
+<span class="c1"># encrypted might be sent unencrypted to another user.</span>
+<span class="c1"># Allowed values: yes, no</span>
+<span class="c1"># Default: no</span>
+<span class="n">enable</span> <span class="o">=</span> <span class="n">no</span>
+
+<span class="c1"># If specified, a comma-separated list of roles to perform</span>
+<span class="c1"># PGP processing on. If not specified, it happens for all</span>
+<span class="c1"># users. Note that received PGP messages (signed and/or</span>
+<span class="c1"># encrypted) will be processed with PGP even if the user</span>
+<span class="c1"># doesn&#39;t have one of the PGP roles, you can use this to make</span>
+<span class="c1"># PGP processing completely optional by defining a role here</span>
+<span class="c1"># and not assigning any users to that role.</span>
+<span class="c1"># Default:</span>
+<span class="n">roles</span> <span class="o">=</span>
+
+<span class="c1"># Location of PGP directory. Defaults to $HOME/.gnupg if</span>
+<span class="c1"># not specified.</span>
+<span class="c1"># Default:</span>
+<span class="n">homedir</span> <span class="o">=</span>
+
+<span class="c1"># Enable PGP encryption. All outgoing mails are encrypted.</span>
+<span class="c1"># This requires that keys for all users (with one of the gpg</span>
+<span class="c1"># roles above or all users if empty) are available. Note that</span>
+<span class="c1"># it makes sense to educate users to also send mails encrypted</span>
+<span class="c1"># to the tracker, to enforce this, set &#39;require_incoming&#39;</span>
+<span class="c1"># option below (but see the note).</span>
+<span class="c1"># Allowed values: yes, no</span>
+<span class="c1"># Default: no</span>
+<span class="n">encrypt</span> <span class="o">=</span> <span class="n">no</span>
+
+<span class="c1"># Require that pgp messages received by roundup are either</span>
+<span class="c1"># &#39;signed&#39;, &#39;encrypted&#39; or &#39;both&#39;. If encryption is required</span>
+<span class="c1"># we do not return the message (in clear) to the user but just</span>
+<span class="c1"># send an informational message that the message was rejected.</span>
+<span class="c1"># Note that this still presents known-plaintext to an attacker</span>
+<span class="c1"># when the users sends the mail a second time with encryption</span>
+<span class="c1"># turned on.</span>
+<span class="c1"># Default: signed</span>
+<span class="n">require_incoming</span> <span class="o">=</span> <span class="n">signed</span>
+
+<span class="c1"># Nosy messages sending</span>
+</pre></div>
+</div>
+<div class="code ini highlight-default notranslate" id="index-9"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">nosy</span><span class="p">]</span>
+
+<span class="c1"># Send nosy messages to the author of the message.</span>
+<span class="c1"># Allowed values: yes, no, new, nosy -- if yes, messages</span>
+<span class="c1"># are sent to the author even if not on the nosy list, same</span>
+<span class="c1"># for new (but only for new messages). When set to nosy,</span>
+<span class="c1"># the nosy list controls sending messages to the author.</span>
+<span class="c1"># Default: no</span>
+<span class="n">messages_to_author</span> <span class="o">=</span> <span class="n">no</span>
+
+<span class="c1"># Where to place the email signature.</span>
+<span class="c1"># Allowed values: top, bottom, none</span>
+<span class="c1"># Default: bottom</span>
+<span class="n">signature_position</span> <span class="o">=</span> <span class="n">bottom</span>
+
+<span class="c1"># Does the author of a message get placed on the nosy list</span>
+<span class="c1"># automatically?  If &#39;new&#39; is used, then the author will</span>
+<span class="c1"># only be added when a message creates a new issue.</span>
+<span class="c1"># If &#39;yes&#39;, then the author will be added on followups too.</span>
+<span class="c1"># If &#39;no&#39;, they&#39;re never added to the nosy.</span>
+<span class="c1">#</span>
+<span class="c1"># Allowed values: yes, no, new</span>
+<span class="c1"># Default: new</span>
+<span class="n">add_author</span> <span class="o">=</span> <span class="n">new</span>
+
+<span class="c1"># Do the recipients (To:, Cc:) of a message get placed on the</span>
+<span class="c1"># nosy list?  If &#39;new&#39; is used, then the recipients will</span>
+<span class="c1"># only be added when a message creates a new issue.</span>
+<span class="c1"># If &#39;yes&#39;, then the recipients will be added on followups too.</span>
+<span class="c1"># If &#39;no&#39;, they&#39;re never added to the nosy.</span>
+<span class="c1">#</span>
+<span class="c1"># Allowed values: yes, no, new</span>
+<span class="c1"># Default: new</span>
+<span class="n">add_recipients</span> <span class="o">=</span> <span class="n">new</span>
+
+<span class="c1"># Controls the email sending from the nosy reactor. If</span>
+<span class="c1"># &quot;multiple&quot; then a separate email is sent to each</span>
+<span class="c1"># recipient. If &quot;single&quot; then a single email is sent with</span>
+<span class="c1"># each recipient as a CC address.</span>
+<span class="c1"># Default: single</span>
+<span class="n">email_sending</span> <span class="o">=</span> <span class="n">single</span>
+
+<span class="c1"># Attachments larger than the given number of bytes</span>
+<span class="c1"># won&#39;t be attached to nosy mails. They will be replaced by</span>
+<span class="c1"># a link to the tracker&#39;s download page for the file.</span>
+<span class="c1"># Default: 9223372036854775807</span>
+<span class="n">max_attachment_size</span> <span class="o">=</span> <span class="mi">9223372036854775807</span>
+
+<span class="c1"># Markdown rendering options.</span>
+</pre></div>
+</div>
+<div class="code ini highlight-default notranslate" id="index-10"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">markdown</span><span class="p">]</span>
+
+<span class="c1"># If yes/true, render single new line characters in markdown</span>
+<span class="c1"># text with &lt;br&gt;. Set true if you want GitHub Flavored Markdown</span>
+<span class="c1"># (GFM) handling of embedded newlines.</span>
+<span class="c1"># Allowed values: yes, no</span>
+<span class="c1"># Default: no</span>
+<span class="n">break_on_newline</span> <span class="o">=</span> <span class="n">no</span>
+</pre></div>
+</div>
+
+
+       
+    <div class="related related-bottom">
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="index.html">Roundup 2.3.0b1 documentation</a></li> 
+      </ul>
+    </div>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2009-2021, Richard Jones, Roundup-Team.
+    </div>
+  </body>
+</html>

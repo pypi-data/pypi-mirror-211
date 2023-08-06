@@ -1,0 +1,33 @@
+230529 23:26:10 mysqld_safe Starting mariadbd daemon with databases from /config/databases
+2023-05-29 23:26:10 0 [Note] Starting MariaDB 10.11.3-MariaDB-log source revision 0bb31039f54bd6a0dc8f0fc7d40e6b58a51998b0 as process 477
+2023-05-29 23:26:10 0 [Note] Using unique option prefix 'myisam_recover' is error-prone and can break in the future. Please use the full name 'myisam-recover-options' instead.
+2023-05-29 23:26:10 0 [Note] InnoDB: Compressed tables use zlib 1.2.13
+2023-05-29 23:26:10 0 [Note] InnoDB: Number of transaction pools: 1
+2023-05-29 23:26:10 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-05-29 23:26:10 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-05-29 23:26:10 0 [Note] InnoDB: Using Linux native AIO
+2023-05-29 23:26:10 0 [Note] InnoDB: Initializing buffer pool, total size = 256.000MiB, chunk size = 4.000MiB
+2023-05-29 23:26:10 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-05-29 23:26:10 0 [Note] InnoDB: File system buffers for log disabled (block size=512 bytes)
+2023-05-29 23:26:10 0 [Note] InnoDB: 128 rollback segments are active.
+2023-05-29 23:26:10 0 [Note] InnoDB: Setting file './ibtmp1' size to 12.000MiB. Physically writing the file full; Please wait ...
+2023-05-29 23:26:10 0 [Note] InnoDB: File './ibtmp1' size is now 12.000MiB.
+2023-05-29 23:26:10 0 [Note] InnoDB: log sequence number 46456; transaction id 14
+2023-05-29 23:26:10 0 [Note] InnoDB: Loading buffer pool(s) from /config/databases/ib_buffer_pool
+2023-05-29 23:26:10 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-05-29 23:26:10 0 [Note] InnoDB: Buffer pool(s) load completed at 230529 23:26:10
+2023-05-29 23:26:11 0 [Note] Server socket created on IP: '0.0.0.0'.
+2023-05-29 23:26:11 0 [Note] Server socket created on IP: '::'.
+2023-05-29 23:26:11 0 [Note] /usr/bin/mariadbd: ready for connections.
+Version: '10.11.3-MariaDB-log'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  Alpine Linux
+2023-05-29 23:26:11 4 [Warning] Aborted connection 4 to db: 'unconnected' user: 'unauthenticated' host: 'localhost' (This connection closed normally without authentication)
+2023-05-29 23:26:45 6 [Warning] Aborted connection 6 to db: 'unconnected' user: 'unauthenticated' host: 'docker_roundup-app_run_3.docker_roundup-mysql-network' (This connection closed normally without authentication)
+2023-05-29 23:27:54 8 [Warning] Access denied for user 'root'@'localhost' (using password: NO)
+2023-05-29 23:28:15 9 [Warning] Access denied for user 'roundup'@'localhost' (using password: NO)
+2023-05-29 23:28:24 10 [Warning] Access denied for user 'roundup'@'localhost' (using password: YES)
+2023-05-29 23:28:37 11 [Warning] Access denied for user 'roundup_user'@'localhost' (using password: YES)
+2023-05-29 23:47:58 0 [Note] /usr/bin/mariadbd (initiated by: unknown): Normal shutdown
+2023-05-29 23:47:58 0 [Note] InnoDB: FTS optimize thread exiting.
+2023-05-29 23:48:02 0 [Note] InnoDB: Starting shutdown...
+2023-05-29 23:48:02 0 [Note] InnoDB: Dumping buffer pool(s) to /config/databases/ib_buffer_pool
+2023-05-29 23:48:02 0 [Note] InnoDB: Buffer pool(s) dump completed at 230529 23:48:02
