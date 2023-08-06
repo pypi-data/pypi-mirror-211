@@ -1,0 +1,13 @@
+analytics/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+analytics/test/test_client.py,sha256=Al10fegRUhl6INiNO7T3o8EWPGV2XwvDaCtjekWHvQQ,14402
+eventbridge/analytics/__init__.py,sha256=hphBesdtcxbZF8t9ET6PFNg0U-iemtL8cnqSVvFqyv0,2464
+eventbridge/analytics/client.py,sha256=zNjQPbgQsQRL3yFCGQAPZ0YKkqvRfMnd4G_gbiIxxjo,11523
+eventbridge/analytics/consumer.py,sha256=LzaYjG5boYNLiTG9E3YOZNQgAwLjGQeQcpGxD8c8rVU,4783
+eventbridge/analytics/request.py,sha256=k27-D-rmS4Z6_sBxVMSIEEOUx_a3pa7iKVsP1UGAyGk,3220
+eventbridge/analytics/utils.py,sha256=kFtQe2mORt80LloCUmlZDgDa0vmFMGFw3Fpps9VuU1I,2482
+eventbridge/analytics/version.py,sha256=YIaSgpZarSt4W_WZpQ1kuvPf7zb3U0KVpyPOYsZ9wPQ,18
+eventbridge_analytics_python-2.2.5.dist-info/LICENSE,sha256=UIp30ue1HZit7tMmSK0SS3swJBqOcLLnLJn5LY5YdNE,1036
+eventbridge_analytics_python-2.2.5.dist-info/METADATA,sha256=s5RFmhlKiQJDZSlgY9DXJYvtWzeUYJhqZ80Rg07TiOo,1325
+eventbridge_analytics_python-2.2.5.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+eventbridge_analytics_python-2.2.5.dist-info/top_level.txt,sha256=fvM6qbHm6IHncdD0AS3hHkahuvlSID2IWUUN_6YucSI,22
+eventbridge_analytics_python-2.2.5.dist-info/RECORD,,

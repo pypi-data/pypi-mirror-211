@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: eventbridge-analytics-python
+Version: 2.2.5
+Summary: A way to integrate analytics into AWS EventBridge.
+Home-page: https://github.com/Penny-AI/eventbridge-analytics-python
+Author: PennyAI
+Author-email: james.marcogliese@pennyapp.com
+Maintainer: PennyAI
+Maintainer-email: james.marcogliese@pennyapp.com
+License: MIT License
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6.0
+License-File: LICENSE
+Requires-Dist: monotonic (~=1.5)
+Requires-Dist: backoff (~=2.1)
+Requires-Dist: python-dateutil (~=2.2)
+Requires-Dist: boto3 (~=1.17.0)
+Provides-Extra: test
+Requires-Dist: mock (==2.0.0) ; extra == 'test'
+Requires-Dist: pylint (==2.8.0) ; extra == 'test'
+Requires-Dist: flake8 (==3.7.9) ; extra == 'test'
+
+
+This is the unofficial python client that wraps the
+AWS EventBridge PutEvents endpoint.
+
+Documentation and more details at
+https://github.com/Penny-AI/eventbridge-analytics-python
