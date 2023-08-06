@@ -1,0 +1,13 @@
+region,timeslice,commodity,year,month,day,hour,supply
+R1,0,CO2f,2040,winter,all-week,all-day,58680.98930000000
+R1,0,CO2f,2045,winter,all-week,all-day,56747.97620000000
+R1,0,ammonia,2040,winter,all-week,all-day,14.50610000000
+R1,0,ammonia,2045,winter,all-week,all-day,14.09730000000
+R1,1,CO2f,2040,summer,all-week,all-day,60459.20110000000
+R1,1,CO2f,2045,summer,all-week,all-day,58467.61180000000
+R1,1,ammonia,2040,summer,all-week,all-day,14.94570000000
+R1,1,ammonia,2045,summer,all-week,all-day,14.52450000000
+R1,2,CO2f,2040,spring-autumn,all-week,all-day,58680.98930000000
+R1,2,CO2f,2045,spring-autumn,all-week,all-day,56747.97620000000
+R1,2,ammonia,2040,spring-autumn,all-week,all-day,14.50610000000
+R1,2,ammonia,2045,spring-autumn,all-week,all-day,14.09730000000
