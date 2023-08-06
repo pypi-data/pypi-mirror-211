@@ -1,0 +1,12 @@
+napari_figure/__init__.py,sha256=3LnK-dbM6o_7DvRdO4eE3Z1GCDCxgtUiv4iDOj7X3Hg,147
+napari_figure/_version.py,sha256=iyxbHkgS1yJGtIeySh-gmqzwOuLbVveAe9CoQYWfZ0c,160
+napari_figure/figure_widget.py,sha256=ge6Ae7Abrkjk565VdquwlhLcGft3SFVLd2wR6vkYne4,24281
+napari_figure/napari.yaml,sha256=0EBmFFOGeOK7YdCDe-HYDGxaLd-pWt6YONV_SLPRL3A,271
+napari_figure/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_figure/_tests/test_widget.py,sha256=qvmeYPebtjrZxqpADudpYm0mKc4kuXh_r6sTmXBtHqc,87
+napari_figure-0.1.0.dist-info/LICENSE,sha256=VPeGqmxBwq_T-1w7gnzYFY0Yu-m7uPKtA3dJFK-ZJDg,1486
+napari_figure-0.1.0.dist-info/METADATA,sha256=ky7jXQxSii2BPq9bt10wvcQpnoJWvue3yav40VlX0y8,4219
+napari_figure-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+napari_figure-0.1.0.dist-info/entry_points.txt,sha256=t1stDvRmWjiNy0aEOvV_Yxo9oFMsXLtWAPbb04-vzMU,60
+napari_figure-0.1.0.dist-info/top_level.txt,sha256=SAOqe6pUq4Z6r3aHQvlSpc1LdU7955RrPYB3jNMVxSg,14
+napari_figure-0.1.0.dist-info/RECORD,,
