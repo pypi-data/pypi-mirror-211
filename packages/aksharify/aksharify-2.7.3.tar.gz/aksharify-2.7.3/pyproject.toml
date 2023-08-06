@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "aksharify"
+version = "2.7.3"
+description = "Python Ascii + Emoji Art Module"
+authors = ["Prime Patel <primespatel@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://primepatel.github.io/aksharify-docs/"
+repository = "https://github.com/primepatel/aksharify"
+keywords = ["Ascii Art","Emoji Art","Prime Patel","primepatel"]
+
+classifiers=[
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Operating System :: OS Independent",
+    ]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pillow = "^9.5.0"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
