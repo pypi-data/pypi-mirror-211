@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: didas
+Version: 3.1.0
+Summary: Python Commons for Didas
+Author-email: Georg Wendorf <georgfriedrich.wendorf@freenet.ag>
+Maintainer-email: Georg Wendorf <georgfriedrich.wendorf@freenet.ag>
+Project-URL: Homepage, https://github.com/freenet-group/didas
+Project-URL: Documentation, https://github.com/freenet-group/didas/blob/main/README.md
+Project-URL: Repository, https://github.com/freenet-group/didas
+Project-URL: Changelog, https://github.com/freenet-group/didas/releases
+Project-URL: Bug Tracker, https://github.com/freenet-group/didas/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Provides-Extra: mlflow
+Requires-Dist: pandas ; extra == 'mlflow'
+Requires-Dist: mlflow-skinny ; extra == 'mlflow'
+Requires-Dist: google-auth ; extra == 'mlflow'
+Provides-Extra: oracle
+Requires-Dist: oracledb ; extra == 'oracle'
+Requires-Dist: SQLAlchemy (>=2) ; extra == 'oracle'
+Requires-Dist: tqdm ; extra == 'oracle'
+Requires-Dist: numpy ; extra == 'oracle'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+# didas
+
+[PyPi Projekt](https://pypi.org/project/didas/)
+
+## Installation
+
+### PyPi
+
+`pip install didas[mlflow,oracle]`
+
+### GitHub
+
+`pip install git+https://github.com/freenet-group/didas@main#egg=didas[mlflow,oracle]`
+
