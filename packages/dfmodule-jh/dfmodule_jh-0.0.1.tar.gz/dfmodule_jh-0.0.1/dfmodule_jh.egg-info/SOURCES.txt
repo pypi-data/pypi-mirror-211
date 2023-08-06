@@ -1,0 +1,8 @@
+setup.py
+dfmodule_jh.egg-info/PKG-INFO
+dfmodule_jh.egg-info/SOURCES.txt
+dfmodule_jh.egg-info/dependency_links.txt
+dfmodule_jh.egg-info/not-zip-safe
+dfmodule_jh.egg-info/requires.txt
+dfmodule_jh.egg-info/top_level.txt
+sample/__init__.py
