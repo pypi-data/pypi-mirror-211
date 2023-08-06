@@ -1,0 +1,9 @@
+cachetools
+flask
+neotermcolor
+pyaltt2>=0.0.89
+python-dateutil
+pyyaml
+rapidtables
+requests
+sqlalchemy<2
