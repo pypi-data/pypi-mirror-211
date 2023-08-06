@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: auto-qchem
+Version: 1.2.0
+Summary: auto-qchem
+Home-page: https://github.com/doyle-lab-ucla/auto-qchem
+Author: Andrzej Zuranski, Benjamin Shields, Jason Wang, Winston Gee
+License: GPL
+License-File: LICENSE.md
