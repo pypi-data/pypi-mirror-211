@@ -1,0 +1,8 @@
+accelerate
+gradio
+guidance
+jupyter
+matplotlib
+pandas
+sketch
+transformers
