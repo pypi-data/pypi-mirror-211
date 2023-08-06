@@ -1,0 +1,14 @@
+setup.py
+MySerializer/__init__.py
+MySerializer/base.py
+MySerializer/lib.py
+MySerializer/serialize.py
+MySerializer/utils/__init__.py
+MySerializer/utils/constants.py
+MySerializer/utils/helpers.py
+MySerializer/utils/templates.py
+ftsnowySerializer.egg-info/PKG-INFO
+ftsnowySerializer.egg-info/SOURCES.txt
+ftsnowySerializer.egg-info/dependency_links.txt
+ftsnowySerializer.egg-info/entry_points.txt
+ftsnowySerializer.egg-info/top_level.txt

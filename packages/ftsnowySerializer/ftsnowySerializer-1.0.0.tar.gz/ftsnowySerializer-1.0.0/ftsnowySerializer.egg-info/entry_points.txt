@@ -1,0 +1,2 @@
+[console_scripts]
+MySerializer = MySerializer.lib:main
