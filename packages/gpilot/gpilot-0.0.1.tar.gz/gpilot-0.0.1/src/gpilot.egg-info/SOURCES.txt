@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/doom/__init__.py
+src/gpilot.egg-info/PKG-INFO
+src/gpilot.egg-info/SOURCES.txt
+src/gpilot.egg-info/dependency_links.txt
+src/gpilot.egg-info/entry_points.txt
+src/gpilot.egg-info/requires.txt
+src/gpilot.egg-info/top_level.txt
+src/inspect/__init__.py
+src/muis/__init__.py
+src/toets/__init__.py

@@ -1,0 +1,4 @@
+doom
+inspect
+muis
+toets

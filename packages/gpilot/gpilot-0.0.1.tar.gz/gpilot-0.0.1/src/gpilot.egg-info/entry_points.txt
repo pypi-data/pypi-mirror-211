@@ -1,0 +1,5 @@
+[console_scripts]
+gpilot-doom = doom:main
+gpilot-inspect = inspect:main
+gpilot-keyboard = toets:main
+gpilot-mouse = muis:main
