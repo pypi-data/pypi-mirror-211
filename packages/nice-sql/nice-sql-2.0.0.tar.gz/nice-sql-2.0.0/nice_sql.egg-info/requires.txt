@@ -1,0 +1,4 @@
+pytest
+pymysql
+DBUtils
+nice-datapath==0.0.1
