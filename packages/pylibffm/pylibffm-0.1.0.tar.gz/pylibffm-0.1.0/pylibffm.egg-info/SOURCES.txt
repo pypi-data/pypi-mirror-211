@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+setup.py
+pylibffm/__init__.py
+pylibffm/pylibffm.py
+pylibffm.egg-info/PKG-INFO
+pylibffm.egg-info/SOURCES.txt
+pylibffm.egg-info/dependency_links.txt
+pylibffm.egg-info/requires.txt
+pylibffm.egg-info/top_level.txt

@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: pylibffm
+Version: 0.1.0
+Summary: A library wrapping libffm
+Author: ntumlgroup
+License: MIT License
+License-File: LICENSE
