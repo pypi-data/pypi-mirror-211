@@ -1,0 +1,15 @@
+[project]
+name = "ProjectB_clientside_template_package"
+version = "0.5"
+authors = [
+  { name="ProjectB", email="admin@projectb.click" },
+]
+description = "This is the pip package of ProjectB_clientside_template_package"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ProjectBSource/ProjectB_clientside_JAVA_template/tree/change_TradeController_features_to_local"
