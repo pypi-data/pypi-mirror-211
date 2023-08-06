@@ -1,0 +1,12 @@
+setup.py
+generate/__init__.py
+generate/generate_code.py
+generate/templates/controller.tpl
+generate/templates/service.tpl
+generate/templates/sql.tpl
+hj_generate.egg-info/PKG-INFO
+hj_generate.egg-info/SOURCES.txt
+hj_generate.egg-info/dependency_links.txt
+hj_generate.egg-info/entry_points.txt
+hj_generate.egg-info/requires.txt
+hj_generate.egg-info/top_level.txt
