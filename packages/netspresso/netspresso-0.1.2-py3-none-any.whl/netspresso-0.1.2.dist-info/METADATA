@@ -1,0 +1,155 @@
+Metadata-Version: 2.1
+Name: netspresso
+Version: 0.1.2
+Summary: python client for the NetsPresso
+Home-page: https://github.com/nota-github/netspresso-python
+Author: NetsPresso
+Author-email: bmlee@nota.ai
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: loguru (==0.7.0)
+Requires-Dist: urllib3 (==2.0.2)
+Requires-Dist: PyJWT (==2.7.0)
+Requires-Dist: pydantic (==1.10.4)
+Requires-Dist: requests (==2.30.0)
+Requires-Dist: email-validator (==2.0.0)
+Requires-Dist: pytz (==2023.3)
+Requires-Dist: sphinx (==6.2.1)
+Requires-Dist: sphinx-rtd-theme (==1.2.1)
+Requires-Dist: recommonmark (==0.7.1)
+Requires-Dist: typing-extensions (==4.5.0)
+
+# NetsPresso
+
+## Installation
+
+To install this package, please use `Python 3.8` or higher.
+
+Install from Source:
+
+```shell
+git clone https://github.com/nota-github/netspresso-python.git
+pip install -e .
+```
+
+Install from PyPi (Recommended):
+
+To be updated later.
+
+
+
+## Quickstart
+
+### Login
+
+Please enter your email and password to log in to your NetsPresso account.
+
+```python
+from netspresso.compressor import ModelCompressor
+
+compressor = ModelCompressor(email="YOUR_EMAIL", password="YOUR_PASSWORD")
+```
+
+
+
+### Model
+
+#### Upload
+
+```python
+from netspresso.compressor import Task, Framework
+
+UPLOAD_MODEL_NAME = "tensorflow_keras_mv1"
+TASK = Task.IMAGE_CLASSIFICATION
+FRAMEWORK = Framework.TENSORFLOW_KERAS
+UPLOAD_MODEL_PATH = "./mobilenetv1.h5"
+INPUT_LAYERS = [{"batch": 1, "channel": 3, "dimension": [32, 32]}]
+
+model = compressor.upload_modfel(
+    model_name=UPLOAD_MODEL_NAME,
+    task=TASK,
+    framework=FRAMEWORK,
+    file_path=UPLOAD_MODEL_PATH,
+    input_layers=INPUT_LAYERS,
+)
+print(f"model_id: {model.model_id}")
+```
+
+#### Get
+
+```python
+model = compressor.get_model(model_id="UPLOADED_MODEL_ID")
+print(f"model_id: {model.model_id}")
+```
+
+
+
+### Compression
+
+#### Manual
+
+```python
+# Select Compression Method
+COMPRESSION_METHOD = CompressionMethod.PR_L2.value
+compression_1 = compressor.select_compression_method(
+    model=model,
+    compression_method=COMPRESSION_METHOD
+)
+print(f"compression method: {compression_1.compression_method}")
+print(f"available layers: {compression_1.available_layers}")
+
+# Set Compression Params
+for available_layer in compression_1.available_layers[:5]:
+    available_layer.values = [0.2]
+
+# Compress Model
+COMPRESSED_MODEL_NAME = "l2norm_manual"
+OUTPUT_PATH = "./mobilenetv1_cifar100_manual.h5"
+compressed_model = compressor.compress_model(
+    compression=compression_1,
+    model_name=COMPRESSED_MODEL_NAME,
+    output_path=OUTPUT_PATH,
+)
+print(f"compressed model id: {compressed_model.model_id}")
+```
+
+#### Recommendation
+
+```python
+COMPRESSED_MODEL_NAME = "recommendation_model"
+COMPRESSION_METHOD = CompressionMethod.PR_L2
+RECOMMENDATION_METHOD = RecommendationMethod.LAMP
+RECOMMENDATION_RATIO = 0.6
+OUTPUT_PATH = "./mobilenetv1_cifar100_recommendation.h5"
+compressed_model = compressor.recommendation_compression(
+    model=model,
+    model_name=COMPRESSED_MODEL_NAME,
+    compression_method=COMPRESSION_METHOD,
+    recommendation_method=RECOMMENDATION_METHOD,
+    recommendation_ratio=RECOMMENDATION_RATIO,
+    output_path=OUTPUT_PATH,
+)
+print(f"compressed model id: {compressed_model.model_id}")
+```
+
+#### Automatic
+
+```python
+AUTO_COMPRESSED_MODEL_NAME = "test_auto_compress"
+OUTPUT_PATH = "./mobilenetv1_cifar100_automatic.h5"
+COMPRESSION_RATIO = 0.5
+compressed_model = compressor.automatic_compression(
+    model=model,
+    model_name=AUTO_COMPRESSED_MODEL_NAME,
+    compression_ratio=COMPRESSION_RATIO,
+    output_path=OUTPUT_PATH,
+)
+print(f"compressed model id: {compressed_model.model_id}")
+```
+
+
+
