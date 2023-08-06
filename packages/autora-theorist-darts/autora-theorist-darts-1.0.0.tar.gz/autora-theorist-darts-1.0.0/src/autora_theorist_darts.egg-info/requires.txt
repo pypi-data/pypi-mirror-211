@@ -1,0 +1,10 @@
+autora-core
+scikit-learn
+torch
+matplotlib
+graphviz
+tqdm
+
+[dev]
+autora-core[dev]
+autora-synthetic-data

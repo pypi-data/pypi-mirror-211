@@ -1,0 +1,37 @@
+[project]
+name = "autora-theorist-darts"
+description = "Differentiable Architecture Search theorist for AutoRA"
+authors = [
+  { name = "Sebastian Musslick", email = "sebastian_musslick@brown.edu" },
+  { name = "John Gerrard Holland", email = "john_holland1@brown.edu" },
+]
+dynamic = ["version"]
+
+readme = "README.md"
+license = { text = "MIT License" }
+
+dependencies = [
+    "autora-core",
+    "scikit-learn",
+    "torch",
+    "matplotlib",
+    "graphviz",
+    "tqdm",
+]
+
+[project.optional-dependencies]
+dev = [
+    "autora-core[dev]",
+    "autora-synthetic-data"
+]
+
+[project.urls]
+homepage = "http://www.empiricalresearch.ai"
+repository = "https://github.com/AutoResearch/autora-theorist-darts"
+documentation = "https://autoresearch.github.io/autora/"
+
+[build-system]
+requires = ["setuptools", "setuptools_scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
