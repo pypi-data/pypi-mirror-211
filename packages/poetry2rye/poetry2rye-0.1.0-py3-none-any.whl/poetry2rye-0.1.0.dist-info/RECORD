@@ -1,0 +1,7 @@
+poetry2rye/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poetry2rye/convert.py,sha256=oePmjVk7gIPMhYxePqbYQOk1ArX4Tra5yPHRzeobLSk,4652
+poetry2rye/main.py,sha256=sLk5gUYnOUrr4yY2Pu94WpVBswA_kQclgMrfJog3G4I,401
+poetry2rye/project.py,sha256=ujXtRS1LcXy_2bRQnKszCZ1GBvPoU2V5RIiQ2kqH2Aw,3594
+poetry2rye-0.1.0.dist-info/METADATA,sha256=NQTtSuoU8Y5VHAXwPu95d34QJSukAGfkqtULl-jD0ks,467
+poetry2rye-0.1.0.dist-info/WHEEL,sha256=y1bSCq4r5i4nMmpXeUJMqs3ipKvkZObrIXSvJHm1qCI,87
+poetry2rye-0.1.0.dist-info/RECORD,,
