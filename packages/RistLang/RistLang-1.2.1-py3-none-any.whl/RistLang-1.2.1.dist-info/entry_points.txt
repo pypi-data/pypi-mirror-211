@@ -1,0 +1,2 @@
+[console_scripts]
+rist = ristpy.__main__:main
