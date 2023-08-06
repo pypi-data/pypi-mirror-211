@@ -1,0 +1,10 @@
+fairseq==0.10.0
+scipy
+scikit-learn
+pandas
+pyparsing
+torch
+tqdm
+wget
+grpcio-tools
+requests
