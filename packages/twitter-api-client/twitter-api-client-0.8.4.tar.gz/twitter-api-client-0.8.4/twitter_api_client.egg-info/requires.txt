@@ -1,0 +1,13 @@
+aiofiles
+websockets
+nest_asyncio
+httpx
+tqdm
+orjson
+bcrypt
+python-gnupg
+pyopenssl
+requests
+
+[:platform_system != "Windows"]
+uvloop
