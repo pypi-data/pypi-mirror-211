@@ -1,0 +1,13 @@
+torch>=2.0.0
+numpy
+tqdm
+
+[fast]
+fast_jl
+
+[tests]
+assertpy
+torchvision
+open_clip_torch
+wget
+scipy
