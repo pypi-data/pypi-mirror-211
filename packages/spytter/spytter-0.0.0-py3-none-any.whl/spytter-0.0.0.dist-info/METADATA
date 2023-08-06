@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: spytter
+Version: 0.0.0
+Summary: Twitter Spy Tools
+Home-page: https://github.com/trevorhobenshield/spytter
+Author: Trevor Hobenshield
+Author-email: trevorhobenshield@gmail.com
+Keywords: twitter api spaces audio stream capture client automation bot scrape
+Requires-Python: >=3.10.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: websockets
+Requires-Dist: nest-asyncio
+Requires-Dist: aiohttp
+Requires-Dist: httpx
+Requires-Dist: tqdm
+Requires-Dist: orjson
+Requires-Dist: requests
+Requires-Dist: bcrypt
+Requires-Dist: python-gnupg
+Requires-Dist: pyopenssl
+Requires-Dist: uvloop ; platform_system != "Windows"
+
+
+
+Capture live data from Twitter Spaces
+
+- live audio capture
+- live transcript capture
+- ability to download streams from playback-disabled spaces
+- keyword search
+
