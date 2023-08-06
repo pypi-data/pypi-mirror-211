@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: make-room
+Version: 0.0.1
+Summary: Scripts to convert pictures and videos using more space efficient encodings.
+Project-URL: Source code, https://github.com/serixscorpio/make-room
+Author-email: Eric Ti Yu Chiang <eric.ti.yu.chiang@gmail.com>
+License-Expression: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Topic :: Multimedia :: Video
+Classifier: Topic :: Utilities
+Requires-Python: >=3.10
+Requires-Dist: click>=8.1.3
+Requires-Dist: ffmpy>=0.3.0
+Requires-Dist: pillow-avif-plugin>=1.3.1
+Requires-Dist: pillow>=9.4.0
+Requires-Dist: pymediainfo>=6.0.1
+Requires-Dist: python-magic>=0.4.27
+Provides-Extra: dev
+Requires-Dist: ipython>=8.9.0; extra == 'dev'
+Requires-Dist: pre-commit>=3.0.4; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: black>=23.1.0; extra == 'test'
+Requires-Dist: mypy>=1.3.0; extra == 'test'
+Requires-Dist: pytest>=7.2.1; extra == 'test'
+Requires-Dist: ruff>=0.0.270; extra == 'test'
+Requires-Dist: types-pillow>=9.4.0; extra == 'test'
+Description-Content-Type: text/markdown
+
+# Development
+
+Clone this repository.
+
+Create a virtual environment, for example, directory `venv` using Python's `venv` module.
+```
+python -m venv venv
+```
+
+Activate the new environment with:
+```
+source ./venv/bin/activate
+```
+
+Make sure the latest pip version is in your virtual environment:
+```
+pip install --upgrade pip
+```
+
+Install all dependencies:
+```
+pip install -e ".[test,dev]"
+```
+
+Test run cli tool:
+```
+make-room --help
+```
+
+# Usage
+
+To run the `make_room.py` script:
+
+```sh
+# at project root
+hatch run make-room ~/ec-keep/photos-videos/2023/
+```
+
+This finds video within the `~/ec-keep/photos-videos/2023/` directory and encodes them using H265 with a constant rate factor of 28.
