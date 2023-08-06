@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+setup.cfg
+src/educelab/cmdparse/__init__.py
+src/educelab/cmdparse/cmdparse.py
+src/educelab_cmdparse.egg-info/PKG-INFO
+src/educelab_cmdparse.egg-info/SOURCES.txt
+src/educelab_cmdparse.egg-info/dependency_links.txt
+src/educelab_cmdparse.egg-info/requires.txt
+src/educelab_cmdparse.egg-info/top_level.txt
