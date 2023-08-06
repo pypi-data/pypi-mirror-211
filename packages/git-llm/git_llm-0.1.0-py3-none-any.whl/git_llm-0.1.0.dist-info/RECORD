@@ -1,0 +1,11 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/cli.py,sha256=rnOCqT3iU3QFG7V4TVjw37JtW5_nnNk2QljgQO95jOc,1718
+src/gitutils.py,sha256=jnGoU6UsHUAyB6RLlFUbuSS4lG-eTNmWbH6FT1PFM0Q,745
+src/llm.py,sha256=mQs4nxKsd8bdaZw02XVeqRPaapb7TJUceZ1q8Ic_Yag,2511
+src/prompt.py,sha256=m1ll1N7ekymmk9kAa3WGV550PXQvUCgYmijZSS_2-7w,408
+src/utils.py,sha256=9cKo5N4Q9kxLp229C70hG-Pq-WA1LWUUeEcCg9xw7CQ,820
+git_llm-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+git_llm-0.1.0.dist-info/METADATA,sha256=q9rTLnYLQXjX6iXGSPbOdWE3XDRvUKgiKbFIRAhJIlo,3028
+git_llm-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+git_llm-0.1.0.dist-info/entry_points.txt,sha256=96ji4ubRXaQhr4b8amSZabO-TQje9u8u0RpZ2h9ABlQ,40
+git_llm-0.1.0.dist-info/RECORD,,
