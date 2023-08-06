@@ -1,0 +1,12 @@
+speechtotext/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+speechtotext/__version__.py,sha256=aR2rL2nNZI5Nrl7eIkdrh3niWfqCn4xs4hRpblEU6Z0,63
+speechtotext/datasets.py,sha256=202vTGiNaF8AvkNX-LIQlLF4bGkRCxzsNIO-5gO1hRI,3933
+speechtotext/functions.py,sha256=I6y-xpg788iJonExz7-Kr9eTGf9kzQg0kJ1f1tsk3IA,7037
+speechtotext/metric/__init__.py,sha256=ygXYK0LYYIh9KPpRPlaeGl-Lkf2hYJqA5rj5XNl5EMM,59
+speechtotext/metric/customMetrics.py,sha256=Ojt6E62XlUauRw4ZUeZzUKVBPDydXs_bn5Fv51o_RFs,3339
+speechtotext/metric/metrics.py,sha256=sECWFKGSkO6pqjJcISK0jYNFRfJKZMOtSpaXqJHe3nU,8073
+speechtotext_python-0.3.14.dist-info/LICENSE,sha256=p_MS_mbxTyqV3oL7_5gxhpwsUBVHOVVkDcDcgsJBhIM,1071
+speechtotext_python-0.3.14.dist-info/METADATA,sha256=f2E-nVtGm0wI5vTImAt9b5NshzXIU-b4lF9_Q9mc4Kc,2153
+speechtotext_python-0.3.14.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+speechtotext_python-0.3.14.dist-info/top_level.txt,sha256=lOt-7VrFJcbFzknEH6VPEPPcZyd048IL9KpUacYkveI,13
+speechtotext_python-0.3.14.dist-info/RECORD,,
