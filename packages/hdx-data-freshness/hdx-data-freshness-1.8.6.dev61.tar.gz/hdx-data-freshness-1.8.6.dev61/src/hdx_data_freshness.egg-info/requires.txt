@@ -1,0 +1,7 @@
+aiodns
+aiohttp
+gspread
+hdx-python-api>=6.0.0
+hdx-python-database[postgresql]>=1.2.3
+tqdm
+uvloop
