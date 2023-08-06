@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: start-ocr
+Version: 0.0.1
+Summary: Integrating pdf-plumber and opencv
+Home-page: https://mv3.dev
+Author: Marcelino G. Veloso III
+Author-email: mars@veloso.one
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Pytest
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Requires-Dist: opencv-python (>=4.7,<5.0)
+Requires-Dist: pdfplumber (>=0.9,<0.10)
+Requires-Dist: pytesseract (>=0.3.10,<0.4.0)
+Requires-Dist: python-dotenv (>=1.0,<2.0)
+Project-URL: Documentation, https://mv3.dev/start-code
+Project-URL: Repository, https://github.com/justmars/start-code
+Description-Content-Type: text/markdown
+
+# start-ocr
+
+![Github CI](https://github.com/justmars/start-ocr/actions/workflows/main.yml/badge.svg)
+
+## Development
+
+See [documentation](https://justmars.github.io/start-ocr).
+
+1. Run `poetry install`
+2. Run `poetry shell`
+3. Run `pytest` or:
+
+    ```sh
+    docker build --tag ocr . && docker run ocr
+    ```
+
