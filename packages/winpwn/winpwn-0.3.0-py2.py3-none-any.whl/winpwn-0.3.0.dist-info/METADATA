@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: winpwn
+Version: 0.3.0
+Summary: mini pwntools for windows
+Author: byzero512
+Author-email: byzero512@gamil.com
+License: MIT
+
