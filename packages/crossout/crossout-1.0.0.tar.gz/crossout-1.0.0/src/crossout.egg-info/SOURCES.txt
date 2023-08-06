@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/crossout/CrossoutDB.py
+src/crossout/CrossoutDBAPI.py
+src/crossout/__init__.py
+src/crossout/objects.py
+src/crossout.egg-info/PKG-INFO
+src/crossout.egg-info/SOURCES.txt
+src/crossout.egg-info/dependency_links.txt
+src/crossout.egg-info/requires.txt
+src/crossout.egg-info/top_level.txt
