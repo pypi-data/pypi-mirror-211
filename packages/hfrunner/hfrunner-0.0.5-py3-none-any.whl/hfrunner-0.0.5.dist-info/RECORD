@@ -1,0 +1,10 @@
+hfrunner/__init__.py,sha256=ggWnRb6Bl9A39pw7jcp-hcNh-CQqYYlqAQkvHSfp0a0,38
+hfrunner/loaders.py,sha256=tHxSr0V1aidYRtXhzFVxNKF2WRWvb6kUatYXIOtYSYQ,2068
+hfrunner/process.py,sha256=BgwN9hJ6z3KFCtR5U3nz5LF4N2ejdhDshEQVIcn-0Io,1213
+hfrunner/run.py,sha256=TuD2-gRFl5LNzenvBYT-yNGvSC74nEf57gh_K-0-R2s,212
+hfrunner/train_script.py,sha256=v5e0J-YT4t9Oomcd2Vc8tM57YKBtzTt3iBQl_9mW9gk,2225
+hfrunner/uploaders.py,sha256=o8dZRuwIH6MCA35_tB2RY76THRazocYyDxJqLw2xyVs,304
+hfrunner-0.0.5.dist-info/METADATA,sha256=oxa2FJyMEk0SJzM6qmShlbxdlNn1Aino5hfNzXegzMQ,53
+hfrunner-0.0.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+hfrunner-0.0.5.dist-info/top_level.txt,sha256=gYPKZhpi3BrK12cZghd1_BPy6e8LtbyMGSut-FC0SlI,9
+hfrunner-0.0.5.dist-info/RECORD,,
