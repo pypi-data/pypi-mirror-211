@@ -1,0 +1,50 @@
+name: Build And Push Prod
+on:
+  workflow_dispatch:
+env:
+  PYPI_URL_PROD: https://pypi.snowmate.io/simple
+jobs:
+  linux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: PyO3/maturin-action@v1
+        with:
+          manylinux: auto
+          command: build
+          args: --release --sdist -o dist --find-interpreter
+      - name: Install twine
+        run: pip3 install twine
+      - name: Upload to PyPi Prod
+        run: python3 -m twine upload --skip-existing --repository-url ${{ env.PYPI_URL_PROD }} ./dist/* -u ${{ secrets.PYPI_ADMIN_USER_PROD }} -p ${{ secrets.PYPY_ADMIN_PASSWORD_PROD }}
+      - name: Upload to Public PyPi
+        run: python3 -m twine upload --skip-existing ./dist/* -u __token__ -p ${{ secrets.PUBLIC_OFFICIAL_PYPI_TOKEN }}
+
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: PyO3/maturin-action@v1
+        with:
+          command: build
+          args: --release -o dist --find-interpreter
+      - name: Install twine
+        run: pip3 install twine
+      - name: Upload to PyPi Prod
+        run: python3 -m twine upload --skip-existing --repository-url ${{ env.PYPI_URL_PROD }} ./dist/* -u ${{ secrets.PYPI_ADMIN_USER_PROD }} -p ${{ secrets.PYPY_ADMIN_PASSWORD_PROD }}
+      - name: Upload to Public PyPi
+        run: python3 -m twine upload --skip-existing ./dist/* -u __token__ -p ${{ secrets.PUBLIC_OFFICIAL_PYPI_TOKEN }}
+  macos:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: PyO3/maturin-action@v1
+        with:
+          command: build
+          args: --release -o dist --universal2 --find-interpreter
+      - name: Install twine
+        run: pip3 install twine
+      - name: Upload to PyPi Prod
+        run: python3 -m twine upload --skip-existing --repository-url ${{ env.PYPI_URL_PROD }} ./dist/* -u ${{ secrets.PYPI_ADMIN_USER_PROD }} -p ${{ secrets.PYPY_ADMIN_PASSWORD_PROD }}
+      - name: Upload to Public PyPi
+        run: python3 -m twine upload --skip-existing ./dist/* -u __token__ -p ${{ secrets.PUBLIC_OFFICIAL_PYPI_TOKEN }}
