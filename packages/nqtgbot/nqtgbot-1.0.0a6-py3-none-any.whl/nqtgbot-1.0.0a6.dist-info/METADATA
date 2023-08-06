@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: nqtgbot
+Version: 1.0.0a6
+Summary: NQ Telegram Bot Provider
+Author: Inqana Ltd.
+Author-email: develop@inqana.com
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: nqsdk (==1.0.0a16)
+Requires-Dist: python-telegram-bot (>=13.14,<14.0)
+Description-Content-Type: text/markdown
+
+# NQ Telegram Bot Provider
+
+Part of NQ suite by [Inqana](https://inqana.com). Built with [NQ SDK](https://pypi.org/project/nqsdk/).
+
+## Tests
+
+Run tests locally:
+
+```shell script
+./scripts/tests
+```
+
+## License
+
+Licensed under the terms of the [Apache License, version 2.0](https://apache.org/licenses/LICENSE-2.0). See `LICENSE` file.
+
+Copyright (c) 2023 Inqana Ltd.
+
