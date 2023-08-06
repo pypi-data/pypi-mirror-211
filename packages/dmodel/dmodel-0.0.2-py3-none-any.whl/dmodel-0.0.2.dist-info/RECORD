@@ -1,0 +1,16 @@
+dmodel/__init__.py,sha256=h_QqFC4FwGCXuPF2TATMhPAZ_cAPtJ7ynuQupIaDAzA,153
+dmodel/context.py,sha256=xWmFpPsmduu2KmGYes1uJJOrbcMQpM5o0X0QgYzG7Og,2059
+dmodel/descriptors.py,sha256=8l5b42Ah0RxZY8IV5T7dl47X1rrBxU8oxIqRL6Ejmtg,3892
+dmodel/enums.py,sha256=jOeJihnKLmQwshuyc5ePMZjsGTakhmZrdl-_AQN8Xq8,405
+dmodel/form.py,sha256=xZ9GDS0E_2TzFWuKZ1C_a-aLgOm4AeaCeq5s8a5tcNI,6520
+dmodel/model.py,sha256=q2jEgJw8PMtH4NE4AEgbLioIqMcRySGb6kUDlNRDXJQ,9023
+dmodel/models/__init__.py,sha256=sn3qQ4SC1dcK4oymf_OaWpZlvjjQ6cNQX-tvNmtQtFM,109
+dmodel/models/facility.py,sha256=pQUIo2luMJCWbmcnX5WRmEXeR1lAutEeedgzcXfSEaM,613
+dmodel/models/person.py,sha256=6eDtHW1_FYNUuo6lwZ_jzZVgwqwVLEIud4JKFhfRHGI,1222
+dmodel/models/profile.py,sha256=pKC7U9p5U7qojdrHywkgd1LBLYdhnTUI3ri_jzWUE0Y,2598
+dmodel/models/user.py,sha256=Y3vgETpK8UGoZuf9l9ZWMLGlUcgUhWKMuhUgGTMGcx0,1164
+dmodel/models/visit.py,sha256=f0GnW8HexjknepGcemf2oFq6ZzQ4gzidLMHMB88StUA,1397
+dmodel/regex.py,sha256=ssApOaWltJBvfWzps0NtdPbOBokSTY-k76pceXjCYUU,662
+dmodel-0.0.2.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+dmodel-0.0.2.dist-info/METADATA,sha256=8nycNJYs3KWjLM3qW4NJHW-huqBVm5K7W0IVQL-7LXY,517
+dmodel-0.0.2.dist-info/RECORD,,
