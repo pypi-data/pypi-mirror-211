@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "gpty"
+version = "0.1.0"
+description = "A CLI tool for ChatGPT"
+authors = ["Ismet Handzic <ismet.handzic@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.3"
+requests = "^2.31.0"
+PyYAML = "^6.0"
+coloredlogs = "^15.0.1"
+openai = "^0.27.7"
+toml = "^0.10.2"
+yaspin = "^2.3.0"
+twine = "^4.0.2"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "*"
+pylint = "*"
+black = "*"
+mypy = "*"
+isort = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+gpty = "gpty.main:cli"
+
+[tool.black]
+line-length = 100
+
+[tool.isort]
+profile = "black"
+line_length = 100
+include_trailing_comma = true
+supported_extensions = [".py"]
+extend_skip = ["docs", "env", "venv", ".venv", ".git", ".tox", ".nox", "build", "dist"]
+ensure_newline_before_comments = true
