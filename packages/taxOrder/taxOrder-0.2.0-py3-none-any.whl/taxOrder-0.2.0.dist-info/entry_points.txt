@@ -1,0 +1,2 @@
+[console_scripts]
+taxOrder = taxOrder.taxOrder:main
