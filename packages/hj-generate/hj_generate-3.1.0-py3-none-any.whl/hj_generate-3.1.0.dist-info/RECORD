@@ -1,0 +1,10 @@
+generate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+generate/generate_code.py,sha256=6WEz3cYBzwlzBl-YlCBJAxTZawv0zxIwiPbvVZHnVWc,2977
+generate/templates/controller.tpl,sha256=PKiXDzrfAHuwO2r9hnNnT22GafHjXTbUCc_XhEGbQgg,461
+generate/templates/service.tpl,sha256=aRVpwM2mTXdwYYFP84mJE93qKKFBoobIb54kPjRwAaE,123
+generate/templates/sql.tpl,sha256=St0tw5_C0RP4WqvjcCZphVzCnXwIrx-HIO8f6L3z3dQ,111
+hj_generate-3.1.0.dist-info/METADATA,sha256=wWKvURn2wVTQP8ce7KBxOvtkOuTRbMAe2x0mJGh4yho,142
+hj_generate-3.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+hj_generate-3.1.0.dist-info/entry_points.txt,sha256=otTfPhC1aPQqARic9RzT-Zazl_a2rs00ZA1X8JQEm5Q,60
+hj_generate-3.1.0.dist-info/top_level.txt,sha256=1KWgPSZajJVfIC8faVu5fa4zPkPLV69POeLdSErreTM,9
+hj_generate-3.1.0.dist-info/RECORD,,

@@ -1,0 +1,2 @@
+[console_scripts]
+hj-generate = generate.generate_code:main
