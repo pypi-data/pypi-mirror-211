@@ -1,0 +1,25 @@
+study_prefix = "covid_symptom"
+
+[sql_config]
+file_names = [
+    "site_define.sql",
+    "covid_define_symptom.sql",
+    "covid_define.sql",
+    "count_covid_study_period.sql",
+    "count_covid_dx.sql",
+    "count_covid_pcr.sql",
+    "count_covid_symptom.sql",
+    "count_covid_prevalence_ed.sql",
+]
+
+
+[export_config]
+export_list = [
+    "covid_symptom__count_prevalence_ed_month",
+    "covid_symptom__count_dx_week",
+    "covid_symptom__count_pcr_week",
+    "covid_symptom__count_prevalence_ed_month",
+    "covid_symptom__count_study_period",
+    "covid_symptom__count_symptom_week",
+    "covid_symptom__meta_date",
+]
