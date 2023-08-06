@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: CPRTWH
+Version: 0.1.0
+Summary: cp run teams webhook Python library for sending notifications to Microsoft Teams webhooks
+Home-page: https://github.com/yourusername/your-package
+Author: Your Name
+Author-email: your@email.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+
+Long description of your package
+

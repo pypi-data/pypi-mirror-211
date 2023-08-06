@@ -1,0 +1,7 @@
+SendTeams.py
+setup.py
+CPRTWH.egg-info/PKG-INFO
+CPRTWH.egg-info/SOURCES.txt
+CPRTWH.egg-info/dependency_links.txt
+CPRTWH.egg-info/requires.txt
+CPRTWH.egg-info/top_level.txt
