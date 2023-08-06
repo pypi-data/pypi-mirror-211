@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: id4eo-scim-client
+Version: 1.0.2
+Summary: Python library to interact with SCIM protocol
+Home-page: https://stash.elecnor-deimos.com/projects/GSC4EO/repos/id4eo/browse/src/scim-client
+Author: ID4EO
+Author-email: joao.matos@elecnor.es
+License: apache-2.0
+Description: UNKNOWN
+Keywords: SCIM,Client,ID4EO,user,management
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Python: >=3.6
