@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+aws_supports.egg-info/PKG-INFO
+aws_supports.egg-info/SOURCES.txt
+aws_supports.egg-info/dependency_links.txt
+aws_supports.egg-info/top_level.txt
+tests/__init__.py
