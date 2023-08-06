@@ -1,0 +1,222 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, CODRA - Pierre Raybaut
+# This file is distributed under the same license as the CodraFT package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodraFT \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-26 15:11+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../features/image/menu/processing.rst:2
+msgid "\"Processing\" menu"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:17
+#: ../../features/image/menu/processing.rst:15
+msgid "Linear calibration"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:7
+msgid "Create a new image which is a linear calibration of each selected image with respect to Z axis:"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:14
+msgid "Parameter"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:16
+msgid "Z-axis"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:17
+msgid ":math:`z_{1} = a.z_{0} + b`"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:20
+msgid "Thresholding"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:20
+msgid "Apply the thresholding to each selected image."
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:23
+msgid "Clipping"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:23
+msgid "Apply the clipping to each selected image."
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:27
+msgid "Moving average"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:26
+msgid "Compute moving average of each selected image (implementation based on `scipy.ndimage.uniform_filter <https://docs.scipy.org/doc/scipy/reference/generated/scipy.ndimage.uniform_filter.html>`_)."
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:31
+msgid "Moving median"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:30
+msgid "Compute moving median of each selected image (implementation based on `scipy.signal.medfilt <https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.medfilt.html>`_)."
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:35
+msgid "Wiener filter"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:34
+msgid "Compute Wiener filter of each selected image (implementation based on `scipy.signal.wiener <https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.wiener.html>`_)."
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:39
+msgid "FFT"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:38
+msgid "Create a new image which is the Fast Fourier Transform (FFT) of each selected image."
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:42
+msgid "Inverse FFT"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:42
+msgid "Create a new image which is the inverse FFT of each selected image."
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:55
+msgid "Exposure"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:47
+msgid "Intensity rescaling"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:46
+msgid "Stretch or shrink image intensity levels (implementation based on `skimage.exposure.rescale_intensity <https://scikit-image.org/docs/stable/api/skimage.exposure.html#skimage.exposure.rescale_intensity>`_)"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:51
+msgid "Histogram equalization"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:50
+msgid "Equalize image histogram levels (implementation based on `skimage.exposure.equalize_hist <https://scikit-image.org/docs/stable/api/skimage.exposure.html#skimage.exposure.equalize_hist>`_)"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:55
+msgid "Adaptive histogram equalization"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:54
+msgid "Equalize image histogram levels using Contrast Limited Adaptive Histogram Equalization (CLAHE) algorithm (implementation based on `skimage.exposure.equalize_adapthist <https://scikit-image.org/docs/stable/api/skimage.exposure.html#skimage.exposure.equalize_adapthist>`_)"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:72
+msgid "Restoration"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:60
+msgid "Total variation denoising"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:59
+msgid "Denoise image using Total Variation algorithm (implementation based on `skimage.restoration.denoise_tv_chambolle <https://scikit-image.org/docs/stable/api/skimage.restoration.html#denoise-tv-chambolle>`_)"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:64
+msgid "Bilateral filter denoising"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:63
+msgid "Denoise image using bilateral filter (implementation based on `skimage.restoration.denoise_bilateral <https://scikit-image.org/docs/stable/api/skimage.restoration.html#denoise-bilateral>`_)"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:68
+msgid "Wavelet denoising"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:67
+msgid "Perform wavelet denoising on image (implementation based on `skimage.restoration.denoise_wavelet <https://scikit-image.org/docs/stable/api/skimage.restoration.html#denoise-wavelet>`_)"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:72
+msgid "White Top-Hat denoising"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:71
+msgid "Denoise image by subtracting its white top hat transform (using a disk footprint)"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:97
+msgid "Morphology"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:77
+msgid "White Top-Hat (disk)"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:76
+msgid "Perform white top hat transform of an image, using a disk footprint (implementation based on `skimage.morphology.white_tophat <https://scikit-image.org/docs/stable/api/skimage.morphology.html#skimage.morphology.white_tophat>`_)"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:81
+msgid "Black Top-Hat (disk)"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:80
+msgid "Perform black top hat transform of an image, using a disk footprint (implementation based on `skimage.morphology.black_tophat <https://scikit-image.org/docs/stable/api/skimage.morphology.html#skimage.morphology.black_tophat>`_)"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:85
+msgid "Erosion (disk)"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:84
+msgid "Perform morphological erosion on an image, using a disk footprint (implementation based on `skimage.morphology.erosion <https://scikit-image.org/docs/stable/api/skimage.morphology.html#skimage.morphology.erosion>`_)"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:89
+msgid "Dilation (disk)"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:88
+msgid "Perform morphological dilation on an image, using a disk footprint (implementation based on `skimage.morphology.dilation <https://scikit-image.org/docs/stable/api/skimage.morphology.html#skimage.morphology.dilation>`_)"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:93
+msgid "Opening (disk)"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:92
+msgid "Perform morphological opening on an image, using a disk footprint (implementation based on `skimage.morphology.opening <https://scikit-image.org/docs/stable/api/skimage.morphology.html#skimage.morphology.opening>`_)"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:97
+msgid "Closing (disk)"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:96
+msgid "Perform morphological closing on an image, using a disk footprint (implementation based on `skimage.morphology.closing <https://scikit-image.org/docs/stable/api/skimage.morphology.html#skimage.morphology.closing>`_)"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:100
+msgid "Canny filter"
+msgstr ""
+
+#: ../../features/image/menu/processing.rst:100
+msgid "Perform edge filtering on an image, using the Canny algorithm (implementation based on `skimage.feature.canny <https://scikit-image.org/docs/stable/api/skimage.feature.html#skimage.feature.canny>`_)"
+msgstr ""
