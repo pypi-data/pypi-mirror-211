@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: Mensajes-iosorio_ccnt
+Version: 6.0
+Summary: Un paquete para saludar y despedir
+Home-page: https://www.ccn.mx
+Author: Ivan Osorio
+Author-email: iosorio@ccn.mx
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Mensajes
+
+El paquete de mensajeria para pruebas de Ivan Osorio
