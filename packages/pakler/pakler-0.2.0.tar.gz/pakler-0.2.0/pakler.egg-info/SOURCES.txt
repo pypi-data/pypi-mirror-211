@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+pakler/__init__.py
+pakler/__main__.py
+pakler/_version.py
+pakler.egg-info/PKG-INFO
+pakler.egg-info/SOURCES.txt
+pakler.egg-info/dependency_links.txt
+pakler.egg-info/entry_points.txt
+pakler.egg-info/top_level.txt
