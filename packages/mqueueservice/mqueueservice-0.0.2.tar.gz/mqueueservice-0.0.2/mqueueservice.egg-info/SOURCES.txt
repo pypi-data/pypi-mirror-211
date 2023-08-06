@@ -1,0 +1,10 @@
+README.md
+setup.py
+mqueueservice.egg-info/PKG-INFO
+mqueueservice.egg-info/SOURCES.txt
+mqueueservice.egg-info/dependency_links.txt
+mqueueservice.egg-info/not-zip-safe
+mqueueservice.egg-info/requires.txt
+mqueueservice.egg-info/top_level.txt
+queueService/__init__.py
+queueService/queueService.py
