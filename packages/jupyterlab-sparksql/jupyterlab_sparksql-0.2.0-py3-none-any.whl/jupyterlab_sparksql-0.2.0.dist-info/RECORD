@@ -1,0 +1,16 @@
+jupyterlab_sparksql/__init__.py,sha256=jQK3dZBuQNnNF_4jVePOJT5Dwwz9oyIAU9OWySAVOKE,162
+jupyterlab_sparksql/_version.py,sha256=73xmj_rtt0boRuIZ0h5wqHItFsCNZHTC-Wa0tSeAxyY,171
+jupyterlab_sparksql/magics/__init__.py,sha256=vyoTw9_ug6aCDtTOQba0-rrhbndqzVryHiPVX_aI3rU,4044
+jupyterlab_sparksql/magics/sparksql.py,sha256=Rkf93YpK1MkyrmeM40gBv8HBOCy4FSnPStT5yNIp6z4,2652
+jupyterlab_sparksql/magics/widget.py,sha256=CX_UPTJnj-TqHLEU9OBXrCctvPODcLj1oAJjpdAGqR4,13469
+jupyterlab_sparksql-0.2.0.data/data/share/jupyter/labextensions/jupyterlab-sparksql/package.json,sha256=BAiQlt6tVTWOEl7EcYQjVZp7DFReHNThvxbyc6w0M0g,5271
+jupyterlab_sparksql-0.2.0.data/data/share/jupyter/labextensions/jupyterlab-sparksql/static/568.07bb5fea90bf1461a1c3.js,sha256=B7tf6pC_FGGhw2dWFRcV4yo7w4RAPelddIB6ya3sTds,2113
+jupyterlab_sparksql-0.2.0.data/data/share/jupyter/labextensions/jupyterlab-sparksql/static/747.7ecba06e06bf4ca5847b.js,sha256=fsugbga_TKWEe9f8yKXfBMbsczTQBzWgjprGHfsB7X4,3514
+jupyterlab_sparksql-0.2.0.data/data/share/jupyter/labextensions/jupyterlab-sparksql/static/remoteEntry.23ec0fe6f1eb04f5f3f4.js,sha256=I-wP5vHrBPXz9GKtP8EQkJXbB6hx9XuSb-NE4iC3BZU,6961
+jupyterlab_sparksql-0.2.0.data/data/share/jupyter/labextensions/jupyterlab-sparksql/static/style.js,sha256=MX5melc7ctZNF9OnWVw_GGuqf2Weasz2zPThcFlz-EU,162
+jupyterlab_sparksql-0.2.0.data/data/share/jupyter/labextensions/jupyterlab-sparksql/static/third-party-licenses.json,sha256=P_VjLKCSMZ3sXuPckg8bDyB8Xn8JD7EsiIoRqvSP3h0,2452
+jupyterlab_sparksql-0.2.0.data/data/share/jupyter/labextensions/jupyterlab-sparksql/install.json,sha256=dNsufLROEwB9tHpY_WSuebs30JO7idsXbKiZYupM6Pg,199
+jupyterlab_sparksql-0.2.0.dist-info/METADATA,sha256=lHegdyO6i_FXHYewVfBhnbQOyqPxGGdiaiLXQ1NTCkE,5586
+jupyterlab_sparksql-0.2.0.dist-info/WHEEL,sha256=y1bSCq4r5i4nMmpXeUJMqs3ipKvkZObrIXSvJHm1qCI,87
+jupyterlab_sparksql-0.2.0.dist-info/licenses/LICENSE,sha256=IdhBZ3YSs5KsqmIdnq0kYCYhVOL0F7QSwtettujDpok,1513
+jupyterlab_sparksql-0.2.0.dist-info/RECORD,,
