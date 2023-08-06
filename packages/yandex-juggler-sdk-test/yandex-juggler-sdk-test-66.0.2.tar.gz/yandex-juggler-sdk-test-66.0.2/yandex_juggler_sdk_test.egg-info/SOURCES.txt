@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_juggler_sdk_test.egg-info/PKG-INFO
+yandex_juggler_sdk_test.egg-info/SOURCES.txt
+yandex_juggler_sdk_test.egg-info/dependency_links.txt
+yandex_juggler_sdk_test.egg-info/top_level.txt
