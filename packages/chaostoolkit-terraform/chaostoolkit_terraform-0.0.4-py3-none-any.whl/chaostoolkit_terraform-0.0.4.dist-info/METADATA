@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: chaostoolkit-terraform
+Version: 0.0.4
+Summary: A Chaos Toolkit module to deploy terraform stacks
+Author: Manuel Castellin
+License-File: LICENSE
+Requires-Dist: chaostoolkit
+Requires-Dist: chaostoolkit-lib
+
