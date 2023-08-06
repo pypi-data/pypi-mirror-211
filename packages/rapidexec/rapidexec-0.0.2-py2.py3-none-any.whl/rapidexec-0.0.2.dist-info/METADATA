@@ -1,0 +1,121 @@
+Metadata-Version: 2.1
+Name: rapidexec
+Version: 0.0.2
+Summary: A simple, fast, and flexible way to execute commands in a Docker container.
+Project-URL: Homepage, https://github.com/godd0t/rapidexec
+License: MIT
+License-File: LICENSE
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django :: 4.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Version Control :: Git
+Classifier: Topic :: Utilities
+Requires-Dist: click==8.1.3
+Requires-Dist: rich==13.4.1
+Provides-Extra: dev
+Requires-Dist: black==23.3.0; extra == 'dev'
+Requires-Dist: build==0.10.0; extra == 'dev'
+Requires-Dist: coverage==7.2.7; extra == 'dev'
+Requires-Dist: pytest-asyncio==0.21.0; extra == 'dev'
+Requires-Dist: pytest-sugar==0.9.7; extra == 'dev'
+Requires-Dist: pytest==7.3.1; extra == 'dev'
+Requires-Dist: ruff==0.0.270; extra == 'dev'
+Requires-Dist: twine==4.0.2; extra == 'dev'
+Provides-Extra: docker
+Requires-Dist: docker==6.1.2; extra == 'docker'
+Provides-Extra: export
+Requires-Dist: toml==0.10.2; extra == 'export'
+Description-Content-Type: text/markdown
+
+# RapidExec (Work in progress)
+
+RapidExec is a command line tool that allows you to easier access docker containers. It is written in Python and uses the docker API to interact with the containers.
+
+
+## Installation
+
+1. To install RapidExec with all dependencies, you can use the following command:
+
+    ```bash
+    pip install rapidexec
+    ```
+
+2. To install RapidExec with only export dependencies, you can use the following command:
+   
+    ```bash
+    pip install rapidexec[export]
+    ```
+
+3. To install RapidExec with only docker dependencies, you can use the following command:
+   
+    ```bash
+    pip install rapidexec[docker]
+    ```
+   
+
+## Usage
+
+To use RapidExec, you can use the following command:
+
+```bash
+rapidexec [OPTIONS] COMMAND [ARGS]...
+```
+
+### Options
+
+| Option    | Description                |
+|-----------|----------------------------|
+| --help    | Shows usage information    |
+| --version | Show the version and exit. |
+
+### Commands
+
+| Command      | Description                                                    |
+|--------------|----------------------------------------------------------------|
+| docker-ps    | List all running containers.                                   |
+| docker-logs  | Show the logs of a container.                                  |
+| compose-logs | Show the logs of a docker-compose service.                     |
+| export       | Export pyproject.toml dependencies to a requirements.txt file. |
+
+
+### Example output
+
+#### docker-ps
+```bash
+$ rapidexec docker-ps
+```
+![image](./docs/images/docker-ps.png)
+
+#### export
+
+1. Scenario: toml file pyproject.toml and output file requirements.txt
+    ```bash
+    $ rapidexec export -f pyproject.toml -o requirements.txt
+    ```
+    ![image](https://raw.githubusercontent.com/godd0t/rapidexec/main/docs/images/export.png)
+
+2. Scenario: exclude optional groups
+    ```bash
+    $ rapidexec export --exclude dev,export
+    ```
+    ![image](https://raw.githubusercontent.com/godd0t/rapidexec/main/docs/images/export-exclude.png)
+3. Scenario: include only specific optional groups
+    ```bash
+    $ rapidexec export --include dev
+    ```
+    ![image](https://raw.githubusercontent.com/godd0t/rapidexec/main/docs/images/export-include.png)
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+
+## Contributing
+
+If you want to contribute to this project, you can create a pull request on GitHub.
