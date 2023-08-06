@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: andromeda-chain
+Version: 0.2a1
+Summary: A client to query a HTTP Guidance server
+Home-page: https://github.com/ChuloAI/andromeda-chain
+Author: Paolo Rechia
+Author-email: paolorechia@gmail.com
+Maintainer: Paolo Rechia
+Maintainer-email: paolorechia@gmail.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.9
+License-File: LICENSE
