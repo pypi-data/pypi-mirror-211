@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: dq-ai-module
+Version: 1.1.0
+Summary: Create data quality rules and apply them to datasets.
+Author: Himanshu
+Author-email: himanshu.tomar@decisionpoint.in
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: openai
+
+# DQAI (Data Quality Artificial Intelligence)
+
+This code provides a Python class called `DQAI` that utilizes the OpenAI Chat API to analyze a dataset and generate data quality rules specific to the data.
+
+## Usage
+
+1. Install the necessary dependencies.
+2. Set up your OpenAI API key or use the provided default key.
+3. Prepare your dataset in a suitable format (e.g., CSV).
+4. Instantiate the `DQAI` class.
+5. Invoke the `invoke_from_dataset` method, passing the dataset as input.
+6. The code will generate Python code based on the dataset and execute it.
+7. The generated rules and the results will be saved in the current directory as "generated_code.py" and "rulesapplication.csv," respectively.
+8. The generated rules can be obtained by calling the `_get_rules_from_file` method.
+
+
+## Example:
+
+    import pandas as pd
+    from dqai import DQAI
+
+# Read the dataset from a CSV file
+    path = "path/to/your/dataset.csv"
+    data = pd.read_csv(path)
+
+# Instantiate DQAI and generate data quality rules
+    key = OPEN_AI_KEY
+    dqai = DQAI(key)
+    result = dqai.invoke_from_dataset(data)
+
+# Access the generated rules and results
+    rules = result["0"]
+    results_df = result["1"]
