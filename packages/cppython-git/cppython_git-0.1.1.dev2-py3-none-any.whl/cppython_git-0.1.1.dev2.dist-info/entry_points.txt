@@ -1,0 +1,3 @@
+[cppython.scm]
+git=cppython_git.plugin:GitSCM
+
