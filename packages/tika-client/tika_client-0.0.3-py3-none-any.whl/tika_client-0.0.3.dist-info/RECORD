@@ -1,0 +1,15 @@
+tika_client/__about__.py,sha256=4GZKi13lDTD25YBkGakhZyEQZWTER_OWQMNPoH_UM2c,22
+tika_client/__init__.py,sha256=z12VeEFimJPSG9fOjfFPdq36mOXKoRM921AWuoROK2c,68
+tika_client/_constants.py,sha256=5CsVmJlkyX_iz8_kMTNzOC1cDTTNLzpoXhZ9NnymVQw,112
+tika_client/_resource_meta.py,sha256=WNaVQMy9rI953ymydWF0D4zg28aZlTM9p966JQNS14w,978
+tika_client/_resource_recursive.py,sha256=_hBc15_UkEzz3Absr_tk798evj7cW72fIAYTFfyCah8,2658
+tika_client/_resource_tika.py,sha256=EULpYS6KAYpPm9sx7gVWET5e_FoZhcNR-CVX38ykANc,2306
+tika_client/_types.py,sha256=MScS15627dA6O2OFsjvT2c-sUHx3ZmNkfHNCP9fnn-A,115
+tika_client/_utils.py,sha256=18jweRG3HOtmWXVWjACwaathyfCv-WrYFoV6USzw0dY,2650
+tika_client/client.py,sha256=NKdPf5zzNrz9p-TAndcOBzrJodJXRiDggJGRsNA2pb4,1398
+tika_client/data_models.py,sha256=FxL7QKxjzCFmvMtBY4GB-dqRo3yMD5irxxfJ0dYP1s8,3071
+tika_client/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tika_client-0.0.3.dist-info/METADATA,sha256=Yjn7zZe_Pa9_dsnLRlNZsw99GpKvMzrRRpN6Swg-PPc,4419
+tika_client-0.0.3.dist-info/WHEEL,sha256=y1bSCq4r5i4nMmpXeUJMqs3ipKvkZObrIXSvJHm1qCI,87
+tika_client-0.0.3.dist-info/licenses/LICENSE.txt,sha256=tqi_Y64slbCqJW7ndGgNe9GPIfRX2nVGb3YQs7FqzE4,34670
+tika_client-0.0.3.dist-info/RECORD,,
