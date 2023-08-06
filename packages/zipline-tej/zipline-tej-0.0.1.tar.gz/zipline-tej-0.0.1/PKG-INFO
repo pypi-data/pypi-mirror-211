@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: zipline-tej
+Version: 0.0.1
+Summary: Package for stock backtesting modified by TEJ.
+Home-page: https://api.tej.com.tw
+Author: tej
+Author-email: tej@tej.com.tw
+Maintainer: tej api Development Team
+Maintainer-email: tej@tej.com
+License: MIT
+Keywords: tej,zipline,data,financial,economic,stock,backtest,TEJ
+
+tests
