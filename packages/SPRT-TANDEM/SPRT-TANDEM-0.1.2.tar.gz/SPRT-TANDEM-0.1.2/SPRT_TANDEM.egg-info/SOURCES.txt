@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+SPRT_TANDEM.egg-info/PKG-INFO
+SPRT_TANDEM.egg-info/SOURCES.txt
+SPRT_TANDEM.egg-info/dependency_links.txt
+SPRT_TANDEM.egg-info/requires.txt
+SPRT_TANDEM.egg-info/top_level.txt
+tandem/__init__.py
+tandem/sprt_tandem_main.py
