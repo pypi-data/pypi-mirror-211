@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+jvxpdf/__init__.py
+jvxpdf/pdf2image.py
+jvxpdf/pdf2text.py
+jvxpdf.egg-info/PKG-INFO
+jvxpdf.egg-info/SOURCES.txt
+jvxpdf.egg-info/dependency_links.txt
+jvxpdf.egg-info/top_level.txt
