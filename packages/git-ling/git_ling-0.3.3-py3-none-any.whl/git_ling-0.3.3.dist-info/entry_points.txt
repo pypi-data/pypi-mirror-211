@@ -1,0 +1,3 @@
+[console_scripts]
+git_ling = git_ling.cli:main
+
