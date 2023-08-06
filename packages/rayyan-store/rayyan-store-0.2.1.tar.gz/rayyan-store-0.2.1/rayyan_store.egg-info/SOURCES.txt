@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+rayyan_store.egg-info/PKG-INFO
+rayyan_store.egg-info/SOURCES.txt
+rayyan_store.egg-info/dependency_links.txt
+rayyan_store.egg-info/top_level.txt
