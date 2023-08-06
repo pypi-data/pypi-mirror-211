@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: oneandtwoexample
+Version: 0.1.1
+Requires-Dist: pandas
+Requires-Dist: jinja2
+Requires-Dist: PyPDF2
+Requires-Dist: pdfkit
+
