@@ -1,0 +1,10 @@
+mysqloop/BuildAttrs.py,sha256=OBjiCVPuNR7QBvYR_ET1TcDSFUB8LPCbSHUkUwpwdrs,331
+mysqloop/Model.py,sha256=1x0b38TE5QNYltN5gpibMLuvZKjv1X1rUr1vrF-p_ss,2522
+mysqloop/Users.py,sha256=vcgaYXh940GpkMNWgErz9I8EMQm2SJ4IHPG8swWnJp0,153
+mysqloop/__init__.py,sha256=bt8NrEiWCprnMcjkUpFrRHJtnYO9E3qGFFBA327giBE,98
+mysqloop/mysqloop.py,sha256=HQOVyg_hmJ-ytNdWVTka47hYQTb_2gAqS1dVJrDQrMY,15335
+mysql_oop-0.1.5.dist-info/LICENSE,sha256=dJHiV2MItrw3XtDHvYW8nlJO9-5iJjIWLgbZqMZv7dU,1084
+mysql_oop-0.1.5.dist-info/METADATA,sha256=Nyf81pN_xTj3wdCOlkejZuE0aAaJFIjTSiFoCURd1BQ,1535
+mysql_oop-0.1.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+mysql_oop-0.1.5.dist-info/top_level.txt,sha256=MPkRo32wfoFhRMPUc5dA3zM1LjAEu_6OG-JVn7d5NLc,9
+mysql_oop-0.1.5.dist-info/RECORD,,
