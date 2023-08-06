@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: SPRT-TANDEM
+Version: 0.1.1
+Summary: SPRT-TANDEM for sequential density ratio estimation to simultaneously optimize speed and accuracy of early-classification.
+Home-page: https://github.com/Akinori-F-Ebihara/SPRT-TANDEM-PyTorch
+Author: Akinori F. Ebihara
+Author-email: aebihara@nec.com
+License: MIT
+Keywords: Sequential Probability Ratio Testlikelihood ratio,density ratio estimation,early classification,artificial intelligence,machine learning
+Platform: UNKNOWN
+Requires-Python: >=3.8
+License-File: LICENSE
+
+UNKNOWN
+
