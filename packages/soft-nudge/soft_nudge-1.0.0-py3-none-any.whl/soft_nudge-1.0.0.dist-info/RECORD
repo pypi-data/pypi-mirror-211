@@ -1,0 +1,8 @@
+soft_nudge/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+soft_nudge/cuda_utils.py,sha256=7GuJP8WrsyzACKhOUg1I2aLaDI42uLfRS7xQNasmUOU,2968
+soft_nudge/soft_nudge.py,sha256=g4zhwcOtSjtht0jnBpOIN3F3RofmW8ZUtrMHlNprxqw,4329
+soft_nudge/soft_nudge_cuda.py,sha256=BrEUZkGc1H0gvbLCYEW7mAM8MF33AkMYTkgeeKAmZJ0,4515
+soft_nudge-1.0.0.dist-info/METADATA,sha256=d0cO4wUWK-MSn6uQbgYPoEUIZ_Qhy2-Dfjzj--XAqII,1600
+soft_nudge-1.0.0.dist-info/WHEEL,sha256=y1bSCq4r5i4nMmpXeUJMqs3ipKvkZObrIXSvJHm1qCI,87
+soft_nudge-1.0.0.dist-info/licenses/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+soft_nudge-1.0.0.dist-info/RECORD,,
