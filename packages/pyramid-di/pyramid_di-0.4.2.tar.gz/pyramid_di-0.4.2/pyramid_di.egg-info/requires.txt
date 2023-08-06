@@ -1,0 +1,6 @@
+pyramid<3.0,>=1.7
+pyramid_services<2.0,>=1.1
+
+[dev]
+pytest>=3.0
+pytest-cov
