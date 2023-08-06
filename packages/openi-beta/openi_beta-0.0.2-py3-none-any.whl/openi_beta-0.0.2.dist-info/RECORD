@@ -1,0 +1,10 @@
+openi/__init__.py,sha256=OuBcxFEBNFk9voodbzargdrRxqovMLO8SeL6feKCB38,47
+openi/dataset/__init__.py,sha256=Q1q924h5PU08bqb00yvnhEtFxkeBRNd3jf8jy2JvSHs,22
+openi/dataset/dataset.py,sha256=WMztw6ATet2whQn2z8AoXqUgDgkIS4Hj8aCW5pYqVUc,10676
+openi/modelarts/__init__.py,sha256=tkpeZUboWH3DECK1ktGGEanVzKzo0Ap5D6V5Vmf_qsI,24
+openi/modelarts/helper.py,sha256=Fh0b5rDc7OosGJwbSyNIrtxzWr9dAE6q_30FXK0W8RQ,4555
+openi/modelarts/modelarts.py,sha256=p0oR9VrAnYU-Z3cGz6tnNJnW2yUWweN-K4YbBGJs0JU,2113
+openi_beta-0.0.2.dist-info/METADATA,sha256=q2Jn6qpypaP_0rH17s0C7xX44r6wLEOACZv3zRyew1s,2733
+openi_beta-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+openi_beta-0.0.2.dist-info/top_level.txt,sha256=0Q0-sLEGdmHC46FTTa0n-QuSAuSmISh0rPj6lUF8TjQ,6
+openi_beta-0.0.2.dist-info/RECORD,,
