@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+sqlilliput/__init__.py
+sqlilliput/sqlite.py
+sqlilliput.egg-info/PKG-INFO
+sqlilliput.egg-info/SOURCES.txt
+sqlilliput.egg-info/dependency_links.txt
+sqlilliput.egg-info/requires.txt
+sqlilliput.egg-info/top_level.txt
