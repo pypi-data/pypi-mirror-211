@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "myfootballanalytics"
+version = "0.0.1"
+authors = [
+  { name="Ilias Samathrakis", email="iliassamathrakis@gmail.com" },
+]
+description = "A football data analysis tool"
+readme = "README.md"
+requires-python = ">=3.7"
+package_dir = {'' = 'myfootballanalytics'}
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+		"Programming Language :: Python :: 3.9",
+		"Operating System :: OS Independent",
+		"Topic :: Database",
+		"Topic :: Scientific/Engineering :: Visualization",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/isamathr/myfootballanalytics"
+"Bug Tracker" = "https://github.com/isamathr/myfootballanalytics/issues"
+"Documentation" = "https://github.com/isamathr/myfootballanalytics/blob/main/Instructions_manual.pdf"
