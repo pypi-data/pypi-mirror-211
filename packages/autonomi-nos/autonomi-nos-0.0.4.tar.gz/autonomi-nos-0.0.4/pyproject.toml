@@ -1,0 +1,154 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autonomi-nos"
+description = "Nitrous oxide system (NOS) for computer-vision."
+license = {file = "LICENSE"}
+readme = "README.md"
+requires-python = ">=3.7.10"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Image Processing",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+]
+dynamic = ["version", "dependencies", "optional-dependencies"]
+
+[project.urls]
+"Documentation" = "https://autonomi-ai.github.io/nos/"
+"Source Code" = "https://github.com/autonomi-ai/nos"
+
+[tool.setuptools.dynamic]
+version = {attr = "nos.version.__version__"}
+dependencies = {file = ["requirements/requirements.txt"]}
+
+  [tool.setuptools.dynamic.optional-dependencies]
+    torch = {file = ["requirements/requirements.torch.gpu.txt"]}
+    server = {file = ["requirements/requirements.server.txt","requirements/requirements.torch.gpu.txt"]}
+    dev = {file = ["requirements/requirements.dev.txt"]}
+    test = {file = ["requirements/requirements.test.txt"]}
+    docs = {file = ["requirements/requirements.docs.txt"]}
+
+[project.scripts]
+nos = "nos.cli.cli:app_cli"
+nos-grpc-server = "nos.server.service:main"
+
+# for specifying additional pypi index urls
+# see https://setuptools.pypa.io/en/latest/userguide/dependency_management.html
+[options]
+dependency_links = [
+    "https://download.pytorch.org/whl/cu117",
+]
+
+[tool.setuptools.packages.find]
+include = ["nos*","scripts*"]
+exclude = [
+    "nos*experimental",
+]
+
+[tool.setuptools.package-data]
+"*" = ["*.json", "*.proto"]
+
+[tool.black]
+line-length = 119
+target-version = ['py38']
+exclude = '''
+    /(
+        \.eggs
+      | \.git
+      | \.hg
+      | \.mypy_cache
+      | \.tox
+      | \.venv
+      | _build
+      | buck-out
+      | build
+      | dist
+      | nos/models/openmmlab/configs/mmdetection/
+    )/
+'''
+
+[tool.ruff]
+# Enable pycodestyle (`E`) and Pyflakes (`F`) codes by default.
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "C",  # flake8-comprehensions
+    "B",  # flake8-bugbear
+]
+ignore = [
+    "E501",  # E501: Line too long
+    "C901",  # C901: Function is too complex
+    "B008",  # do not perform function calls in argument defaults
+    "B904",  # B904: check for raise from None
+]
+line-length = 119
+target-version = "py38"
+
+# Allow autofix for all enabled rules (when `--fix`) is provided.
+fixable = ["A", "B", "C", "D", "E", "F", "G", "I", "N", "Q", "S", "T", "W", "ANN", "ARG", "BLE", "COM", "DJ", "DTZ", "EM", "ERA", "EXE", "FBT", "ICN", "INP", "ISC", "NPY", "PD", "PGH", "PIE", "PL", "PT", "PTH", "PYI", "RET", "RSE", "RUF", "SIM", "SLF", "TCH", "TID", "TRY", "UP", "YTT"]
+unfixable = []
+
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "build",
+    "dist",
+    "venv",
+    "nos/models/openmmlab/mmdetection/configs",
+    ]
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["F401"]
+"nos/models/openmmlab/configs/*.py" = ["F401"]
+
+[tool.ruff.isort]
+lines-after-imports = 2
+
+[tool.ruff.mccabe]
+# Unlike Flake8, default to a complexity level of 10.
+max-complexity = 10
+
+[tool.pytest.ini_options]
+addopts = "-sv -m 'not (skip) and not (client) and not (benchmark) and not (server)'"
+markers = [
+    "client", # Client-side (integration) tests
+    "server", # Server-side tests
+    "benchmark", # Benchmark tests that is slow for basic CI
+    "asyncio", # Async IO tests
+]
+filterwarnings = [
+    "error",
+    "default:Using or importing the ABCs:DeprecationWarning:unittest2.*",
+    "default:.*not marked using pytest.hook.*",
+    "ignore:.*not marked using pytest.hook.*::xdist.*",
+    "ignore::DeprecationWarning",
+    "ignore::ResourceWarning",
+]
+log_format = "%(asctime)s %(levelname)s %(message)s"
+log_date_format = "%Y-%m-%d %H:%M:%S"
