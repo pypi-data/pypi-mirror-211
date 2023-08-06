@@ -1,0 +1,5 @@
+add more password/username security (like passwords must be >9 chars)
+add columns name when getting data
+hash passwords
+add mAdmin verification to functions (delete)
+add remove admin feature
