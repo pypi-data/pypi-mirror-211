@@ -1,0 +1,10 @@
+halo
+typer>=0.7.0
+python-dotenv>=1.0.0
+Pyrebase4>=4.6.0
+pyjwt>=2.0.1
+keyring>=23.13.1
+prompt-toolkit
+packaging
+requests==2.28.0
+requests-toolbelt==0.10.1
