@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: xlsxstyler
+Version: 0.1.2
+Summary: Some rudimentary styling of excel tables and placing pictures using openpyxl
+License: MIT
+Author: Gwang-Jin Kim
+Author-email: gwang.jin.kim.phd@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: openpyxl (>=3.1.2,<4.0.0)
+Requires-Dist: pandas (>=2.0.2,<3.0.0)
