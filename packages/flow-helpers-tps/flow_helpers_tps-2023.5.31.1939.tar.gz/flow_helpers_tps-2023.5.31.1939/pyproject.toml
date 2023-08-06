@@ -1,0 +1,26 @@
+[build-system]
+requires = [ "poetry-core>=1.0.0",]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "flow-helpers-tps"
+version = "2023.05.31.1939"
+description = "Handy helpers for ETL and API interfacing."
+authors = [ "joshliu3 <jliu@theparkingspot.com>",]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+google-api-python-client = "^2.85.0"
+pandas = "^2.0.0"
+google = "^3.0.0"
+flatdict = "4.0.0"
+boto3 = "^1.26.110"
+Office365-REST-Python-Client = "2.3.3"
+toml = "0.10.2"
+pendulum = "^2.1.2"
+pysftp = "0.2.9"
+SQLAlchemy = "^2.0.9"
+facebook-business = "^16.0.2"
+
+[tool.poetry.dev-dependencies]
