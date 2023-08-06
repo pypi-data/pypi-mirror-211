@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        rekono-cli=rekono.main:rekono
+    
