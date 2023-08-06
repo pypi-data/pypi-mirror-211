@@ -1,0 +1,13 @@
+rising_plugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rising_plugin/csv_embed.py,sha256=7vCHNIrs-Xhv-n8J59gDlV5oTcr_rYpR54tsBwulFEk,796
+rising_plugin/image_embedding.py,sha256=h4ES_Tt3UXmCcKJyXekmZSA4bf0i4QPQTBFCeFxK5e8,1756
+rising_plugin/phone.csv,sha256=2jjrr3zsyJnA4wByoM2pwlW5XJGcNuXr6l32-2wGvrE,1754
+rising_plugin/phone.json,sha256=7CFI7CXkWNS_HfUlOLiWSkK4yzkMq0RG__PcVAyAaL0,324097
+rising_plugin/pinecone_engine.py,sha256=QBUNOlV3XIuGOM4-4DJXnB7ePVZeRFMeJ6l6AIoEuKE,1678
+rising_plugin/risingplugin.py,sha256=kotx8YfRFVE2vWKnpZf4ckkUA1x0WqkW5n4yLdn1-Fg,4131
+rising_plugin/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rising_plugin/common/utils.py,sha256=kOLWF6hsU7KY3HJ_ztDzqjxeLwl-I78bV3Z3Q8AXMRo,641
+rising_plugin-0.1.1.dist-info/METADATA,sha256=qDP5ySZqwak59eNZaSezL7EWRVj1Yv6nuySog40OWJY,1101
+rising_plugin-0.1.1.dist-info/WHEEL,sha256=y1bSCq4r5i4nMmpXeUJMqs3ipKvkZObrIXSvJHm1qCI,87
+rising_plugin-0.1.1.dist-info/licenses/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+rising_plugin-0.1.1.dist-info/RECORD,,
