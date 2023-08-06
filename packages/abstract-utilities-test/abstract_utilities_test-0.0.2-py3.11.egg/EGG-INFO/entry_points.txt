@@ -1,0 +1,2 @@
+[console_scripts]
+abstract_utilities_test = abstract_utilities_test.src.main:main
