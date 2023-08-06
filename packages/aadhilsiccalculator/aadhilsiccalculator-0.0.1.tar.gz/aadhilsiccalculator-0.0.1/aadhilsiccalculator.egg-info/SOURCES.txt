@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+aadhilsiccalculator.egg-info/PKG-INFO
+aadhilsiccalculator.egg-info/SOURCES.txt
+aadhilsiccalculator.egg-info/dependency_links.txt
+aadhilsiccalculator.egg-info/top_level.txt
+my_pack/__init__.py

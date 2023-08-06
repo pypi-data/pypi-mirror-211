@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: aadhilsiccalculator
+Version: 0.0.1
+Summary: A very basic calculator
+Home-page: UNKNOWN
+Author: Aadhil Imam
+Author-email: aadhil.imam@gmail.com
+License: MIT
+Keywords: calculator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This very simple function
+
+Change Log
+==========
+
+0.0.1 (19/04/2020)
+-------------------
+- First Release
+
