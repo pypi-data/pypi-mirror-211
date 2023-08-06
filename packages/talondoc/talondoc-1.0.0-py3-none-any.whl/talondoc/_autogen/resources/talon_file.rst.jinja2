@@ -1,0 +1,6 @@
+{{ file.name.removesuffix(".talon") | escape | underline }}
+
+{%- if has_commands %}
+.. talon:command-table::
+  :context: {{ file.name.removesuffix(".talon") }}
+{%- endif %}

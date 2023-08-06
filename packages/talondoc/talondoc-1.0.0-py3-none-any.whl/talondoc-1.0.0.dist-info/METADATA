@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: talondoc
+Version: 1.0.0
+Summary: A Sphinx extension for Talon user directories.
+Author-email: Wen Kokke <wenkokke@users.noreply.github.com>
+Keywords: talon,sphinx
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Compilers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: <3.12,>=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: awesome-progress-bar (<2,>=1.7)
+Requires-Dist: docstring-parser (<0.16,>=0.14)
+Requires-Dist: editdistance (<0.7,>=0.6)
+Requires-Dist: Jinja2 (<4,>=3)
+Requires-Dist: Sphinx (<8,>=5)
+Requires-Dist: talonfmt (<2,>=1.7.4)
+Requires-Dist: tree-sitter-talon (<3!2,>=3!1.0)
+Requires-Dist: colorlog (<7,>=6.7)
+Requires-Dist: packaging (<24,>=23.1)
+Requires-Dist: pywin32 ; platform_system == "Windows"
+Requires-Dist: singledispatchmethod (<2,>=1.0) ; python_version < "3.8"
+Provides-Extra: docs
+Requires-Dist: myst-parser (<2,>=1) ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme (<2,>=1.2) ; extra == 'docs'
+Requires-Dist: sphinx-tabs (<5,>=3.4) ; extra == 'docs'
+Provides-Extra: mypy
+Requires-Dist: types-click ; extra == 'mypy'
+Requires-Dist: types-docutils ; extra == 'mypy'
+Requires-Dist: types-editdistance ; extra == 'mypy'
+Requires-Dist: types-jinja2 ; extra == 'mypy'
+Requires-Dist: types-pytz ; extra == 'mypy'
+Requires-Dist: types-setuptools ; extra == 'mypy'
+Provides-Extra: test
+Requires-Dist: bumpver ; extra == 'test'
+Requires-Dist: myst-parser (<2,>=1) ; extra == 'test'
+Requires-Dist: sphinx-rtd-theme (<2,>=1.2) ; extra == 'test'
+Requires-Dist: sphinx-tabs (<5,>=3.4) ; extra == 'test'
+
+![PyPI](https://img.shields.io/pypi/v/talondoc)
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/wenkokke/talondoc)
+[![GitHub Workflow Status](https://github.com/wenkokke/talondoc/actions/workflows/ci.yml/badge.svg)](https://github.com/wenkokke/talondoc/actions/workflows/ci.yml)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/wenkokke/talondoc/master.svg)](https://results.pre-commit.ci/latest/github/wenkokke/talondoc/master)
+
+# Sphinx extension for documenting Talon packages
+
+See [the docs](https://wen.works/talondoc/).
