@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: neurodatagen
+Version: 0.1.0a4
+Summary: Neuroscience data generation
+Author-email: Demetris Roumis <8qdo8efl3@mozmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# neurodatagen
+
+Neuroscience data generation
