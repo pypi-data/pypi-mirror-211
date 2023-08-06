@@ -1,0 +1,8 @@
+setup.py
+quranallsbuforuni/__init__.py
+quranallsbuforuni/module1.py
+quranallsbuforuni/module2.py
+quranallsbuforuni.egg-info/PKG-INFO
+quranallsbuforuni.egg-info/SOURCES.txt
+quranallsbuforuni.egg-info/dependency_links.txt
+quranallsbuforuni.egg-info/top_level.txt
