@@ -1,0 +1,5 @@
+[console_scripts]
+pedl-build_training_set = pedl.build_training_set:build_training_set
+pedl-extract = pedl.predict:predict
+pedl-rebuild_pubtator_index = pedl.rebuild_pubtator_index:rebuild_pubtator_index
+pedl-summarize = pedl.summarize:summarize
