@@ -1,0 +1,7 @@
+setup.py
+hello/__init__.py
+hello/saythirumalai.py
+sayhellotoyou.egg-info/PKG-INFO
+sayhellotoyou.egg-info/SOURCES.txt
+sayhellotoyou.egg-info/dependency_links.txt
+sayhellotoyou.egg-info/top_level.txt
