@@ -1,0 +1,25 @@
+[project]
+name = "pylint_super_not_called"
+version = "0.9.1"
+authors = [
+  { name="Nicolas Mussat", email="nicolas@prose.com" },
+]
+description = "A Pylint plugin to ensure overloaded methods are calling the parent method with super"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/prosehair/pylint_super_not_called_plugin"
+"Bug Tracker" = "https://github.com/prosehair/pylint_super_not_called_plugin/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 150
