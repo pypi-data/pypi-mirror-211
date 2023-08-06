@@ -1,0 +1,10 @@
+start_ocr/__init__.py,sha256=2lMaQXFc11ofHUwFxoWciRPZ0mqAMLdP7MVQy3CgW4s,536
+start_ocr/components.py,sha256=ycyMuhDUPPxXg7ly7IMU4h8vqTevi3O7BcLNCdvi97s,11204
+start_ocr/content.py,sha256=XnRsOHBDGV00xypCuptzVbD5kGW-PUp-tEyZFuM9uJU,5980
+start_ocr/coordinates.py,sha256=XOBNK2RaVrE-BAOTg-QDj8mig7vDvXkoFsqdomVMw-c,2322
+start_ocr/demo.py,sha256=mrta3s6KYfQHY3hEBLdDQHgZ0wqQv2Gjp16C8_3pXCU,533
+start_ocr/fetch.py,sha256=SUlegZE-QFsRkWD4BGzXOMvgCFfo3Bf03Nx6-vsWTUY,4140
+start_ocr/slice.py,sha256=X3aFdW2D5AvcmQu2a-LM5qW4HvlSh--cMxGWlCPGzlY,7326
+start_ocr-0.0.3.dist-info/METADATA,sha256=i-SE76e0DJMRKyu5atYnRpGy3SDJNVG-xfQOPpiUs9c,1060
+start_ocr-0.0.3.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+start_ocr-0.0.3.dist-info/RECORD,,
