@@ -1,0 +1,12 @@
+ssm_ps_template/__init__.py,sha256=-CxXTNrA7MEXSfuBgj7tg0vMX9b0vH74X45V8HjIOJk,165
+ssm_ps_template/__main__.py,sha256=wLve1zJyesfkw2fyU0hu_M1Q2F6TbuACKKTRRJt1IoQ,3030
+ssm_ps_template/config.py,sha256=naXCQxne1f6VlvSKlTaNERPeJNzoHwUJuUXWqWJriV0,2364
+ssm_ps_template/discovery.py,sha256=NciPz7wuzUnO6_2W23zwi9SCB83c3P_VQ3gqy6qZLXk,1825
+ssm_ps_template/render.py,sha256=1kkWsSZ0p8a4SkyayyCMmvZwLuJ0Hv7MsSZx_D2lIIk,1575
+ssm_ps_template/ssm.py,sha256=LMOGKc3pdQkV2WfDdYvmSOffOyrBIN26qbFicGl4gBg,3388
+ssm_ps_template-2.0.1.dist-info/LICENSE.txt,sha256=1yfQLnXsVCv3gdM5gm7QaxUeSb_hfAwNFI8Dn6m9joQ,1495
+ssm_ps_template-2.0.1.dist-info/METADATA,sha256=JtORVddR71DvKujLJG4ncLV-Ts-x20h6E90AnOcaVw0,11726
+ssm_ps_template-2.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ssm_ps_template-2.0.1.dist-info/entry_points.txt,sha256=nQ40nFZjm57my2lUCNNa3iACPp1QIVNoQBK8pd8xNi8,66
+ssm_ps_template-2.0.1.dist-info/top_level.txt,sha256=c6VMoLk9Ygudd9_GpP6N_IC51Z_JjLdX-iwcSMtbO54,16
+ssm_ps_template-2.0.1.dist-info/RECORD,,
