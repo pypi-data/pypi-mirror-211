@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: django-iubenda-web
+Version: 0.0.5
+Summary: Iubenda integration for web application
+Home-page: https://github.com/shadMod/django_iubenda
+Download-URL: https://github.com/shadMod/django_iubenda/archive/refs/tags/0.0.5.tar.gz
+Author: ShadMod
+Author-email: support@shadmod.it
+License: Iubenda integration for web application
+Keywords: Django iubenda
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
