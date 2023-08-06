@@ -1,0 +1,15 @@
+AUTHORS
+LICENSE
+README.md
+setup.py
+nested_django_serializer/__init__.py
+nested_django_serializer.egg-info/PKG-INFO
+nested_django_serializer.egg-info/SOURCES.txt
+nested_django_serializer.egg-info/dependency_links.txt
+nested_django_serializer.egg-info/requires.txt
+nested_django_serializer.egg-info/top_level.txt
+nested_django_serializer/django/__init__.py
+nested_django_serializer/django/serializers/__init__.py
+nested_django_serializer/django/serializers/base.py
+nested_django_serializer/django/serializers/json.py
+nested_django_serializer/django/serializers/python.py
