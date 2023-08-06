@@ -1,0 +1,10 @@
+libpitlakq/__init__.py,sha256=wXnqnGPUpRc54zsLnmiPbm1c9lmLS8vwyzhwFz14Vq4,54
+libpitlakq/libgcc_s_seh-1.dll,sha256=Xb8Rv_ti6cxKpTDnSO6-i3TRdC9V6Ojc0b_scjFS2EE,117427
+libpitlakq/libgfortran-5.dll,sha256=AZoM8fuiXWt6xU48zQnexcOk2jni5bo6aKSPUQ0T6Pk,3232373
+libpitlakq/libquadmath-0.dll,sha256=ULtNP266JQHZE5FcR_wDwu1BSw9k5iPAap6niQvFBkM,377417
+libpitlakq/libwinpthread-1.dll,sha256=DOFZCf32aRdQYWRjqQtmLjaU77UH5n9x5WbSGgdTHbw,60356
+libpitlakq/w2_fortran.cp311-win_amd64.pyd,sha256=OrGgRyEmVuc4Ar9ZsSyjQ9670KAGDZoo3HPerMmvzm8,3739200
+libpitlakq-0.1.0.dist-info/METADATA,sha256=4efyxpLR_lpE-9c7RK9a4PKth4vWyTgHw0Ru0hA_7MU,3040
+libpitlakq-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+libpitlakq-0.1.0.dist-info/top_level.txt,sha256=oOGIy3l-m-gEodlj_YY5-1Dx_ROAt8JyztffSzch0Fs,11
+libpitlakq-0.1.0.dist-info/RECORD,,
