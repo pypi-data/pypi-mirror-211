@@ -1,0 +1,15 @@
+iolanta_roadmap/__init__.py,sha256=M6bzj2puyIhon2iukHN6LgQSO0qNErulXRGNl3cWKh0,143
+iolanta_roadmap/cli.py,sha256=nKDKb1-U8Zbfx6Kr0ZMczG9t-MR-Jsyr9tsft_A3vV0,183
+iolanta_roadmap/data/context.yaml,sha256=Xwjav9y-7MshtLSUavcttawoDL7bpAPzdPZ02UOaAVU,473
+iolanta_roadmap/data/roadmap.yaml,sha256=SryLcqfiHi2ag4FNNBpVoRzqL5_jcr5FgM4qi6b9AcU,562
+iolanta_roadmap/facets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iolanta_roadmap/facets/base.py,sha256=eKWBnDhvlVfU2yWuaOFqV95o7AYAUw8h-lbZDjqTUd0,7910
+iolanta_roadmap/facets/cli.py,sha256=YL3m9QGT-DG2yYdkSMuUdMscKGGdA5WCUS1JKgB2TCM,296
+iolanta_roadmap/facets/models.py,sha256=o0f6YBRcQYOd2mw0oAHh5EziMSaqPfV8ahzQg4glnGQ,692
+iolanta_roadmap/facets/sparql/tasks.sparql,sha256=AB30b8cIKOUlAibpvrmqALjcyzw_xpQ65MLYDES59w4,534
+iolanta_roadmap/facets/svg.py,sha256=DB6UUyC391tZCrCC4hGDUOsWzl4WTLijF0mJtCO9kVA,176
+iolanta_roadmap/plugin.py,sha256=4uX4RFZ3hckJwLlG4tAXpFv8YmE7QXmfVnFZMOCxQto,205
+iolanta_roadmap-0.1.0.dist-info/METADATA,sha256=UYjOl1WaS6I8j_botwzkXNBuRqBpHgZxrvQNqHK-qqc,625
+iolanta_roadmap-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+iolanta_roadmap-0.1.0.dist-info/entry_points.txt,sha256=4jTOmmxuLuRBNTNRWx4lSJ9u4utlZbdk857tWOPgoE4,51
+iolanta_roadmap-0.1.0.dist-info/RECORD,,
