@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: terraform-exporter-plugin
+Version: 0.1.0
+Summary: Python module for creating terraform-exporter plugins
+Author: Josh Ghiloni
+Author-email: ghiloni@gmail.com
+Maintainer: Josh Ghiloni
+Maintainer-email: ghiloni@gmail.com
+Requires-Python: >=3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: grpcio-health-checking (>=1.51,<2.0)
+Requires-Dist: grpcio-tools (>=1.51,<2.0)
+Description-Content-Type: text/markdown
+
+# Terraform Exporter Plugin Library for Python
+
+This module provides functionality to create a plugin for the [Terraform Exporter CLI](https://github.com/gideaworx/terraform-exporter)
