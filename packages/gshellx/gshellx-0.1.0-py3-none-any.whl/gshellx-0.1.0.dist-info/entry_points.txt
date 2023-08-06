@@ -1,0 +1,3 @@
+[console_scripts]
+gsx=gshellx.main:main
+
