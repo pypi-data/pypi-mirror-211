@@ -1,0 +1,8 @@
+LICENSE.txt
+setup.py
+datesmodule/__init__.py
+datesmodule/main.py
+datesmodule.egg-info/PKG-INFO
+datesmodule.egg-info/SOURCES.txt
+datesmodule.egg-info/dependency_links.txt
+datesmodule.egg-info/top_level.txt
