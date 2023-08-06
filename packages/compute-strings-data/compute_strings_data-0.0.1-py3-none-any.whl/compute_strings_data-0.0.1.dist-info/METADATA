@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: compute-strings-data
+Version: 0.0.1
+Summary: compute text based data
+Home-page: https://github.com/davitkv8/challenges/
+Author: Davit Kvaratskhelia
+Author-email: davit.kv8@gmail.com
+
+Package includes some tools to compute string data in the shortest possible time.
