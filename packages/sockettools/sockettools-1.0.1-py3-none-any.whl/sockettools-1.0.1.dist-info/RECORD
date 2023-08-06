@@ -1,0 +1,12 @@
+sockettools/__init__.py,sha256=tv91qyDhLMupPA3Bf-86gMSPnF8Exk1Ljfd4xSRb4uU,99
+sockettools/client.py,sha256=NrRQ2Mua8pJ_2x0ji0m4K0o9qvANESEy8EHcb4q3o-U,1674
+sockettools/clienthandler.py,sha256=RV1g_fbAMiuVfivpU24-_Udmq_znNwKD6OymwMOELv8,724
+sockettools/events.py,sha256=Jwo9gi7R-2J7levowevui_wu-XkS0jJAA59ufOuZvng,564
+sockettools/protocol.py,sha256=dKd-7GUJ0SjmifRJKzQ19SX4wrTX1Mlg05pxc8HRn04,393
+sockettools/server.py,sha256=ouQp9kezzOmQjB_eiV4BWpWwXzdgTSuYAVuFBx7jCU8,3542
+sockettools/transport.py,sha256=lYQFpCYZ9Rx4KM-R_n87yd5TO6CBDoPA9K99mR2iHBE,1523
+sockettools-1.0.1.dist-info/LICENCE.md,sha256=23tRc0wLCYQHwSFTDYEAJnQxRfETM7yum1i0Qhl_lpU,1056
+sockettools-1.0.1.dist-info/METADATA,sha256=jDHGawN41PCQ5qpPphj4VKWBA3wllIyZZrTHxG0lSzw,2762
+sockettools-1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+sockettools-1.0.1.dist-info/top_level.txt,sha256=zI1MFTGCYe6ae_F9oNWsT08IZvIJCnJvpv1qL1PnfiM,12
+sockettools-1.0.1.dist-info/RECORD,,
