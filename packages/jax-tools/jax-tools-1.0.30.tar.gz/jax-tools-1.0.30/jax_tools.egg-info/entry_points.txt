@@ -1,0 +1,3 @@
+[console_scripts]
+jax-encrypt = jax_tools.jax_encrypt:main
+nd = jax_tools.network_test:main
