@@ -1,0 +1,14 @@
+curl_arguments_url/__init__.py,sha256=QZxxRGF8rUmVDfPGAyjEJwboYNrBvHd6i6cKapbhkq4,146
+curl_arguments_url/cli.py,sha256=_ACl__1MJEMxxiiTOGjDgf81NQQ9F-CSiwmj2ePcge4,3961
+curl_arguments_url/curl_arguments_url.py,sha256=ocrAFWwPUFsG02yUBL1ntyz-RllY9FF1kBuNBFjH9Ao,57514
+curl_arguments_url/yaml.py,sha256=CFFWmlyMY5XenucEmeRifEfxmd0Ff8vhN8LbpiQ43TE,414
+curl_arguments_url/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+curl_arguments_url/models/methods.py,sha256=L6Axiyfczx_8Ih7Uox3hgnfoDvjQrWg3U6z3QSNnteY,277
+curl_arguments_url/models/open_api.py,sha256=JYQHsqGPBaCrk6rfhxRpu3mzDexItGenz23lsxeSWb0,4321
+curl_arguments_url-0.1.4.dist-info/AUTHORS.rst,sha256=DjNHTDwDthj8uBaykWQjLUDYfLrLljwg0FbuUA-2xhM,157
+curl_arguments_url-0.1.4.dist-info/LICENSE,sha256=ellcIsLCHKBuPFaKlnRl6G0sS1leR32RI9Q8xOqSXgk,583
+curl_arguments_url-0.1.4.dist-info/METADATA,sha256=kURnAAWUfDuK83o9FJ2rF5l4DTNA9O6uoaSriu9vvec,9963
+curl_arguments_url-0.1.4.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+curl_arguments_url-0.1.4.dist-info/entry_points.txt,sha256=wvzW3KwWk6cNsCJ6iyeJix2y6lSvXZYBjtwlogXmY0o,53
+curl_arguments_url-0.1.4.dist-info/top_level.txt,sha256=yiYrvKqDw8Hmj7ynd7hbbeNZNVJAz40OWAz1hRAYw8Q,19
+curl_arguments_url-0.1.4.dist-info/RECORD,,
