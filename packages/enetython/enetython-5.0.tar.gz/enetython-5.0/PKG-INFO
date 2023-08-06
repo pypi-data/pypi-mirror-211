@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: enetython
+Version: 5.0
+Summary: A python wrapper for the ENet library
+Author: aresch
+Author-email: andrewresch@gmail.com
+License-File: LICENSE
