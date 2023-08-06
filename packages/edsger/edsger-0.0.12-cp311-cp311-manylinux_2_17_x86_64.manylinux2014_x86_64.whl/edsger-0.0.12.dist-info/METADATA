@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: edsger
+Version: 0.0.12
+Summary: Graph algorithms in Python.
+Author-email: François Pacull <francois.pacull@architecture-performance.fr>
+Maintainer-email: François Pacull <francois.pacull@architecture-performance.fr>
+License: MIT License
+Project-URL: Repository, https://github.com/aetperf/Edsger
+Keywords: python,graph,shortest path,Dijkstra
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: setuptools
+Requires-Dist: setuptools-scm
+Requires-Dist: numpy
+Requires-Dist: Cython
+Requires-Dist: pandas
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: sphinx ; extra == 'doc'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: scipy ; extra == 'test'
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: codecov ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+
+
+![Tests Status](https://github.com/aetperf/edsger/actions/workflows/tests.yml/badge.svg?branch=release)
+
+# Edsger
+
+
+    Graph algorithms in Cython
+
+
+Welcome to our Python library for fast path algorithms on graphs, built with the power of Cython. So far, the library only includes Dijkstra's algorithm but we should add a range of common path algorithms soon. It is also open-source and easy to integrate with other Python libraries.
+
+To get started, simply install the library using pip, and import it into your Python project. Then, you can start using the library to perform efficient path computations on your graphs.
+
+
+
+
