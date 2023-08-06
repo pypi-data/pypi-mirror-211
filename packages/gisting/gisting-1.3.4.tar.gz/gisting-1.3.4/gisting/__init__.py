@@ -1,0 +1,1 @@
+from src.compress import main
