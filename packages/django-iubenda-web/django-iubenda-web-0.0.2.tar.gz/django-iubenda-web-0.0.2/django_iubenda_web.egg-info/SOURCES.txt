@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+django_iubenda_web.egg-info/PKG-INFO
+django_iubenda_web.egg-info/SOURCES.txt
+django_iubenda_web.egg-info/dependency_links.txt
+django_iubenda_web.egg-info/top_level.txt
