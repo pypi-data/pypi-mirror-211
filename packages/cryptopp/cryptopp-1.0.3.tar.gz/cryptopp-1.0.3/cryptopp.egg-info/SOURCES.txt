@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+cryptopp/__init__.py
+cryptopp/config.ini
+cryptopp/cryptopp.py
+cryptopp.egg-info/PKG-INFO
+cryptopp.egg-info/SOURCES.txt
+cryptopp.egg-info/dependency_links.txt
+cryptopp.egg-info/entry_points.txt
+cryptopp.egg-info/requires.txt
+cryptopp.egg-info/top_level.txt
