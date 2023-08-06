@@ -1,0 +1,10 @@
+safe_s1/__init__.py,sha256=NYyuCjknDm3C3rFLPNxhMwPW6a4S5Ms-HuA8WxEUhxc,162
+safe_s1/config.yml,sha256=LO0zP1id8IHI5SvQ9soO6engIBj-qGI4fzmO0UibESs,124
+safe_s1/metadata.py,sha256=IiokWNqQVK4U6xcwwNfzhjTdwBPZiQTV4s0ezDqpWEI,27910
+safe_s1/sentinel1_xml_mappings.py,sha256=OPrcepH8abAd14reZ3vD7WSdXLVY1eeuCIl0unImUBk,42062
+safe_s1/xml_parser.py,sha256=wOjbJbIMfxWi0QnLaRk-8SSp_JaVxcrvaiYRp7AkrIs,5503
+xarray_safe_s1-2023.6.2.dist-info/LICENSE,sha256=1jpI2y-P8Xud6A1PMRBAOE1CubhAxHFJxqZg0Bpcenk,1084
+xarray_safe_s1-2023.6.2.dist-info/METADATA,sha256=o_45-LwdD-w9R5Q3xvzv8xDY48s1Akivhu1wOrI4v1M,7929
+xarray_safe_s1-2023.6.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+xarray_safe_s1-2023.6.2.dist-info/top_level.txt,sha256=Ur0beUS1ixuh5gPE8sVsKg7lzWJ02xgfKuWKrT9eRc4,8
+xarray_safe_s1-2023.6.2.dist-info/RECORD,,
