@@ -1,0 +1,13 @@
+dktotoolkit/__init__.py,sha256=MKA5bfsQjrmJGZzi2U9yt5GBW1vErcTOroVlyhTbcNQ,389
+dktotoolkit/__version__.py,sha256=J_0Cd0zySymedm1qIR_CDlXixDY2XDJQGJn95dmvdAg,195
+dktotoolkit/datestr.py,sha256=a_vmNlPYfvSpPnLPkyoWVV5vNTiu4x7iXiAdgpMatcU,5985
+dktotoolkit/dict.py,sha256=N40WAQEyHplWcCspID94neslkSnFxJFUpeWWjM3S27k,569
+dktotoolkit/dotenv2clock.py,sha256=L3gnznbtYpJstza5DjmQ94z57SWu6oa2XuQo2SiwZr0,2035
+dktotoolkit/envvar.py,sha256=7vbaqs4YNYEQZBYSTX12jm0NyUtlBITwueWNM7Bj_is,4138
+dktotoolkit/functions.py,sha256=XELCMUAsGwH_swvet5rsiI8eUzEjXS1HQQSpvqdj6bg,1321
+dktotoolkit/list.py,sha256=DHqv-MwjKedVhIeqLpAlzRHyvP43VLctpouKGW8rDfw,1010
+dktotoolkit-1.0.1a0.dist-info/LICENCE.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dktotoolkit-1.0.1a0.dist-info/METADATA,sha256=R0z4pPC0jnNvJa5eI_CFr4iagb4TBNMDG-OcHAPpaz0,902
+dktotoolkit-1.0.1a0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+dktotoolkit-1.0.1a0.dist-info/top_level.txt,sha256=fYlY92hW976vYArLeiPf0uXkdUGFtSygpwXO8i7UByc,12
+dktotoolkit-1.0.1a0.dist-info/RECORD,,

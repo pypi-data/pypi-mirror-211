@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: dktotoolkit
+Version: 1.0.1a0
+Summary: A little toolkit with fancy functions
+Home-page: https://discord-catho.frama.io/module_toolkit
+Author: Pierre
+Project-URL: Source Code, https://framagit.org/discord-catho/module_toolkit
+Keywords: dotenv,.env,toolkit,parse dates
+Requires-Python: <4,>=3.9
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+Provides-Extra: doc
+Requires-Dist: sphinx (==6.2.1) ; extra == 'doc'
+Requires-Dist: sphinx-rtd-theme (==1.2.1) ; extra == 'doc'
+Requires-Dist: myst-parser (==1.0.0) ; extra == 'doc'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+
+# Module load dotenv
+
+This is a module with different tools, very usefull !
+
+For exemple, there is :
+* Load .env class
+* Parser for dates
+* Compatibility mode for function arguments
+* ...
+
+Please read the documentation at : https://discord-catho.frama.io/module_toolkit
