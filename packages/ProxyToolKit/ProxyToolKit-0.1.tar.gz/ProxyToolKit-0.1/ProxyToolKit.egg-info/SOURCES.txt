@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ProxyToolKit/Checker.py
+ProxyToolKit/Exceptions.py
+ProxyToolKit/Scraper.py
+ProxyToolKit/__init__.py
+ProxyToolKit.egg-info/PKG-INFO
+ProxyToolKit.egg-info/SOURCES.txt
+ProxyToolKit.egg-info/dependency_links.txt
+ProxyToolKit.egg-info/requires.txt
+ProxyToolKit.egg-info/top_level.txt
