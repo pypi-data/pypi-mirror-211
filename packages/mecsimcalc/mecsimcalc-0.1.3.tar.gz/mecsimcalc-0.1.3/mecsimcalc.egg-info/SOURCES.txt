@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+mecsimcalc/__init__.py
+mecsimcalc/general_utils.py
+mecsimcalc/image_utils.py
+mecsimcalc/plotting_utils.py
+mecsimcalc/spreadsheet_utils.py
+mecsimcalc/table_utils.py
+mecsimcalc/text_utils.py
+mecsimcalc.egg-info/PKG-INFO
+mecsimcalc.egg-info/SOURCES.txt
+mecsimcalc.egg-info/dependency_links.txt
+mecsimcalc.egg-info/requires.txt
+mecsimcalc.egg-info/top_level.txt
