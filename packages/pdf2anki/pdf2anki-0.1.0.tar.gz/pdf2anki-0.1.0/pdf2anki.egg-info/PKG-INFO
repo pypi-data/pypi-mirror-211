@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pdf2anki
+Version: 0.1.0
+Summary: A Python package to create Anki cards from PDFs using OpenAI.
+Home-page: https://github.com/hipnologo/pdf2anki
+Author: Fabio Carvalho
+Author-email: email@fabioac.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
