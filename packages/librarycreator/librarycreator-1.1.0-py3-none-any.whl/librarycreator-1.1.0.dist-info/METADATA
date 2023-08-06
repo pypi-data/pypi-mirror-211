@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: librarycreator
+Version: 1.1.0
+Summary: LibraryCreator is a Python library that provides a user-friendly way to generate setup files, build wheel files, and upload Python libraries to PyPI.
+Author: TheUnkownHacker
+Author-email: jhamb.aarav@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+
+LibraryCreator is a Python library that provides a user-friendly way to generate setup files, build wheel files, and upload Python libraries to PyPI (Python Package Index). It offers a graphical user interface (GUI) powered by tkinter, making it easy for developers to create and distribute their Python libraries.
+
+Key Features:
+- Generate Setup: Generate a setup.py file for a Python library by providing package details such as name, version, description, author, and author email.
+- Build Wheel: Build a wheel file for your Python library, simplifying the distribution and installation process.
+- Upload Library: Upload your Python library to PyPI with ease, prompting you for your PyPI credentials and handling the upload process for you.
+
+Installation:
+You can install LibraryCreator using pip:
+    pip install LibraryCreator
+
+Usage:
+Here's an example of how to use LibraryCreator:
+
+    from LibraryCreator import LibraryCreator
+
+    # Create an instance of LibraryCreator
+    creator = LibraryCreator()
+
+    # Run the GUI event loop
+    creator.run()
+
+This will open the Library Creator GUI, where you can interactively generate setup files, build wheel files, and upload your Python libraries to PyPI.
+
+Documentation:
+For detailed documentation and usage examples, please refer to the LibraryCreator Documentation.
+
+License:
+LibraryCreator is licensed under the MIT License.
+
+Contributing:
+Contributions are welcome! Please see the Contributing Guidelines for more information.
+
+Issues:
+If you encounter any issues or have suggestions, please feel free to open an issue on the GitHub repository.
+
+Credits:
+LibraryCreator is developed and maintained by TheUnkownHacker.
+
+Release History:
+0.0.1-beta (2023-06-03): Initial beta release.
+
+Support:
+For support or any inquiries, please contact jhamb.aarav@gmail.com.
