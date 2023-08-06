@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: gwpoffpm
+Version: 1.0.0
+Summary: Green-Wall-Project package for prediction of leg-movement offsets.
+Author: Benjamin Fele, Gal Sajko
+License: MIT
+License-File: LICENSE
+
