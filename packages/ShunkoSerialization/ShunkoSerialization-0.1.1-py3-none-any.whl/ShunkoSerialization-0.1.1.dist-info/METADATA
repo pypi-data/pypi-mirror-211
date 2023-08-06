@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ShunkoSerialization
+Version: 0.1.1
+Summary: Library for class and function serialization
+Author: VictorShunko
+Author-email: victorshunko@mail.ru
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: regex
+

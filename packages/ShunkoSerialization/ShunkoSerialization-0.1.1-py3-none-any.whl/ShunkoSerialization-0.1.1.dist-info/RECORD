@@ -1,0 +1,11 @@
+Serialization/__init__.py,sha256=f-Ds6Vp21OmLWMMFm86TFdx_L4H_3P2YNX8wNaGFJNc,640
+Serialization/base_serializer.py,sha256=bDwwxl-rvnb6p16oWE6zvKyOyiRVtzFAN7HWnrkU4Fk,1099
+Serialization/dict_serializer.py,sha256=JD4on62y-3dav3beegjbjOrdm0P9OCom2DHo9EB0AEA,9213
+Serialization/json_serializer.py,sha256=pI4tg-WtdPWA9TcPRa0jwzmhyGg-vEFAFNWUgL5seso,3869
+Serialization/serializers_factory.py,sha256=eoNWbzZU5O0U1RFcWkz6W8Ckxc96FOU_xyAlZ_Nu_qE,486
+Serialization/type_constants.py,sha256=7kuMlMCZLU7m1t4iW5aXMn3cybIe5CSQ9V5ALseevCY,1210
+Serialization/xml_serializer.py,sha256=JiMYghATZxTZwmKVxuLUb8j-ENpWfJTn_9Btb070vtw,4083
+ShunkoSerialization-0.1.1.dist-info/METADATA,sha256=b3V3mvey8XiASnxkyf-U1xDzeSC4ef_hucevHmv9a6g,441
+ShunkoSerialization-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ShunkoSerialization-0.1.1.dist-info/top_level.txt,sha256=9R2ADyVo_CHDdYElZThjdfIvWH37C4SwS4Q2KzVmUiw,14
+ShunkoSerialization-0.1.1.dist-info/RECORD,,
