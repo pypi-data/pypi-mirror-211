@@ -1,0 +1,11 @@
+mjjo/__init__.py,sha256=NgvcY6N6AhVgxW6yGHFWwIGS28BeYH8jwTwoGbEp3Jk,298
+mjjo/cordate.py,sha256=prEF9OEpd2zCwAD2S-DokPzUVIxr7v_e8abruV1D7PM,13613
+mjjo/date_dictionary.txt,sha256=rGgKD7h72sThDEkb0_wFu-oIzeHdVMrgm4sRiKAHC0s,8186272
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/cordate.py,sha256=4CnRZiBtN02H0jbvQf52r7HmAQa-nJ0In040WrC5-H0,11450
+vos_mjjo-0.0.11.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+vos_mjjo-0.0.11.dist-info/METADATA,sha256=9J737lJgaL1mTSr14f6ZW2w1q6ku7qmOCKuIGJPDX0s,5697
+vos_mjjo-0.0.11.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+vos_mjjo-0.0.11.dist-info/entry_points.txt,sha256=TPB2LUYp5rOLabatv0O-Bg6bId3UWYUhIVGM0hLZY3g,97
+vos_mjjo-0.0.11.dist-info/top_level.txt,sha256=_accA8EYgSBS9jb7cRzyfWTgPzstV-t9-cMrtrhfrE0,11
+vos_mjjo-0.0.11.dist-info/RECORD,,
