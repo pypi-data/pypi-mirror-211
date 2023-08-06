@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: crxcavatorpy
+Version: 0.1.0
+Summary: Python module for interacting with the Crxcavator api
+Author: Garrett Primm
+Author-email: garrett@alabamacloudsecurity.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: argparse (>=1.4.0,<2.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Crxcavatorpy
+
+A python package for working with the CRXCavator api as an imported package or as a command line utility
