@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: sarw-spheres
+Version: 0.0.7
+Summary: Genrate self avoiding random walks (SARW) for spheres of given sizes.
+Home-page: https://github.com/RadostW/sarw_spheres
+Author: Radost Waszkiewicz
+Author-email: radost.waszkiewicz@gmail.com
+License: MIT
+Project-URL: Documentation, https://github.com/RadostW/sarw_spheres
+Project-URL: Source, https://github.com/RadostW/sarw_spheres
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>1.16)
+
+# sarw_spheres
+
+Python wrapper on C++ self avoiding random walk (SARW) generator.
+
+# Installation
+
+```bash
+python3 -m pip install sarw_spheres
+```
+
+# Usage
+
+```Python
+import numpy as np
+import sarw_spheres
+sarw_spheres.generateChain(np.array([1.,1.,1.,1.]))
+```
+
+# License
+
+This software is licensed under MIT license
+
+Copyright (c) Radost Waszkiewicz (2022).
