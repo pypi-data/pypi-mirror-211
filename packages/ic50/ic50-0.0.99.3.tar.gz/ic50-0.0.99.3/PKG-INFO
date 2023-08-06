@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ic50
+Version: 0.0.99.3
+Summary: IC50 prediction
+Author: Steve Niu
+Author-email: <niuacademics@gmail.com>
+Keywords: python,IC50
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+Calculate IC50/pIC50 values using a variety of methods.
