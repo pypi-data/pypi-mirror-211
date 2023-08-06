@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+ytdlpy/src/easy_yt_dlp_py.egg-info/PKG-INFO
+ytdlpy/src/easy_yt_dlp_py.egg-info/SOURCES.txt
+ytdlpy/src/easy_yt_dlp_py.egg-info/dependency_links.txt
+ytdlpy/src/easy_yt_dlp_py.egg-info/top_level.txt
+ytdlpy/src/ytdlpy.py
+ytdlpy/src/easy_yt_dlp_py.egg-info/SOURCES.txt
