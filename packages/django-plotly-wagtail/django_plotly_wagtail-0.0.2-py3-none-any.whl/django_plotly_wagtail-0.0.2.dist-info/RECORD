@@ -1,0 +1,13 @@
+dpwagtail/admin.py,sha256=m7l-r22-TdaYYR9aUxcplaE4kJZ9T8tGaf1UM8Dm-QM,286
+dpwagtail/app_name.py,sha256=Ytnkuy5w0Z-EohkVdTIjzMLW9t0F-SwAZgcWCTrebZw,23
+dpwagtail/dash_apps.py,sha256=Ib50p_O9dZFxY5ryyPQ8GtWpziLybNzcz05o07WDd-o,1188
+dpwagtail/models.py,sha256=hnwfkKiPFfysBVuKfRUEEvDvdHF1WUwXkFIxdmasMxw,5212
+dpwagtail/urls.py,sha256=i3tnWoPP3HVx0r4Sq7lJ_xIxWSvS50wxb2jmNTpg0sM,301
+dpwagtail/utils.py,sha256=vK672k7VFkLAADRqTXZx_9PD436tce9HFUlCyOHliHY,611
+dpwagtail/version.py,sha256=QvlVh4JTl3JL7jQAja76yKtT-IvF4631ASjWY1wS6AQ,22
+dpwagtail/views.py,sha256=L7MeEASA8wgJWLCr5Y9u5AZZUbBnTyXJ2dzZ3vfBcE0,151
+dpwagtail/templatetags/dpwagtail.py,sha256=GKCHo-rPBeS4_78_5SD9jPuEmDlyaKr43KMjPBCtxs8,468
+django_plotly_wagtail-0.0.2.dist-info/METADATA,sha256=tT4w9WBLCpviAxn3i7-uBzmxnxZTE2QrSY5eglqM-UI,998
+django_plotly_wagtail-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+django_plotly_wagtail-0.0.2.dist-info/top_level.txt,sha256=5IORdxQFA5tcwjjAFstFo8AWRXCdqbaom7_XC515lxA,10
+django_plotly_wagtail-0.0.2.dist-info/RECORD,,
