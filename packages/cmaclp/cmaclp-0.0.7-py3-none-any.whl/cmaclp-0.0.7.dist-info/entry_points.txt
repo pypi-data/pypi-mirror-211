@@ -1,0 +1,2 @@
+[console_scripts]
+SVM_prediction = cmaclp.SVM_prediction:main
