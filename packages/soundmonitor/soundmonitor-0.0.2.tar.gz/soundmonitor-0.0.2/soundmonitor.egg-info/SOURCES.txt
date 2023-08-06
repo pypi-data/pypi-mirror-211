@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+soundmonitor/__init__.py
+soundmonitor/modules.py
+soundmonitor/utilities.py
+soundmonitor.egg-info/PKG-INFO
+soundmonitor.egg-info/SOURCES.txt
+soundmonitor.egg-info/dependency_links.txt
+soundmonitor.egg-info/requires.txt
+soundmonitor.egg-info/top_level.txt
