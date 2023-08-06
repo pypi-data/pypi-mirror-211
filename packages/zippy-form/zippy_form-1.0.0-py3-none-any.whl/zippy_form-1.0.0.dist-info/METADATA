@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: zippy-form
+Version: 1.0.0
+Summary: Quick form-development package for django with no code.
+Author: Karthick Sivakumar
+Author-email: karthik@zaigoinfotech.com
+Description-Content-Type: text/markdown
+Requires-Dist: Django (>=3.0.0)
+Requires-Dist: djangorestframework (>=3.0.0)
+Requires-Dist: jsonschema (>=4.17.3)
+
+Zippy Form is a django package which allows to create forms with dynamic fields with no code.
+
+### Setup
+
+Add the package name `zippy_form`  to your project’s settings.py file.
+
+Run the below command on the terminal to create package migration files.
+> python manage.py makemigrations zippy_form
+
+Run the below command on the terminal to migrate.
+> python manage.py migrate
+
+Add the following url path to your project’s url.py file:
+> path('form/', include('zippy_form.urls'))
+
+### API Documentation
+[Click Here](https://zippyform.docs.apiary.io) to view API Documentation.
