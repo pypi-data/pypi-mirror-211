@@ -1,0 +1,16 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_inference.py,sha256=PClQPog1OljP7mLhnpL_ovIC_xQRktuUb4lqBzAuzoE,404
+tests/test_server.py,sha256=STe94tI_EMG6qLYxLTOqvM6LGJxSod1aAVl3q6zzQIw,1547
+text_generation_api/__init__.py,sha256=x0TXwgxUg0u-9netZEIgc1sGe53pdHVezdqsFuO7B58,49
+text_generation_api/cmd.py,sha256=8dtoO7j1-mn6d4eyYUmU-9M79VLBY4RZKmxwgnFhaBI,2379
+text_generation_api/default.py,sha256=0S2chnaWF_O1GXiQiBgIhF5Ak9OAwrX9n68MECGdH4Q,558
+text_generation_api/endpoint.py,sha256=2XGB0UluonnoCdENN-gExuIUIU05AE4HQcYcxzqrEwM,568
+text_generation_api/inference.py,sha256=BZJWMBbcd457Uom9gwoWCgv6k8pg_uL_j1oIHCvAh_U,5306
+text_generation_api/server.py,sha256=-0XAM6hQDPoNGFx8pgKCwsLgGwjLKzHzj3Kybbklprc,1259
+text_generation_api/utils.py,sha256=zy6U01K25E4KngdkWicLLpWt-DZkJ11MSuG6_WjooWc,1239
+text_generation_api-0.0.1.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+text_generation_api-0.0.1.dist-info/METADATA,sha256=RiP1a2AeMppZ3mZugfTsf0jqbbBSo_VrexAPZMkraaE,3707
+text_generation_api-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+text_generation_api-0.0.1.dist-info/entry_points.txt,sha256=QISe0z49Bw25A97Znl-tHrS2D7yJjkvCrUImNMkVNas,69
+text_generation_api-0.0.1.dist-info/top_level.txt,sha256=LeeDXnG0Y9tMO-M7neEiVd7Vu6fypPosUiOnuuxlPKQ,26
+text_generation_api-0.0.1.dist-info/RECORD,,
