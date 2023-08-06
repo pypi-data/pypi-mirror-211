@@ -1,0 +1,5 @@
+autora-core
+torch
+
+[dev]
+autora-core[dev]
