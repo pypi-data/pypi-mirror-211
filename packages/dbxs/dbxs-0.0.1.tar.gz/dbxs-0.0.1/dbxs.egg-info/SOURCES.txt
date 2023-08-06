@@ -1,0 +1,5 @@
+setup.py
+dbxs.egg-info/PKG-INFO
+dbxs.egg-info/SOURCES.txt
+dbxs.egg-info/dependency_links.txt
+dbxs.egg-info/top_level.txt
