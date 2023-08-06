@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "vlogs"
+version = "1.0.5"
+description = "CUBETIQ vLogs SDK for Python"
+authors = ["Sambo Chea <sombochea@cubetiqs.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "vlogs"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+# requests = "^2.31.0"
+httpx = "^0.24.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.3.1"
+pytest-asyncio = "^0.21.0"
+
+# [tool.poetry.scripts]
+# test = "pytest"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
