@@ -1,0 +1,2 @@
+[datasette]
+sqlite_hello = datasette_sqlite_hello
