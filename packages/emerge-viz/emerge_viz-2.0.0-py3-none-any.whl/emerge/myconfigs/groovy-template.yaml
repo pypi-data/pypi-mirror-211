@@ -1,0 +1,42 @@
+---
+project_name: Nextflow
+loglevel: info
+analyses:
+- analysis_name: groovy check
+  source_directory: /Users/grzegorz.lato/private/github/groovy/nextflow
+  # git_directory: /Users/grzegorz.lato/private/github/nextflow
+  # git_commit_limit: 20
+  only_permit_languages:
+  - groovy
+  ignore_dependencies_containing:
+  - java.nio
+  - groovyx
+  - groovy.
+  - spock.lang
+  only_permit_file_extensions:
+  - .groovy
+  file_scan:
+  - ws_complexity
+  # - git_metrics
+  - number_of_methods
+  - source_lines_of_code
+  - dependency_graph
+  - fan_in_out
+  - louvain_modularity
+  - tfidf
+  entity_scan:
+  - dependency_graph
+  - inheritance_graph
+  - complete_graph
+  - source_lines_of_code
+  - number_of_methods
+  - fan_in_out
+  - louvain_modularity
+  - tfidf
+  export:
+  - directory: /Users/grzegorz.lato/private/temp/emerge-output/groovy/nextflow
+  - graphml
+  - json
+  - tabular_file
+  - tabular_console_overall
+  - d3

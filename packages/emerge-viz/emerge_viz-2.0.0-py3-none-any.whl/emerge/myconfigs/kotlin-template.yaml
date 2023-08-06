@@ -1,0 +1,42 @@
+---
+project_name: kotlin_example_project
+loglevel: info
+analyses:
+- analysis_name: full kotlin check
+  source_directory: /Users/grzegorz.lato/private/github/kotlin/compose-samples
+  # git_directory: /Users/grzegorz.lato/private/github/kotlin/compose-samples
+  # git_commit_limit: 500
+  # git_exclude_merge_commits: true
+  only_permit_languages:
+  - kotlin
+  ignore_dependencies_containing:
+  - android
+  - java
+  - javax
+  only_permit_file_extensions:
+  - .kt
+  file_scan:
+  - ws_complexity
+  # - git_metrics
+  - number_of_methods
+  - source_lines_of_code
+  - dependency_graph
+  - fan_in_out
+  - louvain_modularity
+  - tfidf
+  entity_scan:
+  - dependency_graph
+  - inheritance_graph
+  - complete_graph
+  - source_lines_of_code
+  - number_of_methods
+  - fan_in_out
+  - louvain_modularity
+  - tfidf
+  export:
+  - directory: /Users/grzegorz.lato/private/temp/emerge-output/kotlin/compose-samples
+  - graphml
+  - json
+  - tabular_file
+  - tabular_console_overall
+  - d3

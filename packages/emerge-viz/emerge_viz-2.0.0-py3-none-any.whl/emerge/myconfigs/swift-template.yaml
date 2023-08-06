@@ -1,0 +1,61 @@
+---
+project_name: swift example
+loglevel: info
+analyses:
+- analysis_name: swift check
+  # Signal-iOS
+  source_directory: /Users/grzegorz.lato/private/github/swift/Signal-iOS/Signal/src
+  #git_directory: /Users/grzegorz.lato/private/github/swift/Signal-iOS
+
+  # source_directory: /Users/grzegorz.lato/private/github/swift/CryptoSwift
+  # git_directory: /Users/grzegorz.lato/private/github/swift/CryptoSwift
+
+  # git_commit_limit: 150
+  only_permit_languages:
+  - swift
+  only_permit_file_extensions:
+  - .swift
+  ignore_entities_containing:
+  - _Previews
+  - Props
+  - Tests
+  ignore_entities_matching:
+  - Bool
+  - CodingKeys
+  - Date
+  file_scan:
+  - ws_complexity
+  # - git_metrics
+  - number_of_methods
+  - source_lines_of_code
+  - dependency_graph
+  - fan_in_out
+  - louvain_modularity
+  - tfidf
+  entity_scan:
+  - inheritance_graph
+  - dependency_graph
+  - complete_graph
+  - source_lines_of_code
+  - number_of_methods
+  - fan_in_out
+  - louvain_modularity
+  - tfidf
+  export:
+  - directory: /Users/grzegorz.lato/private/temp/emerge-output/swift/signal-ios
+  - graphml
+  - json
+  - tabular_file
+  - tabular_console_overall
+  - d3
+  appconfig:
+  - radius_fan_out: 0.1
+  - radius_louvain: 0.02
+  - radius_sloc: 0.005
+  - radius_number_of_methods: 0.05
+  - heatmap_sloc_active: true
+  - heatmap_fan_out_active: true
+  - heatmap_sloc_weight: 1.2
+  - heatmap_fan_out_weight: 1.4
+  - heatmap_score_base: 10
+  - heatmap_score_limit: 700

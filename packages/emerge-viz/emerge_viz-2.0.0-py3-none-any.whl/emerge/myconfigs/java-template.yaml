@@ -1,0 +1,108 @@
+---
+project_name: spring boot
+loglevel: info
+analyses:
+- analysis_name: java analysis
+
+  # spring boot
+  source_directory: /Users/grzegorz.lato/private/github/java/spring-boot/spring-boot-project/spring-boot-tools
+  git_directory: /Users/grzegorz.lato/private/github/java/spring-boot
+  git_commit_limit: 200
+  
+  # quarkus core
+  #source_directory: /Users/grzegorz.lato/private/github/java/quarkus/core
+  #git_directory: /Users/grzegorz.lato/private/github/java/quarkus
+
+  # junit5
+  #source_directory: /Users/grzegorz.lato/private/github/java/junit5
+  #git_directory: /Users/grzegorz.lato/private/github/java/junit5
+
+  # spring core
+  # source_directory: /Users/grzegorz.lato/private/github/java/spring-framework/spring-core
+  # git_directory: /Users/grzegorz.lato/private/github/java/spring-framework
+  # git_commit_limit: 200
+
+  only_permit_languages:
+  - java
+  - kotlin
+  only_permit_file_extensions:
+  - .java
+  - .kt
+  ignore_dependencies_containing:
+  - java.util
+  - java.lang
+  - java.io
+  - java.nio
+  - java.net
+  - java.time
+  - java.beans
+  - java.math
+  - java.awt
+  - java.security
+  - java.sql
+  - javax
+  - org.apache
+  - android.util
+  - android.database
+  - android.text
+  - androidx.annotation
+  - android.content
+  - org.thoughtcrime.securesms.r
+  - android.view.view
+  - android.view.viewgroup
+  - androidx.lifecycle
+  - org.signal.core.util.logging
+  - androidx.net
+  - android.widget
+  - com.fasterxml.jackson
+  - android.os
+  - androidx.recyclerview
+  - android.graphics
+  - android.net
+  - org.junit
+  - android.
+  - androidx.
+  - stringutils
+  - assert
+  file_scan:
+  - ws_complexity
+  - git_metrics
+  - number_of_methods
+  - source_lines_of_code
+  - dependency_graph
+  - fan_in_out
+  - louvain_modularity
+  - tfidf
+  entity_scan:
+  - dependency_graph
+  - inheritance_graph
+  - complete_graph
+  - source_lines_of_code
+  - number_of_methods
+  - fan_in_out
+  - louvain_modularity
+  - tfidf
+  export:
+  # quarkus core
+  #- directory: /Users/grzegorz.lato/private/temp/emerge-output/java/quarkus
+  # junit5
+  #- directory: /Users/grzegorz.lato/private/temp/emerge-output/java/junit5
+  # spring
+  # - directory: /Users/grzegorz.lato/private/temp/emerge-output/java/spring
+  - directory: /Users/grzegorz.lato/private/temp/emerge-output/java/springboot
+  - graphml
+  - json
+  - tabular_file
+  - tabular_console_overall
+  - d3
+  appconfig:
+  - radius_fan_out: 0.15
+  - radius_louvain: 0.02
+  - radius_sloc: 0.003
+  - radius_number_of_methods: 0.05
+  - heatmap_sloc_active: true
+  - heatmap_fan_out_active: true
+  - heatmap_sloc_weight: 1.1
+  - heatmap_fan_out_weight: 1.5
+  - heatmap_score_base: 10
+  - heatmap_score_limit: 800
