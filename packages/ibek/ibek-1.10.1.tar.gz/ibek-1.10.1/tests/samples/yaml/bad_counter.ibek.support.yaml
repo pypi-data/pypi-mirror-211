@@ -1,0 +1,15 @@
+module: epics
+defs:
+  - name: InterruptVectorVME
+    description: |
+      Reserve an interrupt vector for use with VME hardware.
+    args:
+      - type: id
+        name: name
+        description: A name for an interrupt vector variable
+
+    env_vars:
+      - name: "{{ name }}"
+        value: '{{  __utils__.counter("InterruptVector", start=192, stop=255) }}'
+      - name: "second_{{ name }}"
+        value: '{{  __utils__.counter("InterruptVector", start=193, stop=255) }}'
