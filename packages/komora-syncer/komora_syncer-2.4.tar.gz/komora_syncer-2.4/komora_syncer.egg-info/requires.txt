@@ -1,0 +1,5 @@
+appdirs==1.4.4
+click==8.0.3
+kani-fork-pynetbox
+python-slugify==5.0.2
+pyyaml==6.0
