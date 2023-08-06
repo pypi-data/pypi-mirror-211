@@ -1,0 +1,10 @@
+anoncreds/__init__.py,sha256=1lp6qgcY4pkWHVaOIH03kRRcbJ3BZ5TMCucLv8NBfLE,1375
+anoncreds/bindings.py,sha256=737V9KEiPyd17PGuZcBJwl1pBXTlQZYkcKzKPtW1Efk,27290
+anoncreds/error.py,sha256=zPOLyC77n2cIT6xwRK6D7jFc3rtVk8u-lNuNdqbhTb4,506
+anoncreds/libanoncreds.so,sha256=ilWZqHJNk0pJgfsOGflOVb21ejawNtGGrDZy04EL-Qs,9487512
+anoncreds/types.py,sha256=hvFlK5zXUTraGrF2iicZM9RgLt43a7-1MGsTakLrCL8,24851
+anoncreds/version.py,sha256=IX520pP0lrSE08HUDRGoX0zyCH-5a4VKL4G8bfWJzVY,70
+anoncreds-0.1.0.dev19.dist-info/METADATA,sha256=6FDCqboHzs3Usftzuo7HzJjGv583pUbDKNyrCcgGzXI,1723
+anoncreds-0.1.0.dev19.dist-info/WHEEL,sha256=6Gkx0jfdGGoQpdAIF-2583oTto6ponzREX8Bgv22xNs,110
+anoncreds-0.1.0.dev19.dist-info/top_level.txt,sha256=ND5gg1vv3-5hggRrRac7Cd9aqVGfxj8ouQjEZZhzcKg,10
+anoncreds-0.1.0.dev19.dist-info/RECORD,,
