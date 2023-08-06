@@ -1,0 +1,12 @@
+edx_arch_experiments/__init__.py,sha256=8HBxtiTBF-Zy8hYuDR2jXeH5eup9CP5xEW2ta7BTHx0,114
+edx_arch_experiments/apps.py,sha256=zR2HSy8TgcGOPge1XXK8e2U68d8RxeCYFZZ-cCW0Hj8,677
+edx_arch_experiments/settings/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edx_arch_experiments/settings/common.py,sha256=MWPkOhcaaNtTc95vxx6-Ue2zKsFeUxP4hd92Iu3kIJA,123
+edx_arch_experiments/settings/production.py,sha256=K570ZxtceX153owtFYserTvXND3MF8OuPGYm09PyLHU,111
+edx_arch_experiments/tests/test_stub.py,sha256=YtWWkgJcFHCpav8IVrH89T4Q-wBjtCwpTYSQXyH1ggw,266
+edx_arch_experiments-2.0.0.dist-info/LICENSE.txt,sha256=QTW2QN7q3XszgUAXm9Dzgtu5LXYKbR1SGnqMa7ufEuY,35139
+edx_arch_experiments-2.0.0.dist-info/METADATA,sha256=BDgKXnod-TpdnnWAhmypFJiqtNHTa9oXjUpKgpLz56E,6922
+edx_arch_experiments-2.0.0.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+edx_arch_experiments-2.0.0.dist-info/entry_points.txt,sha256=4g6a59Ygl8yWx8xCjCz7-ysQL_da3XyRKWlBmHmSGXc,86
+edx_arch_experiments-2.0.0.dist-info/top_level.txt,sha256=pz3RuQJI7gmAW-L15zSfXooQRCX4Ld2RSfzP7sTaqZY,21
+edx_arch_experiments-2.0.0.dist-info/RECORD,,
