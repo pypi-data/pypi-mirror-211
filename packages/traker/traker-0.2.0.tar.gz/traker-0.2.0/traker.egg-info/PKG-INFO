@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: traker
+Version: 0.2.0
+Summary: TRAK: Attributing Model Behavior at Scale
+Author: MadryLab
+Author-email: trak@mit.edu
+Provides-Extra: tests
+Provides-Extra: fast
+
+Check https://trak.csail.mit.edu/ to learn more about TRAK
