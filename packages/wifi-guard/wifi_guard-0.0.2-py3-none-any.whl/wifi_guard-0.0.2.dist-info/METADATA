@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: wifi-guard
+Version: 0.0.2
+Summary: A simple WiFi Guard package
+Home-page: https://github.com/wifi-guard/wifi-guard
+Author: Lee Jongyoung
+Author-email: leejongyoung@icloud.com
+License: MIT
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: platform
+Requires-Dist: subprocess
+Requires-Dist: re
+Requires-Dist: time
+
