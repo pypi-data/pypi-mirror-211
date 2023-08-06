@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: crip
+Version: 1.6.3
+Summary: An all-in-one tool for Cone-Beam CT Data IO, Pre/Post-process, and Physics, Dual Energy, Low Dose researches and everything only except Reconstruction.
+Home-page: https://github.com/z0gSh1u/crip
+Author: z0gSh1u, CandleHouse
+Author-email: zx.cs@qq.com
+License: MIT License
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: tifffile
+Requires-Dist: pydicom
+Requires-Dist: natsort
+Requires-Dist: matplotlib
+Requires-Dist: scikit-image
+
