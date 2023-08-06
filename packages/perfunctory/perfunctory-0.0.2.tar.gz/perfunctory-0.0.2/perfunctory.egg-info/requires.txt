@@ -1,0 +1,13 @@
+numpy
+pyttsx3
+pyaudio
+speedtest-cli
+pynput
+SpeechRecognition
+geocoder
+googlesearch-python
+PyDictionary
+psutil
+calendar
+wheel
+twine
