@@ -1,0 +1,11 @@
+LICENSE
+README.md
+local_environment_installation_guide.txt
+requirements.txt
+setup.py
+src/Implementation.ipynb
+src/Implementation.py
+src/myPackageLicensePrototype.egg-info/PKG-INFO
+src/myPackageLicensePrototype.egg-info/SOURCES.txt
+src/myPackageLicensePrototype.egg-info/dependency_links.txt
+src/myPackageLicensePrototype.egg-info/top_level.txt
