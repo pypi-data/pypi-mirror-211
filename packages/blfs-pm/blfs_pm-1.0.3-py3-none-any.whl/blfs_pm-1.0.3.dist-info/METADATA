@@ -1,0 +1,108 @@
+Metadata-Version: 2.1
+Name: blfs-pm
+Version: 1.0.3
+Summary: Package manager for Beyond Linux from Scratch (BLFS) system
+Home-page: https://github.com/ahron-maslin/BLFS-automation
+Maintainer: Aharon Maslin
+Maintainer-email: aronmas613@gmail.com
+License: LGPL
+Keywords: BLFS,LFS,Package Manager,automation
+Platform: Linux
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python
+Classifier: Topic :: Education
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.md
+Requires-Dist: beautifulsoup4 (==4.12.2)
+Requires-Dist: bs4 (==0.0.1)
+Requires-Dist: certifi (==2022.12.7)
+Requires-Dist: charset-normalizer (==3.1.0)
+Requires-Dist: idna (==3.4)
+Requires-Dist: requests (==2.31.0)
+Requires-Dist: soupsieve (==2.4)
+Requires-Dist: termcolor (==2.2.0)
+Requires-Dist: urllib3 (==1.26.15)
+Requires-Dist: wget (==3.2)
+Provides-Extra: dev
+
+# BLFS-automation:
+"A simple Python package that simplifies your BLFS project in many ways..."
+
+## About this project:
+This project is designed for people who have built their own LinuxFromScratch (LFS) system, and are now working on the next stage - BeyondLinuxFromScratch (BLFS).
+BLFS packages often require many other dependencies to work, and sometimes it is a bit cumbersome to install all of those. ```blfs-pm``` aims to make it easier to install these packages without the stress of downloading everything and calculating, while simultaneously allowing you to still get the full build experience.
+
+
+## Download and installation:
+To get a local copy up and running follow these steps.
+
+### Prerequisites:
+<ul>
+    <li>A working LFS system (check them out at https://www.linuxfromscratch.org/)</li>
+    <li>A working internet connection - you may need to install a couple of BLFS packages like NetworkManager, DHCPClient, and WPA-supplicant.</li>
+    <li>A working Python environment</li>
+    <li>Python3 package manager (Pip)</li>
+    <li>Git (https://www.linuxfromscratch.org/blfs/view/svn/general/git.html)</li>
+</ul>
+
+### Installation:
+
+```
+pip install blfs-pm
+```
+
+## Usage:
+It is recommended that the package should always be run as root, in order to prevent errors when installing packages to the system.
+
+
+This package has many options to list, download, list commands, or install a given package.
+Note: once again it is *highly* recommended that you always run this as ```root```!
+
+Usage: ```blfs-pm [-h] [-a] [-b PACKAGE] [-c PACKAGE] [-d PACKAGE] [-f] [-l PACKAGE] [-o] [-r] [-s PACKAGE] [--systemd]```
+
+Note: It is recommended to follow along the installation process in the BLFS book. ```blfs-pm``` is not perfect and I have not tested every BLFS package. There are still some issues with circular dependencies, and at the moment it is best to monitor everything to prevent problems. Additionally, the ```-b (build)``` option will prompt the user to run EVERY command provided for the specific package. Some commands can only be run if optional dependencies are installed (like Texlive, Docbook, etc.). Furthermore, some packages require further kernel configuration (and recompilation) as a prerequisite for installation.
+
+```
+  -h, --help                        show this help message and exit
+
+  -a, --all                         Downloads ALL BLFS packages - uses a lot of time and space.
+
+  -b PACKAGE, --build PACKAGE       Install a given Package on the system.
+
+  -c PACKAGE, --commands PACKAGE    List installation (without installing) commands for a given package.
+  
+  -d PACKAGE, --download PACKAGE    Downloads a given BLFS package along with all of its dependencies.
+
+  -f, --force                       Force package installation even though it is already installed
+
+  -l PACKAGE, --list PACKAGE        Lists all of the dependencies for a given BLFS package in order of installation.
+
+  -o, --optional                    List/download optional packages.
+
+  -r, --recommended                 List/download recommended packages.
+
+  -s PACKAGE, --search PACKAGE      Search for a given package.
+  --systemd                         Pass this flag if you built LFS with Systemd
+  ```
+
+## Additional options:
+
+
+## Contributers: 
+Ahron Maslin (creator, maintainer, and designer), Josh W. (moral support), Dan the Man (Chief Psychologist)
+
+## Todo
+- [ ] implement different db's for different LFS versions
+- [ ] add ```--info``` flag to display information about a package
+- [ ] query to install a package if only one search result was found
+
+
+
