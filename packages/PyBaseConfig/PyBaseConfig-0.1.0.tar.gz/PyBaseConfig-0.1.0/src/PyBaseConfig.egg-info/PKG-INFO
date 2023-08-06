@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: PyBaseConfig
+Version: 0.1.0
+Summary: Ein Python-Paket zur Verwaltung Ihrer Umgebungsvariablen.
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# PyBaseConfig
+
+PyBaseConfig ist ein Python-Paket, das Ihnen beim Lesen und Verwalten Ihrer Umgebungsvariablen hilft. 
+
+## Installation
+
+Sie kÃ¶nnen dieses Paket mit pip installieren:
+
+
+pip install pybaseconfig
+
+
+## Verwendung
+
+Hier ist ein Beispiel, wie Sie dieses Paket verwenden kÃ¶nnen:
+
+```python
+from pybaseconfig import BaseSettings
+
+class Config(BaseSettings):
+    email: str
+    password: str
+    server: str
+    port: int
+
+config = Config()
+print(config.email)
+```
+
+

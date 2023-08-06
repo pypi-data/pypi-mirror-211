@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/PyBaseConfig.egg-info/PKG-INFO
+src/PyBaseConfig.egg-info/SOURCES.txt
+src/PyBaseConfig.egg-info/dependency_links.txt
+src/PyBaseConfig.egg-info/top_level.txt
+src/pybaseconfig/__init__.py
+src/pybaseconfig/env_reader.py
