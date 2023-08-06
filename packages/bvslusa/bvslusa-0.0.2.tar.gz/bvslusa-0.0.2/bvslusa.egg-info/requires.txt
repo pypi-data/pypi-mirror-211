@@ -1,0 +1,7 @@
+fastcore
+pandas
+numpy
+scikit-learn
+optbinning
+
+[dev]
