@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "phone-number-validator-lksl2jg"
+version = "0.1.0"
+description = ""
+authors = ["Felipe <104157442+justafewwords4@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "phone_number_validator"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.31.0"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.3.1"
+requests-mock = "^1.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
