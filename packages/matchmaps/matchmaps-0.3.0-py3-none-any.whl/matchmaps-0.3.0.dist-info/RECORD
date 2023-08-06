@@ -1,0 +1,10 @@
+matchmaps/__init__.py,sha256=L-3AOGjTAsCo5tzFAtk4tuMewL9B7hyU2hZPIFKBlw8,303
+matchmaps/_compute_mr_diff.py,sha256=EEovv2m-hV2cWM_3ldjTm_oaRIBoi3ralfAC0CiDcgQ,13894
+matchmaps/_compute_ncs_diff.py,sha256=hIuPAjayQaxphu7dhryvvpUJ5bxbPdOf_4qmhYs90Hc,7530
+matchmaps/_compute_realspace_diff.py,sha256=b9Usa1d2OwZHCcOAAXQO14KcvCyTyXltElFMk_NHM10,12085
+matchmaps/_utils.py,sha256=eSYYHPWAGc7XoOMksl-S0aNyhnyGES0835tFzkJAorc,26050
+matchmaps-0.3.0.dist-info/METADATA,sha256=kOAqQer9fY2rPppzgXDBdCU0Dn_qnRrQBuE2M8YYKEU,2366
+matchmaps-0.3.0.dist-info/WHEEL,sha256=y1bSCq4r5i4nMmpXeUJMqs3ipKvkZObrIXSvJHm1qCI,87
+matchmaps-0.3.0.dist-info/entry_points.txt,sha256=Z1D7awXq-GVPtPYEgxE3V3frAVJX0tjEee02t9opW40,165
+matchmaps-0.3.0.dist-info/licenses/LICENSE,sha256=6jbcNukLFiUkZW4rBidmDfVoehv9VkjP8alX8MPA9Xw,1514
+matchmaps-0.3.0.dist-info/RECORD,,
