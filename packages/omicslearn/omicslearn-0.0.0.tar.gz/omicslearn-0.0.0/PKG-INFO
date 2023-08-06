@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: omicslearn
+Version: 0.0.0
+Summary: Awesome omicslearn
+Author: Omicslearn developers
+Maintainer-email: Martin Perez-Guevara <mperezguevara@gmail.com>
+License: new BSD
+License-File: LICENSE
+Keywords: omics
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# OmicsLearn
+
+An awesome package, that is omicslearn
