@@ -1,0 +1,29 @@
+{
+  "descriptionHash": "8A6443BA66A069C98588A05FEE1987ACA3DC9E836682619B8AF9FA9D1531716CD235A7CD3A75B31B7CBBB82C66BA1CD7A16C5407F2EBEF22307C84E8FEA9D888",
+  "descriptionLocation": "/Users/jackdelahunt/Projects/sdks-demo/service-accounts.yaml",
+  "lockFileVersion": "1.0.0",
+  "kiotaVersion": "1.1.1",
+  "clientClassName": "ApiClient",
+  "clientNamespaceName": "ApiSdk",
+  "language": "Python",
+  "usesBackingStore": false,
+  "includeAdditionalData": true,
+  "serializers": [
+    "Microsoft.Kiota.Serialization.Json.JsonSerializationWriterFactory",
+    "Microsoft.Kiota.Serialization.Text.TextSerializationWriterFactory",
+    "Microsoft.Kiota.Serialization.Form.FormSerializationWriterFactory"
+  ],
+  "deserializers": [
+    "Microsoft.Kiota.Serialization.Json.JsonParseNodeFactory",
+    "Microsoft.Kiota.Serialization.Text.TextParseNodeFactory",
+    "Microsoft.Kiota.Serialization.Form.FormParseNodeFactory"
+  ],
+  "structuredMimeTypes": [
+    "application/json",
+    "text/plain",
+    "application/x-www-form-urlencoded"
+  ],
+  "includePatterns": [],
+  "excludePatterns": [],
+  "disabledValidationRules": []
+}
