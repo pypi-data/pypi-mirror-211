@@ -1,0 +1,8 @@
+PyGithub>=1.54
+PyYAML>=5.1
+future
+ruamel.yaml
+ruamel.yaml.jinja2
+six
+urllib3<2
+yaclifw<0.3,>=0.2.0
