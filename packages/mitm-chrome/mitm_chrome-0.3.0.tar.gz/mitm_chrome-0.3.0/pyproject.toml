@@ -1,0 +1,63 @@
+[project]
+name = "mitm_chrome"
+version = "0.3.0"
+description = "Integrate chrome with mitmproxy."
+authors = [
+    { name = "林玮 (Jade Lin)", email = "linw1995@icloud.com" },
+]
+dependencies = [
+    "mitmproxy<10,>=9",
+]
+requires-python = ">=3.10,<4.0"
+readme = "README.md"
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.10",
+    "Development Status :: 4 - Beta",
+    "Operating System :: POSIX",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: Microsoft :: Windows",
+]
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+homepage = "https://github.com/linw1995/mitm_chrome"
+repository = "https://github.com/linw1995/mitm_chrome"
+
+[project.scripts]
+mitm_chrome = "mitm_chrome:cli"
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "0.1.2"
+version_files = [
+    "pyproject.toml:version",
+]
+tag_format = "$version"
+
+[tool.isort]
+profile = "black"
+import_heading_stdlib = "Standard Library"
+import_heading_thirdparty = "Third Party Library"
+import_heading_firstparty = "First Party Library"
+import_heading_localfolder = "Local Folder"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "flake8-bugbear<21.0.0,>=20.11.1",
+]
+
+[tool.pdm.build]
+includes = [
+    "CHANGELOG.md",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
