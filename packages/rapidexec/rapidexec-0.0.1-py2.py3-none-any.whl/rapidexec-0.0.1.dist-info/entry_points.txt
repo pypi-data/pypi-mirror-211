@@ -1,0 +1,2 @@
+[console_scripts]
+rapidexec = rapidexec.main:cli
