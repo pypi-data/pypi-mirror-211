@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: gwpconfig
+Version: 1.0.0
+Summary: Green-Wall-Project Python library with configuration modules for entire project.
+Author: Gal Sajko, Jure Pavlovič
+License: MIT
+License-File: LICENSE
+
