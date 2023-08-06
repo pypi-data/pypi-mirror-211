@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pythonfun4872
+Version: 0.0.1
+Summary: A small example package
+Author-email: Example Author <author@example.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+placeholder readme
