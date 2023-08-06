@@ -1,0 +1,10 @@
+notas_musicais/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+notas_musicais/acordes.py,sha256=RKcgCzpAmYkk4YRkrPwJU5bqmK8WXXeEWO5kapWN4iw,2939
+notas_musicais/campo_harmonico.py,sha256=BZcfBKRqzoWgBj8DkXXN_Mo8Dav0NrBJa-t3rjxmC6Q,2209
+notas_musicais/cli.py,sha256=EUbqK912_AJgNthWSOORva7rMLI2hw84GImoCOFISZE,1309
+notas_musicais/escalas.py,sha256=HoYTt36YprBJLgmsPW4HNo3qms6x3_oWQ2XQj68KtpU,2853
+notas_musicais_kylefelipe-0.1.0.dist-info/LICENSE,sha256=gLUlsJHptSk7xNVXeZOF9rDvrasBJL6Eiz920UrVAEU,257
+notas_musicais_kylefelipe-0.1.0.dist-info/METADATA,sha256=2WgtFeQBu-9gplyndSO3X3ogjH5gZS6tx05rOJ6FWCQ,9019
+notas_musicais_kylefelipe-0.1.0.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+notas_musicais_kylefelipe-0.1.0.dist-info/entry_points.txt,sha256=saYsjitNzMbarGPwduAyu7Dks6aiDEW1K0SwH40IKAc,57
+notas_musicais_kylefelipe-0.1.0.dist-info/RECORD,,
