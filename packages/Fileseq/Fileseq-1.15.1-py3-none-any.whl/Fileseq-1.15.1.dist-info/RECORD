@@ -1,0 +1,12 @@
+fileseq/__init__.py,sha256=BYiB5SQb9jMGdn18SnQ_SXNQ3MGIegvf5wR-oj_1hTc,5036
+fileseq/__version__.py,sha256=ohUoeoMs3lQ7z1Z44JTWB3spvd4trzEPxKzLEoBK6JU,23
+fileseq/constants.py,sha256=-_1SqSi7iiC89BajZ53TkBnnAht-srA96OTmKRjrlCg,6758
+fileseq/exceptions.py,sha256=pBZa_q2bvsmHvSHAILuCsb1bUVEZ8ubWJuSXqf5xMCA,453
+fileseq/filesequence.py,sha256=NpY5fq9GRIvXLcCOvBMYlnyI99-YvJyg9cDJSDiAx1s,52112
+fileseq/frameset.py,sha256=pk83sQ33jMyGdWw8Bs5qT6GHt0ednv83RNj61HbORV4,47879
+fileseq/utils.py,sha256=4R9wMRevCSLWRx9I4xqtis6g-a-Byj0srcpfqftTO-g,13322
+Fileseq-1.15.1.dist-info/LICENSE,sha256=bEMuW1VCrKdWQapVaVoQ-KwuwWnODSLVfGxzzM1sdUM,1140
+Fileseq-1.15.1.dist-info/METADATA,sha256=O7X-_r8K_VUuS590tSeDPVNLs7msuRbD2l5yuLF_h84,5568
+Fileseq-1.15.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+Fileseq-1.15.1.dist-info/top_level.txt,sha256=Z-u4Bkx5BxyXGkriLWP5UBVq9NrZC8vzLDt6qc-pxds,8
+Fileseq-1.15.1.dist-info/RECORD,,
