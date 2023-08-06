@@ -1,0 +1,9 @@
+badlands>=2.2.3
+badlands-companion
+similaritymeasures
+doegen
+numpy
+pandas
+networkx
+scipy
+py-cpuinfo
