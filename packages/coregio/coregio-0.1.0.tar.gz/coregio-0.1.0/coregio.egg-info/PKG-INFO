@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: coregio
+Version: 0.1.0
+Summary: Python container registry API library.
+Author-email: Ales Raszka <araszka@redhat.com>
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: tox
+Provides-Extra: coregio-dev
+Provides-Extra: coregio
+
+# Regio
+
+Python container registry API library.
