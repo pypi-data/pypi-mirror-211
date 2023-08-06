@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+consulta_ufv_bolivia.egg-info/PKG-INFO
+consulta_ufv_bolivia.egg-info/SOURCES.txt
+consulta_ufv_bolivia.egg-info/dependency_links.txt
+consulta_ufv_bolivia.egg-info/requires.txt
+consulta_ufv_bolivia.egg-info/top_level.txt
+consultaufv/__init__.py
+consultaufv/cotizacion.py
