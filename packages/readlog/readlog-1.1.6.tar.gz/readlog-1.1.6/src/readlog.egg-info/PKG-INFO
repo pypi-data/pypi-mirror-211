@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: readlog
+Version: 1.1.6
+Summary: Read themo info from lammps output file or log file
+Home-page: https://github.com/eastsheng/readlog
+Author: CHENDONGSHENG
+Author-email: eastsheng@hotmail.com
+Description-Content-Type: text/markdown
+
+## ReadLog
+
+- A python code to read thermo info from lammps log file 
+
+### Installation 
+
+```bash
+git clone https://github.com/eastsheng/readlog.git
+cd readlog
+pip install .
+# or
+pip install readlog
+```
+
+### Requirements
+
+- numpy
+- pandas
+- matplotlib
+
+### Usage 
+
+- run `plot_themo.py` in `demo` folder:
+
+  ```bash
+  python plot_thermo.py
+  ```
+
+- out:
+- ![](./demo/imgs/PotEng.png)
+
+
+
+### Fixed
+
+- [x] Adapting to incomplete thermo information.
+
+  
+
