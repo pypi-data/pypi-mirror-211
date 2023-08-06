@@ -1,0 +1,11 @@
+cloudaux/__about__.py,sha256=ed-xLMnU7jXvkbf8Y_G04x4maHg80rJjlr0XtOg9jqg,557
+cloudaux/__init__.py,sha256=1Hc1ec_gL0oe3uRyeqbBn4VW6rmEtK8NPpMFXj2Zjgs,3067
+cloudaux/aws/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloudaux/aws/decorators.py,sha256=gdXHtCu5nkPh380PY_4T68llGqTZWFX6uqHDX3cQ_CA,1236
+cloudaux/aws/sts.py,sha256=eu7sY_VXhv55RvPD44Y33LRsrR-gfRcHF0Jz1Y96Sjg,8632
+cloudaux_lite-1.0.0.dist-info/AUTHORS,sha256=azhFWjxYVqaH6pek0p1tcaUOW5CU0E50-cvRvHqiAjA,197
+cloudaux_lite-1.0.0.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+cloudaux_lite-1.0.0.dist-info/METADATA,sha256=vU5drEHbJLmjnZ9P5lvgdJRvQJRGZlWYfHBbuRAfACc,3631
+cloudaux_lite-1.0.0.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+cloudaux_lite-1.0.0.dist-info/top_level.txt,sha256=p9vqMXhP-vVvmSjA1rIp8lGnaeloYta9SdqEOZwqYzg,9
+cloudaux_lite-1.0.0.dist-info/RECORD,,
