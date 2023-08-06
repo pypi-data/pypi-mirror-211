@@ -1,0 +1,15 @@
+openplugin/__init__.py,sha256=9ArEoYJz9ga0ubkJ0qTRN_kx6aG3zYT0Oc2ORHif23g,754
+openplugin/__main__.py,sha256=cgueznoga9qwbaR1UfGHR7Wo69ws0f4jU7OlsduO5kg,49
+openplugin/api/__init__.py,sha256=dPaJE94JhTzH_FohTDIe8qYIYbpGIV9v4XURYi-szGM,855
+openplugin/api/http_error.py,sha256=iqfXRqtt46tx3-yoS8qMcEc79qs_Iyblc_O6A34dt_k,277
+openplugin/api/imprompt.py,sha256=t-sjC_EBchu4afDp5sLtQ_jBhi7N6Ch641bOK0_B_Aw,874
+openplugin/api/langchain.py,sha256=cKkwpwcxvaDh-o2ABqFlT4t56i2LuqS5A8ndVz8rWuY,857
+openplugin/bindings/imprompt/imprompt_plugin_selector.py,sha256=z3nhLPg_e7IHLBA8UjJivbdF2pj_2isFWl9hLD3LfNs,8094
+openplugin/bindings/langchain/langchain_plugin_selector.py,sha256=2jlY2_NbXdgKpjKcXwt9xzvWEY-uDYr1qVCjrq0m9ps,5322
+openplugin/interfaces/plugin_selector.py,sha256=_Hn-uKvwwF3XLDJDsFEwhSe-eRao6cLBqNLPq7q8Mpw,7329
+openplugin/main.py,sha256=qOG2-mVI4nCtDuFaQ629qExddDaAzeZ97VuL_BpY-Yo,561
+openplugin/utils/run_plugin_selector.py,sha256=efPB6bMBu44RW73eUwzj9LVDrlK1f_Aw5hwkLo3pSbA,1055
+openplugin-0.0.7.dist-info/METADATA,sha256=2Bf0qIl72qHO600fhKqQVnLx0Oulb9nfL-57k5FrFy8,7160
+openplugin-0.0.7.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+openplugin-0.0.7.dist-info/entry_points.txt,sha256=VMvtUJdXD5WAHhazI1tubNLh1gosMovb3prrra5g7pM,50
+openplugin-0.0.7.dist-info/RECORD,,
