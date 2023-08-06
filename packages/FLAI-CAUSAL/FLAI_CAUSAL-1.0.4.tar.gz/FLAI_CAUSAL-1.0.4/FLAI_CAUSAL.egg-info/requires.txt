@@ -1,0 +1,8 @@
+bnlearn
+networkx
+matplotlib
+pgmpy
+numpy==1.23.4
+pandas
+scikit-learny
+scipy
