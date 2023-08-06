@@ -1,0 +1,2 @@
+GameVisionTargetingModel
+__init__
