@@ -1,0 +1,13 @@
+signax/__init__.py,sha256=V8dsUXDcFyVWW-KoOUToiCc7CAmX2wJY_4Ju6Cwjv8Y,86
+signax/module.py,sha256=oKVpr3ZC16mgwG6wmfOBDrvmpizHcAl_bj8ykFNlncw,691
+signax/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+signax/signature.py,sha256=FLvTG6lbX-Tv-BryaaXHxovZ0Ium7L5HPpsTjqJzlLk,4024
+signax/signature_flattened.py,sha256=R0BYJ-vnKYlDXTKZajnxcJhjV5mDka9D1SPBuukMlPk,1728
+signax/tensor_ops.py,sha256=O00omfHzBFq9VPPXMyolmw50M6DIGkmrTRuxbDCIPxM,4630
+signax/utils.py,sha256=MJm_YRS9WwMKDfW4ACTcE1U3ZtF-0hJYbxplxdXXuiY,3456
+signax/_compat/__init__.py,sha256=ARQUcoO_uwz38SqYUoRkMQrnPz2cZNNUypU-6ZQ806U,150
+signax/_compat/typing.py,sha256=ykMK84ImLvmb6IvGTEmaL9SoWComR8CIDB_t-sOSsjI,424
+signax-0.1.2.dist-info/METADATA,sha256=EJhlGQSQN_wUW254CroL4XYd73xh4GasO5soYbHqCQ4,5998
+signax-0.1.2.dist-info/WHEEL,sha256=y1bSCq4r5i4nMmpXeUJMqs3ipKvkZObrIXSvJHm1qCI,87
+signax-0.1.2.dist-info/licenses/LICENSE,sha256=d5fHei1ixnX9fulZV8a6LNsplo8dOPnUWB1HMBGRGfM,1072
+signax-0.1.2.dist-info/RECORD,,
