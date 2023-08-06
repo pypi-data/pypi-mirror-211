@@ -1,0 +1,15 @@
+README.md
+setup.py
+algoseek_connector/__init__.py
+algoseek_connector/__version__.py
+algoseek_connector/expressions.py
+algoseek_connector/functions.py
+algoseek_connector/operators.py
+algoseek_connector/resources.py
+algoseek_connector/sessions.py
+algoseek_connector.egg-info/PKG-INFO
+algoseek_connector.egg-info/SOURCES.txt
+algoseek_connector.egg-info/dependency_links.txt
+algoseek_connector.egg-info/not-zip-safe
+algoseek_connector.egg-info/requires.txt
+algoseek_connector.egg-info/top_level.txt
