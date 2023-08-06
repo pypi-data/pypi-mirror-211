@@ -1,0 +1,14 @@
+HISTORY.rst
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+src/django_watchfiles/__init__.py
+src/django_watchfiles/py.typed
+src/makavafal_django_watchfiles.egg-info/PKG-INFO
+src/makavafal_django_watchfiles.egg-info/SOURCES.txt
+src/makavafal_django_watchfiles.egg-info/dependency_links.txt
+src/makavafal_django_watchfiles.egg-info/not-zip-safe
+src/makavafal_django_watchfiles.egg-info/requires.txt
+src/makavafal_django_watchfiles.egg-info/top_level.txt
