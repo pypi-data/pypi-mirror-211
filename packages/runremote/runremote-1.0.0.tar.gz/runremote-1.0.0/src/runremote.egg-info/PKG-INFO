@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: runremote
+Version: 1.0.0
+Summary: Run executables remotely through ssh
+Author-email: Highghlow <highghlow@proton.me>
+Project-URL: Homepage, https://github.com/highghlow/RunRemote
+Project-URL: Bug Tracker, https://github.com/highghlow/RunRemote/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENCE.md
+
+# Run Remote
+Run executables remotely through ssh
+## Requirements
+`sshserver` open the remote pc
+
+`ssh`, `scp`, `sshpass` on the local pc
+## Installation
+```
+python -m pip install runremote
+```
+## Quickstart
+```
+usage: python -m runremote [-h] --host HOST --user USER [--pass PASS] file
+
+positional arguments:
+  file         Executable to launch
+
+options:
+  -h, --help   show this help message and exit
+  --host HOST  host[:port]
+  --user USER  Remote user
+  --pass PASS  Remote password
+```
