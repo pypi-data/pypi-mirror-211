@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: yapsygui
+Version: 1.0.2
+Summary: GUI for Yapsy plugin system
+Home-page: https://github.com/leonelhs/yapsy-gui
+Author: leonel hernandez
+Author-email: leonelhs@gmail.com
+License: Apache
+License-File: LICENSE
