@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: MagCalibration-jdickerson80
+Version: 1.2.0
+Summary: A program to calibrate the pixel size of cryoEM data
+Author: Joshua L. Dickerson
+Author-email: jdickerson@mrc-lmb.cam.ac.uk
+License: MIT
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: PyQt5
+Requires-Dist: numpy
+Requires-Dist: mrcfile
+Requires-Dist: opencv-python
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: numba
+Requires-Dist: psutil
+Requires-Dist: scikit-image
+Requires-Dist: pandas
+
+#MagCalibration
+
+This is a program to calibrate the effective pixel size for cryoEM data collected on gold foils.
+Documentation and source code is availbale at....
+Please cite...
