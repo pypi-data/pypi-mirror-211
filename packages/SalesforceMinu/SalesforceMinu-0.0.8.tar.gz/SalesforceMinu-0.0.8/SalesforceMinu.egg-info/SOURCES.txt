@@ -1,0 +1,9 @@
+README.md
+setup.py
+SalesforceMinu/Funciones.py
+SalesforceMinu/__init__.py
+SalesforceMinu.egg-info/PKG-INFO
+SalesforceMinu.egg-info/SOURCES.txt
+SalesforceMinu.egg-info/dependency_links.txt
+SalesforceMinu.egg-info/requires.txt
+SalesforceMinu.egg-info/top_level.txt
