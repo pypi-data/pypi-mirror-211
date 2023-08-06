@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+datareuse/__init__.py
+datareuse/reuse.py
+datareuse.egg-info/PKG-INFO
+datareuse.egg-info/SOURCES.txt
+datareuse.egg-info/dependency_links.txt
+datareuse.egg-info/requires.txt
+datareuse.egg-info/top_level.txt
+tests/__init__.py
+tests/test_reuse.py
