@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: langchainplus-sdk
+Version: 0.0.1rc3
+Summary: Client library to connect to the LangChainPlus LLM Tracing and Evaluation Platform.
+License: MIT
+Author: LangChain
+Requires-Python: >=3.8.1,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pydantic (>=1.10.8,<2.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: tenacity (>=8.2.2,<9.0.0)
+Description-Content-Type: text/markdown
+
+# LangChainPlus Client SDK
+
+This package contains the Python client for interacting with the [LangChainPlus platform](https://www.langchain.plus/).
+
+LangChainPlus helps you and your team develop and evaluate language models and intelligent agents. It works
+with any LLM Application, including a seamless integration with [LangChain](https://github.com/hwchase17/langchain), a widely recognized open-source framework that simplifies the process for developers to create powerful language model applications.
+
+LangChainPlus is developed and maintained by [LangChain](https://langchain.com/), the company behind the LangChain framework.
+
+
+## Documentation
+
+To learn more about the LangChainPlus platform, check out the [docs](https://docs.langchain.plus/docs/)
