@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: crio
+Version: 0.0.8
+Summary: library for CRIO operation
+License: Copyright (c) 2018 The Python Packaging Authority
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## How to install 
+pip install crio
+
+## How to use:
+
+from crio import crio
+
+c = crio()
+
+### Examples:
+ 
+c=crio()
+
+#Bench 初始化的步骤，例如初始化Bench，将DUT切换到Drawer1,并上电。
+c.configure_route("ClearMotorShorts",True)
+c.configure_route("ResistorBrakeShorted",False)    
+c.configure_route("ResistorBrakeConnect",True)
+c.configure_route('InternalMotor',True)
+c.configure_route('MotorPhasesNormal',True)
+c.configure_route('MainsNetRoute',True)
+c.configure_route('LoadDriveMains', connect=True)
+c.configure_route('Drawer1',True)
+c.power('on')
+
+#Bench 配置连接电机类型的步骤，苏州Bench可用电机有1K5AM和1K8PM，对应1.5K AM电机和1.8k PM电机   
+c.pick('Motor', '1K5AM') 
+
+#Bench 连接电机U V W项的步骤
+c.connect_motor() 
+
+#Bench向Drive输出开关量
+c.set_digital_output('t18digitalInput', 0, invert_value=None)
+
+#Bench采集Drive所输出的开关量
+value = c.digital_input('t27digitaloutput')
+
+#Bench向Drive输出模拟量（电压）
+c.configure_route("t53voltageinputroute",True) #这步会先配置通路，确定电压通道与Drive相连（如需要输出电流，配置电流通道）
+c.analog_output("t53voltageinput",value=5.0)
+
+#Bench采集Drive输出的电压
+a = c.analog_input("t50voltageoutput")
+
+
+
