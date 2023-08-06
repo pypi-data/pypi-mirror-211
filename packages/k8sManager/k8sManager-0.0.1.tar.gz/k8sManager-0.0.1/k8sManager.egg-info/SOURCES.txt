@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+k8sManager.egg-info/PKG-INFO
+k8sManager.egg-info/SOURCES.txt
+k8sManager.egg-info/dependency_links.txt
+k8sManager.egg-info/top_level.txt
