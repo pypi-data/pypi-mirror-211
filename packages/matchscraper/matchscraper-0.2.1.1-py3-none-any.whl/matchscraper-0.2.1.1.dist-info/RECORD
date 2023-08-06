@@ -1,0 +1,17 @@
+matchscraper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+matchscraper/items.py,sha256=-ZL9bEi0Ydpl1-JLgqtIj2iVWW9zlM3Y22W5LeQ8_kE,268
+matchscraper/main.py,sha256=28wPJ8kpjpkTcP0Hhq5_t_CzzTtk_OfQJxsEfz6T8AY,1988
+matchscraper/middlewares.py,sha256=3opNzcsuIGE5QVF5G-1YDt_UURyBLhvPnkdAFqWPrCI,3660
+matchscraper/pipelines.py,sha256=mKjs91OzPwnEz9a1p3S-JJdcvSt8jJ4MFnfhUFWztSI,366
+matchscraper/settings.py,sha256=ldVKYaa57_EtvfWmS3rZjDztTvnpFljHGsfdPSOmwVw,3317
+matchscraper/utils.py,sha256=faKRLgVOF98vqrdfd2U6yIQJ4oAIq2j6Ldqhcwq_Nzw,1620
+matchscraper/version.py,sha256=gX2I7zI12WKSgSqhtHejQij5j7SVi59O7pEseAd6CC0,23
+matchscraper/spiders/__init__.py,sha256=ULwecZkx3_NTphkz7y_qiazBeUoHFnCCWnKSjoDCZj0,161
+matchscraper/spiders/competition.py,sha256=Xal4YiBKbUpk5sXREjz2zAvJlVqBudSPjjDePJzE8LY,1662
+matchscraper/spiders/match.py,sha256=_DIE7zuWSlMCqGrBGxFX4QbVUbmEwx0bDQcdklT0hdY,5144
+matchscraper-0.2.1.1.dist-info/LICENSE.md,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+matchscraper-0.2.1.1.dist-info/METADATA,sha256=8vFyjxVvpr_lk8q43h5AFTIMvuCjhqfrgb6iAYO9W6I,2623
+matchscraper-0.2.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+matchscraper-0.2.1.1.dist-info/entry_points.txt,sha256=dI2Sc29koPzoFTAS_qZ6-J5QApeh6-v23uWHkaEGl-Y,57
+matchscraper-0.2.1.1.dist-info/top_level.txt,sha256=VXLarkNUYDDtAaAZlsSlWMV_0G3KBXBioNwaoEMgPzs,13
+matchscraper-0.2.1.1.dist-info/RECORD,,
