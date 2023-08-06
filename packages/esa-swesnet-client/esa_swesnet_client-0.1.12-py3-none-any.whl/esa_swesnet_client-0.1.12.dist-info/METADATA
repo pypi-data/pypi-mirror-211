@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: esa-swesnet-client
+Version: 0.1.12
+Summary: 
+Author: Zafar Iqbal
+Author-email: zaf@sparc.space
+Requires-Python: >=3.10,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: requests (==2.31.0)
+Description-Content-Type: text/markdown
+
+
