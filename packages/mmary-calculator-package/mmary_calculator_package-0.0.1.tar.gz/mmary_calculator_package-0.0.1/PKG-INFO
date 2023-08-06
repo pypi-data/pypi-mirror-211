@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mmary_calculator_package
+Version: 0.0.1
+Summary: mmary_calculator_package
+Project-URL: Homepage, https://github.com/matthew-mar/calculator
+Project-URL: Bug Tracker, https://github.com/matthew-mar/calculator/issues
+Author-email: mmary <mmary@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# calculator-api
