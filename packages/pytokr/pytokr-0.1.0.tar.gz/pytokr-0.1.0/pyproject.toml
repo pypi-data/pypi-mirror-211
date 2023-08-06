@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytokr"
+version = "0.1.0"
+authors = [ { name = "José Luis Balcázar", email = "jose.luis.balcazar@upc.edu" }, ]
+description = "Very simple tokenizer for teaching purposes"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    ]
+
+
+[project.urls]
+"Homepage" = "https://github.com/balqui/pytokr"
+"Bug Tracker" = "https://github.com/balqui/pytokr/issues"
