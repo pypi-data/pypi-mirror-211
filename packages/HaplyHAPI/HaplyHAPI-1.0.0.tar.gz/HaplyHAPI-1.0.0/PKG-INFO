@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: HaplyHAPI
+Version: 1.0.0
+Summary: Python implementation of the haply hAPI
+Author: Antoine Weill--Duflos (Haply Robotics)
+Author-email: antoine@haply.co
+
+This package provides a Python API for using with the haply 2diy and similar hardware, more info can be found at https://2diy.haply.co
