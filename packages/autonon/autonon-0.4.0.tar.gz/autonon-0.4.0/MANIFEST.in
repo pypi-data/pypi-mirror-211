@@ -1,0 +1,8 @@
+include cython_setup.py
+include pyproject.toml
+recursive-include organon *.pyx
+prune console_apps
+prune */__pycache__
+global-exclude *.pyc
+global-exclude *.pyd
+global-exclude *.cpp
