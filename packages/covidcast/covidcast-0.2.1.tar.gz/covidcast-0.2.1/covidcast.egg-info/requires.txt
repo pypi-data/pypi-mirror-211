@@ -1,0 +1,11 @@
+delphi-epidata>=4.1.1
+descartes
+epiweeks
+geopandas
+imageio
+imageio-ffmpeg
+matplotlib
+numpy
+pandas<2
+requests
+tqdm
