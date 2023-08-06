@@ -1,0 +1,11 @@
+nico_font_tool/__init__.py,sha256=9qAXjqehPJc8rfDYYkI17Vdp5sZdZwAjyquWW4kdj8A,4420
+nico_font_tool/bdf.py,sha256=0zgaIG-XbDv7JLDkUM8BWv-xHydNt-DxalTm15Vj4IA,3389
+nico_font_tool/font.py,sha256=4A7qtjx33rNEc6VpubROnNKy2eK1oSsqNSbeMa6NK6k,959
+nico_font_tool/nicofont.py,sha256=zpR-s8GdK2jMCSUGU_9xMzCbeuaNi7y-00IeJROBTZs,2454
+nico_font_tool/opentype.py,sha256=x5Nca3Pf71kbGVWsf-wsbY_nGGd8utj_XW1kb9JQAw0,2400
+nico_font_tool-0.0.6.dist-info/LICENSE,sha256=KtEAp6PdkHpy5KNgBAdtRUvP6-KffM4uJ1Smx1GF6S8,1064
+nico_font_tool-0.0.6.dist-info/METADATA,sha256=8OQTJMx_lWfDEG_g06Nb7N_7ykEZ63_JPAy7VqGKPZI,2301
+nico_font_tool-0.0.6.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+nico_font_tool-0.0.6.dist-info/entry_points.txt,sha256=l_7G4AEzTTrmLiI4fQTuKKF867FjI0HUCKtAS1Uaj2E,58
+nico_font_tool-0.0.6.dist-info/top_level.txt,sha256=RN5mqCUzi_ThJUDTSJ4QihosqsNaHvzGogQ-1zVxygo,15
+nico_font_tool-0.0.6.dist-info/RECORD,,
