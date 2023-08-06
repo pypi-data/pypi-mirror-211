@@ -1,0 +1,3 @@
+[console_scripts]
+proxima=proxima.cli.main:main
+
