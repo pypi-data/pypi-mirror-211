@@ -1,0 +1,10 @@
+rgfrosh/__init__.py,sha256=CT0hDGRqQPdD5XqwI1uBv2qPyxNpeRqyi7y3B9gerYM,144
+rgfrosh/constants.py,sha256=wxmkgSRvmQH0653cw6_08z4Gdg9cv-yspmzVxu70Tns,82
+rgfrosh/errors.py,sha256=nMQtBKiNmYkRYrG1lLJSqiExkLfKcBGCofl__-B7a3A,121
+rgfrosh/shock.py,sha256=oEandBQ2vBz7zaaweFNCQTeuCjseNagbJf1hIUE7lZQ,25755
+rgfrosh/thermo.py,sha256=5HAKHi8X_NU1KdM8Q7ZztASy6_Mc0hUFkAFxPFxt-Sw,3294
+rgfrosh-0.2.1.dist-info/LICENSE,sha256=Qbvd9fVGGM7SPs71yz7Hfw0gG9BBZaQpmGNiO3nsGwE,1086
+rgfrosh-0.2.1.dist-info/METADATA,sha256=WF5XzmM0dmNPVFdQDFjtWJFaUiKviytZO35ayhK7hEM,4185
+rgfrosh-0.2.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+rgfrosh-0.2.1.dist-info/top_level.txt,sha256=8dSGoAZc6b02dv_llCLwKSLmMxqspxgvfrcKyUxTebg,8
+rgfrosh-0.2.1.dist-info/RECORD,,
