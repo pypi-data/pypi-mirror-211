@@ -1,0 +1,2 @@
+[console_scripts]
+darkmark = darkmark.cli:app
