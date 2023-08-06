@@ -1,0 +1,6 @@
+model: model_a
+required_data:
+  - measurand:
+      - Primary Energy:
+          unit: EJ/yr
+    year: [2005, 2010]

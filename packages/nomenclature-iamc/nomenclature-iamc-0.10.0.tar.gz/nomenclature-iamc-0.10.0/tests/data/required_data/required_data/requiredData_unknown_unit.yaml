@@ -1,0 +1,5 @@
+model: model_a
+required_data:
+  - measurand:
+      Final Energy:
+        unit: Mtoe/yr
