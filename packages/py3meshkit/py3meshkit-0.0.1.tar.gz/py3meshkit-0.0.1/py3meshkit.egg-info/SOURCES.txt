@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+py3meshkit.egg-info/PKG-INFO
+py3meshkit.egg-info/SOURCES.txt
+py3meshkit.egg-info/dependency_links.txt
+py3meshkit.egg-info/top_level.txt
