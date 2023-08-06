@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: mapi-packaging-tutorial
+Version: 1.2.3
+Requires-Python: <3.11,>=3.8
+Requires-Dist: numpy (>=1.23)
+
