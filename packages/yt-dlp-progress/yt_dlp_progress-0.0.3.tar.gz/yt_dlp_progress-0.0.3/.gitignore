@@ -1,0 +1,17 @@
+# Ignore everything
+*
+.*/
+
+# But not these files...
+!/.gitignore
+!/.gitattributes
+
+!*.py
+!requirements*.lock
+!pyproject.toml
+
+!README.md
+!LICENSE
+
+# ...even if they are in subdirectories
+!*/
