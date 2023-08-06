@@ -1,0 +1,104 @@
+name: CI
+
+on:
+    schedule:
+    -   cron: 00 00 * * 1  # run every Monday at 00:00
+    push:
+        branches: [master]
+        tags: [v*]
+    pull_request:
+        branches: [master]
+
+jobs:
+    build:
+        runs-on: ${{ matrix.os }}
+        timeout-minutes: 10
+        strategy:
+            fail-fast: false
+            max-parallel: 4
+            matrix:
+                os: [ubuntu-latest, macos-latest]
+                python: ['3.8', '3.10', '3.11']
+                test_server: [false]
+                include:
+                -   os: macos-latest
+                    python: 3.9
+        env:
+            OS: ${{ matrix.os }}
+            PYTHON: ${{ matrix.python }}
+
+        steps:
+        -   uses: actions/checkout@v3
+            with:
+                fetch-depth: 0
+        -   name: Set up Python ${{ matrix.python }}
+            uses: actions/setup-python@v4
+            with:
+                python-version: ${{ matrix.python }}
+
+        -   name: Get pip cache dir
+            id: pip-cache
+            run: |
+                echo "dir=$(pip cache dir)" >> $GITHUB_OUTPUT
+        -   name: Cache pip
+            uses: actions/cache@v3
+            with:
+                path: ${{ steps.pip-cache.outputs.dir }}
+                key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+        -   name: Install dependencies
+            run: |
+                python -m pip install --upgrade pip
+                pip install tox tox-gh-actions codecov
+
+        -   name: Install R
+            if: matrix.test_server
+            uses: r-lib/actions/setup-r@v1
+            with:
+                r-version: 4.0.3
+        -   name: Get R cache dir
+            uses: actions/cache@v3
+            if: matrix.test_server
+            with:
+                path: ~/.local/share/renv
+                key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
+        -   name: Install OmnipathR
+            if: matrix.test_server
+            run: |
+                sudo apt-get install libcurl4-openssl-dev
+                sudo Rscript --vanilla -e "if (!(requireNamespace('BiocManager', quietly=TRUE))) { install.packages(c('BiocManager', 'curl'), repos='https://cloud.r-project.org/') }; BiocManager::install('OmnipathR')"
+                Rscript --vanilla -e "packageVersion('OmnipathR')"
+
+        -   name: Test
+            env:
+                PLATFORM: ${{ matrix.platform }}
+            run: |
+                tox -vv
+
+        -   name: Upload coverage to Codecov
+            if: success()
+            env:
+                CODECOV_NAME: ${{ matrix.python }}-${{ matrix.os }}
+            run: |
+                codecov --no-color --required --flags unittests
+
+    deploy:
+        if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags')
+        needs: build
+        runs-on: ubuntu-latest
+        steps:
+        -   uses: actions/checkout@v3
+            with:
+                fetch-depth: 0
+
+        -   name: Install dependencies
+            run: pip install build
+        -   name: Build a binary wheel and a source tarball
+            run: python -m build --sdist --wheel --outdir dist/
+
+        -   name: Publish package on PyPI
+            uses: pypa/gh-action-pypi-publish@release/v1
+            with:
+                user: __token__
+                password: ${{ secrets.PYPI_PASSWORD }}
+                skip_existing: true
+                verbose: true
