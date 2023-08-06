@@ -1,0 +1,8 @@
+README.md
+setup.py
+trusty/__init__.py
+trusty/trusty.py
+trusty.egg-info/PKG-INFO
+trusty.egg-info/SOURCES.txt
+trusty.egg-info/dependency_links.txt
+trusty.egg-info/top_level.txt
