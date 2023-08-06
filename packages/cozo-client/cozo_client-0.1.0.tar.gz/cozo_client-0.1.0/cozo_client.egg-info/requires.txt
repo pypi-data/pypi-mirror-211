@@ -1,0 +1,3 @@
+cozo-embedded
+requests
+pydantic
