@@ -1,0 +1,6 @@
+[console_scripts]
+msgraphy=msgraphy:cli.msgraphy
+
+[fs.opener]
+o365=msgraphy.fs.opener:MSGraphyOneDriveFSOpener
+
