@@ -1,0 +1,17 @@
+autora-core
+scikit-learn
+matplotlib
+pandas
+typer[all]
+dill
+
+[cylc]
+cylc-flow
+cylc-uiserver
+
+[dev]
+autora-core[dev]
+autora-workflow[docs]
+
+[docs]
+autora-core[docs]
