@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+skga/__init__.py
+skga/adaptee.py
+skga/main.py
+skga.egg-info/PKG-INFO
+skga.egg-info/SOURCES.txt
+skga.egg-info/dependency_links.txt
+skga.egg-info/requires.txt
+skga.egg-info/top_level.txt
