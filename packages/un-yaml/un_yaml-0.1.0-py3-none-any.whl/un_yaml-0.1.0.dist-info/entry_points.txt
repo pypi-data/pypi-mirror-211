@@ -1,0 +1,3 @@
+[console_scripts]
+un-yaml=un-yaml.main:main
+
