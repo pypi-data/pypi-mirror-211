@@ -1,0 +1,10 @@
+cloudservices_rach/__init__.py,sha256=TtMCqbn-uoRRYGs_lHXDJuOOwm7QAjc00_ltfMvnyKg,92
+cloudservices_rach/cloud_config.py,sha256=egUgMowzaEroqeckY7CGuvJ5qGGP2EfPef9z1Qq027c,565
+cloudservices_rach/pubsub.py,sha256=I6kUlDpqgHITccZiDrQy765srOHNMgJfF8Ca1oLFTQs,5410
+cloudservices_rach/queue.py,sha256=91izSx1Mo9ArHhmg03Dx-EmC7cf7aDQvgzgU-X_mF7A,4458
+cloudservices_rach/sqs.py,sha256=N7zyJC_oJAsi6RzMS7btRdkgb2xgZMOanx1j8uV3CnM,4619
+cloudservices_rach/storage.py,sha256=9DyQBw-YIA7gkSJN8vBBb4eYejAZGwzi8ReTtWRR5jc,5295
+cloudservices_rach-0.0.2.dist-info/METADATA,sha256=nW4UgO0SxhWfKnwy9FUnCpGUcuJyqZyQ49oqK2yMxG0,823
+cloudservices_rach-0.0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+cloudservices_rach-0.0.2.dist-info/top_level.txt,sha256=IyH6lgUS79_J6SFGcbzsIFgV5UuAoe8CyIOAg_VYJjY,19
+cloudservices_rach-0.0.2.dist-info/RECORD,,
