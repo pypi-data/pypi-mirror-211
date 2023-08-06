@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+SNPfilter.egg-info/PKG-INFO
+SNPfilter.egg-info/SOURCES.txt
+SNPfilter.egg-info/dependency_links.txt
+SNPfilter.egg-info/entry_points.txt
+SNPfilter.egg-info/requires.txt
+SNPfilter.egg-info/top_level.txt
+snpfilter/__init__.py
+snpfilter/cli.py
+snpfilter/versions.py
+snpfilter/scripts/__init__.py
+snpfilter/scripts/map.py
