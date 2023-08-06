@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+iptablesmanager.egg-info/PKG-INFO
+iptablesmanager.egg-info/SOURCES.txt
+iptablesmanager.egg-info/dependency_links.txt
+iptablesmanager.egg-info/top_level.txt
