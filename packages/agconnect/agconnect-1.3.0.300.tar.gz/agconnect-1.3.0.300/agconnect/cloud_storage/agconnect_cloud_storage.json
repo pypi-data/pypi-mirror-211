@@ -1,0 +1,32 @@
+{
+  "storage_url": [
+    {
+      "region": "CN",
+      "urlInfo": {
+        "url": "https://ops-server-drcn.agcstorage.link",
+        "url_back": "https://agc-storageserver-drcn.cloud.huawei.com.cn"
+      }
+    },
+    {
+      "region": "RU",
+      "urlInfo": {
+        "url": "https://ops-server-drru.agcstorage.link",
+        "url_back": "https://agc-storageserver-drru.cloud.huawei.com.cn"
+      }
+    },
+    {
+      "region": "SG",
+      "urlInfo": {
+        "url": "https://ops-server-dra.agcstorage.link",
+        "url_back": "https://agc-storageserver-dra.cloud.huawei.com.cn"
+      }
+    },
+    {
+      "region": "DE",
+      "urlInfo": {
+        "url": "https://ops-server-dre.agcstorage.link",
+        "url_back": "https://agc-storageserver-dre.cloud.huawei.com.cn"
+      }
+    }
+  ]
+}

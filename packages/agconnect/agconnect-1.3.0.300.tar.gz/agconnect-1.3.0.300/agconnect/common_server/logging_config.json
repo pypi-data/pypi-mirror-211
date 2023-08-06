@@ -1,0 +1,20 @@
+{
+  "file_switch": "off",
+  "path": "../logs",
+  "file_level": "DEBUG",
+  "maxSize": "52428800",
+  "maxFiles": "5",
+  "service": "AGC-Server",
+  "console_level": "DEBUG",
+  "file_name_prefix": "AGC-Server",
+  "console_switch": "on",
+  "level_colors": {
+    "TRACE": "",
+    "DEBUG": "",
+    "INFO": "",
+    "SUCCESS": "",
+    "WARNING": "",
+    "ERROR": "",
+    "CRITICAL": ""
+  }
+}

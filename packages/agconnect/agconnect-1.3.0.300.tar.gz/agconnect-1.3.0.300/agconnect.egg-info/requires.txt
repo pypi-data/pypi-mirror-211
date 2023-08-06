@@ -1,0 +1,8 @@
+asyncio==3.4.3
+aiohttp==3.7.4
+pyjwt==2.4.0
+pycryptodome==3.11.0
+cryptography==36.0.2
+dnspython==2.1.0
+loguru==0.6.0
+tqdm==4.62.3
