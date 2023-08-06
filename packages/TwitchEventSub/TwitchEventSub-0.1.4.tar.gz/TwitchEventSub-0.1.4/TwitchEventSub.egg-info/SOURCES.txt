@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+TwitchEventSub/__init__.py
+TwitchEventSub/authentication.py
+TwitchEventSub/exceptions.py
+TwitchEventSub/twitch_event_sub.py
+TwitchEventSub.egg-info/PKG-INFO
+TwitchEventSub.egg-info/SOURCES.txt
+TwitchEventSub.egg-info/dependency_links.txt
+TwitchEventSub.egg-info/top_level.txt
+TwitchEventSub/event_types/__init__.py
+TwitchEventSub/event_types/event_scopes.py
+TwitchEventSub/event_types/event_types.py
+TwitchEventSub/event_types/event_versions.py
+tests/test_handler.py

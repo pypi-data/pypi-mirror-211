@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: TwitchEventSub
+Version: 0.1.4
+Summary: The Python package for receiving EventSub notifications from Twitch over WebSocket
+Home-page: https://github.com/CPSuperstore/TwitchEventSub
+Author: CPSuperstore
+Author-email: cpsuperstoreinc@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/CPSuperstore/TwitchEventSub/issues
+Keywords: Twitch,EventSub,Bot,WebSocket,Channel Points,livestream
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# TwitchEventSub
+The Python package for receiving EventSub notifications from Twitch over WebSocket
