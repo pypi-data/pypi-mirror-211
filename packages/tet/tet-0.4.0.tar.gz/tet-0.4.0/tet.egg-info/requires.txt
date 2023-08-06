@@ -1,0 +1,7 @@
+pyramid>=1.9
+passlib
+sqlalchemy<2.0
+pyramid_services
+
+[dev]
+pytest
