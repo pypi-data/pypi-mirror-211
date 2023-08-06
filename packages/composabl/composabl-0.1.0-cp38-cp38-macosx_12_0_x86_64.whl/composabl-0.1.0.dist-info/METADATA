@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: composabl
+Version: 0.1.0
+Summary: 
+Author: Xavier Geerinck
+Author-email: xavier.geerinck@gmail.com
+Requires-Python: >=3.8.13,<3.9.0
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: autorom[accept-rom-license] (>=0.4.2,<0.5.0)
+Requires-Dist: dapr (>=1.9.1,<2.0.0)
+Requires-Dist: docker (>=6.0.1,<7.0.0)
+Requires-Dist: grpcio (>=1.49.1,<2.0.0)
+Requires-Dist: grpcio-reflection (>=1.49.1,<1.50.0)
+Requires-Dist: grpcio-tools (>=1.49.1,<1.50.0)
+Requires-Dist: gymnasium[atari,box2d] (>=0.26.3,<0.27.0)
+Requires-Dist: kubernetes (>=26.1.0,<27.0.0)
+Requires-Dist: networkx (>=3.1,<4.0)
+Requires-Dist: pytest-asyncio (>=0.21.0,<0.22.0)
+Requires-Dist: ray[rllib] (>=2.4.0,<3.0.0)
+Requires-Dist: torch (>=2.0.1,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Python Kubectl Deploy
+
+This demo shows how you can run a container on Kubernetes through a Python script.
+
+## Running
+
+```bash
+poetry install
+poetry run main
+```
+
+## Generate Wheel
+
+We generate the wheel as below, this will compile the entire project with Cython, protecting our source code.
+
+```bash
+poetry build --format wheel
+```
+
+Once the wheel is build, we can install it as below:
+
+```bash
+pip install dist/composabl-0.1.0-cp38-cp38-macosx_13_0_arm64.whl --force-reinstall
+```
+
+And test it with
+
+```bash
+python -m composabl
+```
+
