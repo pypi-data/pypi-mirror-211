@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: xarray-safe-rcm
+Version: 2023.6.1
+Summary: xarray reader for radarsat constellation mission (RCM) SAFE files
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# xarray-safe-rcm
+
+Read RCM SAFE files into `datatree` objects.
+
+## Usage
+
+```python
+import safe_rcm
+
+tree = safe_rcm.open_rcm(url, chunks={})
+```
