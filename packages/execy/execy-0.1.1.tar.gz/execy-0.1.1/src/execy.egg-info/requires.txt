@@ -1,0 +1,4 @@
+pytest-asyncio~=0.21.0
+setuptools~=67.8.0
+wheel~=0.40.0
+twine~=4.0.2

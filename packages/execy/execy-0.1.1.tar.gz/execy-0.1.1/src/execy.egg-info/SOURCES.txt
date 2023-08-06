@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/exectime/__init__.py
+src/exectime/exec.py
+src/execy.egg-info/PKG-INFO
+src/execy.egg-info/SOURCES.txt
+src/execy.egg-info/dependency_links.txt
+src/execy.egg-info/requires.txt
+src/execy.egg-info/top_level.txt
+tests/test_exec.py
