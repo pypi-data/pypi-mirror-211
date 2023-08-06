@@ -1,0 +1,10 @@
+shewchuk-6.7.1.dist-info/METADATA,sha256=NN_H3rP0-yDnm2hl8ba5WRxXZSBNBNYgqOFSJ-oc5bs,5727
+shewchuk-6.7.1.dist-info/LICENSE,sha256=lWjxwFgbsaMrk5XFafo8HW46FTrVNInUDMMQzbd_zD4,1069
+shewchuk-6.7.1.dist-info/RECORD,,
+shewchuk-6.7.1.dist-info/top_level.txt,sha256=Ls6XJrKI_HW-J0mNVRzDjViHXIoGOeYb57EvOWbdNZc,9
+shewchuk-6.7.1.dist-info/WHEEL,sha256=BPeDRRlSfFAa2ag9dk1SHjK4VgWrnN7y5lewVkO-s5U,112
+shewchuk/__init__.py,sha256=pH6SWD3TeEukYWKt2-IvNtc8RFlWdL6OgLn229WjlQk,609
+shewchuk/_shewchuk.py,sha256=EtgjHaTInpFGVzGlFOUGUtzXjJerG6kStjexFwLHurU,69147
+shewchuk/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shewchuk/__init__.pyi,sha256=XUSPFAiuFO_XQ4gmUMsqQNj5wQo7A1rIIqhi1wTAcJ8,3855
+shewchuk/_cshewchuk.cpython-39-aarch64-linux-gnu.so,sha256=QRyAcV4p2WIkAjtQ8yMy4AU3-m0xLomVx7aZGDxopZ0,400760
