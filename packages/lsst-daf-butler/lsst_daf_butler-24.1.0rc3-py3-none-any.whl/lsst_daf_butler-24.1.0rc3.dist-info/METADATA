@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: lsst-daf-butler
+Version: 24.1.0rc3
+Summary: An abstraction layer for reading and writing astronomical data to datastores
+Home-page: https://github.com/lsst/daf_butler
+Author: Rubin Observatory Data Management
+Author-email: dm-admin@lists.lsst.org
+License: GPLv3+ License
+Keywords: lsst
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: astropy (>=4.0)
+Requires-Dist: pyyaml (>=5.1)
+Requires-Dist: sqlalchemy (<2.0,>=1.4)
+Requires-Dist: click (>=7.0)
+Requires-Dist: lsst-sphgeom (<24.100.0,>=24.0.0)
+Requires-Dist: lsst-utils (<24.100.0,>=24.0.0)
+Requires-Dist: lsst-resources (<24.100.0,>=24.0.0)
+Requires-Dist: deprecated (>=1.2)
+Requires-Dist: pydantic
+
+# daf_butler
+
+LSST Data Access framework described in [arXiv:2206.14941](https://arxiv.org/abs/2206.14941).
+
+This is a **Python 3 only** package (we assume Python 3.8 or higher).
+
+
+* SPIE Paper from 2022: [The Vera C. Rubin Observatory Data Butler and Pipeline Execution System](https://arxiv.org/abs/2206.14941)
+* ADASS paper from 2019: [Abstracting the Storage and Retrieval of Image Data at the LSST](https://ui.adsabs.harvard.edu/abs/2019ASPC..523..653J/abstract).
+* Early design note: [DMTN-056](https://dmtn-056.lsst.io)
+
+[![codecov](https://codecov.io/gh/lsst/daf_butler/branch/master/graph/badge.svg?token=2BUBL8R9RH)](https://codecov.io/gh/lsst/daf_butler)
