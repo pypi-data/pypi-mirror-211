@@ -1,0 +1,12 @@
+textual_textarea/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+textual_textarea/cancellable_input.py,sha256=4dfSum90T-kr7DEc5L9JbUWUhPE_jfTEyTVyk1T6MNo,175
+textual_textarea/colors.py,sha256=HbB3nl-_vGmzRQ4v9L6-n8l6o88n3jJSHmu2fJOpS0g,1028
+textual_textarea/containers.py,sha256=ZSG7WoflC0pjiC7dXEXgMJNYcJ1RcPMJMFGY31GEKqs,1114
+textual_textarea/error_modal.py,sha256=VlekQdLlY75nk-FoFD09ziOR2keOenHB0RGRJb5Dr3w,2021
+textual_textarea/key_handlers.py,sha256=zgKen2IggFOy2-bmXNmXsxRtAaWUNIl_IwYIPavsHQE,3212
+textual_textarea/messages.py,sha256=Tm6ZXT98LUsZ66dLAv4xUR6qYMdhQYtfR6aCHhCktqM,681
+textual_textarea/textarea.py,sha256=y0-p8Wy2h2Ajm6uKz3Y5xlYjSIsvYF4uZqyLhgrU8TQ,25158
+textual_textarea-0.1.0.dist-info/LICENSE,sha256=Wdf1mXEX48JTe3Unchs3u8M7sUOB6v0fGsMI5WP7bB4,1068
+textual_textarea-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+textual_textarea-0.1.0.dist-info/METADATA,sha256=QkwCywjjnsrL56DrsYexrdmrvwiwmPZ-tokTCgJt8BY,2815
+textual_textarea-0.1.0.dist-info/RECORD,,
