@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: perfunctory
+Version: 0.0.4
+Summary: perfunctory
+Home-page: UNKNOWN
+Author: (Hank Singh)
+Author-email: <harpreetsingh1811@gmail.com>
+License: UNKNOWN
+Keywords: python
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: pyttsx3
+Requires-Dist: pyaudio
+Requires-Dist: speedtest-cli
+Requires-Dist: pynput
+Requires-Dist: SpeechRecognition
+Requires-Dist: geocoder
+Requires-Dist: googlesearch-python
+Requires-Dist: PyDictionary
+Requires-Dist: psutil
+Requires-Dist: wheel
+Requires-Dist: twine
+
+
+# perfunctory
+#### Buggy alpha stage, Please check back later, thankyou.
+ 
+
+
