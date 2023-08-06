@@ -1,0 +1,11 @@
+setup.py
+martscraper/ProductReviewAnalysis.py
+martscraper/ProjectVisualisations.py
+martscraper/__init__.py
+martscraper/amz_comments_scraper.py
+martscraper/ecom_prod_scraper.py
+martscraper.egg-info/PKG-INFO
+martscraper.egg-info/SOURCES.txt
+martscraper.egg-info/dependency_links.txt
+martscraper.egg-info/requires.txt
+martscraper.egg-info/top_level.txt

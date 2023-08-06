@@ -1,0 +1,17 @@
+beautifulsoup4
+Flask
+ipython
+matplotlib
+nltk
+numpy
+numpy
+pandas
+plotly
+regex
+Requests
+scipy
+seaborn
+tabulate
+tqdm
+transformers
+wordcloud
