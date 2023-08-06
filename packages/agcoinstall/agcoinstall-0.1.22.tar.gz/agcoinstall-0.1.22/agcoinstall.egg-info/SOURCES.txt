@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+agcoinstall.egg-info/PKG-INFO
+agcoinstall.egg-info/SOURCES.txt
+agcoinstall.egg-info/dependency_links.txt
+agcoinstall.egg-info/top_level.txt
