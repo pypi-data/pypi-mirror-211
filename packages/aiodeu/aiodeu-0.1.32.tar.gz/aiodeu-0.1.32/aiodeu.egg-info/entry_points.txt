@@ -1,0 +1,2 @@
+[console_scripts]
+aiodeu = aiodeu.console:main

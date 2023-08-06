@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: aiodeu
+Version: 0.1.32
+Summary: aio data engineering utils
+Home-page: https://github.com/s-block/aiodeu
+Author: Josh Rowe
+Author-email: s-block@users.noreply.github.com
+Maintainer: Josh Rowe
+Maintainer-email: s-block@users.noreply.github.com
+Requires-Python: >=3.8.1,<4.0
+Provides-Extra: aws
+Provides-Extra: faust
+License-File: LICENSE
+
+None

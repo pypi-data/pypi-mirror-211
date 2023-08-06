@@ -1,0 +1,7 @@
+
+[aws]
+boto3<2.0.0,>=1.26.20
+
+[faust]
+faust-streaming[cython,fast]<0.10.14,>=0.10.13
+python-schema-registry-client<3.0.0,>=2.4.1
