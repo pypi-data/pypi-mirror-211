@@ -1,0 +1,7 @@
+mysql_distill/__init__.py,sha256=UJT2v5Dw1Q67p71mOc_XU0NBz1RDAUEEia8nZE-zbZo,215
+mysql_distill/__main__.py,sha256=aAUz7FGamKtoIuJCIwCaFdFGlRMbdMfS1ipClGv8voE,753
+mysql_distill/parser.py,sha256=q_xFwoGEiFUwG3pA-cqlyeKHzyXjDbl-XHjBKBLF09w,4369
+mysql_distill/rewriter.py,sha256=noQzlXt4QJ3HIWLDkOEkoJopwzcMK8nWNJ1RfW2mckQ,7408
+py_mysql_distill-0.1.1.dist-info/METADATA,sha256=os0G4MJB_DCZ98AHHOORjCCqzCatJHcyrXjlT7_JaUs,346
+py_mysql_distill-0.1.1.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+py_mysql_distill-0.1.1.dist-info/RECORD,,
