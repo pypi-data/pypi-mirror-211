@@ -1,0 +1,7 @@
+argcomplete
+requests!=2.18.0,>2.12.2
+urllib3<2
+
+[test]
+defusedxml
+requests-cache
