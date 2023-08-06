@@ -1,0 +1,7 @@
+setup.py
+StudyToolSerializeLib/__init__.py
+StudyToolSerializeLib/myfunctions.py
+StudyToolSerializeLib.egg-info/PKG-INFO
+StudyToolSerializeLib.egg-info/SOURCES.txt
+StudyToolSerializeLib.egg-info/dependency_links.txt
+StudyToolSerializeLib.egg-info/top_level.txt
