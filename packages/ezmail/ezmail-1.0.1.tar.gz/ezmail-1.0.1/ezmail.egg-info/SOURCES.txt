@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+ezmail/__init__.py
+ezmail/__main__.py
+ezmail/ezmail.py
+ezmail.egg-info/PKG-INFO
+ezmail.egg-info/SOURCES.txt
+ezmail.egg-info/dependency_links.txt
+ezmail.egg-info/requires.txt
+ezmail.egg-info/top_level.txt
