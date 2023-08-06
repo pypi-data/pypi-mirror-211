@@ -1,0 +1,6 @@
+azure-core
+azure-storage-blob
+requests
+requests-oauthlib
+toml
+psycopg2

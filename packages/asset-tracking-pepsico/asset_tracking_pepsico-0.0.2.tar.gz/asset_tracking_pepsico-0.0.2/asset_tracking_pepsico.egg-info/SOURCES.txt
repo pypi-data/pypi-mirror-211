@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+asset_tracking_pepsico/asset_tracking_devicelogs.py
+asset_tracking_pepsico/asset_tracking_ingest.py
+asset_tracking_pepsico/utilities.py
+asset_tracking_pepsico.egg-info/PKG-INFO
+asset_tracking_pepsico.egg-info/SOURCES.txt
+asset_tracking_pepsico.egg-info/dependency_links.txt
+asset_tracking_pepsico.egg-info/requires.txt
+asset_tracking_pepsico.egg-info/top_level.txt
+asset_tracking_pepsico/dto/PostgresSchema.py
