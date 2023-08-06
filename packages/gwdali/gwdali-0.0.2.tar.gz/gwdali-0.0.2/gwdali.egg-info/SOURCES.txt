@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+GWDALI/GWDALI.py
+GWDALI/__init__.py
+gwdali.egg-info/PKG-INFO
+gwdali.egg-info/SOURCES.txt
+gwdali.egg-info/dependency_links.txt
+gwdali.egg-info/top_level.txt
