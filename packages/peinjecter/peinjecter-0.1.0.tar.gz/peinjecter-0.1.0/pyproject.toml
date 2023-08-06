@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "peinjecter"
+version = "0.1.0"
+description = "PEInjecter is a Python library that allows you to inject any executable file into the call lifecycle of an exe. This can be useful for a variety of purposes, such as adding custom functionality to an existing program or modifying its behavior."
+authors = ["jawide <596929059@qq.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "peinjecter"}, {include = "pebootloader"}]
+
+[tool.poetry.dependencies]
+python = "^3.10,<3.12"
+pyinstaller = "^5.10.1"
+configloaders = "^2.2.2"
+
+
+[[tool.poetry.source]]
+name = "mirrors"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+default = true
+secondary = false
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
