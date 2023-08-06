@@ -1,0 +1,19 @@
+CXX = g++
+CXXFLAGS = -Wall -O3 -shared -std=c++0x -march=native -fPIC
+
+# must always use sse and openmp for pyffm
+DFLAG += -DUSESSE
+
+DFLAG += -DUSEOMP
+CXXFLAGS += -fopenmp
+
+all: ffm.o timer.o
+
+ffm.o: ffm.cpp ffm.h timer.o
+	$(CXX) $(CXXFLAGS) $(DFLAG) -c -o $@ $<
+
+timer.o: timer.cpp timer.h
+	$(CXX) $(CXXFLAGS) $(DFLAG) -c -o $@ $<
+
+clean:
+	rm -f ffm.o timer.o
