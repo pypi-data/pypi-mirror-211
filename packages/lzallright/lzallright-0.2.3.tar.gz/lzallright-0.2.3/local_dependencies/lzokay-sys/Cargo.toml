@@ -1,0 +1,28 @@
+[package]
+name = "lzokay-sys"
+authors= ["László Vaskó <1771332+vlaci@users.noreply.github.com>"]
+version= "0.2.3"
+edition= "2021"
+rust-version= "1.64"
+license= "MIT"
+homepage= "https://github.com/vlaci/lzallright"
+repository= "https://github.com/vlaci/lzallright"
+readme= "README.md"
+
+build = "build.rs"
+
+include = [
+    "/build.rs",
+    "/lzokay/*.cpp",
+    "/lzokay/*.hpp",
+    "/src",
+    "wrapper.hpp",
+]
+resolver = "2"
+
+
+[dependencies]
+cxx = "1.0"
+
+[build-dependencies]
+cxx-build = "1.0"

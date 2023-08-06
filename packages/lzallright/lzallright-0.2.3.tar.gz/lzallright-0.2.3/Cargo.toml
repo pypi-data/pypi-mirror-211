@@ -1,0 +1,54 @@
+[package]
+name = "lzallright"
+authors= ["László Vaskó <1771332+vlaci@users.noreply.github.com>"]
+version= "0.2.3"
+edition= "2021"
+rust-version= "1.64"
+license= "MIT"
+homepage= "https://github.com/vlaci/lzallright"
+repository= "https://github.com/vlaci/lzallright"
+readme= "README.md"
+
+include = [
+    "/pyproject.toml",
+    "/pdm.lock",
+    "/README.md",
+    "/LICENSE",
+    "/benches",
+    "/rust-toolchain.toml",
+    "/src",
+    "/lzallright.pyi",
+    "/tests/*.py",
+    "!__pycache__",
+    "!*.so",
+]
+resolver = "2"
+
+[lib]
+crate-type = [
+  "cdylib",
+  "rlib"
+]
+
+[dependencies]
+cxx = "1.0.94"
+lzokay-sys = { path = "local_dependencies/lzokay-sys" }
+pyo3 = "0.18.1"
+
+[[bench]]
+name = "compress"
+harness = false
+
+[workspace]
+resolver = "2"
+members = ["local_dependencies/lzokay-sys"]
+
+[workspace.package]
+version = "0.2.3"
+authors = ["László Vaskó <1771332+vlaci@users.noreply.github.com>"]
+license = "MIT"
+edition = "2021"
+rust-version = "1.64"
+repository = "https://github.com/vlaci/lzallright"
+homepage = "https://github.com/vlaci/lzallright"
+readme = "README.md"
