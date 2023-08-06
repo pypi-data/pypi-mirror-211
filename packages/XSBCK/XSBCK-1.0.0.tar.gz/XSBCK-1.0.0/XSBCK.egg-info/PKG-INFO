@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: XSBCK
+Version: 1.0.0
+Summary: eXecutable SBCK
+Home-page: https://github.com/yrobink/XSBCK
+Author: Yoann Robin
+Author-email: yoann.robin.k@gmail.com
+License: GNU-GPL3
+Platform: linux
+Platform: macosx
+Requires: numpy
+Requires: scipy
+Requires: xarray
+Requires: netCDF4(>=1.6.0)
+Requires: cftime
+Requires: SBCK(>=0.5.0a29)
+Requires: dask(>=2022.11.0)
+Requires: zarr
+License-File: LICENSE
+
+eXecutable SBCK
