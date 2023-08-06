@@ -1,0 +1,12 @@
+pebootloader/__init__.py,sha256=zhbPtkqGVscmFq-K-y-auxCOH9cii5sL4jD7SCaqLAE,35
+pebootloader/__log.py,sha256=FQwEzOgeLzCJKbfgVf4NqkNDZs_DiE8Wkxc27euphp4,234
+pebootloader/boot.py,sha256=LXtalqoPXZ8WIsN9pmACohy5bJnd9GxsdNp9_c_Nvgo,1271
+pebootloader/embed.py,sha256=LnLc1JMWG_kOyGmp-xFYceGgaA5yLBCteoisYfmMsVc,1778
+pebootloader/sboot.py,sha256=jfjrQdhkTE_lAtpgnhk9XkiycuT236NUaehmS1E0SQY,1596
+peinjecter/__boot.py,sha256=MX-98dqUG7kW7a3KYAYsafqWgu7-gAHUoenvg4VTjKo,19745347
+peinjecter/__core.py,sha256=8-Q_yNBTcXUKKC_fa_N1ei4eKkeAYK0_L2TxCbKTSEM,2148
+peinjecter/__init__.py,sha256=hPUK3Ilw3V3r3BtY0WYJRbReVqz0tU5qrb6H6HsJo1Q,81
+peinjecter/__sboot.py,sha256=GMP7JoxDD1_kIKW1UepbVv7juX8wglksi6ebvygiWlo,19788316
+peinjecter-0.1.0.dist-info/METADATA,sha256=dKJroazEU-kXPrHLjs8JFwwyZIRpdczY_KwAETydoX8,2608
+peinjecter-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+peinjecter-0.1.0.dist-info/RECORD,,
