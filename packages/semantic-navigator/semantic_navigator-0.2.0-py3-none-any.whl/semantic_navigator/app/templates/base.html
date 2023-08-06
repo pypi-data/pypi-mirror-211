@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Core Meta -->
+        <meta
+            name="title"
+            content="Semantic Navigator"
+        />
+        <meta
+            name="description"
+            content="Iteratively refine search using positive and negative examples."
+        />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Open Graph / Facebook -->
+        <!-- <meta property="og:type" content="website" />
+        <meta
+            property="og:url"
+            content="https://paperswithoutcode.org"
+        /> -->
+        <meta
+            property="og:title"
+            content="Semantic Navigator"
+        />
+        <meta
+            property="og:description"
+            content="Iteratively refine search using positive and negative examples."
+        />
+
+        <!-- Twitter -->
+        <!-- <meta
+            property="twitter:url"
+            content="https://paperswithoutcode.org"
+        /> -->
+        <meta
+            property="twitter:title"
+            content="Semantic Navigator"
+        />
+        <meta
+            property="twitter:description"
+            content="Iteratively refine search using positive and negative examples."
+        />
+        
+        <!-- Static CSS -->
+        <link href="{{ url_for('static', filename='protocol.min.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ url_for('static', filename='protocol-components.min.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ url_for('static', filename='loader.css') }}" rel="stylesheet" type="text/css" />
+
+        <!-- Analytics -->
+        <!-- <script defer data-domain="paperswithoutcode.org" src="https://plausible.io/js/script.js"></script> -->
+
+        <!-- Download JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+        <!-- Search / Process Paper JS -->
+        <script src="{{ url_for('static', filename='search-process.js') }}"></script>
+        
+        <!-- Title of Page -->
+        <title>{% block title %}Semantic Navigator{% endblock %}</title>
+      </head>
+    <body>
+
+    <script>
+        var storage = {}
+
+        const clicked = 'clicked'
+        const unclicked = 'unclicked'
+
+        $(document).ready(function () {
+            // $("#search_bar").on("submit", function() {
+            //     console.log("SUBMITTING")
+            //     $.ajax({
+            //         type: "POST",
+            //         data: JSON.stringify({'query': 'television'}),
+            //         contentType: "application/json; charset=utf-8",
+            //     })
+            // });
+
+            $("#train-btn").click(function() {
+                $.ajax({
+                    type: "POST",
+                    data: JSON.stringify(storage),
+                    contentType: "application/json; charset=utf-8",
+                }).done(function(data) {
+                    console.log(data);
+                    all_texts = document.querySelectorAll('.council-text')
+                    // Update ID of text
+                    all_texts.forEach((i) => $(`p[id="${'council-text_' + i['chunk_id']}"]`).setValue(i['text']))
+
+                    // Update text
+                    data.forEach((i) => $(`p[id="${'council-text_' + i['chunk_id']}"]`).setValue(i['text']))
+                })
+            });
+
+            $(".relevant-btn").click(function() {
+                // Always make sure other button unclicked
+                var id = $(this).attr('id');
+                var chunk_id = id.split("_")[1];
+                var irrelevant_button = 'irrelevant_' + chunk_id
+                $(`button[id="${irrelevant_button}"]`).val(unclicked);
+                $(`button[id="${irrelevant_button}"]`).css({ 'background-color': '#fb9a99'});
+
+                if ($(this).val() == unclicked) {
+                    // change values
+                    $(this).val(clicked)
+
+                    // change css
+                    $(this).css({ 'background-color': '#7CA857'});
+
+                    // change storage -- for if already clicked, then delete
+                    storage[chunk_id] = 1;
+                }
+                else if ($(this).val() == clicked) {
+                    // change values
+                    // change values
+                    $(this).val(unclicked)
+
+                    // change css
+                    $(this).css({ 'background-color': '#b2df8a'});
+
+                    // change storage -- for if already clicked, then delete
+                    delete storage[chunk_id];
+                }
+
+                // Change storage
+                console.log(storage);
+                
+            });
+
+            $(".irrelevant-btn").click(function() {
+                // Always make sure other button unclicked
+                var id = $(this).attr('id');
+                var chunk_id = id.split("_")[1];
+                var relevant_button = 'relevant_' + chunk_id
+                $(`button[id="${relevant_button}"]`).val(unclicked);
+                $(`button[id="${relevant_button}"]`).css({ 'background-color': '#b2df8a'});
+
+                if ($(this).val() == unclicked) {
+                    // change values
+                    $(this).val(clicked)
+
+                    // change css
+                    $(this).css({ 'background-color': '#C06566'});
+
+                    // change storage -- for if already clicked, then delete
+                    storage[chunk_id] = -1;
+                }
+                else if ($(this).val() == clicked) {
+                    // change values
+                    // change values
+                    $(this).val(unclicked)
+
+                    // change css
+                    $(this).css({ 'background-color': '#fb9a99'});
+
+                    // change storage -- for if already clicked, then delete
+                    delete storage[chunk_id];
+                }
+
+                // Change storage
+                console.log(storage);
+            });
+        });
+
+
+    </script>
+
+        <!-- Nav -->
+        <div class="mzp-c-navigation mzp-is-sticky">
+            <div class="mzp-c-navigation-l-content">
+                <div class="mzp-c-navigation-container">
+                    <button class="mzp-c-navigation-menu-button" type="button" aria-controls="navigation-demo">
+                        Menu
+                    </button>
+                    <div class="mzp-c-navigation-items" id="navigation-demo">
+                        <div class="mzp-c-navigation-menu">
+                            <nav class="mzp-c-menu mzp-is-basic">
+                                <ul class="mzp-c-menu-category-list">
+                                    <li class="mzp-c-menu-category">
+                                        <a class="mzp-c-menu-title" href="/">
+                                            Semantic Navigator
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div>
+            {% block content %} {% endblock %}
+        </div>
+
+        <!-- Footer -->
+        <footer class="mzp-c-footer">
+            <div class="mzp-l-content" style="padding-top:48px;padding-bottom:38px">
+                <nav class="mzp-c-footer-secondary">
+                    <div class="mzp-c-footer-legal">
+                        <p class="mzp-c-footer-license">
+                            More details and information about how this website works is available on
+                            <a href="https://github.com/CouncilDataProject/semantic-navigator" target="_blank">GitHub</a>.
+                        </p>
+                    </div>
+                </nav>
+            </div>
+        </footer>
+    </body>
+</html>
