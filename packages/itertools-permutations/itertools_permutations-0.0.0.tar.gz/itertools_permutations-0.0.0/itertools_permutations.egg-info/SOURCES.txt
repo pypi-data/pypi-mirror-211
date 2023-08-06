@@ -1,0 +1,7 @@
+setup.py
+itertools_permutations/__init__.py
+itertools_permutations/make.py
+itertools_permutations.egg-info/PKG-INFO
+itertools_permutations.egg-info/SOURCES.txt
+itertools_permutations.egg-info/dependency_links.txt
+itertools_permutations.egg-info/top_level.txt
