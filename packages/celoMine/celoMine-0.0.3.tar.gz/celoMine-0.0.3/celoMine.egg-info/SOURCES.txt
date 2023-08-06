@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+celoMine/PredictivePR.py
+celoMine/__init__.py
+celoMine.egg-info/PKG-INFO
+celoMine.egg-info/SOURCES.txt
+celoMine.egg-info/dependency_links.txt
+celoMine.egg-info/requires.txt
+celoMine.egg-info/top_level.txt
