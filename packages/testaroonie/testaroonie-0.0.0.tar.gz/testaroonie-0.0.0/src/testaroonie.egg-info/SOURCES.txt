@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+src/testaroonie/__init__.py
+src/testaroonie/test.py
+src/testaroonie.egg-info/PKG-INFO
+src/testaroonie.egg-info/SOURCES.txt
+src/testaroonie.egg-info/dependency_links.txt
+src/testaroonie.egg-info/top_level.txt
