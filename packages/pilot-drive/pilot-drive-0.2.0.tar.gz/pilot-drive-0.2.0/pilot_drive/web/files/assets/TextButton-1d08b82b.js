@@ -1,0 +1,1 @@
+import{d as o,k as n,_ as s,a,c as r,b as c,t as p}from"./index-b1308428.js";const u=o({props:{text:String},setup(t){return{buttonText:n(t,"text")}}}),i={class:"text-btn"};function _(t,e,d,x,f,l){return a(),r("div",i,[c("p",null,p(t.buttonText),1)])}const m=s(u,[["render",_]]);export{m as default};

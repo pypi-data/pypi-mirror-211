@@ -1,0 +1,2 @@
+[console_scripts]
+pilot-drive = pilot_drive.__main__:run
