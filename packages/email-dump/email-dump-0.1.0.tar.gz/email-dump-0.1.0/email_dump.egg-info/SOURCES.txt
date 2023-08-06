@@ -1,0 +1,11 @@
+LICENSE
+README.md
+email_dump.py
+setup.cfg
+setup.py
+email_dump.egg-info/PKG-INFO
+email_dump.egg-info/SOURCES.txt
+email_dump.egg-info/dependency_links.txt
+email_dump.egg-info/entry_points.txt
+email_dump.egg-info/requires.txt
+email_dump.egg-info/top_level.txt
