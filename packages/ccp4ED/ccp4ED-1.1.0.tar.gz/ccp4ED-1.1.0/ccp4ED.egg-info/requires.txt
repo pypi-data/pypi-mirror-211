@@ -1,0 +1,14 @@
+TarikDrevonUtils
+bs4
+cbf
+colorama
+crystals
+easygui
+gemmi
+matplotlib
+mrcfile
+numpy
+pandas
+pickle5
+scipy
+tifffile
