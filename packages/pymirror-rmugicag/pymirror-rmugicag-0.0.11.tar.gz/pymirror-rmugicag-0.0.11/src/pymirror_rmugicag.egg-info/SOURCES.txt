@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pymirror_rmugicag.egg-info/PKG-INFO
+src/pymirror_rmugicag.egg-info/SOURCES.txt
+src/pymirror_rmugicag.egg-info/dependency_links.txt
+src/pymirror_rmugicag.egg-info/entry_points.txt
+src/pymirror_rmugicag.egg-info/requires.txt
+src/pymirror_rmugicag.egg-info/top_level.txt
+src/pymirrorui/__init__.py
+src/pymirrorui/main.py
+src/pymirrorui/text_comparator/__init__.py
+src/pymirrorui/text_comparator/comparator.py
+tests/test_text_compare.py
