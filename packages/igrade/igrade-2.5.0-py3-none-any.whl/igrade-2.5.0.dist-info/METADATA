@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: igrade
+Version: 2.5.0
+Summary: An unofficial wrapper for iGradePlus Student Management Systems
+Home-page: https://github.com/Kasherpete/Igrade-web-scraper
+Author: Keagan Peterson
+Author-email: Keagan.a.peterson@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aiohttp (~=3.8.4)
+Requires-Dist: requests (~=2.25.1)
+Requires-Dist: beautifulsoup4 (~=4.12.2)
+Requires-Dist: colorama (~=0.4.6)
+Requires-Dist: lxml (~=4.9.0)
+
+UNKNOWN
+
