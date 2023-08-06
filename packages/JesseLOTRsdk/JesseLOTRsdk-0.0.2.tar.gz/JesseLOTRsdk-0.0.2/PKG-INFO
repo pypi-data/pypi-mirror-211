@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: JesseLOTRsdk
+Version: 0.0.2
+Summary: An SDK for the Lord of the Rings API. Created for a coding challenge.
+Home-page: https://github.com/vincjess
+Author: Jesse Vincent
+Author-email: vincenjes@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# Lord of the Rings SDK
+
+Please modify this readme file to specify how to install, use and test the SDK.
