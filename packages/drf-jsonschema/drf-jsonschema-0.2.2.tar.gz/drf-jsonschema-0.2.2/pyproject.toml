@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "drf-jsonschema"
+description = "A package that constructs JsonSchema validation error into error tree for Django Rest Framework with custom error message in compliance with the DRF error message."
+version = "0.2.2"
+readme = "README.rst"
+requires-python = ">=3.8"
+keywords = ["jsonschema", "drf"]
+license = { file="LICENSE"}
+dependencies = [
+    'jsonschema >= 4.16.0'
+]
+
+[tool.yapf]
+SPACES_BEFORE_COMMENT=2
+SPLIT_ARGUMENTS_WHEN_COMMA_TERMINATED=false
+DEDENT_CLOSING_BRACKETS=true
+INDENT_DICTIONARY_VALUE=true
+ALLOW_SPLIT_BEFORE_DICT_VALUE=false
