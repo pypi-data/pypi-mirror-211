@@ -1,0 +1,17 @@
+rudderclient/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rudderclient/aws/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rudderclient/aws/requests.py,sha256=ieLtk7aeMxT0La1F_cyDwKJltBk7GUeoZDN1lfTLc1Y,5006
+rudderclient/gcp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rudderclient/gcp/auth.py,sha256=bM2yTwZOdMw-tx7hnTKsLvosll_C0yAXtIZwPWK4EZQ,2649
+rudderclient/gcp/http_requests.py,sha256=4YXduekm5bT_-8v6VkVPWrhnqS9thmdJFkR_5bwkE3Q,1969
+rudderclient/gcp/pubsub.py,sha256=bTVhlNZEmQyj3bs09zYm7Jiioq8N30OcUwXub1FLLSs,869
+rudderclient/gcp/workspace.py,sha256=4ANtM3ohw6KXI5x-7TF45Fz-cJ9zy8srZzcbTxxSvIw,3832
+rudderclient/request/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rudderclient/request/exceptions.py,sha256=pBAVHlkKsjxHRTRluP9o0l-BdcdMOULYAY3uuLaW6ls,528
+rudderclient/request/helpers.py,sha256=x4jhxNNak7fCMgdB3LJey5qQn3yGdGzcxH6_krHERVI,1260
+rudderclient/tools/send_email.py,sha256=et67SvlNHCweRhkRRy54cr2e9PU44fg4YYqtVK3eS94,3816
+rudderclient-1.8.1.dist-info/LICENSE,sha256=9mWIOKxuB3pR0qhO6i6tZipz3_SD_5VDb2G2yDj-lOA,1069
+rudderclient-1.8.1.dist-info/METADATA,sha256=rC7AdcMq7nJh_5cNRjzlL_kFBzxGQ72WqeqTeLiQa-w,2011
+rudderclient-1.8.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+rudderclient-1.8.1.dist-info/top_level.txt,sha256=as4vrqskVz7tmBegHMES6tKHqhpMZnbiBMtrR6K0aj8,13
+rudderclient-1.8.1.dist-info/RECORD,,
