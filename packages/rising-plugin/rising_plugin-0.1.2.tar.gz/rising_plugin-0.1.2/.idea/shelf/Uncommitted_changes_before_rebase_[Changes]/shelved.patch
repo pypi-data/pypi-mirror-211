@@ -1,0 +1,34 @@
+Index: src/rising_plugin/risingplugin.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import os\nimport json\nimport datetime\nfrom typing import List, Any\n\nfrom langchain.chat_models import ChatOpenAI\nfrom langchain.embeddings.openai import OpenAIEmbeddings\nfrom langchain.vectorstores import utils\nfrom langchain.document_loaders.csv_loader import CSVLoader\nfrom langchain.chains.question_answering import load_qa_chain\nfrom langchain.docstore.document import Document\nimport openai\n\nimport replicate\nfrom firebase_admin import storage\n\nfrom .common.utils import (\n    OPENAI_API_KEY,\n    FIREBASE_STORAGE_ROOT,\n    COMMAND_SMS_INDEXS,\n)\nfrom .image_embedding import (\n    query_image_text,\n    get_prompt_image_with_message,\n)\n\ndef getCompletion(query, model=\"gpt-3.5-turbo\", uuid=\"\", image_search=True,):\n    llm = ChatOpenAI(model_name=model, temperature=0, openai_api_key=OPENAI_API_KEY)\n    chain = load_qa_chain(llm, chain_type=\"stuff\")\n    file_path = os.path.dirname(os.path.abspath(__file__))\n\n    with open(f\"{file_path}/phone.json\", \"r\") as infile:\n        data = json.load(infile)\n    embeddings = OpenAIEmbeddings(openai_api_key=OPENAI_API_KEY)\n\n    query_result = embeddings.embed_query(query)\n    doclist = utils.maximal_marginal_relevance(query_result, data, k=1)\n    loader = CSVLoader(file_path=f\"{file_path}/phone.csv\", encoding=\"utf8\")\n    csv_text = loader.load()\n\n    docs = []\n\n    for res in doclist:\n        docs.append(\n            Document(\n                page_content=csv_text[res].page_content, metadata=csv_text[res].metadata\n            )\n        )\n\n    chain_data = chain.run(input_documents=docs, question=query)\n    try:\n        result = json.loads(chain_data)\n        # check image query with only its text\n        if result[\"program\"] == \"image\":\n            if image_search:\n                result[\"content\"] = json.dumps(\n                    {\"image_name\": query_image_text(result[\"content\"], \"\", uuid)}\n                )\n            # else:\n            #     return result\n        return str(result)\n    except ValueError as e:\n        # Check sms query\n        if doclist[0] in COMMAND_SMS_INDEXS:\n            return str(json.dumps({\"program\": \"sms\", \"content\": chain_data}))\n        return str(json.dumps({\"program\": \"message\", \"content\": chain_data}))\n\n\ndef query_image_ask(image_content, message, uuid):\n    prompt_template = get_prompt_image_with_message(image_content, message)\n    data = getCompletion(prompt_template, uuid, False)\n    chain_data = json.loads(data.replace(\"'\", '\"'))\n    if chain_data[\"program\"] == \"image\":\n        return True\n    return False\n\n\ndef getTextFromImage(filename):\n    # Create a reference to the image file you want to download\n    bucket = storage.bucket()\n    blob = bucket.blob(FIREBASE_STORAGE_ROOT.__add__(filename))\n    download_url = \"\"\n\n    try:\n        # Download the image to a local file\n        download_url = blob.generate_signed_url(\n            datetime.timedelta(seconds=300), method=\"GET\", version=\"v4\"\n        )\n\n        output = replicate.run(\n            \"salesforce/blip:2e1dddc8621f72155f24cf2e0adbde548458d3cab9f00c0139eea840d0ac4746\",\n            input={\"image\": download_url},\n        )\n\n    except Exception as e:\n        output = str(\"Error happend while analyzing your prompt. Please ask me again :\")\n\n    return str(output)\n\n\n\"\"\"chat with ai\nresponse: \n{\n 'id': 'chatcmpl-6p9XYPYSTTRi0xEviKjjilqrWU2Ve',\n 'object': 'chat.completion',\n 'created': 1677649420,\n 'model': 'gpt-3.5-turbo',\n 'usage': {'prompt_tokens': 56, 'completion_tokens': 31, 'total_tokens': 87},\n 'choices': [\n   {\n    'message': {\n      'role': 'assistant',\n      'content': 'The 2020 World Series was played in Arlington, Texas at the Globe Life Field, which was the new home stadium for the Texas Rangers.'},\n    'finish_reason': 'stop',\n    'index': 0\n   }\n  ]\n}\n\"\"\"\ndef handle_chat_completion(messages: Any, model: str) -> Any:\n    openai.api_key = OPENAI_API_KEY\n\n    response = openai.ChatCompletion.create(\n        model=model,\n        messages=messages,\n    )\n    return response\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/rising_plugin/risingplugin.py b/src/rising_plugin/risingplugin.py
+--- a/src/rising_plugin/risingplugin.py	(revision 00dafab3976c88ea517150abc9253e6e57a7cf94)
++++ b/src/rising_plugin/risingplugin.py	(date 1685607988264)
+@@ -24,7 +24,13 @@
+     get_prompt_image_with_message,
+ )
+ 
+-def getCompletion(query, model="gpt-3.5-turbo", uuid="", image_search=True,):
++
++def getCompletion(
++    query,
++    model="gpt-3.5-turbo",
++    uuid="",
++    image_search=True,
++):
+     llm = ChatOpenAI(model_name=model, temperature=0, openai_api_key=OPENAI_API_KEY)
+     chain = load_qa_chain(llm, chain_type="stuff")
+     file_path = os.path.dirname(os.path.abspath(__file__))
+@@ -117,6 +123,8 @@
+   ]
+ }
+ """
++
++
+ def handle_chat_completion(messages: Any, model: str) -> Any:
+     openai.api_key = OPENAI_API_KEY
+ 
