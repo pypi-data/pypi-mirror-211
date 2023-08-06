@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="{{ config.theme.locale }}">
+  <head>
+    {%- block site_meta %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title or config.site_name }}</title>
+    {% if config.site_description %}<meta name="description" content="{{ config.site_description }}">{% endif %}
+    {% if config.site_author %}<meta name="author" content="{{ config.site_author }}">{% endif %}
+    {% if page and page.canonical_url %}<link rel="canonical" href="{{ page.canonical_url }}">{% endif %}
+
+    {% if config.site_favicon %}<link rel="shortcut icon" href="{{ config.site_favicon|url }}">
+    {% else %}<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>{{ config.theme.site_emoji }}</text></svg>">{% endif %}
+
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="{{ config.theme.theme_color }}" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="{{ config.theme.theme_color_dark }}" media="(prefers-color-scheme: dark)">
+    {%- endblock %}
+
+    {%- block styles %}
+    <link rel="stylesheet" href="{{ "styles.css"|url }}">
+    {% for path in config.extra_css %}
+    <link href="{{ path|url }}" rel="stylesheet">
+    {% endfor %}
+    {%- endblock %}
+
+    {%- block libs %}
+    {%- endblock %}
+
+    {%- block extrahead %} {% endblock %}
+  </head>
+  <body>
+    <a href="#skip" class="visually-hidden">Skip to main content</a>
+    {%- block header %}
+    {%- endblock %}
+    {%- block main %}
+    <main id="skip">
+      {{ page.content }}
+    </main>
+    {%- endblock %}
+    {%- block footer %}
+    <footer>
+      {%- if config.copyright %}
+      <p>{{ config.copyright }}</p>
+      {%- endif %}
+    </footer>
+    {%- endblock %}
+
+    {%- block scripts %}
+    {% for path in config.extra_javascript %}
+    <script src="{{ path|url }}"></script>
+    {% endfor %}
+    {%- endblock %}
+  </body>
+</html>
