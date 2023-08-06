@@ -1,0 +1,6 @@
+graft docs/
+graft mrbios/templates
+
+include LICENSE
+include README.md
+include CONTRIBUTING.md
