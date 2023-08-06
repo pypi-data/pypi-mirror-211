@@ -1,0 +1,8 @@
+README.md
+setup.py
+igrade/__init__.py
+igrade.egg-info/PKG-INFO
+igrade.egg-info/SOURCES.txt
+igrade.egg-info/dependency_links.txt
+igrade.egg-info/requires.txt
+igrade.egg-info/top_level.txt
