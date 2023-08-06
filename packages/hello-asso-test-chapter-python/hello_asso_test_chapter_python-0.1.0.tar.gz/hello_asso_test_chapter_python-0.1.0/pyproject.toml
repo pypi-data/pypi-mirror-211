@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "hello-asso-test-chapter-python"
+version = "0.1.0"
+description = "Test chapter python"
+authors = ["John Doe <john.doe@helloasso.com>"]
+readme = "README.md"
+packages = [{include = "helloassotestchapterpython"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytest = "^7.3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

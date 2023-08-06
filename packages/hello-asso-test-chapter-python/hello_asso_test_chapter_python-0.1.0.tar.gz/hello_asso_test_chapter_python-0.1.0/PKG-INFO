@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: hello-asso-test-chapter-python
+Version: 0.1.0
+Summary: Test chapter python
+Author: John Doe
+Author-email: john.doe@helloasso.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pytest (>=7.3.1,<8.0.0)
+Description-Content-Type: text/markdown
+
+# hello asso test chapter python
+
+Test chapter python
