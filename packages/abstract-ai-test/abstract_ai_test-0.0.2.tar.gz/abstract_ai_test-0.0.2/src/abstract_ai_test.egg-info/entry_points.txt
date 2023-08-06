@@ -1,0 +1,2 @@
+[console_scripts]
+abstract_ai_test = main:main
