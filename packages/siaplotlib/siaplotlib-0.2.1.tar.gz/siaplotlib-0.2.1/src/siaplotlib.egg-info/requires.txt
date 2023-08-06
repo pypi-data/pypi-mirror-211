@@ -1,0 +1,13 @@
+numpy>=1.23.4
+pandas>=1.5.1
+xarray>=2022.11.0
+matplotlib>=3.6.2
+pillow>=9.3.0
+cartopy==0.21.1
+windrose>=1.8.1
+
+[dev]
+bumpver
+netcdf4==1.6.2
+build
+twine
