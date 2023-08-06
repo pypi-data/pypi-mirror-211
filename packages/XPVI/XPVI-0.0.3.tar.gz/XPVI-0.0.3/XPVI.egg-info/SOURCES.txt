@@ -1,0 +1,6 @@
+README.md
+setup.py
+XPVI.egg-info/PKG-INFO
+XPVI.egg-info/SOURCES.txt
+XPVI.egg-info/dependency_links.txt
+XPVI.egg-info/top_level.txt
