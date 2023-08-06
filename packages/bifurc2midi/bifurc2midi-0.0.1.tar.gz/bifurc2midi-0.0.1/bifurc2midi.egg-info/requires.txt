@@ -1,0 +1,16 @@
+numpy
+matplotlib
+mido
+click
+python-rtmidi
+
+[test]
+pytest
+pytest-cov
+coverage
+flake8
+black
+isort
+mypy
+types-setuptools
+pre-commit
