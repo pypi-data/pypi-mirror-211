@@ -1,0 +1,16 @@
+sphinx
+
+[dev]
+nox
+pre-commit
+mypy
+
+[doc]
+pydata-sphinx-theme==0.13.0rc3
+sphinx-design
+
+[test]
+pytest
+beautifulsoup4
+pytest-regressions
+pytest-cov
