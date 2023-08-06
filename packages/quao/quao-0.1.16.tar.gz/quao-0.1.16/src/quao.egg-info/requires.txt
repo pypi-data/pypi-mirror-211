@@ -1,0 +1,13 @@
+qiskit==0.42.1
+qiskit_ibm_runtime
+qiskit-ibm-provider
+matplotlib
+pylatexenc
+qbraid==0.4.0
+
+[dev]
+black
+bumpver
+isort
+pip-tools
+pytest
