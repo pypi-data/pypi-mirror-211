@@ -1,0 +1,2 @@
+[console_scripts]
+yapsygui = yapsy_gui.__main__:main
