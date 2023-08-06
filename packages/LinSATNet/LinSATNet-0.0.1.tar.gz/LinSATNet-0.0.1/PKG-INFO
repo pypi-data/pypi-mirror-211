@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: LinSATNet
+Version: 0.0.1
+Summary: LinSATNet offers a neural network layer to enforce the satisfiability of positive linear constraints to the output of neural networks. The gradient through the layer is exactly computed. This package now works with PyTorch.
+Home-page: https://github.com/Thinklab-SJTU/LinSATNet
+Author: Runzhong Wang
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: GPU :: NVIDIA CUDA
+Classifier: Environment :: Console
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# LinSATNet
+Official implementation of our ICML 2023 paper "LinSATNet: The Positive Linear Satisfiability Neural Networks".
