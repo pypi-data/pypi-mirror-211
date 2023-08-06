@@ -1,0 +1,8 @@
+in_toto_attestation/__init__.py,sha256=IgRNQ8pnKllVWhoxb9LsQrCTJrhOLBIXy9zsWrgISec,18
+in_toto_attestation/predicates/link/v0/link_pb2.py,sha256=QAZ3teQEezMxumtOM6iJ0-uqF9TN0Xq-YTLH98qouiA,1877
+in_toto_attestation/predicates/vsa/v0/vsa_pb2.py,sha256=DY3yJPeurYpzygl8UrR3mXBxW84zx6VoRg1-7MJE9b4,4166
+in_toto_attestation/v1/resource_descriptor_pb2.py,sha256=d4XV2eQULGBTykgNcBG0a166Td5t8xiIa8DGI9liqPQ,2492
+in_toto_attestation/v1/statement_pb2.py,sha256=v74quwDtxbwJw_C5Byy2eEcoV61DyTHya2gtOT5azlo,1722
+in_toto_attestation-0.9.1.dist-info/METADATA,sha256=Beh8Ur2P3T1lGeskOZ9g-WyOj_qUTrSj4hdy9jWxIR4,2023
+in_toto_attestation-0.9.1.dist-info/WHEEL,sha256=y1bSCq4r5i4nMmpXeUJMqs3ipKvkZObrIXSvJHm1qCI,87
+in_toto_attestation-0.9.1.dist-info/RECORD,,
