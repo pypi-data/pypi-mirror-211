@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: wifi-guard
+Version: 0.0.3
+Summary: A simple WiFi Guard package
+Home-page: https://github.com/wifi-guard/wifi-guard
+Author: Lee Jongyoung
+Author-email: leejongyoung@icloud.com
+License: MIT
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# WiFi Guard
+
+WiFi Guard is a simple Python package that provides functionality to scan Wi-Fi networks and check connected devices on different platforms.
+
+## Installation
+
+Use pip to install the `wifi_guard` package:
+
+```shell
+pip install wifi_guard
+```
+
+## Usage
+
+After installation, you can run the wifi-guard command to start the WiFi Guard application:
+
+``` shell
+wifi-guard
+```
+
+The application will scan the available Wi-Fi networks and display the detected networks along with the connected devices.
+
+## Compatibility
+
+The wifi_guard package is compatible with the following platforms:
+
+- macOS
+- Windows
+- Linux (Ubuntu)
+
+## Dependencies
+
+The wifi_guard package has the following dependencies:
+
+- platform
+- subprocess
+- re
+- time
+
+These dependencies will be automatically installed during the package installation process.
+
+## Contributing
+
+Contributions to the WiFi Guard package are welcome! If you encounter any issues or have suggestions for improvements, please open an issue on the [GitHub repository](https://github.com/wifi-guard/wifi-guard). Pull requests are also encouraged.
+
+## License
+
+This package is released under the MIT License. See the [LICENSE](/LICENSE) file for more details.

@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+wifi-guard/__init__.py
+wifi-guard/wifi-guard.py
+wifi_guard.egg-info/PKG-INFO
+wifi_guard.egg-info/SOURCES.txt
+wifi_guard.egg-info/dependency_links.txt
+wifi_guard.egg-info/entry_points.txt
+wifi_guard.egg-info/top_level.txt
