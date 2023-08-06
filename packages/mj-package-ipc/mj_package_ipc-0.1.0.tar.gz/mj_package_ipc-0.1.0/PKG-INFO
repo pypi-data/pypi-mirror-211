@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: mj_package_ipc
+Version: 0.1.0
+Summary: Example Python package
+Home-page: 
+Author: Madhusudan J
+Author-email: madhusudanj021vl@gmil.com
+Classifier: Programming Language :: Python :: 3.11
+License-File: licence
+
+Sample pip installable Python package

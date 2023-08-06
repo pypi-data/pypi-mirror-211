@@ -1,0 +1,10 @@
+licence
+setup.py
+mj_package_ipc/__init__.py
+mj_package_ipc/mj_package1.py
+mj_package_ipc/mj_package2.py
+mj_package_ipc.egg-info/PKG-INFO
+mj_package_ipc.egg-info/SOURCES.txt
+mj_package_ipc.egg-info/dependency_links.txt
+mj_package_ipc.egg-info/requires.txt
+mj_package_ipc.egg-info/top_level.txt
