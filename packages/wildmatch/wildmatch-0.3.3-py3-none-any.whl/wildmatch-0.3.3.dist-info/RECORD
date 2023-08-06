@@ -1,0 +1,9 @@
+LICENSE,sha256=46-I6j4cThtSF-4F8ucN7YeomyuChqfJ8YKfIXMHhbg,1454
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/wildmatch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/wildmatch/filter.py,sha256=dCwzAVFFx4RYI-Z9dOj9EdBt9SIP-4q11cOAh3MMKoY,2914
+wildmatch-0.3.3.dist-info/LICENSE,sha256=46-I6j4cThtSF-4F8ucN7YeomyuChqfJ8YKfIXMHhbg,1454
+wildmatch-0.3.3.dist-info/METADATA,sha256=1AIPNRqj-MFqA2LlEzGEbQPI2ENGL9K65NchUrKjQVg,1845
+wildmatch-0.3.3.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+wildmatch-0.3.3.dist-info/entry_points.txt,sha256=ORNRKqUASZZQU2kGPU6uAPmK2aFUsmNnXH3k_8mLrtE,55
+wildmatch-0.3.3.dist-info/RECORD,,
