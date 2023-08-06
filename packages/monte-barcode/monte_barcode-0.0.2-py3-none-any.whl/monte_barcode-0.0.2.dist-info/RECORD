@@ -1,0 +1,12 @@
+montebarcode/__init__.py,sha256=y4DRF_EAmiL8faKjY3Jx5087oJV-WUrJWor2rsSD1Rc,45
+montebarcode/checks.py,sha256=zq5gwb2c3tj2kwCH10xBHd8eWYAhYxtQLauS-M8lQVc,16898
+montebarcode/cli.py,sha256=FPNEv2puFyf51iQ5NWRn1lPUcWIQoqNRL-7r4qD5S6o,12976
+montebarcode/codons.yml,sha256=TLQ4YAmVpxsPJr1-sisLrQn77nDPzWexzWHyWXYnyzw,403
+montebarcode/generate.py,sha256=D6FLCnuwyDmrfrRtxfs9MF5v4OTHf9C6St2q03F4gSw,6106
+montebarcode/utils.py,sha256=sl_G33BmjeF1xPefRZahsASYCX17WIuzGjyBLuppePA,864
+monte_barcode-0.0.2.dist-info/LICENSE,sha256=pAZXnNE2dxxwXFIduGyn1gpvPefJtUYOYZOi3yeGG94,1068
+monte_barcode-0.0.2.dist-info/METADATA,sha256=a_wfnAFpjm-CEoepTZ0fLVlZOwTk9GPBzgJiNii0Xxg,18517
+monte_barcode-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+monte_barcode-0.0.2.dist-info/entry_points.txt,sha256=ONlnDJDKjRIGDy56Qd64EQrz6KP3HqaBf4Mp6MQ5swQ,48
+monte_barcode-0.0.2.dist-info/top_level.txt,sha256=8wk2k1-p0cwq55hTn3w8znMuK49LSnfJ_A4Wn55TgH8,13
+monte_barcode-0.0.2.dist-info/RECORD,,
