@@ -1,0 +1,14 @@
+README.md
+setup.py
+GaikevichSerialization.egg-info/PKG-INFO
+GaikevichSerialization.egg-info/SOURCES.txt
+GaikevichSerialization.egg-info/dependency_links.txt
+GaikevichSerialization.egg-info/requires.txt
+GaikevichSerialization.egg-info/top_level.txt
+Serialization/__init__.py
+Serialization/base_serializer.py
+Serialization/dict_serializer.py
+Serialization/json_serializer.py
+Serialization/serializers_factory.py
+Serialization/type_constants.py
+Serialization/xml_serializer.py
