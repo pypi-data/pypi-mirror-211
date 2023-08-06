@@ -1,0 +1,16 @@
+unidns/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unidns/_version.py,sha256=SLmIznfhsv32u2QuC-zEnmBOoq_ZiW5bF6G0ehC1KpQ,127
+unidns/client.py,sha256=j9tgiZK9mhg8mIhDyWVvkcWJnkp2Lgn_ejpMC_V7Brw,5896
+unidns/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unidns/examples/unidnsclient.py,sha256=ZolEQzp8qb4I8Pr5HmJ358b3iOZGp47TEv47Lo0PLh4,1450
+unidns/network/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unidns/network/packetizer.py,sha256=JoeBnDW-foWtdqzqRGoGVG3eqQdiYco-YHRV0vjWE2g,705
+unidns/protocol/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unidns/protocol/structs.py,sha256=LXxYGCT97Y4Fph_BZ2rfqo0VaoubDq0I-V4y7WpjWLM,27249
+unidns-0.0.1.dist-info/LICENSE,sha256=1YA6wu6MXftcNdl1FkL9leOx_VIp4-wYhX6PQtFNSfg,1070
+unidns-0.0.1.dist-info/METADATA,sha256=fW78IiHybs20ZyfXdBMP1-2DZSNj7q8DNWBkarZUrqM,467
+unidns-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+unidns-0.0.1.dist-info/entry_points.txt,sha256=0dNfMKh9CXRK_CGR3EtWwL3rAx1rQSZnCHaf4fN77tg,61
+unidns-0.0.1.dist-info/top_level.txt,sha256=NMSwT-Cb1sG1BQnr729ptallf91gRN695niUb0NttA4,7
+unidns-0.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+unidns-0.0.1.dist-info/RECORD,,
