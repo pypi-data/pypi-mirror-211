@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "web-data-extraction"
+version = "0.0.3"
+description = "A unified collection of web data premises eg Apartment for sale, apartment for rent, house for sale, house for rent"
+authors = ["Lisa Yvette INYANGE <linyange@andrew.cmu.edu>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/ILisa250/web-data-extraction"
+repository = "https://github.com/ILisa250/web-data-extraction"
+keywords = ["web-data-extraction", "web-scraping", "Lisa"]
+
+packages = [{include = "web_data_extraction"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
