@@ -1,0 +1,10 @@
+teachingtoolshed/__init__.py,sha256=HpDawzN1pSXz5j09OpSi8G18QD_HY2UHBQ_g9DMIBBc,132
+teachingtoolshed/api/__init__.py,sha256=zMetSbbRDJPNFamX91P81RC0yj8I2mnGntvuDgqe9iw,21
+teachingtoolshed/api/edstem.py,sha256=r1chaHENIBn5N06IwhN6X3q6o2iCHvZhV8GJMs9_XR8,20954
+teachingtoolshed/gradebook/__init__.py,sha256=7c7sxKTIoF3WOGW7EIlnviEYFdbhhri3EhJTMr1K_Qg,94
+teachingtoolshed/gradebook/canvas.py,sha256=8aLQmrofyd6IbK22rqffQalhuIbmK_XcLQl-beO1fp8,7356
+teachingtoolshed/gradebook/csv_readers.py,sha256=Gk7RI8nfAH5SOXcLwpe3IEtkMY_Q6z-OuM8s7eJfjYc,4190
+teaching_toolshed-0.2.0.dist-info/LICENSE,sha256=UnrsW1zS0EPS3q7VM3WiPQ_PtFXaFumjwie6yCKSJR0,1071
+teaching_toolshed-0.2.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+teaching_toolshed-0.2.0.dist-info/METADATA,sha256=TgNBxLtADxehbkQI1cTkJsDdShJSI19TDBN35adcXSM,1193
+teaching_toolshed-0.2.0.dist-info/RECORD,,
