@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: web-data-extraction
+Version: 0.0.2
+Summary: A unified collection of web data premises eg Apartment for sale, apartment for rent, house for sale, house for rent
+Home-page: https://github.com/ILisa250/web-data-extraction
+License: MIT
+Keywords: web-data-extraction,web-scraping,Lisa
+Author: Lisa Yvette INYANGE
+Author-email: linyange@andrew.cmu.edu
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Repository, https://github.com/ILisa250/web-data-extraction
+Description-Content-Type: text/markdown
+
+A unified scraper collection of web data 
+
+
+#### Purpose of the package
++ The purpose of the package is to provide a web scraping funstions that will nbe able to deploy data to db
+
+# Features
++ Apartment for sale features
+    - Ref_number
+    - Build_Year
+    - Floors
+    - Sitting_Rooms
+    - Dining_Rooms
+    - Bedrooms
+    - Wardrobes
+    - Bathrooms
+    - Car_Parking
+    - Ancillary
+    - Plot_number
+    - LandSize
+    - Price
+    - District
+    - Secto
+    - Date
+
+### Getting started
+The package can be found on pypi hense you can install it using pip 
+
+#### Installation
+``` bash
+pip install web_data_extraction
+```
+
+### API
+
+### Contribution
+Contributions are welcome
+Notice a bug, let me know. Thanks
+
+### Author
+ + Main Maintainer: Lisa Yvette INYANGE
