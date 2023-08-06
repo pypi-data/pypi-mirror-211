@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+Serializer_Nz/__init__.py
+Serializer_Nz/json_serializer.py
+Serializer_Nz.egg-info/PKG-INFO
+Serializer_Nz.egg-info/SOURCES.txt
+Serializer_Nz.egg-info/dependency_links.txt
+Serializer_Nz.egg-info/requires.txt
+Serializer_Nz.egg-info/top_level.txt

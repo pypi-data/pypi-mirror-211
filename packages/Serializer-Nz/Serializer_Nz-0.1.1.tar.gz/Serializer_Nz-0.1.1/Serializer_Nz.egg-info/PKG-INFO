@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: Serializer-Nz
+Version: 0.1.1
+Summary: Library for python (de)serialization in Json
+Home-page: https://github.com/Nzhdeh07/Igi_labs/tree/lab_3
+Author: Nzhdeh
+Author-email: nzhdeh.baboyan@icloud.com
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
