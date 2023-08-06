@@ -1,0 +1,3 @@
+[console_scripts]
+quadpy-optimize = quadpy._cli:main
+
