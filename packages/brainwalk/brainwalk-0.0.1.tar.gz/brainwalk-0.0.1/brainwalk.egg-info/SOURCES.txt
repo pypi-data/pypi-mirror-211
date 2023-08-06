@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+brainwalk/__init__.py
+brainwalk/_modidx.py
+brainwalk/core.py
+brainwalk.egg-info/PKG-INFO
+brainwalk.egg-info/SOURCES.txt
+brainwalk.egg-info/dependency_links.txt
+brainwalk.egg-info/entry_points.txt
+brainwalk.egg-info/not-zip-safe
+brainwalk.egg-info/requires.txt
+brainwalk.egg-info/top_level.txt
