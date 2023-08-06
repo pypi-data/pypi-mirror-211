@@ -1,0 +1,64 @@
+
+# This CI will launch a Docker image that contains all the dependencies required
+# within that image the pytest test suite is run 
+
+name: CI with install
+
+on:
+  pull_request:
+    branches:
+      - develop
+      - main
+    paths-ignore:
+      - 'docs/**'
+      - '.gitignore'
+      - '*.md'
+      - 'CITATION.cff'
+      - 'LICENSE.txt'
+      - 'readthedocs.yml'
+
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    container:
+      image: continuumio/miniconda3:4.12.0
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: install non pypi dependencies for cad creation
+        run: |
+          apt-get --allow-releaseinfo-change update
+          apt-get update -y
+          apt-get upgrade -y
+          apt-get install -y libgl1-mesa-glx libgl1-mesa-dev libglu1-mesa-dev  freeglut3-dev libosmesa6 libosmesa6-dev  libgles2-mesa-dev
+          apt-get install -y libpangocairo-1.0-0
+          conda install -c conda-forge -y moab
+          conda install -c conda-forge -y gmsh
+          conda install -c conda-forge -y python-gmsh
+          conda install -c conda-forge -y "openmc=0.13.3=dagmc*nompi*"
+
+      - name: install package
+        run: |
+          pip install .
+          python -c "import cad_to_dagmc"
+
+      - name: run examples
+        run: |
+          cd examples
+          python create_stp_files_for_examples.py
+          python cadquery_assembly.py
+          python cadquery_compound.py
+          python cadquery_object_and_stp_file.py
+          python cadquery_text.py
+          python curved_cadquery_object.py
+          python multiple_cadquery_objects.py
+          python multiple_stp_files.py
+          python single_stp_file_multiple_volumes.py
+          python single_cadquery_object.py
+          python single_stp_file.py
+
+      - name: Run pytest
+        run: |
+          pip install .[tests]
+          pytest tests -v
