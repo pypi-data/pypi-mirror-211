@@ -1,0 +1,4 @@
+[sqlalchemy.dialects]
+cdata_snowflake = cdata.sqlalchemy_snowflake.dialect:SnowflakeDBSDialect
+snowflake = cdata.sqlalchemy_snowflake.dialect:SnowflakeDBSDialect
+

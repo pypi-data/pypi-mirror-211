@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: cdata-snowflake-connector
+Version: 22.0.8509
+Summary: A Python Database API v2.0(PEP 249) module for cdata-snowflake-connector with SQLAlchemy integrated
+Home-page: https://www.cdata.com
+Author: CData Software, Inc.
+Author-email: support@cdata.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved
+Classifier: Topic :: Database
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
