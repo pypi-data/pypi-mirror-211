@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: FeatureInsight
+Version: 0.0.9
+Summary: project description
+Home-page: https://github.com/px39n/FeatureInsight
+Author: px39n
+Author-email: isxzl39@gmail.com
+License: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# 自用
+https://pypi.org/project/FeatureInsight/0.0.1/
+bash scripts/upload_pypi.sh --verbose
+
+# 如何使用？
+
+
+from FeatureInsight import struct_Investigation,univar_dis,bivar_dis
+
+
+EDA: Structure
+summary=struct_Investigation(df)  
+summary.print()
+summary.sort('Unique Count')	
+
+
+EDA: statistics
+
+univar_dis(df,df.columns,mode="pie")
+univar_dis(df,df.columns)
+bivar_dis(df,[["Age","Drug"],["Sex","BP"],["K","Drug"]],mode="Bar")
+bivar_dis(df,[["Age","Drug"],["Sex","BP"],["K","Drug"]],mode="Line")
