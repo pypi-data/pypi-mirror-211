@@ -1,0 +1,14 @@
+Change Log
+===========
+0.0.5 (May 30, 2023)
+-------------------------
+- Fifth Release
+
+Notes:
+------
+Made an adjustment to moving_average_baseline_subtraction function. Previously function would compute an estimate baseline
+of an input array and then return the estimated baseline as well as a plot of the input array overlayed with the baseline.
+The plotting functionality has been removed such that the only output in the estimated baseline array.
+
+
+ 
