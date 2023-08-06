@@ -1,0 +1,3 @@
+[console_scripts]
+energyplus_python_configure = energyplus_python_apps.configure:configure_cli
+
