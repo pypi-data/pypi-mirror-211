@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: python-round
+Version: 0.0.2
+Summary: A package to to round Float numbers.
+Home-page: https://github.com/AbdHajjar/python_round
+Author: Abd Alrahman Hajjar
+Author-email: Abdalrahman.hajjar@lavita.de
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: BSD License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pytest
+
+# python_round
+Round for Python 
