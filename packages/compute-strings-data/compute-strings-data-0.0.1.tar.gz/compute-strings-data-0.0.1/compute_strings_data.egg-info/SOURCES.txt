@@ -1,0 +1,8 @@
+README.md
+setup.py
+compute_strings_data.egg-info/PKG-INFO
+compute_strings_data.egg-info/SOURCES.txt
+compute_strings_data.egg-info/dependency_links.txt
+compute_strings_data.egg-info/top_level.txt
+helpers/__init__.py
+helpers/helper_functions.py
