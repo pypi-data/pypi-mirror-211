@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+bashbot_package/bashbot_index.py
+bashbot_package.egg-info/PKG-INFO
+bashbot_package.egg-info/SOURCES.txt
+bashbot_package.egg-info/dependency_links.txt
+bashbot_package.egg-info/entry_points.txt
+bashbot_package.egg-info/requires.txt
+bashbot_package.egg-info/top_level.txt

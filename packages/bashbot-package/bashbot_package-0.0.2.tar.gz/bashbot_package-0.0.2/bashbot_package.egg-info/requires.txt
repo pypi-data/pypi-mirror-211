@@ -1,0 +1,4 @@
+flask
+decouple
+rich
+openai
