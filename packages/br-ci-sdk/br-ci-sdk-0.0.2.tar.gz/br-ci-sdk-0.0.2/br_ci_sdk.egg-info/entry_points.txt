@@ -1,0 +1,3 @@
+[console_scripts]
+brci-cmd = run:main
+
