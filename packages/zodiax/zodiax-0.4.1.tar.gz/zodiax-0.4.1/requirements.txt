@@ -1,0 +1,7 @@
+# Core
+equinox
+jax
+jaxlib
+jaxtyping
+numpy # Needed for serialisation
+optax # Needed for optimisation

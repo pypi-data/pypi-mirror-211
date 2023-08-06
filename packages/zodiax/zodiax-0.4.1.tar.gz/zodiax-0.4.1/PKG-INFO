@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: zodiax
+Version: 0.4.1
+Summary: Equinox extension for scientific programming
+Home-page: https://github.com/LouisDesdoigts/zodiax
+Author: Louis Desdoigts
+Author-email: Louis.Desdoigts@sydney.edu.au
+Project-URL: Bug Tracker, https://github.com/LouisDesdoigts/zodiax/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8, <4
+Provides-Extra: docs
+Provides-Extra: tests
+License-File: LICENSE
+
+Extending Equinox for scientific programming
