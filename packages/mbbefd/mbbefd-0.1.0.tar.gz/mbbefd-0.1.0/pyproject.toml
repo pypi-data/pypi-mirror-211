@@ -1,0 +1,22 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=61.0", "wheel", "numpy>=1.22.0", "Cython>=3.0.0b1", "scipy>=1.9"]
+
+[project]
+name = "mbbefd"
+version = "0.1.0"
+description = "Univariate and bivariate MBBEFD distributions"
+readme = "README.rst"
+license = {text = "MIT License"}
+requires-python = ">=3.9"
+dependencies = ["numpy", "scipy>=1.9"]
+
+[project.optional-dependencies]
+test = ["pytest", "mpmath"]
+notebook = ["plotly", "ipykernel", "ipywidgets", "matplotlib", "nbformat>=4.2", "numba", "mpmath", "sympy"]
+
+[tool.cibuildwheel]
+build = "*-win_amd64"
+skip = "pp*"
+test-requires = ["pytest", "mpmath"]
+test-command = "pytest {project}"

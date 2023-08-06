@@ -1,0 +1,16 @@
+numpy
+scipy>=1.9
+
+[notebook]
+plotly
+ipykernel
+ipywidgets
+matplotlib
+nbformat>=4.2
+numba
+mpmath
+sympy
+
+[test]
+pytest
+mpmath
