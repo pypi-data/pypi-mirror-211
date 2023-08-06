@@ -1,0 +1,11 @@
+claude2openai/__init__.py,sha256=ieYGCTKYWGI3xARm5yPrs_Y9alehIrkiguwk1TzrBB8,290
+claude2openai/version.py,sha256=Q8raD6k02z4DoYniAz3iui5d6EdM1el95SMTLXJbeCA,18
+claude2openai/api_resources/__init__.py,sha256=Tl0yQtn2zoovU4SPfTxOt9E5DRYN-2muHDFJX6xdtg4,85
+claude2openai/api_resources/chat_completion.py,sha256=FjME317hAojGIBOw6J5ZaD3WuwcbYgqNrTQYcjW0zNg,2251
+claude2openai/tests/test_usage.py,sha256=EXcDC5p9Vr_CzVqwPl11TQVvCX7ZTFQDn0rzykTkOKw,290
+claude2openai-0.0.1.dist-info/LICENSE,sha256=XWJYvHKefaoLMIoo6Um24nGwf-3apeYM-WE1mSeVHfs,1068
+claude2openai-0.0.1.dist-info/METADATA,sha256=WFCpANZNdctFB37anGtMQLCLnFMsCd3pFr7cH2Yr6Fw,1856
+claude2openai-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+claude2openai-0.0.1.dist-info/top_level.txt,sha256=7GiU8cTJ70M8taO09Pyp9lXfB9z9uW4H8jnA18-tFzg,14
+claude2openai-0.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+claude2openai-0.0.1.dist-info/RECORD,,
