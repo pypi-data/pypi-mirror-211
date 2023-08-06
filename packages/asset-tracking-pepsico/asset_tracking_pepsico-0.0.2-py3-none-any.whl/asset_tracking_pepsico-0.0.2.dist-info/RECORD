@@ -1,0 +1,9 @@
+asset_tracking_pepsico/asset_tracking_devicelogs.py,sha256=CjRoRtaN1pXvJUrANlsSg3Dzgc_tCXsnb3Gf3pG2ys4,5247
+asset_tracking_pepsico/asset_tracking_ingest.py,sha256=MGVRTjNr2MrZKvTFCReFNp_69A5HPdr_N1FJzGQAYI8,4101
+asset_tracking_pepsico/utilities.py,sha256=Tzo6SQQtbFhB1nRh1FrCIbEHwUeCe6xu0iUWi5hI07U,3056
+asset_tracking_pepsico/dto/PostgresSchema.py,sha256=bQOv3BCOeDwbug4awpoeIg7J4h36uiPO487pmM7yO18,6630
+asset_tracking_pepsico-0.0.2.dist-info/LICENSE,sha256=NlQc7NeXuGCcq-cc6At-LIfWJJIFkkOp_3O2clXARbc,1070
+asset_tracking_pepsico-0.0.2.dist-info/METADATA,sha256=_ZW_vdW6o4KDA-brOfGSDtVkhIabtspFZpIcBiepiEQ,1746
+asset_tracking_pepsico-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+asset_tracking_pepsico-0.0.2.dist-info/top_level.txt,sha256=dVkvwdK62MQZUgp2bZ9sJ4ZNOGAmPG7-GJGMDTpo8NI,23
+asset_tracking_pepsico-0.0.2.dist-info/RECORD,,
