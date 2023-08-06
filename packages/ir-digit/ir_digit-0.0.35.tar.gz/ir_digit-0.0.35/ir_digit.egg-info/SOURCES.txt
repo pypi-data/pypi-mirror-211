@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+digit/__init__.py
+digit/base_data.py
+digit/child_base_data.py
+digit/data.py
+digit/download.py
+digit/info.json
+digit/info.py
+digit/query.py
+digit/setting.py
+ir_digit.egg-info/PKG-INFO
+ir_digit.egg-info/SOURCES.txt
+ir_digit.egg-info/dependency_links.txt
+ir_digit.egg-info/top_level.txt
