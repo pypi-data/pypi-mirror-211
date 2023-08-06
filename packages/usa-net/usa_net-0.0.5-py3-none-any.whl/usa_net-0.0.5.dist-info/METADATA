@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: usa-net
+Version: 0.0.5
+Summary: USA net project
+Home-page: https://github.com/codekansas/usa-net
+Author: Benjamin Bolte
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: ffmpeg-python
+Requires-Dist: ftfy
+Requires-Dist: imageio
+Requires-Dist: jupyter
+Requires-Dist: matplotlib
+Requires-Dist: ml-starter (==0.0.44)
+Requires-Dist: more-itertools
+Requires-Dist: numpy
+Requires-Dist: numpy-quaternion
+Requires-Dist: open3d
+Requires-Dist: opencv-python
+Requires-Dist: pandas
+Requires-Dist: pyliblzfse
+Requires-Dist: seaborn
+Requires-Dist: torch (>=2.0.0)
+Requires-Dist: torchvision (>=0.13.1)
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: darglint ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: mypy-extensions ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: ruff ; extra == 'dev'
+Requires-Dist: typing-extensions ; extra == 'dev'
+Provides-Extra: ipynb
+Requires-Dist: ipygany ; extra == 'ipynb'
+Requires-Dist: ipywidgets ; extra == 'ipynb'
+Requires-Dist: nbstripout ; extra == 'ipynb'
+Requires-Dist: pre-commit ; extra == 'ipynb'
+Requires-Dist: pybullet ; extra == 'ipynb'
+Requires-Dist: pythreejs ; extra == 'ipynb'
+Requires-Dist: pyvista ; extra == 'ipynb'
+Requires-Dist: scikit-learn ; extra == 'ipynb'
+Requires-Dist: scipy ; extra == 'ipynb'
+Requires-Dist: trame ; extra == 'ipynb'
+
+<div align="center">
+
+# USA Net
+
+A robust method for mapping an environment and doing language-based planning.
+
+</div>
+
+<br />
+
+## Getting Started
+
+Install from [pypi](https://pypi.org/project/usa-net/):
+
+```bash
+pip install usa-net
+```
+
+Install from Github:
+
+```bash
+pip install git+https://github.com/codekansas/usa.git
+```
+
+Alternatively, clone and install:
+
+```bash
+git clone git@github.com:codekansas/usa.git
+cd usa && pip install -e .
+```
+
+There are some extra dependencies for the notebooks which can be installed with:
+
+```bash
+pip install 'usa-net[ipynb]'
+```
+
+See the [notebooks](/notebooks) for examples.
+
+### Requirements
+
+- Python 3.10+
+- PyTorch 2.0+
+
+### Development
+
+Add pre-commit hooks to clean Jupyter notebooks:
+
+```bash
+pre-commit install
+```
+
+### Notes
+
+- If you are having trouble installing Open3D on Mac, install Pybind through Conda instead:
+
+```bash
+pip uninstall open3d
+conda install open3d
+```
