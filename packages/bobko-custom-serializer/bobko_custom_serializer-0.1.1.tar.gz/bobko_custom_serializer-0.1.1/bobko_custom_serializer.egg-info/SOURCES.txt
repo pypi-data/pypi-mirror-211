@@ -1,0 +1,15 @@
+setup.py
+bobko_custom_serializer.egg-info/PKG-INFO
+bobko_custom_serializer.egg-info/SOURCES.txt
+bobko_custom_serializer.egg-info/dependency_links.txt
+bobko_custom_serializer.egg-info/entry_points.txt
+bobko_custom_serializer.egg-info/top_level.txt
+src/__init__.py
+src/custom_serializer.py
+src/serializer_factory.py
+src/encoder/__init__.py
+src/encoder/constants.py
+src/encoder/encoder.py
+src/serializers/__init__.py
+src/serializers/json_serializer.py
+src/serializers/xml_serializer.py
