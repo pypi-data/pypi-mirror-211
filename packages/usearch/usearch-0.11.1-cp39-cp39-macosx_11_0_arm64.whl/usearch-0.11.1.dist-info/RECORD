@@ -1,0 +1,11 @@
+usearch-0.11.1.dist-info/RECORD,,
+usearch-0.11.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+usearch-0.11.1.dist-info/WHEEL,sha256=d8sjrkKo8h1ZY8Oxdq-K-58JEo6nLEfNKzkM0CYZtr0,108
+usearch-0.11.1.dist-info/top_level.txt,sha256=zFbid1SmQjk8RsbEgpqF7tTjgWdFvE2z0e1LQ2hKdPg,8
+usearch-0.11.1.dist-info/METADATA,sha256=L5U6UVRjOlrYOhl-Ai5oFDeHCwkwd5vYkwEWw-eFvrw,19386
+usearch/server.py,sha256=dk7ZgC18khIWRwXtrBSrL35l2B-ucGQSJ-92ecJR9LE,3758
+usearch/index.py,sha256=sBLuwrEUo1aeKqf1uFbvnVlOWQPp-5iv5OXevIkLGQU,10289
+usearch/client.py,sha256=FLEy0YkHth4qdpsC8TePqZH_9A0ISJLhgJO8ddUDUdY,4194
+usearch/io.py,sha256=RXeDDzH6Y2-7q7kIKv1fXQWgeYVyp3VpDns3M0aHYoI,2231
+usearch/compiled.cpython-39-darwin.so,sha256=-szjWzjlJRBoo5kvmobveLo2h_5A2VxiKz2bqwFz180,508570
+usearch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
