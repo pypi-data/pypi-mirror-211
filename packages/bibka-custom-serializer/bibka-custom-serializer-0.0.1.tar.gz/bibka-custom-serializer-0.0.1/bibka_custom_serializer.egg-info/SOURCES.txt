@@ -1,0 +1,17 @@
+setup.py
+bibka_custom_serializer.egg-info/PKG-INFO
+bibka_custom_serializer.egg-info/SOURCES.txt
+bibka_custom_serializer.egg-info/dependency_links.txt
+bibka_custom_serializer.egg-info/entry_points.txt
+bibka_custom_serializer.egg-info/top_level.txt
+custom_serializer/__init__.py
+custom_serializer/custom_serializer.py
+custom_serializer/serializer_factory.py
+custom_serializer/encoder/__init__.py
+custom_serializer/encoder/constants.py
+custom_serializer/encoder/encoder.py
+custom_serializer/serializers/__init__.py
+custom_serializer/serializers/json_serializer.py
+custom_serializer/serializers/xml_serializer.py
+tests/test_classes.py
+tests/test_functions.py
