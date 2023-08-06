@@ -1,0 +1,1678 @@
+[log 0.4.17] cargo:rustc-cfg=atomic_cas
+[log 0.4.17] cargo:rustc-cfg=has_atomics
+[log 0.4.17] cargo:rerun-if-changed=build.rs
+[log 0.4.17] cargo:rustc-cfg=atomic_cas
+[log 0.4.17] cargo:rustc-cfg=has_atomics
+[log 0.4.17] cargo:rerun-if-changed=build.rs
+[memchr 2.5.0] cargo:rustc-cfg=memchr_runtime_simd
+[memchr 2.5.0] cargo:rustc-cfg=memchr_runtime_sse2
+[memchr 2.5.0] cargo:rustc-cfg=memchr_runtime_sse42
+[memchr 2.5.0] cargo:rustc-cfg=memchr_runtime_avx
+[quote 1.0.27] cargo:rerun-if-changed=build.rs
+[proc-macro2 1.0.57] cargo:rerun-if-changed=build.rs
+[libc 0.2.144] cargo:rerun-if-changed=build.rs
+[libc 0.2.144] cargo:rerun-if-changed=build.rs
+[syn 1.0.109] cargo:rustc-cfg=syn_disable_nightly_tests
+[proc-macro2 1.0.57] cargo:rustc-cfg=no_source_text
+[proc-macro2 1.0.57] cargo:rustc-cfg=use_proc_macro
+[proc-macro2 1.0.57] cargo:rustc-cfg=wrap_proc_macro
+[libc 0.2.144] cargo:rustc-cfg=freebsd11
+[libc 0.2.144] cargo:rustc-cfg=libc_priv_mod_use
+[libc 0.2.144] cargo:rustc-cfg=libc_union
+[libc 0.2.144] cargo:rustc-cfg=libc_const_size_of
+[libc 0.2.144] cargo:rustc-cfg=libc_align
+[libc 0.2.144] cargo:rustc-cfg=libc_int128
+[libc 0.2.144] cargo:rustc-cfg=libc_core_cvoid
+[libc 0.2.144] cargo:rustc-cfg=libc_packedN
+[libc 0.2.144] cargo:rustc-cfg=libc_cfg_target_vendor
+[libc 0.2.144] cargo:rustc-cfg=libc_non_exhaustive
+[libc 0.2.144] cargo:rustc-cfg=libc_long_array
+[libc 0.2.144] cargo:rustc-cfg=libc_ptr_addr_of
+[libc 0.2.144] cargo:rustc-cfg=libc_underscore_const_names
+[libc 0.2.144] cargo:rustc-cfg=libc_const_extern_fn
+[libc 0.2.144] cargo:rustc-cfg=freebsd11
+[libc 0.2.144] cargo:rustc-cfg=libc_priv_mod_use
+[libc 0.2.144] cargo:rustc-cfg=libc_union
+[libc 0.2.144] cargo:rustc-cfg=libc_const_size_of
+[libc 0.2.144] cargo:rustc-cfg=libc_align
+[libc 0.2.144] cargo:rustc-cfg=libc_int128
+[libc 0.2.144] cargo:rustc-cfg=libc_core_cvoid
+[libc 0.2.144] cargo:rustc-cfg=libc_packedN
+[libc 0.2.144] cargo:rustc-cfg=libc_cfg_target_vendor
+[libc 0.2.144] cargo:rustc-cfg=libc_non_exhaustive
+[libc 0.2.144] cargo:rustc-cfg=libc_long_array
+[libc 0.2.144] cargo:rustc-cfg=libc_ptr_addr_of
+[libc 0.2.144] cargo:rustc-cfg=libc_underscore_const_names
+[libc 0.2.144] cargo:rustc-cfg=libc_const_extern_fn
+[serde 1.0.163] cargo:rerun-if-changed=build.rs
+[serde_json 1.0.96] cargo:rerun-if-changed=build.rs
+[serde_json 1.0.96] cargo:rustc-cfg=limb_width_64
+[nom 5.1.3] cargo:rustc-cfg=stable_i128
+[proc-macro-error 1.0.4] cargo:rustc-cfg=use_fallback
+[bindgen 0.58.1] cargo:rerun-if-env-changed=LLVM_CONFIG_PATH
+[bindgen 0.58.1] cargo:rerun-if-env-changed=LIBCLANG_PATH
+[bindgen 0.58.1] cargo:rerun-if-env-changed=LIBCLANG_STATIC_PATH
+[bindgen 0.58.1] cargo:rerun-if-env-changed=BINDGEN_EXTRA_CLANG_ARGS
+[z3-sys 0.7.1] CMAKE_TOOLCHAIN_FILE_x86_64-unknown-linux-gnu = None
+[z3-sys 0.7.1] CMAKE_TOOLCHAIN_FILE_x86_64_unknown_linux_gnu = None
+[z3-sys 0.7.1] HOST_CMAKE_TOOLCHAIN_FILE = None
+[z3-sys 0.7.1] CMAKE_TOOLCHAIN_FILE = None
+[z3-sys 0.7.1] CMAKE_GENERATOR_x86_64-unknown-linux-gnu = None
+[z3-sys 0.7.1] CMAKE_GENERATOR_x86_64_unknown_linux_gnu = None
+[z3-sys 0.7.1] HOST_CMAKE_GENERATOR = None
+[z3-sys 0.7.1] CMAKE_GENERATOR = None
+[z3-sys 0.7.1] CMAKE_PREFIX_PATH_x86_64-unknown-linux-gnu = None
+[z3-sys 0.7.1] CMAKE_PREFIX_PATH_x86_64_unknown_linux_gnu = None
+[z3-sys 0.7.1] HOST_CMAKE_PREFIX_PATH = None
+[z3-sys 0.7.1] CMAKE_PREFIX_PATH = None
+[z3-sys 0.7.1] CMAKE_x86_64-unknown-linux-gnu = None
+[z3-sys 0.7.1] CMAKE_x86_64_unknown_linux_gnu = None
+[z3-sys 0.7.1] HOST_CMAKE = None
+[z3-sys 0.7.1] CMAKE = None
+[z3-sys 0.7.1] running: "cmake" "/home/bjornarl/.cargo/registry/src/github.com-1ecc6299db9ec823/z3-sys-0.7.1/z3" "-DZ3_BUILD_LIBZ3_SHARED=false" "-DZ3_BUILD_EXECUTABLE=false" "-DZ3_BUILD_TEST_EXECUTABLES=false" "-DCMAKE_INSTALL_PREFIX=/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out" "-DCMAKE_C_FLAGS= -ffunction-sections -fdata-sections -fPIC -m64" "-DCMAKE_C_COMPILER=/usr/bin/cc" "-DCMAKE_CXX_FLAGS= -ffunction-sections -fdata-sections -fPIC -m64" "-DCMAKE_CXX_COMPILER=/usr/bin/c++" "-DCMAKE_ASM_FLAGS= -ffunction-sections -fdata-sections -fPIC -m64" "-DCMAKE_ASM_COMPILER=/usr/bin/cc" "-DCMAKE_BUILD_TYPE=Release"
+[z3-sys 0.7.1] -- The CXX compiler identification is GNU 11.3.0
+[z3-sys 0.7.1] -- Detecting CXX compiler ABI info
+[z3-sys 0.7.1] -- Detecting CXX compiler ABI info - done
+[z3-sys 0.7.1] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[z3-sys 0.7.1] -- Detecting CXX compile features
+[z3-sys 0.7.1] -- Detecting CXX compile features - done
+[z3-sys 0.7.1] -- Z3 version 4.8.12.0
+[z3-sys 0.7.1] -- Failed to find git directory.
+[z3-sys 0.7.1] -- CMake generator: Unix Makefiles
+[z3-sys 0.7.1] -- Build type: Release
+[z3-sys 0.7.1] -- Found PythonInterp: /usr/bin/python (found version "3.10.6") 
+[z3-sys 0.7.1] -- PYTHON_EXECUTABLE: /usr/bin/python
+[z3-sys 0.7.1] -- Detected target architecture: x86_64
+[z3-sys 0.7.1] -- Platform: Linux
+[z3-sys 0.7.1] -- Not using libgmp
+[z3-sys 0.7.1] -- Not using Z3_API_LOG_SYNC
+[z3-sys 0.7.1] -- Thread-safe build
+[z3-sys 0.7.1] -- Performing Test HAS_SSE2
+[z3-sys 0.7.1] -- Performing Test HAS_SSE2 - Success
+[z3-sys 0.7.1] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[z3-sys 0.7.1] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[z3-sys 0.7.1] -- Found Threads: TRUE  
+[z3-sys 0.7.1] -- Performing Test HAS__Wall
+[z3-sys 0.7.1] -- Performing Test HAS__Wall - Success
+[z3-sys 0.7.1] -- C++ compiler supports -Wall
+[z3-sys 0.7.1] -- Treating only serious compiler warnings as errors
+[z3-sys 0.7.1] -- Performing Test HAS__Werror_odr
+[z3-sys 0.7.1] -- Performing Test HAS__Werror_odr - Success
+[z3-sys 0.7.1] -- C++ compiler supports -Werror=odr
+[z3-sys 0.7.1] -- Performing Test HAS__fvisibility_hidden
+[z3-sys 0.7.1] -- Performing Test HAS__fvisibility_hidden - Success
+[z3-sys 0.7.1] -- C++ compiler supports -fvisibility=hidden
+[z3-sys 0.7.1] -- Performing Test HAS__fvisibility_inlines_hidden
+[z3-sys 0.7.1] -- Performing Test HAS__fvisibility_inlines_hidden - Success
+[z3-sys 0.7.1] -- C++ compiler supports -fvisibility-inlines-hidden
+[z3-sys 0.7.1] -- Performing Test HAS__fPIC
+[z3-sys 0.7.1] -- Performing Test HAS__fPIC - Success
+[z3-sys 0.7.1] -- C++ compiler supports -fPIC
+[z3-sys 0.7.1] -- LTO disabled
+[z3-sys 0.7.1] -- CMAKE_CXX_FLAGS: " -ffunction-sections -fdata-sections -fPIC -m64 -Werror=odr "
+[z3-sys 0.7.1] -- CMAKE_EXE_LINKER_FLAGS: ""
+[z3-sys 0.7.1] -- CMAKE_STATIC_LINKER_FLAGS: ""
+[z3-sys 0.7.1] -- CMAKE_SHARED_LINKER_FLAGS: ""
+[z3-sys 0.7.1] -- CMAKE_CXX_FLAGS_RELEASE: "-O3 -DNDEBUG"
+[z3-sys 0.7.1] -- CMAKE_EXE_LINKER_FLAGS_RELEASE: ""
+[z3-sys 0.7.1] -- CMAKE_SHARED_LINKER_FLAGS_RELEASE: ""
+[z3-sys 0.7.1] -- CMAKE_STATIC_LINKER_FLAGS_RELEASE: ""
+[z3-sys 0.7.1] -- Z3_COMPONENT_CXX_DEFINES: $<$<CONFIG:Debug>:Z3DEBUG>;$<$<CONFIG:Release>:_EXTERNAL_RELEASE>;$<$<CONFIG:RelWithDebInfo>:_EXTERNAL_RELEASE>;-D_LINUX_;-D_USE_THREAD_LOCAL;-D_MP_INTERNAL;$<$<CONFIG:Debug>:_TRACE>
+[z3-sys 0.7.1] -- Z3_COMPONENT_CXX_FLAGS: -mfpmath=sse;-msse;-msse2;-Wall;-fvisibility=hidden;-fvisibility-inlines-hidden;-fPIC
+[z3-sys 0.7.1] -- Z3_DEPENDENT_LIBS: Threads::Threads
+[z3-sys 0.7.1] -- Z3_COMPONENT_EXTRA_INCLUDE_DIRS: /home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src;/home/bjornarl/.cargo/registry/src/github.com-1ecc6299db9ec823/z3-sys-0.7.1/z3/src
+[z3-sys 0.7.1] -- Z3_DEPENDENT_EXTRA_CXX_LINK_FLAGS: 
+[z3-sys 0.7.1] -- CMAKE_INSTALL_LIBDIR: "lib"
+[z3-sys 0.7.1] -- CMAKE_INSTALL_BINDIR: "bin"
+[z3-sys 0.7.1] -- CMAKE_INSTALL_INCLUDEDIR: "include"
+[z3-sys 0.7.1] -- CMAKE_INSTALL_PKGCONFIGDIR: "lib/pkgconfig"
+[z3-sys 0.7.1] -- CMAKE_INSTALL_Z3_CMAKE_PACKAGE_DIR: "lib/cmake/z3"
+[z3-sys 0.7.1] -- Adding component util
+[z3-sys 0.7.1] -- Adding component polynomial
+[z3-sys 0.7.1] -- Adding rule to generate "algebraic_params.hpp"
+[z3-sys 0.7.1] -- Adding component dd
+[z3-sys 0.7.1] -- Adding component hilbert
+[z3-sys 0.7.1] -- Adding component simplex
+[z3-sys 0.7.1] -- Adding component automata
+[z3-sys 0.7.1] -- Adding component interval
+[z3-sys 0.7.1] -- Adding component realclosure
+[z3-sys 0.7.1] -- Adding rule to generate "rcf_params.hpp"
+[z3-sys 0.7.1] -- Adding component subpaving
+[z3-sys 0.7.1] -- Adding component ast
+[z3-sys 0.7.1] -- Adding rule to generate "pp_params.hpp"
+[z3-sys 0.7.1] -- Adding component params
+[z3-sys 0.7.1] -- Adding rule to generate "arith_rewriter_params.hpp"
+[z3-sys 0.7.1] -- Adding rule to generate "array_rewriter_params.hpp"
+[z3-sys 0.7.1] -- Adding rule to generate "bool_rewriter_params.hpp"
+[z3-sys 0.7.1] -- Adding rule to generate "bv_rewriter_params.hpp"
+[z3-sys 0.7.1] -- Adding rule to generate "fpa_rewriter_params.hpp"
+[z3-sys 0.7.1] -- Adding rule to generate "fpa2bv_rewriter_params.hpp"
+[z3-sys 0.7.1] -- Adding rule to generate "pattern_inference_params_helper.hpp"
+[z3-sys 0.7.1] -- Adding rule to generate "poly_rewriter_params.hpp"
+[z3-sys 0.7.1] -- Adding rule to generate "rewriter_params.hpp"
+[z3-sys 0.7.1] -- Adding rule to generate "seq_rewriter_params.hpp"
+[z3-sys 0.7.1] -- Adding component rewriter
+[z3-sys 0.7.1] -- Adding component normal_forms
+[z3-sys 0.7.1] -- Adding rule to generate "nnf_params.hpp"
+[z3-sys 0.7.1] -- Adding component macros
+[z3-sys 0.7.1] -- Adding component model
+[z3-sys 0.7.1] -- Adding rule to generate "model_evaluator_params.hpp"
+[z3-sys 0.7.1] -- Adding rule to generate "model_params.hpp"
+[z3-sys 0.7.1] -- Adding component tactic
+[z3-sys 0.7.1] -- Adding rule to generate "tactic_params.hpp"
+[z3-sys 0.7.1] -- Adding component substitution
+[z3-sys 0.7.1] -- Adding component euf
+[z3-sys 0.7.1] -- Adding component smt_params
+[z3-sys 0.7.1] -- Adding rule to generate "smt_params_helper.hpp"
+[z3-sys 0.7.1] -- Adding component parser_util
+[z3-sys 0.7.1] -- Adding rule to generate "parser_params.hpp"
+[z3-sys 0.7.1] -- Adding component grobner
+[z3-sys 0.7.1] -- Adding component sat
+[z3-sys 0.7.1] -- Adding rule to generate "sat_asymm_branch_params.hpp"
+[z3-sys 0.7.1] -- Adding rule to generate "sat_params.hpp"
+[z3-sys 0.7.1] -- Adding rule to generate "sat_scc_params.hpp"
+[z3-sys 0.7.1] -- Adding rule to generate "sat_simplifier_params.hpp"
+[z3-sys 0.7.1] -- Adding component nlsat
+[z3-sys 0.7.1] -- Adding rule to generate "nlsat_params.hpp"
+[z3-sys 0.7.1] -- Adding component core_tactics
+[z3-sys 0.7.1] -- Adding component subpaving_tactic
+[z3-sys 0.7.1] -- Adding component aig_tactic
+[z3-sys 0.7.1] -- Adding component arith_tactics
+[z3-sys 0.7.1] -- Adding component solver
+[z3-sys 0.7.1] -- Adding rule to generate "combined_solver_params.hpp"
+[z3-sys 0.7.1] -- Adding rule to generate "parallel_params.hpp"
+[z3-sys 0.7.1] -- Adding rule to generate "solver_params.hpp"
+[z3-sys 0.7.1] -- Adding component cmd_context
+[z3-sys 0.7.1] -- Adding component extra_cmds
+[z3-sys 0.7.1] -- Adding component smt2parser
+[z3-sys 0.7.1] -- Adding component solver_assertions
+[z3-sys 0.7.1] -- Adding component pattern
+[z3-sys 0.7.1] -- Adding component bit_blaster
+[z3-sys 0.7.1] -- Adding component lp
+[z3-sys 0.7.1] -- Adding component mbp
+[z3-sys 0.7.1] -- Adding component sat_smt
+[z3-sys 0.7.1] -- Adding component sat_tactic
+[z3-sys 0.7.1] -- Adding component nlsat_tactic
+[z3-sys 0.7.1] -- Adding component ackermannization
+[z3-sys 0.7.1] -- Adding rule to generate "ackermannization_params.hpp"
+[z3-sys 0.7.1] -- Adding rule to generate "ackermannize_bv_tactic_params.hpp"
+[z3-sys 0.7.1] -- Adding component proofs
+[z3-sys 0.7.1] -- Adding component fpa
+[z3-sys 0.7.1] -- Adding component proto_model
+[z3-sys 0.7.1] -- Adding component smt
+[z3-sys 0.7.1] -- Adding component bv_tactics
+[z3-sys 0.7.1] -- Adding component smt_tactic
+[z3-sys 0.7.1] -- Adding component sls_tactic
+[z3-sys 0.7.1] -- Adding rule to generate "sls_params.hpp"
+[z3-sys 0.7.1] -- Adding component qe
+[z3-sys 0.7.1] -- Adding component muz
+[z3-sys 0.7.1] -- Adding rule to generate "fp_params.hpp"
+[z3-sys 0.7.1] -- Adding component dataflow
+[z3-sys 0.7.1] -- Adding component transforms
+[z3-sys 0.7.1] -- Adding component rel
+[z3-sys 0.7.1] -- Adding component clp
+[z3-sys 0.7.1] -- Adding component tab
+[z3-sys 0.7.1] -- Adding component bmc
+[z3-sys 0.7.1] -- Adding component ddnf
+[z3-sys 0.7.1] -- Adding component spacer
+[z3-sys 0.7.1] -- Adding component fp
+[z3-sys 0.7.1] -- Adding component ufbv_tactic
+[z3-sys 0.7.1] -- Adding component sat_solver
+[z3-sys 0.7.1] -- Adding component smtlogic_tactics
+[z3-sys 0.7.1] -- Adding rule to generate "qfufbv_tactic_params.hpp"
+[z3-sys 0.7.1] -- Adding component fpa_tactics
+[z3-sys 0.7.1] -- Adding component fd_solver
+[z3-sys 0.7.1] -- Adding component portfolio
+[z3-sys 0.7.1] -- Adding component opt
+[z3-sys 0.7.1] -- Adding rule to generate "opt_params.hpp"
+[z3-sys 0.7.1] -- Adding component api
+[z3-sys 0.7.1] -- Adding component api_dll
+[z3-sys 0.7.1] -- Building documentation disabled
+[z3-sys 0.7.1] -- Configuring done (0.3s)
+[z3-sys 0.7.1] -- Generating done (0.1s)
+[z3-sys 0.7.1] -- Build files have been written to: /home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build
+[z3-sys 0.7.1] running: "cmake" "--build" "." "--target" "install" "--config" "Release"
+[z3-sys 0.7.1] [  0%] Building CXX object src/util/CMakeFiles/util.dir/approx_nat.cpp.o
+[z3-sys 0.7.1] [  0%] Building CXX object src/util/CMakeFiles/util.dir/bit_util.cpp.o
+[z3-sys 0.7.1] [  0%] Building CXX object src/util/CMakeFiles/util.dir/common_msgs.cpp.o
+[z3-sys 0.7.1] [  1%] Building CXX object src/util/CMakeFiles/util.dir/debug.cpp.o
+[z3-sys 0.7.1] [  1%] Building CXX object src/util/CMakeFiles/util.dir/bit_vector.cpp.o
+[z3-sys 0.7.1] [  2%] Building CXX object src/util/CMakeFiles/util.dir/gparams.cpp.o
+[z3-sys 0.7.1] [  1%] Building CXX object src/util/CMakeFiles/util.dir/env_params.cpp.o
+[z3-sys 0.7.1] [  2%] Building CXX object src/util/CMakeFiles/util.dir/fixed_bit_vector.cpp.o
+[z3-sys 0.7.1] [  2%] Building CXX object src/util/CMakeFiles/util.dir/approx_set.cpp.o
+[z3-sys 0.7.1] [  2%] Building CXX object src/util/CMakeFiles/util.dir/cmd_context_types.cpp.o
+[z3-sys 0.7.1] [  2%] Building CXX object src/util/CMakeFiles/util.dir/hwf.cpp.o
+[z3-sys 0.7.1] [  2%] Building CXX object src/util/CMakeFiles/util.dir/inf_int_rational.cpp.o
+[z3-sys 0.7.1] [  2%] Building CXX object src/util/CMakeFiles/util.dir/lbool.cpp.o
+[z3-sys 0.7.1] [  2%] Building CXX object src/util/CMakeFiles/util.dir/inf_rational.cpp.o
+[z3-sys 0.7.1] [  2%] Building CXX object src/util/CMakeFiles/util.dir/inf_s_integer.cpp.o
+[z3-sys 0.7.1] [  2%] Building CXX object src/util/CMakeFiles/util.dir/luby.cpp.o
+[z3-sys 0.7.1] [  3%] Building CXX object src/util/CMakeFiles/util.dir/memory_manager.cpp.o
+[z3-sys 0.7.1] [  3%] Building CXX object src/util/CMakeFiles/util.dir/hash.cpp.o
+[z3-sys 0.7.1] [  3%] Building CXX object src/util/CMakeFiles/util.dir/min_cut.cpp.o
+[z3-sys 0.7.1] [  3%] Building CXX object src/util/CMakeFiles/util.dir/mpbq.cpp.o
+[z3-sys 0.7.1] [  3%] Building CXX object src/util/CMakeFiles/util.dir/mpff.cpp.o
+[z3-sys 0.7.1] [  3%] Building CXX object src/util/CMakeFiles/util.dir/mpf.cpp.o
+[z3-sys 0.7.1] [  3%] Building CXX object src/util/CMakeFiles/util.dir/mpfx.cpp.o
+[z3-sys 0.7.1] [  3%] Building CXX object src/util/CMakeFiles/util.dir/mpn.cpp.o
+[z3-sys 0.7.1] [  3%] Building CXX object src/util/CMakeFiles/util.dir/mpq.cpp.o
+[z3-sys 0.7.1] [  4%] Building CXX object src/util/CMakeFiles/util.dir/mpq_inf.cpp.o
+[z3-sys 0.7.1] [  4%] Building CXX object src/util/CMakeFiles/util.dir/mpz.cpp.o
+[z3-sys 0.7.1] [  4%] Building CXX object src/util/CMakeFiles/util.dir/page.cpp.o
+[z3-sys 0.7.1] [  4%] Building CXX object src/util/CMakeFiles/util.dir/params.cpp.o
+[z3-sys 0.7.1] [  4%] Building CXX object src/util/CMakeFiles/util.dir/permutation.cpp.o
+[z3-sys 0.7.1] [  4%] Building CXX object src/util/CMakeFiles/util.dir/prime_generator.cpp.o
+[z3-sys 0.7.1] [  4%] Building CXX object src/util/CMakeFiles/util.dir/rational.cpp.o
+[z3-sys 0.7.1] [  4%] Building CXX object src/util/CMakeFiles/util.dir/region.cpp.o
+[z3-sys 0.7.1] [  4%] Building CXX object src/util/CMakeFiles/util.dir/rlimit.cpp.o
+[z3-sys 0.7.1] [  5%] Building CXX object src/util/CMakeFiles/util.dir/scoped_ctrl_c.cpp.o
+[z3-sys 0.7.1] [  5%] Building CXX object src/util/CMakeFiles/util.dir/scoped_timer.cpp.o
+[z3-sys 0.7.1] [  5%] Building CXX object src/util/CMakeFiles/util.dir/sexpr.cpp.o
+[z3-sys 0.7.1] [  5%] Building CXX object src/util/CMakeFiles/util.dir/s_integer.cpp.o
+[z3-sys 0.7.1] [  5%] Building CXX object src/util/CMakeFiles/util.dir/small_object_allocator.cpp.o
+[z3-sys 0.7.1] [  5%] Building CXX object src/util/CMakeFiles/util.dir/smt2_util.cpp.o
+[z3-sys 0.7.1] [  5%] Building CXX object src/util/CMakeFiles/util.dir/stack.cpp.o
+[z3-sys 0.7.1] [  5%] Building CXX object src/util/CMakeFiles/util.dir/state_graph.cpp.o
+[z3-sys 0.7.1] [  6%] Building CXX object src/util/CMakeFiles/util.dir/statistics.cpp.o
+[z3-sys 0.7.1] [  6%] Building CXX object src/util/CMakeFiles/util.dir/symbol.cpp.o
+[z3-sys 0.7.1] [  6%] Building CXX object src/util/CMakeFiles/util.dir/timeit.cpp.o
+[z3-sys 0.7.1] [  6%] Building CXX object src/util/CMakeFiles/util.dir/timeout.cpp.o
+[z3-sys 0.7.1] [  6%] Building CXX object src/util/CMakeFiles/util.dir/trace.cpp.o
+[z3-sys 0.7.1] [  6%] Building CXX object src/util/CMakeFiles/util.dir/util.cpp.o
+[z3-sys 0.7.1] [  6%] Building CXX object src/util/CMakeFiles/util.dir/warning.cpp.o
+[z3-sys 0.7.1] [  6%] Building CXX object src/util/CMakeFiles/util.dir/z3_exception.cpp.o
+[z3-sys 0.7.1] [  7%] Building CXX object src/util/CMakeFiles/util.dir/zstring.cpp.o
+[z3-sys 0.7.1] [  7%] Built target util
+[z3-sys 0.7.1] [  7%] Generating "/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/params/arith_rewriter_params.hpp" from "arith_rewriter_params.pyg"
+[z3-sys 0.7.1] [  7%] Generating "/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/params/bv_rewriter_params.hpp" from "bv_rewriter_params.pyg"
+[z3-sys 0.7.1] [  7%] Generating "/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/params/bool_rewriter_params.hpp" from "bool_rewriter_params.pyg"
+[z3-sys 0.7.1] [  7%] Generating "/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/math/polynomial/algebraic_params.hpp" from "algebraic_params.pyg"
+[z3-sys 0.7.1] [  7%] Generating "/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/params/seq_rewriter_params.hpp" from "seq_rewriter_params.pyg"
+[z3-sys 0.7.1] [  7%] Generating "/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/params/array_rewriter_params.hpp" from "array_rewriter_params.pyg"
+[z3-sys 0.7.1] [  8%] Generating "/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/params/fpa2bv_rewriter_params.hpp" from "fpa2bv_rewriter_params.pyg"
+[z3-sys 0.7.1] [  8%] Generating "/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/params/fpa_rewriter_params.hpp" from "fpa_rewriter_params.pyg"
+[z3-sys 0.7.1] [  8%] Generating "/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/params/poly_rewriter_params.hpp" from "poly_rewriter_params.pyg"
+[z3-sys 0.7.1] [  8%] Generating "/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/params/pattern_inference_params_helper.hpp" from "pattern_inference_params_helper.pyg"
+[z3-sys 0.7.1] [  8%] Generating "/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/params/rewriter_params.hpp" from "rewriter_params.pyg"
+[z3-sys 0.7.1] [  8%] Building CXX object src/math/interval/CMakeFiles/interval.dir/interval_mpq.cpp.o
+[z3-sys 0.7.1] [  9%] Building CXX object src/math/automata/CMakeFiles/automata.dir/automaton.cpp.o
+[z3-sys 0.7.1] [  9%] Building CXX object src/math/interval/CMakeFiles/interval.dir/dep_intervals.cpp.o
+[z3-sys 0.7.1] [  9%] Building CXX object src/math/dd/CMakeFiles/dd.dir/dd_bdd.cpp.o
+[z3-sys 0.7.1] [  9%] Building CXX object src/math/dd/CMakeFiles/dd.dir/dd_pdd.cpp.o
+[z3-sys 0.7.1] [  9%] Building CXX object src/math/hilbert/CMakeFiles/hilbert.dir/hilbert_basis.cpp.o
+[z3-sys 0.7.1] [  9%] Building CXX object src/math/simplex/CMakeFiles/simplex.dir/simplex.cpp.o
+[z3-sys 0.7.1] [  9%] Building CXX object src/math/simplex/CMakeFiles/simplex.dir/model_based_opt.cpp.o
+[z3-sys 0.7.1] [  9%] Building CXX object src/math/simplex/CMakeFiles/simplex.dir/bit_matrix.cpp.o
+[z3-sys 0.7.1] [  9%] Building CXX object src/math/polynomial/CMakeFiles/polynomial.dir/algebraic_numbers.cpp.o
+[z3-sys 0.7.1] [ 10%] Building CXX object src/math/polynomial/CMakeFiles/polynomial.dir/polynomial_cache.cpp.o
+[z3-sys 0.7.1] [ 10%] Building CXX object src/params/CMakeFiles/params.dir/pattern_inference_params.cpp.o
+[z3-sys 0.7.1] [ 10%] Building CXX object src/params/CMakeFiles/params.dir/context_params.cpp.o
+[z3-sys 0.7.1] [ 10%] Building CXX object src/math/polynomial/CMakeFiles/polynomial.dir/sexpr2upolynomial.cpp.o
+[z3-sys 0.7.1] [ 10%] Building CXX object src/math/polynomial/CMakeFiles/polynomial.dir/polynomial.cpp.o
+[z3-sys 0.7.1] [ 10%] Building CXX object src/math/polynomial/CMakeFiles/polynomial.dir/rpolynomial.cpp.o
+[z3-sys 0.7.1] [ 10%] Building CXX object src/math/polynomial/CMakeFiles/polynomial.dir/upolynomial.cpp.o
+[z3-sys 0.7.1] [ 10%] Building CXX object src/math/polynomial/CMakeFiles/polynomial.dir/upolynomial_factorization.cpp.o
+[z3-sys 0.7.1] [ 10%] Built target params
+[z3-sys 0.7.1] [ 11%] Generating "/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/smt/params/smt_params_helper.hpp" from "smt_params_helper.pyg"
+[z3-sys 0.7.1] [ 11%] Building CXX object src/smt/params/CMakeFiles/smt_params.dir/dyn_ack_params.cpp.o
+[z3-sys 0.7.1] [ 11%] Building CXX object src/smt/params/CMakeFiles/smt_params.dir/qi_params.cpp.o
+[z3-sys 0.7.1] [ 11%] Building CXX object src/smt/params/CMakeFiles/smt_params.dir/preprocessor_params.cpp.o
+[z3-sys 0.7.1] [ 11%] Building CXX object src/smt/params/CMakeFiles/smt_params.dir/theory_array_params.cpp.o
+[z3-sys 0.7.1] [ 11%] Building CXX object src/smt/params/CMakeFiles/smt_params.dir/theory_pb_params.cpp.o
+[z3-sys 0.7.1] [ 11%] Building CXX object src/smt/params/CMakeFiles/smt_params.dir/smt_params.cpp.o
+[z3-sys 0.7.1] [ 11%] Building CXX object src/smt/params/CMakeFiles/smt_params.dir/theory_str_params.cpp.o
+[z3-sys 0.7.1] [ 11%] Building CXX object src/smt/params/CMakeFiles/smt_params.dir/theory_bv_params.cpp.o
+[z3-sys 0.7.1] [ 11%] Building CXX object src/smt/params/CMakeFiles/smt_params.dir/theory_arith_params.cpp.o
+[z3-sys 0.7.1] [ 12%] Building CXX object src/smt/params/CMakeFiles/smt_params.dir/theory_seq_params.cpp.o
+[z3-sys 0.7.1] [ 12%] Built target smt_params
+[z3-sys 0.7.1] [ 12%] Built target interval
+[z3-sys 0.7.1] [ 12%] Generating "/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/math/realclosure/rcf_params.hpp" from "rcf_params.pyg"
+[z3-sys 0.7.1] [ 12%] Building CXX object src/math/subpaving/CMakeFiles/subpaving.dir/subpaving.cpp.o
+[z3-sys 0.7.1] [ 12%] Building CXX object src/math/subpaving/CMakeFiles/subpaving.dir/subpaving_hwf.cpp.o
+[z3-sys 0.7.1] [ 12%] Building CXX object src/math/subpaving/CMakeFiles/subpaving.dir/subpaving_mpf.cpp.o
+[z3-sys 0.7.1] [ 13%] Building CXX object src/math/subpaving/CMakeFiles/subpaving.dir/subpaving_mpff.cpp.o
+[z3-sys 0.7.1] [ 13%] Building CXX object src/math/subpaving/CMakeFiles/subpaving.dir/subpaving_mpq.cpp.o
+[z3-sys 0.7.1] [ 13%] Building CXX object src/math/subpaving/CMakeFiles/subpaving.dir/subpaving_mpfx.cpp.o
+[z3-sys 0.7.1] [ 13%] Building CXX object src/math/realclosure/CMakeFiles/realclosure.dir/mpz_matrix.cpp.o
+[z3-sys 0.7.1] [ 13%] Building CXX object src/math/realclosure/CMakeFiles/realclosure.dir/realclosure.cpp.o
+[z3-sys 0.7.1] [ 13%] Built target automata
+[z3-sys 0.7.1] [ 13%] Built target hilbert
+[z3-sys 0.7.1] [ 13%] Built target simplex
+[z3-sys 0.7.1] [ 13%] Built target dd
+[z3-sys 0.7.1] [ 13%] Built target subpaving
+[z3-sys 0.7.1] [ 13%] Built target polynomial
+[z3-sys 0.7.1] [ 13%] Generating "/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/ast/pp_params.hpp" from "pp_params.pyg"
+[z3-sys 0.7.1] [ 13%] Built target realclosure
+[z3-sys 0.7.1] [ 13%] Building CXX object src/ast/CMakeFiles/ast.dir/act_cache.cpp.o
+[z3-sys 0.7.1] [ 13%] Building CXX object src/ast/CMakeFiles/ast.dir/ast_ll_pp.cpp.o
+[z3-sys 0.7.1] [ 13%] Building CXX object src/ast/CMakeFiles/ast.dir/ast.cpp.o
+[z3-sys 0.7.1] [ 13%] Building CXX object src/ast/CMakeFiles/ast.dir/arith_decl_plugin.cpp.o
+[z3-sys 0.7.1] [ 13%] Building CXX object src/ast/CMakeFiles/ast.dir/array_decl_plugin.cpp.o
+[z3-sys 0.7.1] [ 14%] Building CXX object src/ast/CMakeFiles/ast.dir/ast_smt2_pp.cpp.o
+[z3-sys 0.7.1] [ 14%] Building CXX object src/ast/CMakeFiles/ast.dir/ast_lt.cpp.o
+[z3-sys 0.7.1] [ 14%] Building CXX object src/ast/CMakeFiles/ast.dir/ast_printer.cpp.o
+[z3-sys 0.7.1] [ 14%] Building CXX object src/ast/CMakeFiles/ast.dir/ast_pp_util.cpp.o
+[z3-sys 0.7.1] [ 14%] Building CXX object src/ast/CMakeFiles/ast.dir/ast_smt_pp.cpp.o
+[z3-sys 0.7.1] [ 14%] Building CXX object src/ast/CMakeFiles/ast.dir/ast_util.cpp.o
+[z3-sys 0.7.1] [ 14%] Building CXX object src/ast/CMakeFiles/ast.dir/ast_translation.cpp.o
+[z3-sys 0.7.1] [ 14%] Building CXX object src/ast/CMakeFiles/ast.dir/ast_pp_dot.cpp.o
+[z3-sys 0.7.1] [ 15%] Building CXX object src/ast/CMakeFiles/ast.dir/bv_decl_plugin.cpp.o
+[z3-sys 0.7.1] [ 15%] Building CXX object src/ast/CMakeFiles/ast.dir/char_decl_plugin.cpp.o
+[z3-sys 0.7.1] [ 15%] Building CXX object src/ast/CMakeFiles/ast.dir/cost_evaluator.cpp.o
+[z3-sys 0.7.1] [ 15%] Building CXX object src/ast/CMakeFiles/ast.dir/datatype_decl_plugin.cpp.o
+[z3-sys 0.7.1] [ 15%] Building CXX object src/ast/CMakeFiles/ast.dir/decl_collector.cpp.o
+[z3-sys 0.7.1] [ 15%] Building CXX object src/ast/CMakeFiles/ast.dir/display_dimacs.cpp.o
+[z3-sys 0.7.1] [ 15%] Building CXX object src/ast/CMakeFiles/ast.dir/dl_decl_plugin.cpp.o
+[z3-sys 0.7.1] [ 15%] Building CXX object src/ast/CMakeFiles/ast.dir/expr2polynomial.cpp.o
+[z3-sys 0.7.1] [ 15%] Building CXX object src/ast/CMakeFiles/ast.dir/expr2var.cpp.o
+[z3-sys 0.7.1] [ 16%] Building CXX object src/ast/CMakeFiles/ast.dir/expr_abstract.cpp.o
+[z3-sys 0.7.1] [ 16%] Building CXX object src/ast/CMakeFiles/ast.dir/expr_functors.cpp.o
+[z3-sys 0.7.1] [ 16%] Building CXX object src/ast/CMakeFiles/ast.dir/expr_map.cpp.o
+[z3-sys 0.7.1] [ 16%] Building CXX object src/ast/CMakeFiles/ast.dir/expr_stat.cpp.o
+[z3-sys 0.7.1] [ 16%] Building CXX object src/ast/CMakeFiles/ast.dir/expr_substitution.cpp.o
+[z3-sys 0.7.1] [ 16%] Building CXX object src/ast/CMakeFiles/ast.dir/for_each_ast.cpp.o
+[z3-sys 0.7.1] [ 16%] Building CXX object src/ast/CMakeFiles/ast.dir/for_each_expr.cpp.o
+[z3-sys 0.7.1] [ 16%] Building CXX object src/ast/CMakeFiles/ast.dir/format.cpp.o
+[z3-sys 0.7.1] [ 17%] Building CXX object src/ast/CMakeFiles/ast.dir/fpa_decl_plugin.cpp.o
+[z3-sys 0.7.1] [ 17%] Building CXX object src/ast/CMakeFiles/ast.dir/func_decl_dependencies.cpp.o
+[z3-sys 0.7.1] [ 17%] Building CXX object src/ast/CMakeFiles/ast.dir/has_free_vars.cpp.o
+[z3-sys 0.7.1] [ 17%] Building CXX object src/ast/CMakeFiles/ast.dir/macro_substitution.cpp.o
+[z3-sys 0.7.1] [ 17%] Building CXX object src/ast/CMakeFiles/ast.dir/num_occurs.cpp.o
+[z3-sys 0.7.1] [ 17%] Building CXX object src/ast/CMakeFiles/ast.dir/occurs.cpp.o
+[z3-sys 0.7.1] [ 17%] Building CXX object src/ast/CMakeFiles/ast.dir/pb_decl_plugin.cpp.o
+[z3-sys 0.7.1] [ 17%] Building CXX object src/ast/CMakeFiles/ast.dir/pp.cpp.o
+[z3-sys 0.7.1] [ 18%] Building CXX object src/ast/CMakeFiles/ast.dir/quantifier_stat.cpp.o
+[z3-sys 0.7.1] [ 18%] Building CXX object src/ast/CMakeFiles/ast.dir/recfun_decl_plugin.cpp.o
+[z3-sys 0.7.1] [ 18%] Building CXX object src/ast/CMakeFiles/ast.dir/reg_decl_plugins.cpp.o
+[z3-sys 0.7.1] [ 18%] Building CXX object src/ast/CMakeFiles/ast.dir/seq_decl_plugin.cpp.o
+[z3-sys 0.7.1] [ 18%] Building CXX object src/ast/CMakeFiles/ast.dir/shared_occs.cpp.o
+[z3-sys 0.7.1] [ 18%] Building CXX object src/ast/CMakeFiles/ast.dir/special_relations_decl_plugin.cpp.o
+[z3-sys 0.7.1] [ 18%] Building CXX object src/ast/CMakeFiles/ast.dir/static_features.cpp.o
+[z3-sys 0.7.1] [ 18%] Building CXX object src/ast/CMakeFiles/ast.dir/used_vars.cpp.o
+[z3-sys 0.7.1] [ 18%] Building CXX object src/ast/CMakeFiles/ast.dir/value_generator.cpp.o
+[z3-sys 0.7.1] [ 19%] Building CXX object src/ast/CMakeFiles/ast.dir/well_sorted.cpp.o
+[z3-sys 0.7.1] [ 19%] Built target ast
+[z3-sys 0.7.1] [ 19%] Generating "/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/parsers/util/parser_params.hpp" from "parser_params.pyg"
+[z3-sys 0.7.1] [ 19%] Building CXX object src/math/grobner/CMakeFiles/grobner.dir/pdd_simplifier.cpp.o
+[z3-sys 0.7.1] [ 19%] Building CXX object src/math/grobner/CMakeFiles/grobner.dir/grobner.cpp.o
+[z3-sys 0.7.1] [ 19%] Building CXX object src/ast/euf/CMakeFiles/euf.dir/euf_enode.cpp.o
+[z3-sys 0.7.1] [ 19%] Building CXX object src/math/grobner/CMakeFiles/grobner.dir/pdd_solver.cpp.o
+[z3-sys 0.7.1] [ 19%] Building CXX object src/ast/euf/CMakeFiles/euf.dir/euf_etable.cpp.o
+[z3-sys 0.7.1] [ 20%] Building CXX object src/ast/euf/CMakeFiles/euf.dir/euf_egraph.cpp.o
+[z3-sys 0.7.1] [ 20%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/array_rewriter.cpp.o
+[z3-sys 0.7.1] [ 20%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/arith_rewriter.cpp.o
+[z3-sys 0.7.1] [ 21%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/bit2int.cpp.o
+[z3-sys 0.7.1] [ 21%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/ast_counter.cpp.o
+[z3-sys 0.7.1] [ 21%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/bool_rewriter.cpp.o
+[z3-sys 0.7.1] [ 21%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/bv_elim.cpp.o
+[z3-sys 0.7.1] [ 21%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/bv_bounds.cpp.o
+[z3-sys 0.7.1] [ 21%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/bv_rewriter.cpp.o
+[z3-sys 0.7.1] [ 21%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/cached_var_subst.cpp.o
+[z3-sys 0.7.1] [ 21%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/datatype_rewriter.cpp.o
+[z3-sys 0.7.1] [ 21%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/der.cpp.o
+[z3-sys 0.7.1] [ 22%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/distribute_forall.cpp.o
+[z3-sys 0.7.1] [ 22%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/dl_rewriter.cpp.o
+[z3-sys 0.7.1] [ 22%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/enum2bv_rewriter.cpp.o
+[z3-sys 0.7.1] [ 22%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/elim_bounds.cpp.o
+[z3-sys 0.7.1] [ 22%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/expr_replacer.cpp.o
+[z3-sys 0.7.1] [ 22%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/expr_safe_replace.cpp.o
+[z3-sys 0.7.1] [ 23%] Building CXX object src/parsers/util/CMakeFiles/parser_util.dir/cost_parser.cpp.o
+[z3-sys 0.7.1] [ 23%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/factor_equivs.cpp.o
+[z3-sys 0.7.1] [ 23%] Building CXX object src/parsers/util/CMakeFiles/parser_util.dir/pattern_validation.cpp.o
+[z3-sys 0.7.1] [ 23%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/factor_rewriter.cpp.o
+[z3-sys 0.7.1] [ 25%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/fpa_rewriter.cpp.o
+[z3-sys 0.7.1] [ 25%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/func_decl_replace.cpp.o
+[z3-sys 0.7.1] [ 25%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/hoist_rewriter.cpp.o
+[z3-sys 0.7.1] [ 25%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/inj_axiom.cpp.o
+[z3-sys 0.7.1] [ 25%] Building CXX object src/parsers/util/CMakeFiles/parser_util.dir/scanner.cpp.o
+[z3-sys 0.7.1] [ 25%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/label_rewriter.cpp.o
+[z3-sys 0.7.1] [ 25%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/maximize_ac_sharing.cpp.o
+[z3-sys 0.7.1] [ 25%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/mk_simplified_app.cpp.o
+[z3-sys 0.7.1] [ 25%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/pb_rewriter.cpp.o
+[z3-sys 0.7.1] [ 26%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/pb2bv_rewriter.cpp.o
+[z3-sys 0.7.1] [ 26%] Building CXX object src/parsers/util/CMakeFiles/parser_util.dir/simple_parser.cpp.o
+[z3-sys 0.7.1] [ 26%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/push_app_ite.cpp.o
+[z3-sys 0.7.1] [ 26%] Built target euf
+[z3-sys 0.7.1] [ 26%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/quant_hoist.cpp.o
+[z3-sys 0.7.1] [ 26%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/recfun_rewriter.cpp.o
+[z3-sys 0.7.1] [ 26%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/rewriter.cpp.o
+[z3-sys 0.7.1] [ 26%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/seq_axioms.cpp.o
+[z3-sys 0.7.1] [ 26%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/seq_eq_solver.cpp.o
+[z3-sys 0.7.1] [ 26%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/seq_rewriter.cpp.o
+[z3-sys 0.7.1] [ 26%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/seq_skolem.cpp.o
+[z3-sys 0.7.1] [ 27%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/th_rewriter.cpp.o
+[z3-sys 0.7.1] [ 27%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/value_sweep.cpp.o
+[z3-sys 0.7.1] [ 27%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/var_subst.cpp.o
+[z3-sys 0.7.1] [ 27%] Building CXX object src/ast/rewriter/CMakeFiles/rewriter.dir/mk_extract_proc.cpp.o
+[z3-sys 0.7.1] [ 27%] Built target grobner
+[z3-sys 0.7.1] [ 27%] Generating "/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/sat/sat_simplifier_params.hpp" from "sat_simplifier_params.pyg"
+[z3-sys 0.7.1] [ 27%] Generating "/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/sat/sat_asymm_branch_params.hpp" from "sat_asymm_branch_params.pyg"
+[z3-sys 0.7.1] [ 27%] Generating "/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/sat/sat_params.hpp" from "sat_params.pyg"
+[z3-sys 0.7.1] [ 27%] Generating "/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/sat/sat_scc_params.hpp" from "sat_scc_params.pyg"
+[z3-sys 0.7.1] [ 28%] Building CXX object src/sat/CMakeFiles/sat.dir/dimacs.cpp.o
+[z3-sys 0.7.1] [ 28%] Building CXX object src/sat/CMakeFiles/sat.dir/sat_aig_finder.cpp.o
+[z3-sys 0.7.1] [ 28%] Building CXX object src/sat/CMakeFiles/sat.dir/sat_anf_simplifier.cpp.o
+[z3-sys 0.7.1] [ 28%] Building CXX object src/sat/CMakeFiles/sat.dir/sat_aig_cuts.cpp.o
+[z3-sys 0.7.1] [ 28%] Building CXX object src/sat/CMakeFiles/sat.dir/sat_asymm_branch.cpp.o
+[z3-sys 0.7.1] [ 28%] Building CXX object src/sat/CMakeFiles/sat.dir/sat_bcd.cpp.o
+[z3-sys 0.7.1] [ 28%] Built target parser_util
+[z3-sys 0.7.1] [ 28%] Building CXX object src/sat/CMakeFiles/sat.dir/sat_big.cpp.o
+[z3-sys 0.7.1] [ 28%] Building CXX object src/sat/CMakeFiles/sat.dir/sat_binspr.cpp.o
+[z3-sys 0.7.1] [ 29%] Building CXX object src/sat/CMakeFiles/sat.dir/sat_clause.cpp.o
+[z3-sys 0.7.1] [ 29%] Building CXX object src/sat/CMakeFiles/sat.dir/sat_clause_set.cpp.o
+[z3-sys 0.7.1] [ 29%] Building CXX object src/sat/CMakeFiles/sat.dir/sat_clause_use_list.cpp.o
+[z3-sys 0.7.1] [ 29%] Building CXX object src/sat/CMakeFiles/sat.dir/sat_cleaner.cpp.o
+[z3-sys 0.7.1] [ 29%] Building CXX object src/sat/CMakeFiles/sat.dir/sat_config.cpp.o
+[z3-sys 0.7.1] [ 29%] Building CXX object src/sat/CMakeFiles/sat.dir/sat_cut_simplifier.cpp.o
+[z3-sys 0.7.1] [ 29%] Building CXX object src/sat/CMakeFiles/sat.dir/sat_cutset.cpp.o
+[z3-sys 0.7.1] [ 29%] Building CXX object src/sat/CMakeFiles/sat.dir/sat_ddfw.cpp.o
+[z3-sys 0.7.1] [ 30%] Building CXX object src/sat/CMakeFiles/sat.dir/sat_drat.cpp.o
+[z3-sys 0.7.1] [ 30%] Building CXX object src/sat/CMakeFiles/sat.dir/sat_elim_eqs.cpp.o
+[z3-sys 0.7.1] [ 30%] Building CXX object src/sat/CMakeFiles/sat.dir/sat_elim_vars.cpp.o
+[z3-sys 0.7.1] [ 30%] Building CXX object src/sat/CMakeFiles/sat.dir/sat_gc.cpp.o
+[z3-sys 0.7.1] [ 30%] Building CXX object src/sat/CMakeFiles/sat.dir/sat_integrity_checker.cpp.o
+[z3-sys 0.7.1] [ 30%] Building CXX object src/sat/CMakeFiles/sat.dir/sat_local_search.cpp.o
+[z3-sys 0.7.1] [ 30%] Building CXX object src/sat/CMakeFiles/sat.dir/sat_lookahead.cpp.o
+[z3-sys 0.7.1] [ 30%] Building CXX object src/sat/CMakeFiles/sat.dir/sat_lut_finder.cpp.o
+[z3-sys 0.7.1] [ 30%] Building CXX object src/sat/CMakeFiles/sat.dir/sat_model_converter.cpp.o
+[z3-sys 0.7.1] [ 31%] Building CXX object src/sat/CMakeFiles/sat.dir/sat_mus.cpp.o
+[z3-sys 0.7.1] [ 31%] Building CXX object src/sat/CMakeFiles/sat.dir/sat_npn3_finder.cpp.o
+[z3-sys 0.7.1] [ 31%] Building CXX object src/sat/CMakeFiles/sat.dir/sat_parallel.cpp.o
+[z3-sys 0.7.1] [ 31%] Building CXX object src/sat/CMakeFiles/sat.dir/sat_prob.cpp.o
+[z3-sys 0.7.1] [ 31%] Building CXX object src/sat/CMakeFiles/sat.dir/sat_probing.cpp.o
+[z3-sys 0.7.1] [ 31%] Building CXX object src/sat/CMakeFiles/sat.dir/sat_scc.cpp.o
+[z3-sys 0.7.1] [ 31%] Building CXX object src/sat/CMakeFiles/sat.dir/sat_simplifier.cpp.o
+[z3-sys 0.7.1] [ 31%] Building CXX object src/sat/CMakeFiles/sat.dir/sat_solver.cpp.o
+[z3-sys 0.7.1] [ 32%] Building CXX object src/sat/CMakeFiles/sat.dir/sat_watched.cpp.o
+[z3-sys 0.7.1] [ 32%] Building CXX object src/sat/CMakeFiles/sat.dir/sat_xor_finder.cpp.o
+[z3-sys 0.7.1] [ 32%] Built target rewriter
+[z3-sys 0.7.1] [ 33%] Generating "/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/ast/normal_forms/nnf_params.hpp" from "nnf_params.pyg"
+[z3-sys 0.7.1] [ 33%] Building CXX object src/ast/rewriter/bit_blaster/CMakeFiles/bit_blaster.dir/bit_blaster.cpp.o
+[z3-sys 0.7.1] [ 33%] Building CXX object src/ast/rewriter/bit_blaster/CMakeFiles/bit_blaster.dir/bit_blaster_rewriter.cpp.o
+[z3-sys 0.7.1] [ 34%] Building CXX object src/ast/macros/CMakeFiles/macros.dir/macro_finder.cpp.o
+[z3-sys 0.7.1] [ 34%] Building CXX object src/ast/macros/CMakeFiles/macros.dir/macro_manager.cpp.o
+[z3-sys 0.7.1] [ 34%] Building CXX object src/ast/macros/CMakeFiles/macros.dir/quasi_macros.cpp.o
+[z3-sys 0.7.1] [ 34%] Building CXX object src/ast/macros/CMakeFiles/macros.dir/macro_util.cpp.o
+[z3-sys 0.7.1] [ 34%] Building CXX object src/ast/macros/CMakeFiles/macros.dir/quantifier_macro_info.cpp.o
+[z3-sys 0.7.1] [ 34%] Building CXX object src/ast/proofs/CMakeFiles/proofs.dir/proof_checker.cpp.o
+[z3-sys 0.7.1] [ 34%] Building CXX object src/ast/proofs/CMakeFiles/proofs.dir/proof_utils.cpp.o
+[z3-sys 0.7.1] [ 34%] Building CXX object src/ast/substitution/CMakeFiles/substitution.dir/matcher.cpp.o
+[z3-sys 0.7.1] [ 34%] Building CXX object src/ast/substitution/CMakeFiles/substitution.dir/substitution_tree.cpp.o
+[z3-sys 0.7.1] [ 34%] Building CXX object src/ast/substitution/CMakeFiles/substitution.dir/substitution.cpp.o
+[z3-sys 0.7.1] [ 35%] Building CXX object src/ast/substitution/CMakeFiles/substitution.dir/unifier.cpp.o
+[z3-sys 0.7.1] [ 35%] Building CXX object src/ast/normal_forms/CMakeFiles/normal_forms.dir/defined_names.cpp.o
+[z3-sys 0.7.1] [ 35%] Building CXX object src/ast/normal_forms/CMakeFiles/normal_forms.dir/elim_term_ite.cpp.o
+[z3-sys 0.7.1] [ 35%] Building CXX object src/ast/normal_forms/CMakeFiles/normal_forms.dir/name_exprs.cpp.o
+[z3-sys 0.7.1] [ 35%] Building CXX object src/ast/normal_forms/CMakeFiles/normal_forms.dir/pull_quant.cpp.o
+[z3-sys 0.7.1] [ 35%] Building CXX object src/ast/normal_forms/CMakeFiles/normal_forms.dir/nnf.cpp.o
+[z3-sys 0.7.1] [ 35%] Built target sat
+[z3-sys 0.7.1] [ 35%] Generating "/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/nlsat/nlsat_params.hpp" from "nlsat_params.pyg"
+[z3-sys 0.7.1] [ 35%] Building CXX object src/nlsat/CMakeFiles/nlsat.dir/nlsat_clause.cpp.o
+[z3-sys 0.7.1] [ 35%] Building CXX object src/nlsat/CMakeFiles/nlsat.dir/nlsat_interval_set.cpp.o
+[z3-sys 0.7.1] [ 35%] Building CXX object src/nlsat/CMakeFiles/nlsat.dir/nlsat_explain.cpp.o
+[z3-sys 0.7.1] [ 35%] Building CXX object src/nlsat/CMakeFiles/nlsat.dir/nlsat_types.cpp.o
+[z3-sys 0.7.1] [ 35%] Building CXX object src/nlsat/CMakeFiles/nlsat.dir/nlsat_solver.cpp.o
+[z3-sys 0.7.1] [ 36%] Building CXX object src/nlsat/CMakeFiles/nlsat.dir/nlsat_evaluator.cpp.o
+[z3-sys 0.7.1] [ 36%] Built target substitution
+[z3-sys 0.7.1] [ 36%] Built target macros
+[z3-sys 0.7.1] [ 36%] Generating "/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/model/model_params.hpp" from "model_params.pyg"
+[z3-sys 0.7.1] [ 36%] Generating "/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/model/model_evaluator_params.hpp" from "model_evaluator_params.pyg"
+[z3-sys 0.7.1] [ 36%] Building CXX object src/model/CMakeFiles/model.dir/array_factory.cpp.o
+[z3-sys 0.7.1] [ 36%] Building CXX object src/model/CMakeFiles/model.dir/func_interp.cpp.o
+[z3-sys 0.7.1] [ 36%] Building CXX object src/model/CMakeFiles/model.dir/model_evaluator.cpp.o
+[z3-sys 0.7.1] [ 37%] Building CXX object src/model/CMakeFiles/model.dir/model2expr.cpp.o
+[z3-sys 0.7.1] [ 37%] Building CXX object src/model/CMakeFiles/model.dir/datatype_factory.cpp.o
+[z3-sys 0.7.1] [ 37%] Building CXX object src/model/CMakeFiles/model.dir/model.cpp.o
+[z3-sys 0.7.1] [ 37%] Building CXX object src/model/CMakeFiles/model.dir/model_pp.cpp.o
+[z3-sys 0.7.1] [ 37%] Building CXX object src/model/CMakeFiles/model.dir/model_macro_solver.cpp.o
+[z3-sys 0.7.1] [ 38%] Building CXX object src/model/CMakeFiles/model.dir/model_core.cpp.o
+[z3-sys 0.7.1] [ 38%] Building CXX object src/model/CMakeFiles/model.dir/model_implicant.cpp.o
+[z3-sys 0.7.1] [ 38%] Building CXX object src/model/CMakeFiles/model.dir/model_v2_pp.cpp.o
+[z3-sys 0.7.1] [ 38%] Building CXX object src/model/CMakeFiles/model.dir/numeral_factory.cpp.o
+[z3-sys 0.7.1] [ 38%] Building CXX object src/model/CMakeFiles/model.dir/model_smt2_pp.cpp.o
+[z3-sys 0.7.1] [ 38%] Building CXX object src/model/CMakeFiles/model.dir/value_factory.cpp.o
+[z3-sys 0.7.1] [ 38%] Building CXX object src/model/CMakeFiles/model.dir/struct_factory.cpp.o
+[z3-sys 0.7.1] [ 38%] Built target proofs
+[z3-sys 0.7.1] [ 38%] Built target normal_forms
+[z3-sys 0.7.1] [ 38%] Built target bit_blaster
+[z3-sys 0.7.1] [ 38%] Built target nlsat
+[z3-sys 0.7.1] [ 38%] Building CXX object src/math/lp/CMakeFiles/lp.dir/binary_heap_priority_queue.cpp.o
+[z3-sys 0.7.1] [ 38%] Building CXX object src/math/lp/CMakeFiles/lp.dir/binary_heap_upair_queue.cpp.o
+[z3-sys 0.7.1] [ 38%] Building CXX object src/math/lp/CMakeFiles/lp.dir/gomory.cpp.o
+[z3-sys 0.7.1] [ 38%] Building CXX object src/math/lp/CMakeFiles/lp.dir/emonics.cpp.o
+[z3-sys 0.7.1] [ 38%] Building CXX object src/math/lp/CMakeFiles/lp.dir/core_solver_pretty_printer.cpp.o
+[z3-sys 0.7.1] [ 38%] Building CXX object src/math/lp/CMakeFiles/lp.dir/dense_matrix.cpp.o
+[z3-sys 0.7.1] [ 38%] Building CXX object src/math/lp/CMakeFiles/lp.dir/factorization_factory_imp.cpp.o
+[z3-sys 0.7.1] [ 38%] Building CXX object src/math/lp/CMakeFiles/lp.dir/eta_matrix.cpp.o
+[z3-sys 0.7.1] [ 39%] Building CXX object src/math/lp/CMakeFiles/lp.dir/factorization.cpp.o
+[z3-sys 0.7.1] [ 39%] Building CXX object src/math/lp/CMakeFiles/lp.dir/horner.cpp.o
+[z3-sys 0.7.1] [ 39%] Building CXX object src/math/lp/CMakeFiles/lp.dir/hnf_cutter.cpp.o
+[z3-sys 0.7.1] [ 39%] Building CXX object src/math/lp/CMakeFiles/lp.dir/int_branch.cpp.o
+[z3-sys 0.7.1] [ 39%] Building CXX object src/math/lp/CMakeFiles/lp.dir/indexed_vector.cpp.o
+[z3-sys 0.7.1] [ 40%] Building CXX object src/math/lp/CMakeFiles/lp.dir/int_cube.cpp.o
+[z3-sys 0.7.1] [ 40%] Building CXX object src/math/lp/CMakeFiles/lp.dir/int_solver.cpp.o
+[z3-sys 0.7.1] [ 40%] Building CXX object src/math/lp/CMakeFiles/lp.dir/int_gcd_test.cpp.o
+[z3-sys 0.7.1] [ 40%] Building CXX object src/math/lp/CMakeFiles/lp.dir/lar_solver.cpp.o
+[z3-sys 0.7.1] [ 40%] Building CXX object src/math/lp/CMakeFiles/lp.dir/lar_core_solver.cpp.o
+[z3-sys 0.7.1] [ 40%] Building CXX object src/math/lp/CMakeFiles/lp.dir/lp_core_solver_base.cpp.o
+[z3-sys 0.7.1] [ 40%] Building CXX object src/math/lp/CMakeFiles/lp.dir/lp_dual_core_solver.cpp.o
+[z3-sys 0.7.1] [ 40%] Building CXX object src/math/lp/CMakeFiles/lp.dir/lp_dual_simplex.cpp.o
+[z3-sys 0.7.1] [ 40%] Building CXX object src/math/lp/CMakeFiles/lp.dir/lp_primal_core_solver.cpp.o
+[z3-sys 0.7.1] [ 40%] Building CXX object src/math/lp/CMakeFiles/lp.dir/lp_primal_simplex.cpp.o
+[z3-sys 0.7.1] [ 41%] Building CXX object src/math/lp/CMakeFiles/lp.dir/lp_settings.cpp.o
+[z3-sys 0.7.1] [ 41%] Building CXX object src/math/lp/CMakeFiles/lp.dir/lp_solver.cpp.o
+[z3-sys 0.7.1] [ 41%] Building CXX object src/math/lp/CMakeFiles/lp.dir/lu.cpp.o
+[z3-sys 0.7.1] [ 41%] Building CXX object src/math/lp/CMakeFiles/lp.dir/lp_utils.cpp.o
+[z3-sys 0.7.1] [ 41%] Building CXX object src/math/lp/CMakeFiles/lp.dir/matrix.cpp.o
+[z3-sys 0.7.1] [ 41%] Built target model
+[z3-sys 0.7.1] [ 41%] Generating "/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/tactic/tactic_params.hpp" from "tactic_params.pyg"
+[z3-sys 0.7.1] [ 41%] Building CXX object src/math/lp/CMakeFiles/lp.dir/mon_eq.cpp.o
+[z3-sys 0.7.1] [ 41%] Building CXX object src/tactic/CMakeFiles/tactic.dir/dependency_converter.cpp.o
+[z3-sys 0.7.1] [ 41%] Building CXX object src/tactic/CMakeFiles/tactic.dir/equiv_proof_converter.cpp.o
+[z3-sys 0.7.1] [ 41%] Building CXX object src/tactic/CMakeFiles/tactic.dir/generic_model_converter.cpp.o
+[z3-sys 0.7.1] [ 41%] Building CXX object src/math/lp/CMakeFiles/lp.dir/monomial_bounds.cpp.o
+[z3-sys 0.7.1] [ 41%] Building CXX object src/math/lp/CMakeFiles/lp.dir/nex_creator.cpp.o
+[z3-sys 0.7.1] [ 42%] Building CXX object src/math/lp/CMakeFiles/lp.dir/nla_basics_lemmas.cpp.o
+[z3-sys 0.7.1] [ 42%] Building CXX object src/tactic/CMakeFiles/tactic.dir/goal.cpp.o
+[z3-sys 0.7.1] [ 42%] Building CXX object src/math/lp/CMakeFiles/lp.dir/nla_common.cpp.o
+[z3-sys 0.7.1] [ 42%] Building CXX object src/math/lp/CMakeFiles/lp.dir/nla_core.cpp.o
+[z3-sys 0.7.1] [ 42%] Building CXX object src/math/lp/CMakeFiles/lp.dir/nla_intervals.cpp.o
+[z3-sys 0.7.1] [ 42%] Building CXX object src/tactic/CMakeFiles/tactic.dir/goal_num_occurs.cpp.o
+[z3-sys 0.7.1] [ 43%] Building CXX object src/tactic/CMakeFiles/tactic.dir/goal_shared_occs.cpp.o
+[z3-sys 0.7.1] [ 43%] Building CXX object src/math/lp/CMakeFiles/lp.dir/nla_monotone_lemmas.cpp.o
+[z3-sys 0.7.1] [ 43%] Building CXX object src/qe/mbp/CMakeFiles/mbp.dir/mbp_arith.cpp.o
+[z3-sys 0.7.1] [ 43%] Building CXX object src/tactic/CMakeFiles/tactic.dir/goal_util.cpp.o
+[z3-sys 0.7.1] [ 43%] Building CXX object src/qe/mbp/CMakeFiles/mbp.dir/mbp_arrays.cpp.o
+[z3-sys 0.7.1] [ 43%] Building CXX object src/math/lp/CMakeFiles/lp.dir/nla_order_lemmas.cpp.o
+[z3-sys 0.7.1] [ 43%] Building CXX object src/math/lp/CMakeFiles/lp.dir/nla_solver.cpp.o
+[z3-sys 0.7.1] [ 43%] Building CXX object src/math/lp/CMakeFiles/lp.dir/nla_tangent_lemmas.cpp.o
+[z3-sys 0.7.1] [ 44%] Building CXX object src/math/lp/CMakeFiles/lp.dir/nra_solver.cpp.o
+[z3-sys 0.7.1] [ 44%] Building CXX object src/math/lp/CMakeFiles/lp.dir/permutation_matrix.cpp.o
+[z3-sys 0.7.1] [ 44%] Building CXX object src/tactic/CMakeFiles/tactic.dir/horn_subsume_model_converter.cpp.o
+[z3-sys 0.7.1] [ 44%] Building CXX object src/qe/mbp/CMakeFiles/mbp.dir/mbp_datatypes.cpp.o
+[z3-sys 0.7.1] [ 44%] Building CXX object src/tactic/CMakeFiles/tactic.dir/model_converter.cpp.o
+[z3-sys 0.7.1] [ 44%] Building CXX object src/tactic/CMakeFiles/tactic.dir/probe.cpp.o
+[z3-sys 0.7.1] [ 44%] Building CXX object src/math/lp/CMakeFiles/lp.dir/random_updater.cpp.o
+[z3-sys 0.7.1] [ 44%] Building CXX object src/math/lp/CMakeFiles/lp.dir/row_eta_matrix.cpp.o
+[z3-sys 0.7.1] [ 44%] Building CXX object src/math/lp/CMakeFiles/lp.dir/scaler.cpp.o
+[z3-sys 0.7.1] [ 44%] Building CXX object src/tactic/CMakeFiles/tactic.dir/proof_converter.cpp.o
+[z3-sys 0.7.1] [ 44%] Building CXX object src/math/lp/CMakeFiles/lp.dir/square_dense_submatrix.cpp.o
+[z3-sys 0.7.1] [ 44%] Building CXX object src/math/lp/CMakeFiles/lp.dir/square_sparse_matrix.cpp.o
+[z3-sys 0.7.1] [ 44%] Building CXX object src/tactic/CMakeFiles/tactic.dir/replace_proof_converter.cpp.o
+[z3-sys 0.7.1] [ 44%] Building CXX object src/math/lp/CMakeFiles/lp.dir/static_matrix.cpp.o
+[z3-sys 0.7.1] [ 44%] Building CXX object src/tactic/CMakeFiles/tactic.dir/sine_filter.cpp.o
+[z3-sys 0.7.1] [ 44%] Building CXX object src/qe/mbp/CMakeFiles/mbp.dir/mbp_plugin.cpp.o
+[z3-sys 0.7.1] [ 45%] Building CXX object src/qe/mbp/CMakeFiles/mbp.dir/mbp_solve_plugin.cpp.o
+[z3-sys 0.7.1] [ 45%] Building CXX object src/tactic/CMakeFiles/tactic.dir/tactical.cpp.o
+[z3-sys 0.7.1] [ 46%] Building CXX object src/tactic/CMakeFiles/tactic.dir/tactic.cpp.o
+[z3-sys 0.7.1] [ 46%] Building CXX object src/qe/mbp/CMakeFiles/mbp.dir/mbp_term_graph.cpp.o
+[z3-sys 0.7.1] [ 46%] Building CXX object src/ast/fpa/CMakeFiles/fpa.dir/bv2fpa_converter.cpp.o
+[z3-sys 0.7.1] [ 46%] Building CXX object src/ast/fpa/CMakeFiles/fpa.dir/fpa2bv_converter.cpp.o
+[z3-sys 0.7.1] [ 46%] Building CXX object src/ast/fpa/CMakeFiles/fpa.dir/fpa2bv_rewriter.cpp.o
+[z3-sys 0.7.1] [ 46%] Building CXX object src/smt/proto_model/CMakeFiles/proto_model.dir/proto_model.cpp.o
+[z3-sys 0.7.1] [ 46%] Built target proto_model
+[z3-sys 0.7.1] [ 46%] Built target tactic
+[z3-sys 0.7.1] [ 46%] Generating "/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/solver/combined_solver_params.hpp" from "combined_solver_params.pyg"
+[z3-sys 0.7.1] [ 46%] Generating "/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/solver/parallel_params.hpp" from "parallel_params.pyg"
+[z3-sys 0.7.1] [ 46%] Generating "/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/solver/solver_params.hpp" from "solver_params.pyg"
+[z3-sys 0.7.1] [ 46%] Building CXX object src/tactic/aig/CMakeFiles/aig_tactic.dir/aig.cpp.o
+[z3-sys 0.7.1] [ 46%] Building CXX object src/tactic/core/CMakeFiles/core_tactics.dir/cofactor_elim_term_ite.cpp.o
+[z3-sys 0.7.1] [ 46%] Building CXX object src/tactic/core/CMakeFiles/core_tactics.dir/collect_statistics_tactic.cpp.o
+[z3-sys 0.7.1] [ 46%] Building CXX object src/tactic/core/CMakeFiles/core_tactics.dir/blast_term_ite_tactic.cpp.o
+[z3-sys 0.7.1] [ 46%] Building CXX object src/tactic/aig/CMakeFiles/aig_tactic.dir/aig_tactic.cpp.o
+[z3-sys 0.7.1] [ 46%] Building CXX object src/tactic/core/CMakeFiles/core_tactics.dir/cofactor_term_ite_tactic.cpp.o
+[z3-sys 0.7.1] [ 47%] Building CXX object src/tactic/core/CMakeFiles/core_tactics.dir/der_tactic.cpp.o
+[z3-sys 0.7.1] [ 47%] Building CXX object src/tactic/core/CMakeFiles/core_tactics.dir/ctx_simplify_tactic.cpp.o
+[z3-sys 0.7.1] [ 47%] Building CXX object src/tactic/core/CMakeFiles/core_tactics.dir/distribute_forall_tactic.cpp.o
+[z3-sys 0.7.1] [ 47%] Building CXX object src/tactic/core/CMakeFiles/core_tactics.dir/dom_simplify_tactic.cpp.o
+[z3-sys 0.7.1] [ 47%] Building CXX object src/tactic/core/CMakeFiles/core_tactics.dir/elim_term_ite_tactic.cpp.o
+[z3-sys 0.7.1] [ 47%] Building CXX object src/tactic/core/CMakeFiles/core_tactics.dir/nnf_tactic.cpp.o
+[z3-sys 0.7.1] [ 47%] Building CXX object src/tactic/core/CMakeFiles/core_tactics.dir/elim_uncnstr_tactic.cpp.o
+[z3-sys 0.7.1] [ 47%] Building CXX object src/tactic/core/CMakeFiles/core_tactics.dir/injectivity_tactic.cpp.o
+[z3-sys 0.7.1] [ 47%] Building CXX object src/tactic/core/CMakeFiles/core_tactics.dir/occf_tactic.cpp.o
+[z3-sys 0.7.1] [ 47%] Building CXX object src/tactic/core/CMakeFiles/core_tactics.dir/propagate_values_tactic.cpp.o
+[z3-sys 0.7.1] [ 48%] Building CXX object src/tactic/core/CMakeFiles/core_tactics.dir/reduce_args_tactic.cpp.o
+[z3-sys 0.7.1] [ 48%] Building CXX object src/tactic/core/CMakeFiles/core_tactics.dir/pb_preprocess_tactic.cpp.o
+[z3-sys 0.7.1] [ 48%] Building CXX object src/tactic/core/CMakeFiles/core_tactics.dir/reduce_invertible_tactic.cpp.o
+[z3-sys 0.7.1] [ 48%] Building CXX object src/tactic/core/CMakeFiles/core_tactics.dir/simplify_tactic.cpp.o
+[z3-sys 0.7.1] [ 48%] Building CXX object src/solver/CMakeFiles/solver.dir/check_sat_result.cpp.o
+[z3-sys 0.7.1] [ 48%] Built target lp
+[z3-sys 0.7.1] [ 50%] Building CXX object src/solver/CMakeFiles/solver.dir/check_logic.cpp.o
+[z3-sys 0.7.1] [ 50%] Built target mbp
+[z3-sys 0.7.1] [ 50%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/arith_axioms.cpp.o
+[z3-sys 0.7.1] [ 50%] Building CXX object src/solver/CMakeFiles/solver.dir/combined_solver.cpp.o
+[z3-sys 0.7.1] [ 50%] Building CXX object src/tactic/core/CMakeFiles/core_tactics.dir/solve_eqs_tactic.cpp.o
+[z3-sys 0.7.1] [ 50%] Building CXX object src/solver/CMakeFiles/solver.dir/mus.cpp.o
+[z3-sys 0.7.1] [ 50%] Building CXX object src/tactic/core/CMakeFiles/core_tactics.dir/special_relations_tactic.cpp.o
+[z3-sys 0.7.1] [ 50%] Building CXX object src/tactic/core/CMakeFiles/core_tactics.dir/split_clause_tactic.cpp.o
+[z3-sys 0.7.1] [ 50%] Building CXX object src/tactic/core/CMakeFiles/core_tactics.dir/symmetry_reduce_tactic.cpp.o
+[z3-sys 0.7.1] [ 51%] Building CXX object src/tactic/core/CMakeFiles/core_tactics.dir/tseitin_cnf_tactic.cpp.o
+[z3-sys 0.7.1] [ 51%] Building CXX object src/tactic/core/CMakeFiles/core_tactics.dir/collect_occs.cpp.o
+[z3-sys 0.7.1] [ 51%] Building CXX object src/solver/CMakeFiles/solver.dir/parallel_tactic.cpp.o
+[z3-sys 0.7.1] [ 51%] Building CXX object src/solver/CMakeFiles/solver.dir/smt_logics.cpp.o
+[z3-sys 0.7.1] [ 51%] Building CXX object src/solver/CMakeFiles/solver.dir/solver.cpp.o
+[z3-sys 0.7.1] [ 51%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/arith_internalize.cpp.o
+[z3-sys 0.7.1] [ 51%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/arith_diagnostics.cpp.o
+[z3-sys 0.7.1] [ 51%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/arith_solver.cpp.o
+[z3-sys 0.7.1] [ 51%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/array_axioms.cpp.o
+[z3-sys 0.7.1] [ 51%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/array_diagnostics.cpp.o
+[z3-sys 0.7.1] [ 52%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/array_internalize.cpp.o
+[z3-sys 0.7.1] [ 52%] Building CXX object src/solver/CMakeFiles/solver.dir/solver_na2as.cpp.o
+[z3-sys 0.7.1] [ 52%] Building CXX object src/solver/CMakeFiles/solver.dir/solver_pool.cpp.o
+[z3-sys 0.7.1] [ 52%] Building CXX object src/solver/CMakeFiles/solver.dir/solver2tactic.cpp.o
+[z3-sys 0.7.1] [ 53%] Building CXX object src/solver/CMakeFiles/solver.dir/tactic2solver.cpp.o
+[z3-sys 0.7.1] [ 53%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/array_model.cpp.o
+[z3-sys 0.7.1] [ 53%] Built target aig_tactic
+[z3-sys 0.7.1] [ 53%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/array_solver.cpp.o
+[z3-sys 0.7.1] [ 53%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/atom2bool_var.cpp.o
+[z3-sys 0.7.1] [ 53%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/bv_ackerman.cpp.o
+[z3-sys 0.7.1] [ 53%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/bv_delay_internalize.cpp.o
+[z3-sys 0.7.1] [ 53%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/bv_internalize.cpp.o
+[z3-sys 0.7.1] [ 53%] Built target fpa
+[z3-sys 0.7.1] [ 53%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/bv_invariant.cpp.o
+[z3-sys 0.7.1] [ 53%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/bv_solver.cpp.o
+[z3-sys 0.7.1] [ 54%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/dt_solver.cpp.o
+[z3-sys 0.7.1] [ 54%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/euf_ackerman.cpp.o
+[z3-sys 0.7.1] [ 54%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/euf_internalize.cpp.o
+[z3-sys 0.7.1] [ 54%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/euf_invariant.cpp.o
+[z3-sys 0.7.1] [ 54%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/euf_model.cpp.o
+[z3-sys 0.7.1] [ 54%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/euf_proof.cpp.o
+[z3-sys 0.7.1] [ 54%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/euf_relevancy.cpp.o
+[z3-sys 0.7.1] [ 54%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/euf_solver.cpp.o
+[z3-sys 0.7.1] [ 55%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/fpa_solver.cpp.o
+[z3-sys 0.7.1] [ 55%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/pb_card.cpp.o
+[z3-sys 0.7.1] [ 55%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/pb_constraint.cpp.o
+[z3-sys 0.7.1] [ 55%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/pb_internalize.cpp.o
+[z3-sys 0.7.1] [ 55%] Built target solver
+[z3-sys 0.7.1] [ 55%] Built target core_tactics
+[z3-sys 0.7.1] [ 55%] Generating "/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/ackermannization/ackermannize_bv_tactic_params.hpp" from "ackermannize_bv_tactic_params.pyg"
+[z3-sys 0.7.1] [ 56%] Building CXX object src/cmd_context/CMakeFiles/cmd_context.dir/basic_cmds.cpp.o
+[z3-sys 0.7.1] [ 56%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/pb_pb.cpp.o
+[z3-sys 0.7.1] [ 56%] Generating "/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/ackermannization/ackermannization_params.hpp" from "ackermannization_params.pyg"
+[z3-sys 0.7.1] [ 56%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/pb_solver.cpp.o
+[z3-sys 0.7.1] [ 56%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/q_clause.cpp.o
+[z3-sys 0.7.1] [ 56%] Building CXX object src/ackermannization/CMakeFiles/ackermannization.dir/ackermannize_bv_model_converter.cpp.o
+[z3-sys 0.7.1] [ 56%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/q_ematch.cpp.o
+[z3-sys 0.7.1] [ 56%] Building CXX object src/ackermannization/CMakeFiles/ackermannization.dir/ackermannize_bv_tactic.cpp.o
+[z3-sys 0.7.1] [ 57%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/q_eval.cpp.o
+[z3-sys 0.7.1] [ 57%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/q_mam.cpp.o
+[z3-sys 0.7.1] [ 57%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/q_mbi.cpp.o
+[z3-sys 0.7.1] [ 57%] Building CXX object src/ackermannization/CMakeFiles/ackermannization.dir/ackr_bound_probe.cpp.o
+[z3-sys 0.7.1] [ 57%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/q_model_fixer.cpp.o
+[z3-sys 0.7.1] [ 57%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/q_queue.cpp.o
+[z3-sys 0.7.1] [ 57%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/q_solver.cpp.o
+[z3-sys 0.7.1] [ 57%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/recfun_solver.cpp.o
+[z3-sys 0.7.1] [ 57%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/sat_dual_solver.cpp.o
+[z3-sys 0.7.1] [ 58%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/sat_th.cpp.o
+[z3-sys 0.7.1] [ 58%] Building CXX object src/sat/smt/CMakeFiles/sat_smt.dir/user_solver.cpp.o
+[z3-sys 0.7.1] [ 58%] Building CXX object src/ackermannization/CMakeFiles/ackermannization.dir/ackr_helper.cpp.o
+[z3-sys 0.7.1] [ 58%] Building CXX object src/ackermannization/CMakeFiles/ackermannization.dir/ackr_model_converter.cpp.o
+[z3-sys 0.7.1] [ 58%] Building CXX object src/ackermannization/CMakeFiles/ackermannization.dir/lackr.cpp.o
+[z3-sys 0.7.1] [ 59%] Building CXX object src/ackermannization/CMakeFiles/ackermannization.dir/lackr_model_constructor.cpp.o
+[z3-sys 0.7.1] [ 59%] Building CXX object src/ackermannization/CMakeFiles/ackermannization.dir/lackr_model_converter_lazy.cpp.o
+[z3-sys 0.7.1] [ 59%] Building CXX object src/math/subpaving/tactic/CMakeFiles/subpaving_tactic.dir/expr2subpaving.cpp.o
+[z3-sys 0.7.1] [ 59%] Building CXX object src/math/subpaving/tactic/CMakeFiles/subpaving_tactic.dir/subpaving_tactic.cpp.o
+[z3-sys 0.7.1] [ 59%] Building CXX object src/cmd_context/CMakeFiles/cmd_context.dir/cmd_context.cpp.o
+[z3-sys 0.7.1] [ 59%] Building CXX object src/cmd_context/CMakeFiles/cmd_context.dir/cmd_context_to_goal.cpp.o
+[z3-sys 0.7.1] [ 59%] Building CXX object src/cmd_context/CMakeFiles/cmd_context.dir/cmd_util.cpp.o
+[z3-sys 0.7.1] [ 59%] Building CXX object src/cmd_context/CMakeFiles/cmd_context.dir/echo_tactic.cpp.o
+[z3-sys 0.7.1] [ 59%] Building CXX object src/cmd_context/CMakeFiles/cmd_context.dir/eval_cmd.cpp.o
+[z3-sys 0.7.1] [ 59%] Building CXX object src/cmd_context/CMakeFiles/cmd_context.dir/parametric_cmd.cpp.o
+[z3-sys 0.7.1] [ 59%] Building CXX object src/cmd_context/CMakeFiles/cmd_context.dir/pdecl.cpp.o
+[z3-sys 0.7.1] [ 60%] Building CXX object src/cmd_context/CMakeFiles/cmd_context.dir/simplify_cmd.cpp.o
+[z3-sys 0.7.1] [ 60%] Building CXX object src/cmd_context/CMakeFiles/cmd_context.dir/tactic_cmds.cpp.o
+[z3-sys 0.7.1] [ 60%] Building CXX object src/cmd_context/CMakeFiles/cmd_context.dir/tactic_manager.cpp.o
+[z3-sys 0.7.1] [ 60%] Built target subpaving_tactic
+[z3-sys 0.7.1] [ 60%] Building CXX object src/tactic/bv/CMakeFiles/bv_tactics.dir/bit_blaster_model_converter.cpp.o
+[z3-sys 0.7.1] [ 60%] Building CXX object src/tactic/bv/CMakeFiles/bv_tactics.dir/bit_blaster_tactic.cpp.o
+[z3-sys 0.7.1] [ 61%] Building CXX object src/tactic/bv/CMakeFiles/bv_tactics.dir/bvarray2uf_rewriter.cpp.o
+[z3-sys 0.7.1] [ 61%] Building CXX object src/tactic/arith/CMakeFiles/arith_tactics.dir/add_bounds_tactic.cpp.o
+[z3-sys 0.7.1] [ 61%] Building CXX object src/tactic/bv/CMakeFiles/bv_tactics.dir/bv1_blaster_tactic.cpp.o
+[z3-sys 0.7.1] [ 61%] Built target ackermannization
+[z3-sys 0.7.1] [ 61%] Building CXX object src/tactic/arith/CMakeFiles/arith_tactics.dir/arith_bounds_tactic.cpp.o
+[z3-sys 0.7.1] [ 61%] Building CXX object src/tactic/arith/CMakeFiles/arith_tactics.dir/bound_manager.cpp.o
+[z3-sys 0.7.1] [ 61%] Building CXX object src/tactic/arith/CMakeFiles/arith_tactics.dir/bound_propagator.cpp.o
+[z3-sys 0.7.1] [ 61%] Building CXX object src/tactic/arith/CMakeFiles/arith_tactics.dir/bv2int_rewriter.cpp.o
+[z3-sys 0.7.1] [ 62%] Building CXX object src/tactic/arith/CMakeFiles/arith_tactics.dir/bv2real_rewriter.cpp.o
+[z3-sys 0.7.1] [ 62%] Building CXX object src/tactic/arith/CMakeFiles/arith_tactics.dir/card2bv_tactic.cpp.o
+[z3-sys 0.7.1] [ 62%] Building CXX object src/tactic/arith/CMakeFiles/arith_tactics.dir/degree_shift_tactic.cpp.o
+[z3-sys 0.7.1] [ 62%] Building CXX object src/tactic/arith/CMakeFiles/arith_tactics.dir/diff_neq_tactic.cpp.o
+[z3-sys 0.7.1] [ 62%] Building CXX object src/tactic/arith/CMakeFiles/arith_tactics.dir/eq2bv_tactic.cpp.o
+[z3-sys 0.7.1] [ 62%] Building CXX object src/tactic/arith/CMakeFiles/arith_tactics.dir/factor_tactic.cpp.o
+[z3-sys 0.7.1] [ 62%] Building CXX object src/tactic/bv/CMakeFiles/bv_tactics.dir/bvarray2uf_tactic.cpp.o
+[z3-sys 0.7.1] [ 62%] Building CXX object src/tactic/bv/CMakeFiles/bv_tactics.dir/bv_bound_chk_tactic.cpp.o
+[z3-sys 0.7.1] [ 62%] Building CXX object src/tactic/bv/CMakeFiles/bv_tactics.dir/bv_bounds_tactic.cpp.o
+[z3-sys 0.7.1] [ 62%] Building CXX object src/tactic/bv/CMakeFiles/bv_tactics.dir/bv_size_reduction_tactic.cpp.o
+[z3-sys 0.7.1] [ 62%] Building CXX object src/tactic/bv/CMakeFiles/bv_tactics.dir/dt2bv_tactic.cpp.o
+[z3-sys 0.7.1] [ 62%] Building CXX object src/tactic/arith/CMakeFiles/arith_tactics.dir/fix_dl_var_tactic.cpp.o
+[z3-sys 0.7.1] [ 62%] Building CXX object src/tactic/arith/CMakeFiles/arith_tactics.dir/fm_tactic.cpp.o
+[z3-sys 0.7.1] [ 62%] Building CXX object src/tactic/bv/CMakeFiles/bv_tactics.dir/elim_small_bv_tactic.cpp.o
+[z3-sys 0.7.1] [ 62%] Building CXX object src/tactic/arith/CMakeFiles/arith_tactics.dir/lia2card_tactic.cpp.o
+[z3-sys 0.7.1] [ 63%] Building CXX object src/tactic/arith/CMakeFiles/arith_tactics.dir/lia2pb_tactic.cpp.o
+[z3-sys 0.7.1] [ 63%] Built target sat_smt
+[z3-sys 0.7.1] [ 63%] Building CXX object src/sat/tactic/CMakeFiles/sat_tactic.dir/goal2sat.cpp.o
+[z3-sys 0.7.1] [ 63%] Building CXX object src/tactic/arith/CMakeFiles/arith_tactics.dir/linear_equation.cpp.o
+[z3-sys 0.7.1] [ 63%] Building CXX object src/tactic/arith/CMakeFiles/arith_tactics.dir/nla2bv_tactic.cpp.o
+[z3-sys 0.7.1] [ 63%] Building CXX object src/tactic/arith/CMakeFiles/arith_tactics.dir/normalize_bounds_tactic.cpp.o
+[z3-sys 0.7.1] [ 63%] Building CXX object src/sat/tactic/CMakeFiles/sat_tactic.dir/sat_tactic.cpp.o
+[z3-sys 0.7.1] [ 63%] Building CXX object src/tactic/arith/CMakeFiles/arith_tactics.dir/pb2bv_model_converter.cpp.o
+[z3-sys 0.7.1] [ 63%] Building CXX object src/tactic/arith/CMakeFiles/arith_tactics.dir/pb2bv_tactic.cpp.o
+[z3-sys 0.7.1] [ 63%] Building CXX object src/tactic/bv/CMakeFiles/bv_tactics.dir/max_bv_sharing_tactic.cpp.o
+[z3-sys 0.7.1] [ 63%] Building CXX object src/tactic/arith/CMakeFiles/arith_tactics.dir/probe_arith.cpp.o
+[z3-sys 0.7.1] [ 63%] Building CXX object src/tactic/arith/CMakeFiles/arith_tactics.dir/propagate_ineqs_tactic.cpp.o
+[z3-sys 0.7.1] [ 64%] Building CXX object src/tactic/arith/CMakeFiles/arith_tactics.dir/purify_arith_tactic.cpp.o
+[z3-sys 0.7.1] [ 64%] Building CXX object src/tactic/arith/CMakeFiles/arith_tactics.dir/recover_01_tactic.cpp.o
+[z3-sys 0.7.1] [ 64%] Built target cmd_context
+[z3-sys 0.7.1] [ 64%] Building CXX object src/parsers/smt2/CMakeFiles/smt2parser.dir/marshal.cpp.o
+[z3-sys 0.7.1] [ 64%] Building CXX object src/parsers/smt2/CMakeFiles/smt2parser.dir/smt2parser.cpp.o
+[z3-sys 0.7.1] [ 64%] Building CXX object src/parsers/smt2/CMakeFiles/smt2parser.dir/smt2scanner.cpp.o
+[z3-sys 0.7.1] [ 64%] Built target bv_tactics
+[z3-sys 0.7.1] [ 64%] Generating "/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/tactic/sls/sls_params.hpp" from "sls_params.pyg"
+[z3-sys 0.7.1] [ 65%] Building CXX object src/tactic/sls/CMakeFiles/sls_tactic.dir/bvsls_opt_engine.cpp.o
+[z3-sys 0.7.1] [ 65%] Building CXX object src/tactic/sls/CMakeFiles/sls_tactic.dir/sls_engine.cpp.o
+[z3-sys 0.7.1] [ 65%] Building CXX object src/tactic/sls/CMakeFiles/sls_tactic.dir/sls_tactic.cpp.o
+[z3-sys 0.7.1] [ 65%] Built target sat_tactic
+[z3-sys 0.7.1] [ 65%] Built target arith_tactics
+[z3-sys 0.7.1] [ 65%] Building CXX object src/sat/sat_solver/CMakeFiles/sat_solver.dir/inc_sat_solver.cpp.o
+[z3-sys 0.7.1] [ 65%] Building CXX object src/nlsat/tactic/CMakeFiles/nlsat_tactic.dir/goal2nlsat.cpp.o
+[z3-sys 0.7.1] [ 65%] Building CXX object src/nlsat/tactic/CMakeFiles/nlsat_tactic.dir/qfnra_nlsat_tactic.cpp.o
+[z3-sys 0.7.1] [ 65%] Building CXX object src/nlsat/tactic/CMakeFiles/nlsat_tactic.dir/nlsat_tactic.cpp.o
+[z3-sys 0.7.1] [ 65%] Building CXX object src/cmd_context/extra_cmds/CMakeFiles/extra_cmds.dir/dbg_cmds.cpp.o
+[z3-sys 0.7.1] [ 65%] Building CXX object src/cmd_context/extra_cmds/CMakeFiles/extra_cmds.dir/polynomial_cmds.cpp.o
+[z3-sys 0.7.1] [ 65%] Building CXX object src/cmd_context/extra_cmds/CMakeFiles/extra_cmds.dir/subpaving_cmds.cpp.o
+[z3-sys 0.7.1] [ 65%] Built target smt2parser
+[z3-sys 0.7.1] [ 65%] Generating "database.h"
+[z3-sys 0.7.1] [ 65%] Building CXX object src/solver/assertions/CMakeFiles/solver_assertions.dir/asserted_formulas.cpp.o
+[z3-sys 0.7.1] [ 65%] Building CXX object src/ast/pattern/CMakeFiles/pattern.dir/expr_pattern_match.cpp.o
+[z3-sys 0.7.1] [ 65%] Building CXX object src/ast/pattern/CMakeFiles/pattern.dir/pattern_inference.cpp.o
+[z3-sys 0.7.1] [ 65%] Built target nlsat_tactic
+[z3-sys 0.7.1] [ 65%] Built target extra_cmds
+[z3-sys 0.7.1] [ 65%] Built target sls_tactic
+[z3-sys 0.7.1] [ 65%] Built target sat_solver
+[z3-sys 0.7.1] [ 65%] Building CXX object src/tactic/fd_solver/CMakeFiles/fd_solver.dir/bounded_int2bv_solver.cpp.o
+[z3-sys 0.7.1] [ 65%] Building CXX object src/tactic/fd_solver/CMakeFiles/fd_solver.dir/enum2bv_solver.cpp.o
+[z3-sys 0.7.1] [ 65%] Building CXX object src/tactic/fd_solver/CMakeFiles/fd_solver.dir/pb2bv_solver.cpp.o
+[z3-sys 0.7.1] [ 65%] Building CXX object src/tactic/fd_solver/CMakeFiles/fd_solver.dir/fd_solver.cpp.o
+[z3-sys 0.7.1] [ 65%] Building CXX object src/tactic/fd_solver/CMakeFiles/fd_solver.dir/smtfd_solver.cpp.o
+[z3-sys 0.7.1] [ 65%] Built target pattern
+[z3-sys 0.7.1] [ 65%] Built target solver_assertions
+[z3-sys 0.7.1] [ 65%] Building CXX object src/smt/CMakeFiles/smt.dir/arith_eq_adapter.cpp.o
+[z3-sys 0.7.1] [ 65%] Building CXX object src/smt/CMakeFiles/smt.dir/fingerprints.cpp.o
+[z3-sys 0.7.1] [ 65%] Building CXX object src/smt/CMakeFiles/smt.dir/old_interval.cpp.o
+[z3-sys 0.7.1] [ 65%] Building CXX object src/smt/CMakeFiles/smt.dir/dyn_ack.cpp.o
+[z3-sys 0.7.1] [ 66%] Building CXX object src/smt/CMakeFiles/smt.dir/mam.cpp.o
+[z3-sys 0.7.1] [ 66%] Building CXX object src/smt/CMakeFiles/smt.dir/qi_queue.cpp.o
+[z3-sys 0.7.1] [ 66%] Building CXX object src/smt/CMakeFiles/smt.dir/seq_axioms.cpp.o
+[z3-sys 0.7.1] [ 66%] Building CXX object src/smt/CMakeFiles/smt.dir/arith_eq_solver.cpp.o
+[z3-sys 0.7.1] [ 66%] Building CXX object src/smt/CMakeFiles/smt.dir/expr_context_simplifier.cpp.o
+[z3-sys 0.7.1] [ 66%] Building CXX object src/smt/CMakeFiles/smt.dir/seq_offset_eq.cpp.o
+[z3-sys 0.7.1] [ 66%] Building CXX object src/smt/CMakeFiles/smt.dir/seq_regex.cpp.o
+[z3-sys 0.7.1] [ 66%] Building CXX object src/smt/CMakeFiles/smt.dir/seq_eq_solver.cpp.o
+[z3-sys 0.7.1] [ 66%] Building CXX object src/smt/CMakeFiles/smt.dir/seq_ne_solver.cpp.o
+[z3-sys 0.7.1] [ 67%] Building CXX object src/smt/CMakeFiles/smt.dir/smt_almost_cg_table.cpp.o
+[z3-sys 0.7.1] [ 67%] Building CXX object src/smt/CMakeFiles/smt.dir/smt_case_split_queue.cpp.o
+[z3-sys 0.7.1] [ 67%] Building CXX object src/smt/CMakeFiles/smt.dir/smt_checker.cpp.o
+[z3-sys 0.7.1] [ 67%] Building CXX object src/smt/CMakeFiles/smt.dir/smt_cg_table.cpp.o
+[z3-sys 0.7.1] [ 67%] Building CXX object src/smt/CMakeFiles/smt.dir/smt_conflict_resolution.cpp.o
+[z3-sys 0.7.1] [ 67%] Building CXX object src/smt/CMakeFiles/smt.dir/smt_clause_proof.cpp.o
+[z3-sys 0.7.1] [ 67%] Building CXX object src/smt/CMakeFiles/smt.dir/smt_clause.cpp.o
+[z3-sys 0.7.1] [ 67%] Building CXX object src/smt/CMakeFiles/smt.dir/smt_arith_value.cpp.o
+[z3-sys 0.7.1] [ 68%] Building CXX object src/smt/CMakeFiles/smt.dir/smt_context.cpp.o
+[z3-sys 0.7.1] [ 68%] Building CXX object src/smt/CMakeFiles/smt.dir/smt_consequences.cpp.o
+[z3-sys 0.7.1] [ 68%] Built target fd_solver
+[z3-sys 0.7.1] [ 68%] Building CXX object src/smt/CMakeFiles/smt.dir/smt_context_inv.cpp.o
+[z3-sys 0.7.1] [ 68%] Building CXX object src/smt/CMakeFiles/smt.dir/smt_context_pp.cpp.o
+[z3-sys 0.7.1] [ 68%] Building CXX object src/smt/CMakeFiles/smt.dir/smt_context_stat.cpp.o
+[z3-sys 0.7.1] [ 68%] Building CXX object src/smt/CMakeFiles/smt.dir/smt_enode.cpp.o
+[z3-sys 0.7.1] [ 68%] Building CXX object src/smt/CMakeFiles/smt.dir/smt_farkas_util.cpp.o
+[z3-sys 0.7.1] [ 68%] Building CXX object src/smt/CMakeFiles/smt.dir/smt_for_each_relevant_expr.cpp.o
+[z3-sys 0.7.1] [ 68%] Building CXX object src/smt/CMakeFiles/smt.dir/smt_implied_equalities.cpp.o
+[z3-sys 0.7.1] [ 69%] Building CXX object src/smt/CMakeFiles/smt.dir/smt_induction.cpp.o
+[z3-sys 0.7.1] [ 69%] Building CXX object src/smt/CMakeFiles/smt.dir/smt_internalizer.cpp.o
+[z3-sys 0.7.1] [ 69%] Building CXX object src/smt/CMakeFiles/smt.dir/smt_justification.cpp.o
+[z3-sys 0.7.1] [ 69%] Building CXX object src/smt/CMakeFiles/smt.dir/smt_kernel.cpp.o
+[z3-sys 0.7.1] [ 69%] Building CXX object src/smt/CMakeFiles/smt.dir/smt_literal.cpp.o
+[z3-sys 0.7.1] [ 69%] Building CXX object src/smt/CMakeFiles/smt.dir/smt_lookahead.cpp.o
+[z3-sys 0.7.1] [ 69%] Building CXX object src/smt/CMakeFiles/smt.dir/smt_model_checker.cpp.o
+[z3-sys 0.7.1] [ 69%] Building CXX object src/smt/CMakeFiles/smt.dir/smt_model_finder.cpp.o
+[z3-sys 0.7.1] [ 70%] Building CXX object src/smt/CMakeFiles/smt.dir/smt_model_generator.cpp.o
+[z3-sys 0.7.1] [ 70%] Building CXX object src/smt/CMakeFiles/smt.dir/smt_parallel.cpp.o
+[z3-sys 0.7.1] [ 70%] Building CXX object src/smt/CMakeFiles/smt.dir/smt_quantifier.cpp.o
+[z3-sys 0.7.1] [ 70%] Building CXX object src/smt/CMakeFiles/smt.dir/smt_quick_checker.cpp.o
+[z3-sys 0.7.1] [ 70%] Building CXX object src/smt/CMakeFiles/smt.dir/smt_relevancy.cpp.o
+[z3-sys 0.7.1] [ 70%] Building CXX object src/smt/CMakeFiles/smt.dir/smt_setup.cpp.o
+[z3-sys 0.7.1] [ 70%] Building CXX object src/smt/CMakeFiles/smt.dir/smt_solver.cpp.o
+[z3-sys 0.7.1] [ 70%] Building CXX object src/smt/CMakeFiles/smt.dir/smt_statistics.cpp.o
+[z3-sys 0.7.1] [ 71%] Building CXX object src/smt/CMakeFiles/smt.dir/smt_theory.cpp.o
+[z3-sys 0.7.1] [ 71%] Building CXX object src/smt/CMakeFiles/smt.dir/smt_value_sort.cpp.o
+[z3-sys 0.7.1] [ 71%] Building CXX object src/smt/CMakeFiles/smt.dir/smt2_extra_cmds.cpp.o
+[z3-sys 0.7.1] [ 71%] Building CXX object src/smt/CMakeFiles/smt.dir/theory_arith.cpp.o
+[z3-sys 0.7.1] [ 71%] Building CXX object src/smt/CMakeFiles/smt.dir/theory_array_bapa.cpp.o
+[z3-sys 0.7.1] [ 71%] Building CXX object src/smt/CMakeFiles/smt.dir/theory_array_base.cpp.o
+[z3-sys 0.7.1] [ 71%] Building CXX object src/smt/CMakeFiles/smt.dir/theory_array.cpp.o
+[z3-sys 0.7.1] [ 71%] Building CXX object src/smt/CMakeFiles/smt.dir/theory_array_full.cpp.o
+[z3-sys 0.7.1] [ 72%] Building CXX object src/smt/CMakeFiles/smt.dir/theory_bv.cpp.o
+[z3-sys 0.7.1] [ 72%] Building CXX object src/smt/CMakeFiles/smt.dir/theory_char.cpp.o
+[z3-sys 0.7.1] [ 72%] Building CXX object src/smt/CMakeFiles/smt.dir/theory_datatype.cpp.o
+[z3-sys 0.7.1] [ 72%] Building CXX object src/smt/CMakeFiles/smt.dir/theory_dense_diff_logic.cpp.o
+[z3-sys 0.7.1] [ 72%] Building CXX object src/smt/CMakeFiles/smt.dir/theory_diff_logic.cpp.o
+[z3-sys 0.7.1] [ 72%] Building CXX object src/smt/CMakeFiles/smt.dir/theory_dl.cpp.o
+[z3-sys 0.7.1] [ 72%] Building CXX object src/smt/CMakeFiles/smt.dir/theory_dummy.cpp.o
+[z3-sys 0.7.1] [ 72%] Building CXX object src/smt/CMakeFiles/smt.dir/theory_fpa.cpp.o
+[z3-sys 0.7.1] [ 72%] Building CXX object src/smt/CMakeFiles/smt.dir/theory_lra.cpp.o
+[z3-sys 0.7.1] [ 73%] Building CXX object src/smt/CMakeFiles/smt.dir/theory_opt.cpp.o
+[z3-sys 0.7.1] [ 73%] Building CXX object src/smt/CMakeFiles/smt.dir/theory_pb.cpp.o
+[z3-sys 0.7.1] [ 73%] Building CXX object src/smt/CMakeFiles/smt.dir/theory_recfun.cpp.o
+[z3-sys 0.7.1] [ 73%] Building CXX object src/smt/CMakeFiles/smt.dir/theory_seq.cpp.o
+[z3-sys 0.7.1] [ 73%] Building CXX object src/smt/CMakeFiles/smt.dir/theory_special_relations.cpp.o
+[z3-sys 0.7.1] [ 73%] Building CXX object src/smt/CMakeFiles/smt.dir/theory_str.cpp.o
+[z3-sys 0.7.1] [ 73%] Building CXX object src/smt/CMakeFiles/smt.dir/theory_str_mc.cpp.o
+[z3-sys 0.7.1] [ 73%] Building CXX object src/smt/CMakeFiles/smt.dir/theory_str_regex.cpp.o
+[z3-sys 0.7.1] [ 75%] Building CXX object src/smt/CMakeFiles/smt.dir/theory_utvpi.cpp.o
+[z3-sys 0.7.1] [ 75%] Building CXX object src/smt/CMakeFiles/smt.dir/theory_wmaxsat.cpp.o
+[z3-sys 0.7.1] [ 75%] Building CXX object src/smt/CMakeFiles/smt.dir/user_propagator.cpp.o
+[z3-sys 0.7.1] [ 75%] Building CXX object src/smt/CMakeFiles/smt.dir/uses_theory.cpp.o
+[z3-sys 0.7.1] [ 75%] Building CXX object src/smt/CMakeFiles/smt.dir/watch_list.cpp.o
+[z3-sys 0.7.1] [ 75%] Built target smt
+[z3-sys 0.7.1] [ 75%] Building CXX object src/smt/tactic/CMakeFiles/smt_tactic.dir/ctx_solver_simplify_tactic.cpp.o
+[z3-sys 0.7.1] [ 75%] Building CXX object src/smt/tactic/CMakeFiles/smt_tactic.dir/smt_tactic_core.cpp.o
+[z3-sys 0.7.1] [ 75%] Building CXX object src/qe/CMakeFiles/qe.dir/nlarith_util.cpp.o
+[z3-sys 0.7.1] [ 75%] Building CXX object src/qe/CMakeFiles/qe.dir/nlqsat.cpp.o
+[z3-sys 0.7.1] [ 75%] Building CXX object src/qe/CMakeFiles/qe.dir/qe_array_plugin.cpp.o
+[z3-sys 0.7.1] [ 75%] Building CXX object src/smt/tactic/CMakeFiles/smt_tactic.dir/unit_subsumption_tactic.cpp.o
+[z3-sys 0.7.1] [ 75%] Building CXX object src/qe/CMakeFiles/qe.dir/qe_arith_plugin.cpp.o
+[z3-sys 0.7.1] [ 76%] Building CXX object src/qe/CMakeFiles/qe.dir/qe_bool_plugin.cpp.o
+[z3-sys 0.7.1] [ 76%] Building CXX object src/qe/CMakeFiles/qe.dir/qe_bv_plugin.cpp.o
+[z3-sys 0.7.1] [ 76%] Building CXX object src/qe/CMakeFiles/qe.dir/qe_cmd.cpp.o
+[z3-sys 0.7.1] [ 76%] Building CXX object src/qe/CMakeFiles/qe.dir/qe.cpp.o
+[z3-sys 0.7.1] [ 76%] Building CXX object src/qe/CMakeFiles/qe.dir/qe_dl_plugin.cpp.o
+[z3-sys 0.7.1] [ 76%] Building CXX object src/qe/CMakeFiles/qe.dir/qe_datatype_plugin.cpp.o
+[z3-sys 0.7.1] [ 76%] Building CXX object src/qe/CMakeFiles/qe.dir/qe_lite.cpp.o
+[z3-sys 0.7.1] [ 76%] Building CXX object src/qe/CMakeFiles/qe.dir/qe_mbi.cpp.o
+[z3-sys 0.7.1] [ 76%] Building CXX object src/qe/CMakeFiles/qe.dir/qe_tactic.cpp.o
+[z3-sys 0.7.1] [ 76%] Building CXX object src/qe/CMakeFiles/qe.dir/qsat.cpp.o
+[z3-sys 0.7.1] [ 77%] Building CXX object src/qe/CMakeFiles/qe.dir/qe_mbp.cpp.o
+[z3-sys 0.7.1] [ 77%] Built target smt_tactic
+[z3-sys 0.7.1] [ 77%] Building CXX object src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/macro_finder_tactic.cpp.o
+[z3-sys 0.7.1] [ 77%] Building CXX object src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/ufbv_rewriter_tactic.cpp.o
+[z3-sys 0.7.1] [ 77%] Building CXX object src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/quasi_macros_tactic.cpp.o
+[z3-sys 0.7.1] [ 77%] Building CXX object src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/ufbv_rewriter.cpp.o
+[z3-sys 0.7.1] [ 77%] Building CXX object src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/ufbv_tactic.cpp.o
+[z3-sys 0.7.1] [ 77%] Built target ufbv_tactic
+[z3-sys 0.7.1] [ 77%] Built target qe
+[z3-sys 0.7.1] [ 77%] Generating "/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/muz/base/fp_params.hpp" from "fp_params.pyg"
+[z3-sys 0.7.1] [ 77%] Building CXX object src/muz/base/CMakeFiles/muz.dir/dl_rule.cpp.o
+[z3-sys 0.7.1] [ 77%] Building CXX object src/muz/base/CMakeFiles/muz.dir/bind_variables.cpp.o
+[z3-sys 0.7.1] [ 77%] Building CXX object src/muz/base/CMakeFiles/muz.dir/dl_context.cpp.o
+[z3-sys 0.7.1] [ 78%] Building CXX object src/muz/base/CMakeFiles/muz.dir/dl_rule_set.cpp.o
+[z3-sys 0.7.1] [ 78%] Building CXX object src/muz/base/CMakeFiles/muz.dir/dl_rule_transformer.cpp.o
+[z3-sys 0.7.1] [ 78%] Building CXX object src/muz/base/CMakeFiles/muz.dir/dl_boogie_proof.cpp.o
+[z3-sys 0.7.1] [ 78%] Building CXX object src/muz/base/CMakeFiles/muz.dir/dl_util.cpp.o
+[z3-sys 0.7.1] [ 78%] Building CXX object src/muz/base/CMakeFiles/muz.dir/dl_costs.cpp.o
+[z3-sys 0.7.1] [ 78%] Building CXX object src/muz/base/CMakeFiles/muz.dir/hnf.cpp.o
+[z3-sys 0.7.1] [ 78%] Building CXX object src/muz/base/CMakeFiles/muz.dir/dl_rule_subsumption_index.cpp.o
+[z3-sys 0.7.1] [ 78%] Building CXX object src/muz/base/CMakeFiles/muz.dir/rule_properties.cpp.o
+[z3-sys 0.7.1] [ 78%] Built target muz
+[z3-sys 0.7.1] [ 78%] Building CXX object src/muz/dataflow/CMakeFiles/dataflow.dir/dataflow.cpp.o
+[z3-sys 0.7.1] [ 78%] Built target dataflow
+[z3-sys 0.7.1] [ 78%] Building CXX object src/muz/transforms/CMakeFiles/transforms.dir/dl_mk_array_blast.cpp.o
+[z3-sys 0.7.1] [ 78%] Building CXX object src/muz/transforms/CMakeFiles/transforms.dir/dl_mk_backwards.cpp.o
+[z3-sys 0.7.1] [ 78%] Building CXX object src/muz/transforms/CMakeFiles/transforms.dir/dl_mk_coalesce.cpp.o
+[z3-sys 0.7.1] [ 78%] Building CXX object src/muz/transforms/CMakeFiles/transforms.dir/dl_mk_bit_blast.cpp.o
+[z3-sys 0.7.1] [ 78%] Building CXX object src/muz/transforms/CMakeFiles/transforms.dir/dl_mk_filter_rules.cpp.o
+[z3-sys 0.7.1] [ 78%] Building CXX object src/muz/transforms/CMakeFiles/transforms.dir/dl_mk_interp_tail_simplifier.cpp.o
+[z3-sys 0.7.1] [ 78%] Building CXX object src/muz/transforms/CMakeFiles/transforms.dir/dl_mk_magic_sets.cpp.o
+[z3-sys 0.7.1] [ 79%] Building CXX object src/muz/transforms/CMakeFiles/transforms.dir/dl_mk_karr_invariants.cpp.o
+[z3-sys 0.7.1] [ 79%] Building CXX object src/muz/transforms/CMakeFiles/transforms.dir/dl_mk_coi_filter.cpp.o
+[z3-sys 0.7.1] [ 79%] Building CXX object src/muz/transforms/CMakeFiles/transforms.dir/dl_mk_loop_counter.cpp.o
+[z3-sys 0.7.1] [ 79%] Building CXX object src/muz/transforms/CMakeFiles/transforms.dir/dl_mk_magic_symbolic.cpp.o
+[z3-sys 0.7.1] [ 79%] Building CXX object src/muz/transforms/CMakeFiles/transforms.dir/dl_mk_quantifier_abstraction.cpp.o
+[z3-sys 0.7.1] [ 79%] Building CXX object src/muz/transforms/CMakeFiles/transforms.dir/dl_mk_quantifier_instantiation.cpp.o
+[z3-sys 0.7.1] [ 79%] Building CXX object src/muz/transforms/CMakeFiles/transforms.dir/dl_mk_rule_inliner.cpp.o
+[z3-sys 0.7.1] [ 80%] Building CXX object src/muz/transforms/CMakeFiles/transforms.dir/dl_mk_scale.cpp.o
+[z3-sys 0.7.1] [ 80%] Building CXX object src/muz/transforms/CMakeFiles/transforms.dir/dl_mk_separate_negated_tails.cpp.o
+[z3-sys 0.7.1] [ 80%] Building CXX object src/muz/transforms/CMakeFiles/transforms.dir/dl_mk_slice.cpp.o
+[z3-sys 0.7.1] [ 80%] Building CXX object src/muz/transforms/CMakeFiles/transforms.dir/dl_mk_subsumption_checker.cpp.o
+[z3-sys 0.7.1] [ 80%] Building CXX object src/muz/transforms/CMakeFiles/transforms.dir/dl_mk_unbound_compressor.cpp.o
+[z3-sys 0.7.1] [ 80%] Building CXX object src/muz/transforms/CMakeFiles/transforms.dir/dl_mk_unfold.cpp.o
+[z3-sys 0.7.1] [ 80%] Building CXX object src/muz/transforms/CMakeFiles/transforms.dir/dl_transforms.cpp.o
+[z3-sys 0.7.1] [ 80%] Building CXX object src/muz/transforms/CMakeFiles/transforms.dir/dl_mk_array_eq_rewrite.cpp.o
+[z3-sys 0.7.1] [ 80%] Building CXX object src/muz/transforms/CMakeFiles/transforms.dir/dl_mk_array_instantiation.cpp.o
+[z3-sys 0.7.1] [ 81%] Building CXX object src/muz/transforms/CMakeFiles/transforms.dir/dl_mk_elim_term_ite.cpp.o
+[z3-sys 0.7.1] [ 81%] Building CXX object src/muz/transforms/CMakeFiles/transforms.dir/dl_mk_synchronize.cpp.o
+[z3-sys 0.7.1] [ 81%] Built target transforms
+[z3-sys 0.7.1] [ 81%] Building CXX object src/muz/clp/CMakeFiles/clp.dir/clp_context.cpp.o
+[z3-sys 0.7.1] [ 81%] Building CXX object src/muz/rel/CMakeFiles/rel.dir/aig_exporter.cpp.o
+[z3-sys 0.7.1] [ 81%] Building CXX object src/muz/rel/CMakeFiles/rel.dir/dl_base.cpp.o
+[z3-sys 0.7.1] [ 81%] Building CXX object src/muz/rel/CMakeFiles/rel.dir/check_relation.cpp.o
+[z3-sys 0.7.1] [ 81%] Building CXX object src/muz/bmc/CMakeFiles/bmc.dir/dl_bmc_engine.cpp.o
+[z3-sys 0.7.1] [ 82%] Building CXX object src/muz/rel/CMakeFiles/rel.dir/dl_bound_relation.cpp.o
+[z3-sys 0.7.1] [ 82%] Building CXX object src/muz/rel/CMakeFiles/rel.dir/dl_check_table.cpp.o
+[z3-sys 0.7.1] [ 82%] Building CXX object src/muz/rel/CMakeFiles/rel.dir/dl_compiler.cpp.o
+[z3-sys 0.7.1] [ 82%] Building CXX object src/muz/rel/CMakeFiles/rel.dir/dl_external_relation.cpp.o
+[z3-sys 0.7.1] [ 82%] Building CXX object src/muz/rel/CMakeFiles/rel.dir/dl_finite_product_relation.cpp.o
+[z3-sys 0.7.1] [ 82%] Building CXX object src/muz/tab/CMakeFiles/tab.dir/tab_context.cpp.o
+[z3-sys 0.7.1] [ 82%] Building CXX object src/muz/spacer/CMakeFiles/spacer.dir/spacer_legacy_frames.cpp.o
+[z3-sys 0.7.1] [ 82%] Building CXX object src/muz/rel/CMakeFiles/rel.dir/dl_interval_relation.cpp.o
+[z3-sys 0.7.1] [ 82%] Building CXX object src/muz/spacer/CMakeFiles/spacer.dir/spacer_legacy_mev.cpp.o
+[z3-sys 0.7.1] [ 82%] Building CXX object src/muz/rel/CMakeFiles/rel.dir/dl_lazy_table.cpp.o
+[z3-sys 0.7.1] [ 82%] Building CXX object src/muz/spacer/CMakeFiles/spacer.dir/spacer_dl_interface.cpp.o
+[z3-sys 0.7.1] [ 82%] Building CXX object src/muz/spacer/CMakeFiles/spacer.dir/spacer_context.cpp.o
+[z3-sys 0.7.1] [ 82%] Building CXX object src/muz/spacer/CMakeFiles/spacer.dir/spacer_farkas_learner.cpp.o
+[z3-sys 0.7.1] [ 82%] Building CXX object src/muz/rel/CMakeFiles/rel.dir/dl_mk_simple_joins.cpp.o
+[z3-sys 0.7.1] [ 83%] Building CXX object src/muz/rel/CMakeFiles/rel.dir/dl_instruction.cpp.o
+[z3-sys 0.7.1] [ 83%] Building CXX object src/muz/rel/CMakeFiles/rel.dir/dl_mk_similarity_compressor.cpp.o
+[z3-sys 0.7.1] [ 82%] Building CXX object src/muz/spacer/CMakeFiles/spacer.dir/spacer_generalizers.cpp.o
+[z3-sys 0.7.1] [ 84%] Building CXX object src/muz/rel/CMakeFiles/rel.dir/dl_mk_explanations.cpp.o
+[z3-sys 0.7.1] [ 84%] Building CXX object src/muz/spacer/CMakeFiles/spacer.dir/spacer_manager.cpp.o
+[z3-sys 0.7.1] [ 84%] Building CXX object src/muz/rel/CMakeFiles/rel.dir/dl_product_relation.cpp.o
+[z3-sys 0.7.1] [ 84%] Built target clp
+[z3-sys 0.7.1] [ 84%] Building CXX object src/muz/rel/CMakeFiles/rel.dir/dl_relation_manager.cpp.o
+[z3-sys 0.7.1] [ 84%] Building CXX object src/muz/spacer/CMakeFiles/spacer.dir/spacer_prop_solver.cpp.o
+[z3-sys 0.7.1] [ 84%] Building CXX object src/muz/spacer/CMakeFiles/spacer.dir/spacer_sym_mux.cpp.o
+[z3-sys 0.7.1] [ 84%] Building CXX object src/muz/rel/CMakeFiles/rel.dir/dl_sieve_relation.cpp.o
+[z3-sys 0.7.1] [ 84%] Building CXX object src/muz/rel/CMakeFiles/rel.dir/dl_sparse_table.cpp.o
+[z3-sys 0.7.1] [ 84%] Building CXX object src/muz/rel/CMakeFiles/rel.dir/dl_table.cpp.o
+[z3-sys 0.7.1] [ 85%] Building CXX object src/muz/rel/CMakeFiles/rel.dir/dl_table_relation.cpp.o
+[z3-sys 0.7.1] [ 85%] Building CXX object src/muz/spacer/CMakeFiles/spacer.dir/spacer_util.cpp.o
+[z3-sys 0.7.1] [ 85%] Building CXX object src/muz/spacer/CMakeFiles/spacer.dir/spacer_iuc_solver.cpp.o
+[z3-sys 0.7.1] [ 85%] Building CXX object src/muz/rel/CMakeFiles/rel.dir/doc.cpp.o
+[z3-sys 0.7.1] [ 85%] Building CXX object src/muz/rel/CMakeFiles/rel.dir/karr_relation.cpp.o
+[z3-sys 0.7.1] [ 85%] Building CXX object src/muz/rel/CMakeFiles/rel.dir/rel_context.cpp.o
+[z3-sys 0.7.1] [ 85%] Building CXX object src/muz/rel/CMakeFiles/rel.dir/tbv.cpp.o
+[z3-sys 0.7.1] [ 85%] Building CXX object src/muz/rel/CMakeFiles/rel.dir/udoc_relation.cpp.o
+[z3-sys 0.7.1] [ 85%] Building CXX object src/muz/spacer/CMakeFiles/spacer.dir/spacer_legacy_mbp.cpp.o
+[z3-sys 0.7.1] [ 85%] Building CXX object src/muz/spacer/CMakeFiles/spacer.dir/spacer_proof_utils.cpp.o
+[z3-sys 0.7.1] [ 85%] Building CXX object src/muz/spacer/CMakeFiles/spacer.dir/spacer_unsat_core_learner.cpp.o
+[z3-sys 0.7.1] [ 86%] Building CXX object src/muz/spacer/CMakeFiles/spacer.dir/spacer_unsat_core_plugin.cpp.o
+[z3-sys 0.7.1] [ 86%] Built target tab
+[z3-sys 0.7.1] [ 86%] Building CXX object src/muz/spacer/CMakeFiles/spacer.dir/spacer_matrix.cpp.o
+[z3-sys 0.7.1] [ 86%] Building CXX object src/muz/spacer/CMakeFiles/spacer.dir/spacer_antiunify.cpp.o
+[z3-sys 0.7.1] [ 86%] Built target bmc
+[z3-sys 0.7.1] [ 86%] Building CXX object src/muz/spacer/CMakeFiles/spacer.dir/spacer_mev_array.cpp.o
+[z3-sys 0.7.1] [ 86%] Building CXX object src/muz/spacer/CMakeFiles/spacer.dir/spacer_qe_project.cpp.o
+[z3-sys 0.7.1] [ 86%] Building CXX object src/muz/spacer/CMakeFiles/spacer.dir/spacer_sem_matcher.cpp.o
+[z3-sys 0.7.1] [ 86%] Building CXX object src/muz/spacer/CMakeFiles/spacer.dir/spacer_quant_generalizer.cpp.o
+[z3-sys 0.7.1] [ 86%] Building CXX object src/muz/spacer/CMakeFiles/spacer.dir/spacer_arith_generalizers.cpp.o
+[z3-sys 0.7.1] [ 87%] Building CXX object src/muz/spacer/CMakeFiles/spacer.dir/spacer_callback.cpp.o
+[z3-sys 0.7.1] [ 87%] Building CXX object src/muz/spacer/CMakeFiles/spacer.dir/spacer_json.cpp.o
+[z3-sys 0.7.1] [ 87%] Building CXX object src/muz/spacer/CMakeFiles/spacer.dir/spacer_iuc_proof.cpp.o
+[z3-sys 0.7.1] [ 87%] Building CXX object src/muz/spacer/CMakeFiles/spacer.dir/spacer_mbc.cpp.o
+[z3-sys 0.7.1] [ 87%] Building CXX object src/muz/spacer/CMakeFiles/spacer.dir/spacer_pdr.cpp.o
+[z3-sys 0.7.1] [ 87%] Building CXX object src/muz/spacer/CMakeFiles/spacer.dir/spacer_sat_answer.cpp.o
+[z3-sys 0.7.1] [ 87%] Built target rel
+[z3-sys 0.7.1] [ 87%] Building CXX object src/muz/ddnf/CMakeFiles/ddnf.dir/ddnf.cpp.o
+[z3-sys 0.7.1] [ 87%] Built target spacer
+[z3-sys 0.7.1] [ 87%] Built target ddnf
+[z3-sys 0.7.1] [ 88%] Building CXX object src/muz/fp/CMakeFiles/fp.dir/datalog_parser.cpp.o
+[z3-sys 0.7.1] [ 88%] Building CXX object src/muz/fp/CMakeFiles/fp.dir/horn_tactic.cpp.o
+[z3-sys 0.7.1] [ 88%] Building CXX object src/muz/fp/CMakeFiles/fp.dir/dl_cmds.cpp.o
+[z3-sys 0.7.1] [ 88%] Building CXX object src/muz/fp/CMakeFiles/fp.dir/dl_register_engine.cpp.o
+[z3-sys 0.7.1] [ 88%] Built target fp
+[z3-sys 0.7.1] [ 88%] Generating "/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/tactic/smtlogics/qfufbv_tactic_params.hpp" from "qfufbv_tactic_params.pyg"
+[z3-sys 0.7.1] [ 88%] Building CXX object src/tactic/smtlogics/CMakeFiles/smtlogic_tactics.dir/nra_tactic.cpp.o
+[z3-sys 0.7.1] [ 88%] Building CXX object src/tactic/smtlogics/CMakeFiles/smtlogic_tactics.dir/qfbv_tactic.cpp.o
+[z3-sys 0.7.1] [ 88%] Building CXX object src/tactic/smtlogics/CMakeFiles/smtlogic_tactics.dir/qflia_tactic.cpp.o
+[z3-sys 0.7.1] [ 89%] Building CXX object src/tactic/smtlogics/CMakeFiles/smtlogic_tactics.dir/qfnia_tactic.cpp.o
+[z3-sys 0.7.1] [ 89%] Building CXX object src/tactic/smtlogics/CMakeFiles/smtlogic_tactics.dir/qfauflia_tactic.cpp.o
+[z3-sys 0.7.1] [ 89%] Building CXX object src/tactic/smtlogics/CMakeFiles/smtlogic_tactics.dir/qfaufbv_tactic.cpp.o
+[z3-sys 0.7.1] [ 89%] Building CXX object src/tactic/smtlogics/CMakeFiles/smtlogic_tactics.dir/qfufbv_ackr_model_converter.cpp.o
+[z3-sys 0.7.1] [ 89%] Building CXX object src/tactic/smtlogics/CMakeFiles/smtlogic_tactics.dir/qflra_tactic.cpp.o
+[z3-sys 0.7.1] [ 89%] Building CXX object src/tactic/smtlogics/CMakeFiles/smtlogic_tactics.dir/qfidl_tactic.cpp.o
+[z3-sys 0.7.1] [ 89%] Building CXX object src/tactic/smtlogics/CMakeFiles/smtlogic_tactics.dir/qfuf_tactic.cpp.o
+[z3-sys 0.7.1] [ 90%] Building CXX object src/tactic/smtlogics/CMakeFiles/smtlogic_tactics.dir/qfnra_tactic.cpp.o
+[z3-sys 0.7.1] [ 90%] Building CXX object src/tactic/smtlogics/CMakeFiles/smtlogic_tactics.dir/qfufbv_tactic.cpp.o
+[z3-sys 0.7.1] [ 90%] Building CXX object src/tactic/smtlogics/CMakeFiles/smtlogic_tactics.dir/quant_tactics.cpp.o
+[z3-sys 0.7.1] [ 90%] Building CXX object src/tactic/smtlogics/CMakeFiles/smtlogic_tactics.dir/smt_tactic.cpp.o
+[z3-sys 0.7.1] [ 90%] Built target smtlogic_tactics
+[z3-sys 0.7.1] [ 90%] Generating "/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/opt/opt_params.hpp" from "opt_params.pyg"
+[z3-sys 0.7.1] [ 90%] Building CXX object src/tactic/fpa/CMakeFiles/fpa_tactics.dir/fpa2bv_model_converter.cpp.o
+[z3-sys 0.7.1] [ 91%] Building CXX object src/tactic/fpa/CMakeFiles/fpa_tactics.dir/fpa2bv_tactic.cpp.o
+[z3-sys 0.7.1] [ 91%] Building CXX object src/tactic/fpa/CMakeFiles/fpa_tactics.dir/qffplra_tactic.cpp.o
+[z3-sys 0.7.1] [ 91%] Building CXX object src/tactic/fpa/CMakeFiles/fpa_tactics.dir/qffp_tactic.cpp.o
+[z3-sys 0.7.1] [ 91%] Building CXX object src/opt/CMakeFiles/opt.dir/maxres.cpp.o
+[z3-sys 0.7.1] [ 91%] Building CXX object src/opt/CMakeFiles/opt.dir/maxlex.cpp.o
+[z3-sys 0.7.1] [ 92%] Building CXX object src/opt/CMakeFiles/opt.dir/opt_cmds.cpp.o
+[z3-sys 0.7.1] [ 92%] Building CXX object src/opt/CMakeFiles/opt.dir/opt_context.cpp.o
+[z3-sys 0.7.1] [ 92%] Building CXX object src/opt/CMakeFiles/opt.dir/opt_lns.cpp.o
+[z3-sys 0.7.1] [ 92%] Building CXX object src/opt/CMakeFiles/opt.dir/opt_parse.cpp.o
+[z3-sys 0.7.1] [ 92%] Building CXX object src/opt/CMakeFiles/opt.dir/opt_pareto.cpp.o
+[z3-sys 0.7.1] [ 92%] Building CXX object src/opt/CMakeFiles/opt.dir/maxsmt.cpp.o
+[z3-sys 0.7.1] [ 92%] Building CXX object src/opt/CMakeFiles/opt.dir/optsmt.cpp.o
+[z3-sys 0.7.1] [ 92%] Building CXX object src/opt/CMakeFiles/opt.dir/opt_solver.cpp.o
+[z3-sys 0.7.1] [ 93%] Building CXX object src/opt/CMakeFiles/opt.dir/pb_sls.cpp.o
+[z3-sys 0.7.1] [ 93%] Building CXX object src/opt/CMakeFiles/opt.dir/wmax.cpp.o
+[z3-sys 0.7.1] [ 93%] Building CXX object src/opt/CMakeFiles/opt.dir/sortmax.cpp.o
+[z3-sys 0.7.1] [ 93%] Built target fpa_tactics
+[z3-sys 0.7.1] [ 93%] Building CXX object src/tactic/portfolio/CMakeFiles/portfolio.dir/default_tactic.cpp.o
+[z3-sys 0.7.1] [ 93%] Building CXX object src/tactic/portfolio/CMakeFiles/portfolio.dir/smt_strategic_solver.cpp.o
+[z3-sys 0.7.1] [ 94%] Building CXX object src/tactic/portfolio/CMakeFiles/portfolio.dir/solver2lookahead.cpp.o
+[z3-sys 0.7.1] [ 94%] Built target portfolio
+[z3-sys 0.7.1] [ 94%] Built target opt
+[z3-sys 0.7.1] [ 94%] Generating api_commands.cpp;api_log_macros.cpp;api_log_macros.h
+[z3-sys 0.7.1] Faking emission of 'z3/z3core.py'
+[z3-sys 0.7.1] Generated '/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/api/api_log_macros.h'
+[z3-sys 0.7.1] Generated '/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/api/api_log_macros.cpp'
+[z3-sys 0.7.1] Generated '/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/api/api_commands.cpp'
+[z3-sys 0.7.1] Generated '7'
+[z3-sys 0.7.1] [ 94%] Building CXX object src/api/CMakeFiles/api.dir/api_algebraic.cpp.o
+[z3-sys 0.7.1] [ 94%] Building CXX object src/api/CMakeFiles/api.dir/api_ast_map.cpp.o
+[z3-sys 0.7.1] [ 94%] Building CXX object src/api/CMakeFiles/api.dir/api_ast_vector.cpp.o
+[z3-sys 0.7.1] [ 94%] Building CXX object src/api/CMakeFiles/api.dir/api_arith.cpp.o
+[z3-sys 0.7.1] [ 94%] Building CXX object src/api/CMakeFiles/api.dir/api_array.cpp.o
+[z3-sys 0.7.1] [ 94%] Building CXX object src/api/CMakeFiles/api.dir/api_bv.cpp.o
+[z3-sys 0.7.1] [ 94%] Building CXX object src/api/CMakeFiles/api.dir/api_datalog.cpp.o
+[z3-sys 0.7.1] [ 96%] Building CXX object src/api/CMakeFiles/api.dir/api_ast.cpp.o
+[z3-sys 0.7.1] [ 96%] Building CXX object src/api/CMakeFiles/api.dir/api_fpa.cpp.o
+[z3-sys 0.7.1] [ 96%] Building CXX object src/api/CMakeFiles/api.dir/api_config_params.cpp.o
+[z3-sys 0.7.1] [ 96%] Building CXX object src/api/CMakeFiles/api.dir/api_context.cpp.o
+[z3-sys 0.7.1] [ 96%] Building CXX object src/api/CMakeFiles/api.dir/api_goal.cpp.o
+[z3-sys 0.7.1] [ 96%] Building CXX object src/api/CMakeFiles/api.dir/api_datatype.cpp.o
+[z3-sys 0.7.1] [ 96%] Building CXX object src/api/CMakeFiles/api.dir/api_model.cpp.o
+[z3-sys 0.7.1] [ 96%] Building CXX object src/api/CMakeFiles/api.dir/api_log.cpp.o
+[z3-sys 0.7.1] [ 96%] Building CXX object src/api/CMakeFiles/api.dir/api_numeral.cpp.o
+[z3-sys 0.7.1] [ 96%] Building CXX object src/api/CMakeFiles/api.dir/api_params.cpp.o
+[z3-sys 0.7.1] [ 96%] Building CXX object src/api/CMakeFiles/api.dir/api_pb.cpp.o
+[z3-sys 0.7.1] [ 96%] Building CXX object src/api/CMakeFiles/api.dir/api_opt.cpp.o
+[z3-sys 0.7.1] [ 96%] Building CXX object src/api/CMakeFiles/api.dir/api_parsers.cpp.o
+[z3-sys 0.7.1] [ 97%] Building CXX object src/api/CMakeFiles/api.dir/api_qe.cpp.o
+[z3-sys 0.7.1] [ 97%] Building CXX object src/api/CMakeFiles/api.dir/api_polynomial.cpp.o
+[z3-sys 0.7.1] [ 97%] Building CXX object src/api/CMakeFiles/api.dir/api_quant.cpp.o
+[z3-sys 0.7.1] [ 97%] Building CXX object src/api/CMakeFiles/api.dir/api_rcf.cpp.o
+[z3-sys 0.7.1] [ 97%] Building CXX object src/api/CMakeFiles/api.dir/api_seq.cpp.o
+[z3-sys 0.7.1] [ 97%] Building CXX object src/api/CMakeFiles/api.dir/api_solver.cpp.o
+[z3-sys 0.7.1] [ 97%] Building CXX object src/api/CMakeFiles/api.dir/api_special_relations.cpp.o
+[z3-sys 0.7.1] [ 97%] Building CXX object src/api/CMakeFiles/api.dir/api_stats.cpp.o
+[z3-sys 0.7.1] [ 98%] Building CXX object src/api/CMakeFiles/api.dir/api_tactic.cpp.o
+[z3-sys 0.7.1] [ 98%] Building CXX object src/api/CMakeFiles/api.dir/z3_replayer.cpp.o
+[z3-sys 0.7.1] [ 98%] Building CXX object src/api/CMakeFiles/api.dir/api_commands.cpp.o
+[z3-sys 0.7.1] [ 98%] Building CXX object src/api/CMakeFiles/api.dir/api_log_macros.cpp.o
+[z3-sys 0.7.1] [ 98%] Built target api
+[z3-sys 0.7.1] [ 98%] Generating "/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/api/dll/mem_initializer.cpp"
+[z3-sys 0.7.1] [ 98%] Generating "/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/api/dll/gparams_register_modules.cpp"
+[z3-sys 0.7.1] [ 98%] Generating "/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/build/src/api/dll/install_tactic.cpp"
+[z3-sys 0.7.1] [100%] Building CXX object src/api/dll/CMakeFiles/api_dll.dir/gparams_register_modules.cpp.o
+[z3-sys 0.7.1] [100%] Building CXX object src/api/dll/CMakeFiles/api_dll.dir/dll.cpp.o
+[z3-sys 0.7.1] [100%] Building CXX object src/api/dll/CMakeFiles/api_dll.dir/mem_initializer.cpp.o
+[z3-sys 0.7.1] [100%] Building CXX object src/api/dll/CMakeFiles/api_dll.dir/install_tactic.cpp.o
+[z3-sys 0.7.1] [100%] Built target api_dll
+[z3-sys 0.7.1] [100%] Linking CXX static library ../libz3.a
+[z3-sys 0.7.1] [100%] Built target libz3
+[z3-sys 0.7.1] Install the project...
+[z3-sys 0.7.1] -- Install configuration: "Release"
+[z3-sys 0.7.1] -- Installing: /home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/lib/cmake/z3/Z3Targets.cmake
+[z3-sys 0.7.1] -- Installing: /home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/lib/cmake/z3/Z3Targets-release.cmake
+[z3-sys 0.7.1] -- Installing: /home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/lib/cmake/z3/Z3Config.cmake
+[z3-sys 0.7.1] -- Installing: /home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/lib/cmake/z3/Z3ConfigVersion.cmake
+[z3-sys 0.7.1] -- Installing: /home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/lib/pkgconfig/z3.pc
+[z3-sys 0.7.1] -- Installing: /home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/lib/libz3.a
+[z3-sys 0.7.1] -- Installing: /home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/include/z3_algebraic.h
+[z3-sys 0.7.1] -- Installing: /home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/include/z3_api.h
+[z3-sys 0.7.1] -- Installing: /home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/include/z3_ast_containers.h
+[z3-sys 0.7.1] -- Installing: /home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/include/z3_fixedpoint.h
+[z3-sys 0.7.1] -- Installing: /home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/include/z3_fpa.h
+[z3-sys 0.7.1] -- Installing: /home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/include/z3.h
+[z3-sys 0.7.1] -- Installing: /home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/include/z3++.h
+[z3-sys 0.7.1] -- Installing: /home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/include/z3_macros.h
+[z3-sys 0.7.1] -- Installing: /home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/include/z3_optimization.h
+[z3-sys 0.7.1] -- Installing: /home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/include/z3_polynomial.h
+[z3-sys 0.7.1] -- Installing: /home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/include/z3_rcf.h
+[z3-sys 0.7.1] -- Installing: /home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/include/z3_v1.h
+[z3-sys 0.7.1] -- Installing: /home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/include/z3_spacer.h
+[z3-sys 0.7.1] -- Installing: /home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/include/z3_version.h
+[z3-sys 0.7.1] cargo:root=/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out
+[z3-sys 0.7.1] cargo:rustc-link-search=native=/home/bjornarl/repos/utips/paraspace/target/release/build/z3-sys-0ba29091d416c848/out/lib
+[z3-sys 0.7.1] cargo:rustc-link-lib=static=z3
+[z3-sys 0.7.1] cargo:rustc-link-lib=stdc++
+[z3-sys 0.7.1] cargo:rerun-if-changed=build.rs
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/stdio.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/libc-header-start.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features-time64.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/timesize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/stdc-predef.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/sys/cdefs.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/long-double.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/gnu/stubs.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/gnu/stubs-64.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/lib/llvm-14/lib/clang/14.0.0/include/stddef.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/lib/llvm-14/lib/clang/14.0.0/include/stdarg.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/timesize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/typesizes.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/time64.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__FILE.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/FILE.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/stdio_lim.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/floatn.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/floatn-common.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/long-double.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/floatn.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/lib/llvm-14/lib/clang/14.0.0/include/stdbool.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/lib/llvm-14/lib/clang/14.0.0/include/stdint.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/stdint.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/libc-header-start.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wchar.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/stdint-intn.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_macros.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_api.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_ast_containers.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_algebraic.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_polynomial.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_rcf.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_fixedpoint.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_optimization.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_fpa.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_spacer.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/stdio.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/libc-header-start.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features-time64.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/timesize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/stdc-predef.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/sys/cdefs.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/long-double.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/gnu/stubs.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/gnu/stubs-64.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/lib/llvm-14/lib/clang/14.0.0/include/stddef.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/lib/llvm-14/lib/clang/14.0.0/include/stdarg.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/timesize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/typesizes.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/time64.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__FILE.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/FILE.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/stdio_lim.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/floatn.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/floatn-common.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/long-double.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/floatn.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/lib/llvm-14/lib/clang/14.0.0/include/stdbool.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/lib/llvm-14/lib/clang/14.0.0/include/stdint.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/stdint.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/libc-header-start.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wchar.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/stdint-intn.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_macros.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_api.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_ast_containers.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_algebraic.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_polynomial.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_rcf.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_fixedpoint.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_optimization.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_fpa.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_spacer.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/stdio.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/libc-header-start.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features-time64.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/timesize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/stdc-predef.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/sys/cdefs.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/long-double.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/gnu/stubs.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/gnu/stubs-64.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/lib/llvm-14/lib/clang/14.0.0/include/stddef.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/lib/llvm-14/lib/clang/14.0.0/include/stdarg.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/timesize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/typesizes.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/time64.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__FILE.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/FILE.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/stdio_lim.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/floatn.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/floatn-common.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/long-double.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/floatn.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/lib/llvm-14/lib/clang/14.0.0/include/stdbool.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/lib/llvm-14/lib/clang/14.0.0/include/stdint.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/stdint.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/libc-header-start.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wchar.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/stdint-intn.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_macros.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_api.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_ast_containers.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_algebraic.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_polynomial.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_rcf.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_fixedpoint.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_optimization.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_fpa.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_spacer.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/stdio.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/libc-header-start.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features-time64.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/timesize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/stdc-predef.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/sys/cdefs.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/long-double.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/gnu/stubs.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/gnu/stubs-64.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/lib/llvm-14/lib/clang/14.0.0/include/stddef.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/lib/llvm-14/lib/clang/14.0.0/include/stdarg.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/timesize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/typesizes.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/time64.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__FILE.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/FILE.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/stdio_lim.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/floatn.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/floatn-common.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/long-double.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/floatn.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/lib/llvm-14/lib/clang/14.0.0/include/stdbool.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/lib/llvm-14/lib/clang/14.0.0/include/stdint.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/stdint.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/libc-header-start.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wchar.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/stdint-intn.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_macros.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_api.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_ast_containers.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_algebraic.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_polynomial.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_rcf.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_fixedpoint.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_optimization.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_fpa.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_spacer.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/stdio.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/libc-header-start.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features-time64.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/timesize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/stdc-predef.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/sys/cdefs.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/long-double.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/gnu/stubs.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/gnu/stubs-64.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/lib/llvm-14/lib/clang/14.0.0/include/stddef.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/lib/llvm-14/lib/clang/14.0.0/include/stdarg.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/timesize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/typesizes.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/time64.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__FILE.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/FILE.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/stdio_lim.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/floatn.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/floatn-common.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/long-double.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/floatn.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/lib/llvm-14/lib/clang/14.0.0/include/stdbool.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/lib/llvm-14/lib/clang/14.0.0/include/stdint.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/stdint.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/libc-header-start.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wchar.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/stdint-intn.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_macros.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_api.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_ast_containers.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_algebraic.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_polynomial.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_rcf.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_fixedpoint.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_optimization.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_fpa.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_spacer.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/stdio.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/libc-header-start.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features-time64.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/timesize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/stdc-predef.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/sys/cdefs.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/long-double.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/gnu/stubs.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/gnu/stubs-64.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/lib/llvm-14/lib/clang/14.0.0/include/stddef.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/lib/llvm-14/lib/clang/14.0.0/include/stdarg.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/timesize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/typesizes.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/time64.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__FILE.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/FILE.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/stdio_lim.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/floatn.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/floatn-common.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/long-double.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/floatn.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/lib/llvm-14/lib/clang/14.0.0/include/stdbool.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/lib/llvm-14/lib/clang/14.0.0/include/stdint.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/stdint.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/libc-header-start.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wchar.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/stdint-intn.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_macros.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_api.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_ast_containers.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_algebraic.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_polynomial.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_rcf.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_fixedpoint.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_optimization.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_fpa.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_spacer.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/stdio.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/libc-header-start.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features-time64.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/timesize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/stdc-predef.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/sys/cdefs.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/long-double.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/gnu/stubs.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/gnu/stubs-64.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/lib/llvm-14/lib/clang/14.0.0/include/stddef.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/lib/llvm-14/lib/clang/14.0.0/include/stdarg.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/timesize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/typesizes.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/time64.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__FILE.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/FILE.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/stdio_lim.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/floatn.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/floatn-common.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/long-double.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/floatn.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/lib/llvm-14/lib/clang/14.0.0/include/stdbool.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/lib/llvm-14/lib/clang/14.0.0/include/stdint.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/stdint.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/libc-header-start.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wchar.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/stdint-intn.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_macros.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_api.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_ast_containers.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_algebraic.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_polynomial.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_rcf.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_fixedpoint.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_optimization.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_fpa.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_spacer.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/stdio.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/libc-header-start.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features-time64.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/timesize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/stdc-predef.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/sys/cdefs.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/long-double.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/gnu/stubs.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/gnu/stubs-64.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/lib/llvm-14/lib/clang/14.0.0/include/stddef.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/lib/llvm-14/lib/clang/14.0.0/include/stdarg.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/timesize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/typesizes.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/time64.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__FILE.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/FILE.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/stdio_lim.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/floatn.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/floatn-common.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/long-double.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/floatn.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/lib/llvm-14/lib/clang/14.0.0/include/stdbool.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/lib/llvm-14/lib/clang/14.0.0/include/stdint.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/stdint.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/libc-header-start.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wchar.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/stdint-intn.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_macros.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_api.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_ast_containers.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_algebraic.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_polynomial.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_rcf.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_fixedpoint.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_optimization.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_fpa.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_spacer.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/stdio.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/libc-header-start.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features-time64.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/timesize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/stdc-predef.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/sys/cdefs.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/long-double.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/gnu/stubs.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/gnu/stubs-64.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/lib/llvm-14/lib/clang/14.0.0/include/stddef.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/lib/llvm-14/lib/clang/14.0.0/include/stdarg.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/timesize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/typesizes.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/time64.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/__FILE.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/FILE.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/stdio_lim.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/floatn.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/floatn-common.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/long-double.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/floatn.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/lib/llvm-14/lib/clang/14.0.0/include/stdbool.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/lib/llvm-14/lib/clang/14.0.0/include/stdint.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/stdint.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/libc-header-start.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/features.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wchar.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/stdint-intn.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=/usr/include/x86_64-linux-gnu/bits/types.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_macros.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_api.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_ast_containers.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_algebraic.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_polynomial.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_rcf.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_fixedpoint.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_optimization.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_fpa.h
+[z3-sys 0.7.1] cargo:rerun-if-changed=z3/src/api/z3_spacer.h
