@@ -1,0 +1,2 @@
+[console_scripts]
+erlenberg_ext_cryptscriptgenerator = erlenberg_ext.cryptScriptGenerator.__main__:main
