@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: reddit-sentiment
+Version: 1.0
+Summary: Reddit Sentiment Analyzer
+Home-page: https://github.com/fishtoadsoft/reddit-sentiment-analyzer
+Download-URL: 
+Author: Fernando Diaz
+Author-email: awkwardferny@gmail.com
+License: MIT
+Keywords: reddit,sentiment,analysis,nlp
+Platform: Any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Environment :: Console
+License-File: LICENSE
+
+Obtains Sentiment Score of various reddit objects.
