@@ -1,0 +1,6 @@
+rdflib
+requests==2.26.0
+python_dotenv==0.15.0
+pandas
+urllib
+lxml
