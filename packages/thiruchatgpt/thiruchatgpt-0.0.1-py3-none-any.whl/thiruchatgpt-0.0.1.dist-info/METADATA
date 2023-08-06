@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: thiruchatgpt
+Version: 0.0.1
+Summary: ChatGPT In Whatsapp Using Twilio
+Home-page: UNKNOWN
+Author: Thirumalai K G
+License: UNKNOWN
+Keywords: python,openai,chatgpt,twilio,whatsapp,chatting
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: flask
+Requires-Dist: twilio
+Requires-Dist: openai
+
+A package that allows to interact with ChatGPT in WhatsApp
+
