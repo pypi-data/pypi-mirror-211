@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: midiferenciacion
+Version: 0.42
+Summary: Make a diferentiation of a given function
+Home-page: https://pypi.org/project/midiferenciacion
+Author: Sofia Arboleda-Bolivar
+Author-email: sofia.arboledab@udea.edu.co
+License: MIT
+Keywords: Dif math
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+takes some function and returns the derivate

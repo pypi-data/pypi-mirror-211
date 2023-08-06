@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+./midiferenciacion/__init__.py
+midiferenciacion.egg-info/PKG-INFO
+midiferenciacion.egg-info/SOURCES.txt
+midiferenciacion.egg-info/dependency_links.txt
+midiferenciacion.egg-info/entry_points.txt
+midiferenciacion.egg-info/requires.txt
+midiferenciacion.egg-info/top_level.txt
