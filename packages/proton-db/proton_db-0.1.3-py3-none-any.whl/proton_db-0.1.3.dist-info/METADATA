@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: proton-db
+Version: 0.1.3
+Summary: A simple wrapper for the unofficial Proton-DB API.
+Author: BiFr0st
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/x-rst
+
+Lightweight wrapper for the unofficial Proton-DB API (https://protondb.max-p.me/)
+
+Usage:
+import proton_db as proton
+
+protonDB = proton.protonDB()
+
+
+getGames()
+Lists all the games we have discovered so far. Returns an array of objects with these fields in it:
+
+appId
+title
+
+getReports(appId)
+Lists all reports for a given game (by Valve's appId), in reverse timestamp order. Returns an array of objects with these fields in it:
+
+id - Server's local id
+appId - The game ID for this report. Redundant for uniformity's sake.
+timestamp
+rating
+notes
+os
+gpuDriver
+specs
+protonVersion
