@@ -1,0 +1,3 @@
+[console_scripts]
+compressbinarytable=compressbinarytable.compressbinarytable:main
+
