@@ -1,0 +1,16 @@
+crio/UDP.py,sha256=qupwveZT3267oI1HaThIef1ksgSF7c0X5h_n5EDaU-U,8772
+crio/__init__.py,sha256=bAYqJAYY199yN5XQHYOlCNEhuoNl8yuWnFUlOl1AzN8,22
+crio/crio.py,sha256=gYAdq8WbmdZJwgEuqv9fzqJmzkLs8jkre553TIdTIJs,18307
+crio/getBenchIni.py,sha256=H7YGtjVJoIciCgwDJ19pGKDmaAgNwELCrufOEfQzw4I,1106
+crio/iniconfig.cfg,sha256=vmLgFPIqRnDOP0Y7gHptA6miHksNwgz_H6dFscg9NrA,12466
+crio/Loadini/Loadini.py,sha256=oVInRE4JxZ7NywgCCMipGMEjJmXPPo_tmt7km9UWPMs,4372
+crio/Loadini/__init__.py,sha256=zS-BCP3pP6VJ_ElXhTwiFxiwfuN3AGxhznjgNKrnJMk,28
+crio/config/__init__.py,sha256=5Pns1a2AyJmjP7okEXUEqm_ugpuDppkt9u8F0jOIgyI,23
+crio/crio_hs/__init__.py,sha256=dJyNwLMy7eoOu1gVge_l6mLKNQDJ0b6DWfUIj7uM-Lg,22
+crio/crio_hs/crio_hs.py,sha256=8zIT9x-KdA-s4_y_9-YF2DNWpdmrdbA94QIWJunEqf0,15939
+crio/inis/__init__.py,sha256=5Pns1a2AyJmjP7okEXUEqm_ugpuDppkt9u8F0jOIgyI,23
+crio-0.0.8.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+crio-0.0.8.dist-info/METADATA,sha256=HJsnqXHNZj0qOryusTSWS9zyzgtu-ehP9q_yh5pM4IQ,2888
+crio-0.0.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+crio-0.0.8.dist-info/top_level.txt,sha256=joqDxkPJUIc_5FnH772H-txn7rDyyHJxjAUkD21N_E8,5
+crio-0.0.8.dist-info/RECORD,,
