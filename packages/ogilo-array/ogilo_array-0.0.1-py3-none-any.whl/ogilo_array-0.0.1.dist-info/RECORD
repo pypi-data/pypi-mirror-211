@@ -1,0 +1,10 @@
+ogilo/cli.py,sha256=B-IsGqQljwCqCwquR7utINCQPiYgNehm51b4ZmZTkEQ,12336
+ogilo/illumina-pcr-handles.csv,sha256=-LFsw-ZxlPqlpoxMKMgx32QxvelWJlNrAowrsfzrtUU,123
+ogilo/sanson2018-pcr-handles.csv,sha256=6eoviXe-2kSeGR4ruHwWnEETnvtiwz06yN1Cu7waD88,339
+ogilo/utils.py,sha256=YsZPAD-U3xngZ-ao_Cwxf8GH-npnpOdSFyOu6fpmlfs,2202
+ogilo_array-0.0.1.dist-info/LICENSE,sha256=pAZXnNE2dxxwXFIduGyn1gpvPefJtUYOYZOi3yeGG94,1068
+ogilo_array-0.0.1.dist-info/METADATA,sha256=1kMVKSHWKOCDsQG5zlky8v8kx7RFOwbfUyk6cotTc60,11977
+ogilo_array-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ogilo_array-0.0.1.dist-info/entry_points.txt,sha256=ukF3QvEfhVhwW6DwgAHIrRD6TmKHYqqn-d76X6LsCYE,41
+ogilo_array-0.0.1.dist-info/top_level.txt,sha256=gM5G7F0Ax0MR1DQYXYpdUDyYhuTG2V7xxIe5kp6Py_k,6
+ogilo_array-0.0.1.dist-info/RECORD,,
