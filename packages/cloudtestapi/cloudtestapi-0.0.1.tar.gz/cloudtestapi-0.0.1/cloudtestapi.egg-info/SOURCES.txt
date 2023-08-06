@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+cloudtestapi.egg-info/PKG-INFO
+cloudtestapi.egg-info/SOURCES.txt
+cloudtestapi.egg-info/dependency_links.txt
+cloudtestapi.egg-info/top_level.txt
