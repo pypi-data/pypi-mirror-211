@@ -1,0 +1,14 @@
+digit/__init__.py,sha256=K3limr444mc5qBWKQdcCiyaY58PmF9DxndOjTyCIftA,189
+digit/base_data.py,sha256=j4V7n9XN6QkZUMWvUsWkvWCEF0f3KfYbCVfTOHFdlSk,3175
+digit/child_base_data.py,sha256=o18QTprfuQv1qzLb9E_11V2BLs7iP1owGRB5a48Kl5E,1786
+digit/data.py,sha256=17k8by8ZFfZg7ZU3s4p-fM4C02RLieNOOylUIaVcqk0,6149
+digit/download.py,sha256=YOpNTa9fInR6gudZcGFqMw6HCJS5_9BAm9FaoZ4eHec,4745
+digit/info.json,sha256=IA1FnEypG7NegRVfp2IURpf4wh6ufww3NqJivDLls1c,211
+digit/info.py,sha256=cjN8eDTbvXFE9LBMxY5kVmizsQMVfoQN3kmhcnf-xQQ,1970
+digit/query.py,sha256=PnNNJnUhHrvitCP-Z49w7KIu_LiZejzr5XiQXR64je0,4892
+digit/setting.py,sha256=rJ5FTOObvCrJtPVIrmpqMcTP4jpzHr4SJ8G2wUHQ3a0,2267
+ir_digit-0.0.35.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+ir_digit-0.0.35.dist-info/METADATA,sha256=LdJGi69ZMhguhyJqNwIeTY1SAoAmEZhTfo6VOOvAMOw,415
+ir_digit-0.0.35.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ir_digit-0.0.35.dist-info/top_level.txt,sha256=dSIaSt9MLexNRMqzUKd6YiwWemmRrt8s81D7vqtr8Mo,6
+ir_digit-0.0.35.dist-info/RECORD,,
