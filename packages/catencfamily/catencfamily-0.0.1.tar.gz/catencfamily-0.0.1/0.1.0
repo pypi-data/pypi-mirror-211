@@ -1,0 +1,3 @@
+Defaulting to user installation because normal site-packages is not writeable
+Looking in indexes: https://test.pypi.org/simple/
+Requirement already satisfied: catfamilyenc in c:\programdata\anaconda3\envs\tf_streamlit\lib\site-packages (0.1.0)
