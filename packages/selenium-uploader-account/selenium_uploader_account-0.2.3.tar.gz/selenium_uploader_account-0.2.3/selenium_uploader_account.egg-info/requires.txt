@@ -1,0 +1,2 @@
+selenium-account>=0.2.3
+setuptools>=67.8.0
