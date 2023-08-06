@@ -1,0 +1,2 @@
+[console_scripts]
+dls-bxflow-epsic = dls_bxflow_epsic.__main__:main
