@@ -1,0 +1,10 @@
+plugnplai/__init__.py,sha256=U1gF3zZeay1HQ8VIkTsXb44J1Nc5hXkbCwhyNQyAnjQ,1028
+plugnplai/embeddings.py,sha256=yegpH9TmhJzfRyEyhQvNHoPNeVGCJugEWz3Qklja6Hs,4422
+plugnplai/plugins.py,sha256=sv5U5qclmEGLgKsyJtsHyJzNK0CMLCPKfX0CPbM3SCc,20857
+plugnplai/prompt_templates.py,sha256=y0fYky7GTP8FnwZGguPnJA7Lxo6tgPu6QPgo7gefNgo,1417
+plugnplai/utils.py,sha256=3grVTm8TsqM6-EOOcCWa-mGM9iGAuLrZ9uoRHvlLA0E,10556
+plugnplai/verify_plugins/verify_for_plugnplai.csv,sha256=1cHmBUAYzZcI9wtRG_FlV0zYSHIE0vTcesSODb8cJVA,21111
+plugnplai-0.0.20.dist-info/LICENSE,sha256=MFifHekHz-Ff1zVnLrfG5xTg70ULTeJ61FjZheyF_K4,1069
+plugnplai-0.0.20.dist-info/METADATA,sha256=rh5WS8pAfzbnfSe8Tjwp37_D7pILvb1ZRGaohiPROaQ,9589
+plugnplai-0.0.20.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+plugnplai-0.0.20.dist-info/RECORD,,
