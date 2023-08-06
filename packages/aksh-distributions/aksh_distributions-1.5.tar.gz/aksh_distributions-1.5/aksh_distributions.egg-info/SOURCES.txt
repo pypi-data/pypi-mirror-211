@@ -1,0 +1,10 @@
+setup.py
+aksh_distributions/Binomialdistribution.py
+aksh_distributions/Gaussiandistribution.py
+aksh_distributions/Generaldistribution.py
+aksh_distributions/__init__.py
+aksh_distributions.egg-info/PKG-INFO
+aksh_distributions.egg-info/SOURCES.txt
+aksh_distributions.egg-info/dependency_links.txt
+aksh_distributions.egg-info/not-zip-safe
+aksh_distributions.egg-info/top_level.txt
