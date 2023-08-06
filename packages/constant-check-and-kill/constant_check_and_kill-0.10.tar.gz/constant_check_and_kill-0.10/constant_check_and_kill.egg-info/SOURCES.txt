@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+constant_check_and_kill/README.MD
+constant_check_and_kill/__init__.py
+constant_check_and_kill/requirements.txt
+constant_check_and_kill/thirdparty.json
+constant_check_and_kill.egg-info/PKG-INFO
+constant_check_and_kill.egg-info/SOURCES.txt
+constant_check_and_kill.egg-info/dependency_links.txt
+constant_check_and_kill.egg-info/requires.txt
+constant_check_and_kill.egg-info/top_level.txt
