@@ -1,0 +1,12 @@
+pydantic_tools-0.3.1.dist-info/METADATA,sha256=Q8NQVPh8nRHooQcl0ZT01N8rMvujDUw6xi39Il8Z37Y,1738
+pydantic_tools-0.3.1.dist-info/WHEEL,sha256=m6kf1fJuo48rT4uxh0SeA_FsGq51BpCh_8VNBKVwYQA,90
+pydantic_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydantic_tools/alias/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydantic_tools/i18n/__init__.py,sha256=1xepbGDNQoPqc2t367802LZ8BZJg6x4K8rJFU0reNQc,181
+pydantic_tools/i18n/__main__.py,sha256=igpXXAPhMyVKtAr_AW6TkBCLZeRa9PVZ_SlsYuGZPOA,1881
+pydantic_tools/i18n/locales/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydantic_tools/i18n/locales/zh_cn.py,sha256=HphGEzHQqGsUkoXeUumAuV9yNqN6pPspMrT_1xkV2GM,6932
+pydantic_tools/i18n/model.py,sha256=37Gfl-sIoyFJJzJ7kEPDS8fshJKUvq__Sf4j9F0JPu4,897
+pydantic_tools/i18n/templates.py,sha256=Tio_9gnRDeORrBrchlrFteIpEEGWHqSCqYkf-xn6QMM,1267
+pydantic_tools/i18n/translate.py,sha256=cG3PUkob8fRMuMhIZnuVikYERbVtIRkbTd8PWFC6ZRU,1676
+pydantic_tools-0.3.1.dist-info/RECORD,,
