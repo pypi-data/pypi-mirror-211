@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: starrailres
+Version: 1.0.0
+Summary: StarRailRes index package.
+Home-page: https://github.com/Mar-7th/StarRailRes-Python
+License: MIT
+Author: mobyw
+Author-email: mobyw66@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: msgspec (>=0.15.1,<0.16.0)
+Project-URL: Repository, https://github.com/Mar-7th/StarRailRes-Python
+Description-Content-Type: text/markdown
+
+# StarRailRes-Python
+
+A python library for StarRailRes.
+
