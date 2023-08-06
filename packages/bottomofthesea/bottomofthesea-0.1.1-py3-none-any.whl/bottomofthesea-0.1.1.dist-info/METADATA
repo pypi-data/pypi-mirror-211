@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: bottomofthesea
+Version: 0.1.1
+Summary: Decodes hidden materials in the video from the Land At The Bottom Of The Sea project
+License: MIT
+Keywords: decode,decoding,steganography,steg,thelandatthebottomofthesea
+Author: doublescoop
+Author-email: backslash.share@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: Pillow (>=9.5.0,<10.0.0)
+Requires-Dist: numpy (>=1.24.3,<2.0.0)
+Requires-Dist: opencv-python (>=4.7.0.72,<5.0.0.0)
+Description-Content-Type: text/markdown
+
+
