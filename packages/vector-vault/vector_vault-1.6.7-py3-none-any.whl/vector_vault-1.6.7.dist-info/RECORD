@@ -1,0 +1,16 @@
+vector_vault-1.6.7.data/data/LICENSE,sha256=Ywm5n2V0KOuiBqcnV8kpSqOqaYXfTabQwGKepSXs-38,1471
+vectorvault/__init__.py,sha256=md5LNhSt7-d0VP_MWAWtxX4D6HMwH7iNLb3kLXsoaGk,703
+vectorvault/ai.py,sha256=VJL86QNDDBSWYjnBfTP-FJgpQ4X2_pTLKtqsqCQk-xs,7621
+vectorvault/cloudmanager.py,sha256=xr6ORaCTa8LC6M9P9N_tubBZf--8_Kde208oa15YsVQ,3198
+vectorvault/creds.py,sha256=RS6uhBB7Luxn-IFsKjnR0a-e3TobaXaoEEqbrdGgPv8,1843
+vectorvault/download.py,sha256=jSufXOh_cr44slpkexB2UrrdAbq0Lpzit181dXO0h88,1299
+vectorvault/itemize.py,sha256=b7haP0j7nn6m4IPEr9y3XL2wBMiegwvaC2H3Mf7Kwis,1582
+vectorvault/signup.py,sha256=vV3CFHDGdtgl_HHYlvJRkexdJMoKsEnFGMFLbC5sR70,912
+vectorvault/vault.py,sha256=-IklGAe-0xoFgY3ESoG-EIeN-0w2t3RtopXPJDR7oTg,19387
+vectorvault/vecreq.py,sha256=twjgCVaYNlqk0urGkLgeeZgi13x1s79e77GHz5EGvzs,3970
+vectorvault/wrap.py,sha256=vvNNXQERie4CTMkae80UbmjNjwxZk6f_q_lQcQfZ1gk,991
+vector_vault-1.6.7.dist-info/LICENSE,sha256=Ywm5n2V0KOuiBqcnV8kpSqOqaYXfTabQwGKepSXs-38,1471
+vector_vault-1.6.7.dist-info/METADATA,sha256=rP9NxJknVdRODNKhLasMZ183aoid2q4MeioQUCMeJDo,20248
+vector_vault-1.6.7.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+vector_vault-1.6.7.dist-info/top_level.txt,sha256=ccmb2bOdD91VllmMDDDQgvXSpoj-aMoBZEh2vEf7UUM,12
+vector_vault-1.6.7.dist-info/RECORD,,
