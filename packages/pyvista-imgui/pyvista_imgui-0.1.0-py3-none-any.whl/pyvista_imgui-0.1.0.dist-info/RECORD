@@ -1,0 +1,10 @@
+pyvista_imgui/__init__.py,sha256=ZEdswDiztP-W55lz9bwPQ1PDbPDZs-ShV2d0hfUgBdk,372
+pyvista_imgui/_version.py,sha256=iyxbHkgS1yJGtIeySh-gmqzwOuLbVveAe9CoQYWfZ0c,160
+pyvista_imgui/imgui_render_window.py,sha256=GFk_an-TvI3hNW51vLKZfKreCOU65R7Bxa3gKU-Nwng,5447
+pyvista_imgui/plotting.py,sha256=z14hvGHQX19tioFazgP80cf9FkHwDr9jrvH38Kh7Y2Y,7137
+pyvista_imgui/texture_render_window.py,sha256=gfVrRawGWkRGJgp-LOtxET90oe5ds7fXzBKUPc9wNAU,6354
+pyvista_imgui-0.1.0.dist-info/LICENSE,sha256=NKDCMdm2d2FbpnKWSuQZJ9EaFrQtNFyhQYvNIphPjTI,1071
+pyvista_imgui-0.1.0.dist-info/METADATA,sha256=UC7Lxb7jpHn06JbYJCCioSi1b0Kc6NSDKt8mJEv_dqc,2714
+pyvista_imgui-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pyvista_imgui-0.1.0.dist-info/top_level.txt,sha256=2YnJSIls5fng_qyG53FGG67gkQmMn6Lus7MZhY8EU-M,14
+pyvista_imgui-0.1.0.dist-info/RECORD,,
