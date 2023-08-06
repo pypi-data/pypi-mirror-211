@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: msl09-yesno
+Version: 0.1.0
+Summary: A module that provides common functions for yes/no CLI queries
+Home-page: https://github.com/marceloslacerda/yesno
+Author: Marcelo Lacerda
+Author-email: marceloslacerda@gmail.com
+License: BSD
+Keywords: query cli function
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3.7
+
+# yesno
+
+Quite frequently I need to create simple CLI interfaces for the programs I
+write, every time I end up creating a different set of functions that never
+have a good set of satisfactory behaviours. For this reason I'm putting this
+project publicly, so I can use the same library for those purposes and
+improve it continusly.
+
+Example:
+
+    >>> import yesno
+    >>> yesno.input_to_bool('Do you like pancakes', default='yes')
+    Do you like pancakes[yes]? no
+    False
+
