@@ -1,0 +1,14 @@
+setup.py
+Am_serializer/Ser.py
+Am_serializer/__init__.py
+Am_serializer/constants.py
+Am_serializer/json_utils.py
+Am_serializer/pack_utils.py
+Am_serializer/serializer.py
+Am_serializer/unpack_utils.py
+Am_serializer/xml_utils.py
+ArteomSer.egg-info/PKG-INFO
+ArteomSer.egg-info/SOURCES.txt
+ArteomSer.egg-info/dependency_links.txt
+ArteomSer.egg-info/entry_points.txt
+ArteomSer.egg-info/top_level.txt
