@@ -1,0 +1,12 @@
+pagidantic/__init__.py,sha256=i5Sgvoqd6zjllYIrvfEx2xw0O2_nQeoo44E-nSJvKDo,695
+pagidantic/dict.py,sha256=YuLjUWBO26pRKrSToaDrwOkq3u1DeMNPZm1WAB_knpc,1064
+pagidantic/factory.py,sha256=8BlY9fTwHi4W2WhMUHadaeuCac3jCvNhCy3y6B1LLo8,1048
+pagidantic/page.py,sha256=xCKLMMQwyAEdvzCCw-BDNqTgF3PuibhZJ8Jg6xlg3Hk,1563
+pagidantic/pagidantic.py,sha256=Zg6-cmP1we0twxbRM6PMMx_f_lBA3_zJo9GsKixtEZU,1085
+pagidantic/paginator.py,sha256=82Fcc34QEQsKqc53OYIXCFMJnaqbMsdGYlhykqM2Hvw,4712
+pagidantic/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pagidantic/set.py,sha256=AxGgc1BahVVgziqeRW42UqLw8EILwUQO7WnPq3HJfuE,982
+pagidantic-1.1.0.dist-info/METADATA,sha256=B9mmEf6YRTFxhCY1saV75TINb6B6NTzTHyMjqr9O5NU,4553
+pagidantic-1.1.0.dist-info/WHEEL,sha256=y1bSCq4r5i4nMmpXeUJMqs3ipKvkZObrIXSvJHm1qCI,87
+pagidantic-1.1.0.dist-info/licenses/LICENSE,sha256=5Tq8bSUZxh60OnbIGljTjSaDz87ssNq_4ltyJ_c2iKQ,1070
+pagidantic-1.1.0.dist-info/RECORD,,
