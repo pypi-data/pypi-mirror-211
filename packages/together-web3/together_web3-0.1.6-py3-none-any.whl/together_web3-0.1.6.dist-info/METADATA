@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: together-web3
+Version: 0.1.6
+Summary: 
+Home-page: https://github.com/togethercomputer/web3.py
+License: MIT
+Keywords: NLP,vision,speech,deep,learning,transformer,pytorch,tensorflow,BERT,GPT-2
+Author: together
+Author-email: together@together.xyz
+Requires-Python: >=3.7.2,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: dacite (>=1.6.0,<2.0.0)
+Requires-Dist: web3 (>=5.30.0,<6.0.0)
+Project-URL: Repository, https://github.com/togethercomputer/web3.py
+Description-Content-Type: text/markdown
+
+# @togethercomputer/together-web3.py [![build](https://github.com/togethercomputer/together-web3.py/actions/workflows/build.yml/badge.svg)](https://github.com/togethercomputer/together-web3.py/actions/workflows/build.yml)
+
+```python
+from together_web3.computer import LanguageModelInferenceRequest
+from together_web3.together import TogetherWeb3
+
+together_web3 = TogetherWeb3()
+result = await together_web3.language_model_inference(
+    from_dict(
+        data_class=LanguageModelInferenceRequest,
+        data={
+            "model": "gpt2",
+            "prompt": "Alan Turing was",
+        }
+    ),
+)
+print("result", result)
+```
+
+See [examples/example.py](examples/example.py)
+
+### Generate an image
+
+```console
+python examples/example.py "Rainbow unicorn" "StableDiffusion" \
+  | grep image_base64 | cut -d\" -f4 | base64 -d > x.jpg && open x.jpg
+```
+
+## Publish to PyPi
+
+GitHub repo > Releases > Draft a new Release > Choose a tag > Create new tag on publish >
+
+Name the tag using the current version from pyproject.toml with a "v" e.g. `v1.0.9`.
+
+> Publish Release
+
+In the repo toolbar select > Actions
+
+- Verify the publish workflow is running and completes successfully
+
+
