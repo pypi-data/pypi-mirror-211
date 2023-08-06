@@ -1,0 +1,13 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simplerabbit/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+simplerabbit/rabbit_base.py,sha256=ZjoOWLFfFCS44iUZpyuAZ_KL0sUcIs2LnbRf70RLTuw,1993
+simplerabbit/receiver.py,sha256=neIbKOZwMVsdFmkG1cD7Ee37ColfHRQlOlbDkixKK2s,2622
+simplerabbit/sender.py,sha256=BEvnEeq-IBCn9TEGyXOGJ0EdpYUw0HXbG6oGSY65qx4,2033
+simplerabbit/test_receiver.py,sha256=u4Y8SDTJHuaFdo0mgRHe1n8KzfvG02w1BXBD_25X24c,325
+simplerabbit/test_receiver_ssl.py,sha256=BdftG68Iew_QAPsaaAmyphuGPO3XO-wRjY2oscAWVnE,473
+simplerabbit/test_sender.py,sha256=ci41GhOLDjeOfQk1OHXLZEhRlkBoEZ6qRaIMi3eAAeM,243
+simplerabbit/test_sender_ssl.py,sha256=HUxLYp5ERw7L66nGIV_Aof4cxuGAPnoZF7eJG-HTvOs,392
+simplerabbit-0.0.10.dist-info/METADATA,sha256=iDw_SIxwAdeHOhwKEqwbIF2jmcqjLqGwdcNLyX1SRLc,1596
+simplerabbit-0.0.10.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+simplerabbit-0.0.10.dist-info/top_level.txt,sha256=6sNVWaI7iVSHkvBFg1T4ScnNzXv3ODeIjItz_DB9HBQ,22
+simplerabbit-0.0.10.dist-info/RECORD,,
