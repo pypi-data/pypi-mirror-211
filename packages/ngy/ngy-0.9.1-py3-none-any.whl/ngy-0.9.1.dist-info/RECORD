@@ -1,0 +1,11 @@
+ngy/Magic_Request.py,sha256=sDjLtkEamI2lfjyhYYYs5_rPs_6Yq76FIrEG9XIEICE,1474
+ngy/Magic_Request_sav.py,sha256=0HqC_36mxixcOMIVo36lK_Kt8A-hz_98cZkrl7A-awo,1387
+ngy/Map_func.py,sha256=P_ePVlYR_JQPcPddWN12wRkKPnWF7Vnc7MbiFkZntKo,2860
+ngy/Request.py,sha256=yeLL3p28n4cAnbUEnfFL5hwRMOmzM1pdkdF9_874kE4,5407
+ngy/Tiles.py,sha256=4e9wrA6jWIJjA6IbNohFXEDb1y9oBaS56bZJF3iYJT0,793
+ngy/__init__.py,sha256=NqV--pN7bQUINNfOInUkRr9yUjoMGAkOfcvZraGsEjE,69
+ngy/data/wmts.xml,sha256=fCcaTSGZkoRIWoFYcxAP4dpePl5Aoad3jDAPjo9AEPI,2564345
+ngy-0.9.1.dist-info/METADATA,sha256=72MmbvHDhKTGk3ZzsjcNW84bLy6Dny-UInVUhqZZub0,1065
+ngy-0.9.1.dist-info/WHEEL,sha256=y1bSCq4r5i4nMmpXeUJMqs3ipKvkZObrIXSvJHm1qCI,87
+ngy-0.9.1.dist-info/licenses/LICENSE,sha256=ePOl0HkCM0DqyviowPCo6OBqMHkMI9uJ8rj1xZsZC5E,1098
+ngy-0.9.1.dist-info/RECORD,,
