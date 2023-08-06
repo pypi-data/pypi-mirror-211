@@ -1,0 +1,17 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+CalSciPy/__init__.py,sha256=TfChLrkxGp5Aa5leMFnm2JQVxTKxZg1PxYJIVs7r7eo,368
+CalSciPy/bruker.py,sha256=Of2riq-kgSomZF1paLlCo7XeF-0bnf5yGybwODCOGfY,10702
+CalSciPy/coloring.py,sha256=W5tv1OE0zftNyAdjBhb2n1U2kOrZNjgPJiySO6qwTGA,3270
+CalSciPy/event_processing.py,sha256=TjbhaH5w25SL1iOzYIwrY6l4WjxT7yZyXcJHKW4YODo,9766
+CalSciPy/image_processing.py,sha256=42WOcVy0lf0jDek3Q9rIzFHyXl3YCx4vDSegBIe4IOg,4603
+CalSciPy/interactive_visuals.py,sha256=oUMjy29I8c9t8Mn-7E0AvzrbqScbyeYIMVS30n14Pjs,8973
+CalSciPy/io_tools.py,sha256=sOvFo_Qp6M1pD4uIOjp_fS7xx-6tmINwEb3v4yGqDi0,10046
+CalSciPy/misc.py,sha256=Yp2GVUGP8hJOnvmPiBzt1wPlIGHeM9ZEaxdmwfcHeyo,8876
+CalSciPy/reorganization.py,sha256=Bkg6tVli_7dXfyKOwyetn37by2P4tcJ8o8VSNLeKY6s,3444
+CalSciPy/trace_processing.py,sha256=4297xyScwwE7yAKW8z0_AD1ksZEHWMIedRCCQxXouJ0,10311
+CalSciPy/version.py,sha256=2p3xo4Y-ZsCKq0bv8NV_zepcF0AsTDKrysRpIuctjaU,199
+CalSciPy-0.3.1.dist-info/LICENSE,sha256=LsooDY8WX_UNzOV9uYvGPH6NkUlZfLfiX7GUKZLGiDA,1094
+CalSciPy-0.3.1.dist-info/METADATA,sha256=Kav3Gk00yKCI-x80sdTV7LckbJXsT3EAfAfnaTcvR9I,6251
+CalSciPy-0.3.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+CalSciPy-0.3.1.dist-info/top_level.txt,sha256=kKBOLjedv3zb2yc4wJHLEQhg5TsEQaseFSsCwUJS2PI,18
+CalSciPy-0.3.1.dist-info/RECORD,,
