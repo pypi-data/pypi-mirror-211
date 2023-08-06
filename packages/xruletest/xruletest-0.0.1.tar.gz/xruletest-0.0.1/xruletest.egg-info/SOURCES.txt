@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+xruletest.egg-info/PKG-INFO
+xruletest.egg-info/SOURCES.txt
+xruletest.egg-info/dependency_links.txt
+xruletest.egg-info/top_level.txt
