@@ -1,0 +1,2 @@
+from cloudservices_arg.storageservice import Storage
+from cloudservices_arg.queueservice import Queue
