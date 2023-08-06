@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: digicon-mod
+Version: 0.1.0
+Summary: Simple simulation tools for hybrid systems with digital control and continous process. See more details at https://github.com/ant-nik/digicon-mod
+License: Apache 2.0
+Author: Anton Nikonov
+Author-email: ant.nik.nik@mail.ru
+Requires-Python: ==3.11.1
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: numpy (>=1.24.3,<2.0.0)
+Requires-Dist: scipy (>=1.10.1,<2.0.0)
+Description-Content-Type: text/markdown
+
+# Digital control system modeling tools (digicon-mod)
+Simple implementation of hybrid continous and discrette closed-loop systems modeling tools based on ordinary differential equations solver (continous part of the system) and a custom python program with control logic (discrete part of the system).
+
