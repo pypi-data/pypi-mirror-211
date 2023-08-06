@@ -1,0 +1,3 @@
+[console_scripts]
+getRPercId = get_read_percid.__main__:main
+
