@@ -1,0 +1,10 @@
+PyQt5
+numpy
+mrcfile
+opencv-python
+matplotlib
+scipy
+numba
+psutil
+scikit-image
+pandas
