@@ -1,0 +1,6 @@
+lrservice.egg-info/PKG-INFO
+lrservice.egg-info/SOURCES.txt
+lrservice.egg-info/dependency_links.txt
+lrservice.egg-info/top_level.txt
+tests/__init__.py
+tests/test_simple_linear_regr.py
