@@ -1,0 +1,15 @@
+paper_jsoneditor/__init__.py,sha256=pMtTmSUht-XtbR_7Doz6bsQqopJJd8rZ8I8zy2HwwoA,22
+paper_jsoneditor/fields.py,sha256=G3AIkHPTOkzZ5WOgCRE50EKAkmKPg9IEXckLYwdugzg,813
+paper_jsoneditor/forms.py,sha256=ycio5CKgT_2Me-RfWePHAjh1nl5uWouq4dsZC5nbDzk,1067
+paper_jsoneditor/widgets.py,sha256=PGfh8YEwhS9ZrWMT1ScfJWwy0gEFKIPO_7hqJGqIwT8,508
+paper_jsoneditor/static/paper_jsoneditor/dist/widget.css,sha256=bCFurvTrUpi29lqkkHEzSEVeEHKAkJZfR2h57YyqX0c,35384
+paper_jsoneditor/static/paper_jsoneditor/dist/widget.js,sha256=6fOesJGEVH8Ryxm3chbnpHlFY8vgz-57YVJ3EJb0Y8s,836633
+paper_jsoneditor/static/paper_jsoneditor/dist/widget.js.LICENSE.txt,sha256=RwEGGZhs_wAd0DErNOfWRGkA5LY0PExx_61G4R-LBmU,2813
+paper_jsoneditor/static/paper_jsoneditor/dist/widget.js.map,sha256=bYN-lhCCpexocYinR8kWrI6fMLDLJVxiK7RxGCqkEmQ,2708753
+paper_jsoneditor/static/paper_jsoneditor/dist/assets/jsoneditor-icons.svg,sha256=o68Rpqy3blpNoJuT3emLQOUkyxwbOfYeueFbJvHLnl4,11915
+paper_jsoneditor/templates/paper_jsoneditor/widget.html,sha256=q6d3n_QwK8FIKupzVMim92JCljlGbvtVdIHDiRpQVZU,251
+paper_jsoneditor-0.4.1.dist-info/LICENSE,sha256=WTFD-ZIoHej_iI-DZ6CLTCQz2OzjMtlCJuChXLbFl3g,1515
+paper_jsoneditor-0.4.1.dist-info/METADATA,sha256=dC5P6r2KMs60WJ-GLjCKtfCczHpT3DgR-dPRxITOTTI,3488
+paper_jsoneditor-0.4.1.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+paper_jsoneditor-0.4.1.dist-info/top_level.txt,sha256=T21Xxa85ECNcEY9Lo_oAZD6aPy05OKcg2fZyKx2w2kc,30
+paper_jsoneditor-0.4.1.dist-info/RECORD,,
