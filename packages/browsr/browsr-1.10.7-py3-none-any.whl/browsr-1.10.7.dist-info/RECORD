@@ -1,0 +1,16 @@
+browsr/__init__.py,sha256=o2VK427n1_Vt348oII5T13Q5B0htnLwV8jlTCzD8QiA,152
+browsr/__main__.py,sha256=WQ_eAylKnIr0aRd79Cwj7XawWPt6KH-FZf-Kpq41jcw,102
+browsr/_base.py,sha256=p7IUBQ4qxGps6n7CxGI7Oa_Zt7o__QPPNOS425Shywo,7069
+browsr/_cli.py,sha256=3djlyIIraJdq0KBzK7NLNgWLzDe5N1BWVQCq1rRab1M,4005
+browsr/_config.py,sha256=LVvUATo7NDE_l7PhkLZxdM0URwHO-znos9fbKocVisM,1023
+browsr/_tools.py,sha256=PBqDbC9SSgUmt3t3oN4QLuAONJkdm6nDkp344HVOujU,1115
+browsr/_utils.py,sha256=xciCMkcjOt6OPtD0tcDQGH7NQHZMmdlP35wZi1gocAo,6242
+browsr/_version.py,sha256=D8gzKwJIoFLyQWZ5PypDk-P920SO1FVdTYZjm-51398,154
+browsr/browsr.css,sha256=nJQM9ePBev7iY1QuL2G8hpAXOJwuxEbN7B_IlWiYof4,965
+browsr/browsr.py,sha256=jVynu4oIE1QyHTX4iQjSnuW3YgaemeiwVGEwVrm8b-Y,13891
+browsr/universal_directory_tree.py,sha256=61j3oGUp0T9w6e6nOI58Q7h02cyZDi343rGWE2Rv0fY,4491
+browsr-1.10.7.dist-info/METADATA,sha256=nDC5JWvGSLnSf9m5BCfw-7vGxl98gtKuf7tAbS1p-dU,5229
+browsr-1.10.7.dist-info/WHEEL,sha256=y1bSCq4r5i4nMmpXeUJMqs3ipKvkZObrIXSvJHm1qCI,87
+browsr-1.10.7.dist-info/entry_points.txt,sha256=ujBdiKnxtOLACnSNrARI1lnmegfZjvOKUmqDKjeE12s,50
+browsr-1.10.7.dist-info/licenses/LICENSE,sha256=qwaQCv8zjtFwHkw7N0MTPchlOQKl28GpmZY3EpIkFGQ,1109
+browsr-1.10.7.dist-info/RECORD,,
