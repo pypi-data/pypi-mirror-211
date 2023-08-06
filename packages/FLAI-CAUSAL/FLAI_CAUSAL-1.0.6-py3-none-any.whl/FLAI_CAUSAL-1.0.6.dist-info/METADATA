@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: FLAI-CAUSAL
+Version: 1.0.6
+Summary: Library to creat causal model and mitigate the bias.
+Home-page: https://github.com/rugonzs/FLAI
+Author: Rubén González Sendino
+Author-email: rubo.g@icloud.com
+License: Apache-2.0 license
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bnlearn (==0.7.8)
+Requires-Dist: networkx (==2.8.8)
+Requires-Dist: matplotlib (==3.6.2)
+Requires-Dist: pgmpy (==0.1.20)
+Requires-Dist: numpy (==1.23.4)
+Requires-Dist: pandas (==1.5.1)
+Requires-Dist: scikit-learn (==1.0.2)
+Requires-Dist: scipy (==1.9.3)
+Requires-Dist: statsmodels (==0.13.5)
+
+# FLAI
+[![Upload Python Package](https://github.com/rugonzs/FLAI/actions/workflows/python-publish.yml/badge.svg)](https://github.com/rugonzs/FLAI/actions/workflows/python-publish.yml)
+Fairness Learning in Artificial Intelligence
+asCreate
