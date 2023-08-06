@@ -1,0 +1,12 @@
+modAL/__init__.py,sha256=ErgT3BLA0i_0fdjvFWeFpdyOnml2SDkraaMoJI7P6OE,820
+modAL/disagreement.py,sha256=7kq8qjDCxnUBQHliRRieXY9_8ev2oIroKO88u3c5jKk,8804
+modAL/models.py,sha256=cJrN9rQximSX-xvrLWy2sWgO2Fx4QR2I8xC-mrSxyl8,27910
+modAL/uncertainty.py,sha256=z1WUJpf6uhyWHCNY_1eIqM2xLK8tKuAg_pnMsNnN54c,7510
+modAL/utils/__init__.py,sha256=Zavh_jpKrKE0nPQxpAKkbtt8WAULIqBL4zIULqEtqNc,214
+modAL/utils/selection.py,sha256=f8Z8YqyMd8RDJEMgGmnDI2tNtiyWAa0L1xrZWSW1mu4,1430
+modAL/utils/validation.py,sha256=9_mQQ8bRvdqMhqTA82tbLreVWg7pbCfSlsaipOQY7BM,1821
+modAL_python-0.1.0.dist-info/LICENSE,sha256=6a2XmG0DJwv3_cOYJsz-xMxINXg3UAyHBqIBV_JwbDg,1070
+modAL_python-0.1.0.dist-info/METADATA,sha256=023KlKm7AkYJP4eBL6W2RETMoE2bHSvEPVsgSpZxZb0,391
+modAL_python-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+modAL_python-0.1.0.dist-info/top_level.txt,sha256=AMIakWvWmdyIoh0c6RrKgK9dCTkNv75cKovZX0sOixs,6
+modAL_python-0.1.0.dist-info/RECORD,,
