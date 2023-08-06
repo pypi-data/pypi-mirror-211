@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+json_np/__init__.py
+json_np/json_np.py
+json_np.egg-info/PKG-INFO
+json_np.egg-info/SOURCES.txt
+json_np.egg-info/dependency_links.txt
+json_np.egg-info/requires.txt
+json_np.egg-info/top_level.txt
