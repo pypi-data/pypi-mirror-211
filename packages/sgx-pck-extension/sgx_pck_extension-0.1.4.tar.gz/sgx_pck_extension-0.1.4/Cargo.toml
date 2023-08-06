@@ -1,0 +1,17 @@
+[package]
+name = "sgx-pck-extension"
+version = "0.1.4"
+edition = "2021"
+
+[lib]
+name = "sgx_pck_extension"
+crate-type = ["cdylib"]
+
+[dependencies]
+asn1 = "0.15"
+x509-parser = "0.15"
+asn1-rs = "0.5"
+
+[dependencies.pyo3]
+version = "0.18"
+features = ["abi3-py38"]
