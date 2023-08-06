@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: roboto-cli
+Version: 0.0.1
+Summary: Roboto CLI
+Author: Roboto
+Author-email: admin@roboto.ai
+License: MIT
+Keywords: conversion
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+
+Coming soon
