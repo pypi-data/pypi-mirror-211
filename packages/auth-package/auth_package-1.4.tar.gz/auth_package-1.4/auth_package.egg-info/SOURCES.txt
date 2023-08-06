@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+auth_package/__init__.py
+auth_package/permission.py
+auth_package/user.py
+auth_package.egg-info/PKG-INFO
+auth_package.egg-info/SOURCES.txt
+auth_package.egg-info/dependency_links.txt
+auth_package.egg-info/requires.txt
+auth_package.egg-info/top_level.txt
