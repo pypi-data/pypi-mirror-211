@@ -1,0 +1,10 @@
+telegram_text/__init__.py,sha256=wk7cUK9V9IgwsTh1DpakJj_7We5CjCWWNUG72Zw1Rko,571
+telegram_text/bases.py,sha256=It5ACo3IOICBAHSsWI56Pzz-CeMOEgfn2vOPW_EBpTE,4848
+telegram_text/custom.py,sha256=cWTzFLVyWkXr9mfBvdp-MVqAco-LknGH0Ir1rNkv_Lg,781
+telegram_text/elements.py,sha256=L8nrh6_yYtYn0Wc4sbuo4zOYDnn7VJ23oFR1ywhMWYI,3089
+telegram_text/markdown.py,sha256=gcnG5rCAeL42XOK57W6_47suMWDn5EvCDs4vWB_uCWQ,2124
+telegram_text/styles.py,sha256=nwp7WqcD6ujcmDY6rTT5q_S8SAR5EMts3tWo3rRCwus,3431
+telegram_text-0.1.2.dist-info/LICENSE,sha256=Ts9nGT13N5jypme21eZKZNZKCMjrTq_Jaffmp9cbpdg,1073
+telegram_text-0.1.2.dist-info/METADATA,sha256=uGCO0dUsEYq6DRnrMCQ4o8-Hb6ouxzGBK_eDm6tmVIQ,4083
+telegram_text-0.1.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+telegram_text-0.1.2.dist-info/RECORD,,
