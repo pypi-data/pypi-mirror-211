@@ -1,0 +1,150 @@
+Metadata-Version: 2.1
+Name: datarobot-predict
+Version: 1.2.0
+Summary: DataRobot Prediction Library
+License: Apache-2.0
+Author: DataRobot
+Author-email: support@datarobot.com
+Requires-Python: >=3.7,<3.12
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=7,<9)
+Requires-Dist: pandas (>=0.15)
+Requires-Dist: py4j (>=0.10.9.7,<0.11.0.0)
+Description-Content-Type: text/markdown
+
+# About
+DataRobot Prediction Library is a Python library for making predictions using various prediction methods supported by DataRobot.
+The intention is to provide a common interface for making predictions, making it easy to swap out the underlying implementation.
+
+For more info, see the [DataRobot Documentation](https://docs.datarobot.com/).
+
+## License
+[Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+
+# Setup
+## Prerequisites
+* Python 3.7 or greater
+* Scoring Code requires Java Runtime Environment 8 or higher
+* Scoring Code models generated on DataRobot 7.3 and later are supported
+
+## Installation
+`$ pip install datarobot-predict`
+
+# Usage
+## Scoring Code
+To get started, instantiate a `ScoringCodeModel` with a path to a jar file 
+```
+from datarobot_predict.scoring_code import ScoringCodeModel
+
+model = ScoringCodeModel("model.jar")
+```
+
+To get predictions from the model, pass a pandas `DataFrame` to the predict method
+```
+result_df = model.predict(df)
+```
+
+The Scoring Code jar file can be downloaded using the [DataRobot Python Client](https://pypi.org/project/datarobot/). 
+This example shows how to fetch Scoring Code from a deployment and use it to make predictions
+```
+# pip install datarobot
+
+import datarobot as dr
+from datarobot_predict.scoring_code import ScoringCodeModel
+
+dr.Client(endpoint="https://app.datarobot.com/api/v2", token="<API_TOKEN>")
+
+deployment = dr.Deployment.get(deployment_id="<DEPLOYMENT_ID>")
+deployment.download_scoring_code("model.jar")
+
+model = ScoringCodeModel("model.jar")
+result_df = model.predict(df)
+```
+
+### Feature types
+The column types of the input DataFrame can affect the predicted values.
+A typical way to read a DataFrame from csv is to simply use
+```
+df = pd.read_csv("input.csv")
+```
+This will cause pandas to auto-detect column types from the input. 
+If the detected column type is incompatible with the DataRobot feature type this can cause problems.
+
+An example of this is the following boolean-like csv column:
+```
+column_name
+FALSE
+TRUE
+
+FALSE
+```
+DataRobot will detect this as a categorical feature because it has missing values. 
+Pandas will detect it as boolean and read it into the following DataFrame:
+```
+column_name
+False
+True
+nan
+False
+```
+When this column has to be converted to categorical, the values will no longer be 
+capitalized which means they will not match the expected `TRUE` or `FALSE` values.
+
+The solution to this is to use appropritate types when reading from csv.
+For the example above we could read the column as categorical
+```
+df = pd.read_csv("input.csv", dtype={"column_name": "category"})
+```
+A more general workaround is to read all or some columns as raw strings
+```
+df = pd.read_csv("input.csv", dtype=str) # use str type for all columns
+df = pd.read_csv("input.csv", dtype={"column_name": "str"}) # use str type for column_name
+```
+This will force the parsing of values to be performed by logic in the Scoring Code JAR which
+will do it consistently with DataRobot.
+
+### Prediction Explanations
+To compute Prediction Explanations, it is required that the Scoring Code model has Prediction Explanations enabled. 
+For more info, see the DataRobot docs page about [Scoring Code download](https://docs.datarobot.com/en/docs/predictions/port-pred/scoring-code/sc-download-leaderboard.html#leaderboard-download).
+
+To compute explanations, set `max_explanations` to a positive value
+```
+df_with_explanations = model.predict(df, max_explanations=3)
+```
+
+### Time Series
+Forecast point predictions are returned by default if no other arguments are provided for a Time Series Model.
+The forecast point can be specified using the `forecast_point` parameter or auto-detected.
+```
+result_df = model.predict(df, forecast_point=datetime.datetime(1958, 6, 1))
+```
+
+To do historical predictions, set `time_series_type` accordingly
+```
+from datarobot_predict.scoring_code import TimeSeriesType
+
+result_df = model.predict(
+    df,
+    time_series_type=TimeSeriesType.HISTORICAL,
+    predictions_start_date=datetime.datetime(2020, 1, 1),
+    predictions_end_date=datetime.datetime(2022, 6, 1),
+)
+```
+
+The date column in the input is expected to be a string in the same date format used
+when the model was trained.
+
+### Prediction Intervals
+To compute Prediction Intervals, it is required that the Scoring Code model has Prediction Intervals enabled. 
+For more info, see the DataRobot docs page about [Scoring Code download](https://docs.datarobot.com/en/docs/predictions/port-pred/scoring-code/sc-download-leaderboard.html#leaderboard-download).
+
+Prediction intervals are computed when `prediction_intervals_length` is set to a positive value
+```
+result_df = model.predict(df, prediction_intervals_length=3)
+```
