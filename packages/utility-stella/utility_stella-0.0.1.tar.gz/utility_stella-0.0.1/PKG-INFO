@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: utility_stella
+Version: 0.0.1
+Summary: utility per progetto stella 
+Home-page: UNKNOWN
+Author: Jorge figueroa
+Author-email: atientas0412@gmail.com
+License: MIT
+Keywords: utility_stella
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+##https://codigofacilito.com/cursos/taller-modulos-paquetes-python
+
+## provando un paquete
+python -m utility_stella
+python setup.py sdist
+
+
+##pip install pip --upgrade  DA ERRORE
+pip install twine
+twine upload dist/*
+https://pypi.org/account/login/
+
+##TEST 
+pip install utility_stella==0.0.1
+python
+>>> from codigofacilito_jorgef import unreleased
+>>> unreleased()
+
+
