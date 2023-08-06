@@ -1,0 +1,111 @@
+# kurve
+
+## Functionality
+
+A library for turning data entities into a graph.  The entities
+can be files or RDBMS, depending on which connectors we're supporting
+at the time you read this.  To start, we're supporting local flat files,
+Snowflake, and PostgreSQL.
+
+## Motivation
+
+Data discovery is an increasingly hard problem, requiring domain
+experts, good documentation, and somewhat reliable data.  This becomes
+an even larger problem when onboarding new team members, and gets
+exacerbated by the data warehouse / lake pattern of shoving all an org's
+data into a single location.  The idea is to automate some of the discovery
+by turning relational portions of data into graphs, which can then be navigated
+visually and programmatically.
+
+### Installation
+```python
+pip install kurve
+```
+
+## Usage
+
+
+### Postgres
+```python
+from kurve.sources import PostgresSource
+source = PostgresSource(
+    host=os.getenv('MY_HOST'),
+    user=os.getenv('MY_USER'),
+    pw=os.getenv('MY_PASSWORD'),
+    port=5432,
+    database='MY_DATABASE',
+    databases=['MY_DATABASE'],
+    schemas=['SCHEMA1', 'SCHEMA2']
+)
+
+import kurve.graph
+
+g = graph.Graph(source)
+g.build_graph()
+g.save_graph('postgres_graph.pkl')
+
+len(g)
+1632
+len(g.edges)
+2450
+
+g.plot_graph(fname='my_first_graph.html')
+```
+
+### graph output from `plot_graph()`
+![plotted graph](https://github.com/wesmadrigal/kurve/blob/master/docs/postgres_graph_example.jpg?raw=true)
+
+### BigQuery
+```python
+from google.cloud import bigquery
+from kurve.sources import BigQuerySource
+from kurve.graph import kurve
+# assumes you have gcloud credentials configured
+bq_client = bigquery.client.Client()
+big_query_source = BigQuerySource(client=bq_client)
+
+g = Graph(source=big_query_source)
+g.build_graph()
+g.save_graph('bigquery_graph.pkl')
+len(g)
+3
+len(g.edges)
+2
+g.plot_graph(fname='big_query_graph.html')
+```
+
+### Filesystem (local, S3, Azure Blob, GCS)
+```python
+from kurve.sources import FileSystemSource
+from kurve.enums import FileProvider, StorageFormat
+from kurve.graph import Graph
+
+# S3 example
+efs = FileSource(
+    path_root='BUCKET_NAME',
+    provider=FileProvider.s3,
+    storage_format=StorageFormat.parquet,
+    prefix='SUB/DIRECTORY/PATH/TO/FILES',
+    regex_filter=re.compile(r"([a-fA-F\d]{32})"),
+    entities_are_partitioned=True
+)
+g = Graph(source=efs)
+g.build_graph()
+g.save_graph('filesystem_graph.pkl')
+len(g)
+100
+len(g.edges)
+88
+g.plot_graph(fname='s3_warehouse_graph.html')
+```
+
+
+
+## Future work
+* More sources
+* Better cardinality support
+* Optional compute "budget" specification for graph building
+* Closer integration with compute and integration with GraphReduce paradigms
+* Top-level project configuration for graph output locations, credentials, etc.
+* substituting `networkx` for Knowledge graphs (probably `kglab` https://github.com/derwenai/kglab)
+* consolidate data types, most likely by leveraging good Open source work out of `pyarrow` https://arrow.apache.org/docs/python/api/datatypes.html
