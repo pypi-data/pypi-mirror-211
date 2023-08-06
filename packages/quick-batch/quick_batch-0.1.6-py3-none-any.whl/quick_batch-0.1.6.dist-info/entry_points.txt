@@ -1,0 +1,4 @@
+[console_scripts]
+qb_scale=quick_batch.manual_scaler:main
+quick_batch=quick_batch.main:main
+
