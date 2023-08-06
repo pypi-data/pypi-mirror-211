@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: svgecko
+Version: 0.3.2
+Summary: Lightweight library for arbitrary geometric SVG transformations
+Author: Josef Ondrej
+Author-email: josef.ondrej@outlook.com
+Description-Content-Type: text/markdown
+
+Lightweight library for arbitrary geometric SVG transformations
