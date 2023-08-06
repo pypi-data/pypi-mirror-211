@@ -1,0 +1,10 @@
+mech_client/__init__.py,sha256=XEqb2aiIn8fzGE68Mph4ck1FtQqsR_am0wRWvrYPffQ,22
+mech_client/cli.py,sha256=-g5_ST16khiW10YIHjzoChuioi-tfRsEne8RTBjKbqk,1147
+mech_client/interact.py,sha256=h0xuKN1WFdU369ZhKjpHl_6mXsU_T2-HLVW6_RNnq0w,7257
+mech_client/prompt_to_ipfs.py,sha256=_DJk2XXhK2E1Mf59PX-kvSUlwW4XtiwmsVhJUwX3PPw,1790
+mech_client/push_to_ipfs.py,sha256=NX0zjzJCoxslPGBSGl2V7hONkKzUhsl29ZM8qqEsBF4,1670
+mech_client-0.1.3.dist-info/LICENSE,sha256=mdBDB-mWKV5Cz4ejBzBiKqan6Z8zVLAh9xwM64O2FW4,11339
+mech_client-0.1.3.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+mech_client-0.1.3.dist-info/entry_points.txt,sha256=SbRMRsayzD8XfNXhgwPuXEqQsdZ5Bw9XDPnUuaDExyY,45
+mech_client-0.1.3.dist-info/METADATA,sha256=gQ6Ph1563FwSJJQhFA8ks-AFqeftgX2zuAH4EI8F_m4,2607
+mech_client-0.1.3.dist-info/RECORD,,
