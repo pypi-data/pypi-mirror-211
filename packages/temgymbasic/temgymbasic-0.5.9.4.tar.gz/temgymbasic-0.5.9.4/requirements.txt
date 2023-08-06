@@ -1,0 +1,6 @@
+numpy
+pyqt5
+pyopengl
+triangle
+matplotlib
+pyqtgraph
