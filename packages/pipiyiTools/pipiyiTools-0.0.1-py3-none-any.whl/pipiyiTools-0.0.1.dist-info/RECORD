@@ -1,0 +1,12 @@
+pipiyiTools/EpubSpliter.py,sha256=dKltbjaPDIeJQAgcLA4qQZNemEgWlIvaG5C2FHA12F0,2589
+pipiyiTools/FileOperation.py,sha256=6NC6g3yTUv_Yy7wu9eDJ7n58Fnn6QRamRP6zh7FAtjc,1058
+pipiyiTools/ListQueue.py,sha256=718ILCd6ehPFXONP6FQivHZbzwyFyY5jD-6Uxa6n4go,1134
+pipiyiTools/Log.py,sha256=UHjWr5b86UgR9FPmoPhxGg2_aJmU_m0sNwI5nw-WBvM,1928
+pipiyiTools/MyRequest.py,sha256=40muKivpcvIqLL0zn5fVHPD4orlXD5lcBsTI9SuC2MU,2070
+pipiyiTools/PooledBase.py,sha256=lOc6KXr_1hQ3WLDxo6NqxGxPyvbh32Sm4sGt2yTUnj0,6711
+pipiyiTools/Storage.py,sha256=g-AZmhZRMuv_uM6sVY8o6sGCpwQ3cIAbixl6UPHGPhA,972
+pipiyiTools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pipiyiTools-0.0.1.dist-info/METADATA,sha256=8j93kCLXvnkQRT_RMybMaNUX79bn6tiAf_HY2S2RfcE,936
+pipiyiTools-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pipiyiTools-0.0.1.dist-info/top_level.txt,sha256=7P9WDcSybYRH1leNefR5u-SZ1ab5LZ5Y8-21BiyTNH0,12
+pipiyiTools-0.0.1.dist-info/RECORD,,
