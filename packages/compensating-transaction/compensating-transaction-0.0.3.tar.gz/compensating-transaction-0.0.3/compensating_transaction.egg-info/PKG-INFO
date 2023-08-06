@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: compensating-transaction
+Version: 0.0.3
+Summary: compensating transaction
+Home-page: https://github.com/rubbish822/compensating-transaction
+Author: rubbish
+Author-email: rubbish@rubbish.com
+License: MIT Licence
+Keywords: pip,compensating-transaction,atomicity
+Platform: any
+License-File: LICENSE
+
+When the function execution fails, the function execution can be rolled back, and all previous function executions can be rolled back
