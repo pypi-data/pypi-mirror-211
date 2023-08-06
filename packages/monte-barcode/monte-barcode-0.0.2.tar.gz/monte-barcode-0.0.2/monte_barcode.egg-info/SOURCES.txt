@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+monte_barcode.egg-info/PKG-INFO
+monte_barcode.egg-info/SOURCES.txt
+monte_barcode.egg-info/dependency_links.txt
+monte_barcode.egg-info/entry_points.txt
+monte_barcode.egg-info/requires.txt
+monte_barcode.egg-info/top_level.txt
+montebarcode/__init__.py
+montebarcode/checks.py
+montebarcode/cli.py
+montebarcode/codons.yml
+montebarcode/generate.py
+montebarcode/utils.py
+test/tests.py

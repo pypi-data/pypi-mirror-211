@@ -1,0 +1,4 @@
+streq>=0.0.2
+nemony>=0.0.2
+tqdm
+pyyaml
