@@ -1,0 +1,9 @@
+tap_linkedin_ads/__init__.py,sha256=AUQE5szg7vR-blyFDUJRfsjvPPEA_cS4Bs_hiuJ9TBM,35
+tap_linkedin_ads/client.py,sha256=PnoHKuQ2DAH91TyMTeztL8iJ6OjN-xQr598iaX7TuVg,5482
+tap_linkedin_ads/streams.py,sha256=WVx5wNWVOSonA0zsRh2sDMEa8XH_6pPGF0VfhqNT-Gc,60217
+tap_linkedin_ads/tap.py,sha256=dlChMWa6PKeBS9mZ7v-Nq9yMI_FUxaJQqEbfaEiJSoI,2580
+meltano_tap_linkedin_ads-0.0.1a1.dist-info/LICENSE,sha256=SCVQGLQfwOllsRFa9-Z3m8IYu4pnR9Vh2oANUCJiKqI,3860
+meltano_tap_linkedin_ads-0.0.1a1.dist-info/METADATA,sha256=ldsghWZ3gpt6vb7uS1dHTsTiDQiViIb0SZIZf7qYXQ4,5760
+meltano_tap_linkedin_ads-0.0.1a1.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+meltano_tap_linkedin_ads-0.0.1a1.dist-info/entry_points.txt,sha256=IxY2UzWnslhj3yWsWN4covDJl6LBVYzupVtu5CH8lv0,76
+meltano_tap_linkedin_ads-0.0.1a1.dist-info/RECORD,,
