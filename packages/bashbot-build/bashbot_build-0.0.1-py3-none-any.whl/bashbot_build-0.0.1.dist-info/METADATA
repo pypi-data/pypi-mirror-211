@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: bashbot-build
+Version: 0.0.1
+Requires-Dist: flask
+Requires-Dist: decouple
+Requires-Dist: rich
+Requires-Dist: openai
+
