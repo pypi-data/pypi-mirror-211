@@ -1,0 +1,11 @@
+LICENSE
+README.md
+package.md
+pyproject.toml
+elevenlab/__init__.py
+elevenlab/pdisk.py
+elevenlab/type.py
+elevenlab.egg-info/PKG-INFO
+elevenlab.egg-info/SOURCES.txt
+elevenlab.egg-info/dependency_links.txt
+elevenlab.egg-info/top_level.txt
