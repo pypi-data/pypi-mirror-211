@@ -1,0 +1,14 @@
+bifurc2midi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bifurc2midi/__main__.py,sha256=mclV4CgPBLWt49lQFEI8AkITrL6SHDaFvw1268_0Ib4,96
+bifurc2midi/bifurcation_data.py,sha256=XAUJQPLDpX_rDROW-MQuS6IjT4925o0w_X533qATPrM,5880
+bifurc2midi/bifurcation_data_to_midi.py,sha256=X_KeJqOLr6iJxICPJPVnqYL4nnDAzip3UKitUY6ymlI,2935
+bifurc2midi/cli.py,sha256=jXMma4AgA9Tr_Ha881DU-x0OLkzozdugZdvv9uEcsr8,4623
+bifurc2midi/logistic_map.py,sha256=bF0uqNINnr1h3LGIX0bYThk65OgJLbgNU6_pSWnTNZk,1317
+bifurc2midi/midi.py,sha256=8KFaBOuCGpTvU6DyGVfc16DyQm3Kc80yaFP7aTk4k8A,564
+bifurc2midi/music.py,sha256=7iFN38h-J9lrOHnHgDQTZIIMZTswWnMoiJQYdp419pw,191
+bifurc2midi-0.0.1.dist-info/LICENSE,sha256=Yt3mvwV8rzGOBSeJoq5S2jNjnQkPccgAWk5dJOXPG-M,1069
+bifurc2midi-0.0.1.dist-info/METADATA,sha256=F-NILZSoXvTR3_auiCm_BagH7gPh1w-wJj-1xF2E9UI,3343
+bifurc2midi-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+bifurc2midi-0.0.1.dist-info/entry_points.txt,sha256=7DTTkrClMXl9HqXip8tpPi5hZpHO8F2ayAeJp-hT6aY,58
+bifurc2midi-0.0.1.dist-info/top_level.txt,sha256=QqcNz0jnqx26pzhV7v8RQb2mu3N5tnSTNXJPyThC0w0,12
+bifurc2midi-0.0.1.dist-info/RECORD,,

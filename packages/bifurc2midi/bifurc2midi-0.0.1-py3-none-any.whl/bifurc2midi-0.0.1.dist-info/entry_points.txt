@@ -1,0 +1,2 @@
+[console_scripts]
+bifurc2midi = bifurc2midi.__main__:main
