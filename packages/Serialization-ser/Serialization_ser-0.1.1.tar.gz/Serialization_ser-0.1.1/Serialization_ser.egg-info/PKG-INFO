@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: Serialization-ser
+Version: 0.1.1
+Summary: Library for python (de)serialization in Json and Xml
+Home-page: https://github.com/Uporotka/Igi_labs/tree/lab_3
+Author: Uporotka
+Author-email: godam5759@gmail.com
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent

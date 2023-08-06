@@ -1,0 +1,14 @@
+setup.cfg
+setup.py
+Serialization_ser/__init__.py
+Serialization_ser/base_serializer.py
+Serialization_ser/dict_serializer.py
+Serialization_ser/json_serializer.py
+Serialization_ser/serializers_factory.py
+Serialization_ser/type_constants.py
+Serialization_ser/xml_serializer.py
+Serialization_ser.egg-info/PKG-INFO
+Serialization_ser.egg-info/SOURCES.txt
+Serialization_ser.egg-info/dependency_links.txt
+Serialization_ser.egg-info/requires.txt
+Serialization_ser.egg-info/top_level.txt
