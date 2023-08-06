@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+cached_conv/__init__.py
+cached_conv/convs.py
+cached_conv/test_align_branches.py
+cached_conv/test_conv.py
+cached_conv/test_conv_t.py
+cached_conv/test_script.py
+cached_conv/test_sequential.py
+cached_conv.egg-info/PKG-INFO
+cached_conv.egg-info/SOURCES.txt
+cached_conv.egg-info/dependency_links.txt
+cached_conv.egg-info/requires.txt
+cached_conv.egg-info/top_level.txt
