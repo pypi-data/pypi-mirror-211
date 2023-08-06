@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: amplitude-data-wrapper
+Version: 0.4.2
+Summary: python wrapper for using the amplitude analytics and taxonomy APIs
+Home-page: https://github.com/navikt/amplitude-data-wrapper
+Author: Tobias McVey
+Author-email: tobias.mcvey@nav.no
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE
