@@ -1,0 +1,10 @@
+hf_chat/__init__.py,sha256=C1r5-xfuEzDHcL4Q46knyhaI-q0VS0qWziUlFZriMiw,135
+hf_chat/main.py,sha256=5AZZpiwXyfUI83EriN9XgwifY80w8UD1evtSHGHKsZE,5419
+hf_chat/exceptions/__init__.py,sha256=_cG8Fsjj-Oj44qsEKVqarioVXpEOhduqmMHxk9kw22E,179
+hf_chat/exceptions/inference_failed_exception.py,sha256=vdu4y5Qnae6DAEcNv1KkDWsjbRZZnATkpa-4xSlZzAU,423
+hf_chat/exceptions/interaction_fail_exception.py,sha256=7eqLYYIM8_j6zIPaGwnHTptCVonyTxZfbesBIAqDuH8,278
+hf_chat/exceptions/login_exception.py,sha256=6Z5uGEGLgQofxHLa2zRCKCVNs0F29irNgoFdV9juj28,271
+hf_chat-0.1.0.dist-info/METADATA,sha256=qKhl5GjU2wE1XGV0WjBotBgdiS-IwcMXS83J0p4jUCI,1820
+hf_chat-0.1.0.dist-info/WHEEL,sha256=y1bSCq4r5i4nMmpXeUJMqs3ipKvkZObrIXSvJHm1qCI,87
+hf_chat-0.1.0.dist-info/licenses/LICENSE,sha256=1aX6oIdU3gVWiYyHiPnd8wNDndLn8kMNL72Vrzfom18,1094
+hf_chat-0.1.0.dist-info/RECORD,,
