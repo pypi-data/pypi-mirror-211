@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: dfmodule-jh
+Version: 0.0.1
+Summary: A simple dfmodule example package 11111
+Home-page: http://github.com/yourusername/sample_package
+Author: Your Name123
+Author-email: your.email@example.com
+Keywords: dfmodule_jh,dfmodule
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+Requires-Dist: pandas
+Requires-Dist: numpy
+
