@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: consumableai
+Version: 0.1.0
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: pyyaml
+Requires-Dist: click
+Requires-Dist: psycopg2
+Requires-Dist: requests
+
