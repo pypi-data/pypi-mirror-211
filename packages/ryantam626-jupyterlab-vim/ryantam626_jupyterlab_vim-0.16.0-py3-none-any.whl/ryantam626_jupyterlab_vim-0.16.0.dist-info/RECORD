@@ -1,0 +1,16 @@
+jupyterlab_vim/__init__.py,sha256=mXeNe8hJh4QxTHKZvx6nDsUZ6q7nFMgUCK73vqTj4Mk,319
+jupyterlab_vim/_version.py,sha256=U_PEELs32hl1zeeRiBFlUT-oWqeMM2f5EKPFoz-4Ox4,440
+jupyterlab_vim/labextension/package.json,sha256=eIxGxm-7XZm80PrRvuIaZg_7fncVaku-nK953iZqXq8,2640
+jupyterlab_vim/labextension/schemas/@axlair/jupyterlab_vim/package.json.orig,sha256=eIxGxm-7XZm80PrRvuIaZg_7fncVaku-nK953iZqXq8,2640
+jupyterlab_vim/labextension/schemas/@axlair/jupyterlab_vim/plugin.json,sha256=Gbel10-8SEUafAbkRdl7ZDOWhM17jUcw9kvkC2qQQ14,10940
+jupyterlab_vim/labextension/static/style.js,sha256=K5Fo3z5nxRORv7sHts1OHArXgUiR9JEcSSA2FgDDEGs,165
+ryantam626_jupyterlab_vim-0.16.0.data/data/share/jupyter/labextensions/@axlair/jupyterlab_vim/install.json,sha256=-0mcjX9ZVTdvGcNJWDwN8h79GCdidZJOe-8IykavLZU,189
+ryantam626_jupyterlab_vim-0.16.0.data/data/share/jupyter/labextensions/@axlair/jupyterlab_vim/package.json,sha256=eIxGxm-7XZm80PrRvuIaZg_7fncVaku-nK953iZqXq8,2640
+ryantam626_jupyterlab_vim-0.16.0.data/data/share/jupyter/labextensions/@axlair/jupyterlab_vim/schemas/@axlair/jupyterlab_vim/package.json.orig,sha256=eIxGxm-7XZm80PrRvuIaZg_7fncVaku-nK953iZqXq8,2640
+ryantam626_jupyterlab_vim-0.16.0.data/data/share/jupyter/labextensions/@axlair/jupyterlab_vim/schemas/@axlair/jupyterlab_vim/plugin.json,sha256=Gbel10-8SEUafAbkRdl7ZDOWhM17jUcw9kvkC2qQQ14,10940
+ryantam626_jupyterlab_vim-0.16.0.data/data/share/jupyter/labextensions/@axlair/jupyterlab_vim/static/style.js,sha256=K5Fo3z5nxRORv7sHts1OHArXgUiR9JEcSSA2FgDDEGs,165
+ryantam626_jupyterlab_vim-0.16.0.dist-info/LICENSE,sha256=5Z35WKn9oIxzj_DNGCHw-_KDgJTR5dSe41j8rVPMmTI,1069
+ryantam626_jupyterlab_vim-0.16.0.dist-info/METADATA,sha256=N8A1fERtTXqWPM_NYCjX0_9G-cumucj7i73S7S8vwuc,1088
+ryantam626_jupyterlab_vim-0.16.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ryantam626_jupyterlab_vim-0.16.0.dist-info/top_level.txt,sha256=nxkGXT-to2KrQwCuBH3Uog8u0ncKC9t5qaYbZamIN6k,15
+ryantam626_jupyterlab_vim-0.16.0.dist-info/RECORD,,
