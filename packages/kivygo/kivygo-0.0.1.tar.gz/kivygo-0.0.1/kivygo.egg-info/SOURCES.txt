@@ -1,0 +1,17 @@
+LICENSE.txt
+setup.cfg
+setup.py
+kivygo/__init__.py
+kivygo/animation.py
+kivygo/app.py
+kivygo/bounds_math.py
+kivygo/colors.py
+kivygo/transformations.py
+kivygo/utils.py
+kivygo.egg-info/PKG-INFO
+kivygo.egg-info/SOURCES.txt
+kivygo.egg-info/dependency_links.txt
+kivygo.egg-info/requires.txt
+kivygo.egg-info/top_level.txt
+kivygo/transitions/__init__.py
+kivygo/transitions/base.py
