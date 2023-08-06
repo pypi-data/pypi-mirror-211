@@ -1,0 +1,8 @@
+[fugue.plugins]
+bigquery = fugue_bigquery.registry
+bigquery_ray = fugue_bigquery.ray_execution_engine [ray]
+trino = fugue_trino.registry
+
+[ibis.backends]
+fugue_trino = fugue_trino.ibis_trino
+
