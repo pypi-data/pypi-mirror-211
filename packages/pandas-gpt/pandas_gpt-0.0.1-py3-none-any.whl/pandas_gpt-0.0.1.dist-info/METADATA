@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pandas-gpt
+Version: 0.0.1
+Summary: Power up your data science workflow with ChatGPT
+Author: Ryan Vandersmith
+License-File: LICENSE
+Requires-Dist: openai
+Requires-Dist: pandas
+
