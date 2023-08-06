@@ -1,0 +1,16 @@
+MazgaDB_func/__init__.py,sha256=Y2wZGqC7jNY-F-uNzdN28VRCDMGXsBBEBK7OlpceNxE,236
+MazgaDB_func/append.py,sha256=edzv94SSV_GCsPlEAk4xqVBKyCqapNEWVzw7TIhtrKQ,211
+MazgaDB_func/class_db.py,sha256=QLLz-OQ47HPXxjimPwBV48OGCOEyHrABgMP44h8MWX4,3802
+MazgaDB_func/column.py,sha256=q9Qwv1xE1o6YMQnZO0dcl23hh1fLFMdOWB1qDV5o88c,211
+MazgaDB_func/delete.py,sha256=NilhIm9DjnDO-EjDeNgct4HTnKrE94Eoc2Ovw0FoFSs,154
+MazgaDB_func/delete_column.py,sha256=MsbZq697OcA-rttGFpn2CACUEOKSoLej5tPS5xLdDTU,467
+MazgaDB_func/is_there.py,sha256=owYZxHQdSXiw3xi9eZWHLCBmEBltDBcbZA49r-QmyuM,187
+MazgaDB_func/new_table.py,sha256=XZVzEzzUztKJpgKVhDacMpNyQ5Htk3NRu65l5FbjVBs,400
+MazgaDB_func/read_all.py,sha256=i3X0zB46Vj9NlfmitMbzOuaRCIgHjxFqnQ5AwBMHm5Y,459
+MazgaDB_func/select.py,sha256=j6vmXoAgjroNw779UCXT55dl1XsYtH34OQgNEq57U6M,251
+MazgaDB_func/update.py,sha256=2tYEi4Sg4Dz_bhBkBqfRqmLqkC0ZhL6uaUgFseT9bTQ,235
+mazga_db/__init__.py,sha256=QKkhjBoUEcU6NiBK2AUErhKNLydXgk2sUUOjnzpvSww,5547
+MazgaDB-0.0.2.dist-info/METADATA,sha256=9w197lQYxCTtT8mLubAVwzo--3Vt4kweEpkVo78btk8,6465
+MazgaDB-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+MazgaDB-0.0.2.dist-info/top_level.txt,sha256=IPM9YMJIjdKYdok-W8DJEL7vbvVTvA5i9HacLPw-zmA,22
+MazgaDB-0.0.2.dist-info/RECORD,,
