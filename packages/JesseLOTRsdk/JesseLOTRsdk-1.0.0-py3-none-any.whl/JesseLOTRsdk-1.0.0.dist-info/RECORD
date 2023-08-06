@@ -1,0 +1,11 @@
+JesseLOTRsdk/__init__.py,sha256=LZE8vsef403VINA5BrU--FOGsJXFypX9u30b4IAgwUw,93
+JesseLOTRsdk/sdk.py,sha256=9v1Z1pXk4jNrVG6zQbF_7SamY59A49iDomY-6eWeSm4,8274
+JesseLOTRsdk/tests.py,sha256=vvup_HcFtlsSMlXQULwDaq6ynEYe8DJQGlYVEibPpVc,5048
+JesseLOTRsdk/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+JesseLOTRsdk/models/movie.py,sha256=HcT1BozezsdfcfkrThBrRiIX8OqVYTibbWu6xTB5JDM,663
+JesseLOTRsdk/models/quote.py,sha256=eszzI7xDKklx_yQHwialQglEoJkqOJEZEHPM3Hm-xoI,346
+JesseLOTRsdk-1.0.0.dist-info/LICENSE.md,sha256=ULbH_JYLCu8gNzww20HgFnWoAZ95p3d4MvnMlUJvPBk,1081
+JesseLOTRsdk-1.0.0.dist-info/METADATA,sha256=1nDOsEaMaRdjM-Hijm8cBdRCoUaqACSjX0xcD_rRCqs,5038
+JesseLOTRsdk-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+JesseLOTRsdk-1.0.0.dist-info/top_level.txt,sha256=P5F7sV3K2dGE4zlBB7WTCBmbwtPjZ9rfuHOi29vDf6A,13
+JesseLOTRsdk-1.0.0.dist-info/RECORD,,
