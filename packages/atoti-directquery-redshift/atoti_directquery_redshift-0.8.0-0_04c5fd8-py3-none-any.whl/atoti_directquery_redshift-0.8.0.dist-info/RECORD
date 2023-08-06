@@ -1,0 +1,14 @@
+atoti_directquery_redshift/LICENSE,sha256=Q9b5T6w6Fv8QYaSLbHupmnRXMjoVLdIch_mE9BzcUDM,23472
+atoti_directquery_redshift/__init__.py,sha256=GH6BtneL1_6M-Im_PbvGdQfCOn0-xU-jiCtUMB3q2Pk,199
+atoti_directquery_redshift/_plugin.py,sha256=XICPQStLEGbw97zb6CnAgKtm3iB2UtJ0yV7m6qyubao,515
+atoti_directquery_redshift/connection.py,sha256=AvKKLG7C6xN6nbj6KNDpix2tlXDZ8mD6oLYE9ITvXaI,1338
+atoti_directquery_redshift/connection_info.py,sha256=AXsaLLT60xPz7gqf354OrTSgrPycP370meiYY_M7baw,1678
+atoti_directquery_redshift/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+atoti_directquery_redshift/table.py,sha256=1tYH0WctSD-g-uE1LnlXx4g0tvjJq1n7wB4vQuThrXk,129
+atoti_directquery_redshift/table_options.py,sha256=iDSQwOxWTzRJrN_jTu1gFUX9pgoj6o5AO0vKwa7TZi4,5073
+atoti_directquery_redshift/data/atoti-directquery-redshift.jar,sha256=zfKFfvimuzreW4S4_KY-zk_O66m0P15qsPtuwU-7PD4,30883040
+atoti_directquery_redshift-0.8.0.dist-info/METADATA,sha256=lEWub45gfYItZGvwcISY-iwYOWZIlTRa-MAPub4ik7Y,813
+atoti_directquery_redshift-0.8.0.dist-info/WHEEL,sha256=xXVWFHOwiVUrSyw5z4tOAdevnUSxbBzqewjZqxZS0zU,109
+atoti_directquery_redshift-0.8.0.dist-info/entry_points.txt,sha256=Bv7-KhxTG-EUhBqAnlhjRJL46SsbX5fZfI7G0-GTZQ0,89
+atoti_directquery_redshift-0.8.0.dist-info/top_level.txt,sha256=9njSo-MBtRHVyQJjiOrYCVU9clyA9dEKc2uVD_-wHSg,27
+atoti_directquery_redshift-0.8.0.dist-info/RECORD,,
