@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+colcon_lint/__init__.py
+colcon_lint.egg-info/PKG-INFO
+colcon_lint.egg-info/SOURCES.txt
+colcon_lint.egg-info/dependency_links.txt
+colcon_lint.egg-info/entry_points.txt
+colcon_lint.egg-info/requires.txt
+colcon_lint.egg-info/top_level.txt
+colcon_lint/verb/__init__.py
+colcon_lint/verb/lint_depends.py
+test/test_cmake.py
+test/test_import.py
+test/test_launch.py
+test/test_setup.py

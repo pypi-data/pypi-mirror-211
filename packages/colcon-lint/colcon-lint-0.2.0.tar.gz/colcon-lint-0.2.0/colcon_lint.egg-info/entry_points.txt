@@ -1,0 +1,3 @@
+[colcon_core.verb]
+lint = colcon_lint.verb.lint_depends:LintVerb
+
