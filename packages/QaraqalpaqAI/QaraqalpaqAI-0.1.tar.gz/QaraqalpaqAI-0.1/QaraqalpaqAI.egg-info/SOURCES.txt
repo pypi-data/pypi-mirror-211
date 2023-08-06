@@ -1,0 +1,9 @@
+setup.py
+QaraqalpaqAI.egg-info/PKG-INFO
+QaraqalpaqAI.egg-info/SOURCES.txt
+QaraqalpaqAI.egg-info/dependency_links.txt
+QaraqalpaqAI.egg-info/not-zip-safe
+QaraqalpaqAI.egg-info/requires.txt
+QaraqalpaqAI.egg-info/top_level.txt
+qaraqalpaqai/__init__.py
+qaraqalpaqai/awdarma.py

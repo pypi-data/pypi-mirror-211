@@ -1,0 +1,1 @@
+from .qaraqalpaqai import awdarma
