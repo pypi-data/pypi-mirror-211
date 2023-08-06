@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+wfsutil.egg-info/PKG-INFO
+wfsutil.egg-info/SOURCES.txt
+wfsutil.egg-info/dependency_links.txt
+wfsutil.egg-info/top_level.txt
