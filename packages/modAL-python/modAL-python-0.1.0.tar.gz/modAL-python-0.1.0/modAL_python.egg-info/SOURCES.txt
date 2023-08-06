@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+modAL/__init__.py
+modAL/disagreement.py
+modAL/models.py
+modAL/uncertainty.py
+modAL/utils/__init__.py
+modAL/utils/selection.py
+modAL/utils/validation.py
+modAL_python.egg-info/PKG-INFO
+modAL_python.egg-info/SOURCES.txt
+modAL_python.egg-info/dependency_links.txt
+modAL_python.egg-info/requires.txt
+modAL_python.egg-info/top_level.txt
