@@ -1,0 +1,12 @@
+artscraper/__init__.py,sha256=ksxmtLrxRg0kYXnkVUfhhLeZuvt7hI3sZudu8zCJYoI,444
+artscraper/base.py,sha256=WBbohzpPy9pl8-SyYR3Y-X3xuHdWiU_TTCtvPGLoKXw,5374
+artscraper/find_artists.py,sha256=LJ_XOcCHHVQ8ok3SBVXOAQJKcQwANpxLpoxX1KqU3jM,2174
+artscraper/find_artworks.py,sha256=nm-xE_Mm-f1Y-S6gvyvYAVaaFDziTkk0oUnEvWPV1Z4,12637
+artscraper/functions.py,sha256=tjn_8Unf2UkvDdY1aeTo2Cz2R-rpWdHT7bRqSRtHccY,1092
+artscraper/googleart.py,sha256=DsIOtBtkpuIpDS8r2egN4HfIRBtRNJ8GWfdqsUbGE2w,5688
+artscraper/wikiart.py,sha256=OEKQL3G9S0D292W6QKBzRB0UBnVX8uykceW_LkuwwMw,7634
+artscraper-0.2.0.dist-info/LICENSE,sha256=F0fPQwRvb0mR1WGJ0J-D1IJIlq_KodaunhVNsLuIOkQ,1061
+artscraper-0.2.0.dist-info/METADATA,sha256=_hXNfjLJtsfSIfXoVTnJHIY-UZuB0vcanJ7lbcNqwFE,493
+artscraper-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+artscraper-0.2.0.dist-info/top_level.txt,sha256=lB_IDrTHtE-zzg-oQKVLQ9ffD1xiwwYUBB4s3XJCT1Y,11
+artscraper-0.2.0.dist-info/RECORD,,
