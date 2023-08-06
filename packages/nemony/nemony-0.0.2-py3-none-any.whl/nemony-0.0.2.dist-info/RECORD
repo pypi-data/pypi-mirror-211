@@ -1,0 +1,10 @@
+nemony/__init__.py,sha256=PFctGPWUWk04ZWw7JBxoOy25SUSA2p2guZtF0dMAmzM,21
+nemony/cli.py,sha256=pUe8CeLX8DAxP2V3utq7s782ELa9c6jxfT46SLVOuxU,1999
+nemony/nemony.py,sha256=HClHvzQcUfGeqv5V-oLTpozSSX_WJitulw475RoEX5Y,5176
+nemony/words.yml,sha256=innZy8Yj6WgasLaB4UZdbXuEk1kDOQpkyKF-VELKk3I,30324
+nemony-0.0.2.dist-info/LICENSE,sha256=pAZXnNE2dxxwXFIduGyn1gpvPefJtUYOYZOi3yeGG94,1068
+nemony-0.0.2.dist-info/METADATA,sha256=egEas0nUxAlKsxgsHUq8SEdxv-IJoYkv1jSsJsAVxW0,3863
+nemony-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+nemony-0.0.2.dist-info/entry_points.txt,sha256=SprV88M89JZCpG4QYoMRIIknyYN6h6EAuPgkv4a6hJU,43
+nemony-0.0.2.dist-info/top_level.txt,sha256=EFUJWAXTIb2yU8LHsZ3zukcwFjTMHGtuUXg6kXzmfUQ,7
+nemony-0.0.2.dist-info/RECORD,,
