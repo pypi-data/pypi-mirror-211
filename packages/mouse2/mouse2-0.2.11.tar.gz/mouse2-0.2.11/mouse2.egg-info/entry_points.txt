@@ -1,0 +1,7 @@
+[console_scripts]
+aggregates = aggregates:main
+backbone_twist = backbone_twist:main
+bond_autocorrelations = bond_autocorrelations:main
+data2pdb = data2pdb:main
+lamellar_alignment = lamellar_alignment:main
+local_alignment = local_alignment:main
