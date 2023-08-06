@@ -1,0 +1,14 @@
+{
+  "js/cast_vue/main.css": {
+    "file": "main-8a67667b.css",
+    "src": "js/cast_vue/main.css"
+  },
+  "js/cast_vue/main.ts": {
+    "css": [
+      "main-8a67667b.css"
+    ],
+    "file": "main-db10b965.js",
+    "isEntry": true,
+    "src": "js/cast_vue/main.ts"
+  }
+}
