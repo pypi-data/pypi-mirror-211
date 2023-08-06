@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: toolplot
+Version: 0.3.4
+Summary: toolplot is a alternative API to plotting backends
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: tooltime>=0.2.10
+Requires-Dist: toolstr>=0.9.3
+Requires-Dist: typing-extensions>=4.0.0
+Requires-Dist: matplotlib>=3.1
+Requires-Dist: numpy>=1.19.0
+
+
+# toolplot
+- `toolplot` is a convenience wrapper around many `matplotlib` functions
+- proper README coming later
+
+
+## Install
+```bash
+git clone https://github.com/sslivkoff/toolplot
+cd toolplot
+python3 -m pip install -e ./
+```
+
+
