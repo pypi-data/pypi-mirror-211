@@ -1,0 +1,29 @@
+{
+  "descriptionHash": "A382034132DD3C43612B41CAD36DED010A51CFF46F12049028362F75B1ED6678A01FF563F7DEE38F86EA265680B3E70EAC11026EB09DED17BA627D08D9CB948A",
+  "descriptionLocation": "/Users/jackdelahunt/Projects/sdks-demo/service-accounts.yaml",
+  "lockFileVersion": "1.0.0",
+  "kiotaVersion": "1.1.1",
+  "clientClassName": "ServiceAccountClient",
+  "clientNamespaceName": "client",
+  "language": "Python",
+  "usesBackingStore": false,
+  "includeAdditionalData": true,
+  "serializers": [
+    "Microsoft.Kiota.Serialization.Json.JsonSerializationWriterFactory",
+    "Microsoft.Kiota.Serialization.Text.TextSerializationWriterFactory",
+    "Microsoft.Kiota.Serialization.Form.FormSerializationWriterFactory"
+  ],
+  "deserializers": [
+    "Microsoft.Kiota.Serialization.Json.JsonParseNodeFactory",
+    "Microsoft.Kiota.Serialization.Text.TextParseNodeFactory",
+    "Microsoft.Kiota.Serialization.Form.FormParseNodeFactory"
+  ],
+  "structuredMimeTypes": [
+    "application/json",
+    "text/plain",
+    "application/x-www-form-urlencoded"
+  ],
+  "includePatterns": [],
+  "excludePatterns": [],
+  "disabledValidationRules": []
+}
