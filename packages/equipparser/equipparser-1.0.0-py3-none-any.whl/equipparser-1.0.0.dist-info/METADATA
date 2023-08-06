@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: equipparser
+Version: 1.0.0
+Summary: Turn the IRS' versioned XML 990's into python objects         with original line number and description.
+Home-page: https://github.com/vishalavalani/990-xml-reader
+Author: Vishal Avalani
+Author-email: vishal.avalani@gmail.com
+License: MIT
+Keywords: 990,nonprofit,tax
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: xmltodict
+Requires-Dist: unicodecsv
+
