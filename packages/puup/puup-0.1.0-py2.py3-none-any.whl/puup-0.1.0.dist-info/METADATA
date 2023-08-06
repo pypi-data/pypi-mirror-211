@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: puup
+Version: 0.1.0
+Summary: potentially universally unique phrase
+Author-email: Chris Coleman <chris@chriscoleman.uk>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: click
+Requires-Dist: confuse
+
+## Installation
+
+```
+pip install puup
+```
+
+## Usage
+
+### Python
+
+```python
+>>> import puup
+>>> puup.puup()
+('sideway', 'effectually', 'incessant', 'toiler')
+```
+
+### Shell
+
+```
+$ puup
+cosmetically nigh funded antiprotozoal
+```
+
