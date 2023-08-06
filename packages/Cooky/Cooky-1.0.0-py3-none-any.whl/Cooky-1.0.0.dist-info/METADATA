@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: Cooky
+Version: 1.0.0
+Summary: a simple extensible fuzzing tool with a friendly cli
+Author-email: ArchmagePsy <SeaOfCodeSi@gmail.com>
+Project-URL: Repository, https://github.com/ArchmagePsy/Cooky.git
+Keywords: simple,extensible,fuzzing,http
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: pony
+Requires-Dist: tabulate
+Requires-Dist: httpretty
+
+# Cooky
+A HTTP fuzzing commandline tool made in python with extensibility

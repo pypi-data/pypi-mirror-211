@@ -1,0 +1,16 @@
+cooky/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+cooky/main.py,sha256=r3vv6yYsPvBlUgQiW7e80WbbEbp74y-IjPsfbH5FcxQ,13313
+cooky/payloads/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cooky/payloads/feedback.py,sha256=ipLBQrQz-WpW-PziKFmq3VpbVM_ifyxMR1wmE2ilw_M,3944
+cooky/payloads/generator.py,sha256=11n9x_68_w-aJBLR9kCBVDviPS_NjsM8-H7H_hzaOIA,4041
+cooky/payloads/payload.py,sha256=QsoGgmesPeruxjL755Xm0_zzDt2qYhTeCRFrrdyzAtA,918
+cooky/results/__init__.py,sha256=Vb0dITNiA3Wnj5rFTffu4BCMbpju4xkhyuuh5VFqJPo,97
+cooky/results/models.py,sha256=ZYqIw6ufBXC8K4Z92TG3hbnIX-Wp_vjQdjzwmFoMFXQ,736
+cooky/tests/__init__.py,sha256=xSlIaYWrtNglCuzF2aj1cqQoCcwMHWENeRxA9rpoh3U,396
+cooky/tests/test_feedback.py,sha256=bPcanAIy9gp4fHALopDnfsaG1daZ0ZtKOmSowSYmj6c,1492
+cooky/tests/test_generators.py,sha256=GIT71BC8MOxhColrKLnPqgPm-_Q38Z2k-m72LrxEHrE,4533
+Cooky-1.0.0.dist-info/METADATA,sha256=_zINcyEV_CFxgLXWAmvhrIoMvvWcHdJ3JtGc8B0bjxU,491
+Cooky-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+Cooky-1.0.0.dist-info/entry_points.txt,sha256=Q1C7cL6EIETJLQRiEp4zkcaFTjItwNx_3jGWVDXX6VM,41
+Cooky-1.0.0.dist-info/top_level.txt,sha256=7ECHbm-AmLSihpD90dwv81xOa9C6vo1OaA22-orXfEc,6
+Cooky-1.0.0.dist-info/RECORD,,
