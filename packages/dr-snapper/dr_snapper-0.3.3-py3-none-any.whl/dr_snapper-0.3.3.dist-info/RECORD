@@ -1,0 +1,8 @@
+snapper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+snapper/cli.py,sha256=nFDQ0S-r6G__HXdLIthRlr2werHhYdI2CQqDlpAvi1A,8957
+snapper/utils.py,sha256=qo2MxaWYsIX_8Yn3F7FCDgQ-J8eyi7N8MnbkKbOh3vM,1482
+dr_snapper-0.3.3.dist-info/LICENSE,sha256=re8WavNuf1SFHhsz8DNEz5BJbwkVXHtrh4zIPSgkTs4,1070
+dr_snapper-0.3.3.dist-info/METADATA,sha256=br1K703XjJJikPn_W_ZDMNP-wTXGPIXYDQ3MTTZRVSg,674
+dr_snapper-0.3.3.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+dr_snapper-0.3.3.dist-info/entry_points.txt,sha256=6mnh9Ntj5JXWMLiPV6WPc9Dmz20T6z0S-z7QTbHKq04,43
+dr_snapper-0.3.3.dist-info/RECORD,,
