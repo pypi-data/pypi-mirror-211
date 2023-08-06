@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <script defer src="https://pyscript.net/alpha/pyscript.js">
+    </script>
+    <py-env>
+      - boost_histogram
+    </py-env>
+  </head>
+  <body>
+    <py-script>
+import boost_histogram as bh
+print(f"Hello {bh.Histogram()!r}")
+    </py-script>
+  </body>
+</html>
