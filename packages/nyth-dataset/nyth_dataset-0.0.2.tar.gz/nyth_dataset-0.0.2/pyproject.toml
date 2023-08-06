@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=57.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nyth_dataset"
+version = "0.0.2"
+authors = [
+    { name = 'Juan-Luis García-Mendoza', email = 'jluisgm90@gmail.com' },
+]
+description = 'NYT-H dataset package allows the processing of the NYT-H dataset proposed by Zhu et al., 2020. NYT-H is based on the New York Times 2010 ( NYT2010) dataset proposed by Riedel et al., 2010. The advantage of NYT-H dataset is the manual annotation of the test partition.'
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/juanluis17/nyth-dataset"
+"Bug Tracker" = "https://github.com/juanluis17/nyth-dataset/issues"

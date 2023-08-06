@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+nyth_dataset/__init__.py
+nyth_dataset/nyth.py
+nyth_dataset/utils.py
+nyth_dataset.egg-info/PKG-INFO
+nyth_dataset.egg-info/SOURCES.txt
+nyth_dataset.egg-info/dependency_links.txt
+nyth_dataset.egg-info/requires.txt
+nyth_dataset.egg-info/top_level.txt
