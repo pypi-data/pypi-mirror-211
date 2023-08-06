@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "jsa"
+version = "0.4.0"
+description = ""
+authors = ["Jack Delahunt <45426048+jackdelahunt@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "jsa"}]
+include = [
+    { path = "jsa/**/*", format=["sdist", "wheel"] },
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
