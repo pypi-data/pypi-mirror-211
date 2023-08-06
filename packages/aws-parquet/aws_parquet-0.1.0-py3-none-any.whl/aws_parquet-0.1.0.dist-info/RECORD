@@ -1,0 +1,8 @@
+aws_parquet/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aws_parquet/_types.py,sha256=IbXHJB7oTYQ5Y9J0sst6OP-WZ0tgh1ntcWqLWZP6FLo,315
+aws_parquet/dataset.py,sha256=F4_sP3sCFPVQ7B6NJ92iwpW2-GMQzfGa8XxtOejhEaY,14354
+aws_parquet/interface.py,sha256=xiT6O9oIVZE_0EB4Fhh0EUDU5xtiX-tL9SRXa52BkDk,2473
+aws_parquet/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aws_parquet-0.1.0.dist-info/METADATA,sha256=kFFB2VGYVcjm3ZtQcMbDgU9T6LfLwBNt9dNuVVum5YM,485
+aws_parquet-0.1.0.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+aws_parquet-0.1.0.dist-info/RECORD,,
