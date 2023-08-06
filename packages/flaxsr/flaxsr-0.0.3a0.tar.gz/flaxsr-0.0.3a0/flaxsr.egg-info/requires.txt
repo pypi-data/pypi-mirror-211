@@ -1,0 +1,6 @@
+jax
+jaxlib
+flax
+einops
+tensorflow
+numpy
