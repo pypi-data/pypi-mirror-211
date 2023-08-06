@@ -1,0 +1,14 @@
+LICENCE.md
+README.md
+pyproject.toml
+src/sockettools/__init__.py
+src/sockettools/client.py
+src/sockettools/clienthandler.py
+src/sockettools/events.py
+src/sockettools/protocol.py
+src/sockettools/server.py
+src/sockettools/transport.py
+src/sockettools.egg-info/PKG-INFO
+src/sockettools.egg-info/SOURCES.txt
+src/sockettools.egg-info/dependency_links.txt
+src/sockettools.egg-info/top_level.txt
