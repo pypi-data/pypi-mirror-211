@@ -1,0 +1,18 @@
+# requirements.txt
+
+ffmpeg-python
+ftfy
+imageio
+jupyter
+matplotlib
+ml-starter==0.0.44
+more_itertools
+numpy
+numpy-quaternion
+open3d
+opencv-python
+pandas
+pyliblzfse
+seaborn
+torch>=2.0.0
+torchvision>=0.13.1

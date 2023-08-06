@@ -1,0 +1,2 @@
+[console_scripts]
+runml = usa.scripts.cli:cli_main

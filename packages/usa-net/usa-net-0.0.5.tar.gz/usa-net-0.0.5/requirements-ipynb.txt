@@ -1,0 +1,12 @@
+# requirements-nb.txt
+
+ipygany
+ipywidgets
+nbstripout
+pre-commit
+pybullet
+pythreejs
+pyvista
+scikit-learn
+scipy
+trame

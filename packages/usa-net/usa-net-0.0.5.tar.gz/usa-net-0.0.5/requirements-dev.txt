@@ -1,0 +1,9 @@
+# requirements-dev.txt
+
+black
+darglint
+mypy
+mypy-extensions
+pytest
+ruff
+typing-extensions
