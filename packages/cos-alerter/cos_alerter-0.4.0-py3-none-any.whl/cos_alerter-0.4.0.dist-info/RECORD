@@ -1,0 +1,13 @@
+cos_alerter/alerter.py,sha256=dVeq0znAiGlCgVuoTfPnnD3xS87Qs09MOGaQXn90IYw,7721
+cos_alerter/config-defaults.yaml,sha256=GyvKWsU_6RQfIKJIxl8qsxk4nCjzEKUuSw44x37oZRE,1272
+cos_alerter/daemon.py,sha256=yq2SE1gAXMKGYKmNjcLnNI5ESNCWL0-rfs0lSUNEcAA,3738
+cos_alerter/logging.py,sha256=2mEH1Ij1KLopiOMvHtcY0H5pw6Y9dfguDzyyCLwrVnY,1126
+cos_alerter/server.py,sha256=dalJJMN8m4pQmiLZkgn8fAawpgA60zbGwv0-_xj3q5o,2380
+cos_alerter/static/vanilla-framework-version-3.14.0.min.css,sha256=cv6NCget0sfJcBzc_a1GOU3-qZx92lYysZ5_TQTRONk,328338
+cos_alerter/templates/dashboard.html,sha256=H41XtUQPzNfaQO2iVMgOrNyCOq4_zM48sPBfzwJ4Lrk,1474
+cos_alerter-0.4.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+cos_alerter-0.4.0.dist-info/METADATA,sha256=frmV-lQz0r45m5x2A85JNbqeUx97FINe1LrZjF_Vl0Q,2152
+cos_alerter-0.4.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+cos_alerter-0.4.0.dist-info/entry_points.txt,sha256=mViLymbmQpzjr2RAtjw3DRdnncAoxU1OHLEoLha0Tb8,56
+cos_alerter-0.4.0.dist-info/top_level.txt,sha256=B9grCepCxcCrM72tmSeYUIu-ikcR3zmJZGU1W3XKQCc,12
+cos_alerter-0.4.0.dist-info/RECORD,,
