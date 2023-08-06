@@ -1,0 +1,2 @@
+[console_scripts]
+muse = muse.__main__:muse_main

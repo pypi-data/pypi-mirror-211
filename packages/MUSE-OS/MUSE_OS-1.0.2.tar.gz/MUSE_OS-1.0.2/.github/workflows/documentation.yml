@@ -1,0 +1,57 @@
+name: "Build and publish documentation"
+on:
+    pull_request:
+        types: [opened, synchronize, reopened]
+    push:
+        branches: ["main"]
+
+jobs:
+  html_docs:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: ammaraskar/sphinx-action@master
+      with:
+        docs-folder: "docs/"
+        pre-build-command: |
+            apt update -y 
+            apt install -y pandoc
+            python -m pip install -e .
+            python -m pip install --upgrade -r docs/requirements.txt
+        build-command: sphinx-build -n -b html . ../build/html
+    - uses: actions/upload-artifact@v3
+      with:
+        name: DocumentationHTML
+        path: build/html/
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      if: github.ref == 'refs/heads/master'
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build/html
+
+  pdf_docs:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: ammaraskar/sphinx-action@master
+      with:
+        docs-folder: "docs/"
+        pre-build-command: |
+            apt update -y 
+            apt install -y pandoc
+            python -m pip install -e .
+            python -m pip install --upgrade -r docs/requirements.txt
+        build-command: sphinx-build -n -b latex . ../build/latex
+    - name: build latex
+      run: |
+        sudo apt update -y 
+        sudo apt install -y latexmk texlive-latex-recommended \
+                texlive-latex-extra texlive-fonts-recommended
+        sudo chown -R $(whoami) build
+        cd build/latex
+        latexmk -interaction=nonstopmode -pdf muse
+    - uses: actions/upload-artifact@v3
+      with:
+        name: DocumentationPDF
+        path: build/latex/muse.pdf
