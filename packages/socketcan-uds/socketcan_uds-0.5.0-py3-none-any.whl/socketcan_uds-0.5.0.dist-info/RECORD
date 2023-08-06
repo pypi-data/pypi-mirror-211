@@ -1,0 +1,13 @@
+uds/__init__.py,sha256=teXdpevX6ROUv7wUIKIe-r_8xL2Qorac3-sedZN0gfI,284
+uds/client.py,sha256=LVfYVzge4vIG7ev3NJE3dZSnhSwZ3jzEy-Xte6LrVo8,23489
+uds/common.py,sha256=868Uj-qLmtFEamRo251PgwCGYIP1jgHZuQtkNlAKZ3s,72855
+uds/odx_elements.py,sha256=LOQEzm-9sjKAyROB-rcuSq54ewnOuVJclc9hAUa8uBs,21746
+uds/odx_file_utils.py,sha256=sAUqSDy7Cb-vvsGYoHm_Fqly-VzCyJ0qYODZ7pCD69I,7210
+uds/program_file.py,sha256=PMLrzH17XH7TOYabb6jlgbABDmqa8vpLuxKfgPNxabc,18381
+uds/programmer.py,sha256=yDpE5N1e5lYor19C5iUPBN3jSj20HNrynciHJlnAN9s,31021
+uds/security_access.py,sha256=wVDdWsiYGzIbL5z4T30LdsdTvxLJISTMVEW3ZC-KVNg,1951
+socketcan_uds-0.5.0.dist-info/LICENSE,sha256=eJGgQ4JHf1j7GXU2BLfIW2uyUrRd7g6j4LWO5E7CNQE,35908
+socketcan_uds-0.5.0.dist-info/METADATA,sha256=8V2k1qdKv20gAc5u25pwZNFfcXDrJ_p2-jQrNhUxFXI,2326
+socketcan_uds-0.5.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+socketcan_uds-0.5.0.dist-info/top_level.txt,sha256=2En-Eo9x5MIZqbhgMtHyX3t12hHwy-DDXa5NMnLRBno,4
+socketcan_uds-0.5.0.dist-info/RECORD,,
