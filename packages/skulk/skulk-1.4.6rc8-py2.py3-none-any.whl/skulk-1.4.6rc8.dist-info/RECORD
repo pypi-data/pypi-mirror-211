@@ -1,0 +1,10 @@
+skulk/VERSION,sha256=FL1JCEHgyA-o7Hd068lhxq_TSd58SLzKDYSN8HtDS9A,10
+skulk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+skulk/bumper.py,sha256=UMqPRQD3Pt1HrG0lcBb7-f2oqHCx_jZEpgVto5yDbcU,9348
+skulk/skulk.py,sha256=sGpBUM8pXlOY7sUNJaKk-WtCC43npxC_YcmQFP4A4Kk,9105
+skulk/util.py,sha256=64hqDrkuXZTPVmCydXUdsp_79Gl_UU8QcqxeDzH6PQk,2625
+skulk-1.4.6rc8.dist-info/METADATA,sha256=Vfpg6aOEKJc8LrDm6_XkP3oBGFhQ5qzM2hIMu8Hhnj0,649
+skulk-1.4.6rc8.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+skulk-1.4.6rc8.dist-info/entry_points.txt,sha256=Gis7pLiCEkPWw7tn3_U-G9XPwOtBvTL4m11EqDi613o,44
+skulk-1.4.6rc8.dist-info/top_level.txt,sha256=EOnQuA1Vdf2WjOz9xLTPLCynTq2IdzLPGQ54LdhP7oY,6
+skulk-1.4.6rc8.dist-info/RECORD,,
