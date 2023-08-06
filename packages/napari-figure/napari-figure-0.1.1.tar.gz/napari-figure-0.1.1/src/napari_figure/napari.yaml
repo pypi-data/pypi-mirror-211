@@ -1,0 +1,10 @@
+name: napari-figure
+display_name: Figure
+contributions:
+  commands:
+    - id: napari-figure.make_qwidget
+      python_name: napari_figure.figure_widget:FigureWidget
+      title: Figure
+  widgets:
+    - command: napari-figure.make_qwidget
+      display_name: Figure maker
