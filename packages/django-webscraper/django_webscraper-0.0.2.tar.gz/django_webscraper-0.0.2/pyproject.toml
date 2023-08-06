@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "django-webscraper"
+version = "0.0.2"
+description = "A standalone Django app for scraping websites"
+authors = ["Martin Kjellberg <martin@kjellberg.io>"]
+readme = "README.md"
+packages = [{include = "scraper"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
