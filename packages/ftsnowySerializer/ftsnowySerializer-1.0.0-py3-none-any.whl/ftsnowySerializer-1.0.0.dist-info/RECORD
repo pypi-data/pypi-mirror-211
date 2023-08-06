@@ -1,0 +1,13 @@
+MySerializer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+MySerializer/base.py,sha256=uyPpbT2UkPfwk1Scy-SY2ZuRePm3nR9e5lyNmQwaZCI,8510
+MySerializer/lib.py,sha256=yKCIKXUIpdWqvUSoYISZ6bePPQYJBr2JiQgdMiiSvM8,909
+MySerializer/serialize.py,sha256=fMTt6BrlhWlByFkEStKPop102KUG6yn01QuDcJAxGNE,6567
+MySerializer/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+MySerializer/utils/constants.py,sha256=mFb5UJLHB-kLb1GtLV-_pcknGlagvIOQXk1MEDtvnEg,783
+MySerializer/utils/helpers.py,sha256=p4eql7lIBbouuGgynkeEki5Wg8yhth-51icL4pTZANk,1133
+MySerializer/utils/templates.py,sha256=ne4I6ScLNcay-XLR2bhB0gUyTwGANWm46EBM3gfNcJI,327
+ftsnowySerializer-1.0.0.dist-info/METADATA,sha256=6neJVvsraugh8GTeK5Va30lket1F3EYsgZdMA3hoKLw,153
+ftsnowySerializer-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ftsnowySerializer-1.0.0.dist-info/entry_points.txt,sha256=8GEeKHLy3ZT7BsTsnsnNtdDtvP3zo7rAZiKbaf5s6K8,55
+ftsnowySerializer-1.0.0.dist-info/top_level.txt,sha256=hIlf0hoMTK1lS2g7h8tEfcDhYi4tjh73145lA7ahHGQ,13
+ftsnowySerializer-1.0.0.dist-info/RECORD,,
