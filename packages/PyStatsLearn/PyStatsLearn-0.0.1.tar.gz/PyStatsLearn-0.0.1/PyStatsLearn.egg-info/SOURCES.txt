@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+PyStatsLearn/PyLearn.py
+PyStatsLearn/__init__.py
+PyStatsLearn.egg-info/PKG-INFO
+PyStatsLearn.egg-info/SOURCES.txt
+PyStatsLearn.egg-info/dependency_links.txt
+PyStatsLearn.egg-info/top_level.txt
