@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ezmail
+Version: 0.1.0
+Summary: easily send out emails via SMTP
+Home-page: https://github.com/Alex23rodriguez/ezmail
+Author: Alex Rodriguez
+Author-email: alex.rodriguez.oro@gmail.com
+Keywords: python,mail,smtp,cli
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-dotenv
+
+# ezmail
+easily send out emails via SMTP
