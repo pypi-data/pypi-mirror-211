@@ -1,0 +1,16 @@
+neurodatagen/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neurodatagen/eeg/__init__.py,sha256=H0kbx-wMckQz80iapyW8yWjHTLidKNRPUBw4fXnfk78,50
+neurodatagen/eeg/gen_eeg.py,sha256=ip6dvfFsuF6oXxulFrKnndt8yG8bXy3Rif3sr7hSxhs,2172
+neurodatagen/eeg/gen_eeg_mne.py,sha256=GKpxg2anGeqo6Z7PDlKWye751EwI2xNChhzPrs934Kc,2067
+neurodatagen/ephys/__init__.py,sha256=OLq5Y5EvUWDTOEdMw_PIAB8DuXJdL3hV7YzrWD8_utU,114
+neurodatagen/ephys/gen_ephys.py,sha256=stzQJx1YuqgZ8mhRoPLJ4rGkxW3iS-q5OnIwT5DP09U,6740
+neurodatagen/ephys/gen_spiketimes.py,sha256=GJGp6vfF5glVYKToH6kR5BnbVaPo8ZBgNRm3EDGAFak,2977
+neurodatagen/ephys/gen_waveforms.py,sha256=Ogo8j33X1EaalaMd2iRVx_DXjxOUb2SwW3ZOHsyU-j4,1477
+neurodatagen/ephys/load_waveforms.py,sha256=q1LfnFcrXxw-04orOdGkC9DQ8SQxFgcHrwfAp-wJKIo,651
+neurodatagen/imaging/__init__.py,sha256=Tk2dpmpdiX7oPsVwE4M2HgCAt5w1K-pdIZSgDNAETBE,51
+neurodatagen/imaging/gen_miniscope.py,sha256=l8cFexZ6u0lYc5LEMqPqYluAVXCEonEbdbj5MIS6gsw,18729
+neurodatagen-0.1.0a3.dist-info/LICENSE.txt,sha256=n3mev-cFOon7KymbDVJBN1_QkjGDO2JFw4Eb0NwWXpo,1514
+neurodatagen-0.1.0a3.dist-info/METADATA,sha256=-9XaqOOXfUCkHZ4vT_MXpGTDUHgQf44Afn1q_AkpCUM,285
+neurodatagen-0.1.0a3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+neurodatagen-0.1.0a3.dist-info/top_level.txt,sha256=jlbMJgvr9TrEJlHbgfCSzhrrLXuPpRn9nNKxytnt8hQ,13
+neurodatagen-0.1.0a3.dist-info/RECORD,,
