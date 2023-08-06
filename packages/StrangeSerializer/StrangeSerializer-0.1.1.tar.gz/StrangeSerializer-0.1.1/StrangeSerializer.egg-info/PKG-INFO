@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: StrangeSerializer
+Version: 0.1.1
+Summary: I have to do it for 3 Lab in OOP
+Author: Mihail
+Author-email: nzhdeh.baboyan@icloud.com
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent

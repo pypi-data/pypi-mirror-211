@@ -1,0 +1,1 @@
+from StrangeSerializer import StrangeJSON

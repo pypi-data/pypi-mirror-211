@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+StrangeSerializer/StrangeJSON.py
+StrangeSerializer/__init__.py
+StrangeSerializer.egg-info/PKG-INFO
+StrangeSerializer.egg-info/SOURCES.txt
+StrangeSerializer.egg-info/dependency_links.txt
+StrangeSerializer.egg-info/requires.txt
+StrangeSerializer.egg-info/top_level.txt
