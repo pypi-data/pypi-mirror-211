@@ -1,0 +1,6 @@
+networkx
+numpy
+gensim
+editdistance
+
+[dev]
