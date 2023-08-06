@@ -1,0 +1,5 @@
+pyproject.toml
+neuroviews.egg-info/PKG-INFO
+neuroviews.egg-info/SOURCES.txt
+neuroviews.egg-info/dependency_links.txt
+neuroviews.egg-info/top_level.txt
