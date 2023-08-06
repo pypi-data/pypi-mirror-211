@@ -1,0 +1,11 @@
+bvslusa/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+bvslusa/_modidx.py,sha256=aRwWOeXxM0IdGjpc1jqUG197Nbzn4_-UNJ63ebmuXF4,787
+bvslusa/evaluate.py,sha256=k6qg2Xhz-Pa76rmfbgQqGhO_4E-BdhMx-TII1japfnY,954
+bvslusa/metrics.py,sha256=pGCazHHzF3FR4YA44N0ky7kihjxdQqY4dlJYuqdbgIw,1528
+bvslusa/validate.py,sha256=iiEIXNA7o8rxFku4K3g8jeQxM7dUCSrItgGfrj3cT0U,780
+bvslusa-0.0.1.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+bvslusa-0.0.1.dist-info/METADATA,sha256=52V4lQnXezY2msHQN7C_fU6WfL2MY0PoBiOYBuHpAOo,4877
+bvslusa-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+bvslusa-0.0.1.dist-info/entry_points.txt,sha256=YEMrct_q4o_2Z6trBJ_drXura28h0meXEPWFQOPFHM0,36
+bvslusa-0.0.1.dist-info/top_level.txt,sha256=E9JgllP8tEcTIqep-yTDkxZxlO1OyBu2oLY991MwDdU,8
+bvslusa-0.0.1.dist-info/RECORD,,
