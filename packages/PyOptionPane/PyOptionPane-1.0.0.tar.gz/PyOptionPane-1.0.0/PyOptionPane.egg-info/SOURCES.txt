@@ -1,0 +1,8 @@
+setup.py
+PyOptionPane/PyOptionPane.py
+PyOptionPane/__init__.py
+PyOptionPane.egg-info/PKG-INFO
+PyOptionPane.egg-info/SOURCES.txt
+PyOptionPane.egg-info/dependency_links.txt
+PyOptionPane.egg-info/requires.txt
+PyOptionPane.egg-info/top_level.txt
