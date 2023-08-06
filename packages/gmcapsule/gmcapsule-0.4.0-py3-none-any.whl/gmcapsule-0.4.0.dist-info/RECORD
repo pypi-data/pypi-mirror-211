@@ -1,0 +1,12 @@
+example.ini,sha256=WNuOeOGmhpxG0RQOYJ4sI5uRUnd74Tbz_DK_TgqcEGI,1454
+gmcapsule/__init__.py,sha256=7Gv-DMCecXhjWUpl0pl0aFqtKsN275oxIOdW-fJA9Gg,25496
+gmcapsule/gemini.py,sha256=IerPZkZSu3b_CfgaLA0kJt9b5d0613wS_gycM3Umo7I,24608
+gmcapsule/markdown.py,sha256=LtSF2kL3GjRGMH2kM3lCE9mb_G1FF8-LhiupanlmKwQ,4034
+gmcapsule/modules/10_rewrite.py,sha256=8gEJAnWSRJOH8vqGNJsdvqyXL1CSq3n1CjJTn31FHLY,2649
+gmcapsule/modules/80_gitview.py,sha256=fWEEdFCWKUMwMJy9gJdy1ehwgCiJLYB7oqcRQo41iu8,18589
+gmcapsule/modules/90_cgi.py,sha256=1Lfe5HPxWaQaM4YOSgT-g_g3ut6KlO22h7eAe2C6jgM,6357
+gmcapsule/modules/99_static.py,sha256=fOtEfE7g60MWGK_2On0YPXYAK57n-k62HHvRhUBMxSQ,2347
+gmcapsule-0.4.0.dist-info/METADATA,sha256=afqbpyVsSCaTeG7-x6HDjz_v611nKx2e5jzfi9oxseo,3950
+gmcapsule-0.4.0.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+gmcapsule-0.4.0.dist-info/entry_points.txt,sha256=KGnXDieNPjRsWCdFvuOKBxKNLBlLoDhqwPb2lLnRkOM,52
+gmcapsule-0.4.0.dist-info/RECORD,,
