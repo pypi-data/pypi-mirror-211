@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: vadvergasov_serialization
+Version: 1.1.0
+Summary: Serialization library
+Home-page: https://github.com/VadVergasov/SCCS
+Author: VadVergasov
+Author-email: vadim.vergasov2003@gmail.com
+License: GNU GPLv3
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
+Requires-Python: ==3.11
+License-File: LICENSE
