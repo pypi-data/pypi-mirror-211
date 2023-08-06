@@ -1,0 +1,14 @@
+faceshine/__init__.py,sha256=Cjq2Eu620gGQcFfhOTpvwm1r9sLomMBvchVrGKrnZNI,203
+faceshine/__main__.py,sha256=drYa5bFqxPKUbEMJjQFzenmZbXPL0KDyNxeR6g6Sv-g,602
+faceshine/app.py,sha256=GZZ_wFstkk2IjHJ1JZlfuuo-G-Di7kewCajaTPqPdhE,994
+faceshine/utils.py,sha256=RcKbcMkVFjGxA_Kwd6bRNU6ROlhqeCoS2bXRX-BM9T4,636
+faceshine/segmentation/__init__.py,sha256=kzyIh3PBhevj_NnkI7U9UeCGh1rePBFRgFhykzrO1Qc,53
+faceshine/segmentation/task_zero_background.py,sha256=fre-e4BgrvI2jLFpTJ81L8e-ibIYDO-_Bry__KVpy9I,1435
+faceshine/segmentation/base/Task.py,sha256=Lg60N28EDk-kTHp81GgriJiqpCe1199OBd2qsMYvNgM,373
+faceshine/segmentation/base/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+faceshine-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+faceshine-1.0.0.dist-info/METADATA,sha256=9ldBjstuHKado51rsBx-qTP0u3O6jFyri3qde6y4bl0,1115
+faceshine-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+faceshine-1.0.0.dist-info/entry_points.txt,sha256=KRkbAzQEX2XD27tLpnPpofiRGLfQbRdfehtMnNhh9XI,54
+faceshine-1.0.0.dist-info/top_level.txt,sha256=e46vEsYRs7nWGitm7lwdDG_KrKG_Wfle_rLSqNMQXJ8,10
+faceshine-1.0.0.dist-info/RECORD,,

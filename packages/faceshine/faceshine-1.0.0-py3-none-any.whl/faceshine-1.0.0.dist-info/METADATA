@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: faceshine
+Version: 1.0.0
+Summary: Photo image enhancer
+Home-page: https://github.com/leonelhs/yapsy-gui
+Author: leonel hernandez
+Author-email: leonelhs@gmail.com
+License: Apache
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.24.3)
+Requires-Dist: torch (>=2.0.0)
+Requires-Dist: opencv-python (>=4.7.0.72)
+Requires-Dist: flask (>=2.3.2)
+Requires-Dist: flask-restful (>=0.3.10)
+
+## Face Shine Server
+
+### This project is an AI Photo enhancer running over pytorch
