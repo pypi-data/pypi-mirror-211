@@ -1,0 +1,5 @@
+[console_scripts]
+nesc = nesc.clis.cli:cli
+nesc-cli = nesc.clis.cli:cli
+nesc-ocr = nesc.clis.guis.ocr:main
+nesc-seg = nesc.clis.guis.seg:main
