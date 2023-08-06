@@ -1,0 +1,2 @@
+[console_scripts]
+logavu = logavu.cli:cli

@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: logavu
+Version: 0.1.0
+Project-URL: Documentation, https://github.com/crungelab/logavu#readme
+Project-URL: Issues, https://github.com/crungelab/logavu/issues
+Project-URL: Source, https://github.com/crungelab/logavu
+Author-email: Kurtis Fields <kurtisfields@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: attacus==0.1.5
+Requires-Dist: click~=8.1.3
+Requires-Dist: loguru~=0.7.0
+Requires-Dist: python-dotenv~=1.0.0
+Description-Content-Type: text/markdown
+
+# LogaVu
+
+Log Analyzer and Visualizer
+
+
+## Usage
+Here is an example using [loguru](https://github.com/Delgan/loguru)
+Put this code in the Python program you want to use with LogaVu 
+
+```python
+import socket
+from loguru import logger
+
+HOST, PORT = 'localhost', 5005
+
+sock = socket.socket(socket.AF_INET, # Internet
+                     socket.SOCK_DGRAM) # UDP
+
+def logudp(message: str):
+    sock.sendto(bytes(message, 'utf-8'), (HOST, PORT))
+
+logger.add(logudp)
+
+```
