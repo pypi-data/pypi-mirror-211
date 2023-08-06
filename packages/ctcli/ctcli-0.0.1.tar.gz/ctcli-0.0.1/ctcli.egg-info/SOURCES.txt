@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+ctcli.egg-info/PKG-INFO
+ctcli.egg-info/SOURCES.txt
+ctcli.egg-info/dependency_links.txt
+ctcli.egg-info/top_level.txt
