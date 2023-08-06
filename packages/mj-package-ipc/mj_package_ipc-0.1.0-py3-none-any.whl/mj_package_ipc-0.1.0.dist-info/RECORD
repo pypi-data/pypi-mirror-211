@@ -1,0 +1,11 @@
+mj_package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mj_package/mj_package1.py,sha256=qeaxceqzlN6gxEmnzdjq-QryBSAevIe6EqvGGSQzo70,229
+mj_package/mj_package2.py,sha256=Gl9c1H3w8_2-3mQE0L2boAPdLbPrFMPWZKwOMEpwpYc,91
+mj_package_ipc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mj_package_ipc/mj_package1.py,sha256=qeaxceqzlN6gxEmnzdjq-QryBSAevIe6EqvGGSQzo70,229
+mj_package_ipc/mj_package2.py,sha256=Gl9c1H3w8_2-3mQE0L2boAPdLbPrFMPWZKwOMEpwpYc,91
+mj_package_ipc-0.1.0.dist-info/METADATA,sha256=stMczR1Xcq7PXe4a_uitZ28VZU2Vz8rcfLZcAYigDI0,308
+mj_package_ipc-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+mj_package_ipc-0.1.0.dist-info/licence,sha256=i85tzsx9_axON50LM51LPE2eOa2Smg2hwuPir-TgzC8,30
+mj_package_ipc-0.1.0.dist-info/top_level.txt,sha256=lBtLfRvlGKEEVEP6LXgStnQhKxu9Z-Vy0s7i3N5ElJY,15
+mj_package_ipc-0.1.0.dist-info/RECORD,,
