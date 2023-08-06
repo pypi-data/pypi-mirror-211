@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/mysql_oop.egg-info/PKG-INFO
+src/mysql_oop.egg-info/SOURCES.txt
+src/mysql_oop.egg-info/dependency_links.txt
+src/mysql_oop.egg-info/top_level.txt
+src/mysqloop/Model.py
+src/mysqloop/Users.py
+src/mysqloop/__init__.py
+src/mysqloop/mysqloop.py
