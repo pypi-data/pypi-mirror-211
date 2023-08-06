@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "hypersphereapi"
+version = "1.0.0"
+authors = [
+  { name="Gregory Morford", email="gregory.morford@hyperspheretech.com" },
+]
+description = "Use HyperSphere's Python API to rapidly secure your data in a quantum-immune fashion!"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://hyperspheretech.com"
+"Documentation" = "https://docs.hyperspheretech.com"
