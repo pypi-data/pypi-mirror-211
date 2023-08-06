@@ -1,0 +1,6 @@
+openai
+pandas
+fuzzywuzzy
+stringmetric
+rapidfuzz
+IPython
