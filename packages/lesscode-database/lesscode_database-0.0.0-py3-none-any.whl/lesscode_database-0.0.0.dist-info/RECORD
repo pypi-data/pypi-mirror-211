@@ -1,0 +1,10 @@
+lesscode_database/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lesscode_database/connect_pool.py,sha256=IboROQdvBq4w97wARKLh5sriSP2jBfVxDLQMaF-lKWE,20065
+lesscode_database/connection_info.py,sha256=pxn1JhzIYcXvuv1LA3Jesg245yMRVDrbM0M1MOKjiqU,1085
+lesscode_database/options.py,sha256=imFAPumDfekbHzyexOFDquJNR3gqXHph8FHri0TIRhk,1851
+lesscode_database/version.py,sha256=ShXQBVjyiSOHxoQJS2BvNG395W4KZfqMxZWBAR0MZrE,22
+lesscode_database-0.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+lesscode_database-0.0.0.dist-info/METADATA,sha256=182pFY--XHZMIudwIfsFzrdUgsdPx_LfS1FqT29ZJSE,412
+lesscode_database-0.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+lesscode_database-0.0.0.dist-info/top_level.txt,sha256=h6cg13be6kkDfNaX9nWeDcfducTb5bKG5iYRO2JPmAM,18
+lesscode_database-0.0.0.dist-info/RECORD,,
