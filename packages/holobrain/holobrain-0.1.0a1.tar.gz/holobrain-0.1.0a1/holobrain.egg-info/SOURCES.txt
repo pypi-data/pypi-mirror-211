@@ -1,0 +1,5 @@
+pyproject.toml
+holobrain.egg-info/PKG-INFO
+holobrain.egg-info/SOURCES.txt
+holobrain.egg-info/dependency_links.txt
+holobrain.egg-info/top_level.txt
