@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+c4p/__init__.py
+c4p/case.py
+c4p/utils.py
+c4p.egg-info/PKG-INFO
+c4p.egg-info/SOURCES.txt
+c4p.egg-info/dependency_links.txt
+c4p.egg-info/not-zip-safe
+c4p.egg-info/requires.txt
+c4p.egg-info/top_level.txt
