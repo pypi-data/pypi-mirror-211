@@ -1,0 +1,10 @@
+README.rst
+setup.py
+longPolling/__init__.py
+longPolling/client.py
+longPolling/server.py
+longPolling.egg-info/PKG-INFO
+longPolling.egg-info/SOURCES.txt
+longPolling.egg-info/dependency_links.txt
+longPolling.egg-info/requires.txt
+longPolling.egg-info/top_level.txt
