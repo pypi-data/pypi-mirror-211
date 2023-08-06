@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: GameWidgets
+Version: 0.1.3
+Summary: Make Games Easier with GameWidgets 
+Home-page: https://github.com/SuperGuy123456/GameWidgets
+Author: Manomay tyagi
+Author-email: tyagimanomay57@gmail.com
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# GameWidgets
+
+**Check PyPi for download**
+
+
+Welcome To the github Repositry!
+
+**Install**
+
+* Mac
+
+  ```pip3 install GameWidgets```
+  
+* Windows
+
+  ```pip install GameWidgets```
+  Examples are now avalible and so are Runtime tests
+  **Warning**
+  You have to import all files manually
