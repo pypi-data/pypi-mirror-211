@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: lifeguard-k8s
+Version: 1.0.0
+Summary: Lifeguard integration with Kubernetes
+Home-page: https://github.com/LifeguardSystem/lifeguard-k8s
+Author: Diego Rubin
+Author-email: contact@diegorubin.dev
+License: GPL2
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: System :: Monitoring
+Description-Content-Type: text/markdown
+
+# Lifeguard K8S
+
+Integration with Kubernetes
+
+## Validations
+
+- __pods_validation__: check if all pods are running
+
+
