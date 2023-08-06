@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: auto-gptq
+Version: 0.2.0
+Summary: An easy-to-use LLMs quantization package with user-friendly apis, based on GPTQ algorithm.
+Home-page: https://github.com/PanQiWei/AutoGPTQ
+Author: PanQiWei
+Keywords: gptq,quantization,large-language-models,pytorch,transformers
+Platform: windows
+Platform: linux
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 11.7
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 11.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: C++
+Requires-Python: >=3.8.0
+Provides-Extra: llama
+Provides-Extra: triton
+License-File: LICENSE
