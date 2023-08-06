@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: cgbind
+Version: 1.0.4
+Summary: Metallocage construction and binding affinity calculations
+Home-page: https://github.com/duartegroup/cgbind
+Author: cgbind developers
+License: MIT
+Requires-Python: >3.7
+License-File: LICENSE.md
+Requires-Dist: Cython
+
