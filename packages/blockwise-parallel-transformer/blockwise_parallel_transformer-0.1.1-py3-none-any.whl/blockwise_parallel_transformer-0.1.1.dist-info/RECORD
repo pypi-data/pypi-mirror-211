@@ -1,0 +1,9 @@
+blockwise_parallel/__init__.py,sha256=KfzutGVcH-9VH5dNKZX0_KCfMEDAtR4K2ywBR5ctevw,233
+blockwise_parallel/blockwise_paralle.py,sha256=RRWfkTKQvIehqXR6tz_yoU5guTeElRHwOStoqzBIOuM,3629
+blockwise_parallel/jax_v1.py,sha256=CwyMTmwYV5a8SgwumblZBWTm8Lzb7ZENTNimW5hPE_Q,14409
+blockwise_parallel/test1.py,sha256=su89A79a6Po3zQwuRk6Za8xa0VwEex5QZUoPc163-Go,3003
+blockwise_parallel_transformer-0.1.1.dist-info/LICENSE,sha256=GHYD0Vn7cqu6O1FibXB1ix_cx8js09uZI1rKjCjW5sY,1074
+blockwise_parallel_transformer-0.1.1.dist-info/METADATA,sha256=DVhbUIw_nDHs4jmom56rF72wVRkyyGIgTHORbqe49dQ,711
+blockwise_parallel_transformer-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+blockwise_parallel_transformer-0.1.1.dist-info/top_level.txt,sha256=x6uCkebVkubWz_cfaeQnn-ndNl0jQy7Qgd23EhQxUo4,19
+blockwise_parallel_transformer-0.1.1.dist-info/RECORD,,
