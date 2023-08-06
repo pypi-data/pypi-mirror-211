@@ -1,0 +1,11 @@
+lifetimefitting/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lifetimefitting/__main__.py,sha256=bDdnnlrXl7b6ef9iDR-GmtP_TmXaESWSRNgwYaKybhU,3277
+lifetimefitting/funcs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lifetimefitting/funcs/expFuncs.py,sha256=ylsK5CWIeKdsbOYD9OpIqs0KVZf3-NXSbJavcE_UZ3w,2013
+lifetimefitting/funcs/fittingFuncs.py,sha256=neez_VkuxDplAxDUJkMZ5o81RU9cSUk_jqw5UBrEV-c,7061
+lifetimefitting/funcs/gui.py,sha256=RTNLe_6SiFZuEQ5GrXengtnx_JwElHBqxDKyp7i2dB4,12705
+lifetimefitting-0.0.23.dist-info/LICENSE.md,sha256=JdmvzZueC5F6XlcTRJYDett1_TMQBp6rhyIGL9qB0Dk,1062
+lifetimefitting-0.0.23.dist-info/METADATA,sha256=o29ysoHPuoI-mb0I1uNKD-IhQOM1mIIjiD-9bz0bub0,2810
+lifetimefitting-0.0.23.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+lifetimefitting-0.0.23.dist-info/top_level.txt,sha256=vcFVziysJrMmFrxIhJD1c0ISDu9wzWggLzQrRVUMPBU,16
+lifetimefitting-0.0.23.dist-info/RECORD,,
