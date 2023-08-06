@@ -1,0 +1,17 @@
+repository_cli/__init__.py,sha256=hcDQUn9Db9eMiDMtLHQ2D6jWQGEkJu0i8WpT2ewUGvM,373
+repository_cli/cli.py,sha256=Jl7lXyDPvABDHkJyGgNcoOioyix20uBpGZKTNDCZxFY,527
+repository_cli/click_options.py,sha256=6bzSctXZiN0rDqpL2UbDQ-PPYmS9fA_GGdIwwfjW-Lo,3946
+repository_cli/click_param_types.py,sha256=gW7PWRtiGFr40iqqXB6WhK0fzm-szV4r-lUobptHkfs,1391
+repository_cli/config.py,sha256=A9Zdu-29ZnEqH9jD525qbdxQ6fzcSPJLLBtMIRDAkOg,279
+repository_cli/ext.py,sha256=1kqnB0YJFSVXvTG0k_8GDLvZULJHM6gK0uHOwHnqs5E,643
+repository_cli/records.py,sha256=zUba2wtNhg4K2jsSQPZoQ9LK256J-_A5lR6Me9kDoik,20795
+repository_cli/types.py,sha256=cAV4hludSgfQp1q80_66sLUj20LtG87tuwW1n4Cj9DA,515
+repository_cli/users.py,sha256=5nzLWTSxCquTm7YzKpjCodyZw6A9LO4j5WfMgvZyQIo,915
+repository_cli/utils.py,sha256=1BmXFH0cgm5bbDPDFKTSNPhXPTGH69XEe91kTfg5rqY,5807
+repository_cli-0.8.0.dist-info/AUTHORS.rst,sha256=GHQRvHKj4k66ojRjUx-SSwPYSEEYwej2Tup1nVp2nYo,316
+repository_cli-0.8.0.dist-info/LICENSE,sha256=8w_Lg-twM0AzCWrQBzPhlphSaqiOOX-nXZKZf9284PE,1087
+repository_cli-0.8.0.dist-info/METADATA,sha256=F49b8CYOEprF7hUhkErd1JFOHbZsUmYeWmRbBXDbk_M,4684
+repository_cli-0.8.0.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+repository_cli-0.8.0.dist-info/entry_points.txt,sha256=1_HVmGRJ2BqsbMmU6QIHlwP353CHPpPwZKWFhQ7VaUA,127
+repository_cli-0.8.0.dist-info/top_level.txt,sha256=qidTFIGyO1Y9u8ms69tmQp3YJyqIFKsGOv2doednFDI,15
+repository_cli-0.8.0.dist-info/RECORD,,
