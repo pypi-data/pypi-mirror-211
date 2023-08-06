@@ -1,0 +1,10 @@
+aws_cdk/aws_simspaceweaver/__init__.py,sha256=gIG2Adnb9v0ctI6rCMm16a-QT_OV_CDg49op0i10TLg,25443
+aws_cdk/aws_simspaceweaver/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_simspaceweaver/_jsii/__init__.py,sha256=o09ypg5aczFQTDNdbtOOnmqR9BRcSKLE_blnO0vxUYY,434
+aws_cdk/aws_simspaceweaver/_jsii/aws-simspaceweaver@1.203.0.jsii.tgz,sha256=mecWvQDfdPLOsmUV31oKkCRdsSJSaQiHERyPzSkfxpk,25500
+aws_cdk.aws_simspaceweaver-1.203.0.dist-info/LICENSE,sha256=YA6CL2YE08NgoURWXRTrec3mNy-KAR-_UNdiMqgNVMI,11391
+aws_cdk.aws_simspaceweaver-1.203.0.dist-info/METADATA,sha256=M9h1DGjKedxWcpPcfKssfdCRa4wI7zhMdfrE4si8qsk,3229
+aws_cdk.aws_simspaceweaver-1.203.0.dist-info/NOTICE,sha256=XtGET2JQh3C41orQUenLTefWItOqLmu2N-mGwW7t3Fo,113
+aws_cdk.aws_simspaceweaver-1.203.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aws_cdk.aws_simspaceweaver-1.203.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_simspaceweaver-1.203.0.dist-info/RECORD,,
