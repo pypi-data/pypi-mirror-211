@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+lib8relind/__init__.py
+lib8relind.egg-info/PKG-INFO
+lib8relind.egg-info/SOURCES.txt
+lib8relind.egg-info/dependency_links.txt
+lib8relind.egg-info/top_level.txt
