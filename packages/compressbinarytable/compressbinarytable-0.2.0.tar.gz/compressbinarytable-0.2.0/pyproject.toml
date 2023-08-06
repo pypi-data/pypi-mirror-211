@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "compressbinarytable"
+version = "0.2.0"
+repository = "https://github.com/kalininalab/CompressBinaryTable"
+readme = "README.md"
+description = "Compression of binary table"
+authors = ["Alper Yurtseven <alper.yurtseven@helmholtz-hips.de>"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Operating System :: OS Independent"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+numpy = "^1.21.4"
+pandas = "^1.5.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+
+[tool.poetry.scripts]
+compressbinarytable = "compressbinarytable.compressbinarytable:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
