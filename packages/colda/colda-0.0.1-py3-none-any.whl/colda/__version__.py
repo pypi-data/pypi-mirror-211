@@ -1,0 +1,7 @@
+__title__ = 'colda'
+__description__ = 'Collaborative Data Analysis for All'
+__version__ = '0.0.1'
+__author__ = 'ColAI'
+__author_email__ = 'diaoenmao@gmail.com'
+__license__ = 'Apache 2.0'
+__url__ = 'https://github.com/Collaborative-AI/colda'
