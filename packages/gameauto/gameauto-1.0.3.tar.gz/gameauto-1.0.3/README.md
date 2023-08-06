@@ -1,0 +1,82 @@
+# gameauto
+## Core
+### miniFindimage
+    找图函数示例，建议重写
+        Args:
+            - template_path (Str/Mat): 图像地址或者opencv格式的图像 小图
+            - target_path (Str/Mat): 图像地址或者opencv格式的图像 大图
+            - region (list, optional): 模板匹配的区域左上角和右下角两点坐标[Xmin,Ymin,Xmax,Ymax]. Defaults to None.
+            - threshold (float, optional): 图像相似度. Defaults to 0.8.
+            - is_color (bool, optional): 是否匹配图像颜色. Defaults to False.
+            - color_threshold (int, optional): 颜色相似度. Defaults to 30.
+            - is_click (bool, optional): 是否点击图像. Defaults to False.
+
+        Returns:
+            list/None: 图像所在区域[Xmin,Ymin,Xmax,Ymax]
+### miniRandomClick
+```
+随机点击 建议重写
+        Args:
+            - region (array): [x_min, y_min, x_max, y_max]
+            - point (tuple, optional): 坐标点. Defaults to None.
+            - method (int, optional): Defaults to 1.
+                1. 范围随机点击
+                2. 定点点击. 
+                
+```
+### miniSmlMove
+曲线滑动
+```
+三次贝塞尔曲线滑动 建议重写
+        Args:
+            - qx (int): 起点
+            - qy (int): 
+            - zx (int): 终点
+            - zy (int): 
+            - time (int, optional): 滑动时长. Defaults to 500.
+```
+
+## YoloV3
+    ncnn加载yolov3模型
+        Args:
+            - param_path (str): yolov3模型param地址
+            - bin_path (str): yolov3模型bin地址
+            - class_names (list): 类名列表
+            - tiny (bool, optional): 是否启用tiny模型. Defaults to False.
+            - num_threads (int, optional): 启用线程数量. Defaults to 1.
+            - use_gpu (bool, optional): 是否启用gpu计算 Defaults to False.
+### yolo_filter
+    模型计算结果筛选
+    Args:
+        - class_name (str): 筛选的类名
+        - class_names (list): 模型类名列表
+        - objects (list): 模型计算返回的结果
+        - min_prob (float, optional): 结果置信度阈值. Defaults to 0.0.
+
+    Returns:
+        - list: objects
+            - object:
+                - rect.x 左上角横坐标
+                - rect.y 左上角纵坐标   
+                - rect.w 区域宽
+                - rect.h 区域高
+                - prob  置信度
+                - label 类名
+
+### yolo使用方法
+```python
+    m = cv2.imread("screenshotemulator-5554.png")
+    #加载模型
+    net = YoloV3(
+        param_path="yolov3-tiny_6700-opt.param",
+        bin_path="yolov3-tiny-opt.bin",
+        #类名此处记得将第一个元素留空,所有元素往后一个(ncnn的问题好像是(有空改改))
+        class_names=["", "exp", "hd", "jb"],
+        num_threads=4,
+        use_gpu=True,
+    )
+    #输入mat格式图像进行计算
+    objects = net(m)
+    #过滤结果
+    yolo_filter("exp",net.class_names,objects,0.8)
+```
