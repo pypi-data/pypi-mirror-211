@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+Stylys.egg-info/PKG-INFO
+Stylys.egg-info/SOURCES.txt
+Stylys.egg-info/dependency_links.txt
+Stylys.egg-info/top_level.txt
+stylys/__init__.py
