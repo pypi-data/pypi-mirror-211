@@ -1,0 +1,8 @@
+meddlr
+meerkat-ml
+
+[all]
+meddlr[dev,docs]
+
+[dev]
+meddlr[dev,docs]

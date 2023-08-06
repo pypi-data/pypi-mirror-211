@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: meddlr-viz
+Version: 0.0.1
+Summary: Interfaces for the Meddlr library built with Meerkat.
+Home-page: https://github.com/ad12/meddlr_viz
+Author: The Meddlr Team
+Author-email: arjundd@stanford.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: all
+
+# meddlr-demos
