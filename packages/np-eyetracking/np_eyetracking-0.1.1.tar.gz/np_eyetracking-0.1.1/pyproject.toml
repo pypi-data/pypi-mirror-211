@@ -1,0 +1,67 @@
+[project]
+name = "np_eyetracking"
+version = "0.1.1"
+description = "Tools for generating eye-tracking data for .nwb creation."
+authors = [
+    { name = "bjhardcastle", email = "ben.hardcastle@alleninstitute.org" },
+]
+dependencies = [
+    "np-session>=0.6.11",
+    "allensdk>=2.15.1",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.optional-dependencies]
+dev = [
+    "blue>=0.9.1",
+]
+
+[tool.pdm.scripts]
+ruff = "ruff check src --fix-only"
+blue = "blue src"
+pytest = "pytest --cov"
+bump = "pdm bump patch"
+
+[tool.pdm.scripts.prebuild]
+composite = [
+    "blue",
+    "ruff",
+    "pytest",
+]
+
+[tool.pdm.scripts.build]
+composite = [
+    "prebuild",
+    "pdm build",
+]
+
+[tool.pdm.scripts.dry-run]
+composite = [
+    "prebuild",
+    "pdm build",
+    "pdm publish --no-build --repository https://test.pypi.org/simple",
+]
+
+[tool.pdm.scripts.publish]
+composite = [
+    "prebuild",
+    "pdm build",
+    "pdm publish --no-build",
+]
+
+[tool.pdm.scripts.pub]
+composite = [
+    "bump",
+    "pdm publish",
+]
+
+[build-system]
+requires = [
+    "setuptools>=61",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"

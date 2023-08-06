@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: np-eyetracking
+Version: 0.1.1
+Summary: Tools for generating eye-tracking data for .nwb creation.
+Author-email: bjhardcastle <ben.hardcastle@alleninstitute.org>
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+# np_eyetracking
+Tools for generating eye-tracking data for non-standard Mindscope Neuropixels experiments.
