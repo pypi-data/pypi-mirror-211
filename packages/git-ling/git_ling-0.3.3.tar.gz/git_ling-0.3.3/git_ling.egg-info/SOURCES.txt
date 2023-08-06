@@ -1,0 +1,17 @@
+README.md
+setup.py
+git_ling/__init__.py
+git_ling/cli.py
+git_ling/git_ling.py
+git_ling/language_fetcher.py
+git_ling/schemas.py
+git_ling.egg-info/PKG-INFO
+git_ling.egg-info/SOURCES.txt
+git_ling.egg-info/dependency_links.txt
+git_ling.egg-info/entry_points.txt
+git_ling.egg-info/requires.txt
+git_ling.egg-info/top_level.txt
+tests/__init__.py
+tests/test_cli.py
+tests/test_git_ling.py
+tests/test_language_fetcher.py
