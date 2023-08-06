@@ -1,0 +1,12 @@
+README.md
+setup.py
+ser_Anton/constants.py
+ser_Anton/factory.py
+ser_Anton/json_serializer.py
+ser_Anton/serializersi.py
+ser_Anton/xml_serializer.py
+ser_Galuts.egg-info/PKG-INFO
+ser_Galuts.egg-info/SOURCES.txt
+ser_Galuts.egg-info/dependency_links.txt
+ser_Galuts.egg-info/requires.txt
+ser_Galuts.egg-info/top_level.txt
