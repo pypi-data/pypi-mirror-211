@@ -1,0 +1,4 @@
+-r test_requirements.txt
+-r requirements.txt
+typing_extensions
+attrs>=21
