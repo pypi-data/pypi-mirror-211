@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: hirmeos-crossref-citedby-driver
+Version: 0.0.3
+Summary: Functions required by the crossref-citedby-driver
+Home-page: https://github.com/hirmeos/crossref-citedby-driver
+Author: Rowan Hatheryley
+Author-email: rowan.hatherley@ubiquitypress.com
+Description-Content-Type: text/markdown
+
+# crossref-citedby-driver
+
+Library containing driver logic for the HIRMEOS crossref-citedby-driver.
+
+
+Until CI is ready
+
+.. code-block:: bash
+
+$ python3 setup.py sdist bdist_wheel
+$ twine upload dist/*
+
+
+
+Release Notes:
+
+[0.0.3] - 2022-03-24
+
+Changed:
+    * Update requirements
+
+
+[0.0.2] - 2022-03-24
+
+Changed:
+    * Update requirements
+

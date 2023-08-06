@@ -1,0 +1,8 @@
+setup.py
+crossref_citedby_driver/__init__.py
+crossref_citedby_driver/functions.py
+hirmeos_crossref_citedby_driver.egg-info/PKG-INFO
+hirmeos_crossref_citedby_driver.egg-info/SOURCES.txt
+hirmeos_crossref_citedby_driver.egg-info/dependency_links.txt
+hirmeos_crossref_citedby_driver.egg-info/requires.txt
+hirmeos_crossref_citedby_driver.egg-info/top_level.txt
