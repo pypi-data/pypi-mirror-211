@@ -1,0 +1,4 @@
+dist
+docs
+infra
+semantic_navigator

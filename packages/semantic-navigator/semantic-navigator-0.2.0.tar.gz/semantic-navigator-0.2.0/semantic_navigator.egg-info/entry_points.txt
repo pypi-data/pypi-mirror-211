@@ -1,0 +1,3 @@
+[console_scripts]
+fetch-model-for-sem-nav = semantic_navigator.bin.fetch_model_for_sem_nav:main
+semantic-navigator = semantic_navigator.bin.semantic_navigator:main

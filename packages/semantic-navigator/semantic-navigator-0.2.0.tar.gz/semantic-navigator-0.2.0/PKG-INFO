@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: semantic-navigator
+Version: 0.2.0
+Summary: An active learning approach to query and search through large archival datasets.
+Author-email: Eva Maxfield Brown <evamxb@uw.edu>, Madeleine Grunde-McLaughlin <mgrunde@uw.edu>, Isabella Pestovski <pestoi@uw.edu>, Lanyi Zhu <lanyizhu@uw.edu>
+License: MPLv2.0
+Project-URL: Homepage, https://github.com/CouncilDataProject/semantic-navigator
+Project-URL: Bug Tracker, https://github.com/CouncilDataProject/semantic-navigator/issues
+Project-URL: Documentation, https://CouncilDataProject.github.io/semantic-navigator
+Project-URL: User Support, https://github.com/CouncilDataProject/semantic-navigator/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: lint
+Provides-Extra: test
+Provides-Extra: docs
+Provides-Extra: dev
+License-File: LICENSE
+
+# semantic-navigator
+
+[![Build Status](https://github.com/CouncilDataProject/semantic-navigator/workflows/CI/badge.svg)](https://github.com/CouncilDataProject/semantic-navigator/actions)
+[![Documentation](https://github.com/CouncilDataProject/semantic-navigator/workflows/Documentation/badge.svg)](https://CouncilDataProject.github.io/semantic-navigator)
+
+An active learning approach to query and search through large archival datasets.
+
+---
+
+## Installation
+
+**Stable Release:** `pip install semantic-navigator`<br>
+**Development Head:** `pip install git+https://github.com/CouncilDataProject/semantic-navigator.git`
+
+## Documentation
+
+For full package documentation please visit [CouncilDataProject.github.io/semantic-navigator](https://CouncilDataProject.github.io/semantic-navigator).
+
+## Development
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for information related to developing the code.
+
+**MPLv2 License**

@@ -1,0 +1,46 @@
+
+{% extends "base.html" %}
+{% block content %}
+<section class="mzp-c-hero" style="min-height: 82vh;">
+
+    <div class="mzp-l-content mzp-t-content-lg">
+
+        <div style="position: -webkit-sticky; position: sticky; top: 0; background-color: white; border: 20px solid white" > 
+
+            <!-- Basic intro -->
+            <h1 class="mzp-c-hero-title">Semantic Navigator</h1>
+            <div class="mzp-c-hero-body" >
+                <div class="mzp-c-hero-desc">
+                    <p>Iteratively refine search using positive and negative examples.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search bar -->
+        <div class="mzp-c-emphasis-box" style="text-align: left;margin-top: 10vh;margin-bottom: 10vh;">
+            <form class="mzp-c-form" style="margin-bottom: 0;" method="POST">
+                <label class="mzp-c-hero-tagline" for="search">Search
+                    <span class="mzp-c-fieldnote" style="margin-top: 20px;">
+                        Search for a topic. You will be presented text snippets to label as "Relevant" or "Irrelevant". Mark the examples with your selection to iteratively refine your search.
+                    </span>
+                </label>
+                <input
+                    style="width:100vw;margin-top: 20px;"
+                    type="search"
+                    id="search"
+                    required
+                    name="search"
+                    placeholder="defund the police"
+                />
+                <button class="mzp-c-button" type="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- Video placeholder -->
+        <iframe width="640px" height="360px" 
+            src="https://www.youtube.com/embed/zVRwUHbHgt8">
+        </iframe>
+    </div>
+
+</section>
+{% endblock %}
