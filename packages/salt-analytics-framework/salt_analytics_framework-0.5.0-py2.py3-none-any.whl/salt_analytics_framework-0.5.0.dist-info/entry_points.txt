@@ -1,0 +1,19 @@
+[saf.collect]
+beacons = saf.collect.beacons
+file = saf.collect.file
+salt_exec = saf.collect.salt_exec
+test = saf.collect.test
+
+[saf.forward]
+disk = saf.forward.disk
+noop = saf.forward.noop
+test = saf.forward.test
+
+[saf.process]
+jupyter_notebook = saf.process.jupyter_notebook
+regex_mask = saf.process.regex_mask
+shannon_mask = saf.process.shannon_mask
+test = saf.process.test
+
+[salt.loader]
+salt-analytics-framework = saf.saltext
