@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/OpsAi/OPs.py
+src/OpsAi/__init__.py
+src/OpsAi.egg-info/PKG-INFO
+src/OpsAi.egg-info/SOURCES.txt
+src/OpsAi.egg-info/dependency_links.txt
+src/OpsAi.egg-info/top_level.txt
