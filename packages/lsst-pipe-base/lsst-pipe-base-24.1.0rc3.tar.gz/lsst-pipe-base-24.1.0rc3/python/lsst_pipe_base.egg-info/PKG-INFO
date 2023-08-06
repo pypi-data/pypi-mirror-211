@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: lsst-pipe-base
+Version: 24.1.0rc3
+Summary: Pipeline infrastructure for the Rubin Science Pipelines
+Home-page: https://github.com/lsst/pipe_base
+Author: Rubin Observatory Data Management
+Author-email: dm-admin@lists.lsst.org
+License: GPLv3+ License
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# lsst-pipe-base
+
+[![pypi](https://img.shields.io/pypi/v/lsst-pipe-base.svg)](https://pypi.org/project/lsst-pipe-base/)
+[![codecov](https://codecov.io/gh/lsst/pipe_base/branch/master/graph/badge.svg?token=nTEA5ZAYiD)](https://codecov.io/gh/lsst/pipe_base)
+
+Pipeline infrastructure code for the [Rubin Science Pipelines](https://pipelines.lsst.io).
+
+* SPIE Paper from 2022: [The Vera C. Rubin Observatory Data Butler and Pipeline Execution System](https://arxiv.org/abs/2206.14941)
+
+PyPI: [lsst-pipe-base](https://pypi.org/project/lsst-pipe-base/)

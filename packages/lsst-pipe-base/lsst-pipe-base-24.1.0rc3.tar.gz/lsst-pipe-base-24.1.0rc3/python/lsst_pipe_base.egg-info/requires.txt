@@ -1,0 +1,10 @@
+lsst-resources<24.100,>=24.0.0
+lsst-utils<24.100,>=24.0.0
+lsst-daf-butler<24.100,>=24.0.0
+lsst-pex-config<24.100,>=24.0.0
+pydantic
+networkx
+pyyaml>=5.1
+numpy>=1.17
+boto3
+botocore
