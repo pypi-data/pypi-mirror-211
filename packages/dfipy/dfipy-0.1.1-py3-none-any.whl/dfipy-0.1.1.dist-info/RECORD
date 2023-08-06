@@ -1,0 +1,11 @@
+LICENCE,sha256=7x4ASOAEt3KSAlQQTQVj12RMgpxCyHaOUO85BTwKYXo,557
+dfi/__init__.py,sha256=BxPdHFpnlrDsZLih6WjRA-VvYxHqnDTx480J9kqcz6s,122
+dfi/analysis.py,sha256=hBDKKnNC8EO1lrdST8xviL2s_uX4m2GbQneaK4yRRd0,9190
+dfi/connection.py,sha256=4tqeqpfPQq8M_VnBc3Q1Jof1YK2-UymVDg9N3PHfD9Y,3741
+dfi/getters.py,sha256=NU8DQ-P0YQYUiLsunKPr8VJ4xtFVJF_Q-E96uGq6XfY,13621
+dfi/logging.py,sha256=AdgbZ4gp0R-yT3ZrkPjUAIGcbVHVoMUU7rJZwFJtGkI,1356
+dfi/show.py,sha256=mK_GuQGzSzrs9UhJtIEaX78HB8QZ6-jHP2wxnZlEPV4,14626
+dfi/stream.py,sha256=lM_bO7j8bsIbxshX78X2OQZPUc9koEFfV4qhDWGvr60,4266
+dfipy-0.1.1.dist-info/METADATA,sha256=wb6JPPawzOSp4DFSdOUETla1-gc0WB4PlBsMy6y9UyA,2683
+dfipy-0.1.1.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+dfipy-0.1.1.dist-info/RECORD,,
