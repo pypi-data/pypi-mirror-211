@@ -1,0 +1,17 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+CalSciPy/__init__.py,sha256=DB5DHzfJOy_JyH6cBgThBRN3_jBNxsDnJgzODy0o0lg,358
+CalSciPy/bruker.py,sha256=Q6QMwMeLXJjk2_yXMw0JthlBfb4frVwkboPu47FtsGs,15266
+CalSciPy/coloring.py,sha256=W5tv1OE0zftNyAdjBhb2n1U2kOrZNjgPJiySO6qwTGA,3270
+CalSciPy/event_processing.py,sha256=6X0uFxrjQRWuimaKOTDugnCSFpTZ8285f2AXKwjeEAo,8422
+CalSciPy/image_processing.py,sha256=9VhgTMS8ZVRjFzdud38dIMFewWVBtODY0XKv7TSNg7w,4000
+CalSciPy/interactive_visuals.py,sha256=DCkwTRyXqoXncrEYEi345cmh1AzXFJw2e8jefBiNiQU,9700
+CalSciPy/io_tools.py,sha256=-Tus2Wh5a1lIgGx-q9o_V9j3DHc1XW7CXZxWWHGndAo,10053
+CalSciPy/misc.py,sha256=190vSWp9q_BfQNzDHek3mD7LoNpzA5IC4Ic49l6iVDA,8733
+CalSciPy/reorganization.py,sha256=HhCZs4ZaV7B_osOPu3nsn2qlWAnbCqZSq2WZ7PsIP9M,3109
+CalSciPy/trace_processing.py,sha256=bYFXtJz6m47Pm6nOxBbleCy_do38pXy4rVe6KklPZoc,9604
+CalSciPy/version.py,sha256=2p3xo4Y-ZsCKq0bv8NV_zepcF0AsTDKrysRpIuctjaU,199
+CalSciPy-0.3.2.dist-info/LICENSE,sha256=LsooDY8WX_UNzOV9uYvGPH6NkUlZfLfiX7GUKZLGiDA,1094
+CalSciPy-0.3.2.dist-info/METADATA,sha256=5KdDGr7v4juUPDaXxkuHN3lvi1VdPXIXiI32hEimSu0,6251
+CalSciPy-0.3.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+CalSciPy-0.3.2.dist-info/top_level.txt,sha256=kKBOLjedv3zb2yc4wJHLEQhg5TsEQaseFSsCwUJS2PI,18
+CalSciPy-0.3.2.dist-info/RECORD,,
