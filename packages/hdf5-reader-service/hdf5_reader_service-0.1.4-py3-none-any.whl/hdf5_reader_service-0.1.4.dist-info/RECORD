@@ -1,0 +1,22 @@
+hdf5_reader_service/__init__ copy.py,sha256=OF45Yo9MkPiwJ1LSK_M8Xnkj8U8LWmYYNfPiav_Mqag,159
+hdf5_reader_service/__init__.py,sha256=QQDxfI1lgHsb1J8hJiBbWEi7gc7G8HwGvHGeeKXMnmA,235
+hdf5_reader_service/__main__.py,sha256=SQ-XmDdilI3t-U4iJiv-W8qFwitYDQeO8SD7odlfbLo,519
+hdf5_reader_service/_version.py,sha256=UgZRKGYpmfG9sxWmuGh6CJhEM27F68eny3-OTrafEOU,160
+hdf5_reader_service/_version_git.py,sha256=NmgxIeQ3i7sA05SoyPdsjRUm4OsaqHmDqlOBZOZEako,3873
+hdf5_reader_service/api.py,sha256=mchLOuUHfHHlk9jM9tP-W3li7KbS6PrZPhQhPhjyihU,2198
+hdf5_reader_service/app.py,sha256=FKZI8JsVShXv9MmoHleLuD2MFvC6_twVko6kN-8l2eM,226
+hdf5_reader_service/fork.py,sha256=SedVkuNTDoSfYIXbKUoBHJeiXnV2vCXGf1KhT3zw0PU,705
+hdf5_reader_service/model.py,sha256=PVIRVTLesxgqKgpgMHxBfbUp-yWvLcJRpCWaQRnPuy4,1647
+hdf5_reader_service/utils.py,sha256=efAkYFprIEE3ZtfGeT6403lEfKSieODn3Dl-aREKaqM,2674
+hdf5_reader_service/tasks/__init__.py,sha256=fw_1tJfSZerOHARI9Wund17DDp39_QvjQ9OXSHeDKGQ,281
+hdf5_reader_service/tasks/metadata.py,sha256=VRnIoNBT81CJbo4S89PGIqGlZTJ3CqVAFdMMcgPGTxY,1617
+hdf5_reader_service/tasks/search.py,sha256=w704D83KIGvESXse0fZ5puE18ty3XaBb-agEbhkBl5s,427
+hdf5_reader_service/tasks/shapes.py,sha256=k09GaKDWGohlrK_Ocgp0_K3x4z7hHIsLtY35D59RrXQ,572
+hdf5_reader_service/tasks/slice.py,sha256=b07RtC53J6SHxwjRRRlv3Bsu7sfkhw7CmTtJI9hMEQE,931
+hdf5_reader_service/tasks/tree.py,sha256=T3kEhopYQWuyGEWkKapbpKMsTZkVrcI3bvMlJcuJ8gY,476
+hdf5_reader_service-0.1.4.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+hdf5_reader_service-0.1.4.dist-info/METADATA,sha256=El-dt7e0wDVJoNp20sHUjm94st2dcrOVJcmOkz2K5wo,16351
+hdf5_reader_service-0.1.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+hdf5_reader_service-0.1.4.dist-info/entry_points.txt,sha256=wu3tPjlcKdJ_SJzqW-km8mMSLOdpWEu_ZjM_tQyrE80,74
+hdf5_reader_service-0.1.4.dist-info/top_level.txt,sha256=wOb4UWqrXdPVUTFFP-TZvf-AFy5A7PtnR_sb-wElr1I,20
+hdf5_reader_service-0.1.4.dist-info/RECORD,,

@@ -1,0 +1,2 @@
+[console_scripts]
+hdf5-reader-service = hdf5_reader_service.__main__:main
