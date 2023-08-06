@@ -1,0 +1,3 @@
+[console_scripts]
+kattis-download = kattis_download.main:run
+

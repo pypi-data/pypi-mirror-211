@@ -1,0 +1,10 @@
+README.md
+setup.py
+kattis_download/__init__.py
+kattis_download/main.py
+kattis_problem_setup.egg-info/PKG-INFO
+kattis_problem_setup.egg-info/SOURCES.txt
+kattis_problem_setup.egg-info/dependency_links.txt
+kattis_problem_setup.egg-info/entry_points.txt
+kattis_problem_setup.egg-info/requires.txt
+kattis_problem_setup.egg-info/top_level.txt
