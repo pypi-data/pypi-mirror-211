@@ -1,0 +1,46 @@
+funcy
+arrow
+
+[:python_version < "3.7"]
+dataclasses
+
+[aws]
+boto3
+retrying
+
+[dev]
+flake8
+pip-tools
+wheel
+boto3-stubs[sns,sqs]
+types-dataclasses
+
+[dev:python_version < "3.8"]
+docutils<0.18
+Sphinx==3.2.1
+
+[dev:python_version >= "3.7" and python_version < "3.8"]
+jinja2<3.1
+
+[dev:python_version >= "3.8"]
+Sphinx>3
+
+[gcp]
+google-cloud-pubsub>=2.0.0
+grpcio-status==1.48.2
+
+[publish]
+bumpversion
+twine
+
+[test]
+black
+coverage
+coveralls
+flake8
+ipdb
+moto
+mypy
+pytest
+pytest-cov
+pytest-env
