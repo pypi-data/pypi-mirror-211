@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: xwhy
+Version: 0.0.0.1
+Summary: Explain Why (XWhy) with Statistical Model-agnostic Interpretability with Local Explanations (SMILE)
+Home-page: https://github.com/Dependable-Intelligent-Systems-Lab/xwhy
+Author: Mojgan Hashemian, Koorosh Aslansefat (corresponding), Mohammad Naveed Akram, Ioannis Sorokos, Martin Walker, Yiannis Papadopoulos
+Author-email: koo.ec2008@gmail.com
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Provides-Extra: dev
