@@ -1,0 +1,6 @@
+README.md
+setup.py
+anapass_python2.egg-info/PKG-INFO
+anapass_python2.egg-info/SOURCES.txt
+anapass_python2.egg-info/dependency_links.txt
+anapass_python2.egg-info/top_level.txt
