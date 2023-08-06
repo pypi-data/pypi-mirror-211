@@ -1,0 +1,9 @@
+empiarreader/__init__.py,sha256=QWGSfD6dt74e3SQDe2hLt8bL2KDewuSyHpmiDBJEhXs,158
+empiarreader/empiar.py,sha256=rJ5dDBefprvESMhM5qmobe7_oGv82m88Kxx13uquxls,5428
+empiarreader/mrcsource.py,sha256=hh0rG-7CuDhCbiKVI2kWmIUj3jqDoY79ak2BlfqzuQI,2710
+empiarreader/starsource.py,sha256=9gzTcS1ezWxGQ4z2-wQVld40MCHSuFIYCqh2yPnYsEo,1838
+empiarreader-0.0.1.dist-info/entry_points.txt,sha256=GtYPDVwQg9PMerKopfnWoFxzTuooD7u8ANgWZXHHoNQ,108
+empiarreader-0.0.1.dist-info/LICENSE,sha256=zZadjPFH0NvukScej2cV8SdnCU-0XDaLlbVWZchTgFE,1533
+empiarreader-0.0.1.dist-info/WHEEL,sha256=KXNDfOTTCr-VyxnCJDozfJ6nmi3hNN9RABDaCXBsNak,85
+empiarreader-0.0.1.dist-info/METADATA,sha256=c_4nDDLevdVtD6VRFdhK7PAY83CyfXu1NSQIbK6WiEs,814
+empiarreader-0.0.1.dist-info/RECORD,,
