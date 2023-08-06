@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: PyCosmo
+Version: 2.1.1
+Summary: A multi-purpose cosmology calculation tool
+Author: Uwe Schmitt et al
+Author-email: uwe.schmitt@id.ethz.ch
+License: GPLv3
+Project-URL: Source, https://cosmo-docs.phys.ethz.ch/PyCosmo
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst; charset=UTF-8
+Provides-Extra: dev
+Provides-Extra: docs
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+=========================================
+PyCosmo
+=========================================
+
+PyCosmo is a multi-purpose cosmology calculation tool in Python. It is designed to be interactive and user friendly.
+
+The code includes calculations of:
+          + Background
+          + Linear perturbations (incl. fitting functions and a Boltzmann solver)
+          + Non-linear perturbations
+          + Series of observables (e.g., weak lensing and galaxy clustering power spectrum, ...)
+          + Several model extensions (massive neutrinos, wCDM, ...)
+
+
+
+The code documentation can be found at `<https://cosmo-docs.phys.ethz.ch/PyCosmo/>`_ or created by typing make docs from the PyCosmo folder in your terminal.
+
+Interactive tutorial notebooks are available on the PyCosmoHUB `<https://pycosmohub.com/>`_.
