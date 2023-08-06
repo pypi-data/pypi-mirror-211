@@ -1,0 +1,5 @@
+setup.py
+quransbuforuni.egg-info/PKG-INFO
+quransbuforuni.egg-info/SOURCES.txt
+quransbuforuni.egg-info/dependency_links.txt
+quransbuforuni.egg-info/top_level.txt
