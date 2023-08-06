@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+reification/__init__.py
+reification/reific.py
+reification/utils.py
+reification.egg-info/PKG-INFO
+reification.egg-info/SOURCES.txt
+reification.egg-info/dependency_links.txt
+reification.egg-info/top_level.txt
+tests/test_reific.py
+tests/test_utils.py
