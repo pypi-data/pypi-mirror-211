@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+src/EXOSpy.egg-info/PKG-INFO
+src/EXOSpy.egg-info/SOURCES.txt
+src/EXOSpy.egg-info/dependency_links.txt
+src/EXOSpy.egg-info/requires.txt
+src/EXOSpy.egg-info/top_level.txt
+src/exospy/__init__.py
+src/exospy/exospy.py
