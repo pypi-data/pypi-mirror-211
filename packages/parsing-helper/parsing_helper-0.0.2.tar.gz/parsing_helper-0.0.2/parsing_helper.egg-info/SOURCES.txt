@@ -1,0 +1,17 @@
+README.md
+project_data.json
+pyproject.toml
+requirements.txt
+setup.py
+parsing_helper/__init__.py
+parsing_helper/settings.py
+parsing_helper.egg-info/PKG-INFO
+parsing_helper.egg-info/SOURCES.txt
+parsing_helper.egg-info/dependency_links.txt
+parsing_helper.egg-info/requires.txt
+parsing_helper.egg-info/top_level.txt
+parsing_helper/pages/__init__.py
+parsing_helper/pages/base_page.py
+parsing_helper/web_elements/__init__.py
+parsing_helper/web_elements/collection.py
+parsing_helper/web_elements/element.py
