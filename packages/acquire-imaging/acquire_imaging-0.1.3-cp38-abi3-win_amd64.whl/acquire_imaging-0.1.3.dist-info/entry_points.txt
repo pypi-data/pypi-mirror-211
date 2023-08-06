@@ -1,0 +1,2 @@
+[napari.manifest]
+acquire-python=acquire:napari.yaml
