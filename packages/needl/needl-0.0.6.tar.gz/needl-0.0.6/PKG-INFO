@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: needl
+Version: 0.0.6
+Summary: Python Package to access Epistasis Disease Atlas
+Home-page: http://pypi.python.org/pypi/needl/
+Author: Klaudia Adamowicz
+Author-email: klaudia.adamowicz@uni-hamburg.de
+License: LICENSE
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Intended Audience :: Science/Research
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# NeEDL-py
+Python package
