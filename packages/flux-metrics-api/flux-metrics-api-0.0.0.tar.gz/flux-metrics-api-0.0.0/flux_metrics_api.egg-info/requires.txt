@@ -1,0 +1,6 @@
+uvicorn
+starlette
+
+[all]
+uvicorn
+starlette
