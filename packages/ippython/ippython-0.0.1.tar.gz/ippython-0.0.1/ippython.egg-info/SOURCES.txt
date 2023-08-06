@@ -1,0 +1,8 @@
+setup.py
+ippython/__init__.py
+ippython/ip.py
+ippython.egg-info/PKG-INFO
+ippython.egg-info/SOURCES.txt
+ippython.egg-info/dependency_links.txt
+ippython.egg-info/requires.txt
+ippython.egg-info/top_level.txt
