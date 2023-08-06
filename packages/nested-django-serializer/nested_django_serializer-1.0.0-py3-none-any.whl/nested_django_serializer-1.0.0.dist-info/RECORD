@@ -1,0 +1,12 @@
+nested_django_serializer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nested_django_serializer/django/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nested_django_serializer/django/serializers/__init__.py,sha256=RsZjRjMprNcDm97wqRRSk6rTLgTX8N0GyicZyZ8OsBQ,22
+nested_django_serializer/django/serializers/base.py,sha256=hU6aYiAIy-M7xMFnDHiY3pGlOc0nvxaQoUiF6z7P4yo,3035
+nested_django_serializer/django/serializers/json.py,sha256=yO0DJYq24mR-JLaqx3XDKu6BewG01BcKN8lsTb1gX6M,752
+nested_django_serializer/django/serializers/python.py,sha256=yzsz48214oO9S-pT6bmFg1U577yhMrTOnuuma1UEkoA,5858
+nested_django_serializer-1.0.0.dist-info/AUTHORS,sha256=8O_rDTg7tanl3slbCW_wpd8d8bppoEhuSofT_3qsIXY,33
+nested_django_serializer-1.0.0.dist-info/LICENSE,sha256=pk0zqwQ4Ya6Vf1cb5KZZFkE01kZ96uQdByh5u8-evsI,1630
+nested_django_serializer-1.0.0.dist-info/METADATA,sha256=WSjR1A0f0-PILO_B8dEwAx3MvBYsIfThlYFjK0Hcz5I,865
+nested_django_serializer-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nested_django_serializer-1.0.0.dist-info/top_level.txt,sha256=CMqf3EhcgT_1_jX1QTWy6jbJeygqXmu7OPXwEltxsHI,25
+nested_django_serializer-1.0.0.dist-info/RECORD,,
