@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/napari_mzarr/__init__.py
+src/napari_mzarr/_reader.py
+src/napari_mzarr/_writer.py
+src/napari_mzarr/napari.yaml
+src/napari_mzarr.egg-info/PKG-INFO
+src/napari_mzarr.egg-info/SOURCES.txt
+src/napari_mzarr.egg-info/dependency_links.txt
+src/napari_mzarr.egg-info/entry_points.txt
+src/napari_mzarr.egg-info/requires.txt
+src/napari_mzarr.egg-info/top_level.txt
