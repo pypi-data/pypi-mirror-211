@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+NOTICE
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+src/paramize/__init__.py
+src/paramize/base.py
+src/paramize.egg-info/PKG-INFO
+src/paramize.egg-info/SOURCES.txt
+src/paramize.egg-info/dependency_links.txt
+src/paramize.egg-info/requires.txt
+src/paramize.egg-info/top_level.txt
