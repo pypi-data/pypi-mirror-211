@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: whatsapp-auto
+Version: 1.0
+Summary: It is a Simple and Powerful WhatsApp Automation Library with many useful Features
+Author-email: Anish <anishshakthivelnadar@gmail.com>
+Project-URL: Homepage, https://github.com/Anish0612/whatsapp.git
+Project-URL: Bug Tracker, https://github.com/Anish0612/whatsapp.git/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# whatsapp
+It is a Simple and Powerful WhatsApp Automation Library with many useful Features
+
