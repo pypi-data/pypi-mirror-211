@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: biclustering
+Version: 2023.5.31.4
+Summary: Biclustering and association rule mining using Suffix Tree and Frequent Closed Itemset based algorithm.
+Project-URL: Homepage, https://github.com/damaclab/FIST-Biclustering-Python
+Project-URL: Bug Tracker, https://github.com/damaclab/FIST-Biclustering-Python/issues
+Author-email: Mijanur Rahaman Mallick <mijanur08@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: pandas
+Requires-Dist: pydot
+Description-Content-Type: text/markdown
+
+# Biclustering Using Suffix Tree
+
+Association rule mining and biclustering are two popular techniques in data mining that can be used to uncover interesting patterns and relationships in large datasets. However, these techniques are often computationally expensive and can be challenging to apply to large da-tasets. This paper presents a novel approach that combines association rule mining and bi-clustering using a suffix tree data structure. It is based on the frequent closed itemsets framework and requires a unique scan of the database. This data structure is used to reduce memory usage and improve the extraction efficiency, allowing parallel processing of the tree branches. Experimental results show that the proposed algorithm (Frequent Itemset Suffix Tree: FIST) is effective in uncovering meaningful patterns and relationships in large datasets and outperforms existing state-of-the-art algorithms in terms of efficiency and scalability.
