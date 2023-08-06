@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pybasilica
+Version: 0.1.3
+Summary: A bayesian model to extract mutational signatures
+Home-page: https://github.com/caravagnalab/pybasilica
+Author: Azad Sadr
+Author-email: azad.sadr.h@gmail.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas (>=1.4.2)
+Requires-Dist: pyro-api (>=0.1.2)
+Requires-Dist: pyro-ppl (>=1.8.0)
+Requires-Dist: numpy (>=1.21.5)
+Requires-Dist: torch (==1.10.2)
+Requires-Dist: tqdm
+Requires-Dist: rich
+Requires-Dist: statsmodels
+Requires-Dist: uniplot
+
+# pybasilica
+Detecting mutational signatures via bayesian inference and reference catalog
