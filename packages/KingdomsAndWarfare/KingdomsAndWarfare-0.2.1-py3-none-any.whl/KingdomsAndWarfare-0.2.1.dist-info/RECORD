@@ -1,0 +1,13 @@
+KingdomsAndWarfare/Kingdoms/Kingdom.py,sha256=7hzguF6Ug-7iSvP7D76a0wD0Pue47X3GLlAVBSoBPQI,1464
+KingdomsAndWarfare/Kingdoms/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+KingdomsAndWarfare/Traits/Trait.py,sha256=2ODB1qxaXNgIpYPlxSWxs9KOk1unuBeeBkNE53s2q3w,935
+KingdomsAndWarfare/Traits/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+KingdomsAndWarfare/Units/Artillery.py,sha256=EeG-Tvt4DcYXP7bgvQRZKuc8PEZEyR2mfQmEOKN3VuI,1493
+KingdomsAndWarfare/Units/Cavalry.py,sha256=Iq32P0huQ7hcX9hJEK69wKBeUULpSQwe9UoKjT4O8og,1685
+KingdomsAndWarfare/Units/Infantry.py,sha256=gd2IqJ0ZjjqAknDhawT98PYE_J5RSV4rY46fFTQB-z0,1807
+KingdomsAndWarfare/Units/Unit.py,sha256=1ipHsg93M7da8Bi4K7j_0BnU-3dClbNNB1rl1XbOzJ0,5089
+KingdomsAndWarfare/Units/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+KingdomsAndWarfare-0.2.1.dist-info/METADATA,sha256=Re791L60DTbcwxBD-W00_LnVnqEmch8cNo3WHjgrLAk,247
+KingdomsAndWarfare-0.2.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+KingdomsAndWarfare-0.2.1.dist-info/top_level.txt,sha256=yI83ARej19jtvZErgFXmGCttxhOnNGxExHA_KlHaIyY,19
+KingdomsAndWarfare-0.2.1.dist-info/RECORD,,
