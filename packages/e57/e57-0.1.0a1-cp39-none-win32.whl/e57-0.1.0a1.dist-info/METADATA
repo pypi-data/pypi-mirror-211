@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: e57
+Version: 0.1.0a1
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: File Formats
+Summary: E57 is a compact, non-proprietary point cloud format that's defined by the ASTM E2807 standard. This format is widely adopted by 3D design applications.
+Keywords: pointcloud
+Author-email: Graham Knapp <graham.knapp@gmail.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# e57-python
+e57 file reading
+
+Wraps 
+
