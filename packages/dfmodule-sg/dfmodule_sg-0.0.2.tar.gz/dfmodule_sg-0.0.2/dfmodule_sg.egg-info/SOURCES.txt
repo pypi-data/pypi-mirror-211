@@ -1,0 +1,8 @@
+setup.py
+dfmodule_sg.egg-info/PKG-INFO
+dfmodule_sg.egg-info/SOURCES.txt
+dfmodule_sg.egg-info/dependency_links.txt
+dfmodule_sg.egg-info/not-zip-safe
+dfmodule_sg.egg-info/requires.txt
+dfmodule_sg.egg-info/top_level.txt
+sample/__init__.py
