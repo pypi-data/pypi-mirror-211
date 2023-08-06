@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: jixn-utils
+Version: 0.0.3
+Summary: 一个工具包啊这
+Home-page: 
+Author: jixn
+Author-email: jixn@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+这是一个工具包-jixn
