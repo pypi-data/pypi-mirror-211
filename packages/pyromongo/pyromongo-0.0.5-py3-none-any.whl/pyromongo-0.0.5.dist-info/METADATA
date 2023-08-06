@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: pyromongo
+Version: 0.0.5
+Summary: Mongo Session Storage for pyrogram
+Home-page: https://github.com/animeshxd/pyromongo
+Author: Animesh Murmu
+Author-email: am2646374@gmail.com
+License: MIT
+Keywords: async mongo session storage pyrogram
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: motor
+Requires-Dist: pymongo
+Requires-Dist: Pyrogram
+Provides-Extra: aws
+Requires-Dist: motor[aws] ; extra == 'aws'
+Provides-Extra: encryption
+Requires-Dist: motor[encryption] ; extra == 'encryption'
+Provides-Extra: gssapi
+Requires-Dist: motor[gssapi] ; extra == 'gssapi'
+Provides-Extra: ocsp
+Requires-Dist: motor[ocsp] ; extra == 'ocsp'
+Provides-Extra: snappy
+Requires-Dist: motor[snappy] ; extra == 'snappy'
+Provides-Extra: srv
+Requires-Dist: motor[srv] ; extra == 'srv'
+Provides-Extra: zstd
+Requires-Dist: motor[zstd] ; extra == 'zstd'
+
+# pyromongo
+## INTRODUCTION 
+Persistent Session Storage for Pyrogram with MongoDB
+
+```python
+from pyrogram.client import Client
+from pyromongo import MongoStorage
+from motor.motor_asyncio import AsyncIOMotorClient
+
+client = Client(..)
+mongo = AsyncIOMotorClient("mongodb+srv://..")
+client.storage = MongoStorage(mongo["pyrogram"], remove_peers=False) # use remove_peers=True to remove all peers on logout
+
+
+client.run()
+```
+## Note:
+  ❌ It will not work with the pyrogram context manager.
+   ```python
+   async def main():
+       async with Client(..) as client:
+           client.storage = MongoStorage(..)
+   
+   # It will only store peers
+   ```
+ ### INSTALLATION:
+  ```bash
+  pip install pyromongo
+  
+  pip install git+https://github.com/animeshxd/pyromongo
+  ```
+  Install dnspython for `mongo+srv://..` URIs
+   ```bash
+   pip install dnspython
+   # or pip install -U pyromongo[srv]
+    
+   # for Termux use dnspython fork
+   apt install resolv-conf
+   pip install git+https://github.com/animeshxd/dnspython
+   ```
+   Install with all extra dependencies
+   ```bash
+   pip install "pyromongo[gssapi,aws,ocsp,snappy,srv,zstd,encryption]"
+   ```
+  Check other required dependencies for motor
+  https://motor.readthedocs.io/en/stable/installation.html#dependencies
+  
