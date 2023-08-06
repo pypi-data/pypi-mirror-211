@@ -1,0 +1,17 @@
+setup.cfg
+setup.py
+Lab3/__init__.py
+Lab3/main.py
+Lab3/constants/__init__.py
+Lab3/constants/constants.py
+Lab3/constants/formats.py
+Lab3/funcs/__init__.py
+Lab3/funcs/funcs.py
+Lab3/package/__init__.py
+Lab3/package/basicjsonserializer.py
+Lab3/package/basicxmlserializer.py
+serializer_from_hell.egg-info/PKG-INFO
+serializer_from_hell.egg-info/SOURCES.txt
+serializer_from_hell.egg-info/dependency_links.txt
+serializer_from_hell.egg-info/not-zip-safe
+serializer_from_hell.egg-info/top_level.txt
