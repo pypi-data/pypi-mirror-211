@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+kyqacommon/__init__.py
+kyqacommon/getLogger.py
+kyqacommon/minio_handld.py
+kyqacommon/uiCommonMethod.py
+kyqacommon.egg-info/PKG-INFO
+kyqacommon.egg-info/SOURCES.txt
+kyqacommon.egg-info/dependency_links.txt
+kyqacommon.egg-info/top_level.txt
