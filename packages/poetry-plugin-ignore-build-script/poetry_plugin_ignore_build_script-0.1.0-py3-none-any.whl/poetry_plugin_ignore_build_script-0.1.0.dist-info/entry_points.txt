@@ -1,0 +1,6 @@
+[poetry.application.plugin]
+ignore-build-script-app-plugin=poetry_plugin_ignore_build_script.plugin:IgnoreBuildScriptApplicationPlugin
+
+[poetry.plugin]
+ignore-build-script-plugin=poetry_plugin_ignore_build_script.plugin:IgnoreBuildScriptPlugin
+
