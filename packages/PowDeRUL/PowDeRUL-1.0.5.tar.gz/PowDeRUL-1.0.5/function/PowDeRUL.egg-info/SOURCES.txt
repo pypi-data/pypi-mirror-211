@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+function/PowDeRUL.egg-info/PKG-INFO
+function/PowDeRUL.egg-info/SOURCES.txt
+function/PowDeRUL.egg-info/dependency_links.txt
+function/PowDeRUL.egg-info/requires.txt
+function/PowDeRUL.egg-info/top_level.txt
