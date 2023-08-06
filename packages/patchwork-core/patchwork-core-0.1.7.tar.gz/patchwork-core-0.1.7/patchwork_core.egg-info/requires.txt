@@ -1,0 +1,4 @@
+betterproto>=1.2.5
+google
+pydantic>=1.8.2
+pytz
