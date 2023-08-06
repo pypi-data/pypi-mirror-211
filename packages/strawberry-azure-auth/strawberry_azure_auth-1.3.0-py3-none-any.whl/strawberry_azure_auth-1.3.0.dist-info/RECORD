@@ -1,0 +1,16 @@
+strawberry_azure_auth/__init__.py,sha256=KTyI0d9wJgf66jFBIX4ueB5qrIb3SW6rrb3sIQNDeGM,167
+strawberry_azure_auth/channels/__init__.py,sha256=-AHClqc8E3-yp2W7HN0yFEq-H-ZOdlTqQKFRjPQBOEk,154
+strawberry_azure_auth/channels/context.py,sha256=0LMTGG25jIN6iz6eBM4efyVVeTXK5jKt-tfziL-uulE,1318
+strawberry_azure_auth/channels/handlers.py,sha256=pBSxbGlaQpQefQwecJ_VB1dEuy-xkbnQCrmvLiXVEco,3566
+strawberry_azure_auth/channels/schema.py,sha256=k0VWfWegX-3Pvx0nuxNWYILCol3ImJabh6KdRMqNVDU,8597
+strawberry_azure_auth/django/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+strawberry_azure_auth/django/context.py,sha256=l3iDIwA1NB62ZD0V5Imyr4H_LUX91Z7pPG2oG0z62Kw,920
+strawberry_azure_auth/extension.py,sha256=P30DFZ_dOggie85PUVilnNwixCfPIs1suWlGgih3PNw,10706
+strawberry_azure_auth/openid.py,sha256=TmmqRQ2P-zUgihOfmlclYB0LcVNLzlVOLnRT8QD7yr0,5569
+strawberry_azure_auth/permissions.py,sha256=eyF_Y7mgfjju57tmAbXD6ON3ab7bBy0P6CBIc5g2xbc,1164
+strawberry_azure_auth/types.py,sha256=HwkP53dtu4MyqK8lf5-47gvmIEXPSfnEhbEBTRxZA6M,519
+strawberry_azure_auth/utils.py,sha256=grlD3mrC0AqHixExCN_OzkEQqqFpdBLIu4Guj8XFdEI,1585
+strawberry_azure_auth-1.3.0.dist-info/LICENSE,sha256=RJoejhaihA24qJXII4qroQzjU6YVb2MptXRQvwZywi4,1065
+strawberry_azure_auth-1.3.0.dist-info/METADATA,sha256=1JhBTUX67vxX0a2EN3eqsBXi6T5ilXdWZ3adhLxAw2o,4174
+strawberry_azure_auth-1.3.0.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+strawberry_azure_auth-1.3.0.dist-info/RECORD,,
