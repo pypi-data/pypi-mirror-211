@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ShishcovSerializer
+Version: 1.0
+Summary: module for python serialization(JSON, XML)
+Home-page: https://github.com/Tamplier322/Python_Labs/tree/Lab3
+Author: Shishcov Slava
+Author-email: slavashishcov1@mail.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+
+UNKNOWN
+

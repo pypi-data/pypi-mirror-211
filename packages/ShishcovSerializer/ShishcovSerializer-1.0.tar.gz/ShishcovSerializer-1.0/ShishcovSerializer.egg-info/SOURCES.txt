@@ -1,0 +1,12 @@
+setup.py
+Serializers/__init__.py
+Serializers/base_ser.py
+Serializers/constants.py
+Serializers/dict_ser.py
+Serializers/json_serializer.py
+Serializers/ser_factory.py
+Serializers/xml_serializer.py
+ShishcovSerializer.egg-info/PKG-INFO
+ShishcovSerializer.egg-info/SOURCES.txt
+ShishcovSerializer.egg-info/dependency_links.txt
+ShishcovSerializer.egg-info/top_level.txt
