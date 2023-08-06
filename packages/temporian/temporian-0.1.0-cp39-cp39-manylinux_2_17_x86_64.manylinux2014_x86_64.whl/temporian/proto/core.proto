@@ -1,0 +1,208 @@
+/*
+ * Copyright 2021 Google LLC.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+syntax = "proto2";
+
+package temporian.proto;
+
+// A graph defines a set of processing operations and holds all Node,
+// Feature and Sampling instances.
+message Graph {
+  repeated Operator operators = 1;
+
+  repeated Node nodes = 2;
+
+  repeated Feature features = 3;
+
+  repeated Sampling samplings = 4;
+
+  repeated IOSignature inputs = 5;
+
+  repeated IOSignature outputs = 6;
+}
+
+// The input or output of a graph.
+message IOSignature {
+    optional string key = 1;
+    optional string node_id = 2;
+}
+
+// Instantiation of an operator in a graph.
+message Operator {
+  // Unique identifier of the operator instance.
+  optional string id = 1;
+
+  // Key of the operator definition.
+  optional string operator_def_key = 2;
+
+  // Input node ids by key.
+  repeated NodeArgument inputs = 3;
+
+  // Output node ids by key.
+  repeated NodeArgument outputs = 4;
+
+  // Constructor attributes.
+  repeated Attribute attributes = 5;
+
+  message NodeArgument {
+    // Name of the argument.
+    optional string key = 1;
+
+    optional string node_id = 2;
+  }
+
+  message Attribute {
+    // Name of the attribute.
+    optional string key = 1;
+
+    oneof type {
+      int64 integer_64 = 2;
+      string str = 3;
+      double float_64 = 4;
+      ListString list_str = 5;
+      bool boolean = 6;
+      MapStrStr map_str_str = 7;
+    }
+
+    message ListString{
+      repeated string value = 1;
+    }
+    message MapStrStr{
+      map<string, string> value = 1;
+    }
+  }
+}
+
+// Data types
+enum DType {
+  UNDEFINED = 0;
+  FLOAT64 = 1;
+  INT64 = 2;
+  FLOAT32 = 3;
+  INT32 = 4;
+  BOOLEAN = 5;
+  STRING = 6;
+}
+
+// Schema of an event set
+message Node {
+  // Identifier of the node. Should be unique across all the nodes of the
+  // graph.
+  optional string id = 1;
+
+  // Identifier of the sampling of the node.
+  optional string sampling_id = 2;
+
+  // Features in the node.
+  repeated string feature_ids = 3;
+
+  optional string name = 4;
+
+  optional string creator_operator_id = 5;
+}
+
+// Schema of a feature
+message Feature {
+  // Identifier of the feature. Should be unique in all the features in the
+  // graph.
+  optional string id = 1;
+
+  optional string name = 2;
+
+  optional DType dtype = 3;
+
+  // Identifier of the sampling of the feature.
+  optional string sampling_id = 4;
+
+  optional string creator_operator_id = 5;
+}
+
+message Index {
+  message IndexLevel {
+    // Index level names
+    optional string name = 1;
+
+    // Index level dtypes
+    optional DType dtype = 2;
+  }
+
+  repeated IndexLevel levels = 1;
+}
+
+// Schema of a sampling.
+message Sampling {
+  // Identifier of the sampling. Should be unique across all the samplings of
+  // the graph.
+  optional string id = 1;
+
+  // Index of the sampling.
+  optional Index index = 2;
+
+  // Index of the node id who's operator creator also created this feature.
+  optional string creator_operator_id = 3;
+
+  // True if the event timestamps can be converted to dates
+  optional bool is_unix_timestamp = 4;
+}
+
+// Definition of an operator. No two operators definition can have the same key.
+message OperatorDef {
+  // Unique identifier of the operator.
+  optional string key = 1;
+
+  // Inputs of the operator.
+  repeated Input inputs = 2;
+
+  // Outputs of the operator.
+  repeated Output outputs = 3;
+
+  // Arguments of the operator.
+  repeated Attribute attributes = 4;
+
+  message Input {
+    // String identifier of the input. Should be unique.
+    optional string key = 1;
+
+    // If true, the input is optional.
+    optional bool is_optional = 3;
+  }
+
+  message Output {
+    // String identifier of the output. Should be unique.
+    optional string key = 1;
+  }
+
+  message Attribute {
+    // String identifier of the attribute. Should be unique.
+    optional string key = 1;
+
+    // What type of data is expected.
+    optional Type type = 2;
+
+    // If true, the attribute is optional.
+    optional bool is_optional = 3;
+
+    enum Type {
+      UNDEFINED = 0;
+      INTEGER_64 = 1;
+      STRING = 2;
+      REPEATED_STRING=3;
+      FLOAT_64 = 4;
+      BOOL = 5;
+      ANY = 6;
+      MAP_STR_STR = 7;
+    }
+  }
+}
