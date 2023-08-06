@@ -1,0 +1,8 @@
+defaults:
+  - _self_
+  - apis:
+    - config_umls_api
+    - config_metamap_api
+    - config_pinecone_api
+  - custom: null
+  - semantic_search: null
