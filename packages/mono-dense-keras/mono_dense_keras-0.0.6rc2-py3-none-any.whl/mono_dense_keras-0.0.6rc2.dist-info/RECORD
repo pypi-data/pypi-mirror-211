@@ -1,0 +1,12 @@
+mono_dense_keras/__init__.py,sha256=021jVIrsQwbjNb8mqFoENaMmUigbhSX_wx2sw_0oMVg,463
+mono_dense_keras/_modidx.py,sha256=qMjRqgke-k2nNglkRWKbDtpi7qz_YOd3qLFG67hKetU,10897
+mono_dense_keras/experiments.py,sha256=9WK3WltmomocBG5Midgf_d_to-D2FcZ3CS8wmYNrUPE,14065
+mono_dense_keras/helpers.py,sha256=dURjhmdTnB7RMmaup7L48D08SlLKSlUhAZEOfadBdcI,288
+mono_dense_keras/_components/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mono_dense_keras/_components/mono_dense_layer.py,sha256=3_5MMeaOR1D-DuoZ93e0iHLNtDPhYVnaAtE_MKku0uc,23910
+mono_dense_keras-0.0.6rc2.dist-info/LICENSE,sha256=nlArp1_Q_TDOpUl7Q4pLwS8H8CvJMqemBB_WoYuPRqA,20848
+mono_dense_keras-0.0.6rc2.dist-info/METADATA,sha256=Hv8btPravryLtJ7njC6dzryNDczlEmiWqlZElq0_djI,8346
+mono_dense_keras-0.0.6rc2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+mono_dense_keras-0.0.6rc2.dist-info/entry_points.txt,sha256=llevKZhNZWv_1S_WHU-OPGtxtU-KqlLTvCY78lpuKx8,54
+mono_dense_keras-0.0.6rc2.dist-info/top_level.txt,sha256=_rtxSftWwzNbEPf7UXYmuHuGIg75LettVJPcGi-1II8,17
+mono_dense_keras-0.0.6rc2.dist-info/RECORD,,
