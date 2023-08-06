@@ -1,0 +1,2 @@
+# Required to generate docs and also run tests
+tritonclient[all]
