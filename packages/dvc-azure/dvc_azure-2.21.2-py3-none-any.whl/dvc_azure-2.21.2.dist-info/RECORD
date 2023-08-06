@@ -1,0 +1,15 @@
+dvc_azure/__init__.py,sha256=WOznX5N4r20CNNgODbci6B1W3UMTPgkISf8sTDRkwi8,5968
+dvc_azure/_dvc_azure_version.py,sha256=GhZtYGFBysqqE4JJ7H85uTxxuqYlhQlWKXfEwxZTfVU,162
+dvc_azure/path.py,sha256=dWgg_fkN_wRZ3c3oqkNtGVbi7qrcv3qBb3KlIOTl-1I,1678
+dvc_azure/spec.py,sha256=gsxt7dKjk2z_bf1QPH3sRzLgkyb1oMdvHevE8x6C170,412
+dvc_azure/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dvc_azure/tests/benchmarks.py,sha256=xrzD8iBIe8iETnEEUg_m222FkV7USR_mdCoaWUuWCMs,161
+dvc_azure/tests/cloud.py,sha256=WLztjvwEco4R9F9cZSDcOpjQgOB_SGf07n-lFSaI7sc,2053
+dvc_azure/tests/conftest.py,sha256=UNhnW-wCMbleRbl2FIyk9oVuZiuhkOlbUsnL9XLf_yo,170
+dvc_azure/tests/fixtures.py,sha256=vdlUBqpBmgC4ZYoPb2F4q17PolD2UU_6-DNko-xQSiw,761
+dvc_azure/tests/test_dvc.py,sha256=ik6Ncs4hKlkPP6pI6Km9ZmsyPq8YigrfJGcsGhOx4z0,1126
+dvc_azure-2.21.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+dvc_azure-2.21.2.dist-info/METADATA,sha256=xiAHKsP1EvMW-LspTnPU_dtJM32zFt4WRebQ6aRZmS8,2272
+dvc_azure-2.21.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+dvc_azure-2.21.2.dist-info/top_level.txt,sha256=1VbCTvNa73fZyMxO1vwMStvEODGWakf4EIIhVqCE7r8,10
+dvc_azure-2.21.2.dist-info/RECORD,,
