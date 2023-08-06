@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "gravitas"
+readme = "README.md"
+packages = [{include = "gravitas"}]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: MacOS",
+]
+
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.12"
+numpy = "^1.19"
+
+[tool.cibuildwheel.environment]
+CIBW_VERBOSE = "1"
+
+[tool.cibuildwheel]
+skip = "cp36-* cp37-* cp38-* cp39-* cp310-* pp* *-manylinux_i686 *_ppc64le *_s390x *-musllinux_aarch64"
+
+[tool.cibuildwheel.linux]
+manylinux-x86_64-image = "manylinux2014"
+manylinux-aarch64-image = "manylinux2014"
+musllinux-x86_64-image = "musllinux_1_1"
+environment = {RUNNER_OS="Linux"}
+
+[tool.cibuildwheel.macos]
+archs = "x86_64 arm64"
+test-skip = "*_universal2:arm64"
+# MACOS linker doesn't support stripping symbols
+environment = {RUNNER_OS="macOS"}
+
+[tool.cibuildwheel.windows]
+environment = {CFLAGS="", LDFLAGS=""}
+
+[build-system]
+requires = ["setuptools>=42", "wheel", "numpy"]
+build-backend = "setuptools.build_meta"
