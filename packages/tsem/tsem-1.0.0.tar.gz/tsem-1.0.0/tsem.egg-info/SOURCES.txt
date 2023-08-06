@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+tests/tests.py
+tsem.egg-info/PKG-INFO
+tsem.egg-info/SOURCES.txt
+tsem.egg-info/dependency_links.txt
+tsem.egg-info/requires.txt
+tsem.egg-info/top_level.txt
