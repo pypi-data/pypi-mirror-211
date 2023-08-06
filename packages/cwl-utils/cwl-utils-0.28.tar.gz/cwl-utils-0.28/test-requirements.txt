@@ -1,0 +1,5 @@
+pytest < 8
+pytest-cov
+pytest-xdist
+cwlformat
+pytest-mock >= 1.10.0
