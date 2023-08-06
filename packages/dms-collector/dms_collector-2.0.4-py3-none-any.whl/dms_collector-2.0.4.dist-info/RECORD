@@ -1,0 +1,8 @@
+dms_collector/__init__.py,sha256=yQrVBot8RKv4KqwICcs-5P9Be1yttUxnuo969dfgfls,451
+dms_collector/__main__.py,sha256=aH4hFgtYh8ZThlwQGTO2RUKtHBpe71ZWtARzH2-lhgk,7628
+dms_collector/dms.py,sha256=GFRAFtbSYdCspEGQubZAzofoAAgGtUVPWQ5wN1SYBbI,10164
+dms_collector-2.0.4.data/scripts/dms-collector,sha256=sjr-8lKbIKcth2XQo-EJoxwP7gT2MKDSxwSnNDSoOF8,106
+dms_collector-2.0.4.dist-info/METADATA,sha256=SYCxZJRAKlmkEtApjmRYfVCpIY8oFzm6jbREgGGE8Ok,5115
+dms_collector-2.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+dms_collector-2.0.4.dist-info/top_level.txt,sha256=RuQQjBW50aAGTJtqCZ82BNqd1M-Rmvd_rYrG7UeV-9E,14
+dms_collector-2.0.4.dist-info/RECORD,,
