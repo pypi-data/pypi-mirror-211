@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: BackToTheFeature
+Version: 0.1.0
+Summary: A Python package that provides functionality for data processing and analysis using the "BackToTheFeature" class, derived from pandas DataFrame, for managing and manipulating time-related features.
+Home-page: https://github.com/Repsajsov/BackToTheFeature/tree/main/base-folder/BackToTheFeature
+Author: Jasper Vos
+Author-email: jaspervos12@outlook.com
+Requires-Dist: pandas (>=1.1.5)
+
