@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: docrobot
+Version: 1.0.0
+Summary: 一个文档自动化处理工具
+Project-URL: Homepage, https://github.com/icehong/docrobot
+Project-URL: Bug Tracker, https://github.com/icehong/docrobot/issues
+Author-email: Xu Hong <icehong@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# 一个文档自动处理工具
+
+暂时没有啥说明
+
+环境准备:
+python -m pip install -U pip setuptools
+pip install pywin32 colorama python-docx openpyxl pyside6 -i https://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com
+
+
+升级某一个包：
+pip install --upgrade openpyxl
