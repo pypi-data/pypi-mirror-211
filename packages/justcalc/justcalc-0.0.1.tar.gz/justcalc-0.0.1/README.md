@@ -1,0 +1,62 @@
+# JustCalc
+
+## Introduction
+Welcome to JustCalc, a basic Python calculator capable of performing simple arithmetic operations and more.
+
+## Features
+JustCalc provides the following functionalities:
+- Addition
+- Subtraction
+- Multiplication
+- Division
+- Taking the nth root of a number
+- Displaying current memory
+- Resetting memory to zero
+
+## Installation
+You can install JustCalc using the following command:
+```
+pip install justcalc
+```
+
+## Usage
+```
+from justcalc.calculator import Calculator
+
+# Create instance of Calculator
+calc = Calculator()
+
+# Perform Addition
+calc.add(5)
+
+# Perform Subtraction
+calc.subtract(2)
+
+# Perform Multiplication
+calc.multiply(9)
+
+# Perform Division
+calc.divide(3)
+
+# Take the nth root of a current number in memory
+calc.root(3)
+
+# Display current memory
+calc.current_memory()
+
+# Reset memory
+calc.reset_memory()
+```
+
+## Testing
+To run the tests in this project, you can use the following command:
+
+```
+python -m pytest
+```
+
+## Contributing
+Contributions to JustCalc are welcome! If you encounter any issues or have suggestions for improvement, please follow the guidelines below:
+- For bug reports or feature requests, please open an issue on the GitHub repository.
+- If you'd like to contribute code, fork the repository, make your changes, and submit a pull request.
+- Follow the coding style and conventions used in the project.
