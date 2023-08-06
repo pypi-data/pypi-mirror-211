@@ -1,0 +1,2 @@
+[console_scripts]
+genvctl = genv.ctl.__main__:main
