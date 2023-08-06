@@ -1,0 +1,2 @@
+[console_scripts]
+cartoonart = cartoonart.cli:run

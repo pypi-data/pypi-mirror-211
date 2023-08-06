@@ -1,0 +1,173 @@
+Metadata-Version: 2.1
+Name: cartoonart
+Version: 1.0.5
+Summary: Create cartoon from image or video.
+Home-page: https://github.com/ego/cartoonart/
+Author: Alter Ego
+Author-email: 0x7c48@gmail.com
+License: MIT
+Project-URL: Documentation, https://ego.github.io/cartoonart/readme.html
+Project-URL: Source, https://github.com/ego/cartoonart/
+Project-URL: Download, https://pypi.org/project/cartoonart/#files
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Environment :: Console
+Classifier: Environment :: MacOS X
+Classifier: Environment :: Other Environment
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Other Audience
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: Free For Educational Use
+Classifier: License :: Free For Home Use
+Classifier: License :: Free for non-commercial use
+Classifier: Natural Language :: English
+Classifier: Natural Language :: Polish
+Classifier: Natural Language :: German
+Classifier: Natural Language :: Czech
+Classifier: Natural Language :: Finnish
+Classifier: Natural Language :: Greek
+Classifier: Natural Language :: Irish
+Classifier: Natural Language :: Japanese
+Classifier: Natural Language :: Korean
+Classifier: Natural Language :: Slovak
+Classifier: Natural Language :: Slovenian
+Classifier: Natural Language :: Spanish
+Classifier: Natural Language :: Ukrainian
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Adaptive Technologies
+Classifier: Topic :: Desktop Environment
+Classifier: Topic :: Documentation
+Classifier: Topic :: Documentation :: Sphinx
+Classifier: Topic :: Education
+Classifier: Topic :: Education :: Testing
+Classifier: Topic :: Internet
+Classifier: Topic :: Home Automation
+Classifier: Topic :: Multimedia
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: Multimedia :: Graphics :: Capture
+Classifier: Topic :: Multimedia :: Graphics :: Capture :: Digital Camera
+Classifier: Topic :: Multimedia :: Video
+Classifier: Topic :: Multimedia :: Video :: Capture
+Classifier: Topic :: Multimedia :: Video :: Conversion
+Classifier: Topic :: Multimedia :: Video :: Display
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Provides-Extra: testing
+License-File: LICENSE.txt
+
+# Cartoon Art [![](https://img.shields.io/github/v/release/ego/cartoonart.svg?colorB=58839b)](https://github.com/ego/cartoonart/releases) [![PyPI](https://img.shields.io/pypi/v/cartoonart.svg)](https://pypi.org/project/cartoonart/)
+
+
+> Create **cartoon** from image or video.
+
+CLI tools for creating nice cartoon **images** and **video**.
+
+![The output nature cartoon](https://raw.githubusercontent.com/ego/cartoonart/main/img/cartoon-nature.jpeg)
+![The input nature image](https://raw.githubusercontent.com/ego/cartoonart/main/img/nature.jpeg)
+
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+
+[![Python 3.8](https://img.shields.io/badge/python-3.8-green.svg)](https://www.python.org/downloads/release/python-380/)
+
+[![Python 3.10](https://img.shields.io/badge/python-3.10-green.svg)](https://www.python.org/downloads/release/python-3100/)
+
+[![Python 3.11](https://img.shields.io/badge/python-3.11-green.svg)](https://www.python.org/downloads/release/python-3110/)
+
+### Install
+
+```shell
+pip install cartoonart
+```
+
+## How to use cartoonart
+
+### Create cartoon art from image
+
+
+```shell
+cartoonart image --i img/nature.jpeg
+cartoonart image --i img/nature.jpeg --o img/cartoon-nature.jpeg
+cartoonart image --i img/shuttle.jpg --o img/cartoon-shuttle.jpg
+```
+
+You can omit option `--o` then cartoon will be saved with prefix `cartoon-`.
+
+### Create cartoon art from video camera
+
+```shell
+cartoonart video
+cartoonart video --o video
+```
+
+To stop video recording press `Q` key.
+
+You can omit option `--o` then video will be saved as `video-art.avi`.
+
+### Get help
+
+```shell
+cartoonart --help
+cartoonart image --help
+```
+
+Install `cartoonart` CLI completion
+
+```shell
+cartoonart --show-completion
+cartoonart --install-completion
+```
+
+## Cartoons gallery
+
+![Morty](https://raw.githubusercontent.com/ego/cartoonart/main/img/morty.jpg)
+![Cartoon Morty](https://raw.githubusercontent.com/ego/cartoonart/main/img/cartoon-morty.jpg)
+
+![Rick and Morty](https://raw.githubusercontent.com/ego/cartoonart/main/img/rick-and-morty.jpg)
+![Cartoon Rick and Morty](https://raw.githubusercontent.com/ego/cartoonart/main/img/cartoon-rick-and-morty.jpg)
+
+![Shuttle](https://raw.githubusercontent.com/ego/cartoonart/main/img/shuttle.jpg)
+![Cartoon shuttle](https://raw.githubusercontent.com/ego/cartoonart/main/img/cartoon-shuttle.jpg)
+
+![Space](https://raw.githubusercontent.com/ego/cartoonart/main/img/space.jpg)
+![Cartoon space](https://raw.githubusercontent.com/ego/cartoonart/main/img/cartoon-space.jpg)
+
+![Star](https://raw.githubusercontent.com/ego/cartoonart/main/img/star.jpg)
+![Cartoon star](https://raw.githubusercontent.com/ego/cartoonart/main/img/cartoon-star.jpg)
+
+![Wormhole](https://raw.githubusercontent.com/ego/cartoonart/main/img/wormhole.jpg)
+![Cartoon wormhole](https://raw.githubusercontent.com/ego/cartoonart/main/img/cartoon-wormhole.jpg)
+
+
+## Contributing
+
+[CONTRIBUTING](CONTRIBUTING.md)
+
+
+## Stats
+
+[![Monthly downloads](https://pepy.tech/badge/cartoonart/month)](https://pepy.tech/project/cartoonart)
