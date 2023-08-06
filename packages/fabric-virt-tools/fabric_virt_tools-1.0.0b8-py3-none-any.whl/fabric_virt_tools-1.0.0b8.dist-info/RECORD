@@ -1,0 +1,11 @@
+fabric_virt_tools/__init__.py,sha256=HMDzrNfks4_T_fwasNt82d2Om-T_OoJ-iKFlLqHZmNw,24
+fabric_virt_tools/cpu_tune.py,sha256=jTphb2pI1BuXD6wm2BOQlBM_BK1FI_3W5X1VeQ78Px4,8127
+fabric_virt_tools/cpu_tune_bkp.py,sha256=Cn5lvXRrx4hSO2sCsPvpIp_Bpe9dQiFDAIcNoaHbmLk,8485
+fabric_virt_tools/numa_tune.py,sha256=N7UX79cCKpYZ1BLNy2jx5j0XEHbCCuLW9gL1O2oUKNw,12229
+fabric_virt_tools/utils.py,sha256=cYJB9kkntK4UqXLPCRx6gjtcG9xayrvxJaO741e1gLY,1559
+fabric_virt_tools/virt_tools_cli.py,sha256=DIuuXxnwbdCY3vKRWry_HsFjaphZLOEkqCRUR81dcWI,3972
+fabric_virt_tools-1.0.0b8.dist-info/entry_points.txt,sha256=ttRBEcXBY1U6LOk3neUnVd0JR0egicIyq1H2VDjjNeo,89
+fabric_virt_tools-1.0.0b8.dist-info/LICENSE,sha256=P277nPZLx1noU9HCnuBfDUHkpC36xq5G9SK9FKcQUqY,1071
+fabric_virt_tools-1.0.0b8.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+fabric_virt_tools-1.0.0b8.dist-info/METADATA,sha256=lqyizC86v2m_BVV8CWeQ1jekE6giNzb81SHO_xM5OG0,926
+fabric_virt_tools-1.0.0b8.dist-info/RECORD,,
