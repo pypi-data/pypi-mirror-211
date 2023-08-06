@@ -1,0 +1,9 @@
+mercury.cpython-311-x86_64-linux-gnu.so,sha256=Sp6oWxLf9amg_iyuMaG4g2y7tv2NbEnrEC2xqL7UlkE,33116145
+mercury_python.libs/libcrypto-0a45f796.so.1.1.1k,sha256=4C-YPUQQYAKE7OPKKfqLX13WUL0rsW_VbxthNOguyQ4,3211825
+mercury/_version.py,sha256=ls1camlIoMxEZz9gSkZ1OJo-MXqHWwKPtdPbZJmwp7E,22
+mercury/__init__.py,sha256=NgkK1t_wSEayRD5KF4xKywOSJO_FWvjaJ6sPLp5nbwc,71
+mercury_python-0.1.1.dist-info/METADATA,sha256=2mez7CHrHbIpu5H9bKkxN7hk290Z8k8dcHs3zCiki1s,4658
+mercury_python-0.1.1.dist-info/LICENSE,sha256=1pGUgDpESi5PJtuxlkm_9uzy0GSXMtimSQfANkimv9I,1603
+mercury_python-0.1.1.dist-info/RECORD,,
+mercury_python-0.1.1.dist-info/WHEEL,sha256=Sz6TSs5Plt3BGCNrmuWcVriyt20GNlfrR6mFcILDolA,114
+mercury_python-0.1.1.dist-info/top_level.txt,sha256=g4SEBYbWrf4BKSUs7TMRPpJOaH62ZIZ3_rz238h7wKY,8
