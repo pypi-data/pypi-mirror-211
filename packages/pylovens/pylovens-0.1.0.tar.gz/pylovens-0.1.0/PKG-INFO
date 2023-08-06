@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: pylovens
+Version: 0.1.0
+Summary: Python client for the Lovens API.
+Author-email: Rogier van der Geer <rogier@vander-geer.nl>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# pylovens
+
+Python client for the Lovens API.
+
+## Usage
+
+Using the client is as simple as:
+```python
+from pylovens import LovensClient
+
+client = LovensClient()
+client.login("your_username", "your_secret_password")
+
+bikes = client.get_bikes()
+```
+
+_Note:_ only authentication with email/password is supported. 
