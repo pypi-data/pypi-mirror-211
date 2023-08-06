@@ -1,0 +1,11 @@
+configzen/__init__.py,sha256=LGg0BtudSUrRqmuxJdHkBsu-BNS5Z91idQTnerjaEIU,216
+configzen/__main__.py,sha256=fqTCe6OQwSjc1xpY_eJ_UK9TbBCZKP89GHFCLltgcc4,939
+configzen/config.py,sha256=2KFK7e1hNhkLYfLh5Wv09bDTjuz6D3yM7h3XRExYvOc,60674
+configzen/errors.py,sha256=ywZKL6ewxTCce234CypagV8VEFA2_oP4RhRvlzaBscI,2553
+configzen/processor.py,sha256=lAAAq6uqFXlDuVO55ZnjGaspHlij_voacSHVPV1XUuQ,20820
+configzen/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+configzen/typedefs.py,sha256=Mppj9KqOh2SdUnjrVbxav561XKWk4uVOBK_OwtBsfoY,850
+configzen-0.2.1.dist-info/LICENSE,sha256=p38ciq2yKPQRC2G7xWuKtl8Fdas2F2sTBlxpvLyOWxg,1083
+configzen-0.2.1.dist-info/METADATA,sha256=v0lnJ1LpLOFoTj51C6jEHG6DKxie2pZOS3rkhWBhPM8,7851
+configzen-0.2.1.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+configzen-0.2.1.dist-info/RECORD,,
