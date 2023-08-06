@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: udm-toolbox
+Version: 0.0.1
+Summary: A urban drainage model toolbox
+Home-page: https://github.com/Jistill/UDM-toolbox
+Author: Yiran Ji
+Author-email: yiranji@zju.edu.cn
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# UDM-toolbox
