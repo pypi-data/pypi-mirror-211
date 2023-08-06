@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: apepay
+Version: 0.1.0
+Summary: Python SDK for ApePay
+License: Apache 2.0
+Author: ApeWorX LTD
+Author-email: admin@apeworx.io
+Requires-Python: >=3.8,<3.11
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: eth-ape (>=0.6.8,<0.7.0)
+Description-Content-Type: text/markdown
+
+# ApePay
+
+[![Ape Framework](https://img.shields.io/badge/Built%20with-Ape%20Framework-brightgreen.svg)](https://apeworx.io)
+
+A smart contract payment system built for automated service management
+
+## About
+
+See the [blog post](#tbd) to learn more about ApePay!
+
+## Documentation
+
+Coming soon!
+
+## Contributing
+
+ApePay is open source and we welcome all contributors! Check out the following to get started.
+
+TODOs:
+
+- [x] Initial implementation
+- [ ] Documentation
+- [ ] Live testing on Sepolia
+- [ ] Production deployment on Arbitrum
+- [ ] Frontend management console, for managing subscriptions
+
+### Setup
+
+First, [install Ape](https://docs.apeworx.io/ape/stable/userguides/quickstart.html#installation)
+
+Second, make sure to install the plugins:
+
+```sh
+$ ape plugins install .
+```
+
+Lastly, since this is an SDK package, install the SDK:
+
+```sh
+$ poetry install .
+```
+
+Then you are ready to contribute!
+
+### Testing
+
+To run tests, just use Ape:
+
+```sh
+$ ape test
+```
+
+To see gas usage, add the `--gas` flag:
+
+```sh
+$ ape test --gas
+```
+
+### Scripts
+
+To deploy a StreamManager (for testing purposes), run:
+
+```sh
+$ ape run deploy stream-manager [TOKEN_ADDRESS [...]]
+# Or if `ape tokens` is installed with a valid tokenlist
+$ ape run deploy stream-manager [TOKEN_SYMBOL [...]]
+```
+
+To deploy the StreamFactory (for production use), run:
+
+```sh
+$ ape run deploy stream-factory
+```
+
+## License
+
+ApePay is licensed [Apache 2.0](./LICENSE)
+
