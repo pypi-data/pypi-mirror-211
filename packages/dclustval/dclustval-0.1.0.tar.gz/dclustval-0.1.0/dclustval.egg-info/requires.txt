@@ -1,0 +1,11 @@
+numpy
+scipy
+matplotlib
+seaborn
+statsmodels
+networkx
+count_split
+scikit_learn
+
+[docs]
+m2r2
