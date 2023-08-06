@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+artscraper/__init__.py
+artscraper/base.py
+artscraper/find_artists.py
+artscraper/find_artworks.py
+artscraper/functions.py
+artscraper/googleart.py
+artscraper/wikiart.py
+artscraper.egg-info/PKG-INFO
+artscraper.egg-info/SOURCES.txt
+artscraper.egg-info/dependency_links.txt
+artscraper.egg-info/requires.txt
+artscraper.egg-info/top_level.txt
