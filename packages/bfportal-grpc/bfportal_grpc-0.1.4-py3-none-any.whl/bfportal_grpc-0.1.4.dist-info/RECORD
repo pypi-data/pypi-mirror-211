@@ -1,0 +1,14 @@
+bfportal_grpc/__init__.py,sha256=yfZKMeKpYb_jiSXHgZpIgHXZEH0XCHuJGPYTdHZcayA,183
+bfportal_grpc/access_token.py,sha256=zgb_poOveB_U5Zrxyn_zH77zlXQ8wMziB2DUoAEE7hg,892
+bfportal_grpc/proto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bfportal_grpc/proto/authentication_pb2.py,sha256=malrM_0DhNDDfDuNwdB5sXcl_513UCKEM_0bP26vMKw,3648
+bfportal_grpc/proto/authentication_pb2_grpc.py,sha256=b2lhWKQj-wU5bnmeCFzpOR9JjNHoyb3vozsYfDvIAUM,4013
+bfportal_grpc/proto/communitygames_pb2.py,sha256=8DnkBYLMGjpzaNKL2MBT-KEapWcbqNIPaDRpkPPj628,29737
+bfportal_grpc/proto/communitygames_pb2_grpc.py,sha256=PgB5miz9mVEEgXsd_ubVtD7JFYPfkZnnTXGeo-5C1uw,17770
+bfportal_grpc/proto/localization_pb2.py,sha256=9yMqo3R4aZR3OMnF91S1sZG7EHAS4hNHQV1BNvdvN38,2994
+bfportal_grpc/proto/localization_pb2_grpc.py,sha256=J2bAiyQ-i4gfKKnAeOMu344MZ0WgUBy1ciyFhSXujU8,2627
+bfportal_grpc/proto/reporting_pb2.py,sha256=NZ2z1eKWIbiPqJyxlXli8eD2Hca9yoLLkFlnvMR9jKs,2501
+bfportal_grpc/proto/reporting_pb2_grpc.py,sha256=bLXGdtRPOpCzkj8XKjmWBoDWg_KVE5nE6SftAIlJiaA,2565
+bfportal_grpc-0.1.4.dist-info/METADATA,sha256=NzavLzgy_vAzio3zIW7NPFBbzQNtVTGUYd0rqY43YH0,6782
+bfportal_grpc-0.1.4.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+bfportal_grpc-0.1.4.dist-info/RECORD,,
