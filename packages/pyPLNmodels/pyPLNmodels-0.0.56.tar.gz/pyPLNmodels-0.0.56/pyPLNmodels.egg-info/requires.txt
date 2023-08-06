@@ -1,0 +1,16 @@
+matplotlib
+numpy
+pandas
+scipy
+seaborn
+torch
+scikit-learn
+patsy
+
+[build-doc]
+sphinx
+sphinx_rtd_theme
+
+[tests]
+pytest
+pytest_lazy_fixture
