@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: keyrings.google-artifactregistry-auth-py2
+Version: 1.1.2.post7
+Summary: Keyring backend for Google Auth tokens - a fork for Python 2
+Home-page: UNKNOWN
+Author: Megan Kuo
+Author-email: megankuo@google.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
+Requires-Dist: keyring (<19.0.0)
+Requires-Dist: google-auth (<2)
+Requires-Dist: requests (<2.28)
+Requires-Dist: pluggy (<2)
+Requires-Dist: cachetools (<4)
+Requires-Dist: entrypoints (<0.4)
+Requires-Dist: cryptography (<3.4)
+Requires-Dist: setuptools (<45)
+
+# Artifact Registry tools for Python 2
+
+This repository contains an alternate [keyring](https://pypi.python.org/pypi/keyring) backend implementation to help with interacting with Python repositories hosted on Artifact Registry.
+
+This is a fork of the original [Google Cloud Platform repo](https://github.com/GoogleCloudPlatform/artifact-registry-python-tools) backported to support Python 2.
+
+It's uploaded to PyPi under the name `keyrings.google-artifactregistry-auth-py2`.
+
+
