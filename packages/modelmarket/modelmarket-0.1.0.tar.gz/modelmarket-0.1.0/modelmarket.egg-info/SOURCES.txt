@@ -1,0 +1,6 @@
+setup.py
+modelmarket/__init__.py
+modelmarket.egg-info/PKG-INFO
+modelmarket.egg-info/SOURCES.txt
+modelmarket.egg-info/dependency_links.txt
+modelmarket.egg-info/top_level.txt

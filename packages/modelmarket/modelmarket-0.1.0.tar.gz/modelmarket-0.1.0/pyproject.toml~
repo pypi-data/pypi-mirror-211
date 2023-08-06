@@ -1,0 +1,7 @@
+[build-system]
+requires = ["setuptools", "wheel","pypa-build"]
+build-backend = "pypa.build.api"
+
+[project]
+name = "modelmarket"
+version = "0.1.0"
