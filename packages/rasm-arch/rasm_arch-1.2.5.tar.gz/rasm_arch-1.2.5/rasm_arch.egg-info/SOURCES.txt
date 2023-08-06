@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+bin/rasm-arch
+rasm_arch/__init__.py
+rasm_arch/rasm_arch.py
+rasm_arch/util.py
+rasm_arch.egg-info/PKG-INFO
+rasm_arch.egg-info/SOURCES.txt
+rasm_arch.egg-info/dependency_links.txt
+rasm_arch.egg-info/top_level.txt
+rasm_arch_data/__init__.py
+rasm_arch_data/mushaf_simple.json
+rasm_arch_data/mushaf_uthmani.json
+tests/test_rasm_arch.py
