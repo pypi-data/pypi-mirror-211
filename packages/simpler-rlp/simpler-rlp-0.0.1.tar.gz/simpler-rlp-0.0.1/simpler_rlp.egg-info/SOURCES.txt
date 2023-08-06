@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+simpler_rlp/__init__.py
+simpler_rlp/converters.py
+simpler_rlp/simpler_rlp.py
+simpler_rlp.egg-info/PKG-INFO
+simpler_rlp.egg-info/SOURCES.txt
+simpler_rlp.egg-info/dependency_links.txt
+simpler_rlp.egg-info/top_level.txt
+tests/test_convert_to_bytes.py
+tests/test_decode.py
+tests/test_encode.py
