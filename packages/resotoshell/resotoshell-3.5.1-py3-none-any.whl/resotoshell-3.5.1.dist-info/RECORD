@@ -1,0 +1,11 @@
+resotoshell/__init__.py,sha256=Zr2kUSQ4hpMb2JLmKuZ3EZblHETx2Zq0oMn-ZcjAZtM,417
+resotoshell/__main__.py,sha256=-996YLTEF796F_F0sRvtswmCXISmdB-KjgzjnIjpePM,7214
+resotoshell/authorized_client.py,sha256=WR6_HauR5cvnYp__9Ict8CZ-Hsa5rB3yxhGC96-Ym0g,7021
+resotoshell/promptsession.py,sha256=D0HuFWptQQ-H3SIkKBLf3j37g-F7U2t8trAckK25M38,36802
+resotoshell/protected_files.py,sha256=gO7nNLfJ51vQD3oPwhycC2IvgmKa1VkWXFyKsTjDchs,1422
+resotoshell/shell.py,sha256=vRtt4ZVimDbIlM0SdC-DUYeb8qKmUrxaFpgdd1PY9C4,9557
+resotoshell-3.5.1.dist-info/METADATA,sha256=4t6EChSoVHf7DAdrbtpCd6OaGp57yuwV9omVeG_1GGQ,4737
+resotoshell-3.5.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+resotoshell-3.5.1.dist-info/entry_points.txt,sha256=_f4lyJZoimCFlMfHy9dhnIv4xDhGAcuM65H0o9upB3g,51
+resotoshell-3.5.1.dist-info/top_level.txt,sha256=fyfU5LmSecUoFzsQR8y03SHqJhV2LHPAUi6XaPkJRYI,12
+resotoshell-3.5.1.dist-info/RECORD,,
