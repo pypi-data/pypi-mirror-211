@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-figure = napari_figure:napari.yaml
