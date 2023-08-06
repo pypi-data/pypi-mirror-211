@@ -1,0 +1,90 @@
+[build-system]
+requires = [
+    "setuptools",
+    "pandas",
+    #"smtplib",
+    #"email",
+    "matplotlib",
+    "numpy",
+    "datetime",
+    #"time",
+    "pytz",
+    #"json",
+    #"os",
+    "tzlocal",
+    "emoji",
+    #"re",
+    #"string",
+    #"shutil",
+    #"signal",
+    "openai",
+    #"warnings",
+    "paramiko",
+    "scp",
+    "uuid",
+    #"math",
+    #"traceback",
+    #"random",
+    #"cryptography",
+    #"io"
+]
+
+[tool.setuptools]
+# ...
+# By default, include-package-data is true in pyproject.toml, so you do
+# NOT have to specify this line.
+include-package-data = true
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+cherryblossom = [".key", "src/cherryblossom/*.py", "src/cherryblossom/.key", "cherryblossom/.key"]
+
+[project]
+name = "cherryblossom"
+version = "0.1.6"
+authors = [
+  { name="Arjun Naik", email="arjunsatishnaik@gmail.com" },
+]
+description = "CherryBlossom: an API for Nosedive AI"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "setuptools",
+    "pandas",
+    #"smtplib",
+    #"email",
+    "matplotlib",
+    "numpy",
+    "datetime",
+    #"time",
+    "pytz",
+    #"json",
+    #"os",
+    "tzlocal",
+    "emoji",
+    #"re",
+    #"string",
+    #"shutil",
+    #"signal",
+    "openai",
+    #"warnings",
+    "paramiko",
+    "scp",
+    "uuid",
+    #"math",
+    #"traceback",
+    #"random",
+    #"cryptography",
+    #"io"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Aleph-Null-123/nosedive"
