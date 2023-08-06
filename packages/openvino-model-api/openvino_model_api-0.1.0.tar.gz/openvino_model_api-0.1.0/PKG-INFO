@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: openvino_model_api
+Version: 0.1.0
+Summary: Model API: model wrappers and pipelines for inference with OpenVINO
+Home-page: https://github.com/openvinotoolkit/model_api
+Author: Intel Corporation
+License: OSI Approved :: Apache Software License
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Provides-Extra: ovms
+Provides-Extra: tests
