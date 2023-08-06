@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "git-timemachine"
+version = "1.3.0"
+description = "A command-line tool that helps you record commits on Git repositories at any time node."
+authors = ["HE Yaowen <he.yaowen@hotmail.com>"]
+license = "GPL-3.0"
+readme = "README.md"
+homepage = "https://github.com/he-yaowen/git-timemachine"
+packages = [{include = "git_timemachine", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.8,<3.12"
+click = "^8.1.3"
+tabulate = "^0.9.0"
+pygit2 = "^1.12.1"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.3.2"
+pylint = "^2.17.4"
+pytest = "^7.3.1"
+pytest-cov = "^4.1.0"
+pyinstaller = "^5.11.0"
+
+[tool.poetry.scripts]
+git-timemachine = "git_timemachine.__main__:cli"
+
+[tool.poe.tasks]
+gtm = "poetry run git-timemachine"
+lint = "poetry run pylint src"
+test = "poetry run pytest --cov=src --cov-report=term-missing"
+postinstall = "poetry run pre-commit install"
+pyinstaller = "poetry run pyinstaller git-timemachine.spec"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
