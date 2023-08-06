@@ -1,0 +1,6 @@
+requests
+nose<2
+
+[dev]
+coverage<5
+wheel
