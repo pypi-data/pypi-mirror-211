@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "ngdataforecast"
+version = "0.0.1"
+description = "A library for facilitating the development forecast models in NG.CASH"
+authors = ["NG.CASH"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pandas = "^2.0"
+pytest = "^6.2"
+pytest-cov = "4.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
