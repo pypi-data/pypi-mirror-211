@@ -1,0 +1,2 @@
+[console_scripts]
+halborn_ctf = halborn_ctf.cli:run
