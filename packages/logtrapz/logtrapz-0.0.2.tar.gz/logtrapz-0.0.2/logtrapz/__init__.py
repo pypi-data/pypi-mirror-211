@@ -1,0 +1,1 @@
+from .logtrapz import logtrapz

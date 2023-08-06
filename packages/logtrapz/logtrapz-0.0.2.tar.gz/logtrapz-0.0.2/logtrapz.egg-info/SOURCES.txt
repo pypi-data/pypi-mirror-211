@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+logtrapz/__init__.py
+logtrapz/logtrapz.py
+logtrapz.egg-info/PKG-INFO
+logtrapz.egg-info/SOURCES.txt
+logtrapz.egg-info/dependency_links.txt
+logtrapz.egg-info/requires.txt
+logtrapz.egg-info/top_level.txt
