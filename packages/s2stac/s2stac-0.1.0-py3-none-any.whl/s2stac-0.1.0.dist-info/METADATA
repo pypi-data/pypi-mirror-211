@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: s2stac
+Version: 0.1.0
+Summary: Create a STAC from local S2 data.
+License: MIT
+Author: Pierre Louvart
+Author-email: pierre.louvart@gmail.com
+Requires-Python: ==3.10.5
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: beautifulsoup4 (>=4.12.2,<5.0.0)
+Requires-Dist: bokeh (==2.4.2)
+Requires-Dist: cfgrib (>=0.9.10.3,<0.10.0.0)
+Requires-Dist: dask (>=2023.5.0,<2024.0.0)
+Requires-Dist: distributed (>=2023.5.0,<2024.0.0)
+Requires-Dist: eccodes (==1.2.0)
+Requires-Dist: geopandas (>=0.13.0,<0.14.0)
+Requires-Dist: jinja2 (==3.0.3)
+Requires-Dist: lxml (>=4.9.2,<5.0.0)
+Requires-Dist: matplotlib (>=3.7.1,<4.0.0)
+Requires-Dist: numpy (>=1.24.3,<2.0.0)
+Requires-Dist: pygeoapi (>=0.14.0,<0.15.0)
+Requires-Dist: pygrib (>=2.1.4,<3.0.0)
+Requires-Dist: pystac (>=1.7.3,<2.0.0)
+Requires-Dist: pystac-client (>=0.6.1,<0.7.0)
+Requires-Dist: rasterio (>=1.3.6,<2.0.0)
+Requires-Dist: rioxarray (>=0.14.1,<0.15.0)
+Requires-Dist: shapely (==1.8.5)
+Requires-Dist: stackstac (>=0.4.3,<0.5.0)
+Requires-Dist: xarray (>=2023.4.2,<2024.0.0)
+Description-Content-Type: text/markdown
+
+# s2stac
+
+Create a STAC from Sentinel-2 data.
+
+## Purpose
+
+The purpose of this library is to create on-the-fly STAC from a list Sentinel-2 products in the form of SAFE folders.
+
+
+
+
