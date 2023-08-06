@@ -1,0 +1,7 @@
+README.md
+giskard-client.py
+setup.py
+giskard_client.egg-info/PKG-INFO
+giskard_client.egg-info/SOURCES.txt
+giskard_client.egg-info/dependency_links.txt
+giskard_client.egg-info/top_level.txt

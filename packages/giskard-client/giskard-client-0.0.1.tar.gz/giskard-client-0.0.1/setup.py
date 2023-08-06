@@ -1,0 +1,2 @@
+from setuptools import setup
+setup(name="giskard-client", version="0.0.1", py_modules=["giskard-client"], author="Alex Combessie", author_email="alex@giskard.ai", description="This is a placeholder package created by registerit.", url="https://giskard.ai")
