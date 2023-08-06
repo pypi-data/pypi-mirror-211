@@ -1,0 +1,13 @@
+xarray>=2023.5.0
+netcdf4==1.6.2
+motuclient>=3.0.0
+dask>=2022.11.1
+cftime>=1.6.2
+requests>=2.28.2
+pydap>=3.4.1
+WebOb>=1.8.7
+
+[dev]
+bumpver
+build
+twine

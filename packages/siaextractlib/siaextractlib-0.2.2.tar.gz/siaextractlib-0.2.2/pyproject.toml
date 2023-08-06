@@ -1,0 +1,55 @@
+# pyproject.toml
+
+[build-system]
+requires      = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "siaextractlib"
+version = "0.2.2"
+description = "Provide an easy to use API for download oceanographic data."
+readme = "README.md"
+authors = [{ name = "Alexis Montejo et al." }]
+maintainers = [
+  {name = "SIA Project"},
+]
+license = { file = "LICENSE" }
+keywords = ["gis", "oceanographic", "oceanic", "etl", "data", "extraction"]
+dependencies = [
+  "xarray >= 2023.5.0",
+  "netcdf4 == 1.6.2",
+  "motuclient >= 3.0.0",
+  "dask >= 2022.11.1",
+  "cftime >= 1.6.2",
+  "requests >= 2.28.2",
+  "pydap >= 3.4.1",
+  "WebOb >= 1.8.7"
+]
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+dev = ["bumpver", "build", "twine"]
+
+[project.urls]
+Homepage = "https://sia-information-system.github.io/sia-website"
+"Source Code" = "https://github.com/sia-information-system/siaextractlib"
+
+[tool.bumpver]
+current_version = "0.2.2"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "Bump version {old_version} -> {new_version}"
+commit = true
+tag = false
+push = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+  'current_version = "{version}"',
+  'version = "{version}"'
+]
+"README.md" = [
+  "**Version: {version}**"
+]
+"src/siaextractlib/__init__.py" = [
+  "__version__ = '{version}'"
+]
