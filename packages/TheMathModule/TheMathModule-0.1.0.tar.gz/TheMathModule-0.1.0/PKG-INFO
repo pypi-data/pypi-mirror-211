@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: TheMathModule
+Version: 0.1.0
+Summary: A basic module that takes the dataframe as the first argument and a numeric column of the dataframe, and calculates the mean of it (alias it as aom)
+Author: Syed Abdullah Saad
+Author-email: syedabdullahsaad2000@gmail.com

@@ -1,0 +1,7 @@
+setup.py
+TheMathModule/__init__.py
+TheMathModule/avg_or_mean.py
+TheMathModule.egg-info/PKG-INFO
+TheMathModule.egg-info/SOURCES.txt
+TheMathModule.egg-info/dependency_links.txt
+TheMathModule.egg-info/top_level.txt
