@@ -1,0 +1,4 @@
+numpy
+torch==1.9.0
+scipy==1.6.0
+sklearn==0.24.2
