@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+Pyara.egg-info/PKG-INFO
+Pyara.egg-info/SOURCES.txt
+Pyara.egg-info/dependency_links.txt
+Pyara.egg-info/not-zip-safe
+Pyara.egg-info/top_level.txt

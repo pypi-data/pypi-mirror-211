@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: Pyara
+Version: 0.1
+Summary: Library for audio classification
+Home-page: https://github.com/Millcool/Pyara.git
+Author: Ilya Mironov
+Author-email: ilyamironov210202@gmail.com
+License: MIT
+Platform: UNKNOWN
+
+Code for synthesized speech recognition system
+
+
