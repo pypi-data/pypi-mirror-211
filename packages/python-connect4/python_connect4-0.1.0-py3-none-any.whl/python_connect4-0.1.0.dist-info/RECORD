@@ -1,0 +1,8 @@
+connect4/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+connect4/__main__.py,sha256=zIFPzLqDUYB1jVdEMyOpHYbR_mGbMwKGRUwYJ-ixhHQ,358
+connect4/controllers.py,sha256=0sngAWQ2evocnEnzwByOtjDMSCqHE142s_M_CFuUftI,1234
+connect4/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+python_connect4-0.1.0.dist-info/METADATA,sha256=xv9bPR6Zl8DkpLncUnCZ2vUpH3F5yIN7BnRS-HfIvA4,3856
+python_connect4-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+python_connect4-0.1.0.dist-info/entry_points.txt,sha256=Dl9129BcJLGyDhMgF6gGRgScWQOD-Au1u-E6PxvN0Nw,51
+python_connect4-0.1.0.dist-info/RECORD,,
