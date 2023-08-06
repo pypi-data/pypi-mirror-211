@@ -1,0 +1,8 @@
+setup.py
+wastimate/__init__.py
+wastimate/framework.py
+wastimate.egg-info/PKG-INFO
+wastimate.egg-info/SOURCES.txt
+wastimate.egg-info/dependency_links.txt
+wastimate.egg-info/requires.txt
+wastimate.egg-info/top_level.txt

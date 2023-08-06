@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: wastimate
+Version: 0.0.2
+Summary: General framework for estimating waste quantities in time.
+Home-page: UNKNOWN
+Author: Hando Tohver
+Author-email: <handotohver@gmail.com>
+License: UNKNOWN
+Description: Package that offers a general framework for estimating radioactive waste quantities in time and enables the modeling of various waste management strategies.
+Keywords: python,radioactive waste,Modeling
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: License :: OSI Approved :: MIT License
