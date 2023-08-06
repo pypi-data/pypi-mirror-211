@@ -1,0 +1,2 @@
+[console_scripts]
+autovf = autovf.cli.autovf:main
