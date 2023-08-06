@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+NOTICE
+README.md
+pyproject.toml
+setup.py
+src/aws_cdk.aws_backupgateway.egg-info/PKG-INFO
+src/aws_cdk.aws_backupgateway.egg-info/SOURCES.txt
+src/aws_cdk.aws_backupgateway.egg-info/dependency_links.txt
+src/aws_cdk.aws_backupgateway.egg-info/requires.txt
+src/aws_cdk.aws_backupgateway.egg-info/top_level.txt
+src/aws_cdk/aws_backupgateway/__init__.py
+src/aws_cdk/aws_backupgateway/py.typed
+src/aws_cdk/aws_backupgateway/_jsii/__init__.py
+src/aws_cdk/aws_backupgateway/_jsii/aws-backupgateway@1.203.0.jsii.tgz
