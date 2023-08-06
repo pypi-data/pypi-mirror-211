@@ -1,0 +1,6 @@
+numpy
+
+[tests]
+pytest
+fastcore!=1.5.8
+ghapi
