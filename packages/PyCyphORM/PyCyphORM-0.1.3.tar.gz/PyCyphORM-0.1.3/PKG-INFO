@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: PyCyphORM
+Version: 0.1.3
+Summary: A Minimalistic SQLite InMemory Encrypted ORM
+Author: jafrmartins
+Author-email: j.afr.martins@outlook.pt
+Keywords: sqlite encrypted inmemory orm
+Description-Content-Type: text/markdown
+
+# PyCyphOrm
+
+A Minimalistic SQLite InMemory Encrypted ORM
+
+## Usage
+
+### Command Line Interface
+
+```sh
+usage: PyCyphORM [-h] [-i INIT] [-d FILEPATH]
+
+A Minimalistic SQLite InMemory Encrypted ORM
+
+options:
+  -h, --help            show this help message and exit
+  -i INIT, --init INIT  Initialize Salt and Password for
+                        Encrypted Database
+  -d FILEPATH, --decrypt FILEPATH
+                        Descrypt SQLite Database
+```
+
+### Example
+
+```python
+
+from PyCyphORM.lib import load_config, ORM
+
+cnf = load_config(".pyorm")
+orm = ORM.instance(".cache", cnf["PASSWORD"], cnf["SALT"], {
+    "Note": {
+        "id": "INTEGER PRIMARY KEY AUTOINCREMENT",
+        "title": "TEXT NOT NULL",
+        "description": "TEXT NOT NULL",
+        
+    }
+})
+
+orm.model("Note").insert({
+    "title": "Your Title #1",
+    "description": "Your Descriptioj #2",
+})
+
+orm.save()
+
+```
