@@ -1,0 +1,16 @@
+pip>=20
+cookiecutter
+click
+pydantic
+
+[development]
+black
+isort
+pre-commit
+codecov
+pytest
+pytest-cov
+tox
+sphinx
+sphinx-click
+pydata_sphinx_theme
