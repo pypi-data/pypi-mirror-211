@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+claude2openai/__init__.py
+claude2openai/version.py
+claude2openai.egg-info/PKG-INFO
+claude2openai.egg-info/SOURCES.txt
+claude2openai.egg-info/dependency_links.txt
+claude2openai.egg-info/requires.txt
+claude2openai.egg-info/top_level.txt
+claude2openai.egg-info/zip-safe
+claude2openai/api_resources/__init__.py
+claude2openai/api_resources/chat_completion.py
+claude2openai/tests/test_usage.py
