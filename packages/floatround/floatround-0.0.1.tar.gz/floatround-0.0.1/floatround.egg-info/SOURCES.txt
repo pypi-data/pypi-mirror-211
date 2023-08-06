@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+floatround.egg-info/PKG-INFO
+floatround.egg-info/SOURCES.txt
+floatround.egg-info/dependency_links.txt
+floatround.egg-info/requires.txt
+floatround.egg-info/top_level.txt
