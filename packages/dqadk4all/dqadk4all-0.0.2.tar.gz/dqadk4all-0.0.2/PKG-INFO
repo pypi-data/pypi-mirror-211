@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: dqadk4all
+Version: 0.0.2
+Summary: Module for DataQuality
+Home-page: 
+Author: aadms
+Author-email: mormam@gmail.com
+Keywords: Data,Quality,Tutorial
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
