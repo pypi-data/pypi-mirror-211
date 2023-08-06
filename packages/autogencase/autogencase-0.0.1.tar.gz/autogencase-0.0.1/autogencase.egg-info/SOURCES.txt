@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+autogencase.egg-info/PKG-INFO
+autogencase.egg-info/SOURCES.txt
+autogencase.egg-info/dependency_links.txt
+autogencase.egg-info/top_level.txt
