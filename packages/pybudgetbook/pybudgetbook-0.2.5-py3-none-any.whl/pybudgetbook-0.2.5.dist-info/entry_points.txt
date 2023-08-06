@@ -1,0 +1,3 @@
+[console_scripts]
+pybudgetbook=pybudgetbook.ui.start_gui:start_main_ui
+
