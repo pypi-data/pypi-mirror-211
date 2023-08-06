@@ -1,0 +1,9 @@
+spei/__init__.py,sha256=UmjWrUFyb4o1Qmg7LZHdzPe05J1rwApDVYcrOelBEYo,49
+spei/client.py,sha256=Xx90tHKLmQ8XnOEVQYf4XCAj42-qOEMtr2JAHxYsRAg,2733
+spei/resources/__init__.py,sha256=2e-0_NCCs-zRdqSx0YvBMzLog03KOWJ1rEO0by5maD8,66
+spei/resources/ordenes.py,sha256=WjKZbXRXyh3HHeCIr98j23YffFnTV9t1IXOu_-D_0Ho,4559
+spei/types.py,sha256=CP8Ma4COzFy1mGiIxgZpG7TJ4VCeUWaXbKKWH8Gxhn0,1791
+spei/utils.py,sha256=bkicw5-QpygAKqTu3RCtHQ0Aal8HcUVyc8x7dvxg2JY,2272
+spei_python-0.7.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+spei_python-0.7.0.dist-info/METADATA,sha256=-4m6joDeZL8XIU7bT4E7PUoLkbub6JNlt8sD__HqWyA,1643
+spei_python-0.7.0.dist-info/RECORD,,
