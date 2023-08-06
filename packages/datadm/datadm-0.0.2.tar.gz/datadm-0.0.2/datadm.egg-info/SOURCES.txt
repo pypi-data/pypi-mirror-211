@@ -1,0 +1,17 @@
+.gitignore
+LICENSE
+README.md
+dev-requirements.txt
+pyproject.toml
+.github/workflows/publish-to-pypi.yml
+datadm/__init__.py
+datadm/app.py
+datadm/repl.py
+datadm.egg-info/PKG-INFO
+datadm.egg-info/SOURCES.txt
+datadm.egg-info/dependency_links.txt
+datadm.egg-info/entry_points.txt
+datadm.egg-info/requires.txt
+datadm.egg-info/top_level.txt
+tests/__init__.py
+tests/test_repl.py
