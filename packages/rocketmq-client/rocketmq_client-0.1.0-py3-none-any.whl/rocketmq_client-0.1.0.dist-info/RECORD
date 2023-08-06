@@ -1,0 +1,15 @@
+rocketmq_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rocketmq_client/apache/rocketmq/v2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rocketmq_client/apache/rocketmq/v2/admin_pb2.py,sha256=D-iN4ZNIC8cKrIW3mjAL21HsbXw7ps1kYwlWhOFw2wI,2003
+rocketmq_client/apache/rocketmq/v2/admin_pb2.pyi,sha256=PO8rKZmEWNtnGvPubclO7QyddSR-2mCJHmMMt4REgno,1036
+rocketmq_client/apache/rocketmq/v2/admin_pb2_grpc.py,sha256=KaquA2TWC7xCtUhCd5zlhUyMteAV2LkSSf8C5ICA2IE,2714
+rocketmq_client/apache/rocketmq/v2/definition_pb2.py,sha256=vQ4_tUPonZaKSnTjlypGhLxSAtJPa0aCrOb8dHAc1UQ,14313
+rocketmq_client/apache/rocketmq/v2/definition_pb2.pyi,sha256=OQJglPPGO6yv17o0cy_IIZK5lJ6oYKw7tq26kRvdJi4,16814
+rocketmq_client/apache/rocketmq/v2/definition_pb2_grpc.py,sha256=1oboBPFxaTEXt9Aw7EAj8gXHDCNMhZD2VXqocC9l_gk,159
+rocketmq_client/apache/rocketmq/v2/service_pb2.py,sha256=_kMMoLrYe5OXfuzcwCPf3Y7cJ6oXmDjucbRbXFEdwA0,12283
+rocketmq_client/apache/rocketmq/v2/service_pb2.pyi,sha256=bSEHBQFwqTJoYR1xsTOjj1U0Hf_LtXDwcEa_qM7ee1c,15588
+rocketmq_client/apache/rocketmq/v2/service_pb2_grpc.py,sha256=EwGYaavJyeYdObeaVCRB7AyLqNGxyIqdC0jmpqljsps,26077
+rocketmq_client/foo.py,sha256=68I-eJl3r2wMmN2XuMiEHdv4aIr8VFvs4AHuqWfvH8s,75
+rocketmq_client-0.1.0.dist-info/METADATA,sha256=sWl9UZDLI2NAFvfehX6cKiJPPAPU9PFvwAyU0Rspy5Y,2259
+rocketmq_client-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+rocketmq_client-0.1.0.dist-info/RECORD,,
