@@ -1,0 +1,10 @@
+exceltosqlserver/__init__.py,sha256=ugUrWixFlUpg5KXRKW-jXQYoFgdzuBX2SRiqUWWVDEM,50
+exceltosqlserver/_api.py,sha256=zzvOOXshVqc2EETlV2EK2gWoUDMJHlSyaxYRGvwoY-k,408
+exceltosqlserver/exceltosqlserver.py,sha256=E3Fwe9uNkPTx2jFRQDbwn5Dj88Sg9KKonlvtwJ-9Jz0,3427
+exceltosqlserver/test_data/__init__.py,sha256=HM-A3tHHHVKXLP8m6VNye-HSuAxiXn1VC2QZ3TVUDiw,278
+exceltosqlserver/test_data/test01.xls,sha256=LQdY23thaZeZwKXpcdDz_BDSs1GDRlQzVrJSVuJKK2U,8869
+exceltosqlserver-0.2.1.dist-info/LICENSE,sha256=KkDydcAy-y26QcSmy16hqVBeoWGNAEELRihlyCLr4i0,1082
+exceltosqlserver-0.2.1.dist-info/METADATA,sha256=N_5bR65Z14BQJ3oHtzBK9ZropN9wVw2TdQ49SamQj8Q,2399
+exceltosqlserver-0.2.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+exceltosqlserver-0.2.1.dist-info/top_level.txt,sha256=h0Z7g4iqC6Ac2O1Tk8CyTAqG4Q-McKeZqzEXGIoB5Sg,17
+exceltosqlserver-0.2.1.dist-info/RECORD,,
