@@ -1,0 +1,6 @@
+[console_scripts]
+reddit-sentiment = reddit_sentiment.cli:main
+
+[reddit.sentiment]
+listing = reddit_sentiment.cli:Listing
+user = reddit_sentiment.cli:User
