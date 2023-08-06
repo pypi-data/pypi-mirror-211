@@ -1,0 +1,5 @@
+cachecontrol[filecache]<0.14,>=0.12
+click>=8.0
+platformdirs~=2.1
+pydantic~=1.7
+requests~=2.20
