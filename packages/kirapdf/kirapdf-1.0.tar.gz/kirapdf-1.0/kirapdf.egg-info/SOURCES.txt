@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+kirapdf.egg-info/PKG-INFO
+kirapdf.egg-info/SOURCES.txt
+kirapdf.egg-info/dependency_links.txt
+kirapdf.egg-info/top_level.txt
