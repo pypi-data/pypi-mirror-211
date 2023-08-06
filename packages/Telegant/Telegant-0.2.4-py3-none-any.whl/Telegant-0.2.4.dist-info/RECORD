@@ -1,0 +1,14 @@
+telegant/__init__.py,sha256=rtg2Z50LQm4nIDuxdcxdZWUOlTOWRZGigN0gPURCXNA,26
+telegant/method.py,sha256=k1GSENWPqoKJinBprYEzLBFh_RYu9zCjG7-3uiW4vcY,1224
+telegant/telegant.py,sha256=uejPC40Czqj_tsP1k9gP0193cD0NoPR4FCFcSpUgTvg,6241
+telegant/handlers/CallbackQueryHandler.py,sha256=4adpSnefdQxUFjvF5L6WznGR98_8AnDeGqhKTft6jQ0,818
+telegant/handlers/CommandHandler.py,sha256=9VvOcG6nIBXbuRCEjEKlfN350KjolPWjvJPFnXjv0uc,623
+telegant/handlers/EventHandler.py,sha256=1Ab9JC1MQ9YwIBNThcoCMgwF8t7qwd7UnpVFTDx1cTM,1480
+telegant/handlers/TextHandler.py,sha256=po-FDo3VR4vFx7C5oE-N7PkD3E1_BKd9TMl8yIRobQU,634
+telegant/handlers/UpdateHandler.py,sha256=q9JFrXcDRCzEgpx77OCpoweR5X8cyMzEHvVo1kOIPZs,300
+telegant/handlers/__init__.py,sha256=bOA2-S1daJOGWnO3oD_NTug8eDe7zp7kb2W9YcfsKfo,220
+Telegant-0.2.4.dist-info/LICENSE,sha256=wgUg4VPeYef4FfwMUMzf8KW6TceKDeRL7tKx46Uoaxc,1086
+Telegant-0.2.4.dist-info/METADATA,sha256=ShNkFpGk47_e5cob3UHFl4C13EQ3oca2KEdQUsdK5tU,5091
+Telegant-0.2.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+Telegant-0.2.4.dist-info/top_level.txt,sha256=Vd5cWJz5iElYJQRSvscCSbw9obp9k4CP2a3kpiClIBk,9
+Telegant-0.2.4.dist-info/RECORD,,
