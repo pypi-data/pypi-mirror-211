@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Magma-Indonesia-API
+Version: 2.0.0
+Summary: Magma-Indonesia-API is an unofficial API made with Python language!
+Home-page: https://github.com/Gabrielbjb/Magma-Indonesia-API
+Author: Gabrielbjb
+Author-email: gabrielbjb@protonmail.com
+License: MIT
+Keywords: Python,Indonesia,Magma Indonesia,Volcano,Magma,API
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+For more information, click this https://github.com/Gabrielbjb/Magma-Indonesia-API
