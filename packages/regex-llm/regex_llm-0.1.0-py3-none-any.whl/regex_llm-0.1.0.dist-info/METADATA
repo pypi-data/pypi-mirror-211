@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: regex-llm
+Version: 0.1.0
+Summary: Controlled language model generation using regex
+Home-page: https://github.com/yanyongyu/regex-llm
+License: MIT
+Keywords: llm,regex,language model,generation
+Author: yanyongyu
+Author-email: yyy@yyydl.top
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: regex (>=2023.5.5,<2024.0.0)
+Requires-Dist: transformers (>=4.29.2,<5.0.0)
+Project-URL: Documentation, https://github.com/yanyongyu/regex-llm
+Project-URL: Repository, https://github.com/yanyongyu/regex-llm
+Description-Content-Type: text/markdown
+
+# regex llm
+
+Constrained language model generation with regex.
+
+## Installation
+
+```bash
+pip install regex-llm
+```
+
+## Usage
+
+```python
+import regex
+from transformers import (
+    AutoTokenizer,
+    GenerationMixin,
+    PreTrainedTokenizer,
+    AutoModelForCausalLM,
+)
+
+from regex_llm import RegexConstraint
+
+model: GenerationMixin = AutoModelForCausalLM.from_pretrained("your model")
+tokenizer: PreTrainedTokenizer = AutoTokenizer.from_pretrained("your model")
+
+controller = RegexConstraint(tokenizer=tokenizer, model=model)
+
+prompt = '帮我生成3种不同的水果\n输出json格式如下：\n[{"name":"xxx","description":"xxx"}]'
+pattern = r"\[(,?\s*\{\"name\":\s*\"[^\"]+\",\s*\"description\":\s*\"[^\"]+\"\\s*})+\s*\]"
+output = controller.generate(
+    prompt=prompt,
+    pattern=pattern,
+    do_sample=True,
+    num_beams=1,
+    top_p=0.7,
+    temperature=0.95,
+)
+print(output)
+```
+
