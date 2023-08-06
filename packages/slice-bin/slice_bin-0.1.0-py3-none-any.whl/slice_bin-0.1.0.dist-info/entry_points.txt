@@ -1,0 +1,3 @@
+[console_scripts]
+slice=slice_bin.__main__:main
+
