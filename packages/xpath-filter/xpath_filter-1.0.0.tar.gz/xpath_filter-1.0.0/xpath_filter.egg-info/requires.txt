@@ -1,0 +1,9 @@
+lxml
+PyYAML
+
+[dev]
+flake8
+mypy
+
+[test]
+pytest

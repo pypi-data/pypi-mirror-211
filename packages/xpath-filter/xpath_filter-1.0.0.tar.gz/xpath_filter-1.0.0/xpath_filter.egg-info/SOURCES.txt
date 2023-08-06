@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/__init__.py
+src/xpath_filter.py
+xpath_filter.egg-info/PKG-INFO
+xpath_filter.egg-info/SOURCES.txt
+xpath_filter.egg-info/dependency_links.txt
+xpath_filter.egg-info/requires.txt
+xpath_filter.egg-info/top_level.txt
