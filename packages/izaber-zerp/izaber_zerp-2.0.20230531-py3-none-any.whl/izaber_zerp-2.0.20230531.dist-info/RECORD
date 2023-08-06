@@ -1,0 +1,8 @@
+izaber_zerp/__init__.py,sha256=fHqZ9-X1mcZQXEJpOOp52UCKAt199rCqDoFEEk3Ym5c,30570
+izaber_zerp/crm.py,sha256=NmmSTX5Xa1uaWdhTogRJQ_6gPK1TjDOVSM9gPnviqhA,12979
+izaber_zerp/gui.py,sha256=ImoY1l_za_fCvZLFONV65csnXfFQiuUOabY-iHhuaiA,2873
+izaber_zerp/product.py,sha256=IvdR532acBs84wxKghKsDh17pQX0Z8_6pm85O83d4sc,2914
+izaber_zerp/timesheet.py,sha256=FT4U6nrzdzKfotlXP9BQm9HwT_1b_CQQbbEltRqOJ0s,24758
+izaber_zerp-2.0.20230531.dist-info/METADATA,sha256=_gBciwe5Jv1Fhd0xbybtHBE7d-plulhGKBSk00Khb2E,551
+izaber_zerp-2.0.20230531.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+izaber_zerp-2.0.20230531.dist-info/RECORD,,
