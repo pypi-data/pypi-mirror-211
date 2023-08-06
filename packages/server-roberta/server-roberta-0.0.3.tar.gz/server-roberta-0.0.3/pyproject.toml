@@ -1,0 +1,21 @@
+requires = ["setuptools", "setuptools-scm","hatchling"]
+build-backend = ["setuptools.build_meta","hatchling.build"]
+[project]
+name = "server-roberta"
+version = "0.0.3"
+authors = [
+  { name="Tilsor", email="tilsor@tilsor.com.uy"},
+]
+description = "To classify, BPE, ROBERTA and SVM are used"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = ['fairseq==0.10.0', 'scipy', 'scikit-learn','pandas','pyparsing','torch','tqdm','wget','grpcio-tools','requests']
+[project.urls]
+"Homepage" = "https://github.com/ariverolq/ModSecIntl_roberta_model"
+"Bug Tracker" = "https://github.com/ariverolq/ModSecIntl_roberta_model/issues"
+
