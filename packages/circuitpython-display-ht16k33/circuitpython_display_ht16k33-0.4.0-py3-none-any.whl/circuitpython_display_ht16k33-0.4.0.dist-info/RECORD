@@ -1,0 +1,9 @@
+display_ht16k33/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+display_ht16k33/ht16k33.py,sha256=T_XhI8nh5O9em-VQFQDb9VCgTaMKTDf1rHAvaOsuoTo,5797
+display_ht16k33/matrix.py,sha256=2j72YEjkSc7tLEFyhq8sEKM-gG83cSIYtjg5ROD8AEI,1794
+display_ht16k33/segments.py,sha256=TLc0rZqxvRbSKCglnssdLnhaCat5x69GLCC594a7cJY,30175
+circuitpython_display_ht16k33-0.4.0.dist-info/LICENSE,sha256=RzDRQUi8478TRF8tEO9TZzAIdMZDxwpMRik2l1mwdog,1082
+circuitpython_display_ht16k33-0.4.0.dist-info/METADATA,sha256=ai2UWek-Yyex_24TB27hK3JRdRy3mmFu_40UCXkiNI4,4131
+circuitpython_display_ht16k33-0.4.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+circuitpython_display_ht16k33-0.4.0.dist-info/top_level.txt,sha256=FSwMUZatfME_PE8XVe-HXQyGUCNa81CExkITOB-hR6g,16
+circuitpython_display_ht16k33-0.4.0.dist-info/RECORD,,
