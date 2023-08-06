@@ -1,0 +1,6 @@
+setup.py
+wordlist/__init__.py
+wordlist_dp.egg-info/PKG-INFO
+wordlist_dp.egg-info/SOURCES.txt
+wordlist_dp.egg-info/dependency_links.txt
+wordlist_dp.egg-info/top_level.txt
