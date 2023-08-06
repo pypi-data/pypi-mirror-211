@@ -1,0 +1,7 @@
+include jdFlatpakSnapshot/translations/*.ts
+exclude jdFlatpakSnapshot/ui_compiled/*
+include jdFlatpakSnapshot/version.txt
+include jdFlatpakSnapshot/icons/*
+include jdFlatpakSnapshot/ui/*
+include BuildBackend.py
+exclude tools/*

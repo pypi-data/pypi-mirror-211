@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">jdFlatpakSnapshot</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="title">
+       <string>Flatpaks</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QListWidget" name="list_apps"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="create_snapshot_button">
+         <property name="text">
+          <string>Create Snapshot</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="title">
+       <string>Snapshots</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QListWidget" name="snapshot_list"/>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QPushButton" name="restore_snapshot_button">
+           <property name="text">
+            <string>Restore</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="rename_snapshot_button">
+           <property name="text">
+            <string>Rename</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="delete_snapshot_button">
+           <property name="text">
+            <string>Delete</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="export_snapshot_button">
+           <property name="text">
+            <string>Export</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="about_snapshot_button">
+           <property name="text">
+            <string>About</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="import_action"/>
+    <addaction name="separator"/>
+    <addaction name="exit_action"/>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="settings_action"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string notr="true">?</string>
+    </property>
+    <addaction name="welcome_dialog_action"/>
+    <addaction name="separator"/>
+    <addaction name="view_source_action"/>
+    <addaction name="report_bug_action"/>
+    <addaction name="translate_action"/>
+    <addaction name="donate_action"/>
+    <addaction name="separator"/>
+    <addaction name="about_action"/>
+    <addaction name="about_qt_action"/>
+   </widget>
+   <widget class="QMenu" name="menuMaintenance">
+    <property name="title">
+     <string>Maintenance</string>
+    </property>
+    <addaction name="uninstalled_apps_snapshot_delete_action"/>
+    <addaction name="delete_broken_snapshots_action"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuSettings"/>
+   <addaction name="menuMaintenance"/>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="about_action">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="about_qt_action">
+   <property name="text">
+    <string>About Qt</string>
+   </property>
+  </action>
+  <action name="settings_action">
+   <property name="text">
+    <string>Settings</string>
+   </property>
+  </action>
+  <action name="exit_action">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="import_action">
+   <property name="text">
+    <string>Import</string>
+   </property>
+  </action>
+  <action name="welcome_dialog_action">
+   <property name="text">
+    <string>Show welcome dialog</string>
+   </property>
+  </action>
+  <action name="view_source_action">
+   <property name="text">
+    <string>View Source</string>
+   </property>
+  </action>
+  <action name="report_bug_action">
+   <property name="text">
+    <string>Report Bug</string>
+   </property>
+  </action>
+  <action name="translate_action">
+   <property name="text">
+    <string>Translate</string>
+   </property>
+  </action>
+  <action name="donate_action">
+   <property name="text">
+    <string>Donate</string>
+   </property>
+  </action>
+  <action name="uninstalled_apps_snapshot_delete_action">
+   <property name="text">
+    <string>Delete Snapshots of uninstalled Apps</string>
+   </property>
+  </action>
+  <action name="delete_broken_snapshots_action">
+   <property name="text">
+    <string>Delete broken Snapshots</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
