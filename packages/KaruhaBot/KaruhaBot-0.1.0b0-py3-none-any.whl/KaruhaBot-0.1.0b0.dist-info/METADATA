@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: KaruhaBot
+Version: 0.1.0b0
+Summary: A simple Tinode chatbot framework.
+Home-page: https://github.com/Ovizro/Karuha
+Author: Ovizro
+Author-email: Ovizro@visecy.top
+Maintainer: Ovizro
+Maintainer-email: Ovizro@visecy.top
+License: Apache 2.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Communications :: Chat
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: typing-extensions (>=4.0)
+Requires-Dist: grpcio (>=1.40.0)
+Requires-Dist: tinode-grpc (>=0.20.0b3)
+Requires-Dist: pydantic
+
+# Karuha
+
+[![License](https://img.shields.io/github/license/Ovizro/Karuha.svg)](LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/Karuha.svg)](https://pypi.python.org/pypi/Karuha)
+![Python Version](https://img.shields.io/badge/python-3.8%20|%203.9%20|%203.10%20|%203.11-blue.svg)
+
+A simple Tinode chatbot framework.
+
+The name of the library `Karuha` comes from the character Karuha Ramukone (カルハ・ラムコネ) in the game 星空鉄道とシロの旅.
+<center>
+
+![Karuha](/docs/img/tw_icon-karuha2.png)
+
+</center>
+
+> カルハ・ラムコネと申します。カルハちゃんって呼んでいいわよ
