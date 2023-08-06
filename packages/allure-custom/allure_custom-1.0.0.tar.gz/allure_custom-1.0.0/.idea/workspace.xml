@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="50816a05-caff-40c1-9444-0004ab58db40" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/allure_custom/__version__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure_custom/allure_custom.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure_custom/default_allure/config/allure-cucumber.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure_custom/setting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publish.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/bin/allure" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/bin/allure" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/bin/allure.bat" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/bin/allure.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/config/allure-cucumber.yml" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/config/allure-junit.yml" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/config/allure-junit.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/config/allure.yml" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/config/allure.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/allure-commandline-2.22.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/allure-commandline-2.22.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/allure-generator-2.22.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/allure-generator-2.22.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/allure-model-2.20.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/allure-model-2.20.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/allure-plugin-api-2.22.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/allure-plugin-api-2.22.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/allure1-model-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/allure1-model-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/annotations-15.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/annotations-15.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/commons-beanutils-1.9.4.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/commons-beanutils-1.9.4.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/commons-codec-1.11.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/commons-codec-1.11.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/commons-collections-3.2.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/commons-collections-3.2.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/commons-collections4-4.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/commons-collections4-4.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/commons-io-2.11.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/commons-io-2.11.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/commons-lang3-3.12.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/commons-lang3-3.12.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/commons-logging-1.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/commons-text-1.3.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/commons-text-1.3.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/config/jetty-logging.properties" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/config/jetty-logging.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/config/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/config/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/flexmark-0.62.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/flexmark-0.62.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/flexmark-ext-tables-0.62.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/flexmark-ext-tables-0.62.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/flexmark-util-0.62.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/flexmark-util-0.62.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/flexmark-util-ast-0.62.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/flexmark-util-ast-0.62.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/flexmark-util-builder-0.62.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/flexmark-util-builder-0.62.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/flexmark-util-collection-0.62.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/flexmark-util-collection-0.62.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/flexmark-util-data-0.62.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/flexmark-util-data-0.62.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/flexmark-util-dependency-0.62.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/flexmark-util-dependency-0.62.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/flexmark-util-format-0.62.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/flexmark-util-format-0.62.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/flexmark-util-html-0.62.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/flexmark-util-html-0.62.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/flexmark-util-misc-0.62.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/flexmark-util-misc-0.62.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/flexmark-util-options-0.62.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/flexmark-util-options-0.62.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/flexmark-util-sequence-0.62.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/flexmark-util-sequence-0.62.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/flexmark-util-visitor-0.62.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/flexmark-util-visitor-0.62.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/freemarker-2.3.32.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/freemarker-2.3.32.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/httpclient-4.5.14.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/httpclient-4.5.14.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/httpcore-4.4.16.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/httpcore-4.4.16.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/jackson-annotations-2.14.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/jackson-annotations-2.14.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/jackson-core-2.14.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/jackson-core-2.14.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/jackson-databind-2.14.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/jackson-databind-2.14.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/jackson-dataformat-xml-2.14.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/jackson-dataformat-xml-2.14.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/jackson-dataformat-yaml-2.14.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/jackson-dataformat-yaml-2.14.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/jackson-module-jaxb-annotations-2.14.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/jackson-module-jaxb-annotations-2.14.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/jakarta.activation-api-1.2.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/jakarta.activation-api-1.2.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/jakarta.xml.bind-api-2.3.3.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/jakarta.xml.bind-api-2.3.3.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/javax.activation-api-1.2.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/javax.activation-api-1.2.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/javax.servlet-api-3.1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/javax.servlet-api-3.1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/jaxb-api-2.3.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/jaxb-api-2.3.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/jaxb-utils-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/jaxb-utils-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/jcommander-1.82.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/jcommander-1.82.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/jetty-http-9.4.49.v20220914.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/jetty-http-9.4.49.v20220914.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/jetty-io-9.4.49.v20220914.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/jetty-io-9.4.49.v20220914.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/jetty-server-9.4.49.v20220914.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/jetty-server-9.4.49.v20220914.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/jetty-util-9.4.49.v20220914.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/jetty-util-9.4.49.v20220914.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/logback-classic-1.3.5.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/logback-classic-1.3.5.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/logback-core-1.3.5.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/logback-core-1.3.5.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/opencsv-4.6.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/opencsv-4.6.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/properties-2.0.RC5.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/properties-2.0.RC5.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/slf4j-api-2.0.3.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/slf4j-api-2.0.3.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/snakeyaml-1.33.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/snakeyaml-1.33.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/stax2-api-4.2.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/stax2-api-4.2.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/tika-core-2.6.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/tika-core-2.6.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/lib/woodstox-core-6.4.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/lib/woodstox-core-6.4.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/plugins/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/plugins/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/plugins/behaviors-plugin/allure-plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/plugins/behaviors-plugin/allure-plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/plugins/behaviors-plugin/behaviors-plugin-2.22.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/plugins/behaviors-plugin/behaviors-plugin-2.22.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/plugins/behaviors-plugin/static/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/plugins/behaviors-plugin/static/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/plugins/custom-logo-plugin/allure-plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/plugins/custom-logo-plugin/allure-plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/plugins/custom-logo-plugin/custom-logo-plugin-2.22.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/plugins/custom-logo-plugin/custom-logo-plugin-2.22.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/plugins/custom-logo-plugin/static/custom-logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/plugins/custom-logo-plugin/static/custom-logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/plugins/custom-logo-plugin/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/plugins/custom-logo-plugin/static/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/plugins/jira-plugin/allure-plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/plugins/jira-plugin/allure-plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/plugins/jira-plugin/jira-plugin-2.22.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/plugins/jira-plugin/jira-plugin-2.22.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/plugins/junit-xml-plugin/allure-plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/plugins/junit-xml-plugin/allure-plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/plugins/junit-xml-plugin/junit-xml-plugin-2.22.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/plugins/junit-xml-plugin/junit-xml-plugin-2.22.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/plugins/packages-plugin/allure-plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/plugins/packages-plugin/allure-plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/plugins/packages-plugin/packages-plugin-2.22.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/plugins/packages-plugin/packages-plugin-2.22.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/plugins/packages-plugin/static/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/plugins/packages-plugin/static/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/plugins/screen-diff-plugin/allure-plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/plugins/screen-diff-plugin/allure-plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/plugins/screen-diff-plugin/screen-diff-plugin-2.22.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/plugins/screen-diff-plugin/screen-diff-plugin-2.22.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/plugins/screen-diff-plugin/static/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/plugins/screen-diff-plugin/static/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/plugins/screen-diff-plugin/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/plugins/screen-diff-plugin/static/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/plugins/trx-plugin/allure-plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/plugins/trx-plugin/allure-plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/plugins/trx-plugin/trx-plugin-2.22.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/plugins/trx-plugin/trx-plugin-2.22.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/plugins/xctest-plugin/allure-plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/plugins/xctest-plugin/allure-plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/plugins/xctest-plugin/xctest-plugin-2.22.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/plugins/xctest-plugin/xctest-plugin-2.22.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/plugins/xray-plugin/allure-plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/plugins/xray-plugin/allure-plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/plugins/xray-plugin/xray-plugin-2.22.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/plugins/xray-plugin/xray-plugin-2.22.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/plugins/xunit-xml-plugin/allure-plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/plugins/xunit-xml-plugin/allure-plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure/plugins/xunit-xml-plugin/xunit-xml-plugin-2.22.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/default_allure/plugins/xunit-xml-plugin/xunit-xml-plugin-2.22.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/allure.yml" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/static/allure.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/static/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/static/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/allure_custom/static/styles.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2QV95PON7fhsWhiEst5GlRb4GDr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/allure/plugins/custom-logo-plugin/static" />
+      <recent name="$PROJECT_DIR$/allure/config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/allure_custom" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.setting">
+    <configuration name="allure_custom" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pytest-allure-custom" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/allure_custom/allure_custom.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="setting" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pytest-allure-custom" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/allure_custom" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/allure_custom/setting.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.setting" />
+        <item itemvalue="Python.allure_custom" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="50816a05-caff-40c1-9444-0004ab58db40" name="Default Changelist" comment="" />
+      <created>1685427698432</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685427698432</updated>
+      <workItem from="1685427699736" duration="5609000" />
+    </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1685429500716</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685429500716</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/allure_custom/setting.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/pytest_allure_custom$setting.coverage" NAME="setting Coverage Results" MODIFIED="1685432612080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/allure_custom" />
+    <SUITE FILE_PATH="coverage/pytest_allure_custom$allure.coverage" NAME="allure Coverage Results" MODIFIED="1685431474016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
