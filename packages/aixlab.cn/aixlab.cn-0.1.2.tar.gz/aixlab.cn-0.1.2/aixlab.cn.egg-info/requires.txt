@@ -1,0 +1,8 @@
+opencv-contrib-python
+Flask
+scipy
+matplotlib==3.2.2
+flask-cors
+torch==1.8.0
+torchvision==0.10.0
+requests
