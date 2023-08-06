@@ -1,0 +1,11 @@
+streq/__init__.py,sha256=MkjMAi8GWMPhk3FVZ0q0x98QJyvc3yUpW1ecv2RPnq4,107
+streq/circular.py,sha256=Wl4uS_I4MYilCCvEJIlalA1y1ZdnmXDce7YxxYOmY_A,1283
+streq/distance.py,sha256=s_qHNvZcviLaVH5rUxQ4J7l-mnwP6k50nnmnOn_LMSA,5185
+streq/seqtools.py,sha256=xPnYJEwAEab5yhatGUcdudsU8aRyNc4XdFhZRlUFK4g,6098
+streq/sequences.yml,sha256=yoAEnpIT0RdxxTgaKo9CeCEg8woGhf2sZeX8ZPtrAWQ,435
+streq/utils.py,sha256=qisrhW9CkkyuuwYDBKz3_d1cxHXwgDf3tlWmnE7WHw4,2634
+streq-0.0.2.dist-info/LICENSE,sha256=pAZXnNE2dxxwXFIduGyn1gpvPefJtUYOYZOi3yeGG94,1068
+streq-0.0.2.dist-info/METADATA,sha256=CdzpLNvpQZJRJUoM_uKyjXYMmPYDLi0r5HIAPjEfvsU,5050
+streq-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+streq-0.0.2.dist-info/top_level.txt,sha256=zKe0D65qYs9oxI_QlXul651QhsxnnKfhzULgA-Stj9I,6
+streq-0.0.2.dist-info/RECORD,,
