@@ -1,0 +1,16 @@
+stale_maccarone/__init__.py,sha256=F-lBByC6z_apITQ-GbMjtqBr6Sr0g4de7ACxxVYu9qc,368
+stale_maccarone/caching.py,sha256=MMAZX7YJdkbR_-kKUe2OV9AIONmakuqGIB-nqMJMA9Q,1015
+stale_maccarone/loader.mn.py,sha256=MVi_fDRdjmsNGgMVJHWquE3UdZ08H4MIc1whMuDBlAg,2938
+stale_maccarone/loader.py,sha256=MVi_fDRdjmsNGgMVJHWquE3UdZ08H4MIc1whMuDBlAg,2938
+stale_maccarone/openai.py,sha256=tKU6yS999IofJppmpCddCcBpukdd2E_Qmt1yFZb39Vw,1350
+stale_maccarone/preprocessor.py,sha256=hImaTz8PTsVqpTr65zHcw1Dvp09pKDud1chPNA5-R4U,4067
+stale_maccarone/scripts/preprocess.mn.py,sha256=6i_lCM7LEq2UoQKjy85uQ-vd6IKfjfQyh-g26TeTiaY,1053
+stale_maccarone/scripts/preprocess.py,sha256=Fq57LyxHOLwEfII6maybnJ5E0l7imLEUhkT9UFp9om0,1207
+stale_maccarone/test/test_caching.py,sha256=DktZKK5F3lFiC60h2wsNPFM-L0R1OJIbsD0Gaivs58s,538
+stale_maccarone/test/test_preprocessor.py,sha256=sDhaoOb4H47dIQB-89P0X6UvBPc9c8ipYEq0cPtojVQ,2529
+stale_maccarone-0.0.9.dist-info/LICENSE,sha256=2OW7B7pFLBp34WWu-Y8755nVJvAWxFUDUzWKVgojsZo,1074
+stale_maccarone-0.0.9.dist-info/METADATA,sha256=LCMh1XAgoOzI_hb4blvCjQSeWuKQSf968ZD-w1QUVQc,3118
+stale_maccarone-0.0.9.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+stale_maccarone-0.0.9.dist-info/entry_points.txt,sha256=QYop-OyJ3O8KSt5voI3m6rfLg1btPDMahBih5QwUaJI,83
+stale_maccarone-0.0.9.dist-info/top_level.txt,sha256=kMen5RXw21g52FY1PeeEjdonICV-BsUXY9D-vMoEIzo,16
+stale_maccarone-0.0.9.dist-info/RECORD,,
