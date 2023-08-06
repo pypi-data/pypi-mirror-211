@@ -1,0 +1,16 @@
+## App layer
+
+# async iter
+with Tic(interface, mode, sep) as compteur:
+    async for frame in compteur:
+        print(frame)
+
+# async oneshot
+frame = await Tic(interface, mode, sep).update()
+
+
+# ?
+tic = await tic_factory(interface, mode, sep)
+tic.available_datas() # Liste des champs
+await tic.refresh()
+
