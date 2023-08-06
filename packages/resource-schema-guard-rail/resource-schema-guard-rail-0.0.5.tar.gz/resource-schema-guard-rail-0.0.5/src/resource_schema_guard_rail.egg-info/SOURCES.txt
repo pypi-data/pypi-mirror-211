@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/resource_schema_guard_rail.egg-info/PKG-INFO
+src/resource_schema_guard_rail.egg-info/SOURCES.txt
+src/resource_schema_guard_rail.egg-info/dependency_links.txt
+src/resource_schema_guard_rail.egg-info/entry_points.txt
+src/resource_schema_guard_rail.egg-info/requires.txt
+src/resource_schema_guard_rail.egg-info/top_level.txt
+src/rpdk/guard_rail/__init__.py
