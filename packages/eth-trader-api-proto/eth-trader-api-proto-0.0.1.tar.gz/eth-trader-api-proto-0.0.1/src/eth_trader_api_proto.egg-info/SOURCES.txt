@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/eth-trader-api/__init__.py
+src/eth-trader-api/proto.py
+src/eth_trader_api_proto.egg-info/PKG-INFO
+src/eth_trader_api_proto.egg-info/SOURCES.txt
+src/eth_trader_api_proto.egg-info/dependency_links.txt
+src/eth_trader_api_proto.egg-info/requires.txt
+src/eth_trader_api_proto.egg-info/top_level.txt
