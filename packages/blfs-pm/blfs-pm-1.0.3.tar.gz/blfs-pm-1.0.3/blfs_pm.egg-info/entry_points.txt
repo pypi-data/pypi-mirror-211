@@ -1,0 +1,2 @@
+[console_scripts]
+blfs-pm = blfs_manager.blfspm:main
