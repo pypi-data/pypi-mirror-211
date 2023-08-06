@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: asset-asrl
+Version: 0.2.0
+Summary: High-speed, extensible, object-oriented trajectory design and optimization
+Home-page: https://github.com/AlabamaASRL/asset_asrl
+License: Apache 2.0
+Requires-Python: >=3.7
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: spiceypy
+Requires-Dist: seaborn
+Requires-Dist: basemap
+Requires-Dist: intel-openmp
+
+High-speed, extensible, object-oriented trajectory design and optimization
