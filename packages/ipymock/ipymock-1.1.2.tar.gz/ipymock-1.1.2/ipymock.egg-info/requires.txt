@@ -1,0 +1,11 @@
+pytest==6.*
+nbdev==1.*
+openai==0.*
+sentence_transformers==2.*
+pydantic==1.*
+langchain==0.*
+faiss-cpu==1.*
+duckduckgo_search==2.*
+undetected_chromedriver==3.*
+selenium_profiles==2.*
+markdownify==0.*
