@@ -1,0 +1,2 @@
+[console_scripts]
+pyEasyML = pyEasyML.pyEasyMLcli:cli
