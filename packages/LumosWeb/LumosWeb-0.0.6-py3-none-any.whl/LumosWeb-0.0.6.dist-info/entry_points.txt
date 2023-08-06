@@ -1,0 +1,2 @@
+[console_scripts]
+LumosWeb = lumosweb.api:API.run
