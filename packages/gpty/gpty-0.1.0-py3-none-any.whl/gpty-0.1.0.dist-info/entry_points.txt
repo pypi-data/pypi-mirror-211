@@ -1,0 +1,3 @@
+[console_scripts]
+gpty=gpty.main:cli
+
