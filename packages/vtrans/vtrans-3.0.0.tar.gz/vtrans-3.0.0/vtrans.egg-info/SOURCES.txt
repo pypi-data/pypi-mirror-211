@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+vtrans/__init__.py
+vtrans/config.txt
+vtrans.egg-info/PKG-INFO
+vtrans.egg-info/SOURCES.txt
+vtrans.egg-info/dependency_links.txt
+vtrans.egg-info/requires.txt
+vtrans.egg-info/top_level.txt
