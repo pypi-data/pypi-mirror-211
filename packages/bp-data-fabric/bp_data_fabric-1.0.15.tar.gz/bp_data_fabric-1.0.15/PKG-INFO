@@ -1,0 +1,138 @@
+Metadata-Version: 2.1
+Name: bp_data_fabric
+Version: 1.0.15
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Bluepineapple
+Author-email: avinash@bluepineapple.io
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Data Fabric
+
+Data Fabric is a comprehensive streamlit component package available on PyPI. This powerful tool simplifies the process of generating SQL queries by allowing users to select databases, tables, and columns effortlessly. It provides a user-friendly interface to display data in a tabular format, enabling easy filtering and data export directly from the grid. Additionally, Data Fabric offers visually appealing graphical representations of data, including bar charts, pie charts, heatmaps, and scatter charts. With Data Fabric, analyzing and visualizing data becomes a seamless experience within your Streamlit applications.
+
+## Installation
+
+You can install the **Data Fabric** package from PyPI using pip:
+
+```shell
+pip install bp-data-fabric
+```
+
+## Usage
+
+To use the Data Fabric component in your Streamlit application, follow these steps:
+
+1. Import the necessary modules:
+
+```shell
+import data_fabric as df
+```
+
+2. Add the **Data Fabric** component to your application:
+
+```shell
+df.data_fabric(
+    query="",
+    query_tool_title="Query Tool",
+    data_grid_title="Results",
+    data_visualization_title="Data Visualization",
+    databases=database_list,
+    tables=table_list,
+    columns=column_list,
+    error="",
+    show_execute=True,
+    on_database_change=handle_on_database_change,
+    on_table_change=handle_on_table_change,
+    on_generate_query=handle_on_generate_query,
+    on_copy_query=handle_on_copy_query,
+    on_execute_query=handle_on_execute,
+    data=data,
+    show_data_grid=True,
+    show_charts=True
+)
+```
+
+3. Run your Streamlit application:
+
+```shell
+streamlit run your_app.py
+```
+
+### Example
+
+```shell
+import data_fabric as df
+
+databases = ['COMPANY_DB', 'SALES_DB']
+tables = [
+    {
+        'database': 'COMPANY_DB',
+        'tables': ['EMPLOYEES', 'DEPARTMENTS']
+    },
+    {
+        'database': 'SALES_DB',
+        'tables': ['CUSTOMERS', 'ORDERS']
+    }
+]
+columns = [
+    {
+        'fqtn': 'COMPANY_DB.EMPLOYEES',
+        'columns': ['ID', 'NAME', 'EMAIL', 'POSITION']
+    },
+    {
+        'fqtn': 'COMPANY_DB.DEPARTMENTS',
+        'columns': ['ID', 'NAME', 'LOCATION', 'MANAGER']
+    },
+    {
+        'fqtn': 'SALES_DB.CUSTOMERS',
+        'columns': ['ID', 'NAME', 'EMAIL', 'PHONE']
+    },
+    {
+        'fqtn': 'SALES_DB.ORDERS',
+        'columns': ['ID', 'PRODUCT', 'QUANTITY', 'DATE']
+    }
+]
+
+def handle_on_database_change(database):
+    print(database)
+
+def handle_on_table_change(database, table):
+    print(database, table)
+
+def handle_on_generate_query(selection, query):
+    print(selection, query)
+
+def handle_on_copy_query(query):
+    print(query)
+
+def handle_on_execute(query):
+    print(query)
+
+df.data_fabric(
+    query="",
+    query_tool_title="Query Tool",
+    data_grid_title="Results",
+    data_visualization_title="Data Visualization",
+    databases=database_list,
+    tables=table_list,
+    columns=column_list,
+    error="",
+    show_execute=True,
+    on_database_change=handle_on_database_change,
+    on_table_change=handle_on_table_change,
+    on_generate_query=handle_on_generate_query,
+    on_copy_query=handle_on_copy_query,
+    on_execute_query=handle_on_execute,
+    data=data,
+    show_data_grid=True,
+    show_charts=True
+)
+
+```
+
+
