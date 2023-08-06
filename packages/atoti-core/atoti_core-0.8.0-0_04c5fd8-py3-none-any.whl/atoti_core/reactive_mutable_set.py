@@ -1,0 +1,77 @@
+from __future__ import annotations
+
+from abc import abstractmethod
+from collections.abc import Iterable, Iterator, MutableSet
+from typing import Any, TypeVar
+
+_Item = TypeVar("_Item")
+
+
+# All users of this class are on deprecated paths.
+# Do not use it more.
+# Delete it once the dependant deprecated paths are removed.
+class ReactiveMutableSet(MutableSet[_Item]):
+    def __init__(self, data: Iterable[_Item], /) -> None:
+        super().__init__()
+
+        self._data = set(data)
+
+    @abstractmethod
+    def _on_change(self, *, in_place: bool) -> None:
+        """Hook called each time the data in the set changes."""
+
+    def __contains__(self, value: object) -> bool:
+        return value in self._data
+
+    def add(self, value: _Item) -> None:
+        self._data.add(value)
+        self._on_change(in_place=True)
+
+    def clear(self) -> None:
+        self._data.clear()
+        self._on_change(in_place=True)
+
+    def discard(self, value: _Item) -> None:
+        self._data.discard(value)
+        self._on_change(in_place=True)
+
+    def update(self, *values: Iterable[_Item]) -> None:
+        self._data.update(*values)
+        self._on_change(in_place=True)
+
+    def __iter__(self) -> Iterator[_Item]:
+        return iter(self._data)
+
+    def __len__(self) -> int:
+        return len(self._data)
+
+    def __repr__(self) -> str:
+        return repr(self._data)
+
+    def __ior__(self, values: Any) -> Any:  # type: ignore[misc]
+        new_data = self._data.copy()
+        new_data |= values
+        self._data = set(new_data)
+        self._on_change(in_place=False)
+        return self
+
+    def __iand__(self, values: Any) -> Any:  # type: ignore[misc]
+        new_data = self._data.copy()
+        new_data &= values
+        self._data = set(new_data)
+        self._on_change(in_place=False)
+        return self
+
+    def __isub__(self, values: Any) -> Any:  # type: ignore[misc]
+        new_data = self._data.copy()
+        new_data -= values
+        self._data = set(new_data)
+        self._on_change(in_place=False)
+        return self
+
+    def __ixor__(self, values: Any) -> Any:  # type: ignore[misc]
+        new_data = self._data.copy()
+        new_data ^= values
+        self._data = set(new_data)
+        self._on_change(in_place=False)
+        return self
