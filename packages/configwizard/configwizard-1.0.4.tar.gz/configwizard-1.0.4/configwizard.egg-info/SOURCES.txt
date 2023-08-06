@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+configwizard/ConfigHandler.py
+configwizard/__init__.py
+configwizard.egg-info/PKG-INFO
+configwizard.egg-info/SOURCES.txt
+configwizard.egg-info/dependency_links.txt
+configwizard.egg-info/requires.txt
+configwizard.egg-info/top_level.txt
