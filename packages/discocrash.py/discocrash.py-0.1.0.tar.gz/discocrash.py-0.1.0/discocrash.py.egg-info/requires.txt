@@ -1,0 +1,2 @@
+disnake==1.7.3
+requests>=2
