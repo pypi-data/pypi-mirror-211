@@ -1,0 +1,10 @@
+chartgpt/__init__.py,sha256=bkc03oYs61w4pXuqozYIyeVfyI7UcwzTDLQ7hsUF6HM,67
+chartgpt/chartgpt.py,sha256=7kdCW0Obr1f-5GyoZD8BbX2LftQqBQl0VYA-ZwViFLE,4504
+chartgpt/constants.py,sha256=f8Tukb0ZvdTYi2cwQ3x_i7oxfGGSUf8Xh2fHqC7Ppf0,1121
+chartgpt/llm.py,sha256=6Bj6d8ghs9Y_-SAYz5DTjLHM2GXJO9iVO7C1qi2j12s,2520
+chartgpt/prompts/base.py,sha256=-oPwVt2LFKxL_s7XW0Fir4jdd7z_iQ_juAtNQP4DG88,542
+chartgpt/prompts/generate_python_code.py,sha256=6K-fAmucNVayE-Juzl7DE7rTGffe3CLTk-oGGzZxyB0,968
+chartgpt-0.0.2.dist-info/METADATA,sha256=-0qcjG3tpDzR126MI5SEWVZC1bTHo9kRrAhS5AJQe6g,3684
+chartgpt-0.0.2.dist-info/WHEEL,sha256=y1bSCq4r5i4nMmpXeUJMqs3ipKvkZObrIXSvJHm1qCI,87
+chartgpt-0.0.2.dist-info/licenses/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chartgpt-0.0.2.dist-info/RECORD,,
