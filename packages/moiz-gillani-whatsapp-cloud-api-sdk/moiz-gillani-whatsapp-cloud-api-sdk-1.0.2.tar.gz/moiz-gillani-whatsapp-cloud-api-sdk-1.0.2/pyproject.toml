@@ -1,0 +1,16 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=61.0"]
+[project]
+name = "moiz-gillani-whatsapp-cloud-api-sdk"
+description = "Use cloud-hosted version of the WhatsApp Business API to send and receive messages"
+version = "1.0.2"
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = ["whatsapp", "messages", "api"]
+authors = [{name = "moiz gillani", email = "moiz.gillani@apimatic.io"}]
+urls = {Documentation = "https://dev.apimatic.io/api-docs-preview/dashboard/64789018957008f48600193d/v/1_0#/http/step-by-step-tutorial"}
+dependencies = ["apimatic-core~=0.2.0", "apimatic-core-interfaces~=0.1.0", "apimatic-requests-client-adapter~=0.1.0", "python-dateutil~=2.8.1", "enum34~=1.1, >=1.1.10"]
+classifiers = []
+[project.optional-dependencies]
+testutils = ["pytest>=7.2.2"]
