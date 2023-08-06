@@ -1,0 +1,210 @@
+Metadata-Version: 2.1
+Name: librarycubed
+Version: 0.1.0
+Summary: 
+Author: Elliott Lindsay
+Author-email: erlindsay2@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# Library Cubed
+
+### WARNING: LIBRARY CUBED IS STILL IN ALPHA
+### MANY IMPERATIVE SECURITY FEATURES SUCH AS NOT HASHING PASSWORDS HAVE NOT YET BEEN IMPLEMENTED
+### AT THE MOMENT, ONLY USE LIBRARY CUBED IN A PRIVATE SETTING FOR TESTING
+### DON'T ACTUALLY USE LIBRARY CUBED IN YOUR APPLICATION
+### (YOU HAVE BEEN WARNED...)
+
+#### An updated, more secure version will be published later (Expected by end of August 20238)
+
+Please email any bugs, suggestions, problems, etc to `erlindsay2@gmail.com`
+
+--------------------------------------------------------------------------------------------
+
+**Library Cubed is a python package, optimized for libraries to better manage and keep track of their books, run by blockchain.**  
+
+<br>
+
+Run the following to install Library Cubed:
+```
+pip install librarycubed
+```
+
+Then in your python file, add:
+```
+import librarycubed
+```
+
+### **Features**:
+- Customizable blockchain and creation system
+- Backed by Proof of Authority (PoA) and hashing encryption
+- Simple and easy-to-use 
+- Reminder system
+- No crypto or digital wallet needed
+
+--------------------------------------------------------------------------------------------
+
+## Documentation
+
+### **Initialization**
+
+For LC to work properly, a seperate database file must be created.
+
+```
+import librarycubed as lc
+
+lc.init_list()
+```
+
+This only needs to be run once, you can delete this line of code after. You should see `bcList.sqlite3` appear in your directory.
+
+**Do not delete the `bcList.sqlite3` file or any other .sqlite3 files.**
+
+**Use `Blockchain.delete(filename)` to delete a blockchain, do not manually delete them**
+
+### **Create Your First Blockchain**
+
+```
+import librarycubed as lc
+
+lc.Blockchain.new(filename, name)
+```
+**Notes:**
+- Filenames must end with .sqlite3
+- Filename cannot be "bcList.sqlite3"
+- The name does not need to be the same as the filename (e.g. if the filename is "hello.sqlite3", the name does not also have to be "hello")
+- The same filename or name cannot be used twice
+
+### **Admins**
+
+LC has two types of admins: Master Admin and Admin
+
+The Master Admin has more power over other admins. This would be the boss, supervisor, CEO, etc of your company.
+
+Admins can only verify blocks and view the blockchain.
+
+**Note that this system is likely to change in future updates**
+<br>
+### To initialize the Master Admin:
+```
+import librarycubed as lc
+lc.init_list()
+
+lc.Blockchain.new('bc.sqlite3','bc')
+
+lc.Admin.Master.new('bc.sqlite3') # use the same filename to add the admin to the specific file
+```
+You should be prompted to enter the username and password in the terminal.
+
+### To create a new admin:
+```
+import librarycubed as lc
+#lc.init_list()
+
+#lc.Blockchain.new('bc.sqlite3','bc')
+
+lc.Admin.new('bc.sqlite3') # use the same filename to add the admin to the specific file
+```
+
+You should be prompted to enter the username and password for the new admin in the terminal
+
+Then you should be prompted to confirm by entering the Master Admin username and password
+
+### Add data
+
+To create a new block, use `Blockchain.insert_into(filename, format(borrower, book, type, dueDate))`
+
+```
+import librarycubed as lc
+lc.init_list()
+
+lc.Blockchain.new('bc.sqlite3','bc')
+
+lc.insert_into('bc.sqlite3', format("Bob","The Adventure Of Alex","borrow","07/06/2023"))
+```
+
+**Notes:**
+- Due date must be in MM/DD/YYYY format; bugs and errors may occur
+- The format function must be used.
+- Blocks created with `insert_into()` will be found in "pending".
+
+### Verify blocks
+
+To create verify pending blocks, use `PoA(filename)`
+
+```
+import librarycubed as lc
+lc.init_list()
+
+lc.Blockchain.new('bc.sqlite3','bc')
+
+lc.insert_into('bc.sqlite3', format("Bob","The Adventure Of Alex","borrow","07/06/2023"))
+
+lc.PoA('bc.sqlite3')
+```
+
+You should then be prompted to look at the block and check that it is valid.
+Then you must enter the username of an admin to confirm.
+
+### View data
+
+To create verify pending blocks, use:
+- `GetData.chain(filename, database type)` to view the entire chain, or
+- `GetData.block(filename, database type, block index)` to view a specific block in a chain, or
+- `GetData.chains()` to view a list of all the chains
+
+```
+import librarycubed as lc
+lc.init_list()
+
+lc.Blockchain.new('bc.sqlite3','bc')
+
+lc.insert_into('bc.sqlite3', format("Bob","The Adventure Of Alex","borrow","07/06/2023"))
+
+lc.GetData.chain('bc.sqlite3','pending')
+```
+
+Use 'pending' as database type when you want to look at unverified blocks
+Use 'blockchain' when you want to look at verified blocks in the blockchain
+Use 'admin' to view a list of admins
+
+Note that the first block is block 1, not block 0.
+
+### Verify blocks
+
+To create verify pending blocks, use `PoA(filename)`
+
+```
+import librarycubed as lc
+lc.init_list()
+
+lc.Blockchain.new('bc.sqlite3','bc')
+
+lc.insert_into('bc.sqlite3', format("Bob","The Adventure Of Alex","borrow","07/06/2023"))
+
+lc.PoA('bc.sqlite3')
+```
+
+### The Check Functions
+
+To create verify the hashes of your blockchain, use `Check.hashes(filename)`
+To get a list of overdue borrows, use `Check.returns(filename)`
+
+```
+import librarycubed as lc
+lc.init_list()
+
+lc.Blockchain.new('bc.sqlite3','bc')
+
+lc.insert_into('bc.sqlite3', format("Bob","The Adventure Of Alex","borrow","07/06/2023"))
+
+lc.PoA('bc.sqlite3')
+
+lc.Check.hashes('bc.sqlite3')
+lc.Check.returns('bc.sqlite3')
+```
+
+
+
