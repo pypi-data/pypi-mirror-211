@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+gauth/main.py
+gauth.egg-info/PKG-INFO
+gauth.egg-info/SOURCES.txt
+gauth.egg-info/dependency_links.txt
+gauth.egg-info/entry_points.txt
+gauth.egg-info/requires.txt
+gauth.egg-info/top_level.txt
