@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: melctl-client-plugins-customer
+Version: 1.2.0
+Summary: Customers plugins for LuxProvide API command-line client
+Home-page: https://github.com/LuxProvide/melctl-client-plugins-customer
+Author: jpclipffel
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+This package provides MelCtl plugins for LuxProvide customers.
+
+- Documentation_
+- Repository_
+
+About MelCtl
+============
+
+MelCtl provides a set of APIs to interact with LuxProvide_'s HPC (High
+Performance Computer) and Cloud services.
+
+The MelCtl command-line client allows our customers and internal users
+to interact with MelCtl APIs.
+
+The base package (`MelCtl client`_) provides basic plugins
+(e.g. authentication). Supplementary packages such as
+`melctl_client_plugins_customer` provides extra plugins to interact with
+more services from the command line.
+
+About LuxProvide_
+=================
+
+LuxProvide is Luxembourg’s one-stop-shop High Performance Computing
+Centre, with missions to provide high performance computing
+capabilities, high-speed connectivity and advanced applications on a
+national, European and international scale, serving the public and
+private sectors.
+
+
+.. _Documentation: https://luxprovide.github.io/melctl-client/
+.. _Repository: https://github.com/LuxProvide/melctl-client-plugins-customer/
+.. _LuxProvide: https://luxprovide.lu/
+.. _MelCtl client: https://pypi.org/project/melctl-client/
+
+

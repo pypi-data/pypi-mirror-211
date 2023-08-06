@@ -1,0 +1,4 @@
+aiobotocore>=2.4
+aiofiles>=22.1
+melctl_client<6.0.0,>=5.2.0
+types-aiofiles>=22.1

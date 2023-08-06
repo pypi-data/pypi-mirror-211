@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+melctl_client_plugins/s3/__init__.py
+melctl_client_plugins/s3/config.py
+melctl_client_plugins/s3/s3.py
+melctl_client_plugins/s8s/__init__.py
+melctl_client_plugins/s8s/s8s.py
+melctl_client_plugins_customer.egg-info/PKG-INFO
+melctl_client_plugins_customer.egg-info/SOURCES.txt
+melctl_client_plugins_customer.egg-info/dependency_links.txt
+melctl_client_plugins_customer.egg-info/requires.txt
+melctl_client_plugins_customer.egg-info/top_level.txt
