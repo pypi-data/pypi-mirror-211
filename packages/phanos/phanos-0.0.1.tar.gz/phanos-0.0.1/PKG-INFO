@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: phanos
+Version: 0.0.1
+Summary: Python client to gather data for Prometheus logging in server with multiple instances and workers.
+Project-URL: Homepage, https://github.com/kajotgames/phanos
+Project-URL: Bug Tracker, https://github.com/kajotgames/phanos/issues
+Author-email: Miroslav Bulička <bulickamiroslav@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10.6
+Description-Content-Type: text/markdown
+
+Python client to gather data for Prometheus logging in server with multiple instances and workers.
