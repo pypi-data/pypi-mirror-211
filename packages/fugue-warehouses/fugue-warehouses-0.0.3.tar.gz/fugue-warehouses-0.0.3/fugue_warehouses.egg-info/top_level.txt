@@ -1,0 +1,5 @@
+fugue_bigquery
+fugue_trino
+fugue_warehouses
+fugue_warehouses_version
+tests

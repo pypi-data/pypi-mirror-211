@@ -1,0 +1,15 @@
+
+[bigquery]
+fugue[ibis]>=0.8.4
+fs-gcsfs
+pandas-gbq
+google-auth
+db-dtypes
+ibis-framework[bigquery]
+
+[ray]
+fugue[ray]>=0.8.4
+
+[trino]
+fugue[ibis]>=0.8.4
+ibis-framework[trino]
