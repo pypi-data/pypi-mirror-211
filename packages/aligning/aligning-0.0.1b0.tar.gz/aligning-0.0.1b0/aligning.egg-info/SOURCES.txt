@@ -1,0 +1,7 @@
+README.md
+setup.py
+aligning/__init__.py
+aligning.egg-info/PKG-INFO
+aligning.egg-info/SOURCES.txt
+aligning.egg-info/dependency_links.txt
+aligning.egg-info/top_level.txt
