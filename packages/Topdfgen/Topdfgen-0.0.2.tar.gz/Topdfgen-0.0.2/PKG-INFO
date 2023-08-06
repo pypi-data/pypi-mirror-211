@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: Topdfgen
+Version: 0.0.2
+Summary: A package to convert pdf .mhtml,mhtm,xml,igs,htm,pdf,csv,xlsb,xls,xlsx,doc,docx,dotx,rtf,txt,plist,png,jpg,tif,gif,pptx,ppt support extension
+Author: Developer Ashok puri And Pawan yadav
+Author-email: developer1.infinity@gmail.com
+Keywords: python,tutorial,convert to pdf,developerpawan
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+from pdfgen import Topdftool 
+input_folder_path = 'C://Users/EDITOR/Desktop/input29'
+output_folder_path = 'C://Users/EDITOR/Desktop/output29'
+Topdftool.scrape_files(input_folder_path, output_folder_path)
