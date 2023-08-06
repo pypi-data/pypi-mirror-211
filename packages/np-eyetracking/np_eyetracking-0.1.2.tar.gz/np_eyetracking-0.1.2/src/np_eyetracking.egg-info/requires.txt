@@ -1,0 +1,5 @@
+np-session>=0.6.11
+allensdk>=2.15.1
+
+[dev]
+blue>=0.9.1
