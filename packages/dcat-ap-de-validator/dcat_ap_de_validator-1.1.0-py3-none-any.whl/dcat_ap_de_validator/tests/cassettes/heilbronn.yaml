@@ -1,0 +1,448 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.30.0
+    method: GET
+    uri: https://opendata.heilbronn.de/api/3/action/package_list
+  response:
+    body:
+      string: ''
+    headers:
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '0'
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Thu, 11 May 2023 11:30:07 GMT
+      Expires:
+      - Sun, 19 Nov 1978 05:00:00 GMT
+      Keep-Alive:
+      - timeout=3, max=100
+      Location:
+      - https://opendata.heilbronn.de/api/3/action/package_list?page=0
+      Server:
+      - Apache
+      X-Content-Type-Options:
+      - nosniff
+      X-Drupal-Cache:
+      - MISS
+    status:
+      code: 302
+      message: Found
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.30.0
+    method: GET
+    uri: https://opendata.heilbronn.de/api/3/action/package_list?page=0
+  response:
+    body:
+      string: "{ \"help\": \"Return \",
+          \ \"success\": true,
+          \ \"result\": [
+          \   \"straftaten-im-stadtgebiet-heilbronn\"
+      \ ]
+    \ }"
+    headers:
+      Cache-Control:
+      - public, max-age=1800
+      Connection:
+      - Keep-Alive
+      Content-Language:
+      - de
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 11 May 2023 11:30:07 GMT
+      Etag:
+      - '"1683804607-1"'
+      Expires:
+      - Sun, 19 Nov 1978 05:00:00 GMT
+      Keep-Alive:
+      - timeout=3, max=99
+      Last-Modified:
+      - Thu, 11 May 2023 11:30:07 GMT
+      Permissions-Policy:
+      - interest-cohort=()
+      Server:
+      - Apache
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Cookie,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Drupal-Cache:
+      - MISS
+      X-Frame-Options:
+      - SAMEORIGIN
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"contentToValidate": "https://opendata.heilbronn.de/dcatapde/dataset/straftaten-im-stadtgebiet-heilbronn.xml",
+      "validationType": "v20_de_spec_implr"}'
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '150'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.30.0
+      accept:
+      - application/ld+json
+    method: POST
+    uri: https://www.itb.ec.europa.eu/shacl/dcat-ap.de/api/validate
+  response:
+    body:
+      string: "{\n  \"@graph\" : [ {\n    \"@id\" : \"_:b0\",\n    \"@type\" : \"sh:ValidationResult\",\n
+        \   \"focusNode\" : \"https://opendata.heilbronn.de/dataset/straftaten-im-stadtgebiet-heilbronn\",\n
+        \   \"resultMessage\" : {\n      \"@language\" : \"de\",\n      \"@value\"
+        : \"K36: dcat:Dataset: dct:publisher MUSS verwendet werden. Siehe: https://www.dcat-ap.de/def/dcatde/2.0/implRules/#konvention-36
+        \"\n    },\n    \"resultPath\" : \"dct:publisher\",\n    \"resultSeverity\"
+        : \"sh:Violation\",\n    \"sourceConstraintComponent\" : \"sh:MinCountConstraintComponent\",\n
+        \   \"sourceShape\" : \"dcatde:Konv36_dct_publisher_v_Min\"\n  }, {\n    \"@id\"
+        : \"_:b1\",\n    \"@type\" : \"sh:ValidationResult\",\n    \"focusNode\" :
+        \"https://opendata.heilbronn.de/dataset/straftaten-im-stadtgebiet-heilbronn\",\n
+        \   \"resultMessage\" : {\n      \"@language\" : \"de\",\n      \"@value\"
+        : \"dcat:Dataset: dcat:landingPage SOLL eine IRI sein.\"\n    },\n    \"resultPath\"
+        : \"dcat:landingPage\",\n    \"resultSeverity\" : \"sh:Warning\",\n    \"sourceConstraintComponent\"
+        : \"sh:NodeKindConstraintComponent\",\n    \"sourceShape\" : \"dcatde:Range_Dataset_dcat_landingPage_w_IRI\",\n
+        \   \"value\" : \"https://opendata.heilbronn.de/www.heilbronn.de\"\n  }, {\n
+        \   \"@id\" : \"_:b10\",\n    \"@type\" : \"sh:ValidationResult\",\n    \"focusNode\"
+        : \"https://opendata.heilbronn.de/dataset/straftaten-im-stadtgebiet-heilbronn\",\n
+        \   \"resultMessage\" : {\n      \"@language\" : \"de\",\n      \"@value\"
+        : \"K12&13: dcat:Dataset: dcatde:contributorID MUSS verwendet werden und DARF
+        nur genau einmal eine IRI aus http://dcat-ap.de/def/contributors/ verwenden.
+        Siehe: https://www.dcat-ap.de/def/dcatde/2.0/implRules/#konvention-12 \"\n
+        \   },\n    \"resultPath\" : \"dcatde:contributorID\",\n    \"resultSeverity\"
+        : \"sh:Violation\",\n    \"sourceConstraintComponent\" : \"sh:QualifiedMinCountConstraintComponent\",\n
+        \   \"sourceShape\" : \"dcatde:Konv12_13_contributorID_v_List\"\n  }, {\n
+        \   \"@id\" : \"_:b2\",\n    \"@type\" : \"sh:ValidationResult\",\n    \"focusNode\"
+        : \"https://www.dcat-ap.de/def/licenses/cc-by/4.0\",\n    \"resultMessage\"
+        : {\n      \"@language\" : \"de\",\n      \"@value\" : \"dcat:Catalog: dct:license
+        SOLL folgendes Vokabular benutzten: https://www.dcat-ap.de/def/licenses/\"\n
+        \   },\n    \"resultPath\" : \"skos:inScheme\",\n    \"resultSeverity\" :
+        \"sh:Warning\",\n    \"sourceConstraintComponent\" : \"sh:HasValueConstraintComponent\",\n
+        \   \"sourceShape\" : \"_:b3\"\n  }, {\n    \"@id\" : \"_:b4\",\n    \"@type\"
+        : \"sh:ValidationResult\",\n    \"focusNode\" : \"https://opendata.heilbronn.de/dataset/straftaten-im-stadtgebiet-heilbronn\",\n
+        \   \"resultMessage\" : {\n      \"@language\" : \"de\",\n      \"@value\"
+        : \"dcat:Dataset: foaf:page SOLL eine IRI sein.\"\n    },\n    \"resultPath\"
+        : \"foaf:page\",\n    \"resultSeverity\" : \"sh:Warning\",\n    \"sourceConstraintComponent\"
+        : \"sh:NodeKindConstraintComponent\",\n    \"sourceShape\" : \"dcatde:Range_Dataset_foaf_page_w_IRI\",\n
+        \   \"value\" : \"https://opendata.heilbronn.de/dataset/straftaten-im-stadtgebiet-heilbronn\"\n
+        \ }, {\n    \"@id\" : \"_:b5\",\n    \"@type\" : \"sh:ValidationReport\",\n
+        \   \"sh:conforms\" : false,\n    \"result\" : [ \"_:b2\", \"_:b6\", \"_:b1\",
+        \"_:b7\", \"_:b8\", \"_:b4\", \"_:b9\", \"_:b10\", \"_:b0\" ]\n  }, {\n    \"@id\"
+        : \"_:b6\",\n    \"@type\" : \"sh:ValidationResult\",\n    \"sh:focusNode\"
+        : \"foaf:Organization\",\n    \"resultMessage\" : {\n      \"@language\" :
+        \"de\",\n      \"@value\" : \"foaf:Agent: dct:type MUSS eine IRI aus diesem
+        Vokabular verwenden: https://www.dcat-ap.de/def/dcatde/2.0/spec/#kv-adms-publisher\"\n
+        \   },\n    \"resultPath\" : \"skos:inScheme\",\n    \"resultSeverity\" :
+        \"sh:Violation\",\n    \"sourceConstraintComponent\" : \"sh:HasValueConstraintComponent\",\n
+        \   \"sourceShape\" : \"_:b11\"\n  }, {\n    \"@id\" : \"_:b7\",\n    \"@type\"
+        : \"sh:ValidationResult\",\n    \"focusNode\" : \"https://opendata.heilbronn.de/dataset/tatverd%C3%A4chtige-bei-straftaten-von-2009-bis-2018-heilbronn/resource/8dcc41a3-f7d0-4593-bfe0\",\n
+        \   \"resultMessage\" : {\n      \"@language\" : \"de\",\n      \"@value\"
+        : \"K31: dcat:Distribution: dct:license MUSS eine IRI aus http://dcat-ap.de/def/licenses/
+        verwenden. Siehe: https://www.dcat-ap.de/def/dcatde/2.0/implRules/#konvention-31
+        \"\n    },\n    \"resultPath\" : \"dct:license\",\n    \"resultSeverity\"
+        : \"sh:Violation\",\n    \"sourceConstraintComponent\" : \"sh:QualifiedMinCountConstraintComponent\",\n
+        \   \"sourceShape\" : \"dcatde:Konv31_dct_license_v_List\"\n  }, {\n    \"@id\"
+        : \"_:b8\",\n    \"@type\" : \"sh:ValidationResult\",\n    \"focusNode\" :
+        \"https://opendata.heilbronn.de/dataset/straftaten-im-stadtgebiet-heilbronn/resource/e11cc349-af87-4df6-9b94-f7b83a56cd71\",\n
+        \   \"resultMessage\" : {\n      \"@language\" : \"de\",\n      \"@value\"
+        : \"K31: dcat:Distribution: dct:license MUSS eine IRI aus http://dcat-ap.de/def/licenses/
+        verwenden. Siehe: https://www.dcat-ap.de/def/dcatde/2.0/implRules/#konvention-31
+        \"\n    },\n    \"resultPath\" : \"dct:license\",\n    \"resultSeverity\"
+        : \"sh:Violation\",\n    \"sourceConstraintComponent\" : \"sh:QualifiedMinCountConstraintComponent\",\n
+        \   \"sourceShape\" : \"dcatde:Konv31_dct_license_v_List\"\n  }, {\n    \"@id\"
+        : \"_:b9\",\n    \"@type\" : \"sh:ValidationResult\",\n    \"focusNode\" :
+        \"https://opendata.heilbronn.de/dataset/straftaten-im-stadtgebiet-heilbronn\",\n
+        \   \"resultMessage\" : {\n      \"@language\" : \"de\",\n      \"@value\"
+        : \"K30: dcat:Dataset: dcat:theme: Zur Steigerung der Metadatenqualit\xE4t
+        wird die Angabe von Kategorien empfohlen. Siehe: https://www.dcat-ap.de/def/dcatde/2.0/implRules/#angaben-zu-kategorien
+        \"\n    },\n    \"resultPath\" : \"dcat:theme\",\n    \"resultSeverity\" :
+        \"sh:Warning\",\n    \"sourceConstraintComponent\" : \"sh:MinCountConstraintComponent\",\n
+        \   \"sourceShape\" : \"dcatde:Konv30_dcat_theme_w_Min\"\n  } ],\n  \"@context\"
+        : {\n    \"resultMessage\" : {\n      \"@id\" : \"http://www.w3.org/ns/shacl#resultMessage\"\n
+        \   },\n    \"resultPath\" : {\n      \"@id\" : \"http://www.w3.org/ns/shacl#resultPath\",\n
+        \     \"@type\" : \"@id\"\n    },\n    \"focusNode\" : {\n      \"@id\" :
+        \"http://www.w3.org/ns/shacl#focusNode\",\n      \"@type\" : \"@id\"\n    },\n
+        \   \"sourceShape\" : {\n      \"@id\" : \"http://www.w3.org/ns/shacl#sourceShape\",\n
+        \     \"@type\" : \"@id\"\n    },\n    \"sourceConstraintComponent\" : {\n
+        \     \"@id\" : \"http://www.w3.org/ns/shacl#sourceConstraintComponent\",\n
+        \     \"@type\" : \"@id\"\n    },\n    \"resultSeverity\" : {\n      \"@id\"
+        : \"http://www.w3.org/ns/shacl#resultSeverity\",\n      \"@type\" : \"@id\"\n
+        \   },\n    \"value\" : {\n      \"@id\" : \"http://www.w3.org/ns/shacl#value\"\n
+        \   },\n    \"result\" : {\n      \"@id\" : \"http://www.w3.org/ns/shacl#result\",\n
+        \     \"@type\" : \"@id\"\n    },\n    \"conforms\" : {\n      \"@id\" : \"http://www.w3.org/ns/shacl#conforms\",\n
+        \     \"@type\" : \"http://www.w3.org/2001/XMLSchema#boolean\"\n    },\n    \"@vocab\"
+        : \"http://dcat-ap.de/def/politicalGeocoding/governmentDistrictKey\",\n    \"schema\"
+        : \"http://schema.org/\",\n    \"spdx\" : \"http://spdx.org/rdf/terms#\",\n
+        \   \"owl\" : \"http://www.w3.org/2002/07/owl#\",\n    \"xhv\" : \"http://www.w3.org/1999/xhtml/vocab#\",\n
+        \   \"xsd\" : \"http://www.w3.org/2001/XMLSchema#\",\n    \"skos\" : \"http://www.w3.org/2004/02/skos/core#\",\n
+        \   \"rdfs\" : \"http://www.w3.org/2000/01/rdf-schema#\",\n    \"owlTime\"
+        : \"http://www.w3.org/2006/time#\",\n    \"ns6\" : \"http://publications.europa.eu/ontology/authority/\",\n
+        \   \"ns5\" : \"http://www.w3.org/2008/05/skos-xl#\",\n    \"ns7\" : \"http://publications.europa.eu/ontology/authority/\",\n
+        \   \"dct\" : \"http://purl.org/dc/terms/\",\n    \"sh\" : \"http://www.w3.org/ns/shacl#\",\n
+        \   \"xml\" : \"http://www.w3.org/XML/1998/namespace\",\n    \"dcterms\" :
+        \"http://purl.org/dc/terms/\",\n    \"dcat\" : \"http://www.w3.org/ns/dcat#\",\n
+        \   \"locn\" : \"http://www.w3.org/ns/locn#\",\n    \"vann\" : \"http://purl.org/vocab/vann/\",\n
+        \   \"graphql\" : \"http://datashapes.org/graphql#\",\n    \"prov\" : \"http://www.w3.org/ns/prov#\",\n
+        \   \"wot\" : \"http://xmlns.com/wot/0.1/\",\n    \"foaf\" : \"http://xmlns.com/foaf/0.1/\",\n
+        \   \"cc\" : \"http://creativecommons.org/ns#\",\n    \"void\" : \"http://rdfs.org/ns/void#\",\n
+        \   \"dcatap\" : \"http://data.europa.eu/r5r\",\n    \"adms\" : \"http://www.w3.org/ns/adms#\",\n
+        \   \"org\" : \"http://www.w3.org/ns/org#\",\n    \"skosxl\" : \"http://www.w3.org/2008/05/skos-xl#\",\n
+        \   \"tosh\" : \"http://topbraid.org/tosh#\",\n    \"vcard\" : \"http://www.w3.org/2006/vcard/ns#\",\n
+        \   \"gr\" : \"http://purl.org/goodrelations/v1#\",\n    \"skos-xl\" : \"http://www.w3.org/2008/05/skos-xl#\",\n
+        \   \"rdf\" : \"http://www.w3.org/1999/02/22-rdf-syntax-ns#\",\n    \"dcatde\"
+        : \"http://dcat-ap.de/def/dcatde/\",\n    \"wdrs\" : \"http://www.w3.org/2007/05/powder-s#\",\n
+        \   \"time\" : \"http://www.w3.org/2006/time#\",\n    \"odrl\" : \"http://www.w3.org/ns/odrl/2/\",\n
+        \   \"dash\" : \"http://datashapes.org/dash#\",\n    \"swa\" : \"http://topbraid.org/swa#\",\n
+        \   \"vs\" : \"http://www.w3.org/2003/06/sw-vocab-status/ns#\",\n    \"dc\"
+        : \"http://purl.org/dc/elements/1.1/\"\n  }\n}\n"
+    headers:
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/ld+json
+      Date:
+      - Thu, 11 May 2023 11:30:16 GMT
+      Expect-CT:
+      - max-age=60, report-uri="https://isaitb.report-uri.com/r/d/ct/reportOnly"
+      Expires:
+      - '0'
+      Pragma:
+      - no-cache
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000 ; includeSubDomains
+      - max-age=31536000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - Access-Control-Request-Method
+      - Access-Control-Request-Headers
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: ''
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.30.0
+    method: GET
+    uri: https://opendata.heilbronn.de/
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAACA+0921LjyJLv/RV1PHH2nDOLLF+49tBsGGPA08bQ2EDDMOEoSWVLWDdKJRs4MREb
+        G/sfOw/zsj9wns7T9AftL2xmlSzLF7Dp7unuOdME2FIpKysrKzMrM6tUbP9p77javjypEVt4Ljk5
+        223UqySn6fpFuarre+098vawfdT499O9fUqK+YKu15q5F4TkbCHCl7o+HA7zw3I+4D39iPL+WYh1
+        9DvEpnGrS7Vi3hJWbufFtmzApX7vVc5iOWI5/FXOFRyR3XmuH700A18wX7waoQ5j7krEPIp0bNoL
+        rNhlkZ4A6uOqljlbyzJ1wbgXZcC6Ae2mgLIobwaejsV6IV/MQAa9FC7ohXmP6X70zfgx9Cx6NYcF
+        pUKhoBeKOjzXItNmHs1UipxgTCZikFWwdBI5lohHAMV9yCZg+8FjhKzqhZKOz4FfnGXq3EXWI1WK
+        +tujRmua7mDoPgJf0gsbOjye5Mw84OLW1hbSUyppkjf3vqB32iRPo+jxoc9yRzAFF+HghMy3qKB5
+        mzmuwQPfz1tTY2WZVMwjyY90fPSNlE1GLRLyoOu47FHypVDrg8CkBtQhZNtjghIE1tht7Axe5d5q
+        ZxWtGnghFY7hgpCnIl2vvWJWj60Q0+aBx14VMxhMm/KIAVAsutpm5oFPATI3cNgwDLjIYBs6lrBf
+        WWzgmEyTNyvE8R3hUBfEjkIfgGeP0FhVSLQ2SFIGpWB3QscOfpfSo8ghOvAnQ84B8xmnIuCZyns8
+        DqlLNshfE9ZZsgBZ9zeFwHX8PuEMBIm6oJU+FdA4CjMUhKHrwEA4gY/C/u8wajlic9ZdNMpQh7pB
+        Ly8rTDYS2cAwMxbEARqXw4ZyFenUdXUB8g+XgWV3SoVSQe/SAaLJw8eIZsejPaYPfCvvOSYPoqAr
+        8qqpKW699+AhIhg+4QiX7Rx3u8B1sgdc88nhiOptXT1FONl1RZscSTOKcgkrxD3YTJsx8Rw+WKxL
+        Y1foqBARYsO/Tr9lX6yenninkbgqt8J6VbsanB80988rTuGidhRX/Xrhqn9Zp/vDvKTAY5ZDccyz
+        I/Sbk3l2tz8oV7zD+/rR3cB/6IWs8cDFUevt+r5R7EfVxppd3adbG4XN/uckc/22cHL3EBSP99zC
+        KT9/0KoDbnXYQ+UqMF3qtNdLVS54t3TYu/ycZB758WF197A7iIt3osnWmcOdzSLtiNuj21Z0s3fW
+        7F1sGSe7B+FnHfSH3Xt7jUXu/s2NUb0sm7dHRrXXLxjs1t58uG0Hh+dNs7V12b6iq5+TzMFD0T8N
+        RaO65te0re876zclgKqHp3RtyzNuG/dnR8f+cPVtpVKZIDPkji8+CaGBG3DngfHUAGprhWK5a9Ly
+        XL692P6Tpv3gdAnYdVKvka0fPxkvaZe/9R6ck8ti+XIrOLOd8yOj4bphk1b8/a2AsdtqcNGqmKF9
+        Nn/I//QDNOl0f9S0TD8+bR9uw4f2etOlna1bf3e4db9fhZuj1p3mnRarpZOzB9Hz7MbF+fpb83l9
+        2Px0ffCdcxYa9WJ4Xx1879nu2ip9e7Laf+MWTwqs5ZRvGhfd9c341KsuMQ6fiOaTu+gkrLfbwf3m
+        lX9cML7fqxTbteq6YeyHB+1u64KXrk42G/H+ZTCXZphzgdcEY6M1wlzwGHxBojjEyZ50Aw5DsK5t
+        EuyRAlUqMpIuAj/bkcmdEGpxCAt06XytRbYzyPeCoOcyM7CYDE+iga8LHvt9BZK/iXI727qqnGCS
+        PFMskT102ATRAMuYP4eL02xOOpYZjjGZGdgbOqCqNKeof/443OBvxzu+K1wcuutm86pe6N7yc9dq
+        Fyr361eDjfPT/T1vq8HuroJms9OsT3X7aap2pCboOvQAelPdq7QrP+j6Dha+uHkTM34PjlsP3Fh2
+        FEM4Adxl302Wtzk12asudSP23YsE0Y+oUktS8GF8iYN1US2x9tb6QHBept6G2T0KXHvg97un4erV
+        Uf1s8Oawudpf7T2LL5NUefTOtPy8EQQiEpyGeIMClxbo5XwRwmKgKS0C/vgf0ORzGVEyWsN+r3Oy
+        Vzuhl2ul5t7W7YP12rh7a/v9zcuDy/1++3Vj9+iQn1x+Qqpeb725L9Kb8E3rZrM+uAz39l8fH55X
+        Lg6PXatceX3zeuO4sHZutvqXR5+QqpMaq97ZjY1itPHQPjsu3XS6Ww/aTbd26xya5TdderR/cXZe
+        vqTF1U9IVcEuvN4SpYOGucHt/XYw2DDdq92T1nq9fLB13lg7PHnt7G2uNXrh5cdWcagBtP5VRad5
+        CGmF4/eiFfL3nEEjdkKFnXuZu9ZzKzkI2O0TMJ/OHZTAPcAe0uj7qBoEfYflXhZWcvSG3p1A1NcS
+        GLu+/HtOhokAPnKToJos6oigD8b2ZS5sVHzKjzvnmw/W+lUt7p7a++ZFyTpz94J9vx5H2lnxqlK8
+        jHom1IW+A1LJx2sMQ69H6a5rYCdzrU4YdjwaXgNPr3XwBiMP2fWyCMSrvAUUW33qZ+phyMkdA6rc
+        Ij86cQgDx651zkIXrNuo/FoHJS+N7kYKjpgLHwW/lphUaGe6KNuY50Rm+lwNnVbOr+YLcwFkgjHE
+        IcN8AgCu5QuaQc0+TsDzauQD32STD5IsRVKmBPxav37MLl6PreC1soxqMGZs44cxLXbUHyBzYOSt
+        tAOxk8dM3mM8yxtUM4zb9NGowWDAuEvv0wstpBycleUJDakfhIF735FZj2hcoKmC5TFxZoKnwhTb
+        bqJAGhJMkbwnCs4iMYMiNlzHlOOIyeZYkWyxjj2ohWenhndSfhu+PTJuPV976Lwx7uoVfnbWKJt+
+        q/Z6zR+uFQpnI1xLamOXCdN+Zh3oKQwee2atSFAuoqEj7Mc45joGp9zBgkQs1CC5AbUyspQtzApU
+        lg6VBwMuU8u5g7IIrGKUMB6L8soSP0bJqHo6dH6MmtKZgy77ZArrPIJGFjfhCQx3f1Efpqpkmvhp
+        JYeuL9jelO/RfSSYN/rO42Qh3ekJtZoCglYiqQyLACVFYyipwKjuU0r+FMAUikWKPgMItgzDlfRi
+        FkJKXsK95C4FWqyjSm5tx7KYP3k325IPUY76fEYDUlA60MUgFtHU7ZwBYJSb9uh79nkcMa4+n0EC
+        mhy8j6LkOq07V5XNPkRiIuBJjdHtMxo0RRC4oxbVzdNNTloPFfWNPIf3qOhRx38GuTBHsJRcdfMe
+        tUM37jl+hKY8GWsxDMzA7RgclH76dnED6hY/wUsLHTNKZTxTNkYznkq6QJmGGX4tgmDfFFpPLoO4
+        ybdgllZ8VvM4bYEBTBiULXoUzZIGVSKctKg4hB8FLdbQui4VckHko2Gc4vvTBnycv0AccSQCT1MJ
+        jvdBoGaP96hoBwLChY/CA5nb/YDeT9Yf+7FzQ7VrPWkgCdau9YTuNPF7/Ujm90O76bCPhGbrI+HZ
+        fJ5FetoJVqh+AncimX7RpcC4UvoW1AIHBWJCx8P45NpPvvVvr301A34LBCXP0gILTI1gGgyXF2WK
+        3aB37SO50CHLyl4iOnUHYDjDZG5jdE8y9wr5tS9ThOMKiGJc1A24R4WGX2kxCNIQZ8zp+4m+9HgQ
+        h9e++sKCb5FC4IEESz0VCyYjJ4q0xHu69hWMPwY1KPjW17hbIPADD6rgno5M/+Kkad2kEN+5mYKp
+        52nv0hI5yaDAf5s2CGFcbIqYj5wearhMU5OR/Eom+5nqKVezhSkzsoVzOpJ9bLEBdGKClapo+h5B
+        Uj9uDDVbNNHlBGrqXp9PVwL86JMJKjkbOJET+FkOpc+lbHIGDmwkNLRIuZWcH/idkVbMct9wA7OP
+        DXmBxJNAQJAMKqICIRGjFtphhgg15GmbuZ+ymR0GivgDbj1ayTE/96PK6FTBzGLWAPM4ideMxVjT
+        YAI63GF3YRAxq6MSDVKZpb8nU0BDtMN4BYIM4ft9pJQexrODn50i3qc1f/jxJ7QP2cn+qcqleZWB
+        Mb2O60Tiua2a4KT0AowMp2smE8G8SmEQxi7lHUF7M9XkEM1Wwmoxd+tRBfjY5jBDMQuhrvXcS8yz
+        //TT3x5LqOu4DQe+jcC6J6ZL1YYgzyVdmLsE8QOhQe974Gs5PtxpkWMxg/KIhGA7tCFzQfoZkYzQ
+        lMOoTfiHySPOeiComsu6omMwNxhOlnsQqbhssow7PXsuMHguOSJXSSxnQBzrVS7qO6GG6zG5ZG2G
+        Jgsz36AHrSXbQHKj/iVLR9Aj1B8wN6PFJDC6ML2jAcrt7Dmc9QV5iD1S923qim2dykbBgA6SZpB3
+        jEsS1GXaRHKbUpkUG5z6luP35M4UIC0BGf0A3Qkg8DwgPh0AqzVD+AREwpXcG63C6Tkid6K8yrVk
+        foLBjJXBte14veVzyPN24CAF+dDv5Qj0faIVtWIlW1EsyXQA1+ekqpJEh4mKAJNFOVzZAk8eRlEy
+        TYqzJt1RJGQIsjV1p2prwIaUtbISmVM1KdMAEGphXnnnxZghmVEYyUNCEc60hEqqJF89JuwAqAP6
+        gd1I5xSFyoyMaMPqwCTTZKHQ0n1lZ+193MjFAxwiCbKDJOxk6cBi6WkQeYU5dw1T7nIaJOnTpCFV
+        IGd3JVcuBeXAUpBoMMIJWG6npcC3dQkAoNuOH8aCyFynHbggmDCesWnj8mSWFOl4BW5CDRCSXaxU
+        nMg2lGy3Gt0NqBvDbY5EMK++ypULwEl65zK/J+xXuWIp2dam1CchSaGPYsNzJhpIClQDqO4J8v/7
+        z/+aJFlBElQR+NMSsyqvwUP3KL/HVidaU1mREXLE0jFiB6Jvx0rbkbhdfrBberPVW+cnrnfn0PPw
+        oOU63e7u+nBobFwd75dNQ3DhH52+UV1b0EoGv5yORgI1mpc6ipMdJVApr7alR7iTWh603kqHJsxR
+        VrDAcDg9ubtPG3IahqmZmdaCSRO0DfUyKEDpRiZoNF0l8jzGnzU5kwRgtYwVTKGMWAhQf8UldZOb
+        qiZgwsGdnMiX5AbJdV0aRmkx5T3Us2+SOunjKYMUwdQxQh9xLfDd+9xOW+Ik424ASwHuiaoyDYFW
+        aOdTgW7rijkZBsuhVjZWz0+wWJrXFxNWuAoMATEhYNexowSnx2hF6jZ8wTREAnjER3sk5f4JyWuc
+        nkbWelZmFJfJNNel7j49FJmuxa6El5MzzLtxKgB4I6lNUMHXDJZt10lNgMMjQcDad6X9HjCCCKQn
+        oMm0PTCWzkyYaWuqDhhMBMW5DEymI3fDpNMwoh7jxFUjP4tzZHLlLtGlMWjU73JwnyZQySf6+Ina
+        eDq6XwY3uqlZjHgf5XZ24Wup6hCaOq7TQz9ijETON9GYdzu7Kdh8pHQ0ImPM1B+C7xH7Uz3OFo/w
+        V8ZlK6QShhEJULzPnSim4IE7jCfPLAcGGyy/2qbrq3260btfxAPcEHCNBXNhIhjGHFPguZ0M4jHd
+        E2Klx2625MWUV4Pxm+zThHI826FBNJMy/9H9mayFkVqfZTq2j74dxIDAEw8cjRFDpAF6ZJbJGqBJ
+        +5NahDFXtnV4Ngk2dv+yKNIZaLRla9rAJdZZPlaRCuNI2sjvlwYkO8NNPBlbFbzJ8O7FeC5MsUzH
+        CLKQB8Nxve0Zfiz/kx0tFcWQJJiZGrsMnIp5kugviYBKwG4tCaxSqSDT07+ClZ9JPayGYdNsK46P
+        EV1uZ359WV1TEjq+1Io5Iht9karKHAqmu4ajGo4lMY1LpAIru9gPmIthCZiDZHoHn8jtAnVpODNv
+        00skAsYZ71gs6kMvOxyC1uJ66Q7+OgeM9aOKgNkw6GF8XyhudAoQ10i3UMp9iOI1lnvVl8RLfYIp
+        KspRHR2H+e/Bl8xjxCnDpwxKde9YM0WJZOCjkdurygNPgq+yTbpRMtcK3U1Gy12jBEzeNLbKq2bR
+        2NgoZebVF6PfefRMkTsN0uPQ1hhZ0t+dCXdnZsLUMbeh77LBu3+4fWnSteIWjvKEY+SiDMi3SbDv
+        CkJ3drbDEZR0BNHBxllpjAtGL5yGMoMYuzBhG5OyYmlk+zJziEQxaxYf8bc/gAnnjA8hwAayV8gh
+        jSPMNJAYvLOWYDHjvlYqLWKMhHiMMYvwP5NZ65+TVwcMoqQHJsn/Po6E86CVCgu5U3iCO7MYnys8
+        n5kfQLjNIGIuri1Un7Wn+ZBgemb/P6vu1NE5xgR2X8R8hezSGHw/HMqLwAafUCstZErpKaYsQP9M
+        Tm1+Tk69htkB+7DPmfMAo7xCWnLTPPamHcS4PyGOYM5cKETrT/BrqUZ+T/q167gYMagxd6IICDBt
+        2gU2bC5k1OZTk9UjeJ/Jm/Ln5M1J4DrC6as+UNsFdSsWF3Kl+ARXZjE+kx9bn5MfreDBoeCMaqWF
+        XCg9xYURnt+TLLQ59aNU1cHj6DOba6XVhYxYfYIRc5H+nrhy5g1Z4mu9dh2PaqXyQoaUn2DINL5n
+        8mLjM3u5Bqe45MBJy7Rj8aAtNKGbT3u1U/ieyY3Vz8mNC4eLxOLjaFa4gS7cxiKGbDzBkLkoP4m2
+        ZC6nf6dgJ0PrlKfzmGtCwMn4E4sX81McMh88Xs6Yl+aYIXtJ1JjXfCbmR/o2H79aAf9YCZrS+yQi
+        ppIzyWkc8/IzMrWsthHS0NHsYCgClEFGDObHGFA5po0p2l9/3gYHOvB7O3uvK01SOalv60kBStWv
+        P9d4l0KTPmlBZdth4D4O4aqFVWM/YpyRYDbDS7rv/slJHSoS5vTk0xMe3LC+YIRKZyrGHLGN6QCB
+        O0ysxHMPedDj1POiJPjtv/uHD7XzKOYv3jMHpDYpqQLJktE2E20MPj0guHegNDEWMv+dCliT4bYd
+        NtFnKVh2SYF8QGppgsY0uzSxQWYmwZTdITORZVrbYhtdo2gW6IZZMtfKxc311TWzbG4a5RJbN8vT
+        y3HTyaWpFcJiidTA5hk+esXzbctSOSo5anCdgYnkaGlotolFNWHHnhERuRVVFUqDvorKmM0Vq9Wq
+        Ueo2GBL404ryc9LazKR8x2sigJKgjhfJrJF6IlP8F6X6f5kFfTHLgkhTuwYy1yOZmrv0qCBSvk2s
+        Q6EM6NToUheccBEFvIcZunTfiFYqYMqpsrtfaTRqzXbr+PTgrHlA6k1yWKs3dk+Pm02CMHMnjiVp
+        9x1rOcpfJFPtvtw2yV4mDU6YUNxEIfdv7WQHk0UQlJps9GRmWVFa/NmJUhtVfB+ujZfJDOamq16n
+        LFIo/ZdkMVuTFXC1TxSIiga5HfjILMfhUtZo88D7sR+3g2lys8KS8hPu7Dmj03Kw+4LipkhiMW98
+        eA44axXJH04FKDncSjuOfVqBmYODy9JjycLdIMDKfj6fn+lCds0unXOntGhmee9JxSx9+eoYybhQ
+        TsNUQB0NzCaucVtiQsSK4CS2jq/qlcZepV1rVtqNSovs1U5Jq13Za08IUnHjD6ify7NxsaYuzecv
+        WGErPnXvYarFRfbWmDcEWA6ulQ/OmGkLcLH4rz/vgmpS38LV/wy4luTOwQuzbMft4hu1Phi+/K8/
+        fxrdLX/5umuPDaA2DHDfnUd5H0BTMQHBuTiuHtaaR5XT1+0/oF4+xqLFWvgID79InfvttWGVzASr
+        X+6UBnGaFQmI7yJwFlz0lqYsMcxl1cPKXqt9vL/fqhwdNdAfmrKwf8RJbDHjlpi9FnL2C522Wmnv
+        cS0b5iZ0Kt/9Al43oXFETrgzoMJOlrphKvPe/ROXWAi4loEPE5cgiXsuyJDJ3WHgtkpH1HCY+Ggu
+        5/R+sjlhZOlfNniMHPEAYhnh20uOzyDAZp6Du/9a9fYViFqrXTs9qjdr5OC0dlSv/SGV+BEWLaG5
+        83n4parrZD/BdYzIAfPAubTwJe5oRTqTBgOj5jrs3f+AH5kk6wz5kre8rcQRPJeKrOB3mcPf/SLY
+        1/gwDWxcsA7U5uh/q2yt7Q803KmAm3BBsuSrdnEX48NGQ9uvHJ6eNCpNGb6Qw+Y50cjxIUhTo94E
+        YTqvnTYqZ/t/yAhxWUYuEyEuzekp7X1wwtwOfHxu7f0awyVigabK8dXw4Cu36mSZeemD3M5ppd2q
+        N/ePT48q7fpxs9W6BFt9NC898AfUr2cwcrGCLc/pKf3Cs844DJX6/qxa9mlU7PcUGBpqf1QEDgCm
+        n9h8LdutN/bQDdqtndarh+3aV/1annmLNWsZ7k7pVGiBcwEfn3vOUo/loS1S/gP+kvCe8dfCCsHf
+        v31H5MlCXeo57v1L8m+3cSC+a8mOkxb1MYQMVGECiS+0viTF9fDuu9xO3ft0AWJZfj6ttL/3SHE6
+        IT+bAppOs3/V8YVMe4/Fi9+Hbtc98j345gT/6Q++5Wfajlxl5OqVv+wahuTMrz/LpQpkz3gdEhM+
+        HnUjucphOSySAaU0l1/jyVFCHoIfzCxGLnNEFzfQaHiChDpJZucQwhlMGbYatXp7v7IHgc3xCXzg
+        icB/xNWLp5i1xBLGE9z8QvVwD1RmEHDXYbjwx8jhDAdwBX+0+QtXQTfTnV/k3T/BOfEdz5PaR/Zj
+        vy9f82SOz6KvEWciVEM8OY0PwK4lW0li39JU4S2+DC3+XC3/ubIq5nvHF5VWq3Z6XjsdbSM5a+4R
+        VfjmrNKot9/9dxu3lvyrOc3P1t0PYvNi3f6AcVis+pOv3f/rdv1LyWXXx3kLMHAPMScXklv2u184
+        RFpyF+kLgLvAc5I4I5PwXUfmsltym6xD5DUydYjvNvhf0wDT4mkGIGggBNR1H9QbRhn7Vj0GOakQ
+        3Ct3VTls1Jp/6IDgKVYtVtQnePmlbl1iXrI3mooHUpW9J/tp78eu/miHt9Q6qO0z22P+yq8/4y5z
+        dD5UXW1c9yNH91/fk3jGewwz++nxPQOpKNm99MX320uP5+CAhyn4u196H283fUphupM+PS3yqV30
+        xYld9IYJDvKWZRlrdGOjVF5f29oqGyVjY9Uw6PpmiX2ksxoUezG5lF5pxcx1YFmZO2WO8GBPTTCw
+        Mnz6XadFeq0+5VG9GcXOnn83pdd4yMeY/5mTftVufZ86rjqRLujikWq0+7Iukb/vP8tR5zpPHTPc
+        SdvS1Vnk+vHeXqlQKudvwt5/OCLov3pzuLFRX63aydGI6iiRrAovP90Ewnb83pJ2b+IsM3nwHZ7z
+        uVMiRwH+c1eyStrQgdFM9Ig13pmjNWqQldZMnh+lp3EsfNzjHnaInI5D9ToOhY973L5dVvMBqNOC
+        l+bmSWApc80GzP8qcqZ887yY//7kQAlcf4055tnq2hcicMUkB5fI3W8scCWNGj25PSTAfVxzxK9E
+        NFLZPai1qoeNYwgvmh8ijuVHDaI82uyrcOotefC/1rIDPF2lVNQK61phU8P3+zfy8FtY//PabvHP
+        a3t4fKwSYHFSPXPenp99WQJc/lQCbMWagU4MuB89Jt9GfESK987Ibr3VJrV686DWwEzgU6L8oS7l
+        +72pagRCBN5Tb6pOIZ1tRDWdnqc25WZOHAMnT3BODoCbLh75ver0y+1uEIjkNGZ1mTkqVt7OeM/z
+        D2GOPAgGxjDhvTyJOnMEM0Ygv/7vOMhYIZwlpxMKeSihfNkVyH4dgDBwdYYdlo/XIl6/+4fry3wB
+        8AHby3hsE+3LViUBKPKPnyOX6eKzzyRUdTUaCzv47c5ZPgmGjDOLGPdk5hC4HhPYBP7zej0n3xVG
+        uZ97GOGcvsmTJuVH0pNHz1eU5zcm5PsBhB3PPFpxHMaPTiqdF8FPnn7ZRynrT2Q4pOCZInOq5msF
+        tMw5nY4XcgjeYy+LcVw4xlkflS2DFV/bVtsG8HzymbM65z0et9Scfbr04aByrS6SZzjMHIeaFI8b
+        2huXTqUgnj4eOaNkaYmSld/6v+22OqeFarff5AfHDw+3a2tN+7h6tW+vrZfOBzdh7bZ4ud6rnt0P
+        jdXN6X/FqWNiRB58KTwg/f8B4ZVB6DeGAAA=
+    headers:
+      Cache-Control:
+      - public, max-age=1800
+      Connection:
+      - Keep-Alive
+      Content-Encoding:
+      - gzip
+      Content-Language:
+      - de
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Wed, 17 May 2023 14:13:10 GMT
+      Etag:
+      - '"1684328870-1"'
+      Expires:
+      - Sun, 19 Nov 1978 05:00:00 GMT
+      Keep-Alive:
+      - timeout=3, max=100
+      Last-Modified:
+      - Wed, 17 May 2023 13:07:50 GMT
+      Permissions-Policy:
+      - interest-cohort=()
+      Server:
+      - Apache
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Cookie,Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Drupal-Cache:
+      - HIT
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Generator:
+      - Drupal 7 (http://drupal.org)
+    status:
+      code: 200
+      message: OK
+version: 1
